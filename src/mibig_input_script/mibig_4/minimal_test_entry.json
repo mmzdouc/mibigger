@@ -1,0 +1,42 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "New entry for fakeomycin"
+            ],
+            "contributors": [
+                "MMZ"
+            ],
+            "version": "next"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "compound": "fakeomycin",
+                "chem_struct": "CCCCC"
+
+            }
+        ],
+        "loci": {
+            "accession": "NZ_WZSK000000.1",
+            "completeness": "complete",
+            "start_coord": 1,
+            "end_coord": 2,
+            "evidence": [
+                "Heterologous expression"
+            ]
+        },
+        "publications": [
+            "pubmed:12345678"
+        ],
+        "mibig_accession": "MMZ_1",
+        "organism_name": "Streptofakeus grandus",
+        "ncbi_tax_id": "1234567",
+        "minimal": true,
+        "status": "active"
+    }
+}

@@ -1,0 +1,260 @@
+"genes": {
+    "additionalProperties": false,
+    "properties": {
+        "annotations": {
+            "items": {
+                "additionalProperties": false,
+                "properties": {
+                    "comments": {
+                        "title": "Comments on this gene",
+                        "type": "string"
+                    },
+                    "domains": {
+                        "items": {
+                            "additionalProperties": false,
+                            "properties": {
+                                "location": {
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "begin": {
+                                            "minimum": 0,
+                                            "type": "number"
+                                        },
+                                        "end": {
+                                            "minimum": 1,
+                                            "type": "number"
+                                        }
+                                    },
+                                    "required": [
+                                        "begin",
+                                        "end"
+                                    ],
+                                    "title": "Location of the domain within the gene (in AAs)",
+                                    "type": "object"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "substrates": {
+                                    "items": {
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "evidence": {
+                                                "items": {
+                                                    "$ref": "#/$defs/substrate_evidence"
+                                                },
+                                                "type": "array"
+                                            },
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "publications": {
+                                                "itmes": {
+                                                    "$ref": "#/$defs/publication"
+                                                },
+                                                "type": "array"
+                                            },
+                                            "structure": {
+                                                "$ref": "#/$defs/smiles",
+                                                "title": "Monomer structure"
+                                            },
+                                            "tool": {
+                                                "$ref": "#/$defs/tool"
+                                            }
+                                        },
+                                        "required": [
+                                            "name",
+                                            "structure"
+                                        ],
+                                        "type": "object"
+                                    },
+                                    "type": "array"
+                                }
+                            },
+                            "required": [
+                                "location",
+                                "name"
+                            ],
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "functions": {
+                        "items": {
+                            "additionalProperties": false,
+                            "properties": {
+                                "category": {
+                                    "title": "Gene function category",
+                                    "type": "string"
+                                },
+                                "evidence": {
+                                    "items": {
+                                        "enum": [
+                                            "Sequence-based prediction",
+                                            "Other in vivo study",
+                                            "Heterologous expression",
+                                            "Knock-out",
+                                            "Activity assay"
+                                        ],
+                                        "type": "string"
+                                    },
+                                    "title": "Evidence for function",
+                                    "type": "array"
+                                }
+                            },
+                            "required": [
+                                "category",
+                                "evidence"
+                            ],
+                            "type": "object"
+                        },
+                        "title": "Gene function categories",
+                        "type": "array"
+                    },
+                    "id": {
+                        "pattern": "^[^, ]*$",
+                        "title": "Gene ID",
+                        "type": "string"
+                    },
+                    "mut_pheno": {
+                        "title": "Knockout mutation phenotype for this gene, if known",
+                        "type": "string"
+                    },
+                    "name": {
+                        "pattern": "^[^, ]*$",
+                        "title": "Gene name, ",
+                        "type": "string"
+                    },
+                    "product": {
+                        "title": "Gene product",
+                        "type": "string"
+                    },
+                    "publications": {
+                        "items": {
+                            "$ref": "#/$defs/publication"
+                        },
+                        "title": "Publications on this gene",
+                        "type": "array"
+                    },
+                    "tailoring": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "title": "Tailoring reaction type",
+                        "type": "array"
+                    }
+                },
+                "title": "Gene",
+                "type": "object"
+            },
+            "required": [
+                "id"
+            ],
+            "title": "Genes",
+            "type": "array"
+        },
+        "extra_genes": {
+            "items": {
+                "additionalProperties": false,
+                "properties": {
+                    "id": {
+                        "pattern": "^[^, ]*$",
+                        "title": "Gene ID",
+                        "type": "string"
+                    },
+                    "location": {
+                        "additionalProperties": false,
+                        "properties": {
+                            "exons": {
+                                "items": {
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "end": {
+                                            "minimum": 2,
+                                            "title": "End coordinate of the exon, in nt",
+                                            "type": "integer"
+                                        },
+                                        "start": {
+                                            "minimum": 1,
+                                            "title": "Start coordinate of the exon, in nt",
+                                            "type": "integer"
+                                        }
+                                    },
+                                    "required": [
+                                        "start",
+                                        "end"
+                                    ],
+                                    "type": "object"
+                                },
+                                "minItems": 1,
+                                "title": "Exons",
+                                "type": "array"
+                            },
+                            "strand": {
+                                "enum": [
+                                    -1,
+                                    1
+                                ],
+                                "type": "integer"
+                            }
+                        },
+                        "required": [
+                            "exons",
+                            "strand"
+                        ],
+                        "title": "Gene location",
+                        "type": "object"
+                    },
+                    "translation": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "id",
+                    "location"
+                ],
+                "title": "Gene",
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "operons": {
+            "items": {
+                "additionalProperties": false,
+                "properties": {
+                    "evidence": {
+                        "items": {
+                            "enum": [
+                                "Sequence-based prediction",
+                                "RACE",
+                                "ChIPseq",
+                                "RNAseq"
+                            ],
+                            "type": "string"
+                        },
+                        "title": "Experimental evidence for this operon",
+                        "type": "array"
+                    },
+                    "genes": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "minItems": 1,
+                        "title": "Genes in operon",
+                        "type": "array"
+                    }
+                },
+                "required": [
+                    "genes",
+                    "evidence"
+                ],
+                "title": "Operon",
+                "type": "object"
+            },
+            "title": "Operons",
+            "type": "array"
+        }
+    },
+    "title": "Genes in this gene cluster",
+    "type": "object"
+}
