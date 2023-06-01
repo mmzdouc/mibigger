@@ -1,0 +1,20 @@
+#!/bin/bash
+for line in `git diff --cached --name-only --diff-filter=ACM | grep -v retired`; do
+  if [[ "$line" != *.json ]] ; then
+    continue
+  fi
+  test `tail -c 1 $line`
+  if [ "$?" == "1" ] ; then
+    truncate -s -1 $line
+    echo "Aborting commit due to trailing newline; add changes and recommit: $line"
+    exit 1
+  fi
+  if [[ "$line" != *BGC*.json ]] ; then
+    continue
+  fi
+  python tests/check_valid.py $line
+  if [ "$?" == "1" ] ; then
+    echo "Aborting commit due to invalid JSON: $line"
+    exit 1
+  fi
+done
