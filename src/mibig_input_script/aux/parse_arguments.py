@@ -21,14 +21,14 @@ def get_curators() -> List[str]:
         return [row[0] for row in csvreader]
 
 
-def parse_arguments(__version__: str) -> argparse.Namespace:
-    """Create program interface using argparse
+def add_parser_args(VERSION: str) -> argparse.Namespace:
+    """Add arguments to argparse object
 
-    Args:
-        __version__: str indicating the version
+    Parameters:
+        VERSION: str indicating the version
 
     Returns:
-        Returns argparse object for further use
+        argparse object
 
     Notes:
         Additional command line parameters can be easily specified
@@ -43,14 +43,15 @@ def parse_arguments(__version__: str) -> argparse.Namespace:
 
     parser = argparse.ArgumentParser(
         description=f"""
-            mibig-input-script v{__version__}:
+            mibig-input-script v{VERSION}:
             Creation and manipulation of MIBiG entries
         """
     )
+
     parser.add_argument(
         "curator",
-        help="Give the initials of the curator creating/manipulating the MIBiG entry.",
         choices=curators,
+        help="Give the initials of the curator creating/manipulating the MIBiG entry.",
     )
 
     group = parser.add_mutually_exclusive_group()
@@ -73,13 +74,31 @@ def parse_arguments(__version__: str) -> argparse.Namespace:
     parser.add_argument(
         "--gene_ann",
         action="store_true",
-        help="Add information on domains, functions, products, ... in locus.",
+        help="TBA Add information on domains, functions, products, ... in locus.",
     )
 
     parser.add_argument(
         "--ripp_ann",
         action="store_true",
-        help="Add information on leader/core peptides, crosslinks, ... of RiPPs.",
+        help="TBA Add information on leader/core peptides, crosslinks, ... of RiPPs.",
     )
 
     return parser
+
+
+def parse_arguments(VERSION: str) -> argparse.Namespace:
+    """Create program interface using argparse
+
+    Args:
+        VERSION: str indicating the version
+
+    Returns:
+        Returns argparse object for further use
+
+    Notes:
+        At least one of the optional flags
+    """
+
+    parser = add_parser_args(VERSION)
+
+    return parser.parse_args()
