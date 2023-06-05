@@ -6,14 +6,16 @@ from pathlib import Path
 from typing import List
 
 
-def get_curators() -> List[str]:
+def get_curators(ROOT: Path) -> List[str]:
     """Get the list of possible curators defined in ../curators.csv
+
+    Parameters:
+        `ROOT`: `Path` object indicating "root" directory of script
 
     Returns:
         Returns a list of curator ids
     """
-    parent_dir = Path(__file__).resolve().parent.parent
-    csv_path = parent_dir / ".curators.csv"
+    csv_path = ROOT / ".curators.csv"
 
     with open(csv_path, "r") as csvfile:
         csvreader = csv.reader(csvfile)
@@ -21,14 +23,15 @@ def get_curators() -> List[str]:
         return [row[0] for row in csvreader]
 
 
-def add_parser_args(VERSION: str) -> argparse.Namespace:
+def add_parser_args(VERSION: str, ROOT: Path) -> argparse.ArgumentParser:
     """Add arguments to argparse object
 
     Parameters:
         VERSION: str indicating the version
+        `ROOT`: `Path` object indicating "root" directory of script
 
     Returns:
-        argparse object
+        `argparse.ArgumentParser` object
 
     Notes:
         Additional command line parameters can be easily specified
@@ -39,7 +42,7 @@ def add_parser_args(VERSION: str) -> argparse.Namespace:
         `action=store_true` returns True if flag is set
         `nargs` limits n of args to max 1
     """
-    curators = get_curators()
+    curators = get_curators(ROOT)
 
     parser = argparse.ArgumentParser(
         description=f"""
@@ -62,6 +65,7 @@ def add_parser_args(VERSION: str) -> argparse.Namespace:
         "-e",
         "--existing",
         nargs=1,
+        type=str,
         help="Manipulate an existing entry by specifying its MIBiG accession number.",
     )
 
@@ -83,22 +87,27 @@ def add_parser_args(VERSION: str) -> argparse.Namespace:
         help="TBA Add information on leader/core peptides, crosslinks, ... of RiPPs.",
     )
 
+    parser.add_argument(
+        "--all",
+        action="store_true",
+        help="TBA Add full information suite at once",
+    )
+
     return parser
 
 
-def parse_arguments(VERSION: str) -> argparse.Namespace:
+def parse_arguments(VERSION: str, ROOT: Path) -> argparse.Namespace:
     """Create program interface using argparse
 
     Args:
-        VERSION: str indicating the version
+        `VERSION`: str indicating the version
+        `ROOT`: `Path` object indicating "root" directory of script
 
     Returns:
-        Returns argparse object for further use
-
-    Notes:
-        At least one of the optional flags
+        `args` : Returns argparse object for further use
     """
 
-    parser = add_parser_args(VERSION)
+    parser = add_parser_args(VERSION, ROOT)
+    args = parser.parse_args()
 
-    return parser.parse_args()
+    return args
