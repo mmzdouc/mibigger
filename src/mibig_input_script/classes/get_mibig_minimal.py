@@ -5,8 +5,17 @@
 # have a while loop for collecting the data and incrementing
 
 import argparse
+from Bio import Entrez
 from pathlib import Path
+import re
 from typing import Dict, Self, List
+from urllib.error import HTTPError
+
+
+from mibig_input_script.aux.error_messages import error_empty_input
+from mibig_input_script.aux.error_messages import error_invalid_input
+from mibig_input_script.aux.error_messages import error_invalid_char
+from mibig_input_script.aux.error_messages import error_var_message
 
 
 class Minimal:
@@ -19,8 +28,8 @@ class Minimal:
     def __init__(self: Self):
         self.existing_entry = None
         self.biosynth_class: List[str] = []
-        self.compound = None  #
-        self.accession = None  #
+        self.compound: List[str] = []
+        self.accession: str = None  #
         self.completeness = None
         self.start_coord = None  #
         self.end_coord = None  #
@@ -83,7 +92,6 @@ class Minimal:
             .with_suffix(".json")
         ):
             counter += 1
-
         self.mibig_accession = "_".join([str(args.curator), str(counter)])
 
     def get_input(self: Self) -> None:
@@ -110,25 +118,26 @@ class Minimal:
             )
             print(message)
 
-        start_message = (
-            "================================================\n"
-            "This menu allows to modify the minimum infor-\n"
-            "mation of a MIBiG entry. To modify information,\n"
-            "type its corresponding number and press enter.\n"
-            "Press 'Ctrl+D' to cancel without saving.\n"
-            "================================================"
-        )
-        print(start_message)
-
-        options = {"1": self.get_biosynth_class}
+        options = {
+            "1": self.get_biosynth_class,
+            "2": self.get_compound_name,
+            "3": self.get_ncbi_data,
+            "4": self.get_organism_data,
+        }
 
         while True:
             input_message = (
+                "================================================\n"
+                "Modify the minimum information of a MIBiG entry:\n"
+                "Enter a number and press enter.\n"
+                "Press 'Ctrl+D' to cancel without saving.\n"
+                "------------------------------------------------\n"
                 f"0) Save and continue\n"
                 f"1) Biosynthetic class(es) (currently: {self.biosynth_class})\n"
                 f"2) Compound name(s) (currently: {self.compound})\n"
-                f"3) NCBI accession number (currently: {self.accession})\n"
-                f"4) BGC start/end coordinates (currently: {self.start_coord}:{self.end_coord})\n"
+                f"3) NCBI Accession number, start/end coordinates\n"
+                f"   (currently: {self.accession}, {self.start_coord}:{self.end_coord})\n"
+                f"4) Organism name, NCBI Taxonomy ID (currently: {self.organism_name}, {self.ncbi_tax_id})\n"
                 f"5) BGC evidence (currently: {self.evidence})\n"
                 f"6) Publication/reference (currently: {self.publications})\n"
                 f"================================================\n"
@@ -136,17 +145,13 @@ class Minimal:
             user_input = input(input_message)
 
             if user_input == "0":
+                # EXPAND
                 # function to check if all necessary values are there and to add missing ones
                 break
             elif user_input in options:
                 options[user_input]()
             else:
-                error_message = (
-                    "================================================\n"
-                    "Please enter a valid number.\n"
-                    "================================================\n"
-                )
-                print(error_message)
+                error_invalid_input("option")
 
     def get_biosynth_class(self: Self) -> None:
         """Get the biosynthetic class of BGC and test if valid
@@ -166,44 +171,229 @@ class Minimal:
             "Terpene",
             "Other",
         ]
-        error_message = (
-            "================================================\n"
-            "Please enter a valid BGC.\n"
-            "================================================\n"
-        )
 
         input_message = (
-            f"Type in the biosynthetic class of the BGC.\n"
-            f"To specify multiple classes, separate entries with whitespace.\n"
+            f"Enter the biosynthetic class(es) of the BGC.\n"
+            f"To specify multiple classes, separate entries with a TAB character).\n"
             f"Allowed entries are:\n"
             f"------------------------------------------------\n"
             f"{' '.join([i for i in allowed_bgc]) }\n"
             f"------------------------------------------------\n"
         )
         input_raw = input(input_message)
-        user_input = input_raw.split()
+        user_input = list(filter(None, input_raw.split("\t")))
 
         if not len(user_input) == 0:
-            self.biosynth_class = set()
+            biosynth_class = set()
             for i in user_input:
                 if i in allowed_bgc:
-                    self.biosynth_class.add(i)
+                    biosynth_class.add(i)
                 else:
-                    print(error_message)
+                    error_invalid_input("BGC")
                     return
-            self.biosynth_class = list(self.biosynth_class)
+            self.biosynth_class = list(biosynth_class)
             return
         else:
-            print(error_message)
+            error_empty_input("biosynthetic class")
             return
 
-        # Set a flag for "modified" -> write new entry
-        # Else, skip writing - abort
+    def get_compound_name(self: Self) -> None:
+        """Get the compound name(s)
+        Parameters:
+            `self` : The instance of class Minimal.
 
-    # funciton idea: while loop for both reading and user input the same -> writes to same attributes
-    # esearch function for taxid and organism name (via BioPython)
+        Returns:
+            None
+        """
+        input_message = (
+            "================================================\n"
+            "Enter the compound names associated with the BGC.\n"
+            "To specify multiple names, separate entries with a TAB character.\n"
+            "================================================\n"
+        )
 
-    def create_dict(self: Self) -> Dict:
+        input_raw = input(input_message)
+        user_input = list(filter(None, input_raw.split("\t")))
+
+        if not len(user_input) == 0:
+            compound = set()
+            for i in user_input:
+                compound.add(i)
+            self.compound = list(compound)
+            return
+        else:
+            error_empty_input("compound name")
+            return
+
+    def get_ncbi_data(self: Self) -> None:
+        """Get the NCBI accession number, test if valid, get auxiliary info
+        Parameters:
+            `self` : The instance of class Minimal.
+
+        Returns:
+            None
+
+        Notes:
+            Test suite originally assembled by Barbara Terlouw
+            Strictest testing for NCBI Accession number
+            Strain ID and TaxID are less problematic - can be added
+                by user if they cannot be retrieved automatically
+        """
+        input_msg_accession = (
+            "================================================\n"
+            "Enter the NCBI Accession number (ESearch retrieval takes a few seconds).\n"
+            "================================================\n"
+        )
+
+        input_accession = input(input_msg_accession).replace(" ", "")
+
+        if input_accession == "":
+            error_empty_input("NCBI Accession number")
+            return
+        elif any(
+            char in input_accession
+            for char in [
+                ",",
+                "-",
+                "|",
+                "/",
+            ]
+        ):
+            for char in [
+                ",",
+                "-",
+                "|",
+                "/",
+            ]:
+                if char in input_accession:
+                    error_invalid_char(char, "NCBI accession number")
+                    return
+        elif any(input_accession.startswith(chars) for chars in ["GCF_", "GCA_"]):
+            error_var_message(f"{input_accession} is an assembly ID")
+            return
+        elif input_accession.startswith("SRR"):
+            error_var_message(
+                f"{input_accession} is a SRA record, please enter an assembled contig"
+            )
+            return
+        elif input_accession.startswith("PRJ"):
+            error_var_message(
+                f"{input_accession} is a bioproject id, please enter a GenBank record"
+            )
+            return
+        elif any(input_accession.startswith(chars) for chars in ["WP_", "YP_"]):
+            error_var_message(f"{input_accession} is a protein ID")
+            return
+        elif input_accession.split(".")[0].endswith("000000"):
+            error_var_message(
+                f"{input_accession} is a WGS record, please supply the actual contig"
+            )
+            return
+        elif len(input_accession) < 5:
+            error_var_message("Accession number too short")
+            return
+        else:
+            try:
+                Entrez.email = "john.doe@nonexisting.com"
+                record = Entrez.read(
+                    Entrez.efetch(db="nuccore", id=input_accession, retmode="xml")
+                )
+                self.accession = input_accession
+            except HTTPError:
+                error_invalid_input("NCBI Accession number")
+                return
+
+            try:
+                self.organism_name = record[0]["GBSeq_source"]
+            except KeyError:
+                error_var_message("Organism name not found, is the Accession correct?")
+
+            try:
+                tax_record = Entrez.read(
+                    Entrez.esearch(db="taxonomy", term=self.organism_name)
+                )
+                if tax_record["IdList"]:
+                    self.ncbi_tax_id = tax_record["IdList"][0]
+                else:
+                    error_var_message("No NCBI taxonomy ID found")
+            except HTTPError:
+                error_invalid_input("organism name")
+
+        input_msg_start_coord = (
+            "================================================\n"
+            "Enter the start coordinate.\n"
+            "================================================\n"
+        )
+
+        input_msg_end_coord = (
+            "================================================\n"
+            "Enter the end coordinate.\n"
+            "================================================\n"
+        )
+
+        try:
+            input_start = int(input(input_msg_start_coord).replace(" ", ""))
+        except ValueError:
+            error_invalid_input("start coordinate")
+            return
+
+        try:
+            input_end = int(input(input_msg_end_coord).replace(" ", ""))
+        except ValueError:
+            error_invalid_input("end coordinate")
+            return
+
+        if input_start >= input_end:
+            error_var_message(
+                "The end coordinate cannot lie before the start coordinate"
+            )
+            return
+        else:
+            self.start_coord = input_start
+            self.end_coord = input_end
+
+        return
+
+    def get_organism_data(self: Self) -> None:
+        """Get organism and ncbi taxid
+
+        Parameters:
+            `self` : The instance of class Minimal.
+
+        Returns:
+            None
+
+        Notes:
+            Deliberately no testing performed to allow people to correct
+            automatically retrieved entries
+        """
+        input_msg_strain = (
+            "================================================\n"
+            "Enter the organism name (including strain identifier).\n"
+            "================================================\n"
+        )
+
+        input_msg_taxid = (
+            "================================================\n"
+            "Enter the NCBI Taxonomy ID number.\n"
+            "================================================\n"
+        )
+
+        input_strain = input(input_msg_strain)
+
+        if input_strain != "":
+            self.organism_name = input_strain
+        else:
+            error_empty_input("organism name")
+
+        try:
+            self.ncbi_tax_id = int(input(input_msg_taxid).replace(" ", ""))
+        except ValueError:
+            error_invalid_input("NCBI Taxonomy ID")
+
+        return
+
+    def export_attributes_to_dict(self: Self) -> Dict:
         """Summarize values in json-compatible dict
 
         Parameters:
@@ -213,6 +403,9 @@ class Minimal:
             A `dict` to store in MibigEntry() class
         """
         pass
+
+
+######## CLASS END
 
 
 def get_mibig_minimal(

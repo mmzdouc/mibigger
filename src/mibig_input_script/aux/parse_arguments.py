@@ -1,26 +1,10 @@
 #!/usr/bin/env python3
 
 import argparse
-import csv
 from pathlib import Path
 from typing import List
 
-
-def get_curators(ROOT: Path) -> List[str]:
-    """Get the list of possible curators defined in ../curators.csv
-
-    Parameters:
-        `ROOT`: `Path` object indicating "root" directory of script
-
-    Returns:
-        Returns a list of curator ids
-    """
-    csv_path = ROOT / ".curators.csv"
-
-    with open(csv_path, "r") as csvfile:
-        csvreader = csv.reader(csvfile)
-        next(csvreader)
-        return [row[0] for row in csvreader]
+from mibig_input_script.aux.read_functions import get_curators
 
 
 def add_parser_args(VERSION: str, ROOT: Path) -> argparse.ArgumentParser:

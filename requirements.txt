@@ -1,3 +1,4 @@
 argparse==1.4.0
+biopython==1.81
 jsonschema==4.17.3
 pre-commit==3.3.2
