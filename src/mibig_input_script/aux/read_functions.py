@@ -50,5 +50,4 @@ def get_curator_email(ROOT: Path, curator: str) -> str:
     """
     csv_path = ROOT / "curators.csv"
     df = pd.read_csv(csv_path)
-
     return df.loc[df["id"] == curator]["email"].iloc[0]

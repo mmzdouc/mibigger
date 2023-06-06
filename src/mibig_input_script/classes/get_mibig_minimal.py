@@ -132,7 +132,7 @@ class Minimal:
                 "Modify the minimum information of a MIBiG entry:\n"
                 "Enter a number and press enter.\n"
                 "Press 'Ctrl+D' to cancel without saving.\n"
-                "------------------------------------------------\n"
+                "================================================\n"
                 f"0) Save and continue\n"
                 f"1) Biosynthetic class(es) (currently: {self.biosynth_class})\n"
                 f"2) Compound name(s) (currently: {self.compound})\n"
@@ -163,34 +163,37 @@ class Minimal:
         Returns:
             None
         """
-        allowed_bgc = [
-            "Alkaloid",
-            "Polyketide",
-            "RiPP",
-            "NRP",
-            "Saccharide",
-            "Terpene",
-            "Other",
-        ]
+        options = {
+            "1": "Alkaloid",
+            "2": "Polyketide",
+            "3": "RiPP",
+            "4": "NRP",
+            "5": "Saccharide",
+            "6": "Terpene",
+            "7": "Other",
+        }
 
         input_message = (
-            f"Enter the biosynthetic class(es) of the BGC.\n"
-            f"To specify multiple classes, separate entries with a TAB character).\n"
-            f"Allowed entries are:\n"
-            f"------------------------------------------------\n"
-            f"{' '.join([i for i in allowed_bgc]) }\n"
-            f"------------------------------------------------\n"
+            "Separate multiple entries with a TAB character.\n"
+            "1) Alkaloid\n"
+            "2) Polyketide\n"
+            "3) RiPP\n"
+            "4) NRP\n"
+            "5) Saccharide\n"
+            "6) Terpene\n"
+            "7) Other\n"
+            "================================================\n"
         )
         input_raw = input(input_message)
         user_input = list(filter(None, input_raw.split("\t")))
 
         if not len(user_input) == 0:
             biosynth_class = set()
-            for i in user_input:
-                if i in allowed_bgc:
-                    biosynth_class.add(i)
+            for selection in user_input:
+                if selection in options:
+                    biosynth_class.add(options[selection])
                 else:
-                    error_invalid_input("BGC")
+                    error_invalid_input("biosynthetic class selected")
                     return
             self.biosynth_class = list(biosynth_class)
             return
@@ -401,8 +404,48 @@ class Minimal:
 
         Returns:
             None
+
         """
-        pass
+
+        options = {
+            "1": "Gene expression correlated with compound production",
+            "2": "Knock-out studies",
+            "3": "Enzymatic assays",
+            "4": "Heterologous expression",
+            "5": "In vitro expression",
+        }
+
+        input_msg_evidence = (
+            "================================================\n"
+            "Separate multiple entries with a TAB character.\n"
+            "1) Gene expression correlated with compound production\n"
+            "2) Knock-out studies\n"
+            "3) Enzymatic assays\n"
+            "4) Heterologous expression\n"
+            "5) In vitro expression\n"
+            "================================================\n"
+        )
+
+        input_raw = input(input_msg_evidence)
+        user_input = list(filter(None, input_raw.split("\t")))
+
+        if not len(user_input) == 0:
+            evidence = set()
+            for selection in user_input:
+                if selection in options:
+                    evidence.add(options[selection])
+                else:
+                    error_invalid_input("evidence provided")
+                    return
+            self.evidence = list(evidence)
+            return
+        else:
+            error_empty_input("evidence")
+            return
+
+        # check which input values are accepted
+        # regex pattern to check input DOI?
+        # DOI and PMID
 
     def export_attributes_to_dict(self: Self) -> Dict:
         """Summarize values in json-compatible dict
