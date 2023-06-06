@@ -39,7 +39,7 @@ class Minimal:
         self.ncbi_tax_id = None
         self.minimal = None
         self.status = None
-        self.evidence = None  #
+        self.evidence: List[str] = []  #
 
     def load_existing(self: Self, existing: Dict) -> None:
         """Load the data ofa nexisting entry for later manipulation.
@@ -107,7 +107,8 @@ class Minimal:
             message = (
                 f"================================================\n"
                 f"You are MODIFYING the existing MIBiG entry:\n"
-                f"{self.mibig_accession}"
+                f"{self.mibig_accession}\n"
+                "================================================"
             )
             print(message)
         else:
@@ -115,6 +116,7 @@ class Minimal:
                 f"================================================\n"
                 f"You are CREATING a new MIBiG entry with the ID\n"
                 f"{self.mibig_accession}"
+                "================================================"
             )
             print(message)
 
@@ -124,6 +126,7 @@ class Minimal:
             "3": self.get_ncbi_data,
             "4": self.get_organism_data,
             "5": self.get_evidence,
+            "6": self.get_reference,
         }
 
         while True:
@@ -174,7 +177,9 @@ class Minimal:
         }
 
         input_message = (
+            "================================================\n"
             "Separate multiple entries with a TAB character.\n"
+            "================================================\n"
             "1) Alkaloid\n"
             "2) Polyketide\n"
             "3) RiPP\n"
@@ -215,7 +220,6 @@ class Minimal:
             "To specify multiple names, separate entries with a TAB character.\n"
             "================================================\n"
         )
-
         input_raw = input(input_message)
         user_input = list(filter(None, input_raw.split("\t")))
 
@@ -249,26 +253,20 @@ class Minimal:
             "================================================\n"
         )
 
+        illegal_chars = [
+            ",",
+            "-",
+            "|",
+            "/",
+        ]
+
         input_accession = input(input_msg_accession).replace(" ", "")
 
         if input_accession == "":
             error_empty_input("NCBI Accession number")
             return
-        elif any(
-            char in input_accession
-            for char in [
-                ",",
-                "-",
-                "|",
-                "/",
-            ]
-        ):
-            for char in [
-                ",",
-                "-",
-                "|",
-                "/",
-            ]:
+        elif any(char in input_accession for char in illegal_chars):
+            for char in illegal_chars:
                 if char in input_accession:
                     error_invalid_char(char, "NCBI accession number")
                     return
@@ -418,6 +416,7 @@ class Minimal:
         input_msg_evidence = (
             "================================================\n"
             "Separate multiple entries with a TAB character.\n"
+            "================================================\n"
             "1) Gene expression correlated with compound production\n"
             "2) Knock-out studies\n"
             "3) Enzymatic assays\n"
@@ -443,9 +442,101 @@ class Minimal:
             error_empty_input("evidence")
             return
 
-        # check which input values are accepted
-        # regex pattern to check input DOI?
-        # DOI and PMID
+    def get_reference(self: Self) -> None:
+        """Get evidence for BGC
+
+        Parameters:
+            `self` : The instance of class Minimal.
+
+        Returns:
+            None
+
+        Notes
+
+        """
+        regex_pattern = {
+            "doi": r"10\.\d{4,9}/[-\._;()/:a-zA-Z0-9]+",
+            "pmid": r"\d+",
+            "patent": r".+",
+            "url": r"https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)",
+        }
+
+        input_msg_reference = (
+            "================================================\n"
+            "Choose which reference to add.\n"
+            "Separate multiple entries with a TAB character.\n"
+            "================================================\n"
+            "1) Digital Object Identifier (DOI - strongly preferred).\n"
+            "2) Pubmed ID.\n"
+            "3) Patent reference.\n"
+            "4) URL.\n"
+            "================================================\n"
+        )
+
+        input_msg_doi = (
+            "================================================\n"
+            "Enter a DOI.\n"
+            "================================================\n"
+        )
+        input_msg_pmid = (
+            "================================================\n"
+            "Enter a Pubmed ID.\n"
+            "================================================\n"
+        )
+        input_msg_patent = (
+            "================================================\n"
+            "Enter a patent reference.\n"
+            "================================================\n"
+        )
+        input_msg_url = (
+            "================================================\n"
+            "Enter an URL.\n"
+            "================================================\n"
+        )
+
+        input_raw = input(input_msg_reference)
+        user_input = list(filter(None, input_raw.split("\t")))
+
+        if len(user_input) == 0:
+            error_empty_input("publication/reference")
+            return
+        else:
+            pass
+
+        references = list()
+
+        for selection in user_input:
+            if selection == "1":
+                input_doi = input(input_msg_doi).replace(" ", "")
+                if match := re.search(regex_pattern["doi"], input_doi):
+                    references.append("".join(["doi:", match.group(0)]))
+                else:
+                    error_invalid_input("DOI found")
+                    return
+            elif selection == "2":
+                input_pmid = input(input_msg_pmid).replace(" ", "")
+                if match := re.search(regex_pattern["pmid"], input_pmid):
+                    references.append("".join(["pubmed:", match.group(0)]))
+                else:
+                    error_invalid_input("Pubmed ID found")
+                    return
+            elif selection == "3":
+                input_patent = input(input_msg_patent).replace(" ", "")
+                if match := re.search(regex_pattern["patent"], input_patent):
+                    references.append("".join(["patent:", match.group(0)]))
+                else:
+                    error_invalid_input("Patent found")
+                    return
+            elif selection == "4":
+                input_url = input(input_msg_url).replace(" ", "")
+                if match := re.search(regex_pattern["url"], input_url):
+                    references.append("".join(["url:", match.group(0)]))
+            else:
+                error_invalid_input("URL found")
+                return
+
+        self.publications = references
+        return
 
     def export_attributes_to_dict(self: Self) -> Dict:
         """Summarize values in json-compatible dict
@@ -499,4 +590,4 @@ def get_mibig_minimal(
 
     # in while loop, use only overwriting
 
-    return minimal.create_dict()
+    return minimal.export_attributes_to_dict()
