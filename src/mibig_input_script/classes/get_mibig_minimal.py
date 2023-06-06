@@ -123,6 +123,7 @@ class Minimal:
             "2": self.get_compound_name,
             "3": self.get_ncbi_data,
             "4": self.get_organism_data,
+            "5": self.get_evidence,
         }
 
         while True:
@@ -294,7 +295,6 @@ class Minimal:
             return
         else:
             try:
-                Entrez.email = "john.doe@nonexisting.com"
                 record = Entrez.read(
                     Entrez.efetch(db="nuccore", id=input_accession, retmode="xml")
                 )
@@ -392,6 +392,17 @@ class Minimal:
             error_invalid_input("NCBI Taxonomy ID")
 
         return
+
+    def get_evidence(self: Self) -> None:
+        """Get evidence for BGC
+
+        Parameters:
+            `self` : The instance of class Minimal.
+
+        Returns:
+            None
+        """
+        pass
 
     def export_attributes_to_dict(self: Self) -> Dict:
         """Summarize values in json-compatible dict

@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 
+from Bio import Entrez
 from importlib import metadata
 import json
 from pathlib import Path
 
 from mibig_input_script.aux.parse_arguments import parse_arguments
+from mibig_input_script.aux.read_functions import get_curator_email
 from mibig_input_script.aux.read_functions import read_mibig_json
 from mibig_input_script.aux.verify_existence_entry import verify_existence_entry
 
@@ -36,6 +38,8 @@ def main() -> None:
         None
     """
     args = parse_arguments(VERSION, ROOT)
+
+    Entrez.email = get_curator_email(ROOT, args.curator)
 
     path_existing = verify_existence_entry(args.existing, ROOT)
 
