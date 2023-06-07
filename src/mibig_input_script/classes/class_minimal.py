@@ -1,8 +1,12 @@
-#!/usr/bin/env python3
+"""
+Module to read and handle minimum data necessary for a MIBiG entry.
 
-# add class keeping info and reading/writing
-# add function initializing class, calling the methods, returning the data
-# have a while loop for collecting the data and incrementing
+This module provides classes and functions for the reading and handling
+of the minimal data necessary for creating a MIBiG entry. Further, it
+allows for the manipulation of existing entries. Each type of user input
+is organized in a separate function, including input sanitation and checks.
+"""
+
 
 import argparse
 from Bio import Entrez
@@ -12,37 +16,101 @@ from typing import Dict, Self, List
 from urllib.error import HTTPError
 
 
-from mibig_input_script.aux.error_messages import error_empty_input
-from mibig_input_script.aux.error_messages import error_invalid_input
-from mibig_input_script.aux.error_messages import error_invalid_char
-from mibig_input_script.aux.error_messages import error_var_message
-
-
 class Minimal:
-    """Collects data for MIBiG minimal entry
+    """Collect data for MIBiG minimal entry.
 
+    Class that contains attributes and methods required to build a
+    minimal MIBiG entry.
 
-    TBA
+    Attributes:
+        existing_entry (Dict | None): dict of optional existing entry.
+        biosynth_class (List | None): List of biosynthetic classes.
+        compound (List | None): List of compound name(s).
+        accession (str | None): NCBI Accession number.
+        start_coord (int | None): Start coordinate for BGC in Accession.
+        end_coord (int | None): End coordinate for BGC in Accession.
+        publications (List | None): References associated with the BGC.
+        mibig_accession (str | None): MIBiG Accession ID of entry.
+        organism_name (str | None): Organism strain name.
+        ncbi_tax_id (str | None): NCBI taxonomy ID of organism.
+        evidence (List | None): Evidence for BGC-compound connection.
+        minimal (bool | None): Flag for a minimal entry.
+        status (str | None): Flag for status of entry (active/retired).
+        completeness (str | None): Flag for completeness of locus information.
+
+    Methods:
+        load_existing(self: Self, existing: Dict) -> None:
+            Load the data of an existing entry for later manipulation.
+        get_new_mibig_accession(
+                self: Self, args: argparse.Namespace, ROOT: Path
+                ) -> None:
+            Generate a non-existing temporary MIBiG ID for the new entry.
+        get_input(self: Self) -> None:
+            Handle methods for user input and data validation
+        get_biosynth_class(self: Self) -> None:
+            Get the biosynthetic class of BGC and test if valid
+        get_compound_name(self: Self) -> None:
+            Get the compound name(s)
+        get_ncbi_data(self: Self) -> None:
+            Get the NCBI accession number, test if valid, get auxiliary info
+        get_organism_data(self: Self) -> None:
+            Get organism and ncbi taxid from user
+        get_evidence(self: Self) -> None:
+            Get evidence for BGC-compound connection
+        get_reference(self: Self) -> None:
+            Get publication/reference for BGC
+        test_presence_attributes(self: Self) -> bool:
+            Test if all required attributes are present
+        set_flags(self: Self) -> None:
+            Set the appropriate flags to be stored in the MIBiG file
+        export_attributes_to_dict(self: Self) -> Dict:
+            Summarize values in json-compatible dict
     """
 
     def __init__(self: Self):
-        self.existing_entry = None
-        self.biosynth_class: List[str] = []
-        self.compound: List[str] = []
-        self.accession: str = None  #
-        self.completeness = None
-        self.start_coord = None  #
-        self.end_coord = None  #
-        self.publications = None  #
-        self.mibig_accession = None
-        self.organism_name = None
-        self.ncbi_tax_id = None
-        self.minimal = None
-        self.status = None
-        self.evidence: List[str] = []  #
+        """Initialize class attributes.
+
+        Parameters:
+            `self` : The instance of class Minimal.
+
+        Returns:
+            None
+        """
+        self.existing_entry: Dict | None = None
+        self.biosynth_class: List | None = None
+        self.compound: List | None = None
+        self.accession: str | None = None
+        self.start_coord: int | None = None
+        self.end_coord: int | None = None
+        self.publications: List | None = None
+        self.mibig_accession: str | None = None
+        self.organism_name: str | None = None
+        self.ncbi_tax_id: str | None = None
+        self.evidence: List | None = None
+        self.minimal: bool | None = None
+        self.status: str | None = None
+        self.completeness: str | None = None
+
+    def error_message_formatted(self: Self, string: str) -> None:
+        """Print a formatted error message.
+
+        Parameters:
+            `self` : The instance of class Minimal.
+            string : input to customize message
+
+        Returns:
+            None
+        """
+        error_message = (
+            "++++++++++++++++++++++++++++++++++++++++++++++++\n"
+            f"ERROR: {string}.\n"
+            "++++++++++++++++++++++++++++++++++++++++++++++++\n"
+        )
+        print(error_message)
+        return
 
     def load_existing(self: Self, existing: Dict) -> None:
-        """Load the data ofa nexisting entry for later manipulation.
+        """Load the data of an existing entry for later manipulation.
 
         Parameters:
             `self` : The instance of class Minimal.
@@ -56,20 +124,21 @@ class Minimal:
         self.biosynth_class = existing["cluster"]["biosyn_class"]
         self.compound = existing["cluster"]["compounds"][0]["compound"]
         self.accession = existing["cluster"]["loci"]["accession"]
-        self.completeness = existing["cluster"]["loci"]["completeness"]
         self.start_coord = existing["cluster"]["loci"]["start_coord"]
         self.end_coord = existing["cluster"]["loci"]["end_coord"]
         self.publications = existing["cluster"]["publications"]
         self.mibig_accession = existing["cluster"]["mibig_accession"]
         self.organism_name = existing["cluster"]["organism_name"]
         self.ncbi_tax_id = existing["cluster"]["ncbi_tax_id"]
-        self.minimal = existing["cluster"]["minimal"]  # not needed?
-        self.status = existing["cluster"]["status"]  # not needed?
 
         try:
             self.evidence = existing["cluster"]["loci"]["evidence"]
         except KeyError:
             self.evidence = None
+
+        self.minimal = existing["cluster"]["minimal"]
+        self.status = existing["cluster"]["status"]
+        self.completeness = existing["cluster"]["loci"]["completeness"]
 
     def get_new_mibig_accession(
         self: Self, args: argparse.Namespace, ROOT: Path
@@ -85,7 +154,6 @@ class Minimal:
             None
         """
         counter = 1
-
         while Path.exists(
             ROOT.joinpath("mibig_next_ver")
             .joinpath("_".join([str(args.curator), str(counter)]))
@@ -95,7 +163,7 @@ class Minimal:
         self.mibig_accession = "_".join([str(args.curator), str(counter)])
 
     def get_input(self: Self) -> None:
-        """While loop to accept user input and display current attributes
+        """Handle methods for user input and data validation.
 
         Parameters:
             `self` : The instance of class Minimal.
@@ -115,7 +183,7 @@ class Minimal:
             message = (
                 f"================================================\n"
                 f"You are CREATING a new MIBiG entry with the ID\n"
-                f"{self.mibig_accession}"
+                f"{self.mibig_accession}\n"
                 "================================================"
             )
             print(message)
@@ -149,16 +217,23 @@ class Minimal:
             user_input = input(input_message)
 
             if user_input == "0":
-                # EXPAND
-                # function to check if all necessary values are there and to add missing ones
-                break
+                if self.test_presence_attributes():
+                    self.set_flags()
+                    break
+                else:
+                    self.error_message_formatted(
+                        "Not all required information provided"
+                    )
+                    continue
             elif user_input in options:
                 options[user_input]()
+                continue
             else:
-                error_invalid_input("option")
+                self.error_message_formatted("Invalid input provided")
+                continue
 
     def get_biosynth_class(self: Self) -> None:
-        """Get the biosynthetic class of BGC and test if valid
+        """Get the biosynthetic class of BGC and test if valid.
 
         Parameters:
             `self` : The instance of class Minimal.
@@ -192,22 +267,23 @@ class Minimal:
         input_raw = input(input_message)
         user_input = list(filter(None, input_raw.split("\t")))
 
-        if not len(user_input) == 0:
+        if len(user_input) == 0:
+            self.error_message_formatted("Empty input value")
+            return
+        else:
             biosynth_class = set()
             for selection in user_input:
                 if selection in options:
                     biosynth_class.add(options[selection])
                 else:
-                    error_invalid_input("biosynthetic class selected")
+                    self.error_message_formatted("Invalid input provided")
                     return
             self.biosynth_class = list(biosynth_class)
             return
-        else:
-            error_empty_input("biosynthetic class")
-            return
 
     def get_compound_name(self: Self) -> None:
-        """Get the compound name(s)
+        """Get the compound name(s).
+
         Parameters:
             `self` : The instance of class Minimal.
 
@@ -223,18 +299,19 @@ class Minimal:
         input_raw = input(input_message)
         user_input = list(filter(None, input_raw.split("\t")))
 
-        if not len(user_input) == 0:
-            compound = set()
-            for i in user_input:
-                compound.add(i)
-            self.compound = list(compound)
+        if len(user_input) == 0:
+            self.error_message_formatted("Empty input value")
             return
         else:
-            error_empty_input("compound name")
+            compounds = set()
+            for i in user_input:
+                compounds.add(i)
+            self.compound = list(compounds)
             return
 
     def get_ncbi_data(self: Self) -> None:
-        """Get the NCBI accession number, test if valid, get auxiliary info
+        """Get the NCBI accession number, test if valid, get auxiliary info.
+
         Parameters:
             `self` : The instance of class Minimal.
 
@@ -243,9 +320,6 @@ class Minimal:
 
         Notes:
             Test suite originally assembled by Barbara Terlouw
-            Strictest testing for NCBI Accession number
-            Strain ID and TaxID are less problematic - can be added
-                by user if they cannot be retrieved automatically
         """
         input_msg_accession = (
             "================================================\n"
@@ -263,36 +337,38 @@ class Minimal:
         input_accession = input(input_msg_accession).replace(" ", "")
 
         if input_accession == "":
-            error_empty_input("NCBI Accession number")
+            self.error_message_formatted("Empty input value")
             return
         elif any(char in input_accession for char in illegal_chars):
             for char in illegal_chars:
                 if char in input_accession:
-                    error_invalid_char(char, "NCBI accession number")
+                    self.error_message_formatted(
+                        f"Illegal character '{char}' in NCBI accession number"
+                    )
                     return
         elif any(input_accession.startswith(chars) for chars in ["GCF_", "GCA_"]):
-            error_var_message(f"{input_accession} is an assembly ID")
+            self.error_message_formatted(f"{input_accession} is an assembly ID")
             return
         elif input_accession.startswith("SRR"):
-            error_var_message(
+            self.error_message_formatted(
                 f"{input_accession} is a SRA record, please enter an assembled contig"
             )
             return
         elif input_accession.startswith("PRJ"):
-            error_var_message(
+            self.error_message_formatted(
                 f"{input_accession} is a bioproject id, please enter a GenBank record"
             )
             return
         elif any(input_accession.startswith(chars) for chars in ["WP_", "YP_"]):
-            error_var_message(f"{input_accession} is a protein ID")
+            self.error_message_formatted(f"{input_accession} is a protein ID")
             return
         elif input_accession.split(".")[0].endswith("000000"):
-            error_var_message(
+            self.error_message_formatted(
                 f"{input_accession} is a WGS record, please supply the actual contig"
             )
             return
         elif len(input_accession) < 5:
-            error_var_message("Accession number too short")
+            self.error_message_formatted("Accession number too short")
             return
         else:
             try:
@@ -301,24 +377,26 @@ class Minimal:
                 )
                 self.accession = input_accession
             except HTTPError:
-                error_invalid_input("NCBI Accession number")
+                self.error_message_formatted("Invalid input provided")
                 return
 
             try:
                 self.organism_name = record[0]["GBSeq_source"]
             except KeyError:
-                error_var_message("Organism name not found, is the Accession correct?")
+                self.error_message_formatted(
+                    "Organism name not found, is the Accession correct?"
+                )
 
             try:
                 tax_record = Entrez.read(
                     Entrez.esearch(db="taxonomy", term=self.organism_name)
                 )
                 if tax_record["IdList"]:
-                    self.ncbi_tax_id = tax_record["IdList"][0]
+                    self.ncbi_tax_id = str(tax_record["IdList"][0])
                 else:
-                    error_var_message("No NCBI taxonomy ID found")
+                    self.error_message_formatted("No NCBI taxonomy ID found")
             except HTTPError:
-                error_invalid_input("organism name")
+                self.error_message_formatted("Invalid input provided")
 
         input_msg_start_coord = (
             "================================================\n"
@@ -335,17 +413,17 @@ class Minimal:
         try:
             input_start = int(input(input_msg_start_coord).replace(" ", ""))
         except ValueError:
-            error_invalid_input("start coordinate")
+            self.error_message_formatted("Invalid input provided")
             return
 
         try:
             input_end = int(input(input_msg_end_coord).replace(" ", ""))
         except ValueError:
-            error_invalid_input("end coordinate")
+            self.error_message_formatted("Invalid input provided")
             return
 
         if input_start >= input_end:
-            error_var_message(
+            self.error_message_formatted(
                 "The end coordinate cannot lie before the start coordinate"
             )
             return
@@ -356,7 +434,7 @@ class Minimal:
         return
 
     def get_organism_data(self: Self) -> None:
-        """Get organism and ncbi taxid
+        """Get organism and ncbi taxid from user.
 
         Parameters:
             `self` : The instance of class Minimal.
@@ -382,29 +460,27 @@ class Minimal:
 
         input_strain = input(input_msg_strain)
 
-        if input_strain != "":
-            self.organism_name = input_strain
+        if input_strain == "":
+            self.error_message_formatted("Empty input value")
         else:
-            error_empty_input("organism name")
+            self.organism_name = input_strain
 
         try:
-            self.ncbi_tax_id = int(input(input_msg_taxid).replace(" ", ""))
+            self.ncbi_tax_id = str(int(input(input_msg_taxid).replace(" ", "")))
         except ValueError:
-            error_invalid_input("NCBI Taxonomy ID")
+            self.error_message_formatted("Invalid input provided")
 
         return
 
     def get_evidence(self: Self) -> None:
-        """Get evidence for BGC
+        """Get evidence for BGC-compound connection.
 
         Parameters:
             `self` : The instance of class Minimal.
 
         Returns:
             None
-
         """
-
         options = {
             "1": "Gene expression correlated with compound production",
             "2": "Knock-out studies",
@@ -428,31 +504,28 @@ class Minimal:
         input_raw = input(input_msg_evidence)
         user_input = list(filter(None, input_raw.split("\t")))
 
-        if not len(user_input) == 0:
+        if len(user_input) == 0:
+            self.error_message_formatted("Empty input value")
+            return
+        else:
             evidence = set()
             for selection in user_input:
                 if selection in options:
                     evidence.add(options[selection])
                 else:
-                    error_invalid_input("evidence provided")
+                    self.error_message_formatted("Invalid input provided")
                     return
             self.evidence = list(evidence)
             return
-        else:
-            error_empty_input("evidence")
-            return
 
     def get_reference(self: Self) -> None:
-        """Get evidence for BGC
+        """Get publication/reference for BGC.
 
         Parameters:
             `self` : The instance of class Minimal.
 
         Returns:
             None
-
-        Notes
-
         """
         regex_pattern = {
             "doi": r"10\.\d{4,9}/[-\._;()/:a-zA-Z0-9]+",
@@ -472,7 +545,6 @@ class Minimal:
             "4) URL.\n"
             "================================================\n"
         )
-
         input_msg_doi = (
             "================================================\n"
             "Enter a DOI.\n"
@@ -498,7 +570,7 @@ class Minimal:
         user_input = list(filter(None, input_raw.split("\t")))
 
         if len(user_input) == 0:
-            error_empty_input("publication/reference")
+            self.error_message_formatted("Empty input value")
             return
         else:
             pass
@@ -511,35 +583,89 @@ class Minimal:
                 if match := re.search(regex_pattern["doi"], input_doi):
                     references.append("".join(["doi:", match.group(0)]))
                 else:
-                    error_invalid_input("DOI found")
+                    self.error_message_formatted("DOI has the wrong fromat")
                     return
             elif selection == "2":
                 input_pmid = input(input_msg_pmid).replace(" ", "")
                 if match := re.search(regex_pattern["pmid"], input_pmid):
                     references.append("".join(["pubmed:", match.group(0)]))
                 else:
-                    error_invalid_input("Pubmed ID found")
+                    self.error_message_formatted("Pubmed ID has the wrong format")
                     return
             elif selection == "3":
                 input_patent = input(input_msg_patent).replace(" ", "")
                 if match := re.search(regex_pattern["patent"], input_patent):
                     references.append("".join(["patent:", match.group(0)]))
                 else:
-                    error_invalid_input("Patent found")
+                    self.error_message_formatted("Patent has the wrong format")
                     return
             elif selection == "4":
                 input_url = input(input_msg_url).replace(" ", "")
                 if match := re.search(regex_pattern["url"], input_url):
                     references.append("".join(["url:", match.group(0)]))
+                else:
+                    self.error_message_formatted("URL has the wrong format")
+                    return
             else:
-                error_invalid_input("URL found")
+                self.error_message_formatted("Invalid input provided")
                 return
 
         self.publications = references
         return
 
+    def test_presence_attributes(self: Self) -> bool:
+        """Test if all required attributes are present.
+
+        Parameters:
+            `self` : The instance of class Minimal.
+
+        Returns:
+            `bool` to indicate if ready to save entry
+        """
+        attributes = [
+            self.biosynth_class,
+            self.compound,
+            self.accession,
+            self.start_coord,
+            self.end_coord,
+            self.publications,
+            self.mibig_accession,
+            self.organism_name,
+            self.ncbi_tax_id,
+            self.evidence,
+        ]
+
+        if all(variable is not None for variable in attributes):
+            return True
+        else:
+            return False
+
+    def set_flags(self: Self) -> None:
+        """Set the appropriate flags to be stored in the MIBiG file.
+
+        Parameters:
+            `self` : The instance of class Minimal.
+
+        Returns:
+            None
+
+        Notes:
+            For a new entry, all three flag are None. "Minimal" and "Status"
+            can be set to True and "active", respectively.
+            "Completeness" can also be set to "complete" since the locus
+            info needs to be complete before the entry can be saved
+            (checked in self.test_completeness_minimal())
+        """
+        if self.minimal is None:
+            self.minimal = True
+            self.status = "active"
+            self.completeness = "complete"
+            return
+        else:
+            return
+
     def export_attributes_to_dict(self: Self) -> Dict:
-        """Summarize values in json-compatible dict
+        """Summarize values in json-compatible dict.
 
         Parameters:
             `self` : The instance of class Minimal.
@@ -547,47 +673,22 @@ class Minimal:
         Returns:
             A `dict` to store in MibigEntry() class
         """
-        pass
-
-
-######## CLASS END
-
-
-def get_mibig_minimal(
-    existing_mibig: Dict | None, args: argparse.Namespace, ROOT: Path
-) -> Dict:
-    """Collect information for a minimal MIBiG entry
-
-    Parameters:
-        `existing_mibig` : existing MIBiG entry as `dict` or None
-        `args` : arguments provided by user
-        `ROOT` : `Path` object indicating "root" directory of script
-
-    Returns:
-        TBA
-
-    """
-
-    minimal = Minimal()
-
-    if existing_mibig is not None:
-        minimal.load_existing(existing_mibig)
-        minimal.get_input()
-        # while loop for manipulating existing -> the same as below?
-
-    else:
-        minimal.get_new_mibig_accession(args, ROOT)
-        minimal.get_input()
-
-    # instead of reading all values of json, keep it as it is
-    # modify the values in situ if they are needed
-
-    # go over all self-entries that are not None and add them to
-    # original entry before writing it out
-
-    # the "minimal" entry is then dynamic and does not need to be
-    # specified completely - can be tested by json schema anyway
-
-    # in while loop, use only overwriting
-
-    return minimal.export_attributes_to_dict()
+        return {
+            "cluster": {
+                "biosyn_class": self.biosynth_class,
+                "compounds": [{"compound": self.compound}],
+                "loci": {
+                    "accession": self.accession,
+                    "completeness": self.completeness,
+                    "start_coord": self.start_coord,
+                    "end_coord": self.end_coord,
+                    "evidence": self.evidence,
+                },
+                "mibig_accession": self.mibig_accession,
+                "minimal": self.minimal,
+                "ncbi_tax_id": self.ncbi_tax_id,
+                "organism_name": self.organism_name,
+                "publications": self.publications,
+                "status": self.status,
+            }
+        }

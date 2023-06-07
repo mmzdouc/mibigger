@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 
+import argparse
 from Bio import Entrez
 from importlib import metadata
 import json
 from pathlib import Path
+from typing import Dict
 
 from mibig_input_script.aux.parse_arguments import parse_arguments
 from mibig_input_script.aux.read_functions import get_curator_email
@@ -11,11 +13,36 @@ from mibig_input_script.aux.read_functions import read_mibig_json
 from mibig_input_script.aux.verify_existence_entry import verify_existence_entry
 
 from mibig_input_script.classes.mibig_entry_class import MibigEntry
-from mibig_input_script.classes.get_mibig_minimal import get_mibig_minimal
+from mibig_input_script.classes.class_minimal import Minimal
 
 
 VERSION = metadata.version("mibig-input-script")
 ROOT = Path(__file__).resolve().parent
+
+
+def get_mibig_minimal(
+    existing_mibig: Dict | None, args: argparse.Namespace, ROOT: Path
+) -> Dict:
+    """Collect information for a minimal MIBiG entry
+
+    Parameters:
+        `existing_mibig` : existing MIBiG entry as `dict` or None
+        `args` : arguments provided by user
+        `ROOT` : `Path` object indicating "root" directory of script
+
+    Returns:
+        JSON-compatible dict
+    """
+    minimal = Minimal()
+
+    if existing_mibig is not None:
+        minimal.load_existing(existing_mibig)
+    else:
+        minimal.get_new_mibig_accession(args, ROOT)
+
+    minimal.get_input()
+
+    return minimal.export_attributes_to_dict()
 
 
 def main() -> None:
