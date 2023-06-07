@@ -19,9 +19,6 @@ from urllib.error import HTTPError
 class Minimal:
     """Collect data for MIBiG minimal entry.
 
-    Class that contains attributes and methods required to build a
-    minimal MIBiG entry.
-
     Attributes:
         existing_entry (Dict | None): dict of optional existing entry.
         biosynth_class (List | None): List of biosynthetic classes.

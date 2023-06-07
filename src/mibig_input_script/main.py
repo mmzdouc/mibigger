@@ -14,10 +14,12 @@ from mibig_input_script.aux.verify_existence_entry import verify_existence_entry
 
 from mibig_input_script.classes.mibig_entry_class import MibigEntry
 from mibig_input_script.classes.class_minimal import Minimal
+from mibig_input_script.classes.class_changelog import Changelog
 
 
 VERSION = metadata.version("mibig-input-script")
 ROOT = Path(__file__).resolve().parent
+CURATION_ROUND = "next"
 
 
 def get_mibig_minimal(
@@ -43,6 +45,29 @@ def get_mibig_minimal(
     minimal.get_input()
 
     return minimal.export_attributes_to_dict()
+
+
+def get_changelog(
+    existing_mibig: Dict | None,
+    args: argparse.Namespace,
+    ROOT: Path,
+    CURATION_ROUND: str,
+) -> Dict:
+    """Collect information for a minimal MIBiG entry
+
+    Parameters:
+        `existing_mibig` : existing MIBiG entry as `dict` or None
+        `args` : arguments provided by user
+        `ROOT` : `Path` object indicating "root" directory of script
+        `CURATION_ROUND` : `str` of mibig curation round version to use in changelog
+
+    Returns:
+        JSON-compatible dict
+    """
+    changelog = Changelog(args.curator, CURATION_ROUND)
+
+    print(changelog)
+    # EXPAND THIS PART
 
 
 def main() -> None:
@@ -72,7 +97,7 @@ def main() -> None:
 
     existing_mibig = read_mibig_json(path_existing)
 
-    # add a Changelog class
+    # add a Changelog class -> at the end -> people must confirm what they change
 
     # temporary
     minimal_dict = get_mibig_minimal(existing_mibig, args, ROOT)
