@@ -7,8 +7,8 @@ allows for the manipulation of existing entries. Each type of user input
 is organized in a separate function, including input sanitation and checks.
 """
 
-
 import argparse
+from copy import deepcopy
 from Bio import Entrez
 from pathlib import Path
 import re
@@ -16,52 +16,35 @@ from typing import Dict, Self, List
 from urllib.error import HTTPError
 
 
-class Minimal:
+class Base:
     """Collect data for MIBiG minimal entry.
 
-    Attributes:
-        existing_entry (Dict | None): dict of optional existing entry.
-        biosynth_class (List | None): List of biosynthetic classes.
-        compound (List | None): List of compound name(s).
-        accession (str | None): NCBI Accession number.
-        start_coord (int | None): Start coordinate for BGC in Accession.
-        end_coord (int | None): End coordinate for BGC in Accession.
-        publications (List | None): References associated with the BGC.
-        mibig_accession (str | None): MIBiG Accession ID of entry.
-        organism_name (str | None): Organism strain name.
-        ncbi_tax_id (str | None): NCBI taxonomy ID of organism.
-        evidence (List | None): Evidence for BGC-compound connection.
-        minimal (bool | None): Flag for a minimal entry.
-        status (str | None): Flag for status of entry (active/retired).
-        completeness (str | None): Flag for completeness of locus information.
+    Identical routes for existing and new entries except for beginning:
+    For a new entry, an empty "shell" entry is constructed, which is
+    then filled with data. For existing entries, the data is modified
+    directly in the data structure (dict). This way, there is no data
+    loss.
 
-    Methods:
-        load_existing(self: Self, existing: Dict) -> None:
-            Load the data of an existing entry for later manipulation.
-        get_new_mibig_accession(
-                self: Self, args: argparse.Namespace, ROOT: Path
-                ) -> None:
-            Generate a non-existing temporary MIBiG ID for the new entry.
-        get_input(self: Self) -> None:
-            Handle methods for user input and data validation
-        get_biosynth_class(self: Self) -> None:
-            Get the biosynthetic class of BGC and test if valid
-        get_compound_name(self: Self) -> None:
-            Get the compound name(s)
-        get_ncbi_data(self: Self) -> None:
-            Get the NCBI accession number, test if valid, get auxiliary info
-        get_organism_data(self: Self) -> None:
-            Get organism and ncbi taxid from user
-        get_evidence(self: Self) -> None:
-            Get evidence for BGC-compound connection
-        get_reference(self: Self) -> None:
-            Get publication/reference for BGC
-        test_presence_attributes(self: Self) -> bool:
-            Test if all required attributes are present
-        set_flags(self: Self) -> None:
-            Set the appropriate flags to be stored in the MIBiG file
-        export_attributes_to_dict(self: Self) -> Dict:
-            Summarize values in json-compatible dict
+    Attributes:
+        mibig_accession (str | None): existing/new accession number
+        mibig_dict (Dict | None): existing/new data for MIBiG entry
+
+    Note:
+        Deepcopy required to prevent implicit changing of original dict "existing"
+        To access entries for manipulation:
+            self.mibig_dict['cluster']['biosyn_class']
+            self.mibig_dict["cluster"]["compounds"][i]["compound"]
+            self.mibig_dict["cluster"]["loci"]["accession"]
+            self.mibig_dict["cluster"]["loci"]["start_coord"]
+            self.mibig_dict["cluster"]["loci"]["end_coord"]
+            self.mibig_dict["cluster"]["organism_name"]
+            self.mibig_dict["cluster"]["ncbi_tax_id"]
+            self.mibig_dict["cluster"]["publications"]
+            self.mibig_dict["cluster"]["loci"]["evidence"]
+            self.mibig_dict["cluster"]["mibig_accession"]
+            self.mibig_dict["cluster"]["minimal"]
+            self.mibig_dict["cluster"]["status"]
+            self.mibig_dict["cluster"]["loci"]["completeness"]
     """
 
     def __init__(self: Self):
@@ -73,27 +56,15 @@ class Minimal:
         Returns:
             None
         """
-        self.existing_entry: Dict | None = None
-        self.biosynth_class: List | None = None
-        self.compound: List | None = None
-        self.accession: str | None = None
-        self.start_coord: int | None = None
-        self.end_coord: int | None = None
-        self.publications: List | None = None
         self.mibig_accession: str | None = None
-        self.organism_name: str | None = None
-        self.ncbi_tax_id: str | None = None
-        self.evidence: List | None = None
-        self.minimal: bool | None = None
-        self.status: str | None = None
-        self.completeness: str | None = None
+        self.mibig_dict: Dict | None = None
 
     def error_message_formatted(self: Self, string: str) -> None:
         """Print a formatted error message.
 
         Parameters:
             `self` : The instance of class Minimal.
-            string : input to customize message
+            `string` : input to customize message
 
         Returns:
             None
@@ -105,37 +76,6 @@ class Minimal:
         )
         print(error_message)
         return
-
-    def load_existing(self: Self, existing: Dict) -> None:
-        """Load the data of an existing entry for later manipulation.
-
-        Parameters:
-            `self` : The instance of class Minimal.
-            `existing` : The loaded MIBiG json entry as `dict`.
-
-        Returns:
-            None
-        """
-        self.existing_entry = existing
-
-        self.biosynth_class = existing["cluster"]["biosyn_class"]
-        self.compound = existing["cluster"]["compounds"][0]["compound"]
-        self.accession = existing["cluster"]["loci"]["accession"]
-        self.start_coord = existing["cluster"]["loci"]["start_coord"]
-        self.end_coord = existing["cluster"]["loci"]["end_coord"]
-        self.publications = existing["cluster"]["publications"]
-        self.mibig_accession = existing["cluster"]["mibig_accession"]
-        self.organism_name = existing["cluster"]["organism_name"]
-        self.ncbi_tax_id = existing["cluster"]["ncbi_tax_id"]
-
-        try:
-            self.evidence = existing["cluster"]["loci"]["evidence"]
-        except KeyError:
-            self.evidence = None
-
-        self.minimal = existing["cluster"]["minimal"]
-        self.status = existing["cluster"]["status"]
-        self.completeness = existing["cluster"]["loci"]["completeness"]
 
     def get_new_mibig_accession(
         self: Self, args: argparse.Namespace, ROOT: Path
@@ -151,16 +91,19 @@ class Minimal:
             None
         """
         counter = 1
+
         while Path.exists(
             ROOT.joinpath("mibig_next_ver")
             .joinpath("_".join([str(args.curator), str(counter)]))
             .with_suffix(".json")
         ):
             counter += 1
-        self.mibig_accession = "_".join([str(args.curator), str(counter)])
 
-    def get_input(self: Self) -> None:
-        """Handle methods for user input and data validation.
+        self.mibig_accession = "_".join([str(args.curator), str(counter)])
+        return
+
+    def create_new_entry(self: Self) -> None:
+        """Create a new base MIBiG entry.
 
         Parameters:
             `self` : The instance of class Minimal.
@@ -168,7 +111,49 @@ class Minimal:
         Returns:
             None
         """
-        if self.existing_entry is not None:
+        self.mibig_dict = {
+            "cluster": {
+                "biosyn_class": [],
+                "compounds": [],
+                "loci": {
+                    "accession": "None",
+                    "completeness": "None",
+                    "start_coord": "None",
+                    "end_coord": "None",
+                    "evidence": [],
+                },
+                "mibig_accession": self.mibig_accession,
+                "minimal": "None",
+                "ncbi_tax_id": "None",
+                "organism_name": "None",
+                "publications": [],
+                "status": "None",
+            }
+        }
+
+    def load_existing_entry(self: Self, existing: Dict) -> None:
+        """Load the data of an existing entry for later manipulation.
+
+        Parameters:
+            `self` : The instance of class Minimal.
+
+        Returns:
+            None
+        """
+        self.mibig_dict = deepcopy(existing)
+        self.mibig_accession = self.mibig_dict["cluster"]["mibig_accession"]
+
+    def get_input(self: Self, existing: Dict) -> None:
+        """Handle methods for user input and data validation.
+
+        Parameters:
+            `self` : The instance of class Minimal.
+            `existing` : The loaded MIBiG json entry as `dict`.
+
+        Returns:
+            None
+        """
+        if existing is not None:
             message = (
                 f"================================================\n"
                 f"You are MODIFYING the existing MIBiG entry:\n"
@@ -195,26 +180,41 @@ class Minimal:
         }
 
         while True:
+            biosyn_class = self.mibig_dict["cluster"]["biosyn_class"]
+            compounds = [
+                self.mibig_dict["cluster"]["compounds"][i]["compound"]
+                for i in range(len(self.mibig_dict["cluster"]["compounds"]))
+            ]
+            accession = self.mibig_dict["cluster"]["loci"]["accession"]
+            start_coord = self.mibig_dict["cluster"]["loci"]["start_coord"]
+            end_coord = self.mibig_dict["cluster"]["loci"]["end_coord"]
+            organism_name = self.mibig_dict["cluster"]["organism_name"]
+            ncbi_tax_id = self.mibig_dict["cluster"]["ncbi_tax_id"]
+            publications = self.mibig_dict["cluster"]["publications"]
+            try:
+                evidence = self.mibig_dict["cluster"]["loci"]["evidence"]
+            except KeyError:
+                evidence = "None"
+
             input_message = (
                 "================================================\n"
                 "Modify the minimum information of a MIBiG entry:\n"
                 "Enter a number and press enter.\n"
                 "Press 'Ctrl+D' to cancel without saving.\n"
                 "================================================\n"
-                f"0) Save and continue\n"
-                f"1) Biosynthetic class(es) (currently: {self.biosynth_class})\n"
-                f"2) Compound name(s) (currently: {self.compound})\n"
-                f"3) NCBI Accession number, start/end coordinates\n"
-                f"   (currently: {self.accession}, {self.start_coord}:{self.end_coord})\n"
-                f"4) Organism name, NCBI Taxonomy ID (currently: {self.organism_name}, {self.ncbi_tax_id})\n"
-                f"5) BGC evidence (currently: {self.evidence})\n"
-                f"6) Publication/reference (currently: {self.publications})\n"
+                "0) Save and continue\n"
+                f"1) Biosynthetic class(es) (currently: {biosyn_class})\n"
+                f"2) Compound name(s) (currently: {compounds}):\n"
+                f"3) NCBI Accession number, start/end coordinates (currently: {accession}, {start_coord}:{end_coord})\n"
+                f"4) Organism name, NCBI Taxonomy ID (currently: {organism_name}, {ncbi_tax_id})\n"
+                f"5) BGC evidence (currently: {evidence})\n"
+                f"6) Publication/reference (currently: {publications})\n"
                 f"================================================\n"
             )
             user_input = input(input_message)
 
             if user_input == "0":
-                if self.test_presence_attributes():
+                if self.test_presence_data():
                     self.set_flags()
                     break
                 else:
@@ -261,6 +261,7 @@ class Minimal:
             "7) Other\n"
             "================================================\n"
         )
+
         input_raw = input(input_message)
         user_input = list(filter(None, input_raw.split("\t")))
 
@@ -275,7 +276,7 @@ class Minimal:
                 else:
                     self.error_message_formatted("Invalid input provided")
                     return
-            self.biosynth_class = list(biosynth_class)
+            self.mibig_dict["cluster"]["biosyn_class"] = list(biosynth_class)
             return
 
     def get_compound_name(self: Self) -> None:
@@ -301,9 +302,15 @@ class Minimal:
             return
         else:
             compounds = set()
-            for i in user_input:
-                compounds.add(i)
-            self.compound = list(compounds)
+            for entry in user_input:
+                compounds.add(entry)
+
+            compounds = list(compounds)
+            self.mibig_dict["cluster"]["compounds"] = []
+            for entry in range(len(compounds)):
+                self.mibig_dict["cluster"]["compounds"].append(
+                    {"compound": compounds[entry]}
+                )
             return
 
     def get_ncbi_data(self: Self) -> None:
@@ -372,13 +379,13 @@ class Minimal:
                 record = Entrez.read(
                     Entrez.efetch(db="nuccore", id=input_accession, retmode="xml")
                 )
-                self.accession = input_accession
+                self.mibig_dict["cluster"]["loci"]["accession"] = input_accession
             except HTTPError:
                 self.error_message_formatted("Invalid input provided")
                 return
 
             try:
-                self.organism_name = record[0]["GBSeq_source"]
+                self.mibig_dict["cluster"]["organism_name"] = record[0]["GBSeq_source"]
             except KeyError:
                 self.error_message_formatted(
                     "Organism name not found, is the Accession correct?"
@@ -386,10 +393,14 @@ class Minimal:
 
             try:
                 tax_record = Entrez.read(
-                    Entrez.esearch(db="taxonomy", term=self.organism_name)
+                    Entrez.esearch(
+                        db="taxonomy", term=self.mibig_dict["cluster"]["organism_name"]
+                    )
                 )
                 if tax_record["IdList"]:
-                    self.ncbi_tax_id = str(tax_record["IdList"][0])
+                    self.mibig_dict["cluster"]["ncbi_tax_id"] = str(
+                        tax_record["IdList"][0]
+                    )
                 else:
                     self.error_message_formatted("No NCBI taxonomy ID found")
             except HTTPError:
@@ -425,8 +436,8 @@ class Minimal:
             )
             return
         else:
-            self.start_coord = input_start
-            self.end_coord = input_end
+            self.mibig_dict["cluster"]["loci"]["start_coord"] = input_start
+            self.mibig_dict["cluster"]["loci"]["end_coord"] = input_end
 
         return
 
@@ -460,10 +471,12 @@ class Minimal:
         if input_strain == "":
             self.error_message_formatted("Empty input value")
         else:
-            self.organism_name = input_strain
+            self.mibig_dict["cluster"]["organism_name"] = input_strain
 
         try:
-            self.ncbi_tax_id = str(int(input(input_msg_taxid).replace(" ", "")))
+            self.mibig_dict["cluster"]["ncbi_tax_id"] = str(
+                int(input(input_msg_taxid).replace(" ", ""))
+            )
         except ValueError:
             self.error_message_formatted("Invalid input provided")
 
@@ -512,7 +525,7 @@ class Minimal:
                 else:
                     self.error_message_formatted("Invalid input provided")
                     return
-            self.evidence = list(evidence)
+            self.mibig_dict["cluster"]["loci"]["evidence"] = list(evidence)
             return
 
     def get_reference(self: Self) -> None:
@@ -607,10 +620,10 @@ class Minimal:
                 self.error_message_formatted("Invalid input provided")
                 return
 
-        self.publications = references
+        self.mibig_dict["cluster"]["publications"] = references
         return
 
-    def test_presence_attributes(self: Self) -> bool:
+    def test_presence_data(self: Self) -> bool:
         """Test if all required attributes are present.
 
         Parameters:
@@ -620,16 +633,16 @@ class Minimal:
             `bool` to indicate if ready to save entry
         """
         attributes = [
-            self.biosynth_class,
-            self.compound,
-            self.accession,
-            self.start_coord,
-            self.end_coord,
-            self.publications,
-            self.mibig_accession,
-            self.organism_name,
-            self.ncbi_tax_id,
-            self.evidence,
+            self.mibig_dict["cluster"]["biosyn_class"],
+            self.mibig_dict["cluster"]["compounds"],
+            self.mibig_dict["cluster"]["loci"]["accession"],
+            self.mibig_dict["cluster"]["loci"]["start_coord"],
+            self.mibig_dict["cluster"]["loci"]["end_coord"],
+            self.mibig_dict["cluster"]["publications"],
+            self.mibig_dict["cluster"]["mibig_accession"],
+            self.mibig_dict["cluster"]["organism_name"],
+            self.mibig_dict["cluster"]["ncbi_tax_id"],
+            self.mibig_dict["cluster"]["loci"]["evidence"],
         ]
 
         if all(variable is not None for variable in attributes):
@@ -647,18 +660,17 @@ class Minimal:
             None
 
         Notes:
-            For a new entry, all three flag are None. "Minimal" and "Status"
-            can be set to True and "active", respectively.
-            "Completeness" can also be set to "complete" since the locus
-            info needs to be complete before the entry can be saved
-            (checked in self.test_completeness_minimal())
+            Set flags for new entries
+            For old entries, take presents except for completeness
+            (evidence is mandatory in this script)
         """
-        if self.minimal is None:
-            self.minimal = True
-            self.status = "active"
-            self.completeness = "complete"
+        if self.mibig_dict["cluster"]["minimal"] == "None":
+            self.mibig_dict["cluster"]["minimal"] = True
+            self.mibig_dict["cluster"]["status"] = "active"
+            self.mibig_dict["cluster"]["loci"]["completeness"] = "complete"
             return
         else:
+            self.mibig_dict["cluster"]["loci"]["completeness"] = "complete"
             return
 
     def export_attributes_to_dict(self: Self) -> Dict:
@@ -670,22 +682,4 @@ class Minimal:
         Returns:
             A json-compatible dict of MIBiG "cluster" entry.
         """
-        return {
-            "cluster": {
-                "biosyn_class": self.biosynth_class,
-                "compounds": [{"compound": self.compound}],
-                "loci": {
-                    "accession": self.accession,
-                    "completeness": self.completeness,
-                    "start_coord": self.start_coord,
-                    "end_coord": self.end_coord,
-                    "evidence": self.evidence,
-                },
-                "mibig_accession": self.mibig_accession,
-                "minimal": self.minimal,
-                "ncbi_tax_id": self.ncbi_tax_id,
-                "organism_name": self.organism_name,
-                "publications": self.publications,
-                "status": self.status,
-            }
-        }
+        return self.mibig_dict

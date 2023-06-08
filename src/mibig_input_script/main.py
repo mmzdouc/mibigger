@@ -12,8 +12,8 @@ from mibig_input_script.aux.read_functions import get_curator_email
 from mibig_input_script.aux.read_functions import read_mibig_json
 from mibig_input_script.aux.verify_existence_entry import verify_existence_entry
 
-from mibig_input_script.classes.mibig_entry_class import MibigEntry
-from mibig_input_script.classes.class_minimal import Minimal
+from mibig_input_script.classes.class_write_mibig import WriteMibig
+from mibig_input_script.classes.class_base import Base
 from mibig_input_script.classes.class_changelog import Changelog
 
 
@@ -22,10 +22,10 @@ ROOT = Path(__file__).resolve().parent
 CURATION_ROUND = "next"
 
 
-def get_mibig_minimal(
+def get_mibig_dict(
     existing_mibig: Dict | None, args: argparse.Namespace, ROOT: Path
 ) -> Dict:
-    """Collect information for a minimal MIBiG entry
+    """Collect information to create a minimal MIBiG entry
 
     Parameters:
         `existing_mibig` : existing MIBiG entry as `dict` or None
@@ -35,16 +35,17 @@ def get_mibig_minimal(
     Returns:
         JSON-compatible dict
     """
-    minimal = Minimal()
+    mibig = Base()
 
     if existing_mibig is not None:
-        minimal.load_existing(existing_mibig)
+        mibig.load_existing_entry(existing_mibig)
     else:
-        minimal.get_new_mibig_accession(args, ROOT)
+        mibig.get_new_mibig_accession(args, ROOT)
+        mibig.create_new_entry()
 
-    minimal.get_input()
+    mibig.get_input(existing_mibig)
 
-    return minimal.export_attributes_to_dict()
+    return mibig.export_attributes_to_dict()
 
 
 def get_changelog(
@@ -74,6 +75,37 @@ def get_changelog(
         return changelog.append_last_entry_changelog(existing_mibig)
 
 
+def write_mibig_entry(
+    ROOT: Path, path_existing: Path, mibig_dict: Dict, changelog_dict: Dict
+) -> None:
+    """Concatenate information and create/modify a MIBiG entry
+
+    Parameters:
+        `ROOT` : `Path` object indicating "root" directory of script
+        `path_existing` : `Path` object indicating location of optional existing entry
+        `mibig_dict` : `dict` containing the mibig entry information
+        `changelog_dict` : `dict` containing a changelog
+
+    Returns:
+        JSON-compatible dict
+    """
+    mibig_entry = WriteMibig()
+    mibig_entry.concatenate_dicts(mibig_dict, changelog_dict)
+
+    # CONTINUE HERE
+
+    # call duplicate check
+    # get json string for validation script (can be called from aux)
+
+    if path_existing is None:
+        # construct a new path to write to
+        # call method to write to path
+        pass
+    else:
+        # call method to write to path
+        pass
+
+
 def main() -> None:
     """Entry point of the program.
 
@@ -101,25 +133,13 @@ def main() -> None:
 
     existing_mibig = read_mibig_json(path_existing)
 
-    minimal_dict = get_mibig_minimal(existing_mibig, args, ROOT)
+    mibig_dict = get_mibig_dict(existing_mibig, args, ROOT)
+
     changelog_dict = get_changelog(existing_mibig, args, ROOT, CURATION_ROUND)
 
-    # TEMPORARY
-    print(minimal_dict)
-    print(changelog_dict)
-    # TEMPORARY
+    # EXPAND HERE FOR ADDITIONAL ENTRIES
 
-    #####
-
-    # ~ mibig_entry = MibigEntry(get_mibig_minimal())
-
-    # generate_minimal_entry() is the loader, which has the minimal entry class in the file (including the reading/assignment/testing parts
-
-    # initialize the class
-
-    # if cond to check if existing - if yes, read existing and store in object
-
-    # get input
+    write_mibig_entry(ROOT, path_existing, mibig_dict, changelog_dict)
 
 
 if __name__ == "__main__":

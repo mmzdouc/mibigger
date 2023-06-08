@@ -9,6 +9,7 @@ For existing entries already modified in current curation round, append
 to the last changelog entry.
 """
 
+from copy import deepcopy
 from datetime import datetime
 from typing import Set, Dict, List, Self
 
@@ -34,6 +35,9 @@ class Changelog:
             Add a new changelog entry to existing changelog.
         append_last_entry_changelog(self: Self, existing: Dict) -> Dict:
             Append info to last entry of existing changelog.
+
+    Note:
+        Deepcopy required to prevent implicit changing of original dict "existing"
     """
 
     def __init__(self: Self, curator: str, CURATION_ROUND: str):
@@ -130,7 +134,7 @@ class Changelog:
         Returns:
             A json-compatible dict of a "changelog" MIBiG entry.
         """
-        self.existing_entry = existing
+        self.existing_entry = deepcopy(existing)
         self.get_comment()
 
         self.existing_entry["changelog"].append(
@@ -153,7 +157,7 @@ class Changelog:
         Returns:
             A json-compatible dict of a "changelog" MIBiG entry.
         """
-        self.existing_entry = existing
+        self.existing_entry = deepcopy(existing)
 
         self.comments = existing["changelog"][-1]["comments"]
         self.get_comment()
