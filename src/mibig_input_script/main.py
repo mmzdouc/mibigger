@@ -95,15 +95,16 @@ def write_mibig_entry(
     # CONTINUE HERE
 
     # call duplicate check
+
     # get json string for validation script (can be called from aux)
 
     if path_existing is None:
-        # construct a new path to write to
-        # call method to write to path
-        pass
+        new_entry_path = ROOT.joinpath("mibig_next_ver")
+        mibig_entry.export_to_json(new_entry_path)
+        return
     else:
         # call method to write to path
-        pass
+        return
 
 
 def main() -> None:
