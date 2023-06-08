@@ -99,11 +99,15 @@ def write_mibig_entry(
     # get json string for validation script (can be called from aux)
 
     if path_existing is None:
-        new_entry_path = ROOT.joinpath("mibig_next_ver")
+        new_entry_path = (
+            ROOT.joinpath("mibig_next_ver")
+            .joinpath(mibig_entry.export_dict["cluster"]["mibig_accession"])
+            .with_suffix(".json")
+        )
         mibig_entry.export_to_json(new_entry_path)
         return
     else:
-        # call method to write to path
+        mibig_entry.export_to_json(path_existing)
         return
 
 

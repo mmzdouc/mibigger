@@ -85,9 +85,5 @@ class WriteMibig:
 
     def export_to_json(self: Self, path_to_write: Path) -> None:
         """Save to json"""
-        path_to_write = path_to_write.joinpath(
-            self.export_dict["cluster"]["mibig_accession"]
-        ).with_suffix(".json")
-
         with open(path_to_write, "w", encoding="utf-8") as outfile:
             json.dump(self.export_dict, outfile, indent=4, ensure_ascii=False)
