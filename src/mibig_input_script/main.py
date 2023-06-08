@@ -66,8 +66,12 @@ def get_changelog(
     """
     changelog = Changelog(args.curator, CURATION_ROUND)
 
-    print(changelog)
-    # EXPAND THIS PART
+    if existing_mibig is None:
+        return changelog.create_new_changelog()
+    elif existing_mibig["changelog"][-1]["version"] != CURATION_ROUND:
+        return changelog.create_new_entry_changelog(existing_mibig)
+    else:
+        return changelog.append_last_entry_changelog(existing_mibig)
 
 
 def main() -> None:
@@ -97,12 +101,13 @@ def main() -> None:
 
     existing_mibig = read_mibig_json(path_existing)
 
-    # add a Changelog class -> at the end -> people must confirm what they change
-
-    # temporary
     minimal_dict = get_mibig_minimal(existing_mibig, args, ROOT)
+    changelog_dict = get_changelog(existing_mibig, args, ROOT, CURATION_ROUND)
 
+    # TEMPORARY
     print(minimal_dict)
+    print(changelog_dict)
+    # TEMPORARY
 
     #####
 

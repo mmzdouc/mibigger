@@ -668,7 +668,7 @@ class Minimal:
             `self` : The instance of class Minimal.
 
         Returns:
-            A `dict` to store in MibigEntry() class
+            A json-compatible dict of MIBiG "cluster" entry.
         """
         return {
             "cluster": {
