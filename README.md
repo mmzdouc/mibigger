@@ -45,7 +45,8 @@ Usage
 - To create a new entry, provide the curator ID together with the `-n` flag (e.g. `... MMZ -n`)
 - To modify an existing entry, provide the curator ID, the `-e` flag, and the MIBiG ID (e.g. `... MMZ -e BGC0001234`)
 
-Note: The curator ID is taken from `src/mibig_input_script/curators.csv`
+Note 1: The curator ID is taken from `src/mibig_input_script/curators.csv`
+Note 2: Start/end coordinates for the locus are mandatory. If the locus equals the BGC, the coordinates still have to be entered ("1" to however long the BGC is).
 
 For developers
 ==============

@@ -635,20 +635,25 @@ class Base:
         Returns:
             `bool` to indicate if ready to save entry
         """
-        attributes = [
-            self.mibig_dict["cluster"]["biosyn_class"],
-            self.mibig_dict["cluster"]["compounds"],
+        attributes_strs = [
             self.mibig_dict["cluster"]["loci"]["accession"],
             self.mibig_dict["cluster"]["loci"]["start_coord"],
             self.mibig_dict["cluster"]["loci"]["end_coord"],
-            self.mibig_dict["cluster"]["publications"],
             self.mibig_dict["cluster"]["mibig_accession"],
             self.mibig_dict["cluster"]["organism_name"],
             self.mibig_dict["cluster"]["ncbi_tax_id"],
-            self.mibig_dict["cluster"]["loci"]["evidence"],
         ]
 
-        if all(variable is not None for variable in attributes):
+        attributes_lists = [
+            self.mibig_dict["cluster"]["biosyn_class"],
+            self.mibig_dict["cluster"]["compounds"],
+            self.mibig_dict["cluster"]["loci"]["evidence"],
+            self.mibig_dict["cluster"]["publications"],
+        ]
+
+        if all(variable != "None" for variable in attributes_strs) and (
+            all(variable != [] for variable in attributes_lists)
+        ):
             return True
         else:
             return False
