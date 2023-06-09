@@ -1,0 +1,61 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Marked as incomplete due to reference genome missing genes"
+            ],
+            "contributors": [
+                "SJG3CBEHSM6A3I74YXLH6GLA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C[C@@H]1OC=C2C(O)=C(C(O)=O)C(=O)C(C)=C2[C@H]1C",
+                "compound": "citrinin",
+                "database_id": [
+                    "npatlas:NPA014581",
+                    "pubchem:219203"
+                ],
+                "mol_mass": 250.084123548,
+                "molecular_formula": "C13H14O5"
+            }
+        ],
+        "loci": {
+            "accession": "EU309474.1",
+            "completeness": "incomplete"
+        },
+        "mibig_accession": "BGC0000894",
+        "minimal": true,
+        "ncbi_tax_id": "225353",
+        "organism_name": "Monascus aurantiacus",
+        "publications": [
+            "pubmed:21956130"
+        ],
+        "status": "active"
+    }
+}

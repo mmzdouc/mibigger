@@ -1,0 +1,86 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "inhibitor"
+                    }
+                ],
+                "chem_struct": "OC\\C=C1\\O[C@@H]2CC(=O)N2[C@H]1C(O)=O",
+                "chem_targets": [
+                    {
+                        "publications": [
+                            "doi:10.1128/jb.00698-08"
+                        ],
+                        "target": "Beta-lactamase"
+                    }
+                ],
+                "compound": "clavulanic acid",
+                "database_id": [
+                    "npatlas:NPA019639",
+                    "pubchem:5280980"
+                ],
+                "mol_mass": 199.048072388,
+                "molecular_formula": "C8H9NO5"
+            }
+        ],
+        "loci": {
+            "accession": "AY258009.2",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000844",
+        "minimal": true,
+        "ncbi_tax_id": "1901",
+        "organism_name": "Streptomyces clavuligerus",
+        "publications": [
+            "pubmed:14693539"
+        ],
+        "status": "active"
+    }
+}

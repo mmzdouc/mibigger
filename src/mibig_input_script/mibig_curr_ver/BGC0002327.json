@@ -1,0 +1,167 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: bolagladin B, bolagladin A.",
+                "Added NPAtlas links to compounds: bolagladin B, bolagladin A."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "COC(CCCC/C=C\\CCCCCCC/C=C\\C(=O)N/C=C/C(=O)N[C@H]1COC(=O)[C@H](CO)NC(=O)[C@H](CCO)NC(=O)[C@@H](C(C)C)NC1=O)(CC(=O)O)C(=O)O",
+                "compound": "bolagladin A",
+                "database_id": [
+                    "npatlas:NPA033055"
+                ]
+            },
+            {
+                "chem_struct": "CC[C@@H](C)[C@H]1NC(=O)[C@@H](NC(=O)/C=C/NC(=O)/C=C\\CCCCCCC/C=C\\CCCCC(CC(=O)O)(OC)C(=O)O)COC(=O)[C@H](CO)NC(=O)[C@H](CCO)NC1=O",
+                "compound": "bolagladin B",
+                "database_id": [
+                    "npatlas:NPA033056"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "MT844061.1",
+            "completeness": "Unknown",
+            "end_coord": 43824,
+            "evidence": [
+                "Knock-out studies"
+            ],
+            "start_coord": 1
+        },
+        "mibig_accession": "BGC0002327",
+        "minimal": false,
+        "ncbi_tax_id": "28095",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "QNH85840.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:32780428"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:32780428"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "isoleucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC[C@H](C)[C@@H](C(=O)O)N"
+                                    },
+                                    {
+                                        "name": "valine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:32780428"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "homoserine",
+                                        "proteinogenic": false,
+                                        "structure": "C(CO)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:32780428"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "QNH85847.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:32780428"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "aspartic acid branched",
+                                        "proteinogenic": false,
+                                        "structure": "C([C@@H](C(=O)O)N)C(=O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Burkholderia gladioli",
+        "publications": [
+            "pubmed:32780428",
+            "doi:10.1002/anie.202009107"
+        ],
+        "status": "active"
+    }
+}

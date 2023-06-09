@@ -1,0 +1,328 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "FICEQDRJCNKWHHGNCRVDDP5D"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Removed invalid NRP information",
+                "Removed ketoreductase stereochemistry annotation from modules without ketoreductases",
+                "Reworked PKS modules to match reference paper",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA",
+                "77MNCE2XEGC43DNOUCFLS2KM"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "CC1CC=CC=CC=CCCCC(OP(O)(O)=O)C(C)=CC=CCC(CCC(C)=CC=C)OC(=O)CC1=C",
+                "compound": "difficidin",
+                "database_id": [
+                    "npatlas:NPA019912",
+                    "pubchem:6438594"
+                ],
+                "mol_mass": 544.29537579,
+                "molecular_formula": "C31H45O6P"
+            }
+        ],
+        "loci": {
+            "accession": "AJ634062.2",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies"
+            ]
+        },
+        "mibig_accession": "BGC0000176",
+        "minimal": false,
+        "ncbi_tax_id": "326423",
+        "organism_name": "Bacillus velezensis FZB42",
+        "polyketide": {
+            "synthases": [
+                {
+                    "genes": [
+                        "difA",
+                        "difF",
+                        "difG",
+                        "difH",
+                        "difI",
+                        "difJ",
+                        "difK",
+                        "difL"
+                    ],
+                    "modules": [
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Dehydratase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "difF"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "1",
+                            "pks_mod_doms": [
+                                "Methylation"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Dehydratase",
+                                "Ketoreductase"
+                            ],
+                            "genes": [
+                                "difF"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "2"
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "difF",
+                                "difG"
+                            ],
+                            "module_number": "3"
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "difG"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "4"
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Dehydratase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "difG",
+                                "difH"
+                            ],
+                            "module_number": "5",
+                            "non_canonical": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "iterated": false,
+                                "non_elongating": false,
+                                "skipped": true
+                            }
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Dehydratase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "difH",
+                                "difI"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "6",
+                            "pks_mod_doms": [
+                                "Methylation"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "difI"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "7"
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Dehydratase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "difI"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "8"
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "difI"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "9"
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Dehydratase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "difI",
+                                "difJ"
+                            ],
+                            "module_number": "10"
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Dehydratase",
+                                "Dehydratase"
+                            ],
+                            "genes": [
+                                "difJ",
+                                "difK"
+                            ],
+                            "module_number": "11",
+                            "non_canonical": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "iterated": false,
+                                "non_elongating": false,
+                                "skipped": true
+                            }
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Dehydratase",
+                                "Thiolation (ACP/PCP)",
+                                "Enoylreductase"
+                            ],
+                            "genes": [
+                                "difK",
+                                "difL"
+                            ],
+                            "module_number": "12",
+                            "pks_mod_doms": [
+                                "Methylation"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Thiolation (ACP/PCP)",
+                                "Thioesterase"
+                            ],
+                            "genes": [
+                                "difL"
+                            ],
+                            "module_number": "13"
+                        }
+                    ],
+                    "trans_at": {
+                        "genes": [
+                            "difA"
+                        ]
+                    }
+                }
+            ]
+        },
+        "publications": [
+            "pubmed:16707694"
+        ],
+        "status": "active"
+    }
+}

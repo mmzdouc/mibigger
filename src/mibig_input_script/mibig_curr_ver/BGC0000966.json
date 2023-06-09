@@ -1,0 +1,79 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    }
+                ],
+                "chem_struct": "COC1=CC(\\C=N\\O)=NC(=C1)C1=NC=CC=C1",
+                "compound": "caerulomycin A",
+                "database_id": [
+                    "npatlas:NPA015275",
+                    "pubchem:5381230"
+                ],
+                "mol_mass": 229.085126592,
+                "molecular_formula": "C12H11N3O2"
+            }
+        ],
+        "loci": {
+            "accession": "JF419316.2",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000966",
+        "minimal": true,
+        "ncbi_tax_id": "1074250",
+        "organism_name": "Actinoalloteichus sp. WH1-2216-6",
+        "publications": [
+            "pubmed:22591508"
+        ],
+        "status": "active"
+    }
+}

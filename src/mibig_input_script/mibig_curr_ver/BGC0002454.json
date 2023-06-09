@@ -1,0 +1,54 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "compound": "venturicidin D"
+            },
+            {
+                "compound": "venturicidin E"
+            },
+            {
+                "compound": "venturicidin F"
+            },
+            {
+                "chem_struct": "CCC(=O)[C@@H](C)[C@H]([C@H](C)C[C@@H](C)[C@@H]1[C@@H](C[C@H](/C=C/[C@@H](CCC/C=C(/[C@@H]2C(=CC[C@@](O2)(CC(=O)O1)O)C)\\C)O[C@H]3C[C@H]([C@@H]([C@H](O3)C)O)OC(=O)N)C)C)O",
+                "compound": "venturicidin A",
+                "database_id": [
+                    "npatlas:NPA006299"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "MT361594.1",
+            "completeness": "Unknown",
+            "end_coord": 97575,
+            "evidence": [
+                "Knock-out studies"
+            ],
+            "start_coord": 1
+        },
+        "mibig_accession": "BGC0002454",
+        "minimal": true,
+        "ncbi_tax_id": "1519471",
+        "organism_name": "Streptomyces sp. NRRL S-4",
+        "publications": [
+            "pubmed:33356258",
+            "doi:10.1021/acs.jnatprod.0c01177"
+        ],
+        "status": "active"
+    }
+}

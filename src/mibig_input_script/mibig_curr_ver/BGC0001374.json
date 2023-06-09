@@ -1,0 +1,76 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.3"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "other",
+                        "comment": "plant growth regulation"
+                    }
+                ],
+                "chem_struct": "NC(=O)C1=CC2=C(NC3=C2C=CC(Cl)=C3)S1",
+                "compound": "thienodolin",
+                "database_id": [
+                    "npatlas:NPA017595",
+                    "pubchem:442119"
+                ],
+                "mol_mass": 249.996761524,
+                "molecular_formula": "C11H7ClN2OS"
+            }
+        ],
+        "loci": {
+            "accession": "KU569241.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001374",
+        "minimal": true,
+        "ncbi_tax_id": "1887",
+        "organism_name": "Streptomyces albogriseolus",
+        "publications": [
+            "pubmed:24692213"
+        ],
+        "status": "active"
+    }
+}

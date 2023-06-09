@@ -1,0 +1,70 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CC1=C(O)C(=O)C2=C(C=C(O)C3=C2C(=O)C2=CC=CC(O)=C2C3=O)C1=O",
+                "compound": "oviedomycin",
+                "mol_mass": 350.04265265999993,
+                "molecular_formula": "C19H10O7"
+            }
+        ],
+        "loci": {
+            "accession": "KY129858.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001723",
+        "minimal": true,
+        "ncbi_tax_id": "1890",
+        "organism_name": "Streptomyces antibioticus",
+        "publications": [
+            "pubmed:28562006"
+        ],
+        "status": "active"
+    }
+}

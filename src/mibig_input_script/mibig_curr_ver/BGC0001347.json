@@ -1,0 +1,283 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Changed amino acid substrates to lower case"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CCCCCCCC(CC(NC(CC(C)C)C(NC(CCC(O)=O)C(NC(C(NC(C(CC)C)C(NC(CC(C)C)C(NC(CO)C(NC(CC(C)C)C(NC(CC(C)C)C(NC(CO)C(NC1C(C)CC)=O)=O)=O)=O)=O)=O)=O)C(C)OC1=O)=O)=O)=O)O",
+                "compound": "poaeamide B",
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry"
+                ],
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 1252.7893919959997,
+                "molecular_formula": "C61H108N10O17"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "id": "ANQ43346.1",
+                    "product": "LuxR transcriptional regulator"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "id": "ANQ43347.1",
+                    "product": "non-ribosomal peptide synthetase"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "KU936045.1",
+            "completeness": "incomplete",
+            "evidence": [
+                "Gene expression correlated with compound production"
+            ]
+        },
+        "mibig_accession": "BGC0001347",
+        "minimal": false,
+        "ncbi_tax_id": "47883",
+        "nrp": {
+            "cyclic": true,
+            "nrps_genes": [
+                {
+                    "gene_id": "ANQ43347.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "leucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": false,
+                            "c_dom_subtype": "Starter",
+                            "module_number": "1"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glutamic acid",
+                                        "proteinogenic": true,
+                                        "structure": "C(CC(=O)O)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": false,
+                            "c_dom_subtype": "Dual",
+                            "module_number": "2"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "ANQ43348.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "threonine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@H]([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "active": false,
+                            "c_dom_subtype": "Dual",
+                            "module_number": "1"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "isoleucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC[C@H](C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": false,
+                            "c_dom_subtype": "Dual",
+                            "module_number": "2"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "leucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": false,
+                            "c_dom_subtype": "Dual",
+                            "module_number": "3"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "active": false,
+                            "c_dom_subtype": "Dual",
+                            "module_number": "4"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "ANQ43349.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "leucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": false,
+                            "c_dom_subtype": "Dual",
+                            "module_number": "5"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "leucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": false,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "6"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "active": false,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "7"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "isoleucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC[C@H](C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": false,
+                            "c_dom_subtype": "Dual",
+                            "module_number": "8"
+                        }
+                    ]
+                }
+            ],
+            "release_type": [
+                "Unknown"
+            ],
+            "subclass": "Cyclic depsipeptide"
+        },
+        "organism_name": "Pseudomonas synxantha",
+        "publications": [
+            "pubmed:0"
+        ],
+        "retirement_reasons": [
+            "Entry is split over multiple genomic loci"
+        ],
+        "status": "retired"
+    },
+    "comments": "Pseudomonas synxantha strain CR32 (poaeamide B producer)\\nNCBI accession: KU936045 and KU936046\\nhttp://www.ncbi.nlm.nih.gov/nuccore/KU936045\\nhttp://www.ncbi.nlm.nih.gov/nuccore/KU936046"
+}

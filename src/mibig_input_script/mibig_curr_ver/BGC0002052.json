@@ -1,0 +1,62 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted",
+                "Added version to NCBI accession"
+            ],
+            "contributors": [
+                "LOOLDPJUN4VZBEJ3W5R2EHIG",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cell protectant"
+                    }
+                ],
+                "chem_struct": "CC1=NCC[C@H](N1)C(=O)O",
+                "compound": "ectoine",
+                "database_id": [
+                    "pubchem:126041",
+                    "npatlas:NPA024861"
+                ],
+                "evidence": [
+                    "Mass spectrometry"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "MT149902.1",
+            "completeness": "complete"
+        },
+        "mibig_accession": "BGC0002052",
+        "minimal": false,
+        "ncbi_tax_id": "1931",
+        "organism_name": "Streptomyces sp.",
+        "other": {
+            "subclass": "Ectoine"
+        },
+        "publications": [
+            "pubmed:33712632"
+        ],
+        "status": "active"
+    }
+}

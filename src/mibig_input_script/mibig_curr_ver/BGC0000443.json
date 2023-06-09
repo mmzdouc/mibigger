@@ -1,0 +1,311 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "H2TUQKOCLKJUFX3XAH52M5HN"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (MIBiG Annotathon)",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Corrected NRP module activity",
+                "Corrected gene identifiers",
+                "Fixed NRP substrates",
+                "Updated NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antifungal"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "Chlorinated"
+                    }
+                ],
+                "chem_struct": "CCCCCCCCCCCCC(C(CC(=O)NC1COC(=O)C(NC(=O)C(NC(=O)/C(=C\\C)/NC(=O)C(CC(=O)C(NC(=O)C(NC(=O)C(NC(=O)C(NC1=O)(CCCN)O)CC(=O)O)CCO)CC2=C3C=CNC3=CC=C2)C(C)O)C(C(=O)O)O)C(CCl)O)O)O",
+                "compound": "thanamycin",
+                "database_id": [
+                    "pubchem:132528124"
+                ],
+                "mol_mass": 1338.5997922319996,
+                "molecular_formula": "C60H91ClN10O22"
+            }
+        ],
+        "loci": {
+            "accession": "HQ888764.1",
+            "completeness": "incomplete",
+            "evidence": [
+                "Knock-out studies"
+            ]
+        },
+        "mibig_accession": "BGC0000443",
+        "minimal": false,
+        "ncbi_tax_id": "984195",
+        "nrp": {
+            "cyclic": true,
+            "nrps_genes": [
+                {
+                    "gene_id": "AED90002.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Unknown",
+                            "module_number": "1"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "ornithine",
+                                        "proteinogenic": false,
+                                        "structure": "C(C[C@@H](C(=O)O)N)CN"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Unknown",
+                            "module_number": "2"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "aspartic acid",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)C(=O)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Unknown",
+                            "module_number": "3"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "doi:10.1038/ncomms9421",
+                                    "doi:10.1073/pnas.1203689109"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "homoserine",
+                                        "proteinogenic": false,
+                                        "structure": "C(CO)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Unknown",
+                            "module_number": "4"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "doi:10.1038/ncomms9421",
+                                    "doi:10.1073/pnas.1203689109"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "histidine",
+                                        "proteinogenic": true,
+                                        "structure": "C1=C(NC=N1)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Unknown",
+                            "module_number": "5"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AED90003.1",
+                    "modules": [
+                        {
+                            "active": true,
+                            "c_dom_subtype": "Unknown",
+                            "comments": "Trans-activates threonine",
+                            "module_number": "6"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "threonine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@H]([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Unknown",
+                            "module_number": "7"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "aspartic acid",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)C(=O)O"
+                                    },
+                                    {
+                                        "name": "3-hydroxyaspartic acid",
+                                        "proteinogenic": false,
+                                        "structure": "N[C@@H](C(C(=O)O)O)(C(=O)O)"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Unknown",
+                            "module_number": "8"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "4-chlorothreonine",
+                                        "proteinogenic": false,
+                                        "structure": "ClC[C@H]([C@@H](C(=O)O)N)O"
+                                    },
+                                    {
+                                        "name": "threonine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@H]([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Unknown",
+                            "modification_domains": [
+                                "Unknown"
+                            ],
+                            "module_number": "9"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AED90004.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "threonine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@H]([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "active": false,
+                            "module_number": "10",
+                            "non_canonical": {
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "iterated": false,
+                                "non_elongating": false,
+                                "skipped": false
+                            }
+                        }
+                    ]
+                }
+            ],
+            "subclass": "Beta-lactam",
+            "thioesterases": [
+                {
+                    "gene": "AED90003.1",
+                    "thioesterase_type": "Unknown"
+                }
+            ]
+        },
+        "organism_name": "Pseudomonas sp. SHC52",
+        "publications": [
+            "pubmed:21551032",
+            "pubmed:22586093",
+            "pubmed:22121884"
+        ],
+        "status": "active"
+    }
+}

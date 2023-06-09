@@ -1,0 +1,78 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.3"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC1CCC\\C=C/C=C/C(O)CC(O)C\\C=C/C=C/C(O)C\\C=C\\C=C/C(=O)O1",
+                "compound": "macrolactin H",
+                "database_id": [
+                    "npatlas:NPA018354"
+                ],
+                "mol_mass": 402.2406241879999,
+                "molecular_formula": "C24H34O5"
+            },
+            {
+                "chem_struct": "C[C@@H]1CCC\\C=C\\C=C\\[C@H](O)C[C@@H](O)C\\C=C/C=C/[C@H](C\\C=C\\C=C/C(=O)O1)O[C@@H]1O[C@H](CO)[C@@H](O)[C@H](O)[C@H]1O",
+                "compound": "macrolactin B",
+                "database_id": [
+                    "npatlas:NPA016643"
+                ],
+                "mol_mass": 564.2934476079998,
+                "molecular_formula": "C30H44O10"
+            },
+            {
+                "chem_struct": "CC1CCC/C=C/C=C/C(CC(C/C=C\\C=C\\C(C/C=C/C=C\\C(=O)O1)O)O)OC2C(C(C(C(O2)CO)O)O)O",
+                "compound": "macrolactin 1c",
+                "database_id": [
+                    "pubchem:23426102"
+                ],
+                "mol_mass": 564.2934476079997,
+                "molecular_formula": "C30H44O10"
+            },
+            {
+                "chem_struct": "C[C@@H]1CCC\\C=C\\C=C\\C(=O)C[C@@H](O)C\\C=C/C=C/[C@@H](O)C\\C=C\\C=C/C(=O)O1",
+                "compound": "macrolactin E",
+                "database_id": [
+                    "npatlas:NPA08986"
+                ],
+                "mol_mass": 400.2249741239999,
+                "molecular_formula": "C24H32O5"
+            }
+        ],
+        "loci": {
+            "accession": "KF815729.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001383",
+        "minimal": true,
+        "ncbi_tax_id": "86667",
+        "organism_name": "Jeotgalibacillus marinus",
+        "publications": [
+            "pubmed:27130432"
+        ],
+        "status": "active"
+    }
+}

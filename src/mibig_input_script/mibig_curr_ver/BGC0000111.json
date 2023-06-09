@@ -1,0 +1,88 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CCC(C)\\C=C\\C=C\\C=C\\C(\\O)=C\\C(=O)C(Cl)(Cl)Cl",
+                "compound": "neocarzilin A",
+                "database_id": [
+                    "npatlas:NPA02988"
+                ],
+                "mol_mass": 322.029412824,
+                "molecular_formula": "C14H17Cl3O2"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CC(C)\\C=C\\C=C\\C=C\\C(\\O)=C\\C(=O)C(Cl)(Cl)Cl",
+                "compound": "neocarzilin B",
+                "database_id": [
+                    "npatlas:NPA014365"
+                ],
+                "mol_mass": 308.01376276,
+                "molecular_formula": "C13H15Cl3O2"
+            }
+        ],
+        "loci": {
+            "accession": "AB097904.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000111",
+        "minimal": true,
+        "ncbi_tax_id": "1897",
+        "organism_name": "Streptomyces carzinostaticus",
+        "publications": [
+            "pubmed:15328113"
+        ],
+        "status": "active"
+    }
+}

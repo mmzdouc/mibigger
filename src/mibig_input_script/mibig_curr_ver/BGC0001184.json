@@ -1,0 +1,75 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "FICEQDRJCNKWHHGNCRVDDP5D"
+            ],
+            "version": "1.1"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "C[C@@H](C(=O)OC(=O)[C@H](CC1CCC(=O)[C@H]2[C@@H]1O2)N)N",
+                "compound": "bacilysin",
+                "database_id": [
+                    "pubchem:160175"
+                ],
+                "evidence": [
+                    "Mass spectrometry"
+                ],
+                "mol_mass": 270.12157167600003,
+                "molecular_formula": "C12H18N2O5"
+            }
+        ],
+        "loci": {
+            "accession": "CP000560.1",
+            "completeness": "complete",
+            "end_coord": 3601174,
+            "evidence": [
+                "Knock-out studies",
+                "Gene expression correlated with compound production"
+            ],
+            "start_coord": 3593877
+        },
+        "mibig_accession": "BGC0001184",
+        "minimal": false,
+        "ncbi_tax_id": "326423",
+        "organism_name": "Bacillus velezensis FZB42",
+        "publications": [
+            "pubmed:19061923",
+            "pubmed:25261512",
+            "pubmed:26268540"
+        ],
+        "status": "active"
+    }
+}

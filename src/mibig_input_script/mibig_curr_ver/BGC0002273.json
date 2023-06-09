@@ -1,0 +1,75 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "compound": "butyrolactone III"
+            },
+            {
+                "chem_struct": "COC(=O)[C@]1(CC2=CC(CC=C(C)C)=C(O)C=C2)OC(=O)C(OC)=C1C1=CC=C(O)C=C1",
+                "compound": "butyrolactone I",
+                "database_id": [
+                    "npatlas:NPA032341"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "CH476597.1",
+            "completeness": "Unknown",
+            "end_coord": 145729,
+            "evidence": [
+                "Knock-out studies"
+            ],
+            "start_coord": 104608
+        },
+        "mibig_accession": "BGC0002273",
+        "minimal": false,
+        "ncbi_tax_id": "341663",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "EAU36089.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:23841722"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "4-hydroxyphenylpyruvic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC(=CC=C1CC(=O)C(=O)O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Aspergillus terreus NIH2624",
+        "publications": [
+            "pubmed:23841722",
+            "doi:10.1021/ol401384v"
+        ],
+        "status": "active"
+    }
+}

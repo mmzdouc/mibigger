@@ -1,0 +1,115 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "TTYNBWNDJR6YSNQQMLZQM46S"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Removed duplicate gene annotation"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "compound": "SSV-2083",
+                "mass_spec_ion_type": "M+",
+                "mol_mass": 2082.83
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "SSEG_05172",
+                    "product": "prepropeptide"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Resistance/immunity",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "SSEG_09672",
+                    "product": "lactamase"
+                }
+            ],
+            "extra_genes": [
+                {
+                    "id": "SSEG_05172",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 7626893,
+                                "start": 7626723
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "SSEG_09672",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 7628883,
+                                "start": 7627561
+                            }
+                        ],
+                        "strand": 1
+                    }
+                }
+            ]
+        },
+        "loci": {
+            "accession": "NZ_CM000951.1",
+            "completeness": "complete",
+            "end_coord": 7632847,
+            "start_coord": 7626723
+        },
+        "mibig_accession": "BGC0000579",
+        "minimal": false,
+        "ncbi_tax_id": "463191",
+        "organism_name": "Streptomyces sviceus ATCC 29083",
+        "publications": [
+            "pubmed:21983601"
+        ],
+        "ripp": {
+            "cyclic": true,
+            "subclass": "Lanthipeptide"
+        },
+        "status": "active"
+    }
+}

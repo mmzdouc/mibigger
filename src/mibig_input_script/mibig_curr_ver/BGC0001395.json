@@ -1,0 +1,68 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.3"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Remove compound info pointing at teicoplanin instead of teichomycin",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "compound": "teichomycin A1"
+            }
+        ],
+        "loci": {
+            "accession": "KU726098.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001395",
+        "minimal": true,
+        "ncbi_tax_id": "1867",
+        "organism_name": "Actinoplanes teichomyceticus",
+        "publications": [
+            "pubmed:27344593"
+        ],
+        "status": "active"
+    }
+}

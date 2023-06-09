@@ -1,0 +1,63 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Update compound structure (SMILES) for flaviolin",
+                "Fix incorrect product class"
+            ],
+            "contributors": [
+                "5UL74VURKJ25VSPPPO3H2NYB",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C1=C(C=C(C2=C1C(=O)C(=O)C=C2O)O)O",
+                "compound": "flaviolin",
+                "database_id": [
+                    "pubchem:160478"
+                ],
+                "mol_mass": 206.021523292,
+                "molecular_formula": "C10H6O5"
+            }
+        ],
+        "loci": {
+            "accession": "AM420293.1",
+            "completeness": "Unknown",
+            "end_coord": 1367490,
+            "start_coord": 1363588
+        },
+        "mibig_accession": "BGC0000902",
+        "minimal": true,
+        "ncbi_tax_id": "405948",
+        "organism_name": "Saccharopolyspora erythraea NRRL 2338",
+        "publications": [
+            "pubmed:22187221"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,214 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "BAJIZJS2YANDM4M7JHS5DFUK"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Corrected NRP module activity",
+                "Updated NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "inhibitor"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "(2S,4S)-4-methylproline",
+                        "subcluster": [
+                            "NSP_49220",
+                            "NSP_49210",
+                            "NSP_49200"
+                        ]
+                    }
+                ],
+                "chem_struct": "C[C@H]1C[C@H](N(C1)C(=O)[C@@H](CCC2=CC=C(C=C2)O)NC(=O)[C@@H](CC3=CC=C(C=C3)O)O)C(=O)NC(CCCN=C(N)N)C=O",
+                "chem_targets": [
+                    {
+                        "target": "Trypsin"
+                    }
+                ],
+                "compound": "spumigin E",
+                "database_id": [
+                    "pubchem:71449303"
+                ],
+                "mol_mass": 610.311497684,
+                "molecular_formula": "C31H42N6O7"
+            }
+        ],
+        "genes": {
+            "operons": [
+                {
+                    "evidence": [
+                        "Sequence-based prediction"
+                    ],
+                    "genes": [
+                        "NSP_49250",
+                        "NSP_49190",
+                        "NSP_49220",
+                        "NSP_49230",
+                        "NSP_49200",
+                        "NSP_49210"
+                    ]
+                }
+            ]
+        },
+        "loci": {
+            "accession": "CP007203.2",
+            "completeness": "complete",
+            "end_coord": 4975880,
+            "start_coord": 4953880
+        },
+        "mibig_accession": "BGC0000430",
+        "minimal": false,
+        "ncbi_tax_id": "313624",
+        "nrp": {
+            "cyclic": false,
+            "nrps_genes": [
+                {
+                    "gene_id": "AHJ31215.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "homotyrosine",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC(=CC=C1CC[C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "1"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Activity assay"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "proline",
+                                        "proteinogenic": true,
+                                        "structure": "C1C[C@H](NC1)C(=O)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "DCL",
+                            "module_number": "2"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "arginine",
+                                        "proteinogenic": true,
+                                        "structure": "C(C[C@@H](C(=O)O)N)CN=C(N)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "Unknown"
+                            ],
+                            "module_number": "3"
+                        }
+                    ]
+                }
+            ],
+            "release_type": [
+                "Reductive release"
+            ]
+        },
+        "organism_name": "Nodularia spumigena CCY9414",
+        "polyketide": {
+            "cyclic": false,
+            "starter_unit": "4-hydroxyphenylpyruvate",
+            "subclasses": [
+                "Other"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "AHJ31217.1"
+                    ],
+                    "modules": [
+                        {
+                            "at_specificities": [
+                                "4-hydroxyphenylpyruvate"
+                            ],
+                            "domains": [
+                                "CoA-ligase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Activity assay",
+                            "genes": [
+                                "AHJ31217.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "0"
+                        }
+                    ],
+                    "subclass": [
+                        "Modular type I"
+                    ]
+                }
+            ]
+        },
+        "publications": [
+            "pubmed:19691450"
+        ],
+        "status": "active"
+    }
+}

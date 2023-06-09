@@ -1,0 +1,59 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.2"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Terpene"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CN1C[C@@H](C=C2[C@H]1CC3=CNC4=CC=CC2=C34)C(=O)O",
+                "compound": "lysergic acid",
+                "database_id": [
+                    "pubchem:6717"
+                ],
+                "mol_mass": 268.121177752,
+                "molecular_formula": "C16H16N2O2"
+            },
+            {
+                "chem_struct": "CN1CC(=C[C@H]2[C@H]1CC3=CNC4=CC=CC2=C34)CO",
+                "compound": "elymoclavine",
+                "database_id": [
+                    "pubchem:440904"
+                ],
+                "mol_mass": 254.141913196,
+                "molecular_formula": "C16H18N2O"
+            }
+        ],
+        "loci": {
+            "accession": "EU006773.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001267",
+        "minimal": true,
+        "ncbi_tax_id": "40602",
+        "organism_name": "Claviceps fusiformis",
+        "publications": [
+            "pubmed:17720822"
+        ],
+        "status": "active"
+    }
+}

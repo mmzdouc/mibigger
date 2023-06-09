@@ -1,0 +1,66 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Cleaned up synonym list",
+                "Fetch compound properties from PubChem",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Terpene"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "C/C(=C\\C[C@@H]1[C@]2(CCCC([C@@H]2C[C@@H]([C@@]1(CSC[C@@H](C(=O)O)NC(=O)C)O)O)(C)C)C)/C=C",
+                "compound": "cyslabdan",
+                "database_id": [
+                    "pubchem:24778014"
+                ],
+                "mol_mass": 467.270545,
+                "molecular_formula": "C25H41NO5S"
+            }
+        ],
+        "loci": {
+            "accession": "LC064028.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001910",
+        "minimal": true,
+        "ncbi_tax_id": "1470456",
+        "organism_name": "Streptomyces cyslabdanicus",
+        "publications": [
+            "pubmed:26507838"
+        ],
+        "status": "active"
+    }
+}

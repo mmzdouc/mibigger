@@ -1,0 +1,157 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "4ACA66D6INRVNJRPWB3JQW5E"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Corrected NRP module activity",
+                "Updated bioactivity data",
+                "Updated NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "inhibitor"
+                    }
+                ],
+                "chem_struct": "[H][C@@](CCCCC)(CC(=O)NO)C(=O)N[C@@]([H])(C(C)C)C(=O)N1CCC[C@H]1CO",
+                "chem_targets": [
+                    {
+                        "target": "metalloproteinase"
+                    },
+                    {
+                        "publications": [
+                            "pubmed:10684604"
+                        ],
+                        "target": "bacterial peptide deformylase"
+                    }
+                ],
+                "compound": "actinonin",
+                "database_id": [
+                    "npatlas:NPA07269",
+                    "pubchem:443600"
+                ],
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry"
+                ],
+                "mol_mass": 385.25767122,
+                "molecular_formula": "C19H35N3O5"
+            }
+        ],
+        "loci": {
+            "accession": "KY906183.1",
+            "completeness": "complete"
+        },
+        "mibig_accession": "BGC0001442",
+        "minimal": false,
+        "ncbi_tax_id": "1931",
+        "nrp": {
+            "cyclic": false,
+            "nrps_genes": [
+                {
+                    "gene_id": "ATJ34005.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "threonine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@H]([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "module_number": "1"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "ATJ34004.1",
+                    "modules": [
+                        {
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "0"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "ATJ34002.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "proline",
+                                        "proteinogenic": true,
+                                        "structure": "C1C[C@H](NC1)C(=O)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "2"
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Streptomyces sp. strain ATCC 14903",
+        "publications": [
+            "pubmed:13900478",
+            "pubmed:27616570",
+            "pubmed:27428963"
+        ],
+        "status": "active"
+    }
+}

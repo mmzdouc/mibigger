@@ -1,0 +1,137 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C[C@H](C(=O)N[C@]1(CN(C1=O)S(=O)(=O)O)OC)NC(=O)CC[C@H](C(=O)O)N",
+                "compound": "sulfazecin",
+                "mol_mass": 396.09509921999995,
+                "molecular_formula": "C12H20N4O9S"
+            }
+        ],
+        "loci": {
+            "accession": "KX757706.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001790",
+        "minimal": false,
+        "ncbi_tax_id": "1912599",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "AOZ21316.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Sequence-based prediction",
+                                    "ACVS assay",
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:28017601"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glutamic acid",
+                                        "proteinogenic": true,
+                                        "structure": "C(CC(=O)O)[C@@H](C(=O)O)N"
+                                    },
+                                    {
+                                        "name": "D-glutamine",
+                                        "proteinogenic": false,
+                                        "structure": "C(CC(=O)N)[C@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AOZ21320.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Sequence-based prediction",
+                                    "ACVS assay",
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:28017601"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "alanine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Sequence-based prediction",
+                                    "ACVS assay",
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:28017601"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "2,3-diaminopropionic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C([C@@H](C(=O)O)N)N"
+                                    },
+                                    {
+                                        "name": "D-2,3-diaminopropionic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C([C@H](C(=O)O)N)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Pseudomonas acidophila",
+        "publications": [
+            "pubmed:28017601"
+        ],
+        "status": "active"
+    }
+}

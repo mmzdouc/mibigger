@@ -1,0 +1,324 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "CUIZDUBUBVAF27VHF4OZXTI3"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Update compound structure (SMILES) for onnamide A",
+                "Corrected NRP module activity",
+                "Removed ketoreductase stereochemistry annotation from modules without ketoreductases",
+                "Removed invalid PKS modules",
+                "Sorted modules by module number",
+                "Removed invalid NRPS modules",
+                "Changed amino acid substrates to lower case"
+            ],
+            "contributors": [
+                "5UL74VURKJ25VSPPPO3H2NYB",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "C[C@H]1[C@@H](C)O[C@]([C@H](O)C(N[C@H]2[C@@]3([H])[C@@H](OCO2)[C@H](OC)C(C)(C)[C@H](C[C@H](O)CCC/C=C/C=C/C=C/C(N[C@H](C(O)=O)CCC/N=C(N)\\N)=O)O3)=O)(OC)CC1=C",
+                "chem_targets": [
+                    {
+                        "target": "inhibition of protein biosynthesis caused by binding to the ribosome. This mechanism causes a ribotoxic stress response and ultimately apoptosis."
+                    }
+                ],
+                "compound": "onnamide A",
+                "database_id": [
+                    "pubchem:10373128"
+                ],
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry"
+                ],
+                "mol_mass": 793.4473224559999,
+                "molecular_formula": "C39H63N5O12"
+            }
+        ],
+        "loci": {
+            "accession": "AY688304.2",
+            "completeness": "incomplete"
+        },
+        "mibig_accession": "BGC0001105",
+        "minimal": false,
+        "ncbi_tax_id": "77133",
+        "nrp": {
+            "cyclic": false,
+            "nrps_genes": [
+                {
+                    "gene_id": "AAV97877.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glycine",
+                                        "proteinogenic": true,
+                                        "structure": "NCC(=O)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "5"
+                        }
+                    ]
+                }
+            ],
+            "release_type": [
+                "Hydrolysis"
+            ]
+        },
+        "organism_name": "Uncultured bacterium",
+        "polyketide": {
+            "cyclic": false,
+            "release_type": [
+                "Hydrolysis"
+            ],
+            "starter_unit": "Acetyl-CoA",
+            "subclasses": [
+                "Other"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "AAV97877.1",
+                        "AAV97870.1"
+                    ],
+                    "modules": [
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "AAV97870.1"
+                            ],
+                            "module_number": "0",
+                            "pks_mod_doms": [
+                                "GNAT"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "AAV97870.1"
+                            ],
+                            "kr_stereochem": "D-OH",
+                            "module_number": "1",
+                            "pks_mod_doms": [
+                                "Methylation"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Thiolation (ACP/PCP)",
+                                "Thiolation (ACP/PCP)",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "AAV97870.1"
+                            ],
+                            "module_number": "2",
+                            "pks_mod_doms": [
+                                "2x Crotonase / Enoyl-CoA dehydratase"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "AAV97870.1"
+                            ],
+                            "module_number": "3"
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "AAV97877.1"
+                            ],
+                            "module_number": "4"
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "AAV97877.1"
+                            ],
+                            "kr_stereochem": "D-OH",
+                            "module_number": "6"
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "AAV97877.1"
+                            ],
+                            "kr_stereochem": "D-OH",
+                            "module_number": "7",
+                            "pks_mod_doms": [
+                                "Methylation"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Dehydratase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "AAV97877.1"
+                            ],
+                            "kr_stereochem": "D-OH",
+                            "module_number": "8",
+                            "pks_mod_doms": [
+                                "Pyran synthase"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "AAV97877.1"
+                            ],
+                            "kr_stereochem": "L-OH",
+                            "module_number": "9"
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Dehydratase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "AAV97877.1"
+                            ],
+                            "kr_stereochem": "D-OH",
+                            "module_number": "10"
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketosynthase"
+                            ],
+                            "genes": [
+                                "AAV97877.1"
+                            ],
+                            "module_number": "11"
+                        }
+                    ],
+                    "subclass": [
+                        "Trans-AT type I"
+                    ]
+                }
+            ]
+        },
+        "publications": [
+            "pubmed:15520376",
+            "pubmed:24476823",
+            "pubmed:20464003",
+            "pubmed:15958059",
+            "doi:10.1016/S0040-4020(01)86585-6",
+            "doi:10.1016/S0040-4020(99)00841-8",
+            "doi:10.1021/ja00222a068"
+        ],
+        "status": "active"
+    },
+    "comments": "The gene cluster encodes for all onnamides, theopederins and pseudoonnamides."
+}

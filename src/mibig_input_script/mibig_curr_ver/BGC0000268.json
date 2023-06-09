@@ -1,0 +1,88 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antifungal"
+                    }
+                ],
+                "chem_struct": "CC1OC(CCC1OC1OC(C)C(=O)C=C1)C1=CC=C2C(=O)C3=C(C=C[C@]4(O)C[C@](C)(CC(=O)[C@]34O)OC3OC(C)C(=O)C=C3)C(=O)C2=C1O",
+                "compound": "Sch-47554",
+                "database_id": [
+                    "npatlas:NPA014552"
+                ],
+                "mol_mass": 690.231241276,
+                "molecular_formula": "C37H38O13"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antifungal"
+                    }
+                ],
+                "chem_struct": "CC1C(CCC(O1)OC2CCC(OC2C)C3=C(C4=C(C=C3)C(=O)C5=C(C4=O)C=C[C@]6([C@@]5(C(=O)C[C@](C6)(C)OC7C=CC(=O)C(O7)C)O)O)O)O",
+                "compound": "Sch-47555",
+                "database_id": [
+                    "pubchem:122719"
+                ],
+                "mol_mass": 694.2625414040001,
+                "molecular_formula": "C37H42O13"
+            }
+        ],
+        "loci": {
+            "accession": "AJ628018.2",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000268",
+        "minimal": true,
+        "ncbi_tax_id": "264024",
+        "organism_name": "Streptomyces sp. SCC 2136",
+        "publications": [
+            "pubmed:17085966"
+        ],
+        "status": "active"
+    }
+}

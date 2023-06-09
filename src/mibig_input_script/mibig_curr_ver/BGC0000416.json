@@ -1,0 +1,200 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "SCFYH7235HZBUM2XBV52IUHT"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Corrected NRP module activity",
+                "Changed amino acid substrates to lower case"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11",
+                "Add note about possible overlap with BGC0001692"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC(C)C[C@H](NC)C(=O)N(C)[C@@H](C(C)C)C(=O)N[C@@H](C(C)C)C(=O)N(C)[C@@H](C(C)C)C(=O)NCCc1ccccc1",
+                "compound": "rhabdopeptide 1",
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 573.4254052399999,
+                "molecular_formula": "C32H55N5O4"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CN[C@H](C(C)C)C(=O)N(C)[C@H](CC(C)C)C(=O)N(C)[C@H](C(C)C)C(=O)N(C)[C@H](C(C)C)C(=O)NCCC1=CC=CC=C1",
+                "compound": "rhabdopeptide 2",
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 587.441055304,
+                "molecular_formula": "C33H57N5O4"
+            },
+            {
+                "chem_acts": [],
+                "chem_struct": "CN[C@H](CC(C)C)C(=O)N(C)[C@H](C(C)C)C(=O)N[C@H](C(C)C)C(=O)N(C)[C@H](C(C)C)C(=O)N(C)[C@H](C(C)C)C(=O)NCCC1=CC=CC=C1",
+                "compound": "rhabdopeptide 3",
+                "mol_mass": 686.509469212,
+                "molecular_formula": "C38H66N6O5"
+            },
+            {
+                "chem_acts": [],
+                "chem_struct": "CN[C@H](C(C)C)C(=O)N(C)[C@H](CC(C)C)C(=O)N(C)[C@H](C(C)C)C(=O)N(C)[C@H](C(C)C)C(=O)N(C)[C@H](C(C)C)C(=O)NCCC1=CC=CC=C1",
+                "compound": "rhabdopeptide 4",
+                "mol_mass": 700.5251192759999,
+                "molecular_formula": "C39H68N6O5"
+            }
+        ],
+        "loci": {
+            "accession": "FN667742.1",
+            "completeness": "complete",
+            "end_coord": 2170060,
+            "evidence": [
+                "Knock-out studies",
+                "Gene expression correlated with compound production"
+            ],
+            "start_coord": 2154724
+        },
+        "mibig_accession": "BGC0000416",
+        "minimal": false,
+        "ncbi_tax_id": "406817",
+        "nrp": {
+            "cyclic": false,
+            "nrps_genes": [
+                {
+                    "gene_id": "CBJ90287.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "leucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "Methylation"
+                            ],
+                            "module_number": "1"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "CBJ90288.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "valine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "Methylation"
+                            ],
+                            "module_number": "2",
+                            "non_canonical": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "iterated": false,
+                                "non_elongating": false,
+                                "skipped": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "CBJ90289.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "valine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "Methylation"
+                            ],
+                            "module_number": "3"
+                        },
+                        {
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "4"
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Xenorhabdus nematophila ATCC 19061",
+        "publications": [
+            "pubmed:24038745"
+        ],
+        "see_also": [
+            "BGC0001692"
+        ],
+        "status": "active"
+    },
+    "comments": "Overlaps, and possibly shares genes with nematophin (BGC0001692)."
+}

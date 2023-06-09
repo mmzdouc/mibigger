@@ -1,0 +1,253 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: potashchelin A, potashchelin B, potashchelin D, potashchelin C.",
+                "Added NPAtlas links to compounds: potashchelin A, potashchelin B, potashchelin D, potashchelin C."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CCCCCCCCCC(O)CC(=O)N[C@H](C(=O)N[C@H](CO)C(=O)NCC(=O)N[C@H](CO)C(=O)N[C@@H](CO)C(=O)N[C@H](C(=O)N[C@@H](C(=O)N[C@@H](CO)C(=O)N[C@H]1CCCN(O)C1=O)[C@@H](C)O)[C@@H](O)C(=O)O)[C@H](O)C(=O)O",
+                "compound": "potashchelin A",
+                "database_id": [
+                    "npatlas:NPA033136"
+                ]
+            },
+            {
+                "chem_struct": "CCCCCC/C=C\\CCCC(=O)N[C@H](C(=O)N[C@H](CO)C(=O)NCC(=O)N[C@H](CO)C(=O)N[C@@H](CO)C(=O)N[C@H](C(=O)N[C@@H](C(=O)N[C@@H](CO)C(=O)N[C@H]1CCCN(O)C1=O)[C@@H](C)O)[C@@H](O)C(=O)O)[C@H](O)C(=O)O",
+                "compound": "potashchelin B",
+                "database_id": [
+                    "npatlas:NPA033137"
+                ]
+            },
+            {
+                "chem_struct": "CCCCCCCCCCCC(=O)N[C@H](C(=O)N[C@H](CO)C(=O)NCC(=O)N[C@H](CO)C(=O)N[C@@H](CO)C(=O)N[C@H](C(=O)N[C@@H](C(=O)N[C@@H](CO)C(=O)N[C@H]1CCCN(O)C1=O)[C@@H](C)O)[C@@H](O)C(=O)O)[C@H](O)C(=O)O",
+                "compound": "potashchelin C",
+                "database_id": [
+                    "npatlas:NPA033138"
+                ]
+            },
+            {
+                "chem_struct": "CCCCCC/C=C\\CCCCCC(=O)N[C@H](C(=O)N[C@H](CO)C(=O)NCC(=O)N[C@H](CO)C(=O)N[C@@H](CO)C(=O)N[C@H](C(=O)N[C@@H](C(=O)N[C@@H](CO)C(=O)N[C@H]1CCCN(O)C1=O)[C@@H](C)O)[C@@H](O)C(=O)O)[C@H](O)C(=O)O",
+                "compound": "potashchelin D",
+                "database_id": [
+                    "npatlas:NPA033139"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "WJPH01000003.1",
+            "completeness": "Unknown",
+            "end_coord": 569397,
+            "start_coord": 500633
+        },
+        "mibig_accession": "BGC0002117",
+        "minimal": false,
+        "ncbi_tax_id": "2600296",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "NAO96317.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Homology"
+                                ],
+                                "publications": [
+                                    "pubmed:32266214"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "aspartic acid",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)C(=O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "NAO96318.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:32266214"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:32266214"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glycine",
+                                        "proteinogenic": true,
+                                        "structure": "NCC(=O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "NAO96319.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:32266214"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Homology"
+                                ],
+                                "publications": [
+                                    "pubmed:32266214"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "NAO96320.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:32266214"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "aspartic acid",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)C(=O)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:32266214"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "threonine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@H]([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:32266214"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:32266214"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "N5-hydroxyornithine",
+                                        "proteinogenic": false,
+                                        "structure": "C(C[C@@H](C(=O)O)N)CNO"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Halomonas sp. MG34",
+        "publications": [
+            "pubmed:32266214",
+            "doi:10.3389/fchem.2020.00197"
+        ],
+        "status": "active"
+    }
+}

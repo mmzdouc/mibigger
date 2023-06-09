@@ -1,0 +1,64 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Changed chemical structures for compounds: epemicin B, epemicin A.",
+                "Added NPAtlas links to compounds: epemicin B, epemicin A."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide",
+            "Saccharide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC[C@H](O[C@H]1C[C@](C)(N)[C@H](O)[C@H](C)O1)[C@H](C)[C@H](O)[C@H](C=C[C@@H]1CC=C(C)[C@@H](O)[C@@H](C)[C@H](O)C[C@@H](O)[C@@H](C)[C@H](O)C[C@@H]2C[C@H](O)[C@@H](O)[C@](O)(C[C@@H](O[C@@H]3O[C@H](C)[C@@H](O)[C@H](O[C@H]4C[C@@H](N)[C@H](O)[C@@H](C)O4)[C@H]3O[C@@H]3O[C@H](C)[C@@H](O)[C@H](O)[C@H]3O)[C@@H](C)C=C[C@@H](O)C[C@@H](O)[C@@H](C)C=CC(=O)O1)O2)CC",
+                "compound": "epemicin B",
+                "database_id": [
+                    "npatlas:NPA033171"
+                ]
+            },
+            {
+                "chem_struct": "CC[C@H](O[C@H]1C[C@](C)(N)[C@H](O)[C@H](C)O1)[C@H](C)[C@H](O)[C@H](C=C[C@@H]1CC=C(C)[C@@H](O)[C@@H](C)[C@H](O[C@@H]2O[C@H](CO)[C@@H](O)[C@H](O)[C@@H]2O)C[C@@H](O)[C@@H](C)[C@H](O)C[C@@H]2C[C@H](O)[C@@H](O)[C@](O)(C[C@@H](O[C@@H]3O[C@H](C)[C@@H](O)[C@H](O[C@H]4C[C@@H](N)[C@H](O)[C@@H](C)O4)[C@H]3O[C@@H]3O[C@H](C)[C@@H](O)[C@H](O)[C@H]3O)[C@@H](C)C=C[C@@H](O)C[C@@H](O)[C@@H](C)C=CC(=O)O1)O2)CC",
+                "compound": "epemicin A",
+                "database_id": [
+                    "npatlas:NPA033170"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "CP073318.1",
+            "completeness": "Unknown",
+            "end_coord": 11355273,
+            "evidence": [
+                "Heterologous expression",
+                "Knock-out studies"
+            ],
+            "start_coord": 11226555
+        },
+        "mibig_accession": "BGC0002349",
+        "minimal": true,
+        "ncbi_tax_id": "2802641",
+        "organism_name": "Kutzneria sp. CA-103260",
+        "publications": [
+            "pubmed:34279911",
+            "doi:10.1021/acschembio.1c00318"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,268 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "UK5BZZ5BLXFR5LGS2GITT5IB"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Remove negative molecular mass",
+                "Corrected NRP module activity",
+                "Updated NRP substrate specificities"
+            ],
+            "contributors": [
+                "3UOU7PODQJXIM6BEPUHHRRA5",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "compound": "stenothricin"
+            }
+        ],
+        "loci": {
+            "accession": "DS999644.1",
+            "completeness": "complete",
+            "end_coord": 925039,
+            "start_coord": 870145
+        },
+        "mibig_accession": "BGC0000431",
+        "minimal": false,
+        "ncbi_tax_id": "457431",
+        "nrp": {
+            "cyclic": true,
+            "nrps_genes": [
+                {
+                    "gene_id": "EFE73308.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "cysteic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C([C@@H](C(=O)O)N)S(=O)(=O)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "module_number": "0"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "EFE73312.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "threonine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@H]([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Starter",
+                            "module_number": "1"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Dual",
+                            "module_number": "2"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "2,3-diaminopropionic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C([C@@H](C(=O)O)N)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Dual",
+                            "module_number": "3"
+                        },
+                        {
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "4"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "threonine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@H]([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Dual",
+                            "module_number": "5"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "valine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Dual",
+                            "module_number": "6"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "EFE73313.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "7"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "doi:10.1038/ja.2013.99"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "lysine",
+                                        "proteinogenic": true,
+                                        "structure": "C(CCN)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Dual",
+                            "module_number": "8"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glycine",
+                                        "proteinogenic": true,
+                                        "structure": "NCC(=O)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "Methylation"
+                            ],
+                            "module_number": "9"
+                        }
+                    ]
+                }
+            ],
+            "release_type": [
+                "Macrolactonization"
+            ],
+            "subclass": "Cyclic depsipeptide"
+        },
+        "organism_name": "Streptomyces filamentosus NRRL 15998",
+        "publications": [
+            "pubmed:24149839"
+        ],
+        "status": "active"
+    }
+}

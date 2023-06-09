@@ -1,0 +1,177 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "SDHXYXULZ6ZTMHSITTYHRAHA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Corrected NRP module activity",
+                "Updated NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "inhibitor"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "beta-lactam ring",
+                        "subcluster": [
+                            "SSCG_00147"
+                        ]
+                    }
+                ],
+                "chem_struct": "CO[C@]1(NC(=O)CCCC(N)C(O)=O)C2SCC(COC(N)=O)=C(N2C1=O)C(O)=O",
+                "chem_targets": [
+                    {
+                        "target": "penicillin binding proteins"
+                    },
+                    {
+                        "target": "transpeptidase"
+                    },
+                    {
+                        "target": "carboxypeptidase"
+                    }
+                ],
+                "compound": "cephamycin C",
+                "database_id": [
+                    "npatlas:NPA08205"
+                ],
+                "mol_mass": 446.1107492839999,
+                "molecular_formula": "C16H22N4O9S"
+            }
+        ],
+        "loci": {
+            "accession": "DS570624.1",
+            "completeness": "complete",
+            "end_coord": 177446,
+            "evidence": [
+                "Knock-out studies",
+                "Enzymatic assays",
+                "Heterologous expression"
+            ],
+            "start_coord": 142995
+        },
+        "mibig_accession": "BGC0000319",
+        "minimal": false,
+        "ncbi_tax_id": "1901",
+        "nrp": {
+            "cyclic": true,
+            "nrps_genes": [
+                {
+                    "gene_id": "EDY47118.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Activity assay"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "2-aminoadipic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C(C[C@@H](C(=O)O)N)CC(=O)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "module_number": "0"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Activity assay"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "cysteine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)S"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "DCL",
+                            "module_number": "1"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": true,
+                                "evidence": [
+                                    "Activity assay"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "valine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "2"
+                        }
+                    ]
+                }
+            ],
+            "subclass": "Beta-lactam"
+        },
+        "organism_name": "Streptomyces clavuligerus ATCC 27064",
+        "publications": [
+            "pubmed:3130293",
+            "pubmed:1547956",
+            "pubmed:1476443",
+            "pubmed:8652114",
+            "pubmed:8892828",
+            "pubmed:9696752",
+            "pubmed:10629179",
+            "pubmed:11882698",
+            "pubmed:15583166",
+            "pubmed:17573474"
+        ],
+        "status": "active"
+    }
+}

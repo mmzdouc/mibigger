@@ -1,0 +1,105 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CCCCCCC(C)CC/C=C(\\C)/C=C/C(=O)C(C)CCC1C(C(=O)NC(=C)C(=O)NCC(C(=O)NC(C(=O)O1)CCC(=O)N)C)C",
+                "compound": "fusaristatin A",
+                "database_id": [
+                    "npatlas:NPA004181",
+                    "pubchem:76327984"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "CM000575.1",
+            "completeness": "Unknown",
+            "end_coord": 2608773,
+            "start_coord": 2579299
+        },
+        "mibig_accession": "BGC0002186",
+        "minimal": false,
+        "ncbi_tax_id": "229533",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "ESU15173.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:25412204"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:25412204"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "3-aminoisobutyric acid",
+                                        "proteinogenic": false,
+                                        "structure": "CC(CN)C(=O)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:25412204"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glutamine",
+                                        "proteinogenic": true,
+                                        "structure": "C(CC(=O)N)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Fusarium graminearum PH-1",
+        "publications": [
+            "pubmed:25412204",
+            "doi:10.1021/np500436r"
+        ],
+        "status": "active"
+    }
+}

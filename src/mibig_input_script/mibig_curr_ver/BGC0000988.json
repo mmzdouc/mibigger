@@ -1,0 +1,75 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "C[C@H]1CCC[C@@]2(C)O[C@H]2C[C@H](OC(=O)C[C@H](O)C(C)(C)C(=O)[C@H](C)[C@H]1O)C(\\C)=C\\C1=CSC(C)=N1",
+                "compound": "epothilone B",
+                "database_id": [
+                    "npatlas:NPA06085"
+                ],
+                "mol_mass": 507.265459032,
+                "molecular_formula": "C27H41NO6S"
+            }
+        ],
+        "loci": {
+            "accession": "AF210843.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000988",
+        "minimal": true,
+        "ncbi_tax_id": "56",
+        "organism_name": "Sorangium cellulosum",
+        "publications": [
+            "pubmed:10662695"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,408 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: MA026.",
+                "Added NPAtlas links to compounds: MA026."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CCCCCCCC(O)CC(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CCC(=O)O)C(=O)N[C@@H](CCC(N)=O)C(=O)N[C@H](C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CCC(N)=O)C(=O)NC1COC(=O)C(C(C)CC)NC(=O)C(CCC(N)=O)NC(=O)C(CC(C)C)NC(=O)C(CCC(N)=O)NC(=O)C(CC(C)C)NC(=O)C(CC(C)C)NC(=O)C(C(C)C)NC1=O)C(C)C",
+                "compound": "MA026",
+                "database_id": [
+                    "npatlas:NPA033064"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "AP023348.1",
+            "completeness": "Unknown",
+            "end_coord": 3761997,
+            "start_coord": 3642436
+        },
+        "mibig_accession": "BGC0002379",
+        "minimal": false,
+        "ncbi_tax_id": "2749999",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "BCJ07600.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:33533101"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "leucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "integrated_monomers": [
+                                {
+                                    "name": "leucine",
+                                    "structure": "CC(C)C[C@@H](C(=O)O)N"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "BCJ07599.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:33533101"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glutamic acid",
+                                        "proteinogenic": true,
+                                        "structure": "C(CC(=O)O)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "integrated_monomers": [
+                                {
+                                    "name": "D-glutamic acid",
+                                    "structure": "C(CC(=O)O)[C@H](C(=O)O)N"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "BCJ07533.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:33533101"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glutamine",
+                                        "proteinogenic": true,
+                                        "structure": "C(CC(=O)N)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "integrated_monomers": [
+                                {
+                                    "name": "D-glutamine",
+                                    "structure": "C(CC(=O)N)[C@H](C(=O)O)N"
+                                }
+                            ]
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:33533101"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "valine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "integrated_monomers": [
+                                {
+                                    "name": "D-valine",
+                                    "structure": "CC(C)[C@H](C(=O)O)N"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "BCJ07532.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:33533101"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "leucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "integrated_monomers": [
+                                {
+                                    "name": "D-leucine",
+                                    "structure": "CC(C)C[C@H](C(=O)O)N"
+                                }
+                            ]
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:33533101"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glutamine",
+                                        "proteinogenic": true,
+                                        "structure": "C(CC(=O)N)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "integrated_monomers": [
+                                {
+                                    "name": "glutamine",
+                                    "structure": "C(CC(=O)N)[C@@H](C(=O)O)N"
+                                }
+                            ]
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:33533101"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "integrated_monomers": [
+                                {
+                                    "name": "D-serine",
+                                    "structure": "C([C@H](C(=O)O)N)O"
+                                }
+                            ]
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:33533101"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "valine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "integrated_monomers": [
+                                {
+                                    "name": "D-valine",
+                                    "structure": "CC(C)[C@H](C(=O)O)N"
+                                }
+                            ]
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:33533101"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "leucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "integrated_monomers": [
+                                {
+                                    "name": "D-leucine",
+                                    "structure": "CC(C)C[C@H](C(=O)O)N"
+                                }
+                            ]
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:33533101"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glutamine",
+                                        "proteinogenic": true,
+                                        "structure": "C(CC(=O)N)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "integrated_monomers": [
+                                {
+                                    "name": "D-glutamine",
+                                    "structure": "C(CC(=O)N)[C@H](C(=O)O)N"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "BCJ07531.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:33533101"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "leucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "integrated_monomers": [
+                                {
+                                    "name": "leucine",
+                                    "structure": "CC(C)C[C@@H](C(=O)O)N"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "BCJ07529.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:33533101"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "leucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "integrated_monomers": [
+                                {
+                                    "name": "leucine",
+                                    "structure": "CC(C)C[C@@H](C(=O)O)N"
+                                }
+                            ]
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:33533101"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glutamine",
+                                        "proteinogenic": true,
+                                        "structure": "C(CC(=O)N)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "integrated_monomers": [
+                                {
+                                    "name": "D-glutamine",
+                                    "structure": "C(CC(=O)N)[C@H](C(=O)O)N"
+                                }
+                            ]
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:33533101"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "isoleucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC[C@H](C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "integrated_monomers": [
+                                {
+                                    "name": "isoleucine",
+                                    "structure": "CC[C@H](C)[C@@H](C(=O)O)N"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Pseudomonas sp. RtIB026",
+        "publications": [
+            "pubmed:33533101"
+        ],
+        "status": "active"
+    }
+}

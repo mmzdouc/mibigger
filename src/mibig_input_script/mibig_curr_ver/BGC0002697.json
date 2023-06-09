@@ -1,0 +1,122 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added",
+                "Updated bioactivity data",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_targets": [
+                    {
+                        "publications": [
+                            "pubmed:35246663"
+                        ],
+                        "target": "ClpP|caseinolytic protease"
+                    }
+                ],
+                "compound": "clipibicyclene"
+            },
+            {
+                "chem_acts": [],
+                "compound": "azabicyclene B"
+            },
+            {
+                "chem_acts": [],
+                "compound": "azabicyclene C"
+            },
+            {
+                "chem_acts": [],
+                "compound": "azabicyclene D"
+            }
+        ],
+        "loci": {
+            "accession": "CP003219.1",
+            "completeness": "Unknown",
+            "end_coord": 3470332,
+            "evidence": [
+                "Heterologous expression"
+            ],
+            "start_coord": 3428542
+        },
+        "mibig_accession": "BGC0002697",
+        "minimal": false,
+        "ncbi_tax_id": "1003195",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "SCATT_32630",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Homology"
+                                ],
+                                "publications": [
+                                    "pubmed:35246663"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Homology"
+                                ],
+                                "publications": [
+                                    "pubmed:35246663"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "azetidine-2-carboxylic acid",
+                                        "proteinogenic": false,
+                                        "structure": "O=C(O)[C@H]1NCC1"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Streptomyces cattleya NRRL 8057 = DSM 46488",
+        "publications": [
+            "pubmed:35246663"
+        ],
+        "status": "active"
+    }
+}

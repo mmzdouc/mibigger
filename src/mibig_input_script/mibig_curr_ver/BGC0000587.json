@@ -1,0 +1,74 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "surfactant"
+                    }
+                ],
+                "compound": "microcin H47"
+            }
+        ],
+        "loci": {
+            "accession": "AJ009631.3",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000587",
+        "minimal": true,
+        "ncbi_tax_id": "562",
+        "organism_name": "Escherichia coli",
+        "publications": [
+            "pubmed:9783429",
+            "pubmed:10471561",
+            "pubmed:11181394",
+            "pubmed:12499189",
+            "pubmed:15047525"
+        ],
+        "ripp": {
+            "subclass": "Microcin"
+        },
+        "status": "active"
+    }
+}

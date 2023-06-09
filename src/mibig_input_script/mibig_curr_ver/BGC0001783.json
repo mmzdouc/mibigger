@@ -1,0 +1,77 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "COC1=CC=C(C(O)=C1OC)C1=C(N)C(=NC(C(O)=O)=C1C)C1=NC2=C(C=C1)C(=O)C(OC)=C(N)C2=O",
+                "compound": "streptonigrin",
+                "database_id": [
+                    "npatlas:NPA02378"
+                ],
+                "mol_mass": 506.14376366399995,
+                "molecular_formula": "C25H22N4O8"
+            }
+        ],
+        "loci": {
+            "accession": "JQ414024.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001783",
+        "minimal": true,
+        "ncbi_tax_id": "1888",
+        "organism_name": "Streptomyces flocculus",
+        "publications": [
+            "pubmed:23301954"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,215 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "B753OXB6OWZ4PPBOOHPAMHHB"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Corrected erroneous gene annotations",
+                "Changed gene identifiers to the first instance of a duplicated annotation"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11",
+                "Removed compounds: botrydial.",
+                "Added compounds: botcinin H, botcinin I, botcinin J, cinbotolide D, botcinin K.",
+                "Added NPAtlas links to compounds: botcinin H, botcinin I, botcinin J, cinbotolide D, botcinin K."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Terpene"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC(=O)O[C@H]1[C@@H](C)C(=O)O[C@H]2[C@H](C)[C@@H](O)[C@H](C)O[C@]12C",
+                "compound": "botcinin H",
+                "database_id": [
+                    "npatlas:NPA033173"
+                ]
+            },
+            {
+                "chem_struct": "CCCCC(=O)/C=C/C(=O)O[C@H]1[C@H](C)O[C@]2(C)[C@@H](O)[C@@H](C)C(=O)O[C@H]2[C@@H]1C",
+                "compound": "botcinin I",
+                "database_id": [
+                    "npatlas:NPA033174"
+                ]
+            },
+            {
+                "chem_struct": "CCCCCCC(=O)/C=C\\C(=O)O[C@H]1[C@H](C)O[C@]2(C)[C@@H](OC(C)=O)[C@@H](C)C(=O)O[C@H]2[C@@H]1C",
+                "compound": "botcinin J",
+                "database_id": [
+                    "npatlas:NPA033175"
+                ]
+            },
+            {
+                "chem_struct": "C[C@H]1C(=O)O[C@@](C)(C2O[C@](C)(O)[C@H](O)[C@H]2C)[C@H]1O",
+                "compound": "cinbotolide D",
+                "database_id": [
+                    "npatlas:NPA033177"
+                ]
+            },
+            {
+                "chem_struct": "CCCCC/C=C/C(=O)O[C@@H]1[C@@H](C)[C@@H]2OC(=O)[C@H](C)[C@H](O)[C@@]2(C)O[C@@]1(C)C(C)=O",
+                "compound": "botcinin K",
+                "database_id": [
+                    "npatlas:NPA033176"
+                ]
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "ATZ56105.1",
+                    "name": "Bcbot4",
+                    "product": "Bcbot4",
+                    "tailoring": [
+                        "Monooxygenation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "ATZ56106.1",
+                    "name": "Bcbot1",
+                    "product": "Bcbot1",
+                    "tailoring": [
+                        "Monooxygenation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "ATZ56107.1",
+                    "name": "Bcbot2",
+                    "product": "Bcbot2"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "ATZ56108.1",
+                    "name": "Bcbot3",
+                    "product": "Bcbot3",
+                    "tailoring": [
+                        "Monooxygenation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ATZ56109.1",
+                    "name": "Bcbot5",
+                    "product": "Bcbot5",
+                    "tailoring": [
+                        "Acetylation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Regulation",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "ATZ56110.1",
+                    "name": "Bcbot6",
+                    "product": "Bcbot6"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ATZ56112.1",
+                    "name": "Bcbot7",
+                    "product": "Bcbot7",
+                    "tailoring": [
+                        "Dehydration"
+                    ]
+                }
+            ]
+        },
+        "loci": {
+            "accession": "CP009816.1",
+            "completeness": "complete",
+            "end_coord": 2246000,
+            "evidence": [
+                "Knock-out studies"
+            ],
+            "start_coord": 2216500
+        },
+        "mibig_accession": "BGC0000631",
+        "minimal": false,
+        "ncbi_tax_id": "332648",
+        "organism_name": "Botrytis cinerea B05.10",
+        "publications": [
+            "pubmed:19035644",
+            "pubmed:15986930"
+        ],
+        "status": "active"
+    }
+}

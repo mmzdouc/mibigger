@@ -1,0 +1,73 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Changed chemical structures for compounds: fusatin, 8-oxo-isopentenyladenine, 8-oxo-fusatin, fusatinic acid.",
+                "Added NPAtlas links to compounds: fusatin, 8-oxo-isopentenyladenine, 8-oxo-fusatin, fusatinic acid."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC1=CN(C2=NC=NC3=C2[NH]C=N3)C=C1",
+                "compound": "fusatin",
+                "database_id": [
+                    "npatlas:NPA032864"
+                ]
+            },
+            {
+                "chem_struct": "O=C(O)C1=CN(C2=NC=NC3=C2[NH]C=N3)C=C1",
+                "compound": "fusatinic acid",
+                "database_id": [
+                    "npatlas:NPA032865"
+                ]
+            },
+            {
+                "chem_struct": "CC1=CN(C2=NC=NC3=C2[NH]C(=O)[NH]3)C=C1",
+                "compound": "8-oxo-fusatin",
+                "database_id": [
+                    "npatlas:NPA032866"
+                ]
+            },
+            {
+                "chem_struct": "CC(C)=CCNC1=NC=NC2=C1[NH]C(=O)[NH]2",
+                "compound": "8-oxo-isopentenyladenine",
+                "database_id": [
+                    "npatlas:NPA032867"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "CM003200.1",
+            "completeness": "Unknown",
+            "end_coord": 7253668,
+            "start_coord": 7244202
+        },
+        "mibig_accession": "BGC0002163",
+        "minimal": true,
+        "ncbi_tax_id": "1028729",
+        "organism_name": "Fusarium pseudograminearum CS3096",
+        "publications": [
+            "pubmed:28802024",
+            "pubmed:31279974"
+        ],
+        "status": "active"
+    }
+}

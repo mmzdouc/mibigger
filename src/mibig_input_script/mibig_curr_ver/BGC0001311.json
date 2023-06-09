@@ -1,0 +1,83 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "ZMZXFLPDGFEHMQPX76IB4OQ3"
+            ],
+            "version": "1.3"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Remove negative molecular mass"
+            ],
+            "contributors": [
+                "3UOU7PODQJXIM6BEPUHHRRA5"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "compound": "flavecins",
+                "evidence": [
+                    "Mass spectrometry"
+                ],
+                "mass_spec_ion_type": "[M+H]+"
+            }
+        ],
+        "loci": {
+            "accession": "NZ_ACOK01000098.1",
+            "completeness": "Unknown",
+            "end_coord": 15410,
+            "evidence": [
+                "Heterologous expression"
+            ],
+            "start_coord": 1
+        },
+        "mibig_accession": "BGC0001311",
+        "minimal": false,
+        "ncbi_tax_id": "641112",
+        "organism_name": "Ruminococcus flavefaciens FD-1",
+        "publications": [
+            "pubmed:27028884"
+        ],
+        "ripp": {
+            "cyclic": true,
+            "peptidases": [
+                "RUMFLAFD1_RS0111200"
+            ],
+            "subclass": "Lanthipeptide"
+        },
+        "status": "active"
+    }
+}

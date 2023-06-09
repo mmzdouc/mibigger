@@ -1,0 +1,125 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Retired due to involving multiple contigs",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC(=O)OCC1=C(N2C(SC1)C(NC(=O)CCCC(N)C(O)=O)C2=O)C(O)=O",
+                "compound": "cephalosporin C",
+                "database_id": [
+                    "npatlas:NPA09329",
+                    "pubchem:65536",
+                    "chemspider:58980"
+                ],
+                "mol_mass": 415.1049356319999,
+                "molecular_formula": "C16H21N3O8S"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "id": "ACRE_042780",
+                    "name": "KFH44961.1",
+                    "product": "hypothetical protein"
+                },
+                {
+                    "id": "ACRE_042790",
+                    "name": "KFH44925.1",
+                    "product": "Acetyl-CoA--deacetylcephalosporin C acetyltransferase-like protein"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "JPKY01000002.1",
+            "completeness": "Unknown",
+            "end_coord": 98055,
+            "start_coord": 71175
+        },
+        "mibig_accession": "BGC0000317",
+        "minimal": false,
+        "ncbi_tax_id": "857340",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "KFH48607.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "substrates": [
+                                    {
+                                        "name": "2-aminoadipic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C(C[C@@H](C(=O)O)N)CC(=O)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "substrates": [
+                                    {
+                                        "name": "cysteine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)S"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "substrates": [
+                                    {
+                                        "name": "valine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Acremonium chrysogenum ATCC 11550",
+        "publications": [
+            "pubmed:25291769",
+            "pubmed:23135477"
+        ],
+        "retirement_reasons": [
+            "Entry is spread over multiple contigs"
+        ],
+        "status": "retired"
+    }
+}

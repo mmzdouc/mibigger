@@ -1,0 +1,65 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Fetch compound properties from PubChem",
+                "Fixed DOIs",
+                "Cleaned up synonym list"
+            ],
+            "contributors": [
+                "CUSGWVK3I4TVHJH7NHPFAP2L",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C1C(C2(C(C(OC(C2O1)N3C=NC4=CN=C(N=C43)N)C(C(=O)O)NC(=O)C(CCCN(C(=N)N)O)N)O)O)O",
+                "chem_synonyms": [
+                    "Miharamycin-A"
+                ],
+                "compound": "miharamycin A",
+                "database_id": [
+                    "pubchem:202591"
+                ],
+                "mol_mass": 554.219723,
+                "molecular_formula": "C20H30N10O9"
+            },
+            {
+                "chem_struct": "C1C(C2(C(C(OC(C2O1)N3C=NC4=CN=C(N=C43)N)C(C(=O)O)NC(=O)C(CCCN=C(N)N)N)O)O)O",
+                "compound": "miharamycin B",
+                "database_id": [
+                    "pubchem:202590"
+                ],
+                "mol_mass": 538.224808,
+                "molecular_formula": "C20H30N10O8"
+            }
+        ],
+        "loci": {
+            "accession": "MH534948.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001956",
+        "minimal": true,
+        "ncbi_tax_id": "285483",
+        "organism_name": "Streptomyces miharaensis",
+        "publications": [
+            "doi:10.1021/jacs.9b03021"
+        ],
+        "status": "active"
+    }
+}

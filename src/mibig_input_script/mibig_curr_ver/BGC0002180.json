@@ -1,0 +1,47 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C[C@@H]1[C@H](O1)[C@H]2[C@H](C=CC(=O)O2)OC(=O)C",
+                "compound": "(+)-asperlin",
+                "database_id": [
+                    "npatlas:NPA004517",
+                    "pubchem:9859172",
+                    "chemspider:8034872"
+                ]
+            },
+            {
+                "chem_struct": "OC(/C=C\\C=C/C=C/C)=O",
+                "compound": "(2Z,4Z,6E)-octa-2,4,6-trienoic acid"
+            }
+        ],
+        "loci": {
+            "accession": "BN001306.1",
+            "completeness": "Unknown",
+            "end_coord": 73973,
+            "start_coord": 48801
+        },
+        "mibig_accession": "BGC0002180",
+        "minimal": true,
+        "ncbi_tax_id": "227321",
+        "organism_name": "Aspergillus nidulans FGSC A4",
+        "publications": [
+            "pubmed:30339758"
+        ],
+        "status": "active"
+    }
+}

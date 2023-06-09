@@ -1,0 +1,290 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted",
+                "Added version to NCBI accession",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "KZLBDERD7NZFELVOLOQJLADT",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC1CN2C(=O)[C@H](CC3=CC=CC=C3)NC(=O)[C@@H](C(C)C)NC(=O)[C@H](CC3=C[NH]C4=C3C=CC(Cl)=C4)NC(=O)[C@H](C(C)C(N)=O)NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](CCC(=O)O)NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)C[C@H](N)C(=O)O)C(O)C3=CC=C(O)C=C3)C(C)O)COC(=O)[C@@H]2C1O",
+                "compound": "omnipeptin",
+                "database_id": [
+                    "npatlas:NPA027196"
+                ],
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry"
+                ],
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 1420.545,
+                "molecular_formula": "C64H82ClN13O22"
+            }
+        ],
+        "loci": {
+            "accession": "MN161665.1",
+            "completeness": "complete",
+            "end_coord": 147602,
+            "evidence": [
+                "Heterologous expression"
+            ],
+            "start_coord": 66069
+        },
+        "mibig_accession": "BGC0002078",
+        "minimal": false,
+        "ncbi_tax_id": "77133",
+        "nrp": {
+            "cyclic": true,
+            "nrps_genes": [
+                {
+                    "gene_id": "QEO74981.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Heterologous expression"
+                                ],
+                                "publications": [
+                                    "pubmed:31451725"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "aspartic acid branched",
+                                        "proteinogenic": false,
+                                        "structure": "C([C@@H](C(=O)O)N)C(=O)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Heterologous expression"
+                                ],
+                                "publications": [
+                                    "pubmed:31451725"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "beta-hydroxytyrosine",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC(=CC=C1C([C@@H](C(=O)O)N)O)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Heterologous expression"
+                                ],
+                                "publications": [
+                                    "pubmed:31451725"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Heterologous expression"
+                                ],
+                                "publications": [
+                                    "pubmed:31451725"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glutamic acid",
+                                        "proteinogenic": true,
+                                        "structure": "C(CC(=O)O)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "QEO74982.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Heterologous expression"
+                                ],
+                                "publications": [
+                                    "pubmed:31451725"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "threonine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@H]([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Heterologous expression"
+                                ],
+                                "publications": [
+                                    "pubmed:31451725"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Sequence-based prediction",
+                                    "Heterologous expression"
+                                ],
+                                "publications": [
+                                    "pubmed:31451725"
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Heterologous expression"
+                                ],
+                                "publications": [
+                                    "pubmed:31451725"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "3-methylasparagine",
+                                        "proteinogenic": false,
+                                        "structure": "CC([C@@H](C(=O)O)N)C(=O)N"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Heterologous expression"
+                                ],
+                                "publications": [
+                                    "pubmed:31451725"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "6-chlorotryptophan",
+                                        "proteinogenic": false,
+                                        "structure": "C1=C(Cl)C=C2C(=C1)C(=CN2)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Heterologous expression"
+                                ],
+                                "publications": [
+                                    "pubmed:31451725"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "valine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "QEO74983.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Heterologous expression"
+                                ],
+                                "publications": [
+                                    "pubmed:31451725"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "phenylalanine",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC=C(C=C1)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Heterologous expression"
+                                ],
+                                "publications": [
+                                    "pubmed:31451725"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "3-hydroxy-4-methylproline",
+                                        "proteinogenic": false,
+                                        "structure": "CC1C(O)[C@H](NC1)C(=O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            "subclass": "Cyclic depsipeptide",
+            "thioesterases": [
+                {
+                    "gene": "QEO74983.1",
+                    "thioesterase_type": "Type I"
+                }
+            ]
+        },
+        "organism_name": "uncultured bacterium",
+        "publications": [
+            "pubmed:31451725"
+        ],
+        "status": "active"
+    }
+}

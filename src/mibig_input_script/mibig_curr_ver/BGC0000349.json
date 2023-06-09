@@ -1,0 +1,158 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "siderophore"
+                    }
+                ],
+                "chem_struct": "CC(=O)N[C@H](CCCN(O)C(C)=O)C(=O)N[C@H](CO)C(=O)N(O)CCC[C@@H]1NC(=O)[C@H](CCCN(O)C(C)=O)NC1=O",
+                "compound": "erythrochelin",
+                "database_id": [
+                    "npatlas:NPA09462"
+                ],
+                "mol_mass": 603.286405132,
+                "molecular_formula": "C24H41N7O11"
+            }
+        ],
+        "loci": {
+            "accession": "AM420293.1",
+            "completeness": "Unknown",
+            "end_coord": 3348992,
+            "start_coord": 3324848
+        },
+        "mibig_accession": "BGC0000349",
+        "minimal": false,
+        "ncbi_tax_id": "405948",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "CAM02313.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:20189106"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "N5-acetyl-N5-hydroxyornithine",
+                                        "proteinogenic": false,
+                                        "structure": "CC(=O)N(CCC[C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:20189106"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:20189106"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "N5-hydroxyornithine",
+                                        "proteinogenic": false,
+                                        "structure": "C(C[C@@H](C(=O)O)N)CNO"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:20189106"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "N5-acetyl-N5-hydroxyornithine",
+                                        "proteinogenic": false,
+                                        "structure": "CC(=O)N(CCC[C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Saccharopolyspora erythraea NRRL 2338",
+        "publications": [
+            "pubmed:17369815",
+            "pubmed:20189106"
+        ],
+        "status": "active"
+    }
+}

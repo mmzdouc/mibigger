@@ -1,0 +1,59 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CCCCCCCCCC(Cl)CCCCCc2cc(OC1O[C@H](C)[C@@H](O)[C@H](O)[C@@H]1O)c(CCCCCC(Cl)CCCCCC)c(O)c2C3OC[C@H](O)[C@@H](O)[C@@H]3O",
+                "compound": "bartoloside 2",
+                "mol_mass": 834.481553992,
+                "molecular_formula": "C44H76Cl2O10"
+            },
+            {
+                "chem_struct": "CCCCCCCCCCCCc2c(O)c(C1OC[C@H](O)[C@@H](O)[C@@H]1O)c(CCCCCC(Cl)CCCCCCCCC)cc2OC3O[C@H](C)[C@@H](O)[C@H](O)[C@@H]3O",
+                "compound": "bartoloside 3",
+                "mol_mass": 800.520526344,
+                "molecular_formula": "C44H77ClO10"
+            },
+            {
+                "chem_struct": "CCCCCCCCCC(Cl)CCCCCc2c(Cl)c(OC1O[C@H](C)[C@@H](O)[C@H](O)[C@@H]1O)c(CCCCCC(Cl)CCCCCC)c(O)c2C3OC[C@H](O)[C@@H](O)[C@@H]3O",
+                "compound": "bartoloside 4",
+                "mol_mass": 868.4425816400001,
+                "molecular_formula": "C44H75Cl3O10"
+            }
+        ],
+        "loci": {
+            "accession": "KR059027.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001525",
+        "minimal": true,
+        "ncbi_tax_id": "945782",
+        "organism_name": "Synechocystis salina LEGE 06155",
+        "publications": [
+            "pubmed:26235728"
+        ],
+        "status": "active"
+    }
+}

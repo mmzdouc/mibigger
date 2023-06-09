@@ -1,0 +1,91 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added",
+                "Updated bioactivity data",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11",
+                "Changed chemical structures for compounds: varicidin A.",
+                "Added NPAtlas links to compounds: varicidin A."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide",
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antifungal"
+                    }
+                ],
+                "chem_struct": "CC[C@H](C)[C@H]1C(=O)C(=C(O)[C@@H]2[C@H]3CCCC[C@H]3C=C[C@H]2C(=O)O)C(=O)N1C",
+                "compound": "varicidin A",
+                "database_id": [
+                    "npatlas:NPA032902"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "MK376933.1",
+            "completeness": "Unknown",
+            "end_coord": 25713,
+            "evidence": [
+                "Heterologous expression",
+                "Enzymatic assays"
+            ],
+            "start_coord": 1
+        },
+        "mibig_accession": "BGC0002304",
+        "minimal": false,
+        "ncbi_tax_id": "28576",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "AZZ09613.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:30609896"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "isoleucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC[C@H](C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Talaromyces variabilis",
+        "publications": [
+            "pubmed:30609896",
+            "doi:10.1021/jacs.8b12010"
+        ],
+        "status": "active"
+    }
+}

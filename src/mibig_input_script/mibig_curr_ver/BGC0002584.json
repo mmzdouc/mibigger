@@ -1,0 +1,67 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC[C@H](C)[C@@H](C(=O)OC)NC(=O)C1=C(OC(=N1)C2=CSC(=N2)C3=C(OC(=N3)C4=COC(=N4)[C@H](C(C)C)NC(=O)/C(=N/O)/C(C)C)C)C",
+                "compound": "azolemycin B",
+                "database_id": [
+                    "npatlas:NPA002151"
+                ]
+            },
+            {
+                "chem_struct": "CC[C@H](C)[C@@H](C(=O)OC)NC(=O)C1=C(OC(=N1)C2=CSC(=N2)C3=C(OC(=N3)C4=COC(=N4)[C@H](C(C)C)NC(=O)/C(=N\\O)/C(C)C)C)C",
+                "compound": "azolemycin A",
+                "database_id": [
+                    "npatlas:NPA007457"
+                ]
+            },
+            {
+                "chem_struct": "CC[C@H](C)[C@@H](C(=O)OC)NC(=O)C1=C(OC(=N1)C2=CSC(=N2)C3=C(OC(=N3)C4=COC(=N4)[C@H](C(C)C)NC(=O)/C(=N/OC)/C(C)C)C)C",
+                "compound": "azolemycin D",
+                "database_id": [
+                    "npatlas:NPA012770",
+                    "pubchem:132565390"
+                ]
+            },
+            {
+                "chem_struct": "CC[C@H](C)[C@@H](C(=O)OC)NC(=O)C1=C(OC(=N1)C2=CSC(=N2)C3=C(OC(=N3)C4=COC(=N4)[C@H](C(C)C)NC(=O)/C(=N\\OC)/C(C)C)C)C",
+                "compound": "azolemycin C",
+                "database_id": [
+                    "npatlas:NPA014192"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "KT336319.1",
+            "completeness": "Unknown",
+            "end_coord": 13427,
+            "evidence": [
+                "Gene expression correlated with compound production"
+            ],
+            "start_coord": 1
+        },
+        "mibig_accession": "BGC0002584",
+        "minimal": true,
+        "ncbi_tax_id": "634337",
+        "organism_name": "Streptomyces sp. FXJ1.264",
+        "publications": [
+            "pubmed:28791101",
+            "doi:10.1039/c5sc03021h"
+        ],
+        "status": "active"
+    }
+}

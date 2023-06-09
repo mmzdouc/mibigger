@@ -1,0 +1,46 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C1C(C(=O)OCC(C(=O)OCC(C(=O)O1)NC(=O)C2=C(C(=CC=C2)O)O)NC(=O)C3=C(C(=CC=C3)O)O)NC(=O)C4=C(C(=CC=C4)O)O",
+                "compound": "enterobactin",
+                "database_id": [
+                    "npatlas:NPA018623"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "U00096.3",
+            "completeness": "Unknown",
+            "end_coord": 629713,
+            "evidence": [
+                "Heterologous expression",
+                "Enzymatic assays"
+            ],
+            "start_coord": 619384
+        },
+        "mibig_accession": "BGC0002476",
+        "minimal": true,
+        "ncbi_tax_id": "511145",
+        "organism_name": "Escherichia coli str. K-12 substr. MG1655",
+        "publications": [
+            "pubmed:12655062",
+            "doi:10.1073/pnas.0630018100"
+        ],
+        "status": "active"
+    }
+}

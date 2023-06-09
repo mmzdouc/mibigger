@@ -1,0 +1,73 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated reference publication(s) (MIBiG Annotathon)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "siderophore"
+                    }
+                ],
+                "chem_struct": "CC(=O)N(CCCC[C@@H](C(=O)O)NC(=O)CC(CC(=O)N[C@@H](CCCCN(C(=O)C)O)C(=O)O)(C(=O)O)O)O",
+                "compound": "aerobactin",
+                "mol_mass": 564.2278872119998,
+                "molecular_formula": "C22H36N4O13"
+            }
+        ],
+        "loci": {
+            "accession": "MH015021.1",
+            "completeness": "Unknown",
+            "end_coord": 14029,
+            "start_coord": 1
+        },
+        "mibig_accession": "BGC0001499",
+        "minimal": true,
+        "ncbi_tax_id": "553",
+        "organism_name": "Pantoea ananatis",
+        "publications": [
+            "pubmed:30027301"
+        ],
+        "status": "active"
+    }
+}

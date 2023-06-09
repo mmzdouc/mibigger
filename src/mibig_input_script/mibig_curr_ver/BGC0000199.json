@@ -1,0 +1,683 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "V5OJFE3GCDVKSA62LSGPW5E6"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Removed gene names of 'No gene ID'",
+                "Removed duplicate gene name",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide",
+            "Saccharide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CO[C@H]1[C@H](O[C@H]2C[C@H](O)[C@@H](O)[C@H](C)O2)C2=C(C=C3C(=O)C4=C(C(O)=CC(OC)=C4)C(=O)C3=C2O)C(=O)[C@@]1(C)O",
+                "compound": "arimetamycin B",
+                "database_id": [
+                    "npatlas:NPA018713"
+                ],
+                "mol_mass": 544.1580763359999,
+                "molecular_formula": "C27H28O12"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CO[C@H]1[C@@H](C2=C(C([C@]1(O)C)=O)C=C3C(C4=C(C(C3=C2O)=O)C(O)=CC(OC)=C4)=O)O[C@H]5C[C@@H]([C@H]([C@@H](O5)C)O)OC",
+                "compound": "arimetamycin C",
+                "mol_mass": 558.1737263999999,
+                "molecular_formula": "C28H30O12"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CO[C@H]1[C@H](O[C@H]2C[C@@](C)([C@H](O[C@H]3C[C@](C)(O)[C@@H]([C@H](C)O3)N(C)C)[C@H](C)O2)N(C)C)C2=C(C=C3C(=O)C4=C(C(O)=CC(OC)=C4)C(=O)C3=C2O)C(=O)[C@@]1(C)O",
+                "chem_targets": [
+                    {
+                        "target": "MDR cancer cells"
+                    }
+                ],
+                "compound": "arimetamycin A",
+                "database_id": [
+                    "npatlas:NPA010841"
+                ],
+                "mol_mass": 756.3469397240001,
+                "molecular_formula": "C39H52N2O13"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AHA81971.1",
+                    "product": "putative hydroxylase",
+                    "tailoring": [
+                        "Hydroxylation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AHA82007.1",
+                    "name": "arm1",
+                    "product": "O-methyl transferase",
+                    "tailoring": [
+                        "Demethylation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AHA81972.1",
+                    "name": "arm2",
+                    "product": "Aromatase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AHA81973.1",
+                    "name": "arm3",
+                    "product": "Cyclase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AHA81974.1",
+                    "name": "arm4",
+                    "product": "Cyclase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AHA81975.1",
+                    "name": "arm5",
+                    "product": "Ketoreductase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AHA81976.1",
+                    "name": "arm6",
+                    "product": "Monooygenase",
+                    "tailoring": [
+                        "Monooxygenation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AHA81977.1",
+                    "name": "arm7",
+                    "product": "KSα"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AHA81978.1",
+                    "name": "arm8",
+                    "product": "KSβ (CLF)"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AHA81979.1",
+                    "name": "arm9",
+                    "product": "ACP"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Regulation",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AHA81980.1",
+                    "name": "arm10",
+                    "product": "SARP family transcriptional regulator"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AHA81981.1",
+                    "name": "arm11",
+                    "product": "P450-oxidoreductase",
+                    "tailoring": [
+                        "Unknown"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AHA81982.1",
+                    "name": "arm12",
+                    "product": "Glycosyltransferase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AHA81983.1",
+                    "name": "arm13",
+                    "product": "Unknown"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AHA81984.1",
+                    "name": "arm14",
+                    "product": "O-methyltransferase",
+                    "tailoring": [
+                        "Demethylation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AHA81985.1",
+                    "name": "arm15",
+                    "product": "Oxygenase",
+                    "tailoring": [
+                        "Monooxygenation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AHA81986.1",
+                    "name": "arm16",
+                    "product": "Dehydrogenase",
+                    "tailoring": [
+                        "Oxidation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AHA81987.1",
+                    "name": "arm17",
+                    "product": "P450-oxidoreductase",
+                    "tailoring": [
+                        "Unknown"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Regulation",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AHA81988.1",
+                    "name": "arm19",
+                    "product": "MarR family transcriptional  regulator"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AHA81989.1",
+                    "name": "arm20",
+                    "product": "Unknown"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AHA81990.1",
+                    "name": "arm21",
+                    "product": "Unknown"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AHA81991.1",
+                    "name": "arm22",
+                    "product": "NDP-hexose-C3-methyltransferase",
+                    "tailoring": [
+                        "Glycosylation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AHA81992.1",
+                    "name": "arm23",
+                    "product": "NDP-4-keto-6-deoxyhexose reductase",
+                    "tailoring": [
+                        "Glycosylation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AHA81993.1",
+                    "name": "arm24",
+                    "product": "NDP-hexose-3-aminotransferase",
+                    "tailoring": [
+                        "Glycosylation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AHA81994.1",
+                    "name": "arm25",
+                    "product": "Glycosyltransferase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Transport",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AHA81995.1",
+                    "name": "arm26",
+                    "product": "ABC transporter"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Transport",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AHA81996.1",
+                    "name": "arm27",
+                    "product": "ANC transporter A TP-binding protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AHA81997.1",
+                    "name": "arm28",
+                    "product": "NDP-hexose-3-ketoreductase",
+                    "tailoring": [
+                        "Glycosylation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AHA81998.1",
+                    "name": "arm29",
+                    "product": "NDP-hexose-4-aminotransferase",
+                    "tailoring": [
+                        "Glycosylation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AHA81999.1",
+                    "name": "arm30",
+                    "product": "NDP-hexose-N,N-dimethyltransferase",
+                    "tailoring": [
+                        "Glycosylation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AHA82000.1",
+                    "name": "arm31",
+                    "product": "NDP-hexose-C3-methyltransferase",
+                    "tailoring": [
+                        "Glycosylation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AHA82001.1",
+                    "name": "arm32",
+                    "product": "P450-oxidoreductase",
+                    "tailoring": [
+                        "Unknown"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AHA82002.1",
+                    "name": "arm33",
+                    "product": "Glycosyltransferase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AHA82003.1",
+                    "name": "arm34",
+                    "product": "NDP-hexose-N,N-dimethyltransferase",
+                    "tailoring": [
+                        "Glycosylation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AHA82004.1",
+                    "name": "arm35",
+                    "product": "NDP-hexose-3,5-epimerase",
+                    "tailoring": [
+                        "Glycosylation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AHA82005.1",
+                    "name": "arm36",
+                    "product": "NDP-hexose-2,3-dehydratase",
+                    "tailoring": [
+                        "Glycosylation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AHA82006.1",
+                    "product": "transposase"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "KF040454.1",
+            "completeness": "complete",
+            "evidence": [
+                "Heterologous expression"
+            ]
+        },
+        "mibig_accession": "BGC0000199",
+        "minimal": false,
+        "ncbi_tax_id": "77133",
+        "organism_name": "uncultured bacterium",
+        "polyketide": {
+            "cyclases": [
+                "AHA81972.1",
+                "AHA81973.1",
+                "AHA81974.1",
+                "AHA81975.1"
+            ],
+            "cyclic": true,
+            "ketide_length": 20,
+            "starter_unit": "Acetyl-CoA",
+            "subclasses": [
+                "Tetracycline"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "AHA81975.1",
+                        "AHA81974.1",
+                        "AHA81977.1",
+                        "AHA81978.1",
+                        "AHA81972.1",
+                        "AHA81973.1",
+                        "AHA81979.1"
+                    ],
+                    "subclass": [
+                        "Type II"
+                    ]
+                }
+            ]
+        },
+        "publications": [
+            "pubmed:24038656"
+        ],
+        "saccharide": {
+            "subclass": "hybrid/tailoring"
+        },
+        "status": "active"
+    }
+}

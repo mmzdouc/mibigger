@@ -1,0 +1,73 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Saccharide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "C1[C@H]([C@@H]([C@H]([C@@H]([C@H]1N)O[C@@H]2[C@@H]([C@H]([C@@H]([C@H](O2)CN)O)O)N)O[C@H]3[C@@H]([C@@H]([C@H](O3)CO)O)O)O)N",
+                "compound": "ribostamycin",
+                "database_id": [
+                    "pubchem:33042"
+                ],
+                "mol_mass": 454.2274932879999,
+                "molecular_formula": "C17H34N4O10"
+            }
+        ],
+        "loci": {
+            "accession": "AJ748131.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000713",
+        "minimal": true,
+        "ncbi_tax_id": "80859",
+        "organism_name": "Streptomyces ribosidificus",
+        "publications": [
+            "pubmed:16258246"
+        ],
+        "status": "active"
+    }
+}

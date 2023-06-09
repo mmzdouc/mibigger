@@ -1,0 +1,262 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "I3D2K5SU7JJDS2LEEQM3W3SO"
+            ],
+            "version": "1.2"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Corrected NRP module activity",
+                "Corrected gene identifiers",
+                "Changed amino acid substrates to lower case"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "O=C(NC1C(NC(C)C(N(C)C2C(N(C)C3(C(C)C3)C(OC(C)C(NC(C4=NC5=CC=CC=C5C=C4O)=O)C(NC(C)C(N(C)C(C(S(C)=O)SC2)C(N(C)C6(C(C)C6)C(OC1C)=O)=O)=O)=O)=O)=O)=O)=O)C7=NC8=CC=CC=C8C=C7O",
+                "compound": "retimycin A",
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry"
+                ],
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 1170.4150534120001,
+                "molecular_formula": "C55H66N10O15S2"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "id": "WP_051419346.1",
+                    "name": "rtmR",
+                    "product": "Signal transduction response regulator, C-terminal"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "WP_028678147.1",
+                    "name": "rtmQ",
+                    "product": "MbtH-like protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "WP_028678148.1",
+                    "name": "rtmP",
+                    "product": "non-ribosomal peptide synthetase"
+                },
+                {
+                    "id": "WP_028678150.1",
+                    "name": "rtmN",
+                    "product": "Excinuclease ATPase subunit"
+                },
+                {
+                    "comments": "Derived by automated computational analysis using gene prediction method: Protein Homology.",
+                    "id": "B110_RS27160",
+                    "product": "hypothetical protein"
+                },
+                {
+                    "comments": "Derived by automated computational analysis using gene prediction method: Protein Homology.",
+                    "id": "B110_RS27165",
+                    "product": "hypothetical protein"
+                }
+            ],
+            "extra_genes": [
+                {
+                    "id": "B110_RS27160",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 184825,
+                                "start": 184619
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "B110_RS27165",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 185897,
+                                "start": 185361
+                            }
+                        ],
+                        "strand": 1
+                    }
+                }
+            ]
+        },
+        "loci": {
+            "accession": "NZ_KI911494.1",
+            "completeness": "complete",
+            "end_coord": 218636,
+            "start_coord": 180856
+        },
+        "mibig_accession": "BGC0001228",
+        "minimal": false,
+        "ncbi_tax_id": "1137255",
+        "nrp": {
+            "cyclic": true,
+            "nrps_genes": [
+                {
+                    "gene_id": "WP_080679150.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": true,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "threonine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@H]([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Starter",
+                            "module_number": "1"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "alanine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Unknown",
+                            "module_number": "2"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "WP_028678148.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "cysteine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)S"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "Methylation"
+                            ],
+                            "module_number": "3"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "Norcoronamic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C[C@H]1C[C@]1(C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "Methylation"
+                            ],
+                            "module_number": "4"
+                        }
+                    ]
+                }
+            ],
+            "release_type": [
+                "Macrolactonization"
+            ],
+            "subclass": "Cyclic depsipeptide",
+            "thioesterases": [
+                {
+                    "gene": "B110_RS0125715",
+                    "thioesterase_type": "Unknown"
+                },
+                {
+                    "gene": "B110_RS27195",
+                    "thioesterase_type": "Unknown"
+                }
+            ]
+        },
+        "organism_name": "Salinispora arenicola CNT005",
+        "publications": [
+            "pubmed:25865308"
+        ],
+        "status": "active"
+    }
+}

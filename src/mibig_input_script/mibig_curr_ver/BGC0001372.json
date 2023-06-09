@@ -1,0 +1,51 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.3"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound information"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Terpene"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC1(CCC(OC1)(C)/C=C/C2=C(C3=C(C=C2)NC(=O)C(C3(C4=CC=C(C=C4)OC)O)OC)O)C",
+                "compound": "penigequinolone A",
+                "database_id": [
+                    "pubchem:42602890"
+                ],
+                "mol_mass": 467.230788,
+                "molecular_formula": "C27H33NO6"
+            }
+        ],
+        "loci": {
+            "accession": "KX528209.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001372",
+        "minimal": true,
+        "ncbi_tax_id": "293382",
+        "organism_name": "Penicillium thymicola",
+        "publications": [
+            "pubmed:25859931"
+        ],
+        "status": "active"
+    }
+}

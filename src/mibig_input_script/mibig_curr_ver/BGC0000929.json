@@ -1,0 +1,52 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated reference publication(s) (MIBiG Annotathon)",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CN1N=CN=C2C(=O)N(C)C(=O)N=C12",
+                "compound": "xanthothricin",
+                "database_id": [
+                    "npatlas:NPA04485"
+                ],
+                "mol_mass": 193.059974464,
+                "molecular_formula": "C7H7N5O2"
+            }
+        ],
+        "loci": {
+            "accession": "EF587764.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000929",
+        "minimal": true,
+        "ncbi_tax_id": "337",
+        "organism_name": "Burkholderia glumae",
+        "publications": [
+            "doi:10.1007/s10327-003-0096-1"
+        ],
+        "status": "active"
+    }
+}

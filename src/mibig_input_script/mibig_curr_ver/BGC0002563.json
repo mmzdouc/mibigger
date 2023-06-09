@@ -1,0 +1,52 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: gramibactin B.",
+                "Added NPAtlas links to compounds: gramibactin B."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CCCCCCCC(=O)N[C@H]([C@H](C(=O)O)O)C(=O)N[C@@H]([C@@H](C)O)C(=O)N[C@H]([C@@H](C)O)C(=O)N[C@H](CCC[N+](=NO)[O-])C(=O)NCC(=O)N[C@H](CCC[N+](=NO)[O-])C(=O)O",
+                "compound": "gramibactin B",
+                "database_id": [
+                    "npatlas:NPA024966"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "CP024905.1",
+            "completeness": "Unknown",
+            "end_coord": 2418959,
+            "start_coord": 2376667
+        },
+        "mibig_accession": "BGC0002563",
+        "minimal": true,
+        "ncbi_tax_id": "134536",
+        "organism_name": "Paraburkholderia caledonica",
+        "publications": [
+            "pubmed:31276269",
+            "doi:10.1002/anie.201906326"
+        ],
+        "status": "active"
+    }
+}

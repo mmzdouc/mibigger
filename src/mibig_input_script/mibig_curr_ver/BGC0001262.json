@@ -1,0 +1,52 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.2"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC(C1=CC=CC=C1)C(C(=O)OC(/C=C/C=C\\C=C\\C(=O)O)C2(CO2)C)NC(=O)C",
+                "compound": "AK-toxin I",
+                "database_id": [
+                    "npatlas:NPA08756"
+                ],
+                "mol_mass": 413.18383758399995,
+                "molecular_formula": "C23H27NO6"
+            }
+        ],
+        "loci": {
+            "accession": "AB872924.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001262",
+        "minimal": true,
+        "ncbi_tax_id": "5599",
+        "organism_name": "Alternaria alternata",
+        "publications": [
+            "pubmed:24611558",
+            "pubmed:10975654"
+        ],
+        "status": "active"
+    }
+}

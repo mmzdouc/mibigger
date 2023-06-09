@@ -1,0 +1,241 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "LZPDLESQBUEYNBCINTBVVSSE"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Cleaned up synonym list",
+                "Fetch compound properties from PubChem",
+                "Updated bioactivity data",
+                "Updated NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Saccharide",
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "C[C@H]1C(=O)N[C@H](C(=O)O[C@@H](C(=O)NC(C(=O)O[C@H](C(=O)N[C@H](C(=O)O[C@@H](C(=O)N[C@@H](C(=O)O[C@H](C(=O)N[C@H](C(=O)O[C@@H](C(=O)N[C@@H](C(=O)O1)C(C)C)C(C)C)C(C)C)C)C(C)C)C(C)C)C(C)C)C)C(C)C)C(C)C)C(C)C",
+                "compound": "valinomycin",
+                "database_id": [
+                    "pubchem:441139"
+                ],
+                "evidence": [
+                    "Mass spectrometry"
+                ],
+                "mol_mass": 1110.63116,
+                "molecular_formula": "C54H90N6O18"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CC1C(=O)NC(C(=O)OC(C(=O)NC(C(=O)OC(C(=O)NC(C(=O)OC(C(=O)NC(C(=O)O1)C(C)C)C(C)C)C(C)C)C)C(C)C)C(C)C)C(C)C",
+                "chem_synonyms": [
+                    "octa-valinomycin"
+                ],
+                "compound": "montanastatin",
+                "database_id": [
+                    "pubchem:193490"
+                ],
+                "evidence": [
+                    "Mass spectrometry"
+                ],
+                "mol_mass": 740.420773,
+                "molecular_formula": "C36H60N4O12"
+            }
+        ],
+        "loci": {
+            "accession": "RCOL01000001.1",
+            "completeness": "complete",
+            "end_coord": 7645900,
+            "evidence": [
+                "Heterologous expression"
+            ],
+            "start_coord": 7605327
+        },
+        "mibig_accession": "BGC0001846",
+        "minimal": false,
+        "ncbi_tax_id": "2305222",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "RLV71193.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "2R-hydroxyisovaleric acid",
+                                        "proteinogenic": false,
+                                        "structure": "CC(C)[C@H](C(=O)O)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "module_number": "0",
+                            "non_canonical": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "iterated": false,
+                                "non_elongating": false,
+                                "skipped": false
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": true,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "valine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "1",
+                            "non_canonical": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "iterated": false,
+                                "non_elongating": false,
+                                "skipped": false
+                            }
+                        },
+                        {
+                            "active": true,
+                            "c_dom_subtype": "DCL",
+                            "module_number": "2",
+                            "non_canonical": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "iterated": false,
+                                "non_elongating": false,
+                                "skipped": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "RLV71192.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "lactic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C[C@@H](C(=O)O)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "module_number": "2",
+                            "non_canonical": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "iterated": false,
+                                "non_elongating": false,
+                                "skipped": false
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "valine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "3",
+                            "non_canonical": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "iterated": false,
+                                "non_elongating": false,
+                                "skipped": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Streptomyces sp. CBMAI 2042",
+        "publications": [
+            "doi:10.1002/slct.201900922"
+        ],
+        "saccharide": {
+            "subclass": "hybrid/tailoring"
+        },
+        "status": "active"
+    },
+    "comments": "This gene cluster is capable to biosynthesize valinomycin, montanastatin and other cyclodepsipeptides derivatives."
+}

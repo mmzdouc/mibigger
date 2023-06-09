@@ -1,0 +1,69 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.3"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "compound": "bicereucin"
+            }
+        ],
+        "loci": {
+            "accession": "ADFM01000043.1",
+            "completeness": "Unknown",
+            "end_coord": 70655,
+            "start_coord": 59854
+        },
+        "mibig_accession": "BGC0001407",
+        "minimal": true,
+        "ncbi_tax_id": "699184",
+        "organism_name": "Bacillus cereus SJ1",
+        "publications": [
+            "pubmed:27074593"
+        ],
+        "status": "active"
+    }
+}

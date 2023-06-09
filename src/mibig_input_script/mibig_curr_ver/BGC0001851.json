@@ -1,0 +1,329 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "K5UBFDWZSYOHS4HI42NVQMJK"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Fix missing gene identifiers",
+                "Removed gene names of 'No gene ID'",
+                "Removed gene annotations with no information",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide",
+            "Saccharide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "compound": "komodoquinone B",
+                "database_id": [
+                    "chemspider:8196720"
+                ],
+                "evidence": [
+                    "NMR"
+                ]
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "id": "IO28_RS0104710",
+                    "product": "3-ketoreductase"
+                },
+                {
+                    "id": "WP_031146979.1",
+                    "product": "aminotransferase"
+                },
+                {
+                    "id": "WP_031146981.1",
+                    "product": "aminomethylase"
+                },
+                {
+                    "id": "WP_031146983.1",
+                    "product": "2nd and 3rd ring cyclase"
+                },
+                {
+                    "id": "IO28_RS0104735",
+                    "product": "4-ketoreductase"
+                },
+                {
+                    "id": "WP_031146990.1",
+                    "product": "acyl carrier protein"
+                },
+                {
+                    "id": "WP_031146991.1",
+                    "product": "aminomethylase"
+                },
+                {
+                    "id": "WP_031146993.1",
+                    "product": "3-methyltransferase"
+                },
+                {
+                    "id": "WP_031146995.1",
+                    "product": "glycosyltransferase",
+                    "tailoring": [
+                        "Glycosylation"
+                    ]
+                },
+                {
+                    "id": "WP_031146996.1",
+                    "product": "oxidase"
+                },
+                {
+                    "id": "WP_031146998.1",
+                    "product": "glycosyltransferase",
+                    "tailoring": [
+                        "Glycosylation"
+                    ]
+                },
+                {
+                    "id": "WP_031147000.1",
+                    "product": "4,6-dehydratase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Activity assay"
+                            ]
+                        }
+                    ],
+                    "id": "IO28_RS0104785",
+                    "product": "10-decarboxylase",
+                    "tailoring": [
+                        "Decarboxylation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Activity assay"
+                            ]
+                        }
+                    ],
+                    "id": "WP_031147007.1",
+                    "product": "15-methylesterase",
+                    "tailoring": [
+                        "Demethylation"
+                    ]
+                },
+                {
+                    "id": "WP_031147011.1",
+                    "product": "4th ring cyclase"
+                },
+                {
+                    "id": "WP_031147013.1",
+                    "product": "monooxygenase"
+                },
+                {
+                    "id": "WP_031147015.1",
+                    "product": "ketosynthase α-subunit"
+                },
+                {
+                    "id": "WP_031147017.1",
+                    "product": "ketosynthase β-subunit"
+                },
+                {
+                    "id": "WP_031147019.1",
+                    "product": "9-ketoreductase"
+                },
+                {
+                    "id": "WP_031147021.1",
+                    "product": "aromatase"
+                },
+                {
+                    "id": "WP_031147023.1",
+                    "product": "glycosyltransferase",
+                    "tailoring": [
+                        "Glycosylation"
+                    ]
+                },
+                {
+                    "id": "WP_051892705.1",
+                    "product": "7-ketoreductase"
+                },
+                {
+                    "id": "WP_031147027.1",
+                    "product": "P450-like",
+                    "tailoring": [
+                        "Glycosylation"
+                    ]
+                },
+                {
+                    "id": "WP_030957368.1",
+                    "product": "ABC transporter"
+                },
+                {
+                    "id": "WP_031147034.1",
+                    "product": "glycosyltransferase",
+                    "tailoring": [
+                        "Glycosylation"
+                    ]
+                },
+                {
+                    "id": "WP_031147036.1",
+                    "product": "11-hydroxylase",
+                    "tailoring": [
+                        "Glycosylation"
+                    ]
+                },
+                {
+                    "id": "WP_031147038.1",
+                    "product": " 2-oxoglutarate and non-heme iron family"
+                },
+                {
+                    "id": "WP_051892707.1",
+                    "product": "cytocrome P450-like",
+                    "tailoring": [
+                        "Glycosylation"
+                    ]
+                },
+                {
+                    "id": "WP_031147042.1",
+                    "product": "glycosyltransferase",
+                    "tailoring": [
+                        "Glycosylation"
+                    ]
+                },
+                {
+                    "id": "WP_031147044.1",
+                    "product": "putative O-methyltransferase"
+                },
+                {
+                    "id": "WP_051892708.1",
+                    "product": "DUF418"
+                },
+                {
+                    "id": "WP_031147048.1",
+                    "product": "15-methyltransferase"
+                },
+                {
+                    "id": "WP_158714712.1",
+                    "product": "3,5-epimerase"
+                },
+                {
+                    "id": "IO28_RS0104905",
+                    "product": "2,3-dehydratase"
+                },
+                {
+                    "id": "IO28_RS0104910",
+                    "product": "SARP family"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "NZ_JNZG01000006.1",
+            "completeness": "complete",
+            "end_coord": 230323,
+            "evidence": [
+                "Enzymatic assays"
+            ],
+            "start_coord": 186424
+        },
+        "mibig_accession": "BGC0001851",
+        "minimal": false,
+        "ncbi_tax_id": "285574",
+        "organism_name": "Streptomyces erythrochromogenes",
+        "polyketide": {
+            "cyclases": [
+                "WP_031147021.1",
+                "WP_031146983.1",
+                "WP_031147011.1"
+            ],
+            "cyclic": true,
+            "ketide_length": 20,
+            "starter_unit": "Acetyl-CoA",
+            "subclasses": [
+                "Anthracycline"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "WP_031147015.1",
+                        "WP_031147011.1",
+                        "WP_031147021.1",
+                        "WP_031146983.1"
+                    ],
+                    "subclass": [
+                        "Type II"
+                    ]
+                }
+            ]
+        },
+        "publications": [
+            "pubmed:30995392"
+        ],
+        "saccharide": {
+            "glycosyltransferases": [
+                {
+                    "evidence": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "WP_031146998.1",
+                    "specificity": "Unknown"
+                },
+                {
+                    "evidence": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "WP_031147023.1",
+                    "specificity": "Unknown"
+                },
+                {
+                    "evidence": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "WP_031147027.1",
+                    "specificity": "Unknown"
+                },
+                {
+                    "evidence": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "WP_031147034.1",
+                    "specificity": "Unknown"
+                },
+                {
+                    "evidence": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "WP_031146995.1",
+                    "specificity": "Unknown"
+                }
+            ],
+            "subclass": "hybrid/tailoring"
+        },
+        "status": "active"
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Terpene"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "[H][C@]12CC3=C(NC4=CC=C([C@H](O)C5OC5(C)C)C(CC=C(C)C)=C34)[C@]1(C)[C@@]1(C)CCC(=O)C(C)(C)[C@]1(O)CC2",
+                "compound": "sespendole",
+                "database_id": [
+                    "npatlas:NPA09868"
+                ],
+                "mol_mass": 519.33485892,
+                "molecular_formula": "C33H45NO4"
+            }
+        ],
+        "loci": {
+            "accession": "LC380446.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001775",
+        "minimal": true,
+        "ncbi_tax_id": "1293529",
+        "organism_name": "Cordana terrestris",
+        "publications": [
+            "pubmed:29718548"
+        ],
+        "status": "active"
+    }
+}

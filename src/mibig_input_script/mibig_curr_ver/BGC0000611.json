@@ -1,0 +1,80 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CC=C1C2=NC(CS2)C(=O)NC(C3=NC(=CS3)C(=O)NC4C(OC(=O)C5=NC6=C(C=CC(C6O)NC(C(=O)NC(=C)C(=O)NC(=C)C(=O)NC(C(=O)NC7(CCC(=NC7C8=CSC4=N8)C9=NC(=CS9)C(=O)NC(=C)C(=O)NC(=C)C(=O)N)C2=NC(=CS2)C(=O)NC(C(=O)N1)C(C)O)C)C(C)C)C(=C5)C(C)O)C)C(C)(C(C)O)O",
+                "compound": "siomycin A",
+                "database_id": [
+                    "pubchem:16130049"
+                ],
+                "mol_mass": 1647.4610517519989,
+                "molecular_formula": "C71H81N19O18S5"
+            }
+        ],
+        "loci": {
+            "accession": "FJ436355.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000611",
+        "minimal": true,
+        "ncbi_tax_id": "67364",
+        "organism_name": "Streptomyces sioyaensis",
+        "publications": [
+            "pubmed:19246004"
+        ],
+        "ripp": {
+            "subclass": "Thiopeptide"
+        },
+        "status": "active"
+    }
+}

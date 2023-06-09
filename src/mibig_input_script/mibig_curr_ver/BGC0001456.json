@@ -1,0 +1,179 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated reference publication(s) (MIBiG Annotathon)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Terpene"
+        ],
+        "compounds": [
+            {
+                "compound": "isorenieratene"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "id": "crtaV",
+                    "product": "2Fe-2S ferredoxin"
+                },
+                {
+                    "id": "crtaB",
+                    "product": "phytoene_/_squalene_synthase"
+                },
+                {
+                    "id": "crtaI",
+                    "product": "phytoene desaturase"
+                },
+                {
+                    "id": "crtaE",
+                    "product": "geranylgeranyl pyrophosphate synthase"
+                },
+                {
+                    "id": "crtaQ",
+                    "product": "RNA_polymerase,_sigma-24_subunit"
+                },
+                {
+                    "id": "crtaY",
+                    "product": "lycopene_cyclase"
+                },
+                {
+                    "id": "crtaT",
+                    "product": "methyltransferase"
+                },
+                {
+                    "id": "crtaU",
+                    "product": "isorenieratene synthase"
+                }
+            ],
+            "extra_genes": [
+                {
+                    "id": "crtaV",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 1017,
+                                "start": 1
+                            }
+                        ],
+                        "strand": -1
+                    }
+                },
+                {
+                    "id": "crtaB",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 2045,
+                                "start": 1014
+                            }
+                        ],
+                        "strand": -1
+                    }
+                },
+                {
+                    "id": "crtaI",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 3586,
+                                "start": 2042
+                            }
+                        ],
+                        "strand": -1
+                    }
+                },
+                {
+                    "id": "crtaE",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 4974,
+                                "start": 3583
+                            }
+                        ],
+                        "strand": -1
+                    }
+                },
+                {
+                    "id": "crtaQ",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 5930,
+                                "start": 5310
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "crtaY",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 7362,
+                                "start": 6172
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "crtaT",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 8152,
+                                "start": 7418
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "crtaU",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 9777,
+                                "start": 8149
+                            }
+                        ],
+                        "strand": 1
+                    }
+                }
+            ]
+        },
+        "loci": {
+            "accession": "LT989886.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001456",
+        "minimal": true,
+        "ncbi_tax_id": "41951",
+        "organism_name": "Streptomyces argillaceus",
+        "publications": [
+            "pubmed:29795673"
+        ],
+        "status": "active"
+    }
+}

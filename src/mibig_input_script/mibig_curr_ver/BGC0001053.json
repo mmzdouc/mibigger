@@ -1,0 +1,96 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CCC(C)C(NC(=O)C1CCCCN1C)C(=O)N(COC(=O)CC(C)C)C(CC(OC(C)=O)C1=NC(=CS1)C(=O)NC(CC(C)C(O)=O)CC1=CC=C(O)C=C1)C(C)C",
+                "compound": "tubulysin A",
+                "database_id": [
+                    "npatlas:NPA016692"
+                ],
+                "mol_mass": 843.4452142800001,
+                "molecular_formula": "C43H65N5O10S"
+            }
+        ],
+        "loci": {
+            "accession": "AJ620477.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001053",
+        "minimal": false,
+        "ncbi_tax_id": "38",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "CAF05647.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "substrates": [
+                                    {
+                                        "name": "pipecolic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C1CCN[C@@H](C1)C(=O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Archangium disciforme",
+        "publications": [
+            "pubmed:15324808"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,123 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Add note about possible overlap with BGC0000416"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CCC(C)C(=O)C(=O)NCCC1=CNC2=CC=CC=C12",
+                "compound": "nematophin",
+                "mol_mass": 272.15247788,
+                "molecular_formula": "C16H20N2O2"
+            }
+        ],
+        "loci": {
+            "accession": "NC_014228.1",
+            "completeness": "Unknown",
+            "end_coord": 2184146,
+            "start_coord": 2151233
+        },
+        "mibig_accession": "BGC0001692",
+        "minimal": false,
+        "ncbi_tax_id": "406817",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "WP_013184317.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "substrates": [
+                                    {
+                                        "name": "leucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "WP_013184318.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "substrates": [
+                                    {
+                                        "name": "valine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "WP_013184319.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "substrates": [
+                                    {
+                                        "name": "valine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Xenorhabdus nematophila ATCC 19061",
+        "publications": [
+            "pubmed:28134534"
+        ],
+        "see_also": [
+            "BGC0000416"
+        ],
+        "status": "active"
+    },
+    "comments": "Overlaps, and possibly shares genes with rhabdopeptides (BGC0000416)."
+}

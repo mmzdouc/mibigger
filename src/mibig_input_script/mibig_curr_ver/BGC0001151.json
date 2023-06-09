@@ -1,0 +1,119 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "SDHXYXULZ6ZTMHSITTYHRAHA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Update compound structure (SMILES) for valclavam",
+                "Linked new PubChem id for valclavam (pubchem:441132)",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "5UL74VURKJ25VSPPPO3H2NYB",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "inhibitor"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "Unknown"
+                    }
+                ],
+                "chem_struct": "CC(C)[C@@H](C(=O)NC(C(C[C@H]1CN2[C@@H](O1)CC2=O)O)C(=O)O)N",
+                "chem_targets": [
+                    {
+                        "target": "methionine biosynthesis"
+                    }
+                ],
+                "compound": "valclavam",
+                "database_id": [
+                    "pubchem:126919",
+                    "pubchem:441132"
+                ],
+                "mol_mass": 329.158685456,
+                "molecular_formula": "C14H23N3O6"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    }
+                ],
+                "chem_struct": "OCC[C@H]1CN2[C@H](CC2=O)O1",
+                "compound": "(-)-2-(2-hydroxyethyl)clavam",
+                "database_id": [
+                    "npatlas:NPA01279"
+                ],
+                "mol_mass": 157.073893212,
+                "molecular_formula": "C7H11NO3"
+            }
+        ],
+        "loci": {
+            "accession": "JN705801.1",
+            "completeness": "Unknown",
+            "end_coord": 35367,
+            "evidence": [
+                "Knock-out studies"
+            ],
+            "start_coord": 15432
+        },
+        "mibig_accession": "BGC0001151",
+        "minimal": false,
+        "ncbi_tax_id": "1890",
+        "organism_name": "Streptomyces antibioticus",
+        "other": {
+            "subclass": "Non-NRP beta-lactam"
+        },
+        "publications": [
+            "pubmed:22435762"
+        ],
+        "status": "active"
+    }
+}

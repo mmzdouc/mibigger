@@ -1,0 +1,139 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AK6U5FV25F7Z3GQ43DVTSAVK"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Corrected NRP module activity",
+                "Updated bioactivity data",
+                "Updated NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "UV protective"
+                    }
+                ],
+                "chem_struct": "O[C@](CC(NCC(O)=O)=C/1OC)(CO)CC1=N/[C@@H](CO)C(O)=O",
+                "compound": "shinorine",
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 332.12196559999995,
+                "molecular_formula": "C13H20N2O8"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antioxidant"
+                    },
+                    {
+                        "activity": "UV protective"
+                    }
+                ],
+                "chem_struct": "OC1=C(OC)C(C[C@](O)(CO)C1)=O",
+                "compound": "4-deoxygadusol",
+                "mass_spec_ion_type": "[M+Na]+",
+                "mol_mass": 188.068473484,
+                "molecular_formula": "C8H12O5"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "UV protective"
+                    }
+                ],
+                "chem_struct": "O=C1C(OC)=C(NCC(O)=O)C[C@@](O)(CO)C1",
+                "compound": "mycosporine glycine",
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 245.0899372,
+                "molecular_formula": "C10H15NO6"
+            }
+        ],
+        "loci": {
+            "accession": "CP000117.1",
+            "completeness": "complete",
+            "end_coord": 4805360,
+            "evidence": [
+                "Enzymatic assays",
+                "Heterologous expression"
+            ],
+            "start_coord": 4798900
+        },
+        "mibig_accession": "BGC0000427",
+        "minimal": false,
+        "ncbi_tax_id": "240292",
+        "nrp": {
+            "cyclic": false,
+            "nrps_genes": [
+                {
+                    "gene_id": "ABA23460.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Activity assay"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "module_number": "0"
+                        }
+                    ]
+                }
+            ],
+            "thioesterases": [
+                {
+                    "gene": "Ava_3855",
+                    "thioesterase_type": "Type I"
+                }
+            ]
+        },
+        "organism_name": "Trichormus variabilis ATCC 29413",
+        "publications": [
+            "pubmed:20813918"
+        ],
+        "status": "active"
+    }
+}

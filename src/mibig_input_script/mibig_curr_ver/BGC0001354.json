@@ -1,0 +1,43 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC[C@@]1(SC(=O)C(CC(N)=O)=C1O)\\C=C(/C)C=C",
+                "compound": "U-68204",
+                "mol_mass": 267.092914404,
+                "molecular_formula": "C13H17NO3S"
+            }
+        ],
+        "loci": {
+            "accession": "LN879418.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001354",
+        "minimal": true,
+        "ncbi_tax_id": "1718436",
+        "organism_name": "Streptomyces thiolactonus",
+        "publications": [
+            "doi:10.1039/C5SC03059e"
+        ],
+        "retirement_reasons": [
+            "Entry is spread over multiple contigs"
+        ],
+        "status": "retired"
+    },
+    "comments": "Sulfur insertion is performed by stuJ/K/S genes located on LN879419.1"
+}

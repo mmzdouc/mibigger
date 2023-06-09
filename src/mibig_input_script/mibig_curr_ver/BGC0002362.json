@@ -1,0 +1,91 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11",
+                "Added chemical structures for compounds: loseolamycin A1, loseolamycin A2.",
+                "Added NPAtlas links to compounds: loseolamycin A1, loseolamycin A2."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "CC(C)(O)CCCCCCCCCCCCC1=CC(O)=CC(O)=C1",
+                "chem_targets": [
+                    {
+                        "publications": [
+                            "pubmed:33050154"
+                        ],
+                        "target": "Unknown"
+                    }
+                ],
+                "compound": "loseolamycin A1",
+                "database_id": [
+                    "npatlas:NPA033123"
+                ]
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "CC(O)CCCCCCCCCCCCCC1=CC(O)=CC(O)=C1",
+                "chem_targets": [
+                    {
+                        "publications": [
+                            "pubmed:33050154"
+                        ],
+                        "target": "Unknown"
+                    }
+                ],
+                "compound": "loseolamycin A2",
+                "database_id": [
+                    "npatlas:NPA033124"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "MT904273.1",
+            "completeness": "Unknown",
+            "end_coord": 24294,
+            "evidence": [
+                "Heterologous expression",
+                "Gene expression correlated with compound production"
+            ],
+            "start_coord": 1
+        },
+        "mibig_accession": "BGC0002362",
+        "minimal": true,
+        "ncbi_tax_id": "230091",
+        "organism_name": "Micromonospora endolithica",
+        "publications": [
+            "pubmed:33050154",
+            "doi:10.3390/molecules25204594"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,75 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "siderophore"
+                    }
+                ],
+                "chem_struct": "CC(C)(C(O)C1CSC(N1)C1CSC(=N1)C1=CC=CC=C1O)C1=NC(C)(CS1)C(O)=O",
+                "compound": "yersiniabactin",
+                "database_id": [
+                    "npatlas:NPA015861",
+                    "pubchem:5462519"
+                ],
+                "mol_mass": 481.116369344,
+                "molecular_formula": "C21H27N3O4S3"
+            }
+        ],
+        "loci": {
+            "accession": "Y12527.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000467",
+        "minimal": true,
+        "ncbi_tax_id": "630",
+        "organism_name": "Yersinia enterocolitica",
+        "publications": [
+            "pubmed:9457855"
+        ],
+        "status": "active"
+    }
+}

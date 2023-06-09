@@ -1,0 +1,78 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    }
+                ],
+                "chem_struct": "CC(N)C(=O)NC(C[C@H]1CCC(=O)[C@@H]2O[C@H]12)C(O)=O",
+                "compound": "bacilysin",
+                "database_id": [
+                    "npatlas:NPA015870",
+                    "pubchem:160175"
+                ],
+                "mol_mass": 270.12157167600003,
+                "molecular_formula": "C12H18N2O5"
+            }
+        ],
+        "loci": {
+            "accession": "GQ889493.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000888",
+        "minimal": true,
+        "ncbi_tax_id": "679622",
+        "organism_name": "Bacillus sp. CS93",
+        "publications": [
+            "pubmed:20070370"
+        ],
+        "status": "active"
+    }
+}

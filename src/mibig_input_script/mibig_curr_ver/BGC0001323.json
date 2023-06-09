@@ -1,0 +1,60 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.3"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Terpene"
+        ],
+        "compounds": [
+            {
+                "compound": "monoterpenes-diterpenes"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "comments": "terpene synthase 21",
+                    "id": "pseudo26516__28959"
+                },
+                {
+                    "comments": "cis-prenyl transferase 2",
+                    "id": "pseudo<30240_31281"
+                },
+                {
+                    "comments": "alcohol acyltransferase 1",
+                    "id": "pseudo74496_74792"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "KC807997.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001323",
+        "minimal": true,
+        "ncbi_tax_id": "28526",
+        "organism_name": "Solanum pennellii",
+        "publications": [
+            "pubmed:23757397"
+        ],
+        "status": "active"
+    }
+}

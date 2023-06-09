@@ -1,0 +1,55 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Changed chemical structures for compounds: flavoglaucin.",
+                "Added NPAtlas links to compounds: flavoglaucin."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CCCCCCCC1=C(O)C=C(CC=C(C)C)C(O)=C1C=O",
+                "compound": "flavoglaucin",
+                "database_id": [
+                    "pubchem:119037",
+                    "npatlas:NPA033320"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "KK088422.1",
+            "completeness": "Unknown",
+            "end_coord": 243870,
+            "evidence": [
+                "Heterologous expression"
+            ],
+            "start_coord": 222933
+        },
+        "mibig_accession": "BGC0002234",
+        "minimal": true,
+        "ncbi_tax_id": "1388766",
+        "organism_name": "Aspergillus ruber CBS 135680",
+        "publications": [
+            "pubmed:32134669"
+        ],
+        "status": "active"
+    }
+}

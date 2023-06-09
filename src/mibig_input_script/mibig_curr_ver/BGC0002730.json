@@ -1,0 +1,71 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC(=C[C@H]1[C@]2(C=C3N1C(=O)[C@@H]4CCCN4C3=O)C5=CC=CC=C5NC2=O)C",
+                "compound": "spirotryprostatin G",
+                "database_id": [
+                    "pubchem:9928968",
+                    "chemspider:81131458"
+                ]
+            },
+            {
+                "chem_struct": "CC(=C[C@H]1C2=C([C@@H]([C@]3(N1C(=O)[C@@H]4CCCN4C3=O)O)OC)C5=C(N2)C=C(C=C5)OC)C",
+                "compound": "cyclotryprostatin B",
+                "database_id": [
+                    "npatlas:NPA011596"
+                ]
+            },
+            {
+                "chem_struct": "COC1=CC2=C(C=C1)C1=C([NH]2)[C@H](C=C(C)C)N2C(=O)[C@]3(O)CCCN3C(=O)[C@@]2(O)[C@H]1OC",
+                "compound": "cyclotryprostatin F",
+                "database_id": [
+                    "npatlas:NPA026623"
+                ]
+            },
+            {
+                "chem_struct": "CO[C@H]1C2=C([NH]C3=CC=CC=C23)[C@H](C=C(C)C)N2C(=O)[C@@H]3CCCN3C(=O)[C@@]12O",
+                "compound": "cyclotryprostatin G",
+                "database_id": [
+                    "npatlas:NPA026624"
+                ]
+            },
+            {
+                "chem_struct": "C/C(C)=C/[C@H]1C2=C(C3=C(C=C(OC)C=C3)N2)[C@H](O)[C@@]4(O)N1C([C@@H]5CCCN5C4=O)=O",
+                "compound": "spirocyclic diketopiperazine alkaloid"
+            }
+        ],
+        "loci": {
+            "accession": "SSWP01000056.1",
+            "completeness": "Unknown",
+            "end_coord": 47500,
+            "start_coord": 15500
+        },
+        "mibig_accession": "BGC0002730",
+        "minimal": true,
+        "ncbi_tax_id": "104259",
+        "organism_name": "Penicillium brasilianum",
+        "publications": [
+            "pubmed:31480589",
+            "doi:10.3390/md17090514"
+        ],
+        "retirement_reasons": [
+            "Missing gene annotations"
+        ],
+        "status": "retired"
+    }
+}

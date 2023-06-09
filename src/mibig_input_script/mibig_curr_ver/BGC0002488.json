@@ -1,0 +1,51 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: bacillopaline.",
+                "Added NPAtlas links to compounds: bacillopaline."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "O=C(O)CCC(NC(CCNC(CC1=CN=C[NH]1)C(=O)O)C(=O)O)C(=O)O",
+                "compound": "bacillopaline",
+                "database_id": [
+                    "npatlas:NPA032932"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "CP002869.1",
+            "completeness": "Unknown",
+            "end_coord": 1986533,
+            "start_coord": 1977285
+        },
+        "mibig_accession": "BGC0002488",
+        "minimal": true,
+        "ncbi_tax_id": "1036673",
+        "organism_name": "Paenibacillus mucilaginosus KNP414",
+        "publications": [
+            "pubmed:32817386"
+        ],
+        "status": "active"
+    }
+}

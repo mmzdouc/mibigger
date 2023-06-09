@@ -1,0 +1,415 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "FICEQDRJCNKWHHGNCRVDDP5D"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Update compound information for Fengycin"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Cleaned up synonym list",
+                "Linked new NPAtlas id for fengycin (npatlas:NPA020186)",
+                "Corrected NRP module activity",
+                "Corrected gene identifiers",
+                "Updated bioactivity data",
+                "Updated NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA",
+                "5UL74VURKJ25VSPPPO3H2NYB"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "surfactant"
+                    }
+                ],
+                "chem_struct": "CCCCCCCCCCCCCC(CC(=O)NC(CCC(=O)O)C(=O)NC(CCCN)C(=O)NC1CC2=CC=C(C=C2)OC(=O)C(NC(=O)C(NC(=O)C(NC(=O)C3CCCN3C(=O)C(NC(=O)C(NC(=O)C(NC1=O)C(C)O)CCC(=O)O)C)CCC(=O)N)CC4=CC=C(C=C4)O)C(C)CC)O",
+                "chem_synonyms": [
+                    "Fengycin C",
+                    "Fengymycin"
+                ],
+                "compound": "fengycin",
+                "database_id": [
+                    "pubchem:443591",
+                    "npatlas:NPA020186"
+                ],
+                "mol_mass": 1462.795934,
+                "molecular_formula": "C72H110N12O20"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "ABS74209.1",
+                    "name": "fenA",
+                    "product": "fengycin synthetase A"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ABS74208.1",
+                    "name": "fenB",
+                    "product": "fengycin synthetase B"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ABS74207.1",
+                    "name": "fenC",
+                    "product": "fengycin synthetase C"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ABS74206.1",
+                    "name": "fenD",
+                    "product": "fengycin synthetase D"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ABS74205.1",
+                    "name": "fenE",
+                    "product": "fengycin synthetase E"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "CP000560.1",
+            "completeness": "complete",
+            "end_coord": 1970953,
+            "evidence": [
+                "Knock-out studies"
+            ],
+            "start_coord": 1921412
+        },
+        "mibig_accession": "BGC0001095",
+        "minimal": false,
+        "ncbi_tax_id": "326423",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "ABS74209.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "doi:10.1128/JB.186.4.1084-1096.2004"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glutamic acid",
+                                        "proteinogenic": true,
+                                        "structure": "C(CC(=O)O)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "1"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": true,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "doi:10.1128/JB.186.4.1084-1096.2004"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "ornithine",
+                                        "proteinogenic": false,
+                                        "structure": "C(C[C@@H](C(=O)O)N)CN"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "DCL",
+                            "module_number": "2"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "ABS74208.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "doi:10.1007/s00216-015-8486-8",
+                                    "doi:10.1128/JB.186.4.1084-1096.2004"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "tyrosine",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC(=CC=C1C[C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "3"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": true,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "doi:10.1007/s00216-015-8486-8",
+                                    "doi:10.1128/JB.186.4.1084-1096.2004"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "threonine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@H]([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "DCL",
+                            "module_number": "4"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "ABS74207.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "doi:10.1007/s00216-015-8486-8",
+                                    "doi:10.1128/JB.186.4.1084-1096.2004"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glutamic acid",
+                                        "proteinogenic": true,
+                                        "structure": "C(CC(=O)O)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "5"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": true,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "doi:10.1007/s00216-015-8486-8",
+                                    "doi:10.1128/JB.186.4.1084-1096.2004"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "valine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)[C@@H](C(=O)O)N"
+                                    },
+                                    {
+                                        "name": "alanine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "DCL",
+                            "module_number": "6"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "ABS74206.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "doi:10.1007/s00216-015-8486-8",
+                                    "doi:10.1128/JB.186.4.1084-1096.2004"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "proline",
+                                        "proteinogenic": true,
+                                        "structure": "C1C[C@H](NC1)C(=O)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "7"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "doi:10.1007/s00216-015-8486-8",
+                                    "doi:10.1128/JB.186.4.1084-1096.2004"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glutamine",
+                                        "proteinogenic": true,
+                                        "structure": "C(CC(=O)N)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "8"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": true,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "doi:10.1007/s00216-015-8486-8",
+                                    "doi:10.1128/JB.186.4.1084-1096.2004"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "tyrosine",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC(=CC=C1C[C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "DCL",
+                            "module_number": "9"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "ABS74205.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "doi:10.1007/s00216-015-8486-8",
+                                    "doi:10.1128/JB.186.4.1084-1096.2004"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "isoleucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC[C@H](C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "10"
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Bacillus velezensis FZB42",
+        "publications": [
+            "pubmed:14762003",
+            "pubmed:17704766"
+        ],
+        "status": "active"
+    }
+}

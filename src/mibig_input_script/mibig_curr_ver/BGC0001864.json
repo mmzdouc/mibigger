@@ -1,0 +1,57 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "7QOHKU3C2WTCRJ5TNJXSNBTP"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Remove negative molecular mass"
+            ],
+            "contributors": [
+                "3UOU7PODQJXIM6BEPUHHRRA5"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "compound": "listeriocytocin",
+                "evidence": [
+                    "Mass spectrometry"
+                ],
+                "mass_spec_ion_type": "[M+H]+"
+            }
+        ],
+        "loci": {
+            "accession": "NC_018586.1",
+            "completeness": "complete",
+            "end_coord": 2798888,
+            "evidence": [
+                "Heterologous expression"
+            ],
+            "start_coord": 2790122
+        },
+        "mibig_accession": "BGC0001864",
+        "minimal": true,
+        "ncbi_tax_id": "879089",
+        "organism_name": "Listeria monocytogenes SLCC2540",
+        "publications": [
+            "pubmed:30183259"
+        ],
+        "ripp": {
+            "cyclic": true,
+            "subclass": "Glycocin"
+        },
+        "status": "active"
+    }
+}

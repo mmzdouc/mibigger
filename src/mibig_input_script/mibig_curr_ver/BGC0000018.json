@@ -1,0 +1,74 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated reference publication(s) (MIBiG Annotathon)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "CCC1C(C2C(O2)(/C=C/C(=O)C(CC(C(C(C(CC(=O)O1)O)C)OC3CC(C(C(O3)C)OC4CC(C(C(O4)C)O)(C)O)N(C)C)CC=O)C)C)COC5C(C(C(C(O5)C)O)OC)OC",
+                "compound": "angolamycin",
+                "database_id": [
+                    "pubchem:6438267"
+                ],
+                "mol_mass": 915.519150004,
+                "molecular_formula": "C46H77NO17"
+            }
+        ],
+        "loci": {
+            "accession": "EU220288.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000018",
+        "minimal": true,
+        "ncbi_tax_id": "42237",
+        "organism_name": "Streptomyces eurythermus",
+        "publications": [
+            "pubmed:18802638"
+        ],
+        "status": "active"
+    }
+}

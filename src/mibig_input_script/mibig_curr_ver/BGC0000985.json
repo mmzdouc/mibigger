@@ -1,0 +1,478 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "FC27FLXW4TUBR6P2D2MHHJOO"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (MIBiG Annotathon)",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Cleaned up synonym list",
+                "Update compound structure (SMILES) for nordidemnin B",
+                "Linked new PubChem id for nordidemnin B (pubchem:164049)",
+                "Add new compound: dehydrodidemnin B (aplidine)",
+                "Updated bioactivity data",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA",
+                "5UL74VURKJ25VSPPPO3H2NYB"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    },
+                    {
+                        "activity": "surfactant"
+                    }
+                ],
+                "chem_struct": "CC[C@H](C)[C@@H]1[C@H](CC(=O)O[C@H](C(=O)[C@@H](C(=O)N[C@H](C(=O)N2CCC[C@H]2C(=O)N([C@H](C(=O)O[C@@H]([C@@H](C(=O)N1)NC(=O)[C@@H](CC(C)C)N(C)C(=O)[C@@H]3CCCN3C(=O)C(C)O)C)CC4=CC=C(C=C4)OC)C)CC(C)C)C)C(C)C)O",
+                "compound": "didemnin B",
+                "database_id": [
+                    "pubchem:13895197"
+                ],
+                "mol_mass": 1111.6416651480001,
+                "molecular_formula": "C57H89N7O15"
+            },
+            {
+                "chem_acts": [],
+                "chem_struct": "C[C@@H]1[C@@H](C(=O)N[C@@H]([C@H](CC(=O)O[C@H](C(=O)[C@@H](C(=O)N[C@H](C(=O)N2CCC[C@H]2C(=O)N([C@H](C(=O)O1)CC3=CC=C(C=C3)OC)C)CC(C)C)C)C(C)C)O)C(C)C)NC(=O)C(CC(C)C)N(C)C(=O)[C@@H]4CCCN4C(=O)[C@H](C)O",
+                "chem_synonyms": [
+                    "Nordidemnin"
+                ],
+                "compound": "nordidemnin B",
+                "database_id": [
+                    "pubchem:70698166",
+                    "pubchem:164049"
+                ],
+                "mol_mass": 1097.626015084,
+                "molecular_formula": "C56H87N7O15"
+            },
+            {
+                "chem_acts": [],
+                "chem_struct": "C[C@@H]1[C@@H](C(=O)N[C@@H]([C@H](CC(=O)O[C@H](C(=O)[C@@H](C(=O)N[C@H](C(=O)N2CCC[C@H]2C(=O)N([C@H](C(=O)O1)CC3=CC=C(C=C3)OC)C)CC(C)C)C)C(C)C)O)C(C)C)NC(=O)[C@@H](CC(C)C)N(C)C(=O)[C@@H]4CCCN4C(=O)[C@H](C)O",
+                "compound": "dehydrodidemnin B (aplidine)",
+                "mol_mass": 1097.626015084,
+                "molecular_formula": "C56H87N7O15"
+            },
+            {
+                "chem_acts": [],
+                "chem_struct": "CCCCCCC[C@H](CC(=O)N[C@@H](CCC(=O)N)C(=O)N[C@@H](CCC(=O)N)C(=O)N[C@@H](CCC(=O)O)C(=O)O[C@@H](C)C(=O)N1CCC[C@H]1C(=O)N(C)[C@H](CC(C)C)C(=O)N[C@H]2[C@@H](OC(=O)[C@@H](N(C(=O)[C@@H]3CCCN3C(=O)[C@@H](NC(=O)[C@H](C(=O)[C@@H](OC(=O)C[C@@H]([C@@H](NC2=O)[C@@H](C)CC)O)C(C)C)C)CC(C)C)C)CC4=CC=C(C=C4)OC)C)O",
+                "compound": "didemnin X",
+                "database_id": [
+                    "pubchem:44592545"
+                ],
+                "mol_mass": 1666.9320930399992,
+                "molecular_formula": "C82H130N12O24"
+            },
+            {
+                "chem_acts": [],
+                "chem_struct": "CCCCCCC[C@H](CC(=O)N[C@@H](CCC(=O)N)C(=O)N[C@@H](CCC(=O)N)C(=O)N[C@@H](CCC(=O)N)C(=O)N[C@@H](CCC(=O)O)C(=O)O[C@@H](C)C(=O)N1CCC[C@H]1C(=O)N(C)[C@H](CC(C)C)C(=O)N[C@H]2[C@@H](OC(=O)[C@@H](N(C(=O)[C@@H]3CCCN3C(=O)[C@@H](NC(=O)[C@H](C(=O)[C@@H](OC(=O)C[C@@H]([C@@H](NC2=O)[C@@H](C)CC)O)C(C)C)C)CC(C)C)C)CC4=CC=C(C=C4)OC)C)O",
+                "compound": "didemnin Y",
+                "database_id": [
+                    "pubchem:44592546"
+                ],
+                "mol_mass": 1794.9906705359992,
+                "molecular_formula": "C87H138N14O26"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "TMO_c0603",
+                    "name": "didB"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "TMO_c0602",
+                    "name": "didA"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "TMO_c0604",
+                    "name": "didC"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "TMO_c0605",
+                    "name": "didD"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "TMO_c0606",
+                    "name": "didE"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "TMO_c0607",
+                    "name": "didF"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "TMO_c0608",
+                    "name": "didG"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "TMO_c0609",
+                    "name": "didH"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "TMO_c0610",
+                    "name": "didI"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "TMO_c0611",
+                    "name": "didJ"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Activation / processing",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "TMO_c0612",
+                    "name": "mbtH"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "CP003239.1",
+            "completeness": "complete",
+            "end_coord": 729697,
+            "start_coord": 674941
+        },
+        "mibig_accession": "BGC0000985",
+        "minimal": false,
+        "ncbi_tax_id": "1110502",
+        "nrp": {
+            "cyclic": true,
+            "nrps_genes": [
+                {
+                    "gene_id": "AFK57212.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:22458477"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glutamine",
+                                        "proteinogenic": true,
+                                        "structure": "C(CC(=O)N)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:22458477"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glutamine",
+                                        "proteinogenic": true,
+                                        "structure": "C(CC(=O)N)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AFK57214.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:22458477"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "proline",
+                                        "proteinogenic": true,
+                                        "structure": "C1C[C@H](NC1)C(=O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AFK57215.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:22458477"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "leucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:22458477"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "threonine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@H]([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:22458477"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "isoleucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC[C@H](C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AFK57219.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:22458477"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "leucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AFK57220.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:22458477"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "proline",
+                                        "proteinogenic": true,
+                                        "structure": "C1C[C@H](NC1)C(=O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AFK57221.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:22458477"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "tyrosine",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC(=CC=C1C[C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            "release_type": [
+                "Macrolactamization"
+            ],
+            "subclass": "Cyclic depsipeptide",
+            "thioesterases": [
+                {
+                    "gene": "TMO_c0611",
+                    "thioesterase_type": "Type I"
+                }
+            ]
+        },
+        "organism_name": "Tistrella mobilis KA081020-065",
+        "polyketide": {
+            "cyclic": true,
+            "subclasses": [
+                "Other"
+            ]
+        },
+        "publications": [
+            "pubmed:22458477"
+        ],
+        "status": "active"
+    },
+    "comments": "Analysis of genes flanking didA-J, and within the Tistrella mobilis genome, did not reveal a discrete AT suggesting the Didemnin polyketide synthase may use the fatty acid synthase FabD"
+}

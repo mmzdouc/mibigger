@@ -1,0 +1,88 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "C(C(C)=O)(NC(C(C)C)C(NC(CCSC)C(NC(C(NC(C(NC(C(NC(C(NC1C(=O)NC(C(NC(C)C(=O)NC(CC2C=CC=CC=2)C(NC(C(O)C2N(C)C=[N+](C)C=2)C(=O)NC=CSC1C)=O)=O)C(C)C)=O)C)=S)C)=S)C)=O)C)=S)=S)=O",
+                "compound": "thioholgamide A",
+                "database_id": [
+                    "npatlas:NPA019832"
+                ],
+                "mol_mass": 1305.48918734009,
+                "molecular_formula": "C56H85N14O10S6+"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "C(C(C)=O)(NC(C(C)C)C(NC(CCS(=O)C)C(NC(C(NC(C(NC(C(NC(C(NC1C(=O)NC(C(NC(C)C(=O)NC(CC2C=CC=CC=2)C(NC(C(O)C2N(C)C=[N+](C)C=2)C(=O)NC=CSC1C)=O)=O)C(C)C)=O)C)=S)C)=S)C)=O)C)=S)=S)=O",
+                "compound": "thioholgamide B",
+                "database_id": [
+                    "npatlas:NPA013128"
+                ],
+                "mol_mass": 1321.4841019600897,
+                "molecular_formula": "C56H85N14O11S6+"
+            }
+        ],
+        "loci": {
+            "accession": "MF593843.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001802",
+        "minimal": true,
+        "ncbi_tax_id": "1428626",
+        "organism_name": "Streptomyces malaysiense",
+        "publications": [
+            "pubmed:28981254"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,135 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "ZUAEFEJPIFGA5SNZGJWBG3IU"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Corrected gene identifiers",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "alkaloid": {
+            "subclass": "Indole/benzopyrrole"
+        },
+        "biosyn_class": [
+            "Terpene",
+            "Alkaloid"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antiviral"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "[H][C@@]12CCC3=C(C=C4C(NC5=C4C=CC=C5)=C3)[C@@]1(C)CC[C@H](O)[C@@]2(C)C(O)=O",
+                "compound": "xiamycin",
+                "database_id": [
+                    "npatlas:NPA012008"
+                ],
+                "mol_mass": 363.18344365999997,
+                "molecular_formula": "C23H25NO3"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Activity assay"
+                            ]
+                        }
+                    ],
+                    "id": "CCH63735.1",
+                    "name": "xiaI",
+                    "product": "Indole oxygenase ",
+                    "tailoring": [
+                        "Oxidation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Activity assay"
+                            ]
+                        }
+                    ],
+                    "id": "CCH63739.1",
+                    "name": "xiaM",
+                    "product": "Cytochrome P450",
+                    "tailoring": [
+                        "Oxidation"
+                    ]
+                }
+            ]
+        },
+        "loci": {
+            "accession": "HE815466.1",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies",
+                "Enzymatic assays",
+                "Heterologous expression"
+            ]
+        },
+        "mibig_accession": "BGC0000665",
+        "minimal": false,
+        "ncbi_tax_id": "995841",
+        "organism_name": "Streptomyces sp. HKI0576",
+        "publications": [
+            "pubmed:22591327",
+            "pubmed:22968942",
+            "pubmed:23205935"
+        ],
+        "status": "active",
+        "terpene": {
+            "carbon_count_subclass": "Sesquiterpene",
+            "prenyltransferases": [
+                "CCH63739.1"
+            ],
+            "terpene_precursor": "FPP",
+            "terpene_synth_cycl": [
+                "CCH63731.1"
+            ]
+        }
+    }
+}

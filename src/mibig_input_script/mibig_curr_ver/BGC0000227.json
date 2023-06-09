@@ -1,0 +1,95 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "RIBLHRV4YSJAGJ5EVZV4GS2Z"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Remove negative ketide_length",
+                "Removed ketoreductase stereochemistry annotation from modules without ketoreductases",
+                "Removed module fragments from Type II polyketide synthase"
+            ],
+            "contributors": [
+                "3UOU7PODQJXIM6BEPUHHRRA5",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "C[C@@H]1[C@]2(c3c(c(c4c(c3O)C(=O)C5=C(C4=O)[C@H]6[C@H](CC(=O)O6)OC5C)O)[C@@H](O1)C[C@H]2O)O",
+                "compound": "granaticin",
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 444.10564683999985,
+                "molecular_formula": "C22H20O10"
+            }
+        ],
+        "loci": {
+            "accession": "AJ011500.1",
+            "completeness": "complete"
+        },
+        "mibig_accession": "BGC0000227",
+        "minimal": false,
+        "ncbi_tax_id": "1935",
+        "organism_name": "Streptomyces violaceoruber",
+        "polyketide": {
+            "cyclic": true,
+            "starter_unit": "Malonyl-CoA",
+            "subclasses": [
+                "Ansamycin"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "CAA09654.1",
+                        "CAA09655.1",
+                        "CAA09653.1"
+                    ],
+                    "subclass": [
+                        "Type II"
+                    ]
+                }
+            ]
+        },
+        "publications": [
+            "pubmed:2583128",
+            "pubmed:7476861",
+            "pubmed:9831526"
+        ],
+        "status": "active"
+    }
+}

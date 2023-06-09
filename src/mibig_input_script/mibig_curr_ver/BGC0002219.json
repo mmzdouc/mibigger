@@ -1,0 +1,44 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Terpene"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C/C/1=C\\CC/C(=C/C[C@@H](CC/C(=C/CC1)/C)C(C)(C)O)/C",
+                "compound": "(-)-(R)-nephthenol",
+                "database_id": [
+                    "pubchem:6443020"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "JH687388.1",
+            "completeness": "Unknown",
+            "end_coord": 653681,
+            "evidence": [
+                "Heterologous expression"
+            ],
+            "start_coord": 627204
+        },
+        "mibig_accession": "BGC0002219",
+        "minimal": true,
+        "ncbi_tax_id": "721885",
+        "organism_name": "Stereum hirsutum FP-91666 SS1",
+        "publications": [
+            "pubmed:30905831"
+        ],
+        "status": "active"
+    }
+}

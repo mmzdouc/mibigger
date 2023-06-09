@@ -1,0 +1,78 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CC\\C(C=C)=C/C(=O)CC(C)CC(C)CCC(O)C(C)C(=O)CC(O)C(C)C(C)OC(=O)C[C@@H](O)C1=C(C)C(=O)OC1=O",
+                "compound": "tautomycetin",
+                "database_id": [
+                    "npatlas:NPA02249",
+                    "pubchem:6439037"
+                ],
+                "mol_mass": 606.3403977999999,
+                "molecular_formula": "C33H50O10"
+            }
+        ],
+        "loci": {
+            "accession": "DQ983361.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000157",
+        "minimal": true,
+        "ncbi_tax_id": "404220",
+        "organism_name": "Streptomyces sp. CK4412",
+        "publications": [
+            "pubmed:17379718"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,85 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: heptyltyrazolone, (Z)-heptylphenazolone, nonyltyrazolone, undecyltyrazolone, (Z)-6-undecenyltyrazolone.",
+                "Added NPAtlas links to compounds: heptyltyrazolone, (Z)-heptylphenazolone, nonyltyrazolone, undecyltyrazolone, (Z)-6-undecenyltyrazolone.",
+                "Renamed compounds: heptylphenazolone to (Z)-heptylphenazolone, ω-6undecenyltyrazolone to (Z)-6-undecenyltyrazolone."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other",
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CCCCCCCC1=NC(=CC2=CC=C(O)C=C2)C(=O)O1",
+                "compound": "heptyltyrazolone",
+                "database_id": [
+                    "npatlas:NPA033514"
+                ]
+            },
+            {
+                "chem_struct": "CCCCCCCCCC1=NC(=CC2=CC=C(O)C=C2)C(=O)O1",
+                "compound": "nonyltyrazolone",
+                "database_id": [
+                    "npatlas:NPA033515"
+                ]
+            },
+            {
+                "chem_struct": "CCCCCCCCCCC1=NC(=CC2=CC=C(O)C=C2)C(=O)O1",
+                "compound": "undecyltyrazolone",
+                "database_id": [
+                    "npatlas:NPA033516"
+                ]
+            },
+            {
+                "chem_struct": "CCCCCC/C=C\\CCCC1=NC(=CC2=CC=C(O)C=C2)C(=O)O1",
+                "compound": "(Z)-6-undecenyltyrazolone",
+                "database_id": [
+                    "npatlas:NPA033517"
+                ]
+            },
+            {
+                "chem_struct": "CCCCCCCC1=N/C(=C\\C2=CC=CC=C2)C(=O)O1",
+                "compound": "(Z)-heptylphenazolone",
+                "database_id": [
+                    "npatlas:NPA033518"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "AHCD03000035.1",
+            "completeness": "Unknown",
+            "end_coord": 486062,
+            "evidence": [
+                "Heterologous expression",
+                "Enzymatic assays"
+            ],
+            "start_coord": 468545
+        },
+        "mibig_accession": "BGC0002334",
+        "minimal": true,
+        "ncbi_tax_id": "43658",
+        "organism_name": "Pseudoalteromonas rubra",
+        "publications": [
+            "pubmed:34099916"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,78 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC[C@H]1C(=O)N[C@H](C(=O)N[C@H](CC(=O)N[C@H](C(=O)N2CCC[C@H]2C(=O)N1)CC)C3=CC=CC=C3)CO",
+                "compound": "astin G",
+                "database_id": [
+                    "pubchem:11762842"
+                ]
+            },
+            {
+                "chem_struct": "CC[C@H]1C(=O)N2C[C@H]([C@H]([C@H]2C(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@H](CC(=O)N1)C3=CC=CC=C3)CO)[C@H](C)O)Cl)Cl",
+                "compound": "astin A",
+                "database_id": [
+                    "pubchem:15233656"
+                ]
+            },
+            {
+                "chem_struct": "CCC1C(=O)NC(C(=O)NC(CC(=O)NC(C(=O)N2CC(C(C2C(=O)N1)Cl)Cl)CC)C3=CC=CC=C3)CO",
+                "compound": "astin C",
+                "database_id": [
+                    "pubchem:15236159"
+                ]
+            },
+            {
+                "chem_struct": "CC[C@H]1C(=O)N2C[C@H]([C@H]([C@H]2C(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@H](CC(=O)N1)C3=CC=CC=C3)CO)[C@H](C)O)Cl)Cl",
+                "compound": "astin B"
+            },
+            {
+                "chem_struct": "CC[C@H]1C(N[C@@H](CO)C(N[C@@H](C2=CC=CC=C2)CC(N[C@@H]([C@H](O)C)C(N3C=C(Cl)C[C@@]3([H])C(N1)=O)=O)=O)=O)=O",
+                "compound": "astin H"
+            },
+            {
+                "chem_struct": "CC[C@H]1C(N[C@@H](CO)C(N[C@@H](C2=CC=CC=C2)CC(N[C@@H](CC)C(N3C=C(Cl)C[C@@]3([H])C(N1)=O)=O)=O)=O)=O",
+                "compound": "astin D"
+            },
+            {
+                "chem_struct": "CC[C@H]1C(N[C@@H](CO)C(N[C@@H](C2=CC=CC=C2)CC(N[C@@H](CC)C(N3CC([H])[C@@H](Cl)[C@@]3([H])C(N1)=O)=O)=O)=O)=O",
+                "compound": "astin F"
+            }
+        ],
+        "loci": {
+            "accession": "UYJD01000020.1",
+            "completeness": "Unknown",
+            "end_coord": 332156,
+            "evidence": [
+                "Gene expression correlated with compound production"
+            ],
+            "start_coord": 258360
+        },
+        "mibig_accession": "BGC0002251",
+        "minimal": true,
+        "ncbi_tax_id": "1986089",
+        "organism_name": "Cyanodermella asteris",
+        "publications": [
+            "pubmed:31811021",
+            "doi:10.1073/pnas.1910527116"
+        ],
+        "retirement_reasons": [
+            "Missing gene annotations"
+        ],
+        "status": "retired"
+    }
+}

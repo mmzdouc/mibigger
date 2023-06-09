@@ -1,0 +1,139 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Changed amino acid substrates to lower case"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C[C@@H]1NC(=O)[C@H]2CCCN2C(=O)[C@H](CCCCCC(=O)[C@@H]2CO2)NC(=O)[C@@H](C)NC1=O",
+                "compound": "HC toxin",
+                "database_id": [
+                    "npatlas:NPA017921"
+                ],
+                "mol_mass": 436.232184744,
+                "molecular_formula": "C21H32N4O6"
+            }
+        ],
+        "loci": {
+            "accession": "M98024.2",
+            "completeness": "incomplete",
+            "evidence": [
+                "Knock-out studies",
+                "Heterologous expression"
+            ]
+        },
+        "mibig_accession": "BGC0000370",
+        "minimal": false,
+        "ncbi_tax_id": "5017",
+        "nrp": {
+            "cyclic": true,
+            "nrps_genes": [
+                {
+                    "gene_id": "AAA33023.2",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": true,
+                                "evidence": [
+                                    "Activity assay"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "proline",
+                                        "proteinogenic": true,
+                                        "structure": "C1C[C@H](NC1)C(=O)O"
+                                    }
+                                ]
+                            },
+                            "active": false,
+                            "c_dom_subtype": "DCL",
+                            "modification_domains": [
+                                "Unknown"
+                            ],
+                            "module_number": "1"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Activity assay"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "alanine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": false,
+                            "c_dom_subtype": "DCL",
+                            "module_number": "2"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Activity assay"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "D-alanine",
+                                        "proteinogenic": false,
+                                        "structure": "C[C@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": false,
+                            "c_dom_subtype": "DCL",
+                            "module_number": "3"
+                        },
+                        {
+                            "active": false,
+                            "c_dom_subtype": "DCL",
+                            "module_number": "4"
+                        }
+                    ]
+                }
+            ],
+            "release_type": [
+                "Macrolactamization"
+            ]
+        },
+        "organism_name": "Bipolaris zeicola",
+        "publications": [
+            "pubmed:8672886",
+            "pubmed:11860263",
+            "pubmed:23865912",
+            "pubmed:16839576"
+        ],
+        "retirement_reasons": [
+            "Retired in the 2.0 release for unknown reasons"
+        ],
+        "status": "retired"
+    }
+}

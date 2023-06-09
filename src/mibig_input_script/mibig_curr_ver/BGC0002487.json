@@ -1,0 +1,51 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: staphylopine.",
+                "Added NPAtlas links to compounds: staphylopine."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC(N[C@@H](CCN[C@H](CC1=CN=C[NH]1)C(=O)O)C(=O)O)C(=O)O",
+                "compound": "staphylopine",
+                "database_id": [
+                    "npatlas:NPA032835"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "BA000017.4",
+            "completeness": "Unknown",
+            "end_coord": 2607334,
+            "start_coord": 2598076
+        },
+        "mibig_accession": "BGC0002487",
+        "minimal": true,
+        "ncbi_tax_id": "158878",
+        "organism_name": "Staphylococcus aureus subsp. aureus Mu50",
+        "publications": [
+            "pubmed:32817386"
+        ],
+        "status": "active"
+    }
+}

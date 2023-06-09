@@ -1,0 +1,60 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Changed chemical structures for compounds: corynecin III.",
+                "Added NPAtlas links to compounds: corynecin III."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC(C)C(=O)N[C@H](CO)[C@H](O)C1=CC=C([N+](=O)[O-])C=C1",
+                "compound": "corynecin III",
+                "database_id": [
+                    "npatlas:NPA033050"
+                ]
+            },
+            {
+                "chem_struct": "O=N(C1=CC=C([C@H]([C@H](NC(C)=O)CO)O)C=C1)=O",
+                "compound": "corynecin I"
+            },
+            {
+                "chem_struct": "O=N(C1=CC=C([C@H]([C@H](NC(CC)=O)CO)O)C=C1)=O",
+                "compound": "corynecin II"
+            }
+        ],
+        "loci": {
+            "accession": "CP023720.1",
+            "completeness": "Unknown",
+            "end_coord": 4346076,
+            "start_coord": 4328177
+        },
+        "mibig_accession": "BGC0002284",
+        "minimal": true,
+        "ncbi_tax_id": "1727214",
+        "organism_name": "Rhodococcus sp. H-CA8f",
+        "publications": [
+            "pubmed:34241590",
+            "doi:10.1099/mgen.0.000621"
+        ],
+        "status": "active"
+    }
+}

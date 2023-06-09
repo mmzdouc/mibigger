@@ -1,0 +1,99 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "SCFYH7235HZBUM2XBV52IUHT"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "NCCOP([O-])(OCC(OC(CCCCCCCCCCCC(C)C)=O)CO/C=C\\CCCCCCCCCCC(C)C)=O",
+                "compound": "VEPE",
+                "mol_mass": 646.48171375791,
+                "molecular_formula": "C35H69NO7P-"
+            },
+            {
+                "chem_struct": "NCCOP([O-])(OCC(OC(CCCCCCCCCCCC(C)C)=O)COCCCCCCCCCCCCC(C)C)=O",
+                "compound": "AEPE",
+                "mol_mass": 648.4973638219101,
+                "molecular_formula": "C35H71NO7P-"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "signalling"
+                    }
+                ],
+                "chem_struct": "CC(C)CCCCCCCCCCCC(OCC(OC(CCCCCCCCCCCC(C)C)=O)COCCCCCCCCCCCCC(C)C)=O",
+                "compound": "TG-1",
+                "mol_mass": 750.7101261079999,
+                "molecular_formula": "C48H94O5"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "MXAN_1528",
+                    "name": "elbD"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "CP000113.1",
+            "completeness": "complete",
+            "end_coord": 1797919,
+            "evidence": [
+                "Knock-out studies",
+                "Gene expression correlated with compound production"
+            ],
+            "start_coord": 1789113
+        },
+        "mibig_accession": "BGC0000871",
+        "minimal": false,
+        "ncbi_tax_id": "246197",
+        "organism_name": "Myxococcus xanthus DK 1622",
+        "other": {
+            "subclass": "Nucleoside"
+        },
+        "publications": [
+            "pubmed:24814673",
+            "pubmed:24520059"
+        ],
+        "status": "active"
+    }
+}

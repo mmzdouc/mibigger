@@ -1,0 +1,53 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C1[C@@H](CC(=O)C2=C(C=C(C=C21)O)O)O",
+                "compound": "scytalone",
+                "database_id": [
+                    "npatlas:NPA002735",
+                    "pubchem:162567"
+                ]
+            },
+            {
+                "chem_struct": "OC1=C2C(C=CC=C2O)=CC(O)=C1",
+                "compound": "T3HN"
+            }
+        ],
+        "loci": {
+            "accession": "KI912112.1",
+            "completeness": "Unknown",
+            "end_coord": 3671174,
+            "evidence": [
+                "Heterologous expression",
+                "Gene expression correlated with compound production"
+            ],
+            "start_coord": 3633736
+        },
+        "mibig_accession": "BGC0002161",
+        "minimal": true,
+        "ncbi_tax_id": "1229662",
+        "organism_name": "Pestalotiopsis fici W106-1",
+        "publications": [
+            "pubmed:28517364",
+            "pubmed:31116900",
+            "doi:10.1111/mmi.13711",
+            "doi:10.1111/mmi.14281"
+        ],
+        "status": "active"
+    }
+}

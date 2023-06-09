@@ -1,0 +1,76 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "[H][C@@]12CN1\\C([C@@H](OC(C)=O)[C@@H]2O)=C(\\NC(=O)[C@@H](OC(=O)C1=C2C=CC=C(C)C2=CC(OC)=C1)[C@]1(C)CO1)C(=O)N\\C(=C\\O)C(C)=O",
+                "compound": "azinomycin B",
+                "database_id": [
+                    "npatlas:NPA011599",
+                    "pubchem:3032396"
+                ],
+                "mol_mass": 623.211508876,
+                "molecular_formula": "C31H33N3O11"
+            }
+        ],
+        "loci": {
+            "accession": "EU240558.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000960",
+        "minimal": true,
+        "ncbi_tax_id": "285525",
+        "organism_name": "Streptomyces sahachiroi",
+        "publications": [
+            "pubmed:18635006"
+        ],
+        "status": "active"
+    }
+}

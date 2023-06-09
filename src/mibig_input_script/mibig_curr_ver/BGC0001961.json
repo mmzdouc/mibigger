@@ -1,0 +1,157 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Fixed DOIs",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "CUSGWVK3I4TVHJH7NHPFAP2L",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Retired as duplicate of BGC0002288"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "compound": "ashimides"
+            }
+        ],
+        "loci": {
+            "accession": "MH752201.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001961",
+        "minimal": false,
+        "ncbi_tax_id": "1931",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "QCE20598.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Heterologous expression",
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "doi:10.1039/C8SC05670F"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glycine",
+                                        "proteinogenic": true,
+                                        "structure": "NCC(=O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "QCE20608.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Heterologous expression",
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "doi:10.1039/C8SC05670F"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glycine",
+                                        "proteinogenic": true,
+                                        "structure": "NCC(=O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "QCE20609.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Heterologous expression",
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "doi:10.1039/C8SC05670F"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "alanine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "QCE20614.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Heterologous expression",
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "doi:10.1039/C8SC05670F"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "benzoxazolinate",
+                                        "proteinogenic": false,
+                                        "structure": "c1ccc2c(c1)nc(o2)C(=O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Streptomyces sp.",
+        "publications": [
+            "pubmed:30996885"
+        ],
+        "retirement_reasons": [
+            "Duplicate of BGC0002288"
+        ],
+        "see_also": [
+            "BGC0002288"
+        ],
+        "status": "retired"
+    }
+}

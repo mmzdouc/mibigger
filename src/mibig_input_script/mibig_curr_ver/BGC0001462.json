@@ -1,0 +1,237 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "UZDMKOBVVEVI67YDKBV3PKAC"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (MIBiG Annotathon)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "C[C@H]1[C@@H]([C@@H](C[C@@H](O1)O[C@H]2[C@H]3C(=O)N[C@@H](C4=CC(=CC(=C4C5=C(C=CC(=C5)[C@H](C(=O)N3)NC(=O)[C@H]6C7=CC(=C(C(=C7)OC8=C(C=C2C=C8)Cl)O[C@H]9C([C@H]([C@@H]([C@H](O9)CO)O)O)O[C@H]1C[C@H]([C@H]([C@@H](O1)C)O)N)OC1=CC=C(C=C1)[C@H]([C@H](C(=O)N[C@H](C(=O)N6)C1=CC=C(C=C1)O)NC(=O)[C@@H](C1=CC=C(C=C1)O[C@H]1[C@@H]([C@@H]([C@H]([C@@H](O1)C)O)O)O)NC)O)O)O)O)C(=O)O)N)O",
+                "chem_targets": [
+                    {
+                        "target": "cell wall"
+                    }
+                ],
+                "compound": "avoparcin",
+                "database_id": [
+                    "pubchem:16132294"
+                ],
+                "evidence": [
+                    "Mass spectrometry"
+                ],
+                "mol_mass": 1745.558774843999,
+                "molecular_formula": "C83H92ClN9O31"
+            }
+        ],
+        "loci": {
+            "accession": "MQUQ01000006.1",
+            "completeness": "complete",
+            "end_coord": 164623,
+            "start_coord": 95249
+        },
+        "mibig_accession": "BGC0001462",
+        "minimal": false,
+        "ncbi_tax_id": "76021",
+        "nrp": {
+            "cyclic": false,
+            "nrps_genes": [
+                {
+                    "gene_id": "BS329_14150",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "doi:10.1099/00207713-45-1-124"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "4-hydroxyphenylglycine",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC(=CC=C1[C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "doi:10.1099/00207713-45-1-124"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "R-beta-hydroxytyrosine",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC(=CC=C1[C@H]([C@@H](C(=O)O)N)O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "OLZ52442.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "doi:10.1099/00207713-45-1-124"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "tyrosine",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC(=CC=C1C[C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "OLZ52456.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "doi:10.1099/00207713-45-1-124"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "3,5-dihydroxyphenylglycine",
+                                        "proteinogenic": false,
+                                        "structure": "N[C@H](C(=O)O)c1cc(O)cc(O)c1"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "OLZ52457.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "doi:10.1099/00207713-45-1-124"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "4-hydroxyphenylglycine",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC(=CC=C1[C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "doi:10.1099/00207713-45-1-124"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "4-hydroxyphenylglycine",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC(=CC=C1[C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "doi:10.1099/00207713-45-1-124"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "tyrosine",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC(=CC=C1C[C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            "subclass": "Glycopeptide"
+        },
+        "organism_name": "Amycolatopsis coloradensis",
+        "publications": [
+            "doi:10.1099/00207713-45-1-124"
+        ],
+        "status": "active"
+    },
+    "comments": "nkaur@imtech.res.in\\nmayil@imtech.res.in"
+}

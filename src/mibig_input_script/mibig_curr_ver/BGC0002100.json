@@ -1,0 +1,395 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted",
+                "Switch to GenBank accessions"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_moieties": [
+                    {
+                        "moiety": "lipid",
+                        "subcluster": [
+                            "DBP21_21630",
+                            "DBP21_21635",
+                            "DBP21_21640",
+                            "DBP21_21645"
+                        ]
+                    }
+                ],
+                "chem_struct": "OC(C(CC(N)=O)NC(C(/C(NC(C(C)NC(/C=C\\\\C=C\\\\C=C\\\\C)=O)=O)=C\\\\C1=CNC2=C1C=CC(Cl)=C2)=O)=O)=O",
+                "compound": "colibrimycin",
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry"
+                ],
+                "mol_mass": 569.17,
+                "molecular_formula": "C27H28ClN5O7"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "id": "DBP21_21545",
+                    "name": "cbm1",
+                    "product": "Adenylation-domain-containg protein"
+                },
+                {
+                    "id": "DBP21_21550",
+                    "name": "cbm2",
+                    "product": "MbtH family protein"
+                },
+                {
+                    "id": "DBP21_21555",
+                    "name": "cbm3",
+                    "product": "ABC transporter ATP binding"
+                },
+                {
+                    "id": "DBP21_21560",
+                    "name": "cbm4",
+                    "product": "ArsR Transcriptional regulator"
+                },
+                {
+                    "id": "DBP21_21565",
+                    "name": "cbm5",
+                    "product": "ABC transporter ATP binding"
+                },
+                {
+                    "id": "DBP21_21570",
+                    "name": "cbm6",
+                    "product": "ABC transporter ATP binding"
+                },
+                {
+                    "id": "DBP21_21575",
+                    "name": "cbm7",
+                    "product": "Hypothetical protein"
+                },
+                {
+                    "id": "DBP21_21580",
+                    "name": "cbm8",
+                    "product": "Hypothetical protein"
+                },
+                {
+                    "id": "DBP21_21585",
+                    "name": "cbm9",
+                    "product": "ArsR transcriptional regulator"
+                },
+                {
+                    "id": "DBP21_21590",
+                    "mut_pheno": "Important reduction of production",
+                    "name": "cbm10",
+                    "product": "Flavin reductase",
+                    "tailoring": [
+                        "Halogenation"
+                    ]
+                },
+                {
+                    "id": "DBP21_21595",
+                    "name": "cbm11",
+                    "product": "Na/H antiporter"
+                },
+                {
+                    "id": "DBP21_21600",
+                    "mut_pheno": "Non- producing phenotipe",
+                    "name": "cbm12",
+                    "product": "Tryptophan-7-halogenase",
+                    "tailoring": [
+                        "Halogenation"
+                    ]
+                },
+                {
+                    "id": "DBP21_21605",
+                    "name": "cbm13",
+                    "product": "2,3-diaminopropionate biosynthesis protein SbnB"
+                },
+                {
+                    "id": "DBP21_21610",
+                    "name": "cbm14",
+                    "product": "2,3-diaminopropionate biosynthesis protein SbnA"
+                },
+                {
+                    "id": "DBP21_21615",
+                    "name": "cbm15",
+                    "product": "MMPL family transporter"
+                },
+                {
+                    "id": "DBP21_21620",
+                    "mut_pheno": "Non-producing phenotipe",
+                    "name": "cbm16",
+                    "product": "AfsR/SARP family transcriptional regulator"
+                },
+                {
+                    "id": "DBP21_21625",
+                    "mut_pheno": "Non-producing phenotipe",
+                    "name": "cbm17",
+                    "product": "LysR family transcriptional regulator"
+                },
+                {
+                    "id": "DBP21_21630",
+                    "name": "cbm18",
+                    "product": "acyl carrier protein"
+                },
+                {
+                    "id": "DBP21_21635",
+                    "name": "cbm19",
+                    "product": "beta-ketoacyl-[acyl-carrier-protein] synthase family protein"
+                },
+                {
+                    "id": "DBP21_21640",
+                    "name": "cbm20",
+                    "product": "3-oxoacyl-ACP synthase"
+                },
+                {
+                    "id": "DBP21_21645",
+                    "name": "cbm21",
+                    "product": "3-oxoacyl-ACP reductase FabG"
+                },
+                {
+                    "id": "DBP21_21650",
+                    "name": "cbm22",
+                    "product": "DsbA family protein"
+                },
+                {
+                    "id": "DBP21_21655",
+                    "mut_pheno": "Non-producing final compound, hiperproducing of intermediaries",
+                    "name": "cbm23",
+                    "product": "non-ribosomal peptide synthetase"
+                },
+                {
+                    "id": "DBP21_21660",
+                    "name": "cbm24",
+                    "product": "ABC transporter permease"
+                },
+                {
+                    "id": "DBP21_21665",
+                    "name": "cbm25",
+                    "product": "cytochrome P450"
+                },
+                {
+                    "id": "DBP21_21670",
+                    "name": "cbm26",
+                    "product": "TauD/TfdA family dioxygenase"
+                },
+                {
+                    "id": "DBP21_21675",
+                    "name": "cbm27",
+                    "product": "FkbM family methyltransferase"
+                },
+                {
+                    "id": "DBP21_21680",
+                    "name": "cbm28",
+                    "product": "indole-3-glycerol phosphate synthase TrpC"
+                },
+                {
+                    "id": "DBP21_21685",
+                    "name": "cbm29",
+                    "product": "anthranilate phosphoribosyltransferase"
+                },
+                {
+                    "id": "DBP21_21690",
+                    "name": "cbm30",
+                    "product": "PLP-dependent aminotransferase family protein"
+                },
+                {
+                    "id": "DBP21_21695",
+                    "mut_pheno": "Reduction of Cl-tryptophan and chloroketomycins biosynthesis",
+                    "name": "cbm31",
+                    "product": "aminodeoxychorismate/anthranilate synthase component II"
+                },
+                {
+                    "id": "DBP21_21700",
+                    "mut_pheno": "Reduction of Cl-tryptophan and chloroketomycins biosynthesis",
+                    "name": "cbm32",
+                    "product": "anthranilate synthase component I family protein"
+                },
+                {
+                    "id": "DBP21_21705",
+                    "name": "cbm33",
+                    "product": "3-deoxy-7-phosphoheptulonate synthase class II"
+                },
+                {
+                    "id": "DBP21_21710",
+                    "name": "cbm34",
+                    "product": "thioesterase"
+                },
+                {
+                    "id": "DBP21_21715",
+                    "product": "tetratricopeptide repeat protein"
+                },
+                {
+                    "id": "DBP21_21720",
+                    "name": "cbm36",
+                    "product": "amidohydrolase"
+                },
+                {
+                    "id": "DBP21_21725",
+                    "name": "cbm37",
+                    "product": "MerR family transcriptional regulator"
+                },
+                {
+                    "id": "DBP21_21730",
+                    "name": "cbm38",
+                    "product": "cold-shock protein"
+                },
+                {
+                    "id": "DBP21_21735",
+                    "name": "cbm39",
+                    "product": "menaquinone biosynthesis protein"
+                },
+                {
+                    "id": "DBP21_21740",
+                    "name": "cbm40",
+                    "product": "serine/threonine protein kinase"
+                },
+                {
+                    "id": "DBP21_21745",
+                    "name": "mqnC",
+                    "product": "dehypoxanthine futalosine cyclase"
+                },
+                {
+                    "id": "DBP21_21750",
+                    "product": "hypothetical protein"
+                },
+                {
+                    "id": "DBP21_21755",
+                    "product": "DUF3152 domain-containing protein"
+                },
+                {
+                    "id": "DBP21_21765",
+                    "product": "SigE family RNA polymerase sigma factor"
+                },
+                {
+                    "id": "DBP21_21770",
+                    "product": "demethylmenaquinone methyltransferase"
+                },
+                {
+                    "id": "DBP21_21775",
+                    "product": "GNAT family N-acetyltransferase"
+                },
+                {
+                    "id": "DBP21_21780",
+                    "product": "geranylgeranyl reductase family protein"
+                },
+                {
+                    "id": "DBP21_21785",
+                    "product": "CGNR zinc finger domain-containing protein"
+                },
+                {
+                    "id": "DBP21_21790",
+                    "product": "metallophosphoesterase"
+                },
+                {
+                    "id": "DBP21_21795",
+                    "product": "MFS transporter"
+                },
+                {
+                    "id": "DBP21_21800",
+                    "product": "C40 family peptidase"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "KZ819182.1",
+            "completeness": "complete",
+            "end_coord": 4793015,
+            "evidence": [
+                "Knock-out studies",
+                "Gene expression correlated with compound production"
+            ],
+            "start_coord": 4724124
+        },
+        "mibig_accession": "BGC0002100",
+        "minimal": false,
+        "ncbi_tax_id": "2162715",
+        "nrp": {
+            "cyclic": false,
+            "nrps_genes": [
+                {
+                    "gene_id": "DBP21_21655",
+                    "modules": [
+                        {
+                            "c_dom_subtype": "Starter",
+                            "module_number": "4"
+                        },
+                        {
+                            "c_dom_subtype": "Unknown",
+                            "module_number": "5"
+                        },
+                        {
+                            "c_dom_subtype": "LCL",
+                            "module_number": "6"
+                        }
+                    ]
+                }
+            ],
+            "release_type": [
+                "Unknown"
+            ],
+            "subclass": "Other",
+            "thioesterases": [
+                {
+                    "gene": "DBP21_21710",
+                    "thioesterase_type": "Unknown"
+                }
+            ]
+        },
+        "organism_name": "Streptomyces sp. CS147",
+        "polyketide": {
+            "synthases": [
+                {
+                    "genes": [
+                        "DBP21_21640",
+                        "DBP21_21645",
+                        "DBP21_21635"
+                    ],
+                    "modules": [
+                        {
+                            "domains": [
+                                "Ketosynthase"
+                            ],
+                            "genes": [
+                                "DBP21_21635"
+                            ],
+                            "module_number": "1"
+                        },
+                        {
+                            "domains": [
+                                "Ketosynthase"
+                            ],
+                            "genes": [
+                                "DBP21_21640"
+                            ],
+                            "module_number": "2"
+                        },
+                        {
+                            "domains": [
+                                "Ketoreductase"
+                            ],
+                            "genes": [
+                                "DBP21_21645"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "3"
+                        }
+                    ]
+                }
+            ]
+        },
+        "publications": [
+            "pubmed:34669429"
+        ],
+        "status": "active"
+    }
+}

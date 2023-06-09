@@ -1,0 +1,83 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Terpene"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CC1=C[C@@H]2[C@H](CCC(=C2CC1)C)C(C)C",
+                "chem_targets": [
+                    {
+                        "publications": [
+                            "pubmed:26261482"
+                        ],
+                        "target": "antitumor"
+                    }
+                ],
+                "compound": "(-)-δ-cadinene",
+                "database_id": [
+                    "pubchem:12306055"
+                ],
+                "mol_mass": 204.187800768,
+                "molecular_formula": "C15H24"
+            }
+        ],
+        "loci": {
+            "accession": "DS570637.1",
+            "completeness": "Unknown",
+            "end_coord": 79952,
+            "start_coord": 74962
+        },
+        "mibig_accession": "BGC0000674",
+        "minimal": true,
+        "ncbi_tax_id": "1901",
+        "organism_name": "Streptomyces clavuligerus ATCC 27064",
+        "publications": [
+            "pubmed:21276937"
+        ],
+        "status": "active"
+    }
+}

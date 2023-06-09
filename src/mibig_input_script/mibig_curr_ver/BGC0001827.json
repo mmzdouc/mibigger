@@ -1,0 +1,51 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "[H][C@]12CO[C@]3([H])[C@@]1([H])C(O[C@]1(C)C\\C=C\\C(C)(C)C\\C=C(C)\\CC[C@@]31[H])=C(O)C2=O",
+                "compound": "xenovulene A",
+                "database_id": [
+                    "npatlas:NPA07151"
+                ],
+                "mol_mass": 358.21440943999994,
+                "molecular_formula": "C22H30O4"
+            }
+        ],
+        "loci": {
+            "accession": "MG736817.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001827",
+        "minimal": true,
+        "ncbi_tax_id": "2203296",
+        "organism_name": "Sarocladium sp. 'schorii'",
+        "publications": [
+            "pubmed:29773797"
+        ],
+        "status": "active"
+    }
+}

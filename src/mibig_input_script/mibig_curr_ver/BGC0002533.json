@@ -1,0 +1,45 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C[C@@]1(CSC(=N1)C[C@@H]([C@@H]2CS[C@@H](N2)[C@H]3CSC(=N3)C4=CC=CC=C4O)O)C(=O)O",
+                "compound": "piscibactin",
+                "database_id": [
+                    "npatlas:NPA006148"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "KP100338.1",
+            "completeness": "Unknown",
+            "end_coord": 41636,
+            "evidence": [
+                "Knock-out studies"
+            ],
+            "start_coord": 6411
+        },
+        "mibig_accession": "BGC0002533",
+        "minimal": true,
+        "ncbi_tax_id": "1200302",
+        "organism_name": "Photobacterium damselae subsp. piscicida DI21",
+        "publications": [
+            "pubmed:26092457"
+        ],
+        "status": "active"
+    }
+}

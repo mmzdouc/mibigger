@@ -1,0 +1,51 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated reference publication(s) (MIBiG Annotathon)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC(=O)C1=C(C(=C(C=C1O)O)C(=O)C)O",
+                "compound": "2,4-diacetylphloroglucinol",
+                "database_id": [
+                    "pubchem:16547"
+                ],
+                "mol_mass": 210.05282342,
+                "molecular_formula": "C10H10O5"
+            }
+        ],
+        "loci": {
+            "accession": "DQ083928.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000281",
+        "minimal": true,
+        "ncbi_tax_id": "294",
+        "organism_name": "Pseudomonas fluorescens",
+        "publications": [
+            "pubmed:10322017"
+        ],
+        "status": "active"
+    }
+}

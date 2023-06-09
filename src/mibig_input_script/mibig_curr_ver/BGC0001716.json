@@ -1,0 +1,283 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Add compound details",
+                "Added NRP substrate specificities",
+                "Switch to GenBank accessions"
+            ],
+            "contributors": [
+                "SJG3CBEHSM6A3I74YXLH6GLA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C1C[C@H](N(C1)C(=O)[C@@H](CCCN)NC(=O)CNC(=O)[C@H]([C@H](CN)O)NC(=O)[C@H]([C@H](CN)O)NC(=O)[C@H](CCCCN)N)C(=O)N[C@@H](CC2=CN=CN2)C(=O)N[C@@H](CC[C@@H](CN)O)C(=O)N/C(=C\\CCN=C(N)N)/C(=O)N[C@@H](CC[C@@H](CN)O)C(=O)NCCCCN",
+                "compound": "odilorhabdin NOSO-95A",
+                "database_id": [
+                    "pubchem:146684503"
+                ],
+                "mol_mass": 1295.78983499,
+                "molecular_formula": "C54H101N23O14"
+            },
+            {
+                "chem_struct": "C1C[C@H](N(C1)C(=O)[C@@H](CCCN)NC(=O)CNC(=O)[C@H]([C@H](CN)O)NC(=O)[C@H]([C@H](CN)O)NC(=O)[C@H](CCCCN)N)C(=O)N[C@@H](CC2=CN=CN2)C(=O)N[C@@H](CC[C@@H](CN)O)C(=O)N/C(=C\\CCN=C(N)N)/C(=O)N[C@@H](CCCCN)C(=O)NCCCCN",
+                "compound": "odilorhabdin NOSO-95B",
+                "database_id": [
+                    "pubchem:146684504"
+                ],
+                "mol_mass": 1279.79492037,
+                "molecular_formula": "C54H101N23O13"
+            },
+            {
+                "chem_struct": "C1C[C@H](N(C1)C(=O)[C@@H](CCCN)NC(=O)CNC(=O)[C@H]([C@H](CN)O)NC(=O)[C@H]([C@H](CN)O)NC(=O)[C@H](CCCCN)N)C(=O)N[C@@H](CC2=CN=CN2)C(=O)N[C@@H](CCCCN)C(=O)N/C(=C\\CCN=C(N)N)/C(=O)N[C@@H](CCCCN)C(=O)NCCCCN",
+                "compound": "odilorhabdin NOSO-95C",
+                "database_id": [
+                    "pubchem:132031638"
+                ],
+                "mol_mass": 1263.80000575,
+                "molecular_formula": "C54H101N23O12"
+            }
+        ],
+        "loci": {
+            "accession": "LN681227.1",
+            "completeness": "Unknown",
+            "end_coord": 2423130,
+            "start_coord": 2379690
+        },
+        "mibig_accession": "BGC0001716",
+        "minimal": false,
+        "ncbi_tax_id": "1437823",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "XNC2_2370",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:29625040"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "N6-hydroxylysine",
+                                        "proteinogenic": false,
+                                        "structure": "C(CCNO)C[C@@H](C(=O)O)N"
+                                    },
+                                    {
+                                        "name": "lysine",
+                                        "proteinogenic": true,
+                                        "structure": "C(CCN)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:29625040"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "beta-hydroxyarginine",
+                                        "proteinogenic": false,
+                                        "structure": "C(C(O)[C@@H](C(=O)O)N)CN=C(N)N"
+                                    },
+                                    {
+                                        "name": "dehydroarginine",
+                                        "proteinogenic": false,
+                                        "structure": "C(CN=C(N)N)/C=C(/C(=O)O)\\N"
+                                    },
+                                    {
+                                        "name": "arginine",
+                                        "proteinogenic": true,
+                                        "structure": "C(C[C@@H](C(=O)O)N)CN=C(N)N"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:29625040"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "N6-hydroxylysine",
+                                        "proteinogenic": false,
+                                        "structure": "C(CCNO)C[C@@H](C(=O)O)N"
+                                    },
+                                    {
+                                        "name": "lysine",
+                                        "proteinogenic": true,
+                                        "structure": "C(CCN)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "XNC2_2371",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:29625040"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "histidine",
+                                        "proteinogenic": true,
+                                        "structure": "C1=C(NC=N1)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "XNC2_2372",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:29625040"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glycine",
+                                        "proteinogenic": true,
+                                        "structure": "NCC(=O)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:29625040"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "ornithine",
+                                        "proteinogenic": false,
+                                        "structure": "C(C[C@@H](C(=O)O)N)CN"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:29625040"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "proline",
+                                        "proteinogenic": true,
+                                        "structure": "C1C[C@H](NC1)C(=O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "XNC2_2373",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:29625040"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "lysine",
+                                        "proteinogenic": true,
+                                        "structure": "C(CCN)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:29625040"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "3R-hydroxy-2,4-diaminobutyric acid",
+                                        "proteinogenic": false,
+                                        "structure": "NC[C@@H](O)[C@@H](C(=O)O)N"
+                                    },
+                                    {
+                                        "name": "2,4-diaminobutyric acid",
+                                        "proteinogenic": false,
+                                        "structure": "C(CN)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Xenorhabdus nematophila AN6/1",
+        "publications": [
+            "pubmed:29625040"
+        ],
+        "status": "active"
+    }
+}

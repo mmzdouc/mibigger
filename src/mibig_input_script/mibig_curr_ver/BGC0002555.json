@@ -1,0 +1,88 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: emerimicin VIII, emerimicin IX, emerimicin VI, emerimicin V, emerimicin VII, emerimicin X.",
+                "Added NPAtlas links to compounds: emerimicin VIII, emerimicin IX, emerimicin VI, emerimicin V, emerimicin VII, emerimicin X."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC[C@@](C)(NC(=O)[C@H](CC(C)C)NC(=O)CNC(=O)[C@@](C)(CC)NC(=O)C(C)(C)NC(=O)C(C)(C)NC(=O)C(C)(C)NC(=O)[C@H](CC1=CC=CC=C1)NC(C)=O)C(=O)NC(C)(C)C(=O)N1C[C@H](O)C[C@H]1C(=O)NC(CCC(N)=O)C(=O)N[C@](C)(CC)C(=O)N1C[C@H](O)C[C@H]1C(=O)NC(C)(C)C(=O)N[C@H](CO)CC1=CC=CC=C1",
+                "compound": "emerimicin V",
+                "database_id": [
+                    "npatlas:NPA033101"
+                ]
+            },
+            {
+                "chem_struct": "CC[C@@](C)(NC(=O)[C@H](CC(C)C)NC(=O)CNC(=O)C(C)(C)NC(=O)C(C)(C)NC(=O)C(C)(C)NC(=O)C(C)(C)NC(=O)[C@H](CC1=CC=CC=C1)NC(C)=O)C(=O)NC(C)(C)C(=O)N1C[C@H](O)C[C@H]1C(=O)NC(CCC(N)=O)C(=O)N[C@](C)(CC)C(=O)N1C[C@H](O)C[C@H]1C(=O)NC(C)(C)C(=O)N[C@H](CO)CC1=CC=CC=C1",
+                "compound": "emerimicin VI",
+                "database_id": [
+                    "npatlas:NPA033102"
+                ]
+            },
+            {
+                "chem_struct": "CC[C@@](C)(NC(=O)[C@H](CC(C)C)NC(=O)CNC(=O)[C@@](C)(CC)NC(=O)C(C)(C)NC(=O)C(C)(C)NC(=O)C(C)(C)NC(=O)[C@H](CC(C)C)NC(C)=O)C(=O)NC(C)(C)C(=O)N1C[C@H](O)C[C@H]1C(=O)NC(CCC(N)=O)C(=O)N[C@](C)(CC)C(=O)N1C[C@H](O)C[C@H]1C(=O)NC(C)(C)C(=O)N[C@H](CO)CC1=CC=CC=C1",
+                "compound": "emerimicin VII",
+                "database_id": [
+                    "npatlas:NPA033103"
+                ]
+            },
+            {
+                "chem_struct": "CC[C@@](C)(NC(=O)[C@H](CC(C)C)NC(=O)CNC(=O)C(C)(C)NC(=O)C(C)(C)NC(=O)C(C)(C)NC(=O)C(C)(C)NC(=O)[C@H](CC(C)C)NC(C)=O)C(=O)NC(C)(C)C(=O)N1C[C@H](O)C[C@H]1C(=O)NC(CCC(N)=O)C(=O)N[C@](C)(CC)C(=O)N1C[C@H](O)C[C@H]1C(=O)NC(C)(C)C(=O)N[C@H](CO)CC1=CC=CC=C1",
+                "compound": "emerimicin VIII",
+                "database_id": [
+                    "npatlas:NPA033104"
+                ]
+            },
+            {
+                "chem_struct": "CC[C@@](C)(NC(=O)[C@H](CC(C)C)NC(=O)CNC(=O)[C@@](C)(CC)NC(=O)C(C)(C)NC(=O)C(C)(C)NC(=O)C(C)(C)NC(=O)[C@@H](NC(C)=O)C(C)C)C(=O)NC(C)(C)C(=O)N1C[C@H](O)C[C@H]1C(=O)NC(CCC(N)=O)C(=O)N[C@](C)(CC)C(=O)N1C[C@H](O)C[C@H]1C(=O)NC(C)(C)C(=O)N[C@H](CO)CC1=CC=CC=C1",
+                "compound": "emerimicin IX",
+                "database_id": [
+                    "npatlas:NPA033105"
+                ]
+            },
+            {
+                "chem_struct": "CC[C@@](C)(NC(=O)[C@H](CC(C)C)NC(=O)CNC(=O)C(C)(C)NC(=O)C(C)(C)NC(=O)C(C)(C)NC(=O)C(C)(C)NC(=O)[C@@H](NC(C)=O)C(C)C)C(=O)NC(C)(C)C(=O)N1C[C@H](O)C[C@H]1C(=O)NC(CCC(N)=O)C(=O)N[C@](C)(CC)C(=O)N1C[C@H](O)C[C@H]1C(=O)NC(C)(C)C(=O)N[C@H](CO)CC1=CC=CC=C1",
+                "compound": "emerimicin X",
+                "database_id": [
+                    "npatlas:NPA033106"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "MT050462.1",
+            "completeness": "Unknown",
+            "end_coord": 64157,
+            "start_coord": 1
+        },
+        "mibig_accession": "BGC0002555",
+        "minimal": true,
+        "ncbi_tax_id": "2046025",
+        "organism_name": "Acremonium sp.",
+        "publications": [
+            "pubmed:33617244",
+            "doi:10.1021/acs.jnatprod.0c01186"
+        ],
+        "status": "active"
+    }
+}

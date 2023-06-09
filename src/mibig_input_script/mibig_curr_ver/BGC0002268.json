@@ -1,0 +1,111 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: CJ-15,696, CJ-16,173.",
+                "Added NPAtlas links to compounds: CJ-15,696, CJ-16,173.",
+                "Renamed compounds: CJ-15696 to CJ-15,696, CJ-16173 to CJ-16,173."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide",
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C/C=C/1\\CO[C@@H]([C@]2([C@@H]1OC3=C2C(=O)C(=CN3)C4=CC=CC=C4)C)O",
+                "compound": "CJ-16,173",
+                "database_id": [
+                    "npatlas:NPA010822"
+                ]
+            },
+            {
+                "chem_struct": "C/C=C(\\C)/[C@@H]1[C@](C2=C(O1)NC=C(C2=O)C3=CC=CC=C3)(C)C=O",
+                "compound": "CJ-15,696",
+                "database_id": [
+                    "npatlas:NPA009900"
+                ]
+            },
+            {
+                "chem_struct": "CC([C@]1([C@H]2[C@@]([C@H](O1)O)(C3=C(O2)NC=C(C3=O)C4=CC=CC=C4)C)C)O",
+                "compound": "citridone B",
+                "database_id": [
+                    "npatlas:NPA003700"
+                ]
+            },
+            {
+                "chem_struct": "C[C@H]1[C@@H]2C3=C(C(=CNC3=O)C4=CC=CC=C4)O[C@@]2(C=C1C)C",
+                "compound": "citridone A",
+                "database_id": [
+                    "npatlas:NPA003778"
+                ]
+            },
+            {
+                "chem_struct": "CC([C@]1([C@H]2[C@@]([C@@H](O1)O)(C3=C(O2)NC=C(C3=O)C4=CC=CC=C4)C)C)O",
+                "compound": "citridone B'",
+                "database_id": [
+                    "npatlas:NPA012901"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "MT603584.1",
+            "completeness": "Unknown",
+            "end_coord": 26854,
+            "evidence": [
+                "Heterologous expression"
+            ],
+            "start_coord": 1
+        },
+        "mibig_accession": "BGC0002268",
+        "minimal": false,
+        "ncbi_tax_id": "5081",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "QNH68024.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:32779306"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "phenylalanine",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC=C(C=C1)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Penicillium sp.",
+        "publications": [
+            "pubmed:32779306"
+        ],
+        "status": "active"
+    }
+}

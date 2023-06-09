@@ -1,0 +1,294 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "J4R6BDENZAM7XVDGVEEHZB2Y"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Corrected NRP module activity",
+                "Updated NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    },
+                    {
+                        "activity": "siderophore"
+                    }
+                ],
+                "chem_struct": "C=C(/C=C/C1=CC=CC2=C1NC=C2CC(N3O[Fe](ON4C(CC5=CNC6=C5C=CC=C6/C=C/C(C)=C)=C(N=C(C4=O)C)OC)ON7C(CC8=CNC9=C8C=CC=C9/C=C/C(C)=C)=C(N=C(C7=O)C)OC)=C(N=C(C3=O)C)OC)C",
+                "chem_synonyms": [
+                    "has"
+                ],
+                "chem_targets": [
+                    {
+                        "target": "iron chelator"
+                    },
+                    {
+                        "target": "coordinates Fe3+"
+                    }
+                ],
+                "compound": "hexadehydroastechrome",
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 1106.3863370000001,
+                "molecular_formula": "C60H60FeN9O9"
+            },
+            {
+                "chem_struct": "C[C@@H]1NC(=O)C(CC2=CNC3=C2C=CC=C3CC=C(C)C)NC1=O",
+                "compound": "terezine-D",
+                "database_id": [
+                    "npatlas:NPA05625"
+                ],
+                "mol_mass": 325.179026976,
+                "molecular_formula": "C19H23N3O2"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "siderophore"
+                    }
+                ],
+                "chem_struct": "C/C(C)=C\\CC1=CC=CC2=C1NC=C2CC(N3O[Fe](ON4C(CC5=CNC6=C5C=CC=C6C/C=C(C)\\C)=C(N=C(C4=O)C)OC)ON7C(CC8=CNC9=C8C=CC=C9C/C=C(C)\\C)=C(N=C(C7=O)C)OC)=C(N=C(C3=O)C)OC",
+                "chem_targets": [
+                    {
+                        "target": "iron chelator"
+                    },
+                    {
+                        "target": "coordinates fe3+"
+                    }
+                ],
+                "compound": "astechrome",
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 1112.433287192,
+                "molecular_formula": "C60H66FeN9O9"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Regulation",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "EAL92294.1",
+                    "name": "hasA",
+                    "product": "C6 transcription factor"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "EAL92293.2",
+                    "name": "hasB",
+                    "product": "MFS transporter, putative"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "EAL92292.1",
+                    "name": "hasC",
+                    "product": "O-methyltransferase",
+                    "tailoring": [
+                        "Methylation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "EAL92291.2",
+                    "name": "hasD",
+                    "product": "nonribosomal peptide synthtease"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "EAL92290.2",
+                    "name": "hasE",
+                    "product": "dimethylallyl tryptophan synthase",
+                    "tailoring": [
+                        "Prenylation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "EAL92289.2",
+                    "name": "hasF",
+                    "product": "C6 transcription factor"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "EAL92288.1",
+                    "name": "hasG",
+                    "product": "FAD binding domain protein",
+                    "tailoring": [
+                        "Oxidation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "EAL92287.1",
+                    "name": "hasH",
+                    "product": "cytochrome P450 monooxigenase",
+                    "tailoring": [
+                        "Hydroxylation"
+                    ]
+                }
+            ]
+        },
+        "loci": {
+            "accession": "CM000171.1",
+            "completeness": "Unknown",
+            "end_coord": 3446129,
+            "evidence": [
+                "Knock-out studies",
+                "Gene expression correlated with compound production"
+            ],
+            "start_coord": 3423866
+        },
+        "mibig_accession": "BGC0000372",
+        "minimal": false,
+        "ncbi_tax_id": "330879",
+        "nrp": {
+            "cyclic": true,
+            "nrps_genes": [
+                {
+                    "gene_id": "EAL92291.2",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Knock-out studies"
+                                ],
+                                "publications": [
+                                    "doi:10.1021/ja311145n"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "tryptophan",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC=C2C(=C1)C(=CN2)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "1"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "alanine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Heterocyclization",
+                            "module_number": "2"
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Aspergillus fumigatus Af293",
+        "publications": [
+            "pubmed:25386169",
+            "pubmed:23360537",
+            "pubmed:7760082"
+        ],
+        "status": "active"
+    }
+}

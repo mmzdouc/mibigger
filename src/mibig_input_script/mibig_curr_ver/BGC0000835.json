@@ -1,0 +1,83 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11",
+                "Retired as duplicate of BGC0000270"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "C[C@@H]1[C@@H]([C@@H](C[C@@H](O1)C2=C(C3=C(C=C2)C(=O)C45C(C3O)(O4)C(CC6(C5(C(=O)C=C(C6)C)O)O)O)O)OC(=O)/C=C/C=C/C=C/C=C/C(=O)NC7=C(C8=C(C(=C(C=C8)O)Cl)OC7=O)C)OC(=O)C",
+                "compound": "simocyclinone",
+                "database_id": [
+                    "pubchem:46230267"
+                ],
+                "mol_mass": 929.229776628,
+                "molecular_formula": "C47H44ClNO17"
+            }
+        ],
+        "loci": {
+            "accession": "AF321122.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000835",
+        "minimal": true,
+        "ncbi_tax_id": "1890",
+        "organism_name": "Streptomyces antibioticus",
+        "publications": [
+            "pubmed:12115055"
+        ],
+        "retirement_reasons": [
+            "Duplicate of BGC0000270"
+        ],
+        "see_also": [
+            "BGC0000270"
+        ],
+        "status": "retired"
+    }
+}

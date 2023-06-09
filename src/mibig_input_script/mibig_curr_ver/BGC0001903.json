@@ -1,0 +1,53 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Fetch compound properties from PubChem",
+                "Cleaned up synonym list"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC1=C(C2=C(C3=C(N2)C=CC(=C3)CC=C(C)C)C(=C1OC)O)C(C(C)O)O",
+                "compound": "neocarazostatin A",
+                "database_id": [
+                    "pubchem:126263"
+                ],
+                "mol_mass": 369.194008,
+                "molecular_formula": "C22H27NO4"
+            }
+        ],
+        "loci": {
+            "accession": "KP657980.1",
+            "completeness": "Unknown",
+            "end_coord": 19774,
+            "start_coord": 8905
+        },
+        "mibig_accession": "BGC0001903",
+        "minimal": true,
+        "ncbi_tax_id": "1400207",
+        "organism_name": "Streptomyces sp. MA37",
+        "publications": [
+            "pubmed:26670080"
+        ],
+        "status": "active"
+    }
+}

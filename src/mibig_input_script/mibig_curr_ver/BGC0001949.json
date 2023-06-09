@@ -1,0 +1,56 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Fetch compound properties from PubChem",
+                "Cleaned up synonym list"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C[C@H](/C=C/C=C(/C)\\[C@H]1CN[C@@H]([C@H]1CC(=O)O)C(=O)O)C(=O)O",
+                "chem_synonyms": [
+                    "L-Domoic acid",
+                    "domoate",
+                    "(-)-domoic acid"
+                ],
+                "compound": "domoic acid",
+                "database_id": [
+                    "pubchem:5282253"
+                ],
+                "mol_mass": 311.136887,
+                "molecular_formula": "C15H21NO6"
+            }
+        ],
+        "loci": {
+            "accession": "MH202990.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001949",
+        "minimal": true,
+        "ncbi_tax_id": "37319",
+        "organism_name": "Pseudo-nitzschia multiseries",
+        "publications": [
+            "pubmed:30262498"
+        ],
+        "status": "active"
+    }
+}

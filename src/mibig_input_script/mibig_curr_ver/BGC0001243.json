@@ -1,0 +1,95 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "[H][C@@]12[C@H](C[C@@H](C)C(C=O)=C1[C@@](C)(CO)CC2(C)C)OC(C)=O",
+                "compound": "botryenalol",
+                "database_id": [
+                    "npatlas:NPA07774",
+                    "pubchem:15786208"
+                ],
+                "mol_mass": 294.183109312,
+                "molecular_formula": "C17H26O4"
+            },
+            {
+                "chem_struct": "[H][C@]12[C@H](C[C@@H](C)[C@]3([H])[C@@H](O)OC[C@@](C)(CC1(C)C)[C@]23O)OC(C)=O",
+                "compound": "dihydrobotrydial",
+                "database_id": [
+                    "npatlas:NPA019254",
+                    "pubchem:14157997"
+                ],
+                "mol_mass": 312.193673996,
+                "molecular_formula": "C17H28O5"
+            },
+            {
+                "chem_struct": "[H][C@@]12[C@H](C[C@@H](C)C(C=O)=C1[C@](C)(CC2(C)C)C=O)OC(C)=O",
+                "compound": "botryendial",
+                "database_id": [
+                    "npatlas:NPA07962",
+                    "pubchem:10803586"
+                ],
+                "mol_mass": 292.167459248,
+                "molecular_formula": "C17H24O4"
+            },
+            {
+                "chem_struct": "C[C@@H]1C[C@@H]([C@H]2CC([C@]3([C@]2([C@H]1[C@H](OC3=O)OC)O)C)(C)C)OC(=O)C",
+                "compound": "β-O-Methyl-dihydrobotrydialone",
+                "database_id": [
+                    "pubchem:101917952"
+                ],
+                "mol_mass": 340.18858861599995,
+                "molecular_formula": "C18H28O6"
+            },
+            {
+                "chem_struct": "CCCC[C@H](O)\\C=C\\C(=O)O[C@H]1[C@H](C)O[C@](C)([C@@H](O)[C@@H](C)C(O)=O)[C@@H](O)[C@@H]1C",
+                "compound": "botcinic acid",
+                "database_id": [
+                    "npatlas:NPA018004",
+                    "pubchem:11509607"
+                ],
+                "mol_mass": 402.22536804799995,
+                "molecular_formula": "C20H34O8"
+            },
+            {
+                "chem_struct": "[H][C@@]12OC(=O)[C@H](C)[C@H](OC(C)=O)[C@@]1(C)O[C@@H](C)[C@H](OC(=O)\\C=C\\[C@@H](O)CCCC)[C@H]2C",
+                "compound": "botcinin A",
+                "database_id": [
+                    "npatlas:NPA07223",
+                    "pubchem:11654791"
+                ],
+                "mol_mass": 426.22536804799995,
+                "molecular_formula": "C22H34O8"
+            }
+        ],
+        "loci": {
+            "accession": "FR717895.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001243",
+        "minimal": true,
+        "ncbi_tax_id": "40559",
+        "organism_name": "Botrytis cinerea",
+        "publications": [
+            "pubmed:21722295"
+        ],
+        "retirement_reasons": [
+            "Entry is split over multiple genomic loci"
+        ],
+        "status": "retired"
+    }
+}

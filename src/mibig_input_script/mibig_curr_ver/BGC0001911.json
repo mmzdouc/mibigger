@@ -1,0 +1,53 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Fetch compound properties from PubChem"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Terpene"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C/C(=C\\C[C@H]1C(=C)[C@H](C[C@@H]2[C@@]1(CCCC2(C)C)C)O)/C=C",
+                "chem_synonyms": [
+                    "(+)-Raimonol"
+                ],
+                "compound": "raimonol",
+                "database_id": [
+                    "pubchem:102297697"
+                ],
+                "mol_mass": 288.245316,
+                "molecular_formula": "C20H32O"
+            }
+        ],
+        "loci": {
+            "accession": "LC064029.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001911",
+        "minimal": true,
+        "ncbi_tax_id": "1892",
+        "organism_name": "Streptomyces anulatus",
+        "publications": [
+            "pubmed:26507838"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "COC1=C2C3=C(C(=O)OCC3)C(=O)OC2=C4C5C=COC5OC4=C1",
+                "compound": "aflatoxin",
+                "database_id": [
+                    "pubchem:14421"
+                ],
+                "mol_mass": 328.058302724,
+                "molecular_formula": "C17H12O7"
+            }
+        ],
+        "loci": {
+            "accession": "AF452809.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000005",
+        "minimal": true,
+        "ncbi_tax_id": "5067",
+        "organism_name": "Aspergillus parasiticus",
+        "publications": [
+            "pubmed:8953728",
+            "pubmed:12749588",
+            "pubmed:11956746"
+        ],
+        "retirement_reasons": [
+            "contains single non-core gene"
+        ],
+        "status": "retired"
+    }
+}

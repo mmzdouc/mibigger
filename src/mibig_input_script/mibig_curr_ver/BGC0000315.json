@@ -1,0 +1,813 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "JEQAH6TWUDBPITIQUEGTRXT6"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Removed duplicate citation",
+                "Fix duplication in gene evidence (issue #1)",
+                "Corrected NRP module activity",
+                "Corrected NRP gene names",
+                "Updated NRP substrate specificities"
+            ],
+            "contributors": [
+                "3UOU7PODQJXIM6BEPUHHRRA5",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "O=C(N[C@@H](CC(O)=O)C(N[C@H](C1=CC=C(O)C=C1)C(N[C@@H](CC(O)=O)C(NCC(N[C@@H](C(N[C@@H](CCC(O)=O)C(N[C@@H](CC2=CNC3=C2C=CC=C3)C(O[C@H](C)[C@@H]4NC([C@H](CO)NC(C(O5)C5CCC)=O)=O)=O)=O)=O)[C@H](OP(O)(O)=O)C(N)=O)=O)=O)=O)=O)[C@H](CC(O)=O)NC([C@@H](CC6=CNC7=C6C=CC=C7)NC4=O)=O",
+                "compound": "CDA1b",
+                "mass_spec_ion_type": "M+",
+                "mol_mass": 1562.487499137999,
+                "molecular_formula": "C66H79N14O29P"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "O=C(N[C@@H](CC(O)=O)C(N[C@H](C1=CC=C(O)C=C1)C(N[C@@H](CC(O)=O)C(NCC(N[C@@H](C(N[C@@H](CCC(O)=O)C(N/C(C(O[C@H](C)[C@@H]2NC([C@H](CO)NC(C(O3)C3CCC)=O)=O)=O)=C\\C4=CNC5=C4C=CC=C5)=O)=O)[C@H](OP(O)(O)=O)C(N)=O)=O)=O)=O)=O)[C@H](CC(O)=O)NC([C@@H](CC6=CNC7=C6C=CC=C7)NC2=O)=O",
+                "compound": "CDA2a",
+                "mass_spec_ion_type": "M+",
+                "mol_mass": 1560.4718490739992,
+                "molecular_formula": "C66H77N14O29P"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "CCCC1OC1C(=O)N[C@@H](CO)C(=O)N[C@H]1[C@@H](C)OC(=O)[C@H](CC2=CNC3=C2C=CC=C3)NC(=O)[C@@H](NC(=O)[C@H](NC(=O)CNC(=O)[C@H](CC(O)=O)NC(=O)[C@H](NC(=O)[C@H](CC(O)=O)NC(=O)[C@H](CC(O)=O)NC(=O)[C@@H](CC2=CNC3=C2C=CC=C3)NC1=O)C1=CC=C(O)C=C1)[C@H](OP(O)(O)=O)C(N)=O)C(C)CC(O)=O",
+                "compound": "CDA2b",
+                "mass_spec_ion_type": "M+",
+                "mol_mass": 1576.5031492019991,
+                "molecular_formula": "C67H81N14O29P"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "[H][C@@]1(CCC(O)=O)NC([C@](NC(CNC([C@@H](NC([C@@H](C2=CC=C(C=C2)O)NC([C@@H](NC([C@@H](NC([C@H](NC([C@H]([C@H](OC(/C(NC1=O)=C/C3=CNC4=C3C=CC=C4)=O)C)NC([C@@H](NC(C5OC5CCC)=O)CO)=O)=O)CC6=CNC7=C6C=CC=C7)=O)CC(O)=O)=O)CC(O)=O)=O)=O)CC(O)=O)=O)=O)([C@@H](C(N)=O)O)[H])=O",
+                "compound": "CDA3a",
+                "mol_mass": 1480.5055185519989,
+                "molecular_formula": "C66H76N14O26"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "O=C(N[C@@H](CC(O)=O)C(N[C@H](C1=CC=C(O)C=C1)C(N[C@@H](CC(O)=O)C(NCC(N[C@@H](C(N[C@@H](CCC(O)=O)C(N[C@@H](CC2=CNC3=C2C=CC=C3)C(O[C@H](C)[C@@H]4NC([C@H](CO)NC(C(O5)C5CCC)=O)=O)=O)=O)=O)[C@@H](C(N)=O)O)=O)=O)=O)=O)[C@H](CC(O)=C)NC([C@@H](CC6=CNC7=C6C=CC=C7)NC4=O)=O",
+                "compound": "CDA3b",
+                "mass_spec_ion_type": "M+",
+                "mol_mass": 1480.5419040599993,
+                "molecular_formula": "C67H80N14O25"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "O=C(N[C@@H](CC(O)=O)C(N[C@H](C1=CC=C(O)C=C1)C(N[C@@H](CC(O)=O)C(NCC(N[C@@H](C(N[C@@H]([C@H](C)CC(O)=O)C(N/C(C(O[C@H](C)[C@@H]2NC([C@H](CO)NC(C(O3)C3CCC)=O)=O)=O)=C\\C4=CNC5=C4C=CC=C5)=O)=O)[C@H](O)C(N)=O)=O)=O)=O)=O)[C@H](CC(O)=O)NC([C@@H](CC6=CNC7=C6C=CC=C7)NC2=O)=O",
+                "compound": "CDA4a",
+                "mass_spec_ion_type": "M+",
+                "mol_mass": 1494.5211686159994,
+                "molecular_formula": "C67H78N14O26"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "[H][C@]1(NC(=O)[C@]([H])(NC(=O)CNC(=O)[C@H](CC(O)=O)NC(=O)[C@H](NC(=O)[C@H](CC(O)=O)NC(=O)[C@H](CC(O)=O)NC(=O)[C@@H](CC2=CNC3=C2C=CC=C3)NC(=O)[C@@H](NC(=O)[C@H](CO)NC(=O)C2OC2CCC)[C@@H](C)OC(=O)\\C(NC1=O)=C\\C1=CNC2=C1C=CC=C2)C1=CC=C(O)C=C1)[C@H](O)C(N)=O)[C@H](C)CC(O)=O",
+                "compound": "CDA4b",
+                "database_id": [
+                    "npatlas:NPA03812"
+                ],
+                "mol_mass": 1494.5211686159994,
+                "molecular_formula": "C67H78N14O26"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "id": "CAB38581.1",
+                    "name": "SCO3210",
+                    "product": "putative 2-dehydro-3-deoxyheptonate aldolase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "CAB38582.1",
+                    "name": "SCO3211",
+                    "product": "putative indoleglycerol phosphate synthase (trpC2)"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "CAB38583.1",
+                    "name": "SCO3212",
+                    "product": "probable anthranilate phosphoribotransferase (trpD2)"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "CAB38584.1",
+                    "name": "SCO3213",
+                    "product": "probable anthranilate synthase component II (trpG)"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "CAB38585.1",
+                    "name": "SCO3214",
+                    "product": "probable anthranilate synthase component I (trpE2)"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Activity assay",
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "CAB38586.1",
+                    "name": "SCO3215",
+                    "product": "2-oxogluterate-3-methyltransferase (glmT)"
+                },
+                {
+                    "id": "CAB38587.1",
+                    "name": "SCO3216",
+                    "product": "putative integral membrane ATPase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Regulation",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "CAB38588.1",
+                    "name": "SCO3217",
+                    "product": "putative transcriptional regulator"
+                },
+                {
+                    "id": "CAB38589.1",
+                    "name": "SCO3218",
+                    "product": "putative small conserved hypothetical protein"
+                },
+                {
+                    "id": "CAB38590.1",
+                    "name": "SCO3219",
+                    "product": "putative lipase (putative secreted protein)"
+                },
+                {
+                    "id": "CAB38591.1",
+                    "name": "SCO3220",
+                    "product": "putative secreted protein"
+                },
+                {
+                    "id": "CAB38592.1",
+                    "name": "SCO3221",
+                    "product": "putative oxidoreductase"
+                },
+                {
+                    "id": "CAB38593.1",
+                    "name": "SCO3222",
+                    "product": "putative secreted protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Transport",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "CAB38594.1",
+                    "name": "SCO3223",
+                    "product": "putative ABC transporter integral membrane protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Transport",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "CAB38595.1",
+                    "name": "SCO3224",
+                    "product": "putative ABC transporter ATP-binding protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Regulation",
+                            "evidence": [
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "id": "CAB38596.1",
+                    "name": "SCO3225",
+                    "product": "two component sensor kinase (absA1)"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Regulation",
+                            "evidence": [
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "id": "CAB38597.1",
+                    "name": "SCO3226",
+                    "product": "two component system response regulator (absA2)"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "CAD55497.1",
+                    "name": "SCO3227",
+                    "product": "4-hydroxyphenylglycine aminotransferase (hpgT)"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "CAB38520.1",
+                    "name": "SCO3228",
+                    "product": "4-hydroxymandelate oxidase (Hmo)"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "CAB38519.1",
+                    "name": "SCO3229",
+                    "product": "4-hydroxymandelic acid synthase (HmaS)"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "id": "CAB38518.1",
+                    "name": "SCO3230",
+                    "product": "CDA peptide synthetase I (CdaPs1)"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "id": "CAB38517.1",
+                    "name": "SCO3231",
+                    "product": "CDA peptide synthetase II (CdaPs2)"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "id": "CAD55498.1",
+                    "name": "SCO3232",
+                    "product": "CDA peptide synthetase III (CdaPs3)"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "CAB38877.1",
+                    "name": "SCO3233",
+                    "product": "putative type II thioesterase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "CAB38878.1",
+                    "name": "SCO3234",
+                    "product": "3-hydroxyasparagine phosphotransferase (HasP)",
+                    "tailoring": [
+                        "Phosphorylation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Transport",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "CAB38879.1",
+                    "name": "SCO3235",
+                    "product": "putative ABC transporter"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Activity assay",
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "CAB38880.1",
+                    "name": "SCO3236",
+                    "product": "Asparagine oxygenase (AsnO)"
+                },
+                {
+                    "id": "CAB38881.1",
+                    "name": "SCO3237",
+                    "product": "conserved hypothetical protein"
+                },
+                {
+                    "id": "CAB38882.1",
+                    "name": "SCO3238",
+                    "product": "hypothetical protein"
+                },
+                {
+                    "id": "CAB38883.1",
+                    "name": "SCO3239",
+                    "product": "conserved hypothetical protein"
+                },
+                {
+                    "id": "CAB38884.1",
+                    "name": "SCO3240",
+                    "product": "conserved hypothetical protein"
+                },
+                {
+                    "id": "CAB38885.1",
+                    "name": "SCO3241",
+                    "product": "putaive isomerase"
+                },
+                {
+                    "id": "CAB38886.1",
+                    "name": "SCO3242",
+                    "product": "puitative transferase"
+                },
+                {
+                    "id": "CAB38887.1",
+                    "name": "SCO3243",
+                    "product": "putative myo-inositol phosphate synthase"
+                },
+                {
+                    "id": "CAB38888.1",
+                    "name": "SCO3244",
+                    "product": "putative secreted protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Activity assay"
+                            ]
+                        }
+                    ],
+                    "id": "CAB38889.1",
+                    "name": "SCO3245",
+                    "product": "Hexenoyl-S-ACP Monooxygenase (hcmO)"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "CAB38890.1",
+                    "name": "SCO3246",
+                    "product": "3-Oxoacyl-[acyl carrier protein] synthase III (fabH4)"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Activity assay",
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "CAB38891.1",
+                    "name": "SCO3247",
+                    "product": "Hexanoyl-S-ACP oxidase/epoxidase (hxcO)"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "id": "CAB38892.1",
+                    "name": "SCO3248",
+                    "product": "3-Oxoacyl-[acyl carrier protein] synthase II (fabF3)"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Activity assay"
+                            ]
+                        }
+                    ],
+                    "id": "CAB38893.1",
+                    "name": "SCO3249",
+                    "product": "acyl carrier protein"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "AL645882.2",
+            "completeness": "complete",
+            "end_coord": 3602320,
+            "evidence": [
+                "Knock-out studies"
+            ],
+            "start_coord": 3519449
+        },
+        "mibig_accession": "BGC0000315",
+        "minimal": false,
+        "ncbi_tax_id": "100226",
+        "nrp": {
+            "cyclic": true,
+            "lipid_moiety": "2,3-epoxyhexanoyl",
+            "nrps_genes": [
+                {
+                    "gene_id": "SCO3230",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Starter",
+                            "module_number": "1"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "threonine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@H]([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "2"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": true,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "doi:10.1016/s1074-5521(02)00252-1",
+                                    "doi:10.1099/00221287-144-1-193"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "tryptophan",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC=C2C(=C1)C(=CN2)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "3"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "aspartic acid",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)C(=O)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "DCL",
+                            "module_number": "4"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "aspartic acid",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)C(=O)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "5"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": true,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "4-hydroxyphenylglycine",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC(=CC=C1[C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "6"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "SCO3231",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "substrates": [
+                                    {
+                                        "name": "aspartic acid",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)C(=O)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "DCL",
+                            "module_number": "7"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glycine",
+                                        "proteinogenic": true,
+                                        "structure": "NCC(=O)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "8"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": true,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "asparagine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)C(=O)N"
+                                    },
+                                    {
+                                        "name": "3S-hydroxyasparagine",
+                                        "proteinogenic": false,
+                                        "structure": "N[C@H](C(O)=O)[C@H](O)C(N)=O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "9"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "SCO3232",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "substrates": [
+                                    {
+                                        "name": "glutamic acid",
+                                        "proteinogenic": true,
+                                        "structure": "C(CC(=O)O)[C@@H](C(=O)O)N"
+                                    },
+                                    {
+                                        "name": "3R-methylglutamic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C[C@H](CC(=O)O)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "DCL",
+                            "module_number": "10"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "doi:10.1021/ol0701619",
+                                    "doi:10.1099/00221287-144-1-193",
+                                    "doi:10.1016/s1074-5521(02)00252-1"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "tryptophan",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC=C2C(=C1)C(=CN2)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "11"
+                        }
+                    ]
+                }
+            ],
+            "release_type": [
+                "Macrolactonization"
+            ],
+            "subclass": "Ca+-dependent lipopeptide"
+        },
+        "organism_name": "Streptomyces coelicolor A3(2)",
+        "publications": [
+            "pubmed:12445768",
+            "pubmed:16925444",
+            "pubmed:17784761",
+            "pubmed:11790750",
+            "pubmed:17513473",
+            "pubmed:18020333",
+            "pubmed:15099062",
+            "pubmed:22711659",
+            "pubmed:17322197",
+            "pubmed:17373765",
+            "pubmed:18237171",
+            "pubmed:21135931",
+            "pubmed:22245678"
+        ],
+        "status": "active"
+    }
+}

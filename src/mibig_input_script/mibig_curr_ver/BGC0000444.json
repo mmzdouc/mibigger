@@ -1,0 +1,80 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Removed annotation for irrelevant pseudogene",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "herbicidal"
+                    },
+                    {
+                        "activity": "phytotoxic"
+                    }
+                ],
+                "chem_struct": "[H][C@@]1(CC2=CNC3=CC=CC(=C23)N(=O)=O)N(C)C(=O)[C@](O)(CC2=CC=CC(O)=C2)N(C)C1=O",
+                "compound": "thaxtomin A",
+                "database_id": [
+                    "npatlas:NPA09094"
+                ],
+                "mol_mass": 438.15393442399994,
+                "molecular_formula": "C22H22N4O6"
+            }
+        ],
+        "loci": {
+            "accession": "AY707081.1",
+            "completeness": "Unknown",
+            "end_coord": 33158,
+            "start_coord": 12536
+        },
+        "mibig_accession": "BGC0000444",
+        "minimal": true,
+        "ncbi_tax_id": "698760",
+        "organism_name": "Streptomyces turgidiscabies Car8",
+        "publications": [
+            "pubmed:22941045"
+        ],
+        "status": "active"
+    }
+}

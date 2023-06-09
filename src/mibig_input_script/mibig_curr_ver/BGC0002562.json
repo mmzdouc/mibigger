@@ -1,0 +1,79 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: IBR-4, IBR-2, IBR-3, IBR-1.",
+                "Added NPAtlas links to compounds: IBR-4, IBR-2, IBR-3, IBR-1."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "compound": "tetrahydroxynaphthalene"
+            },
+            {
+                "chem_struct": "COC1=CC(O)=C2C(OC)=CC(OC)=CC2=C1",
+                "compound": "IBR-1",
+                "database_id": [
+                    "npatlas:NPA032914"
+                ]
+            },
+            {
+                "chem_struct": "COC1=CC(OC)=C2C(OC3O[C@@H](C)[C@H](O)[C@@H](O)[C@H]3O)=CC(OC)=CC2=C1",
+                "compound": "IBR-2",
+                "database_id": [
+                    "npatlas:NPA032915"
+                ]
+            },
+            {
+                "chem_struct": "COC1=CC(OC)=C2C(OC3O[C@@H](C)[C@H](O)[C@@H](O)[C@H]3OC)=CC(OC)=CC2=C1",
+                "compound": "IBR-3",
+                "database_id": [
+                    "npatlas:NPA032916"
+                ]
+            },
+            {
+                "chem_struct": "COC1=CC(OC)=C2C(OC)=CC(OC)=CC2=C1",
+                "compound": "IBR-4",
+                "database_id": [
+                    "npatlas:NPA032917"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "MK153302.1",
+            "completeness": "Unknown",
+            "end_coord": 13564,
+            "start_coord": 1
+        },
+        "mibig_accession": "BGC0002562",
+        "minimal": true,
+        "ncbi_tax_id": "1047172",
+        "organism_name": "Nocardia sp. CS682",
+        "publications": [
+            "pubmed:30634706",
+            "doi:10.3390/molecules24020244"
+        ],
+        "retirement_reasons": [
+            "Missing gene annotations"
+        ],
+        "status": "retired"
+    }
+}

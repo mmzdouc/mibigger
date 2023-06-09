@@ -1,0 +1,67 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11",
+                "Added chemical structures for compounds: K-41A.",
+                "Added NPAtlas links to compounds: K-41A."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antimalarial"
+                    },
+                    {
+                        "activity": "antiviral"
+                    }
+                ],
+                "chem_struct": "CO[C@H]1CC[C@H](O[C@H]2[C@H](C)[C@@H]([C@H]3CC[C@H]([C@@H]4CC[C@H]([C@@]5(C)O[C@]6(O[C@H](C[C@@H]7O[C@](O)([C@@H](O)C(=O)O)[C@@H](C)[C@H](OC)[C@@]7(C)OC)C[C@@H](OC)[C@H]6C)[C@H](C)[C@H]5OC)O4)O3)O[C@](C)(O)[C@@H]2C)O[C@@H]1C",
+                "compound": "K-41A",
+                "database_id": [
+                    "npatlas:NPA032761"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "MT318810.1",
+            "completeness": "Unknown",
+            "end_coord": 115748,
+            "evidence": [
+                "Knock-out studies"
+            ],
+            "start_coord": 1
+        },
+        "mibig_accession": "BGC0002526",
+        "minimal": true,
+        "ncbi_tax_id": "1931",
+        "organism_name": "Streptomyces sp.",
+        "publications": [
+            "pubmed:32511927"
+        ],
+        "status": "active"
+    }
+}

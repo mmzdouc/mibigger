@@ -1,0 +1,72 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.3"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    }
+                ],
+                "compound": "pinensins"
+            }
+        ],
+        "loci": {
+            "accession": "CP001699.1",
+            "completeness": "Unknown",
+            "end_coord": 6813685,
+            "start_coord": 6791760
+        },
+        "mibig_accession": "BGC0001392",
+        "minimal": true,
+        "ncbi_tax_id": "485918",
+        "organism_name": "Chitinophaga pinensis DSM 2588",
+        "publications": [
+            "pubmed:21304681"
+        ],
+        "status": "active"
+    }
+}

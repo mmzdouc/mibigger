@@ -1,0 +1,135 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: myxochelin N, myxochelin O, myxochelin B.",
+                "Added NPAtlas links to compounds: myxochelin N, myxochelin O, myxochelin B."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "NCC(CCCCNC(=O)C1=C(O)C(O)=CC=C1)NC(=O)C1=C(O)C(O)=CC=C1",
+                "compound": "myxochelin B",
+                "database_id": [
+                    "npatlas:NPA032737"
+                ]
+            },
+            {
+                "chem_struct": "O=C(NCCCC[C@@H](CO)NC(=O)C1=CN=CC=C1)C1=CN=CC=C1",
+                "compound": "myxochelin N",
+                "database_id": [
+                    "npatlas:NPA033290"
+                ]
+            },
+            {
+                "chem_struct": "O=C1N[C@@H](CCCCNC(=O)C2=CN=CC=C2)CO1",
+                "compound": "myxochelin O",
+                "database_id": [
+                    "npatlas:NPA033289"
+                ]
+            },
+            {
+                "compound": "myxochelin P"
+            },
+            {
+                "compound": "myxochelin Q"
+            },
+            {
+                "chem_struct": "C1=CC(=C(C(=C1)O)O)C(=O)NCCCC[C@@H](CO)NC(=O)C2=C(C(=CC=C2)O)O",
+                "compound": "myxochelin A",
+                "database_id": [
+                    "npatlas:NPA002219"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "CP069338.1",
+            "completeness": "Unknown",
+            "end_coord": 8377243,
+            "start_coord": 8359747
+        },
+        "mibig_accession": "BGC0002324",
+        "minimal": false,
+        "ncbi_tax_id": "83451",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "QRK05499.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Feeding study"
+                                ],
+                                "publications": [
+                                    "pubmed:34623817"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "nicotinic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC(=CN=C1)C(=O)O"
+                                    },
+                                    {
+                                        "name": "benzoic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC=C(C=C1)C(=O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "QRK05501.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:34623817"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "lysine",
+                                        "proteinogenic": true,
+                                        "structure": "C(CCN)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Archangium violaceum",
+        "publications": [
+            "pubmed:34623817",
+            "doi:10.1021/acs.jnatprod.1c00524"
+        ],
+        "status": "active"
+    }
+}

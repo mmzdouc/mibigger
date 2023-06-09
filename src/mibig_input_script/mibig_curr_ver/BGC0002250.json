@@ -1,0 +1,68 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide",
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "compound": "triticone D"
+            },
+            {
+                "compound": "triticone E"
+            },
+            {
+                "chem_struct": "C=C1C(=O)C2(C(=O)N1OC)/C(=C\\CC)C=CC(=O)[C@H]2O",
+                "compound": "triticone A",
+                "database_id": [
+                    "npatlas:NPA028982",
+                    "pubchem:6441183"
+                ]
+            },
+            {
+                "chem_struct": "C=C1C(=O)[C@@]2(C(=O)N1OC)/C(=C\\CC)C=CC(=O)[C@H]2O",
+                "compound": "triticone B",
+                "database_id": [
+                    "npatlas:NPA028983"
+                ]
+            },
+            {
+                "chem_struct": "CC/C=C1C=CC([C@@H](O)C/12C([C@](N(OC)C2=O)(C)O)O)=O",
+                "compound": "triticone F"
+            },
+            {
+                "chem_struct": "CC/C=C1C=CC([C@@H](O)C/12C(C(N(OC)C2=O)=C)O)=O",
+                "compound": "triticone C"
+            }
+        ],
+        "loci": {
+            "accession": "DS231617.1",
+            "completeness": "Unknown",
+            "end_coord": 2549000,
+            "evidence": [
+                "Knock-out studies"
+            ],
+            "start_coord": 2506500
+        },
+        "mibig_accession": "BGC0002250",
+        "minimal": true,
+        "ncbi_tax_id": "426418",
+        "organism_name": "Pyrenophora tritici-repentis Pt-1C-BFP",
+        "publications": [
+            "pubmed:31698543",
+            "doi:10.1111/1462-2920.14854"
+        ],
+        "status": "active"
+    }
+}

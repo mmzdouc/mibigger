@@ -1,0 +1,56 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Fetch compound properties from PubChem",
+                "Cleaned up synonym list"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CCCC[C@@H](/C=C/C(=O)O[C@@H]1[C@H]([C@@H]([C@@](O[C@H]1C)(C)[C@H]([C@@H](C)C(=O)O)O)O)C)O",
+                "chem_synonyms": [
+                    "Botocinic acid"
+                ],
+                "compound": "botcinic acid",
+                "database_id": [
+                    "pubchem:11509607"
+                ],
+                "mol_mass": 402.225368,
+                "molecular_formula": "C20H34O8"
+            }
+        ],
+        "loci": {
+            "accession": "CP009805.1",
+            "completeness": "Unknown",
+            "end_coord": 69693,
+            "start_coord": 5626
+        },
+        "mibig_accession": "BGC0001892",
+        "minimal": true,
+        "ncbi_tax_id": "332648",
+        "organism_name": "Botrytis cinerea B05.10",
+        "publications": [
+            "pubmed:30848345"
+        ],
+        "status": "active"
+    }
+}

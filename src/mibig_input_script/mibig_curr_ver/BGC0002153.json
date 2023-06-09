@@ -1,0 +1,35 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "compound": "lasonolide A"
+            }
+        ],
+        "loci": {
+            "accession": "ON409579.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0002153",
+        "minimal": true,
+        "ncbi_tax_id": "134622",
+        "organism_name": "Candidatus Thermopylae lasonolidus",
+        "publications": [
+            "doi:10.1101/2022.05.23.493085"
+        ],
+        "status": "active"
+    }
+}

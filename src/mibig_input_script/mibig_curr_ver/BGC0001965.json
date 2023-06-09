@@ -1,0 +1,69 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Cleaned up synonym list",
+                "Fetch compound properties from PubChem",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antiviral"
+                    }
+                ],
+                "chem_struct": "CC1=CC(=O)N2COC3=C2C1=CC4=C3N(C(=O)C=C4CO)C",
+                "compound": "nybomycin",
+                "database_id": [
+                    "pubchem:169159"
+                ],
+                "mol_mass": 298.095357,
+                "molecular_formula": "C16H14N2O4"
+            }
+        ],
+        "loci": {
+            "accession": "MH924838.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001965",
+        "minimal": true,
+        "ncbi_tax_id": "337066",
+        "organism_name": "Streptomyces albus subsp. chlorinus",
+        "publications": [
+            "pubmed:30400361"
+        ],
+        "status": "active"
+    }
+}

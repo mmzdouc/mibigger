@@ -1,0 +1,44 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC(=O)NC1=C2C(=CSS2)NC1=O",
+                "compound": "holomycin",
+                "database_id": [
+                    "npatlas:NPA013565"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "JMIB01000043.1",
+            "completeness": "Unknown",
+            "end_coord": 91151,
+            "evidence": [
+                "Knock-out studies"
+            ],
+            "start_coord": 78725
+        },
+        "mibig_accession": "BGC0002412",
+        "minimal": true,
+        "ncbi_tax_id": "1654360",
+        "organism_name": "Photobacterium galatheae",
+        "publications": [
+            "pubmed:33771780"
+        ],
+        "status": "active"
+    }
+}

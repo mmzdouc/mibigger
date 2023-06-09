@@ -1,0 +1,103 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: saccharochelin D, saccharochelin A, saccharochelin H, saccharochelin F, saccharochelin C, saccharochelin B, saccharochelin E, saccharochelin G.",
+                "Added NPAtlas links to compounds: saccharochelin D, saccharochelin A, saccharochelin H, saccharochelin F, saccharochelin C, saccharochelin B, saccharochelin E, saccharochelin G."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CCCCCCCCCCCC(=O)N[C@@H](CCCN(O)C=O)C(=O)N[C@@H](CO)C(=O)N(O)CCC[C@@H]1NC(=O)[C@H](CCCN(O)C=O)NC1=O",
+                "compound": "saccharochelin A",
+                "database_id": [
+                    "npatlas:NPA033296"
+                ]
+            },
+            {
+                "chem_struct": "CC(C)CCCCCCCCC(=O)N[C@@H](CCCN(O)C=O)C(=O)N[C@@H](CO)C(=O)N(O)CCC[C@@H]1NC(=O)[C@H](CCCN(O)C=O)NC1=O",
+                "compound": "saccharochelin B",
+                "database_id": [
+                    "npatlas:NPA033297"
+                ]
+            },
+            {
+                "chem_struct": "CCCCCCCCCCCCC(=O)N[C@@H](CCCN(O)C=O)C(=O)N[C@@H](CO)C(=O)N(O)CCC[C@@H]1NC(=O)[C@H](CCCN(O)C=O)NC1=O",
+                "compound": "saccharochelin C",
+                "database_id": [
+                    "npatlas:NPA033298"
+                ]
+            },
+            {
+                "chem_struct": "CC(C)CCCCCCCCCC(=O)N[C@@H](CCCN(O)C=O)C(=O)N[C@@H](CO)C(=O)N(O)CCC[C@@H]1NC(=O)[C@H](CCCN(O)C=O)NC1=O",
+                "compound": "saccharochelin D",
+                "database_id": [
+                    "npatlas:NPA033299"
+                ]
+            },
+            {
+                "chem_struct": "CCCCCCCCCCCCCC(=O)N[C@@H](CCCN(O)C=O)C(=O)N[C@@H](CO)C(=O)N(O)CCC[C@@H]1NC(=O)[C@H](CCCN(O)C=O)NC1=O",
+                "compound": "saccharochelin E",
+                "database_id": [
+                    "npatlas:NPA033300"
+                ]
+            },
+            {
+                "chem_struct": "CC(C)CCCCCCCCCCC(=O)N[C@@H](CCCN(O)C=O)C(=O)N[C@@H](CO)C(=O)N(O)CCC[C@@H]1NC(=O)[C@H](CCCN(O)C=O)NC1=O",
+                "compound": "saccharochelin F",
+                "database_id": [
+                    "npatlas:NPA033301"
+                ]
+            },
+            {
+                "chem_struct": "CC(C)CCCCCCCCCCCC(=O)N[C@@H](CCCN(O)C=O)C(=O)N[C@@H](CO)C(=O)N(O)CCC[C@@H]1NC(=O)[C@H](CCCN(O)C=O)NC1=O",
+                "compound": "saccharochelin G",
+                "database_id": [
+                    "npatlas:NPA033302"
+                ]
+            },
+            {
+                "chem_struct": "CCC(C)CCCCCCCCCCC(=O)N[C@@H](CCCN(O)C=O)C(=O)N[C@@H](CO)C(=O)N(O)CCC[C@@H]1NC(=O)[C@H](CCCN(O)C=O)NC1=O",
+                "compound": "saccharochelin H",
+                "database_id": [
+                    "npatlas:NPA033303"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "MW298647.1",
+            "completeness": "Unknown",
+            "evidence": [
+                "Heterologous expression",
+                "Knock-out studies"
+            ]
+        },
+        "mibig_accession": "BGC0002424",
+        "minimal": true,
+        "ncbi_tax_id": "1873460",
+        "organism_name": "Saccharothrix sp.",
+        "publications": [
+            "pubmed:34323485",
+            "doi:10.1021/acs.jnatprod.1c00155"
+        ],
+        "status": "active"
+    }
+}

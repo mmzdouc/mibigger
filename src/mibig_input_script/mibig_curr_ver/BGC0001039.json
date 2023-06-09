@@ -1,0 +1,106 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "CC/C(=C\\1/C(=O)O[C@@H]([C@@H](C(=O)N[C@H]([C@@H]([C@H](C(=O)O1)C)O)CC2=CN=CC=C2)NC(=O)C3=C(C=CC=N3)O)C)/C",
+                "compound": "pyridomycin",
+                "database_id": [
+                    "pubchem:3034101"
+                ],
+                "mol_mass": 540.222013984,
+                "molecular_formula": "C27H32N4O8"
+            }
+        ],
+        "loci": {
+            "accession": "HM436809.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001039",
+        "minimal": false,
+        "ncbi_tax_id": "68260",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "AEF33078.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "substrates": [
+                                    {
+                                        "name": "threonine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@H]([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "substrates": [
+                                    {
+                                        "name": "3-(3-pyridyl)-alanine",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC(=CN=C1)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Streptomyces pyridomyceticus",
+        "publications": [
+            "pubmed:21454714"
+        ],
+        "status": "active"
+    }
+}

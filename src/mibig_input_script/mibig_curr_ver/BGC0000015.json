@@ -1,0 +1,45 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C[C@H]1/C=C/C=C/C=C/C=C/C=C/C=C/C=C/[C@@H](C[C@H]2[C@@H]([C@H](C[C@](O2)(C[C@H](C[C@H]([C@@H](CC[C@H](C[C@H](CC(=O)O[C@H]([C@@H]([C@@H]1O)C)C)O)O)O)O)O)O)O)C(=O)O)OC3C(C(C(C(O3)C)O)N)O",
+                "compound": "amphotericin",
+                "database_id": [
+                    "pubchem:5386092"
+                ],
+                "mol_mass": 923.4878498760003,
+                "molecular_formula": "C47H73NO17"
+            }
+        ],
+        "loci": {
+            "accession": "AF357202.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000015",
+        "minimal": true,
+        "ncbi_tax_id": "40318",
+        "organism_name": "Streptomyces nodosus",
+        "publications": [
+            "pubmed:11451671",
+            "pubmed:16079135"
+        ],
+        "retirement_reasons": [
+            "Retired in the 2.0 release for unknown reasons"
+        ],
+        "status": "retired"
+    }
+}

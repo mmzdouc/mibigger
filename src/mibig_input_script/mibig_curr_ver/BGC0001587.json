@@ -1,0 +1,73 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (MIBiG Annotathon)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "siderophore"
+                    }
+                ],
+                "chem_struct": "N=C(N)NCC(O)CC(C(O)=O)NCCNC(CC(O)=O)C(O)=O",
+                "compound": "ethylenediaminesuccinic acid hydroxyarginine (EDHA)",
+                "mol_mass": 349.1597480759999,
+                "molecular_formula": "C12H23N5O7"
+            }
+        ],
+        "loci": {
+            "accession": "BA000030.3",
+            "completeness": "Unknown",
+            "end_coord": 6800400,
+            "start_coord": 6792146
+        },
+        "mibig_accession": "BGC0001587",
+        "minimal": true,
+        "ncbi_tax_id": "227882",
+        "organism_name": "Streptomyces avermitilis MA-4680 = NBRC 14893",
+        "publications": [
+            "pubmed:29667664"
+        ],
+        "status": "active"
+    }
+}

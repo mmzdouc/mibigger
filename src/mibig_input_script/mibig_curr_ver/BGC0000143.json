@@ -1,0 +1,84 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "antiprotozoal"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CCC(C1CCC(C)C(O1)C(C)C(O)C(C)C(=O)C(CC)C1OC2(OC3(CCC(C)(O3)C3CCC(O)(CC)C(C)O3)C(O)C=C2)C(C)CC1C)C(O)=O",
+                "compound": "salinomycin",
+                "database_id": [
+                    "npatlas:NPA08306",
+                    "pubchem:72370"
+                ],
+                "mol_mass": 750.49181306,
+                "molecular_formula": "C42H70O11"
+            }
+        ],
+        "loci": {
+            "accession": "DQ630728.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000143",
+        "minimal": true,
+        "ncbi_tax_id": "1888",
+        "organism_name": "Streptomyces albus",
+        "publications": [
+            "pubmed:18062184"
+        ],
+        "status": "active"
+    }
+}

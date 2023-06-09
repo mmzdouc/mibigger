@@ -1,0 +1,89 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Terpene"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antiparasidal"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CC(CCCO)[C@H]1CC[C@@]2(C)[C@H]1CC[C@]1(C)[C@@H]2CC[C@@H]2[C@@]3(C)CCCC(C)(C)[C@@H]3C=C[C@@]12C",
+                "chem_targets": [
+                    {
+                        "publications": [
+                            "doi:10.3389/fbioe.2020.00426"
+                        ],
+                        "target": "antimalarial"
+                    }
+                ],
+                "compound": "hopene",
+                "database_id": [
+                    "npatlas:NPA0919",
+                    "pubchem:92155"
+                ],
+                "mol_mass": 454.417466348,
+                "molecular_formula": "C32H54O"
+            }
+        ],
+        "loci": {
+            "accession": "AL645882.2",
+            "completeness": "Unknown",
+            "end_coord": 7529773,
+            "start_coord": 7516017
+        },
+        "mibig_accession": "BGC0000663",
+        "minimal": true,
+        "ncbi_tax_id": "100226",
+        "organism_name": "Streptomyces coelicolor A3(2)",
+        "publications": [
+            "pubmed:12000953",
+            "pubmed:8843436"
+        ],
+        "status": "active"
+    }
+}

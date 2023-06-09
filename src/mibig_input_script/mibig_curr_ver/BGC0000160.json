@@ -1,0 +1,56 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "[H][C@]12O[C@@]1([H])C(=O)C(O)=C(C)C2=O",
+                "compound": "terreic acid",
+                "database_id": [
+                    "npatlas:NPA0714",
+                    "pubchem:91437"
+                ],
+                "mol_mass": 154.026608672,
+                "molecular_formula": "C7H6O4"
+            }
+        ],
+        "loci": {
+            "accession": "CH476602.1",
+            "completeness": "Unknown",
+            "end_coord": 116126,
+            "start_coord": 89034
+        },
+        "mibig_accession": "BGC0000160",
+        "minimal": true,
+        "ncbi_tax_id": "341663",
+        "organism_name": "Aspergillus terreus NIH2624",
+        "publications": [
+            "pubmed:25265334",
+            "pubmed:29391515",
+            "pubmed:9003280"
+        ],
+        "status": "active"
+    }
+}

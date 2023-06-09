@@ -1,0 +1,72 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "6J4RQOGA5AOCPTJZWNLVAEXA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "NCCC(O)CCCCCCCC(N)CCCCCCCC(N)CCCCCCCC(N)CCCCCCCC(C)N",
+                "compound": "fabclavine-polyamine",
+                "evidence": [
+                    "Mass spectrometry"
+                ],
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 597.6284621479999,
+                "molecular_formula": "C36H79N5O"
+            }
+        ],
+        "loci": {
+            "accession": "FN667741.1",
+            "completeness": "complete",
+            "end_coord": 2915996,
+            "evidence": [
+                "Knock-out studies",
+                "Gene expression correlated with compound production"
+            ],
+            "start_coord": 2895506
+        },
+        "mibig_accession": "BGC0001872",
+        "minimal": false,
+        "ncbi_tax_id": "406818",
+        "organism_name": "Xenorhabdus bovienii SS-2004",
+        "polyketide": {
+            "cyclic": false,
+            "release_type": [
+                "Reductive release"
+            ],
+            "starter_unit": "Acetyl-CoA",
+            "subclasses": [
+                "Other"
+            ]
+        },
+        "publications": [
+            "pubmed:30610410"
+        ],
+        "status": "active"
+    }
+}

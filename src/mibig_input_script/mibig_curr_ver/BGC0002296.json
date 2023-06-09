@@ -1,0 +1,174 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C#CCCCC(=CCl)CC[C@@H](C)C=CCCC(=O)N(C)[C@@H](CC1=CC=C(OC)C=C1)C(=O)OC",
+                "compound": "vatiamide A",
+                "database_id": [
+                    "npatlas:NPA025670"
+                ]
+            },
+            {
+                "chem_struct": "COC(=O)[C@H](CC1=CC=C(OC)C=C1)N(C)C(=O)CCC=C[C@H](C)CCC(=CCl)CCCC#CBr",
+                "compound": "vatiamide B",
+                "database_id": [
+                    "npatlas:NPA025671"
+                ]
+            },
+            {
+                "chem_struct": "C#CCCCC(=CCl)CC[C@@H](C)C=CCCC(=O)NCC1(O)OC(CC2CC(OC)=CC(=O)O2)CC(OC)C1C",
+                "compound": "vatiamide C",
+                "database_id": [
+                    "npatlas:NPA025672"
+                ]
+            },
+            {
+                "chem_struct": "COC1=CC(=O)OC(CC2CC(OC)C(C)C(O)(CNC(=O)CCC=C[C@H](C)CCC(=CCl)CCCC#CBr)O2)C1",
+                "compound": "vatiamide D",
+                "database_id": [
+                    "npatlas:NPA025673"
+                ]
+            },
+            {
+                "chem_struct": "C#CCCCC(=CCl)CC[C@@H](C)C=CCCC(=O)N[C@H](C)C(=O)N(C)[C@H](C(N)=O)C(C)C",
+                "compound": "vatiamide E",
+                "database_id": [
+                    "npatlas:NPA025674"
+                ]
+            },
+            {
+                "chem_struct": "CC(C)[C@@H](C(N)=O)N(C)C(=O)[C@@H](C)NC(=O)CCC=C[C@H](C)CCC(=CCl)CCCC#CBr",
+                "compound": "vatiamide F",
+                "database_id": [
+                    "npatlas:NPA025675"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "MK618714.1",
+            "completeness": "Unknown",
+            "end_coord": 97932,
+            "evidence": [
+                "Enzymatic assays"
+            ],
+            "start_coord": 1
+        },
+        "mibig_accession": "BGC0002296",
+        "minimal": false,
+        "ncbi_tax_id": "2546228",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "QCP68969.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:31071229"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "tyrosine",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC(=CC=C1C[C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "QCP68976.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:31071229"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "alanine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "QCP68971.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:31071229"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "valine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "QCP68975.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:31071229"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glycine",
+                                        "proteinogenic": true,
+                                        "structure": "NCC(=O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Moorena producens ASI16Jul14-2",
+        "publications": [
+            "pubmed:31071229",
+            "doi:10.1002/ange.201902571"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,84 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "BWBU6RQ63PUYKPLUPLLRC4A7"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Update compound structure (SMILES) for α-galactosylceramide"
+            ],
+            "contributors": [
+                "H5KVDLSVQ3TJW7SKCDNBDEVC"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "immunosuppressive",
+                        "comment": "agonist of CD1d-restricted natural killer T (iNKT) cells"
+                    }
+                ],
+                "chem_struct": "CC(C)CCCCCCCCCCC[C@@H](O)CC(=O)N[C@@H](CO[C@@H]1OC(CO)[C@H](O)C(O)C1O)[C@H](O)CCCCCCCCCCCC(C)C",
+                "chem_targets": [
+                    {
+                        "target": "CD1d"
+                    }
+                ],
+                "compound": "α-galactosylceramide",
+                "database_id": [
+                    "pubchem:2826713"
+                ],
+                "mol_mass": 717.5754831079998,
+                "molecular_formula": "C40H79NO9"
+            }
+        ],
+        "loci": {
+            "accession": "CR626927.1",
+            "completeness": "complete",
+            "end_coord": 2863272,
+            "evidence": [
+                "Knock-out studies"
+            ],
+            "start_coord": 2860810
+        },
+        "mibig_accession": "BGC0000948",
+        "minimal": false,
+        "ncbi_tax_id": "272559",
+        "organism_name": "Bacteroides fragilis NCTC 9343",
+        "publications": [
+            "pubmed:23874157"
+        ],
+        "status": "active"
+    }
+}

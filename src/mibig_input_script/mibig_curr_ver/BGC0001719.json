@@ -1,0 +1,63 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Fix wrongly assigned loci information: MF437311.1 to MN901947.1",
+                "Added compound properties of olimycin A (derived from ChemSpider ID:62934196)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC[C@@H]\\1CCC(=O)c2c3c(cc(c2O)C)C(=O)C4=C(C3=O)[C@@](C=CC(=O)N4)(C(=O)O[C@H](C/C=C1)CC(C)C)C",
+                "compound": "olimycin A",
+                "database_id": [
+                    "chemspider:62934196"
+                ],
+                "mol_mass": 533.241333,
+                "molecular_formula": "C31H35NO7"
+            },
+            {
+                "compound": "olimycin B"
+            }
+        ],
+        "loci": {
+            "accession": "MN901947.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001719",
+        "minimal": true,
+        "ncbi_tax_id": "47716",
+        "organism_name": "Streptomyces olivaceus",
+        "publications": [
+            "doi:10.1016/j.tet.2017.11.069"
+        ],
+        "status": "active"
+    }
+}

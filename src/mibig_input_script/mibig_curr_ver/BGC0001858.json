@@ -1,0 +1,50 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted",
+                "Added version to NCBI accession"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "compound": "alternapyrone B"
+            },
+            {
+                "compound": "alternapyrone C"
+            },
+            {
+                "compound": "alternapyrone D"
+            },
+            {
+                "compound": "alternapyrone E"
+            },
+            {
+                "compound": "alternapyrone F"
+            }
+        ],
+        "loci": {
+            "accession": "CH445332.1",
+            "completeness": "Unknown",
+            "end_coord": 723056,
+            "start_coord": 703148
+        },
+        "mibig_accession": "BGC0001858",
+        "minimal": true,
+        "ncbi_tax_id": "321614",
+        "organism_name": "Parastagonospora nodorum SN15",
+        "publications": [
+            "pubmed:30226784"
+        ],
+        "status": "active"
+    }
+}

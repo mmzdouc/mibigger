@@ -1,0 +1,144 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "LPHAMZXQ3BT6INJWOLKUYGWU"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "inhibitor"
+                    }
+                ],
+                "chem_struct": "CC1C(=O)c2cc3cccc(c3cc2C(C1(C(=O)O)O)(CCC(C)C)O)O",
+                "chem_targets": [
+                    {
+                        "target": "a2-macroglobulin"
+                    },
+                    {
+                        "target": "glutathione-S-transferase"
+                    },
+                    {
+                        "publications": [
+                            "pubmed:29518990",
+                            "pubmed:6209258"
+                        ],
+                        "target": "alpha-2-macroglobulin"
+                    }
+                ],
+                "compound": "rishirilide B",
+                "mass_spec_ion_type": "[M-H]-",
+                "mol_mass": 372.15728848799995,
+                "molecular_formula": "C21H24O6"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "inhibitor"
+                    }
+                ],
+                "chem_struct": "CC1C(=O)c2cc3cccc(c3cc2C(C1(C(=O)O)O)(CCC(C)C)O)O.CC1C(=O)C2=Cc3cccc(c3C(C24C(C1(C(=O)O4)O)(CCC(C)C)O)O)O",
+                "chem_targets": [
+                    {
+                        "target": "a2-macroglobulin"
+                    },
+                    {
+                        "target": "glutathione-S-transferase"
+                    },
+                    {
+                        "publications": [
+                            "pubmed:29518990",
+                            "pubmed:6209258"
+                        ],
+                        "target": "alpha-2-macroglobulin"
+                    }
+                ],
+                "compound": "rishirilide A",
+                "mass_spec_ion_type": "[M-H]-",
+                "mol_mass": 760.309491596,
+                "molecular_formula": "C42H48O13"
+            }
+        ],
+        "loci": {
+            "accession": "KJ437438.1",
+            "completeness": "complete",
+            "evidence": [
+                "Heterologous expression"
+            ]
+        },
+        "mibig_accession": "BGC0001179",
+        "minimal": false,
+        "ncbi_tax_id": "42235",
+        "organism_name": "Streptomyces bottropensis",
+        "polyketide": {
+            "cyclases": [
+                "AHL46720.1",
+                "AHL46724.1",
+                "AHL46707.1"
+            ],
+            "cyclic": true,
+            "ketide_length": 9,
+            "subclasses": [
+                "Other"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "AHL46708.1",
+                        "AHL46710.1",
+                        "AHL46720.1",
+                        "AHL46707.1",
+                        "AHL46724.1"
+                    ],
+                    "subclass": [
+                        "Type II"
+                    ]
+                }
+            ]
+        },
+        "publications": [
+            "pubmed:22162248",
+            "pubmed:6209258",
+            "pubmed:1473997"
+        ],
+        "status": "active"
+    }
+}

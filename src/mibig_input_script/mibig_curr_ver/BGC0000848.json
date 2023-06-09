@@ -1,0 +1,85 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "regulatory"
+                    }
+                ],
+                "chem_struct": "CC(C)CCCCC(=O)C1[C@@H](COC1=O)CO",
+                "chem_targets": [
+                    {
+                        "publications": [
+                            "doi:10.1111/j.1365-2958.1994.tb01073.x"
+                        ],
+                        "target": "receptor protein"
+                    }
+                ],
+                "compound": "A-factor",
+                "database_id": [
+                    "pubchem:119102"
+                ],
+                "mol_mass": 242.151809184,
+                "molecular_formula": "C13H22O4"
+            }
+        ],
+        "loci": {
+            "accession": "AP009493.1",
+            "completeness": "Unknown",
+            "end_coord": 8274388,
+            "start_coord": 8273444
+        },
+        "mibig_accession": "BGC0000848",
+        "minimal": true,
+        "ncbi_tax_id": "455632",
+        "organism_name": "Streptomyces griseus subsp. griseus NBRC 13350",
+        "publications": [
+            "pubmed:18375553",
+            "pubmed:18364359",
+            "pubmed:18310036"
+        ],
+        "status": "active"
+    }
+}

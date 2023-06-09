@@ -1,0 +1,83 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "OVR6EKPL57AJOPBA4Z45OQI7"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "Indole carboxylic acid"
+                    }
+                ],
+                "chem_struct": "O=C(NC(C(O)=O)C)C1=CSC(C2=CSC(C3=NC(C4=CSC(C(CSC(C5=CNC6=C5C=CC=C6)=O)NC7=O)=N4)=C(C8=NC(C(NC(C(C)O)C(N/C(C9=NC(C(NC(C%10=NC7CS%10)C(O)C)=O)=CS9)=C\\C)=O)=O)=CS8)C=C3)=N2)=N1",
+                "chem_targets": [
+                    {
+                        "target": "Binds to the 50S ribosomal subunit"
+                    },
+                    {
+                        "target": "Protein synthesis inhibitor"
+                    }
+                ],
+                "compound": "lactocillin",
+                "mol_mass": 1223.1457316399994,
+                "molecular_formula": "C51H45N13O10S7"
+            }
+        ],
+        "loci": {
+            "accession": "ACGO02000004.1",
+            "completeness": "complete",
+            "end_coord": 23523,
+            "evidence": [
+                "Knock-out studies"
+            ],
+            "start_coord": 9724
+        },
+        "mibig_accession": "BGC0000628",
+        "minimal": false,
+        "ncbi_tax_id": "525326",
+        "organism_name": "Lactobacillus paragasseri JV-V03",
+        "publications": [
+            "pubmed:25215495"
+        ],
+        "ripp": {
+            "cyclic": true,
+            "subclass": "Thiopeptide"
+        },
+        "status": "active"
+    }
+}

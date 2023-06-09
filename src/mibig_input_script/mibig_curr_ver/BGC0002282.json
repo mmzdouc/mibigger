@@ -1,0 +1,45 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C1=NC2=C(NN=C2C(=N1)N)[C@H]3[C@@H]([C@@H]([C@H](O3)CO)O)O",
+                "compound": "formycin A",
+                "database_id": [
+                    "pubchem:447199"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "WBOF01000001.1",
+            "completeness": "Unknown",
+            "end_coord": 730388,
+            "evidence": [
+                "Knock-out studies",
+                "Enzymatic assays"
+            ],
+            "start_coord": 694601
+        },
+        "mibig_accession": "BGC0002282",
+        "minimal": true,
+        "ncbi_tax_id": "212423",
+        "organism_name": "Streptomyces kaniharaensis",
+        "publications": [
+            "pubmed:30942582"
+        ],
+        "status": "active"
+    }
+}

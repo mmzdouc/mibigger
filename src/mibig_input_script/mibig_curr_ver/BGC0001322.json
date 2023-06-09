@@ -1,0 +1,70 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.3"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Terpene"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC(=CCCC(C)(C(=O)CC[C@@]1(C2CC3C1(C3C2)C)C)O)C",
+                "compound": "lycosantalonol",
+                "database_id": [
+                    "pubchem:101900499"
+                ],
+                "mol_mass": 304.240230264,
+                "molecular_formula": "C20H32O2"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "comments": "cis-prenyl transferase 8",
+                    "id": "pseudo49437_51033"
+                },
+                {
+                    "comments": "cis-prenyl transferase 9",
+                    "id": "pseudo94131_96140"
+                },
+                {
+                    "comments": "cytochrome P450-2",
+                    "id": "pseudo106205_112773"
+                },
+                {
+                    "comments": "alcohol acyltransferase 1",
+                    "id": "pseudo113171_113938"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "KC807995.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001322",
+        "minimal": true,
+        "ncbi_tax_id": "4081",
+        "organism_name": "Solanum lycopersicum",
+        "publications": [
+            "pubmed:23757397"
+        ],
+        "status": "active"
+    }
+}

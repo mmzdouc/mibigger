@@ -1,0 +1,36 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted",
+                "Added version to NCBI accession"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "compound": "1-carbapen-2-em-3-carboxylic acid"
+            }
+        ],
+        "loci": {
+            "accession": "U17224.2",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001847",
+        "minimal": true,
+        "ncbi_tax_id": "554",
+        "organism_name": "Pectobacterium carotovorum",
+        "publications": [
+            "pubmed:9402024"
+        ],
+        "status": "active"
+    }
+}

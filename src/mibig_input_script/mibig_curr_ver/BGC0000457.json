@@ -1,0 +1,76 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "siderophore"
+                    }
+                ],
+                "chem_struct": "C[C@@H]1CC(=O)N(O)CCC[C@@H](NC(C)=O)C(=O)O[C@H](C)CC(=O)N(O)CCC[C@@H](NC(C)=O)C(=O)O[C@H](C)CC(=O)N(O)CCC[C@@H](NC(C)=O)C(=O)O1",
+                "compound": "vicibactin",
+                "database_id": [
+                    "npatlas:NPA0788"
+                ],
+                "mol_mass": 774.3647150280001,
+                "molecular_formula": "C33H54N6O15"
+            }
+        ],
+        "loci": {
+            "accession": "CP000138.1",
+            "completeness": "Unknown",
+            "end_coord": 523079,
+            "start_coord": 511806
+        },
+        "mibig_accession": "BGC0000457",
+        "minimal": true,
+        "ncbi_tax_id": "347834",
+        "organism_name": "Rhizobium etli CFN 42",
+        "publications": [
+            "pubmed:16505379"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,338 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AK6U5FV25F7Z3GQ43DVTSAVK"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Update compound structure (SMILES) for cylindrocyclophane D",
+                "Linked new PubChem id for cylindrocyclophane D (pubchem:10258912)",
+                "Update compound structure (SMILES) for cylindrocyclophane E",
+                "Linked new PubChem id for cylindrocyclophane E (pubchem:102306484)",
+                "Update compound structure (SMILES) for cylindrocyclophane F",
+                "Linked new PubChem id for cylindrocyclophane F (pubchem:11757351)",
+                "Removed ketoreductase stereochemistry annotation from modules without ketoreductases",
+                "Corrected gene identifiers"
+            ],
+            "contributors": [
+                "5UL74VURKJ25VSPPPO3H2NYB",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "paracyclophane ring"
+                    }
+                ],
+                "chem_struct": "CCCC[C@H]1CCCC[C@@H]([C@H](C2=CC(=C([C@H](CCCC[C@@H]([C@H](C3=CC(=C1C(=C3)O)O)OC(=O)C)C)CCCC)C(=C2)O)O)OC(=O)C)C",
+                "compound": "cylindrocyclophane D",
+                "database_id": [
+                    "pubchem:10258912"
+                ],
+                "mol_mass": 668.42881888,
+                "molecular_formula": "C40H60O8"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "paracyclophane ring"
+                    }
+                ],
+                "chem_struct": "CCCC[C@H]1CCCC[C@@H]([C@H](C2=CC(=C([C@H](CCCC[C@@H](CC3=CC(=C1C(=C3)O)O)C)CCCC)C(=C2)O)O)OC(=O)C)C",
+                "compound": "cylindrocyclophane E",
+                "database_id": [
+                    "pubchem:102306484"
+                ],
+                "mol_mass": 610.4233395759999,
+                "molecular_formula": "C38H58O6"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "paracyclophane ring"
+                    }
+                ],
+                "chem_struct": "CCCC[C@H]1CCCC[C@@H](CC2=CC(=C([C@H](CCCC[C@@H](CC3=CC(=C1C(=C3)O)O)C)CCCC)C(=C2)O)O)C",
+                "compound": "cylindrocyclophane F",
+                "database_id": [
+                    "pubchem:11757351"
+                ],
+                "mol_mass": 552.4178602719999,
+                "molecular_formula": "C36H56O4"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Activity assay"
+                            ]
+                        }
+                    ],
+                    "id": "AFV96135.1",
+                    "name": "cylA",
+                    "product": "AMP-dependent synthetase/ligase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Activity assay"
+                            ]
+                        }
+                    ],
+                    "id": "AFV96136.1",
+                    "name": "cylB",
+                    "product": "acyl carrier protein"
+                },
+                {
+                    "id": "AFV96137.1",
+                    "name": "cylC",
+                    "product": "hypothetical protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AFV96138.1",
+                    "name": "cylD",
+                    "product": "polyketide synthase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AFV96139.1",
+                    "name": "cylE",
+                    "product": "beta-ketoacyl synthase",
+                    "tailoring": [
+                        "Methylation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AFV96140.1",
+                    "name": "cylF",
+                    "product": "HMG-CoA synthase-like enzyme",
+                    "tailoring": [
+                        "Methylation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AFV96141.1",
+                    "name": "cylG",
+                    "product": "enoyl-CoA hydratase/isomerase",
+                    "tailoring": [
+                        "Methylation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AFV96142.1",
+                    "name": "cylH",
+                    "product": "polyketide synthase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Activity assay"
+                            ]
+                        }
+                    ],
+                    "id": "AFV96143.1",
+                    "name": "cylI",
+                    "product": "type III polyketide synthase"
+                },
+                {
+                    "id": "AFV96144.1",
+                    "name": "cylJ",
+                    "product": "phospholipid methyltransferase"
+                },
+                {
+                    "id": "AFV96145.1",
+                    "name": "cylK",
+                    "product": "hemolysin-type calcium-binding region"
+                },
+                {
+                    "id": "AFV96146.1",
+                    "name": "cylL",
+                    "product": "choline dehydrogenase-like flavoprotein"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "JX477167.1",
+            "completeness": "Unknown",
+            "evidence": [
+                "Knock-out studies"
+            ]
+        },
+        "mibig_accession": "BGC0001064",
+        "minimal": false,
+        "ncbi_tax_id": "379530",
+        "organism_name": "Cylindrospermum licheniforme UTEX B 2014",
+        "polyketide": {
+            "cyclic": true,
+            "ketide_length": 4,
+            "subclasses": [
+                "Other"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "AFV96135.1",
+                        "AFV96142.1",
+                        "AFV96138.1",
+                        "AFV96143.1"
+                    ],
+                    "modules": [
+                        {
+                            "at_specificities": [
+                                "Decanoyl-CoA"
+                            ],
+                            "domains": [
+                                "CoA-ligase"
+                            ],
+                            "evidence": "Activity assay",
+                            "genes": [
+                                "AFV96135.1"
+                            ],
+                            "module_number": "0"
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "genes": [
+                                "AFV96138.1"
+                            ],
+                            "module_number": "1"
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "domains": [
+                                "Enoylreductase",
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Thiolation (ACP/PCP)",
+                                "Thioesterase"
+                            ],
+                            "evidence": "Activity assay",
+                            "genes": [
+                                "AFV96142.1"
+                            ],
+                            "module_number": "2"
+                        }
+                    ],
+                    "subclass": [
+                        "Modular type I",
+                        "Type III"
+                    ],
+                    "thioesterases": [
+                        {
+                            "gene": "AFV96142.1",
+                            "thioesterase_type": "Unknown"
+                        }
+                    ]
+                }
+            ]
+        },
+        "publications": [
+            "pubmed:23106426"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,90 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Fetch compound properties from PubChem",
+                "Cleaned up synonym list"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Removed compounds: xanthocillin.",
+                "Added compounds: BU-4704, xanthocillin-X monomethylether, melanocin E, melanocin F, fumiformamide.",
+                "Added NPAtlas links to compounds: BU-4704, xanthocillin-X monomethylether, melanocin E, melanocin F, fumiformamide."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "[C-]#[N+]C(=C\\C1=CC=C(OC)C=C1)/C(=C/C1=CC=C(OS(=O)(=O)O)C=C1)[N+]#[C-]",
+                "compound": "BU-4704",
+                "database_id": [
+                    "npatlas:NPA032787"
+                ]
+            },
+            {
+                "chem_struct": "COC1=CC=C(C=C1)/C=C(/C(=C/C2=CC=C(C=C2)O)/[N+]#[C-])\\[N+]#[C-]",
+                "compound": "xanthocillin-X monomethylether",
+                "database_id": [
+                    "npatlas:NPA014649"
+                ]
+            },
+            {
+                "chem_struct": "COC1=CC=C(C2=C(NC=O)C(NC=O)=CC3=CC(O)=C(O)C=C23)C=C1",
+                "compound": "melanocin E",
+                "database_id": [
+                    "npatlas:NPA032874"
+                ]
+            },
+            {
+                "chem_struct": "COC1=CC=C(CC2=C(CC3=CC=C(OS(=O)(=O)O)C=C3)N=C[NH]2)C=C1",
+                "compound": "melanocin F",
+                "database_id": [
+                    "npatlas:NPA032875"
+                ]
+            },
+            {
+                "chem_struct": "COC1=CC=C(C=C1)C=C(C(=CC2=CC=C(C=C2)OS(=O)(=O)O)NC=O)NC=O",
+                "compound": "fumiformamide",
+                "database_id": [
+                    "npatlas:NPA011631"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "NC_007198.1",
+            "completeness": "Unknown",
+            "end_coord": 701000,
+            "start_coord": 687200
+        },
+        "mibig_accession": "BGC0001990",
+        "minimal": true,
+        "ncbi_tax_id": "330879",
+        "organism_name": "Aspergillus fumigatus Af293",
+        "publications": [
+            "pubmed:29844112"
+        ],
+        "status": "active"
+    }
+}

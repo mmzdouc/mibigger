@@ -1,0 +1,63 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Add new compound structure (SMILES) for heat-stable antifungal factor",
+                "Linked new PubChem id for heat-stable antifungal factor (pubchem:101934630)",
+                "Linked new NPAtlas id for heat-stable antifungal factor (npatlas:NPA03389)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC[C@H]1C[C@@H]2C[C@@H]3[C@H]4C/C=C\\C(=O)NCCC(C5C(=O)C(=C(/C=C/[C@@H]4C[C@@H]([C@H]3[C@@H]2[C@H]1C)O)O)C(=O)N5)O",
+                "compound": "heat-stable antifungal factor",
+                "database_id": [
+                    "pubchem:101934630",
+                    "npatlas:NPA03389"
+                ],
+                "mol_mass": 512.288637,
+                "molecular_formula": "C29H40N2O6"
+            }
+        ],
+        "loci": {
+            "accession": "EF028635.2",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000999",
+        "minimal": true,
+        "ncbi_tax_id": "69",
+        "organism_name": "Lysobacter enzymogenes",
+        "publications": [
+            "pubmed:17074795"
+        ],
+        "status": "active"
+    }
+}

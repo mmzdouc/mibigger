@@ -1,0 +1,154 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "NXKRPYNT3XZRYHGUED5OQBGH"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Compound's structure information updated"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Remove negative ketide_length",
+                "Removed polyketide annotations for missing genes",
+                "Removed precursor synthesis genes from different locus",
+                "Changed accession version"
+            ],
+            "contributors": [
+                "3UOU7PODQJXIM6BEPUHHRRA5",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide",
+            "Saccharide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "forosamine",
+                        "subcluster": [
+                            "ACK77743.1",
+                            "ACK77744.1",
+                            "ACK77745.2",
+                            "AIE41917.1"
+                        ]
+                    }
+                ],
+                "chem_struct": "OC1=CC=CC2=C1C(C([C@]3(O[C@H](C)CC([C@H]3OC4CCC(N(C)C)C(C)O4)=O)O[C@@](C5)([H])[C@]6([H])OC5=O)=C6C2=O)=O",
+                "compound": "auricin",
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 541.1947962213,
+                "molecular_formula": "C28H31NO10"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Regulation",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "ADM72849.2",
+                    "name": "aur1PR3",
+                    "product": "SARP-family auricin specific regulator"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Regulation",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "ADM72853.2",
+                    "name": "aur1R",
+                    "product": "auricin-specific repressor of TetR family"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Regulation",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "AAX57187.2",
+                    "name": "aur1P",
+                    "product": "auricin-specific activator"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "KJ396772.1",
+            "completeness": "complete",
+            "end_coord": 86722,
+            "evidence": [
+                "Knock-out studies"
+            ],
+            "start_coord": 58195
+        },
+        "mibig_accession": "BGC0000201",
+        "minimal": false,
+        "ncbi_tax_id": "1894",
+        "organism_name": "Streptomyces aureofaciens",
+        "polyketide": {
+            "cyclic": true,
+            "subclasses": [
+                "Angucycline"
+            ]
+        },
+        "publications": [
+            "pubmed:12384301",
+            "pubmed:16079347",
+            "pubmed:20466770",
+            "pubmed:21393365",
+            "pubmed:23081778",
+            "pubmed:23373695",
+            "pubmed:23763439",
+            "pubmed:24265028",
+            "pubmed:25219533"
+        ],
+        "saccharide": {
+            "subclass": "hybrid/tailoring"
+        },
+        "status": "active"
+    },
+    "comments": "Auricin is stable in acid and unstable in neutral and alkaline pH. It undergoes methanolysis (addition of methanol to the aglycon)   "
+}

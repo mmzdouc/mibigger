@@ -1,0 +1,57 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C1[C@H](C2=C(NC=N1)N(C=N2)[C@H]3[C@@H]([C@@H]([C@H](O3)CO)O)Cl)O/C1=NC2=C(C(=N1)N)N=CN2[C@H]3[C@@H]([C@@H]([C@H](O3)CO)O)N",
+                "compound": "2'-chloropentostatin",
+                "mol_mass": 566.175270884,
+                "molecular_formula": "C21H27ClN10O7"
+            },
+            {
+                "chem_struct": "N[C@@H]1[C@H](O)[C@@H](CO)O[C@H]1N1C=NC2=C1N=CN=C2N",
+                "compound": "2'-amino-2'-deoxyadenosine",
+                "database_id": [
+                    "npatlas:NPA01164"
+                ],
+                "mol_mass": 266.112738308,
+                "molecular_formula": "C10H14N6O3"
+            }
+        ],
+        "loci": {
+            "accession": "KP025768.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001484",
+        "minimal": true,
+        "ncbi_tax_id": "1676613",
+        "organism_name": "Actinomadura sp. ATCC 39365",
+        "publications": [
+            "pubmed:28258148"
+        ],
+        "status": "active"
+    }
+}

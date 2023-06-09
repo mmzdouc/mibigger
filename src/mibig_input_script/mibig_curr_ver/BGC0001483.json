@@ -1,0 +1,61 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Cleaned up synonym list"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC(=CCC1=CC2=C(C=C1)C(=CN2)C(=O)O[C@H]3[C@@H]([C@H](C=C(O3)C(=O)O)O)O)C",
+                "compound": "5-isoprenylindole-3-carboxylate β-D-glycosyl ester",
+                "database_id": [
+                    "pubchem:123132247"
+                ],
+                "mol_mass": 387.1318020119999,
+                "molecular_formula": "C20H21NO7"
+            }
+        ],
+        "loci": {
+            "accession": "KT895008.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001483",
+        "minimal": true,
+        "ncbi_tax_id": "1429103",
+        "organism_name": "Streptomyces sp. RM-5-8",
+        "publications": [
+            "pubmed:28166207",
+            "pubmed:25961722"
+        ],
+        "status": "active"
+    }
+}

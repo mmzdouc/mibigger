@@ -1,0 +1,53 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "COC(=O)C1=CC(OC)=C(Cl)C(O)=C1OC1=C(C(O)=O)C(O)=CC(C)=C1",
+                "compound": "RES-1214-2",
+                "database_id": [
+                    "npatlas:NPA011068"
+                ],
+                "mol_mass": 382.04554511999993,
+                "molecular_formula": "C17H15ClO8"
+            }
+        ],
+        "loci": {
+            "accession": "KC145148.1",
+            "completeness": "Unknown",
+            "end_coord": 40346,
+            "start_coord": 4104
+        },
+        "mibig_accession": "BGC0000121",
+        "minimal": true,
+        "ncbi_tax_id": "393283",
+        "organism_name": "Pestalotiopsis fici",
+        "publications": [
+            "pubmed:24302702"
+        ],
+        "status": "active"
+    }
+}

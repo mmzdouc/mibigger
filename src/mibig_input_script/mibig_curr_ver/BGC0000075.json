@@ -1,0 +1,102 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CCC1CCC(=O)C2=C(O)C(C)=CC3=C2C(=O)C=C(NC(=O)C\\C=C(C)\\C(=O)O[C@@H](C)[C@@H](O)\\C=C\\1)C3=O",
+                "compound": "hygrocin A",
+                "database_id": [
+                    "npatlas:NPA04945",
+                    "pubchem:5326374"
+                ],
+                "mol_mass": 509.2049669519999,
+                "molecular_formula": "C28H31NO8"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CCC1CCC(=O)C2=C(O)C(C)=CC3=C2C(=O)C2=C(NC(=O)C=C[C@]2(C)C(=O)O[C@@H](C)[C@@H](O)\\C=C\\1)C3=O",
+                "compound": "hygrocin B",
+                "database_id": [
+                    "npatlas:NPA011351",
+                    "pubchem:5326384"
+                ],
+                "mol_mass": 507.1893168879999,
+                "molecular_formula": "C28H29NO8"
+            }
+        ],
+        "loci": {
+            "accession": "JX504844.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000075",
+        "minimal": true,
+        "ncbi_tax_id": "1245024",
+        "organism_name": "Streptomyces sp. LZ35",
+        "publications": [
+            "pubmed:24501776"
+        ],
+        "status": "active"
+    }
+}

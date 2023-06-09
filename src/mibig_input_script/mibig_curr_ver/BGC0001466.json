@@ -1,0 +1,77 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "OC(CCCCNC(/C=C/CCCCCCCC/C=C/C[C@H](O)C)=O)=O",
+                "compound": "wortmanamide",
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry",
+                    "Chemical derivatization"
+                ],
+                "mass_spec_ion_type": "[M-H]-",
+                "mol_mass": 367.27225866399993,
+                "molecular_formula": "C21H37NO4"
+            }
+        ],
+        "loci": {
+            "accession": "MG837519.1",
+            "completeness": "complete",
+            "evidence": [
+                "Gene expression correlated with compound production",
+                "Heterologous expression"
+            ]
+        },
+        "mibig_accession": "BGC0001466",
+        "minimal": false,
+        "ncbi_tax_id": "28567",
+        "organism_name": "Talaromyces wortmannii",
+        "polyketide": {
+            "cyclic": false,
+            "release_type": [
+                "Unknown"
+            ],
+            "starter_unit": "Acetyl-CoA",
+            "subclasses": [
+                "Other"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "mg837519.1"
+                    ],
+                    "iterative": {
+                        "cyclization_type": "Unknown",
+                        "nr_iterations": 7,
+                        "subtype": "Highly reducing"
+                    },
+                    "subclass": [
+                        "Iterative type I"
+                    ]
+                }
+            ]
+        },
+        "publications": [
+            "doi:10.1021/jacs.7b13350"
+        ],
+        "retirement_reasons": [
+            "Reference sequence contains only a single gene"
+        ],
+        "status": "retired"
+    },
+    "comments": "The corresponding author for this entry should be both Yang Hai and Prof. Yi Tang, (yitang@ucla.edu)"
+}

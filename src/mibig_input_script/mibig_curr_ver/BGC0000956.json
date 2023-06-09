@@ -1,0 +1,115 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "NJH7OTJB67HOCVL5GERIIYEA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Removed NRP gene annotations for missing genes"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "C\\C=C\\C=C\\C=C\\C(=O)N[C@@H](CC(=O)N[C@@H](C(C)C)C(=O)[C@H]1[C@H](C)C(=O)NC1=O)C1=CC=CC=C1",
+                "chem_targets": [
+                    {
+                        "target": "beta-subunit of acetyl-CoA carboxylase"
+                    }
+                ],
+                "compound": "andrimid",
+                "database_id": [
+                    "npatlas:NPA015339",
+                    "pubchem:636857"
+                ],
+                "mol_mass": 479.24202115599996,
+                "molecular_formula": "C27H33N3O5"
+            }
+        ],
+        "loci": {
+            "accession": "AY192157.1",
+            "completeness": "complete",
+            "evidence": [
+                "Enzymatic assays",
+                "Heterologous expression"
+            ]
+        },
+        "mibig_accession": "BGC0000956",
+        "minimal": false,
+        "ncbi_tax_id": "549",
+        "nrp": {
+            "cyclic": false,
+            "release_type": [
+                "Hydrolysis"
+            ],
+            "subclass": "Beta-lactam"
+        },
+        "organism_name": "Pantoea agglomerans",
+        "polyketide": {
+            "cyclic": false,
+            "ketide_length": 8,
+            "starter_unit": "Malonyl-CoA",
+            "subclasses": [
+                "Ansamycin"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "AAO39098.1"
+                    ],
+                    "subclass": [
+                        "Type II"
+                    ]
+                }
+            ]
+        },
+        "publications": [
+            "pubmed:15066985",
+            "pubmed:16910643",
+            "pubmed:17653193",
+            "pubmed:18652473",
+            "pubmed:18768797",
+            "pubmed:21561099"
+        ],
+        "status": "active"
+    }
+}

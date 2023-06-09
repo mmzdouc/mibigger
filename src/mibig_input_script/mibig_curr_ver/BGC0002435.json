@@ -1,0 +1,65 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: coformycin.",
+                "Added NPAtlas links to compounds: coformycin."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "OC[C@H]1O[C@@H](N2C=NC3=C2NC=NC[C@H]3O)[C@H](O)[C@@H]1O",
+                "compound": "coformycin",
+                "database_id": [
+                    "npatlas:NPA032755"
+                ]
+            },
+            {
+                "chem_struct": "C1[C@@H]([C@H]([C@H]([C@@H]1N2C=NC3=C2N=CN=C3N)O)O)CO",
+                "compound": "aristeromycin",
+                "database_id": [
+                    "npatlas:NPA018381",
+                    "pubchem:65269",
+                    "chemspider:58761"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "FMCW01000024.1",
+            "completeness": "Unknown",
+            "end_coord": 74294,
+            "evidence": [
+                "Heterologous expression",
+                "Knock-out studies",
+                "Enzymatic assays"
+            ],
+            "start_coord": 49762
+        },
+        "mibig_accession": "BGC0002435",
+        "minimal": true,
+        "ncbi_tax_id": "686309",
+        "organism_name": "Micromonospora haikouensis",
+        "publications": [
+            "pubmed:30217843"
+        ],
+        "status": "active"
+    }
+}

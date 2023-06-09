@@ -1,0 +1,79 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.2"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "COC(=O)C1=C2C(=C(C=C1)O)NC3=C(C(=CC(=O)C3=N2)O)C=O",
+                "compound": "lomofungin",
+                "database_id": [
+                    "pubchem:5351222"
+                ],
+                "mol_mass": 314.05388603999995,
+                "molecular_formula": "C15H10N2O6"
+            }
+        ],
+        "loci": {
+            "accession": "KP721214.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001302",
+        "minimal": true,
+        "ncbi_tax_id": "68229",
+        "organism_name": "Streptomyces lomondensis",
+        "publications": [
+            "pubmed:26305803"
+        ],
+        "status": "active"
+    }
+}

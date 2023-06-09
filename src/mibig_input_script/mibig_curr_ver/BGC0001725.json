@@ -1,0 +1,47 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C1=NC2=C(C(=N1)N)N=CN2[C@H]3[C@@H]([C@H](O3)CO)CO",
+                "compound": "oxetanocin A",
+                "mol_mass": 251.101839276,
+                "molecular_formula": "C10H13N5O3"
+            }
+        ],
+        "loci": {
+            "accession": "AB005787.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001725",
+        "minimal": true,
+        "ncbi_tax_id": "1404",
+        "organism_name": "Bacillus megaterium",
+        "publications": [
+            "pubmed:28346939"
+        ],
+        "status": "active"
+    }
+}

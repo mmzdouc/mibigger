@@ -1,0 +1,73 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.1"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (MIBiG Annotathon)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "O=C1C2=C(C(O)=C(CC(O)C3=C4C(O)=C(C(O)=O)C(C)=C3)C4=C2)C(C5=C1C=C(O)C=C5O)=O",
+                "compound": "frankiamicin",
+                "mol_mass": 448.07943209199993,
+                "molecular_formula": "C24H16O9"
+            }
+        ],
+        "loci": {
+            "accession": "CP000820.1",
+            "completeness": "Unknown",
+            "end_coord": 2851386,
+            "start_coord": 2838708
+        },
+        "mibig_accession": "BGC0001197",
+        "minimal": true,
+        "ncbi_tax_id": "298653",
+        "organism_name": "Frankia sp. EAN1pec",
+        "publications": [
+            "pubmed:25837682"
+        ],
+        "status": "active"
+    }
+}

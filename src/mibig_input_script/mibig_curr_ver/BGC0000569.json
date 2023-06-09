@@ -1,0 +1,93 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "FTVL3IN3CWSJUJDTYVJJVU23",
+                "FICEQDRJCNKWHHGNCRVDDP5D"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Fix peptidase ID"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_synonyms": [
+                    "pzn",
+                    "plantazolicin a"
+                ],
+                "compound": "plantazolicin",
+                "database_id": [
+                    "chemspider:28419936"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "FN668567.1",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies",
+                "Enzymatic assays",
+                "Heterologous expression",
+                "Gene expression correlated with compound production"
+            ]
+        },
+        "mibig_accession": "BGC0000569",
+        "minimal": false,
+        "ncbi_tax_id": "326423",
+        "organism_name": "Bacillus velezensis FZB42",
+        "publications": [
+            "pubmed:20971906",
+            "pubmed:21950656",
+            "pubmed:21568297",
+            "pubmed:23823732",
+            "pubmed:23878226",
+            "pubmed:24085393"
+        ],
+        "ripp": {
+            "cyclic": false,
+            "peptidases": [
+                "CBJ61640.1"
+            ],
+            "subclass": "LAP"
+        },
+        "status": "active"
+    }
+}

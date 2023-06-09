@@ -1,0 +1,78 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.1"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    }
+                ],
+                "chem_struct": "CN1C(=O)C(NC(C)=O)=C2SSC=C12",
+                "compound": "thiolutin",
+                "database_id": [
+                    "npatlas:NPA05113",
+                    "pubchem:6870"
+                ],
+                "mol_mass": 228.002719496,
+                "molecular_formula": "C8H8N2O2S2"
+            }
+        ],
+        "loci": {
+            "accession": "KM114209.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001193",
+        "minimal": true,
+        "ncbi_tax_id": "173560",
+        "organism_name": "Saccharothrix algeriensis",
+        "publications": [
+            "pubmed:25353334"
+        ],
+        "status": "active"
+    }
+}

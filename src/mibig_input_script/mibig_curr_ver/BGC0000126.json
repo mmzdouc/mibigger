@@ -1,0 +1,74 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CCC(O)C(C)C1OC1CC(C)\\C=C\\C=C(/C)C1OC(=O)CC(O)CCC(C)(O)C(OC(C)=O)\\C=C\\C1C",
+                "compound": "pladienolide B",
+                "database_id": [
+                    "npatlas:NPA08881"
+                ],
+                "mol_mass": 536.3349184959999,
+                "molecular_formula": "C30H48O8"
+            }
+        ],
+        "loci": {
+            "accession": "AB435553.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000126",
+        "minimal": true,
+        "ncbi_tax_id": "58346",
+        "organism_name": "Streptomyces platensis",
+        "publications": [
+            "pubmed:18997414"
+        ],
+        "status": "active"
+    }
+}

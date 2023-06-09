@@ -1,0 +1,46 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CCCCCC(CC(CC(=O)CCCC(=O)CC(CC(=O)CCCCCC(=O)CC(CC(=O)CCCC(=O)CC(CC(=O)CCCC(=O)C)O)O)O)O)O",
+                "compound": "T-toxin",
+                "database_id": [
+                    "pubchem:119129"
+                ],
+                "mol_mass": 768.4659922360001,
+                "molecular_formula": "C41H68O13"
+            }
+        ],
+        "loci": {
+            "accession": "FJ943499.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000155",
+        "minimal": true,
+        "ncbi_tax_id": "5016",
+        "organism_name": "Bipolaris maydis",
+        "publications": [
+            "pubmed:8953776",
+            "pubmed:20192833"
+        ],
+        "retirement_reasons": [
+            "Retired in the 2.0 release for unknown reasons"
+        ],
+        "status": "retired"
+    }
+}

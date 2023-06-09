@@ -1,0 +1,323 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "YECXNWBIVB4ZABFMZK4W53HU"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CCCC(CC1CCC(O1)C(C)C1OC(=O)C(C)C2CCC(CC(CCC)OC(=O)C(C)C3CCC(O3)C1C)O2)N(C)C",
+                "compound": "pamamycin-607",
+                "database_id": [
+                    "npatlas:NPA03559"
+                ],
+                "mol_mass": 607.4448032919998,
+                "molecular_formula": "C35H61NO7"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "SALB_00466",
+                    "name": "pamC",
+                    "product": "acyl-carrier protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "SALB_00467",
+                    "name": "pamG",
+                    "product": "Ketoacyl-acyl carrier protein synthase III"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "SALB_00468",
+                    "name": "pamF",
+                    "product": "Ketoacyl-acyl carrier protein synthase II"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Activity assay"
+                            ]
+                        }
+                    ],
+                    "id": "SALB_00469",
+                    "name": "pamA",
+                    "product": "Ketoacyl-acyl carrier protein synthase II"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "SALB_00470",
+                    "name": "pamB",
+                    "product": "3-ketoacid (adipate/glutaconate) CoA transferase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "SALB_00471",
+                    "name": "pamD",
+                    "product": "Ketoacyl-acyl carrier protein synthase III"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "SALB_00473",
+                    "name": "pamO",
+                    "product": "Ketoacyl-(acyl-carrier-protein) reductase",
+                    "tailoring": [
+                        "Reduction"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "SALB_00474",
+                    "name": "pamK",
+                    "product": "Ketoacyl-acyl carrier protein synthase III"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "SALB_00475",
+                    "name": "pamJ",
+                    "product": "Ketoacyl-acyl carrier protein synthase II"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Activation / processing",
+                            "evidence": [
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "id": "SALB_00478",
+                    "name": "pamL",
+                    "product": "Hydroxyl acids CoA ligase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "SALB_00480",
+                    "name": "pamX",
+                    "product": "Aminotransferase",
+                    "tailoring": [
+                        "Amination"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "SALB_00481",
+                    "name": "pamY",
+                    "product": "Methyltransferase",
+                    "tailoring": [
+                        "Methylation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Regulation",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "SALB_00483",
+                    "name": "pamR1",
+                    "product": "Response regulator LuxR family"
+                }
+            ],
+            "operons": [
+                {
+                    "evidence": [
+                        "RNAseq"
+                    ],
+                    "genes": [
+                        "SALB_00466",
+                        "SALB_00467",
+                        "SALB_00468"
+                    ]
+                },
+                {
+                    "evidence": [
+                        "RNAseq"
+                    ],
+                    "genes": [
+                        "SALB_00479",
+                        "SALB_00477",
+                        "SALB_00475",
+                        "SALB_00473",
+                        "SALB_00480",
+                        "SALB_00474",
+                        "SALB_00471",
+                        "SALB_00478",
+                        "SALB_00470",
+                        "SALB_00481",
+                        "SALB_00476",
+                        "SALB_00469",
+                        "SALB_00472"
+                    ]
+                }
+            ]
+        },
+        "loci": {
+            "accession": "KM923741.1",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies",
+                "Enzymatic assays",
+                "Heterologous expression",
+                "Gene expression correlated with compound production"
+            ]
+        },
+        "mibig_accession": "BGC0001150",
+        "minimal": false,
+        "ncbi_tax_id": "132473",
+        "organism_name": "Streptomyces alboniger",
+        "polyketide": {
+            "cyclic": false,
+            "ketide_length": 26,
+            "synthases": [
+                {
+                    "genes": [
+                        "SALB_00469",
+                        "SALB_00474",
+                        "SALB_00472",
+                        "SALB_00471",
+                        "SALB_00475",
+                        "SALB_00467",
+                        "SALB_00468"
+                    ],
+                    "subclass": [
+                        "Type II",
+                        "Type III"
+                    ]
+                }
+            ]
+        },
+        "publications": [
+            "pubmed:25537663",
+            "doi:10.7164/antibiotics.32.673",
+            "doi:10.3209/saj.13_11"
+        ],
+        "status": "active"
+    }
+}

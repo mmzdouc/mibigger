@@ -1,0 +1,95 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.2"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Corrected biosynthetic class",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "C1C(OC2=CC(=CC(=C2C1=O)O)O)C3=CC=C(C=C3)O",
+                "compound": "naringenin",
+                "database_id": [
+                    "pubchem:932"
+                ],
+                "mol_mass": 272.068473484,
+                "molecular_formula": "C15H12O5"
+            }
+        ],
+        "loci": {
+            "accession": "CM000913.1",
+            "completeness": "Unknown",
+            "end_coord": 6463122,
+            "start_coord": 6460418
+        },
+        "mibig_accession": "BGC0001310",
+        "minimal": true,
+        "ncbi_tax_id": "1901",
+        "organism_name": "Streptomyces clavuligerus ATCC 27064",
+        "polyketide": {
+            "cyclic": false,
+            "subclasses": [
+                "Other"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "SCLAV_5492"
+                    ],
+                    "subclass": [
+                        "Type III"
+                    ]
+                }
+            ]
+        },
+        "publications": [
+            "pubmed:26553209"
+        ],
+        "status": "active"
+    }
+}

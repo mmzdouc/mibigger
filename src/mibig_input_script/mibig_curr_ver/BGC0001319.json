@@ -1,0 +1,47 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated reference publication(s) (MIBiG Annotathon)",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Terpene"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C[C@H]1CC[C@]2([C@H]([C@H]3[C@@H](O2)C[C@@H]4[C@@]3(CC[C@H]5[C@H]4CC[C@@H]6[C@@]5(CC[C@@H](C6)O[C@H]7[C@@H]([C@H]([C@H]([C@H](O7)CO)O[C@H]8[C@@H]([C@H]([C@@H]([C@H](O8)CO)O)O[C@H]9[C@@H]([C@H]([C@@H](CO9)O)O)O)O[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)CO)O)O)O)O)O)C)C)C)NC1",
+                "compound": "α-tomatine",
+                "database_id": [
+                    "pubchem:28523"
+                ],
+                "mol_mass": 1033.5457586760003,
+                "molecular_formula": "C50H83NO21"
+            }
+        ],
+        "loci": {
+            "accession": "MIBIG.BGC0001319.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001319",
+        "minimal": true,
+        "ncbi_tax_id": "4081",
+        "organism_name": "Solanum lycopersicum",
+        "publications": [
+            "pubmed:30892648",
+            "pubmed:25217510"
+        ],
+        "retirement_reasons": [
+            "Low quality entry"
+        ],
+        "status": "retired"
+    }
+}

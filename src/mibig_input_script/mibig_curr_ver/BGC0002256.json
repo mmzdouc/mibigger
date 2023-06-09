@@ -1,0 +1,113 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Changed chemical structures for compounds: fusarochromene.",
+                "Added NPAtlas links to compounds: fusarochromene."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC1(CC(=O)C2=C(O1)C=CC(=C2N)C(=O)CC(CO)N)C",
+                "compound": "fusarochromanone",
+                "database_id": [
+                    "npatlas:NPA017097",
+                    "pubchem:107777"
+                ]
+            },
+            {
+                "chem_struct": "CC1(C)C=CC2=C(C=CC(C(CC(N)CO)=O)=C2N)O1",
+                "compound": "desacetylfusarochromene"
+            },
+            {
+                "chem_struct": "CC(=O)N[C@@H](CO)CC(=O)C1=C(N)C2=C(C=C1)OC(C)(C)C=C2",
+                "compound": "fusarochromene",
+                "database_id": [
+                    "npatlas:NPA033043"
+                ]
+            },
+            {
+                "chem_struct": "OC1=CC(N)=C(C(CC(N)CC(O)=O)=O)C=C1",
+                "compound": "4-hydroxykynurenine"
+            }
+        ],
+        "loci": {
+            "accession": "BK013344.1",
+            "completeness": "Unknown",
+            "end_coord": 23896,
+            "start_coord": 1
+        },
+        "mibig_accession": "BGC0002256",
+        "minimal": false,
+        "ncbi_tax_id": "61235",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "DAD54576.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:33107888"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "tryptophan",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC=C2C(=C1)C(=CN2)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:33107888"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "4-hydroxy-D-kynurenine",
+                                        "proteinogenic": false,
+                                        "structure": "C1=C(O)C=C(C(=C1)C(=O)C[C@H](C(=O)O)N)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Fusarium equiseti",
+        "publications": [
+            "pubmed:33107888",
+            "doi:10.1039/d0ob02031a"
+        ],
+        "status": "active"
+    }
+}

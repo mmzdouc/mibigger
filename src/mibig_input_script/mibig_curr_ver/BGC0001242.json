@@ -1,0 +1,51 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.2"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "COC1=CC(=O)C2=C(O)C3=C(CC(C)(O)OC3)C(O)=C2C1=O",
+                "compound": "oxyjavanicin",
+                "database_id": [
+                    "npatlas:NPA0830"
+                ],
+                "mol_mass": 306.073952788,
+                "molecular_formula": "C15H14O7"
+            }
+        ],
+        "loci": {
+            "accession": "HE613440.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001242",
+        "minimal": true,
+        "ncbi_tax_id": "5127",
+        "organism_name": "Fusarium fujikuroi",
+        "publications": [
+            "pubmed:22492438"
+        ],
+        "status": "active"
+    }
+}

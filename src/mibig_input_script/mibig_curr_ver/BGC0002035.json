@@ -1,0 +1,197 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Use gene names as per publication",
+                "Add structures for ilicicolin J/ 8-epi-ilicicolin H",
+                "Fetch compound properties from PubChem",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "3UOU7PODQJXIM6BEPUHHRRA5",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C/C=C/[C@@H]1[C@H]2C[C@H](CC[C@@H]2C(=C[C@H]1C(=O)C3=C(C(=CNC3=O)C4=CC=C(C=C4)O)O)C)C",
+                "compound": "ilicicolin H",
+                "database_id": [
+                    "pubchem:54704283"
+                ],
+                "mol_mass": 433.225308,
+                "molecular_formula": "C27H31NO4"
+            },
+            {
+                "chem_struct": "[H][C@]12CC[C@H](C)C[C@]1([H])C(\\C=C\\C)=C(C=C2C)C(=O)C1=C(O)C(=CNC1=O)C1=CC=C(O)C=C1",
+                "compound": "ilicicolin J"
+            },
+            {
+                "chem_struct": "[H][C@]12C[C@@H](C)CC[C@]1([H])C(C)=C[C@@H](C2\\C=C\\C)C(=O)C1=C(O)C(=CNC1=O)C1=CC=C(O)C=C1",
+                "compound": "8-epi-ilicicolin H"
+            }
+        ],
+        "genes": {
+            "annotations": [],
+            "extra_genes": [
+                {
+                    "id": "iliE",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 1098326,
+                                "start": 1098235
+                            },
+                            {
+                                "end": 1098043,
+                                "start": 1097850
+                            },
+                            {
+                                "end": 1097775,
+                                "start": 1097108
+                            },
+                            {
+                                "end": 1097052,
+                                "start": 1096678
+                            },
+                            {
+                                "end": 1096628,
+                                "start": 1096581
+                            }
+                        ],
+                        "strand": -1
+                    }
+                },
+                {
+                    "id": "iliA",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 1110775,
+                                "start": 1106429
+                            },
+                            {
+                                "end": 1106374,
+                                "start": 1098611
+                            }
+                        ],
+                        "strand": -1
+                    }
+                },
+                {
+                    "id": "iliB",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 1112799,
+                                "start": 1111654
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "iliD",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 1114530,
+                                "start": 1114343
+                            },
+                            {
+                                "end": 1114286,
+                                "start": 1114033
+                            },
+                            {
+                                "end": 1113996,
+                                "start": 1113770
+                            },
+                            {
+                                "end": 1113381,
+                                "start": 1113366
+                            },
+                            {
+                                "end": 1112994,
+                                "start": 1112945
+                            }
+                        ],
+                        "strand": -1
+                    }
+                },
+                {
+                    "id": "iliC",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 1115820,
+                                "start": 1115245
+                            },
+                            {
+                                "end": 1116438,
+                                "start": 1115913
+                            },
+                            {
+                                "end": 1116781,
+                                "start": 1116529
+                            }
+                        ],
+                        "strand": 1
+                    }
+                }
+            ]
+        },
+        "loci": {
+            "accession": "RQWH01000002.1",
+            "completeness": "Unknown",
+            "end_coord": 1116947,
+            "start_coord": 1095186
+        },
+        "mibig_accession": "BGC0002035",
+        "minimal": false,
+        "ncbi_tax_id": "1735992",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "iliA",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "tyrosine",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC(=CC=C1C[C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Neonectria sp. DH2",
+        "publications": [
+            "pubmed:31216742"
+        ],
+        "status": "active"
+    }
+}

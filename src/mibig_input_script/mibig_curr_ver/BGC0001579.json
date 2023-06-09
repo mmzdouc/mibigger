@@ -1,0 +1,134 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "ZMZXFLPDGFEHMQPX76IB4OQ3"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Update compound, gene annotations, and biosynthetic class"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "erythro-3-hydroxy-l-aspartic acid",
+                        "subcluster": [
+                            "WP_071962208.1"
+                        ]
+                    },
+                    {
+                        "moiety": "(2S,9S)-lysinoalanine",
+                        "subcluster": [
+                            "WP_071962205.1"
+                        ]
+                    }
+                ],
+                "chem_struct": "C[C@@H]1[C@H]2C(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@H]3CSC[C@H]4C(=O)N[C@@H](CS1)C(=O)N[C@@H](CNCCCC[C@H](NC(=O)[C@H]([C@H](SC[C@@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N4)CCC(=O)N)CCCCN)N)C)NC(=O)[C@@H](NC(=O)CNC(=O)[C@@H](NC3=O)[C@H](C(=O)O)O)CC(=O)N)C(=O)O)C(=O)N[C@H](C(=O)NCC(=O)N5CCC[C@H]5C(=O)N[C@H](C(=O)N2)CC6=CC=CC=C6)CC7=CC=CC=C7)C(C)C)CC8=CC=CC=C8",
+                "chem_targets": [
+                    {
+                        "target": "phosphatidylethanolamine"
+                    }
+                ],
+                "compound": "duramycin",
+                "mol_mass": 2011.837909499999,
+                "molecular_formula": "C89H125N23O25S3"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Activity assay"
+                            ]
+                        }
+                    ],
+                    "id": "WP_071962205.1",
+                    "product": "installing (2S,9S)-lysinoalanine"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "id": "WP_071962206.1",
+                    "product": "precursor peptide"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "id": "WP_071962207.1",
+                    "product": "type 2 lantipeptide synthetase LanM"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "NZ_MOEP01000024.1",
+            "completeness": "incomplete",
+            "end_coord": 94303,
+            "evidence": [
+                "Enzymatic assays",
+                "Heterologous expression",
+                "Gene expression correlated with compound production"
+            ],
+            "start_coord": 85466
+        },
+        "mibig_accession": "BGC0001579",
+        "minimal": true,
+        "ncbi_tax_id": "53446",
+        "organism_name": "Streptomyces cinnamoneus",
+        "publications": [
+            "pubmed:27864176",
+            "pubmed:30177849"
+        ],
+        "ripp": {
+            "cyclic": true,
+            "subclass": "Lanthipeptide"
+        },
+        "status": "active"
+    },
+    "comments": "WP_071964624.1 may be hypothetical resistance gene based on its similarity to cinorf10.Streptoverticillium griseoverticillatum PA-48009 may also contain a duramycin-producing BGC based on reported isolation data (PMID: 2272918), however, no genomic data is avaliable mainly due to incomplete genome sequence."
+}

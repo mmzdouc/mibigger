@@ -1,0 +1,89 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Fix biosynthetic class",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CO[C@@H]1[C@@]2(O)N(C(=O)\\C3=C\\C4=C(NC5=CC=CC=C45)C(C)(C)\\C=C/N3C2=O)[C@]23[C@H](C)C(C)(C)N2C2=C(C=CC=C2)[C@]13O",
+                "compound": "okaramine B",
+                "database_id": [
+                    "npatlas:NPA0505"
+                ],
+                "mol_mass": 566.2529201880001,
+                "molecular_formula": "C33H34N4O5"
+            }
+        ],
+        "loci": {
+            "accession": "LC316945.1",
+            "completeness": "Unknown",
+            "end_coord": 22560,
+            "start_coord": 2899
+        },
+        "mibig_accession": "BGC0001717",
+        "minimal": false,
+        "ncbi_tax_id": "69488",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "BBB04327.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:29384650"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "tryptophan",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC=C2C(=C1)C(=CN2)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Penicillium simplicissimum",
+        "publications": [
+            "pubmed:29384650"
+        ],
+        "status": "active"
+    }
+}

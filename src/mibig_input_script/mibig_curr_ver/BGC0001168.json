@@ -1,0 +1,163 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "YFQE6LBJ4VCTUO2RYKJB5QD7"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Corrected NRP module activity",
+                "Corrected gene identifiers",
+                "Updated bioactivity data",
+                "Updated NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "inhibitor"
+                    }
+                ],
+                "chem_targets": [
+                    {
+                        "target": "Trypsin"
+                    },
+                    {
+                        "publications": [
+                            "doi:10.1093/gbe/evt082"
+                        ],
+                        "target": "Protease"
+                    }
+                ],
+                "compound": "livipeptin",
+                "mass_spec_ion_type": "M+",
+                "mol_mass": 347.16
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "EOY45602.1",
+                    "name": "SLI_0883",
+                    "product": "Adenylation and reductase domains containing protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "EOY45603.1",
+                    "name": "SLI_0884",
+                    "product": "Leucyl/Phenylalanil-tRNA-Protein transferase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "EOY45604.1",
+                    "name": "SLI_0885",
+                    "product": "N-Acyl transferase"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "CM001889.1",
+            "completeness": "Unknown",
+            "end_coord": 896528,
+            "evidence": [
+                "Knock-out studies",
+                "Heterologous expression",
+                "Gene expression correlated with compound production"
+            ],
+            "start_coord": 891947
+        },
+        "mibig_accession": "BGC0001168",
+        "minimal": false,
+        "ncbi_tax_id": "1200984",
+        "nrp": {
+            "cyclic": false,
+            "nrps_genes": [
+                {
+                    "gene_id": "EOY45602.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "arginine",
+                                        "proteinogenic": true,
+                                        "structure": "C(C[C@@H](C(=O)O)N)CN=C(N)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "module_number": "1"
+                        }
+                    ]
+                }
+            ],
+            "release_type": [
+                "Reductive release"
+            ]
+        },
+        "organism_name": "Streptomyces lividans 1326",
+        "publications": [
+            "pubmed:23709624"
+        ],
+        "status": "active"
+    }
+}

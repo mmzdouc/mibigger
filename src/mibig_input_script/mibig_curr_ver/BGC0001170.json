@@ -1,0 +1,85 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "FTVL3IN3CWSJUJDTYVJJVU23"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Remove negative molecular mass",
+                "Switch to using GenBank record"
+            ],
+            "contributors": [
+                "3UOU7PODQJXIM6BEPUHHRRA5",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "compound": "clostridiolysin S"
+            }
+        ],
+        "loci": {
+            "accession": "DS981518.1",
+            "completeness": "complete",
+            "end_coord": 699823,
+            "evidence": [
+                "Knock-out studies",
+                "Enzymatic assays"
+            ],
+            "start_coord": 691338
+        },
+        "mibig_accession": "BGC0001170",
+        "minimal": false,
+        "ncbi_tax_id": "471871",
+        "organism_name": "Clostridium sporogenes ATCC 15579",
+        "publications": [
+            "pubmed:18375757",
+            "pubmed:19286651",
+            "pubmed:20581111",
+            "pubmed:21822292"
+        ],
+        "ripp": {
+            "cyclic": false,
+            "peptidases": [
+                "CLOSPO_01172"
+            ],
+            "subclass": "LAP"
+        },
+        "status": "active"
+    }
+}

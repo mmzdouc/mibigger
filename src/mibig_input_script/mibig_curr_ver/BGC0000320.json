@@ -1,0 +1,273 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "UG4XEFSSWZANFJRHIEGSOCEX"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (MIBiG Annotathon)",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Corrected NRP module activity",
+                "Updated NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "alpha keto acids"
+                    }
+                ],
+                "chem_struct": "CC(C)C[C@H]1OC(=O)[C@@H](NC(=O)[C@@H](OC(=O)[C@@H](C)NC(=O)[C@@H](CC(C)C)OC(=O)[C@@H](NC(=O)[C@@H](OC(=O)[C@@H](C)NC(=O)[C@@H](CC(C)C)OC(=O)[C@@H](NC(=O)[C@@H](OC(=O)[C@@H](C)NC1=O)C(C)C)C(C)C)C(C)C)C(C)C)C(C)C)C(C)C",
+                "chem_targets": [
+                    {
+                        "target": "membrane (K+ ionophore)"
+                    }
+                ],
+                "compound": "cereulide",
+                "database_id": [
+                    "npatlas:NPA01776"
+                ],
+                "mol_mass": 1152.678110232,
+                "molecular_formula": "C57H96N6O18"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Activity assay"
+                            ]
+                        }
+                    ],
+                    "id": "ABD14711.1",
+                    "name": "cesA",
+                    "product": "cesA"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "ABD14712.1",
+                    "name": "cesB",
+                    "product": "cesB"
+                }
+            ],
+            "operons": [
+                {
+                    "evidence": [
+                        "RACE"
+                    ],
+                    "genes": [
+                        "ABD14712.1",
+                        "ABD14709.1",
+                        "ABD14710.1",
+                        "ABD14713.1",
+                        "ABD14714.1",
+                        "ABD14711.1"
+                    ]
+                }
+            ]
+        },
+        "loci": {
+            "accession": "DQ360825.1",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies",
+                "Enzymatic assays"
+            ]
+        },
+        "mibig_accession": "BGC0000320",
+        "minimal": false,
+        "ncbi_tax_id": "1396",
+        "nrp": {
+            "cyclic": true,
+            "nrps_genes": [
+                {
+                    "gene_id": "ABD14711.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Activity assay"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "2-ketoisocaproic acid",
+                                        "proteinogenic": false,
+                                        "structure": "O=C(C(=O)O)CC(C)C"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "modification_domains": [
+                                "Unknown"
+                            ],
+                            "module_number": "0",
+                            "non_canonical": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "iterated": false,
+                                "non_elongating": false,
+                                "skipped": false
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": true,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "alanine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "1",
+                            "non_canonical": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "iterated": false,
+                                "non_elongating": false,
+                                "skipped": false
+                            }
+                        },
+                        {
+                            "active": true,
+                            "c_dom_subtype": "DCL",
+                            "module_number": "2"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "ABD14712.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Activity assay"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "2-ketoisovaleric acid",
+                                        "proteinogenic": false,
+                                        "structure": "O=C(C(=O)O)C(C)C"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "modification_domains": [
+                                "Unknown"
+                            ],
+                            "module_number": "2",
+                            "non_canonical": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "iterated": false,
+                                "non_elongating": false,
+                                "skipped": false
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "valine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "3",
+                            "non_canonical": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "iterated": false,
+                                "non_elongating": false,
+                                "skipped": false
+                            }
+                        }
+                    ]
+                }
+            ],
+            "subclass": "Cyclic depsipeptide"
+        },
+        "organism_name": "Bacillus cereus",
+        "publications": [
+            "pubmed:15640177",
+            "pubmed:16512902",
+            "pubmed:16910662",
+            "pubmed:17041058",
+            "pubmed:20038713",
+            "pubmed:19994891",
+            "pubmed:19246763",
+            "pubmed:22571587",
+            "pubmed:8082824",
+            "pubmed:10429194"
+        ],
+        "status": "active"
+    }
+}

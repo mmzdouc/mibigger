@@ -1,0 +1,131 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "TTYNBWNDJR6YSNQQMLZQM46S"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Removed duplicate gene annotation"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "compound": "SWA-2138",
+                "mass_spec_ion_type": "M+",
+                "mol_mass": 2138.18
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "SSTG_01176",
+                    "product": "FAD binding domain"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "SSTG_01180",
+                    "product": "acyl-CoA synthetase"
+                },
+                {
+                    "id": "SSTG_01181",
+                    "product": "peptidase S8"
+                }
+            ],
+            "extra_genes": [
+                {
+                    "id": "SSTG_01176",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 1491150,
+                                "start": 1489807
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "SSTG_01180",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 1495260,
+                                "start": 1493929
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "SSTG_01181",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 1499242,
+                                "start": 1495583
+                            }
+                        ],
+                        "strand": -1
+                    }
+                }
+            ]
+        },
+        "loci": {
+            "accession": "NZ_GG753626.1",
+            "completeness": "complete",
+            "end_coord": 1500652,
+            "start_coord": 1489807
+        },
+        "mibig_accession": "BGC0000597",
+        "minimal": false,
+        "ncbi_tax_id": "645465",
+        "organism_name": "Streptomyces sp. e14",
+        "publications": [
+            "pubmed:21983601"
+        ],
+        "ripp": {
+            "cyclic": false,
+            "subclass": "Proteusin"
+        },
+        "status": "active"
+    }
+}

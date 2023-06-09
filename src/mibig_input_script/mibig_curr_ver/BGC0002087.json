@@ -1,0 +1,234 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted",
+                "Fixed biosynthetic classes"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11",
+                "Changed chemical structures for compounds: gladiostatin A.",
+                "Added NPAtlas links to compounds: gladiostatin A."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antifungal"
+                    }
+                ],
+                "chem_struct": "CC1=C(C(=O)CCCCCCCC/C=C/[C@H](C)C(=O)C[C@H](O)CC2CC(=O)NC(=O)C2)C(=O)OC1O",
+                "chem_synonyms": [
+                    "gladiofungin a"
+                ],
+                "compound": "gladiostatin A",
+                "database_id": [
+                    "npatlas:NPA031554"
+                ],
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry"
+                ],
+                "mol_mass": 505.2676,
+                "molecular_formula": "C27H39NO8"
+            }
+        ],
+        "loci": {
+            "accession": "NZ_UZVS01000001.1",
+            "completeness": "complete",
+            "end_coord": 3530217,
+            "evidence": [
+                "Knock-out studies",
+                "Enzymatic assays"
+            ],
+            "start_coord": 3449913
+        },
+        "mibig_accession": "BGC0002087",
+        "minimal": false,
+        "ncbi_tax_id": "28095",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "WP_126241645.1",
+                    "modules": [
+                        {
+                            "module_number": "0"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "ELY54_RS14405",
+                    "modules": [
+                        {
+                            "module_number": "3"
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Burkholderia gladioli 238",
+        "polyketide": {
+            "cyclic": false,
+            "release_type": [
+                "Hydrolysis"
+            ],
+            "starter_unit": "Malonamyl-CoA",
+            "subclasses": [
+                "Modular type I",
+                "Trans-AT type I",
+                "Other"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "WP_126241644.1",
+                        "ELY54_RS14405"
+                    ],
+                    "modules": [
+                        {
+                            "domains": [
+                                "Ketosynthase",
+                                "Dehydratase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "WP_126241644.1"
+                            ],
+                            "kr_stereochem": "D-OH",
+                            "module_number": "1"
+                        },
+                        {
+                            "domains": [
+                                "Ketosynthase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "WP_126241644.1"
+                            ],
+                            "module_number": "2"
+                        },
+                        {
+                            "domains": [
+                                "Ketosynthase"
+                            ],
+                            "genes": [
+                                "WP_126241644.1"
+                            ],
+                            "module_number": "3"
+                        },
+                        {
+                            "domains": [
+                                "Ketosynthase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "ELY54_RS14405"
+                            ],
+                            "module_number": "4"
+                        },
+                        {
+                            "domains": [
+                                "Ketosynthase",
+                                "Dehydratase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "ELY54_RS14405"
+                            ],
+                            "kr_stereochem": "D-OH",
+                            "module_number": "5",
+                            "pks_mod_doms": [
+                                "Methylation"
+                            ]
+                        },
+                        {
+                            "domains": [
+                                "Ketosynthase",
+                                "Dehydratase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "ELY54_RS14405"
+                            ],
+                            "module_number": "6"
+                        },
+                        {
+                            "domains": [
+                                "Ketosynthase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)",
+                                "Thiolation (ACP/PCP)",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "ELY54_RS14405"
+                            ],
+                            "kr_stereochem": "D-OH",
+                            "module_number": "7"
+                        },
+                        {
+                            "domains": [
+                                "Ketosynthase",
+                                "Dehydratase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "ELY54_RS14405"
+                            ],
+                            "kr_stereochem": "D-OH",
+                            "module_number": "8"
+                        },
+                        {
+                            "domains": [
+                                "Ketosynthase",
+                                "Dehydratase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "ELY54_RS14405"
+                            ],
+                            "kr_stereochem": "D-OH",
+                            "module_number": "9"
+                        },
+                        {
+                            "domains": [
+                                "Ketosynthase"
+                            ],
+                            "genes": [
+                                "ELY54_RS14405"
+                            ],
+                            "module_number": "10"
+                        }
+                    ]
+                }
+            ]
+        },
+        "publications": [
+            "doi:10.1002/anie.202005711",
+            "doi:10.1002/anie.202009007"
+        ],
+        "status": "active"
+    }
+}

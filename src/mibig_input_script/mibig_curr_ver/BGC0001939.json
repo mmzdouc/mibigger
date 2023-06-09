@@ -1,0 +1,67 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Retired as duplicate of BGC0001784",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "compound": "streptoseomycin"
+            }
+        ],
+        "loci": {
+            "accession": "MG891745.1",
+            "completeness": "Unknown",
+            "end_coord": 84150,
+            "start_coord": 2281
+        },
+        "mibig_accession": "BGC0001939",
+        "minimal": true,
+        "ncbi_tax_id": "73044",
+        "organism_name": "Streptomyces seoulensis",
+        "publications": [
+            "pubmed:29697266"
+        ],
+        "retirement_reasons": [
+            "Duplicate of BGC0001784"
+        ],
+        "see_also": [
+            "BGC0001784"
+        ],
+        "status": "retired"
+    }
+}

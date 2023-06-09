@@ -1,0 +1,190 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "ZUAEFEJPIFGA5SNZGJWBG3IU"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Add new compound: aspyridone B",
+                "Corrected NRP module activity",
+                "Corrected NRP gene names"
+            ],
+            "contributors": [
+                "H5KVDLSVQ3TJW7SKCDNBDEVC",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CC[C@H](C)C[C@H](C)C(=O)C1=C(C(=CNC1=O)C2=CC=C(C=C2)O)O",
+                "compound": "aspyridone A",
+                "database_id": [
+                    "pubchem:54710080"
+                ],
+                "mol_mass": 329.162708216,
+                "molecular_formula": "C19H23NO4"
+            },
+            {
+                "chem_acts": [],
+                "chem_struct": "CC[C@H](C)C[C@H](C)C(=O)C1=C(C(=CNC1=O)C2=CC(=C(C=C2)O)O)O",
+                "compound": "aspyridone B",
+                "mol_mass": 345.157622836,
+                "molecular_formula": "C19H23NO5"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Heterologous expression",
+                                "Activity assay"
+                            ]
+                        }
+                    ],
+                    "id": "ANIA_08409",
+                    "name": "apdC",
+                    "product": "enoylreductase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Heterologous expression",
+                                "Other in vivo study",
+                                "Activity assay"
+                            ]
+                        }
+                    ],
+                    "id": "ANIA_08411",
+                    "name": "apdA",
+                    "product": "PKS-NRPS hybrid"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "BN001305.1",
+            "completeness": "complete",
+            "end_coord": 417319,
+            "evidence": [
+                "Enzymatic assays",
+                "Heterologous expression"
+            ],
+            "start_coord": 383588
+        },
+        "mibig_accession": "BGC0000959",
+        "minimal": false,
+        "ncbi_tax_id": "227321",
+        "nrp": {
+            "cyclic": false,
+            "nrps_genes": [
+                {
+                    "gene_id": "ANIA_08412",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Activity assay"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "tyrosine",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC(=CC=C1C[C@@H](C(=O)O)N)O"
+                                    },
+                                    {
+                                        "name": "phenylalanine",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC=C(C=C1)C[C@@H](C(=O)O)N"
+                                    },
+                                    {
+                                        "name": "tryptophan",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC=C2C(=C1)C(=CN2)C[C@@H](C(=O)O)N"
+                                    },
+                                    {
+                                        "name": "4-fluorophenylalanine",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC(=CC=C1C[C@@H](C(=O)O)N)F"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Unknown",
+                            "module_number": "1"
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Aspergillus nidulans FGSC A4",
+        "polyketide": {
+            "cyclic": false,
+            "starter_unit": "Acetyl-CoA",
+            "subclasses": [
+                "Other"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "ANIA_08412"
+                    ],
+                    "iterative": {
+                        "cyclization_type": "Unknown",
+                        "nr_iterations": 3,
+                        "subtype": "Highly reducing"
+                    },
+                    "subclass": [
+                        "Iterative type I"
+                    ]
+                }
+            ]
+        },
+        "publications": [
+            "pubmed:17369821",
+            "pubmed:20828130",
+            "pubmed:25494235"
+        ],
+        "status": "active"
+    }
+}

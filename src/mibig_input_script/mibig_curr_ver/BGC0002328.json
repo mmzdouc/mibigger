@@ -1,0 +1,55 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: Rc-AIP1.",
+                "Added NPAtlas links to compounds: Rc-AIP1."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "O=C1NC(CO)C(=O)NC(CC2=CC=C(O)C=C2)C(=O)N[C@@H](CS)C(=O)NC(CC2=C[NH]C3=CC=CC=C23)C(=O)NC(CC2=CC=CC=C2)C(=O)NC1CC1=C[NH]C2=CC=CC=C12",
+                "compound": "Rc-AIP1",
+                "database_id": [
+                    "npatlas:NPA033520"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "CP001348.1",
+            "completeness": "Unknown",
+            "end_coord": 2494800,
+            "evidence": [
+                "Knock-out studies"
+            ],
+            "start_coord": 2487000
+        },
+        "mibig_accession": "BGC0002328",
+        "minimal": true,
+        "ncbi_tax_id": "394503",
+        "organism_name": "Ruminiclostridium cellulolyticum H10",
+        "publications": [
+            "pubmed:33625794",
+            "doi:10.1002/anie.202016378"
+        ],
+        "status": "active"
+    }
+}

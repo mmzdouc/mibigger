@@ -1,0 +1,140 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "siderophore"
+                    }
+                ],
+                "chem_struct": "CC1OC(=NC1C(=O)NCCCN(CCCNC(=O)C1=CC=CC(O)=C1O)C(=O)C1N=C(OC1C)C1=CC=CC=C1O)C1=CC=CC=C1O",
+                "compound": "vulnibactin",
+                "database_id": [
+                    "npatlas:NPA06880",
+                    "pubchem:5487539"
+                ],
+                "mol_mass": 673.274777828,
+                "molecular_formula": "C35H39N5O9"
+            }
+        ],
+        "loci": {
+            "accession": "AE016796.2",
+            "completeness": "Unknown",
+            "end_coord": 914333,
+            "start_coord": 890623
+        },
+        "mibig_accession": "BGC0000460",
+        "minimal": false,
+        "ncbi_tax_id": "216895",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "AAO07759.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "ATP-PPi exchange assay",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:24478763"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "salicylic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC=C(C(=C1)C(=O)O)O"
+                                    },
+                                    {
+                                        "name": "2,3-dihydroxybenzoic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC(=C(C(=C1)O)O)C(=O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AAO07763.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "ATP-PPi exchange assay",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:24478763"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "2,3-dihydroxybenzoic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC(=C(C(=C1)O)O)C(=O)O"
+                                    },
+                                    {
+                                        "name": "salicylic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC=C(C(=C1)C(=O)O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Vibrio vulnificus CMCP6",
+        "publications": [
+            "pubmed:24478763"
+        ],
+        "status": "active"
+    }
+}

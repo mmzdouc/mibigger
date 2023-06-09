@@ -1,0 +1,93 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "FGOE6VD55GZRETNYSNOKUJZO"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "inhibitor"
+                    }
+                ],
+                "chem_struct": "CC(C)C[C@@H]1NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)CNC(=O)[C@H](CC2=CC=CC=C2)NC(C)=O)[C@@H](C)O)[C@@H](C)OC(=O)C[C@@H]2NC(=O)[C@@H]3COC(=O)CC[C@H](NC(=O)[C@H](CC4=CC5=CC=CC=C5N4)NC2=O)C(=O)N[C@@H](CCC(=O)NCCCC[C@H](NC1=O)C(=O)N[C@@H](CC1=CC=C(O)C=C1)C(=O)N1CCC[C@H]1C(=O)N3)C(=O)N[C@@H](CC1=CC=C(O)C=C1)C(O)=O",
+                "chem_targets": [
+                    {
+                        "target": "elastase"
+                    },
+                    {
+                        "publications": [
+                            "doi:10.1128/aem.70.8.5047-5050.2004"
+                        ],
+                        "target": "Protease"
+                    }
+                ],
+                "compound": "microviridin B",
+                "database_id": [
+                    "npatlas:NPA011740"
+                ],
+                "mol_mass": 1722.7565882719991,
+                "molecular_formula": "C84H106N16O24"
+            }
+        ],
+        "loci": {
+            "accession": "AM943877.1",
+            "completeness": "complete",
+            "evidence": [
+                "Heterologous expression"
+            ]
+        },
+        "mibig_accession": "BGC0000592",
+        "minimal": false,
+        "ncbi_tax_id": "449468",
+        "organism_name": "Microcystis aeruginosa NIES-298",
+        "publications": [
+            "pubmed:18683268",
+            "pubmed:22118675"
+        ],
+        "ripp": {
+            "cyclic": true,
+            "subclass": "Microviridin"
+        },
+        "status": "active"
+    }
+}

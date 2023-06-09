@@ -1,0 +1,63 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (MIBiG Annotathon)",
+                "Updated reference publication(s) (MIBiG Annotathon)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Cleaned up synonym list"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Terpene"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C[C@H]1CCC[C@@]2([C@@]1(CCCC2)O)C",
+                "chem_synonyms": [
+                    "(-)-geosmin"
+                ],
+                "compound": "geosmin",
+                "mol_mass": 182.167065324,
+                "molecular_formula": "C12H22O"
+            }
+        ],
+        "loci": {
+            "accession": "AL645882.2",
+            "completeness": "Unknown",
+            "end_coord": 6668399,
+            "start_coord": 6666219
+        },
+        "mibig_accession": "BGC0001181",
+        "minimal": true,
+        "ncbi_tax_id": "100226",
+        "organism_name": "Streptomyces coelicolor A3(2)",
+        "publications": [
+            "pubmed:17873868"
+        ],
+        "status": "active"
+    }
+}

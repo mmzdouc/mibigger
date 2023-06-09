@@ -1,0 +1,55 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Fetch compound properties from PubChem",
+                "Cleaned up synonym list"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Terpene"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC1=C(C(=C(C(=C1Cl)O)C/C=C(\\C)/CC/C=C(\\C)/[C@@H]2CC(=O)C(O2)(C)C)O)C=O",
+                "chem_synonyms": [
+                    "Ascofuranon",
+                    "Ascofranone"
+                ],
+                "compound": "ascofuranone",
+                "database_id": [
+                    "pubchem:6434242"
+                ],
+                "mol_mass": 420.170352,
+                "molecular_formula": "C23H29ClO5"
+            }
+        ],
+        "loci": {
+            "accession": "LC406757.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001924",
+        "minimal": true,
+        "ncbi_tax_id": "749675",
+        "organism_name": "Acremonium egyptiacum",
+        "publications": [
+            "pubmed:30952781"
+        ],
+        "status": "active"
+    }
+}

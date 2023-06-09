@@ -1,0 +1,141 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Cleaned up synonym list",
+                "Fetch compound properties from PubChem",
+                "Updated bioactivity data",
+                "Added AMP-binding domain substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Alkaloid"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CN1C[C@@H]2[C@@H](C[C@@H]([C@]2(C(=O)O)NC(=O)CS(=O)(=O)N)O)C(=C1)C(=O)N",
+                "chem_synonyms": [
+                    "(-)-Altemicidin",
+                    "(-)-Artemicidine"
+                ],
+                "compound": "altemicidin",
+                "database_id": [
+                    "pubchem:11036174"
+                ],
+                "mol_mass": 376.10527,
+                "molecular_formula": "C13H20N4O7S"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "compound": "SB-203207"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "compound": "SB-203208"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "domains": [
+                        {
+                            "location": {
+                                "begin": 9,
+                                "end": 425
+                            },
+                            "name": "AMP-binding",
+                            "substrates": [
+                                {
+                                    "evidence": [
+                                        "Sequence-based prediction",
+                                        "ACVS assay"
+                                    ],
+                                    "name": "R-beta-methylphenylalanine",
+                                    "publications": [
+                                        "pubmed:30643149"
+                                    ],
+                                    "structure": "C[C@H](C1=CC=CC=C1)[C@@H](C(=O)O)N"
+                                }
+                            ]
+                        }
+                    ],
+                    "id": "BBG06551.1"
+                },
+                {
+                    "domains": [
+                        {
+                            "location": {
+                                "begin": 36,
+                                "end": 437
+                            },
+                            "name": "AMP-binding",
+                            "substrates": [
+                                {
+                                    "evidence": [
+                                        "Sequence-based prediction",
+                                        "ACVS assay"
+                                    ],
+                                    "name": "2-sulfamoylacetic acid",
+                                    "publications": [
+                                        "pubmed:30643149"
+                                    ],
+                                    "structure": "C(C(=O)O)S(=O)(=O)N"
+                                }
+                            ]
+                        }
+                    ],
+                    "id": "BBG06561.1"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "LC420052.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001925",
+        "minimal": false,
+        "ncbi_tax_id": "1931",
+        "organism_name": "Streptomyces sp.",
+        "publications": [
+            "pubmed:30643149"
+        ],
+        "status": "active"
+    }
+}

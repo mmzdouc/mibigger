@@ -1,0 +1,85 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Corrected compound details",
+                "Added extra biosynthetic class and subclass information"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA",
+                "SJG3CBEHSM6A3I74YXLH6GLA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other",
+            "Saccharide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antifungal"
+                    }
+                ],
+                "chem_struct": "C1[C@@H]([C@H]([C@@H](C([C@H]1N[C@H]2C=C([C@H]([C@@H]([C@H]2O)O)O)CO)O)O)O[C@H]3C(C([C@@H](C(O3)CO)O)O)O)CO",
+                "chem_targets": [
+                    {
+                        "target": "Trehalose synthase"
+                    }
+                ],
+                "compound": "validamycin A",
+                "database_id": [
+                    "npatlas:NPA021209"
+                ],
+                "mol_mass": 497.2108,
+                "molecular_formula": "C20H35NO13"
+            }
+        ],
+        "loci": {
+            "accession": "DQ223652.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000723",
+        "minimal": true,
+        "ncbi_tax_id": "264445",
+        "organism_name": "Streptomyces hygroscopicus subsp. limoneus",
+        "other": {
+            "subclass": "Cyclitol"
+        },
+        "publications": [
+            "pubmed:16725283"
+        ],
+        "status": "active"
+    }
+}

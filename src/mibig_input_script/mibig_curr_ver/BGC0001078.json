@@ -1,0 +1,75 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Terpene",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "COC1=C(C)C(=O)C2=C(C=C(O)C3=C2O[C@@H](C)[C@@]3(C)C(O)C\\C=C(/C)CO)C1=O",
+                "compound": "furaquinocin B",
+                "database_id": [
+                    "npatlas:NPA09549"
+                ],
+                "mol_mass": 402.1678531719999,
+                "molecular_formula": "C22H26O7"
+            }
+        ],
+        "loci": {
+            "accession": "AB212624.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001078",
+        "minimal": true,
+        "ncbi_tax_id": "285219",
+        "organism_name": "Streptomyces sp. KO-3988",
+        "publications": [
+            "pubmed:16452404"
+        ],
+        "status": "active"
+    }
+}

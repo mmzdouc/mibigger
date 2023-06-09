@@ -1,0 +1,78 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Refined reference coordinates",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antifungal"
+                    }
+                ],
+                "chem_struct": "C[C@@H]1C[C@H]1/C=C\\[C@H]2C[C@@H]2[C@@H]3C[C@H]3[C@H]4C[C@H]4[C@@H]5C[C@@H]5/C=C/C=C/C(=O)NC[C@H]6[C@@H]([C@H]([C@@H](O6)N7CCC(=O)NC7=O)O)O",
+                "compound": "jawsamycin",
+                "database_id": [
+                    "pubchem:101991492"
+                ],
+                "mol_mass": 565.3151860959999,
+                "molecular_formula": "C32H43N3O6"
+            }
+        ],
+        "loci": {
+            "accession": "AB920328.1",
+            "completeness": "Unknown",
+            "end_coord": 14889,
+            "start_coord": 1629
+        },
+        "mibig_accession": "BGC0001002",
+        "minimal": true,
+        "ncbi_tax_id": "66429",
+        "organism_name": "Streptomyces roseoverticillatus",
+        "publications": [
+            "pubmed:24756819"
+        ],
+        "status": "active"
+    }
+}

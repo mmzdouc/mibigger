@@ -1,0 +1,56 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide",
+            "Terpene"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC1=C(C(=O)C2=CC=CC=C2N1O)C/C=C(\\C)/CC/C=C(\\C)/CCC=C(C)C",
+                "compound": "aurachin C",
+                "database_id": [
+                    "npatlas:NPA006757"
+                ]
+            },
+            {
+                "chem_struct": "CC1=C(C(=O)C2=CC=CC=C2N1)C/C=C(\\C)/CC/C=C(\\C)/CCC=C(C)C",
+                "compound": "aurachin D",
+                "database_id": [
+                    "npatlas:NPA019718"
+                ]
+            },
+            {
+                "chem_struct": "CC1=[N+](C2=CC=CC=C2C(=C1C/C=C(\\C)/CCC=C(C)C)OC)[O-]",
+                "compound": "aurachin SS",
+                "database_id": [
+                    "npatlas:NPA021662"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "KY810820.1",
+            "completeness": "Unknown",
+            "end_coord": 20232,
+            "start_coord": 1
+        },
+        "mibig_accession": "BGC0002591",
+        "minimal": true,
+        "ncbi_tax_id": "1931",
+        "organism_name": "Streptomyces sp.",
+        "publications": [
+            "pubmed:28420868"
+        ],
+        "status": "active"
+    }
+}

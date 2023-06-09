@@ -1,0 +1,193 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted",
+                "Removed ketoreductase stereochemistry annotation from modules without ketoreductases",
+                "Merged cross-CDS PKS modules",
+                "Added version to NCBI accession",
+                "Fix invalid gene IDs"
+            ],
+            "contributors": [
+                "NXU2DC3KF53Q3BQ3CSVJITHE",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Changed chemical structures for compounds: secimide.",
+                "Added NPAtlas links to compounds: secimide."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "COC(=O)/C(C)=C/C(C)C(=O)C[C@H](O)CC1CC(=O)NC(=O)C1",
+                "compound": "secimide",
+                "database_id": [
+                    "npatlas:NPA033159"
+                ],
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry",
+                    "Chemical derivatization"
+                ],
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 326.1598,
+                "molecular_formula": "C16H23NO6"
+            }
+        ],
+        "loci": {
+            "accession": "CP000075.1",
+            "completeness": "Unknown",
+            "end_coord": 5167579,
+            "evidence": [
+                "Knock-out studies"
+            ],
+            "start_coord": 5119626
+        },
+        "mibig_accession": "BGC0002060",
+        "minimal": false,
+        "ncbi_tax_id": "205918",
+        "organism_name": "Pseudomonas syringae pv. syringae B728a",
+        "polyketide": {
+            "cyclic": false,
+            "starter_unit": "Malonamyl-CoA",
+            "subclasses": [
+                "Other"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "AAY39343.1",
+                        "Psyr_4294",
+                        "AAY39344.1",
+                        "AAY39342.1"
+                    ],
+                    "modules": [
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Dehydratase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "AAY39344.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "1"
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "AAY39344.1"
+                            ],
+                            "module_number": "2",
+                            "pks_mod_doms": [
+                                "Michael branching"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "AAY39344.1",
+                                "AAY39343.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "3",
+                            "pks_mod_doms": [
+                                "Methylation"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "AAY39343.1"
+                            ],
+                            "module_number": "4"
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Dehydratase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "AAY39343.1",
+                                "AAY39342.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "5",
+                            "pks_mod_doms": [
+                                "Methylation"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "AAY39342.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "6"
+                        }
+                    ],
+                    "subclass": [
+                        "Trans-AT type I"
+                    ],
+                    "trans_at": {
+                        "genes": [
+                            "Psyr_4294"
+                        ]
+                    }
+                }
+            ]
+        },
+        "publications": [
+            "pubmed:33658492"
+        ],
+        "status": "active"
+    }
+}

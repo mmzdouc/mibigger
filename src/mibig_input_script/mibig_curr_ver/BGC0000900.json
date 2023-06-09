@@ -1,0 +1,110 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated reference publication(s) (MIBiG Annotathon)",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Correct patent name",
+                "Removed empty gene annotations",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "siderophore"
+                    }
+                ],
+                "chem_struct": "CC(=O)N(CCC[C@H]1C(=O)NCC(=O)NCC(=O)NCC(=O)N[C@H](C(=O)N[C@H](C(=O)N1)CCCN(C(=O)C)O)CCCN(C=O)O)O",
+                "compound": "ferrichrome",
+                "database_id": [
+                    "pubchem:90658043",
+                    "pubchem:644246"
+                ],
+                "mol_mass": 673.303117816,
+                "molecular_formula": "C26H43N9O12"
+            }
+        ],
+        "genes": {
+            "extra_genes": [
+                {
+                    "id": "ctg1_orf000000",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 7153,
+                                "start": 2045
+                            },
+                            {
+                                "end": 7651,
+                                "start": 7283
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "ctg1_orforf00001",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 8911,
+                                "start": 8479
+                            }
+                        ],
+                        "strand": -1
+                    }
+                }
+            ]
+        },
+        "loci": {
+            "accession": "BD306272.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000900",
+        "minimal": true,
+        "ncbi_tax_id": "5062",
+        "organism_name": "Aspergillus oryzae",
+        "publications": [
+            "patent:JP2003125779A"
+        ],
+        "status": "active"
+    }
+}

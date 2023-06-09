@@ -1,0 +1,143 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "GMXWAML5TKYYBXKHYBMH2DDT"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Cleaned up synonym list",
+                "Fetch compound properties from PubChem",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CCCC1=C(C(=O)NC2=C1C(=O)C3=C(C2=O)NC(=O)C(=C3CCC)C)C",
+                "chem_synonyms": [
+                    "om-704 a",
+                    "brn 4578367",
+                    "diazaquinomicin a",
+                    "nsc-626554",
+                    "ls-134243"
+                ],
+                "compound": "diazaquinomycin A",
+                "database_id": [
+                    "pubchem:122105"
+                ],
+                "mol_mass": 354.157957,
+                "molecular_formula": "C20H22N2O4"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CCCCCC1=CC(=O)NC2=C1C(=O)C3=C(C2=O)NC(=O)C=C3CCCCC",
+                "compound": "diazaquinomycin E",
+                "database_id": [
+                    "pubchem:134814868"
+                ],
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry"
+                ],
+                "mol_mass": 382.189257,
+                "molecular_formula": "C22H26N2O4"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "O=C(C(N1)=C2C(CCCCC)=CC1=O)C(NC(C(C)=C3CCC)=O)=C3C2=O",
+                "compound": "diazaquinomycin F",
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry"
+                ],
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 368.17360724799994,
+                "molecular_formula": "C21H24N2O4"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "O=C(C(N1)=C2C(CCC)=CC1=O)C(NC(C(C)=C3CCCCC)=O)=C3C2=O",
+                "compound": "diazaquinomycin G",
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry"
+                ],
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 368.17360724799994,
+                "molecular_formula": "C21H24N2O4"
+            }
+        ],
+        "loci": {
+            "accession": "QZWF01000007.1",
+            "completeness": "complete",
+            "end_coord": 281361,
+            "start_coord": 257859
+        },
+        "mibig_accession": "BGC0001850",
+        "minimal": false,
+        "ncbi_tax_id": "1510026",
+        "organism_name": "Streptomyces sp. F001",
+        "other": {
+            "subclass": "Shikimate-derived"
+        },
+        "publications": [
+            "doi:10.3390/md12063574",
+            "doi:10.1016/S0040-4039(00)88190-3",
+            "pubmed:30896942"
+        ],
+        "status": "active"
+    },
+    "comments": "additional key publication:Braesel, J., Lee, J.-H., Arnould, B., Murphy, B.T., Eustaquio, A.S. (2019) Diazaquinomycin biosynthetic gene clusters from marine and freshwater actinomycetes. J. Nat. Prod., in revisionBraesel, J.; Clark, C. M., Kunstman, K. J., Green, S. J., Maienschein-Cline, M., Murphy, B. T., Eustáquio, A. S. (2019) Genome sequence of marine-derived Streptomyces sp. F001, a producer of akashin A and diazaquinomycins. submitted to Microbiology Resource Announcement"
+}

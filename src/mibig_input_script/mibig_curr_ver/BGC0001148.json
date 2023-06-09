@@ -1,0 +1,76 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated reference publication(s) (MIBiG Annotathon)",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "CC(C)(C)[C@@H](C(=O)N[C@@H](CCCCN)C(=O)O)NC(=O)[C@H](CC(=O)N)NC(=O)[C@H](C1=CC(=C(C(=C1)O)CO)O)N=C(N)N",
+                "compound": "pheganomycin",
+                "database_id": [
+                    "pubchem:101876632"
+                ],
+                "mol_mass": 610.3074749239998,
+                "molecular_formula": "C26H42N8O9"
+            }
+        ],
+        "loci": {
+            "accession": "AB896796.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001148",
+        "minimal": true,
+        "ncbi_tax_id": "68187",
+        "organism_name": "Streptomyces cirratus",
+        "publications": [
+            "pubmed:25402768"
+        ],
+        "status": "active"
+    }
+}

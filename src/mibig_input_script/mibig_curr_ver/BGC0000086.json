@@ -1,0 +1,77 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antiprotozoal"
+                    }
+                ],
+                "chem_struct": "CCC(C1C(CC(O1)(CC)C2CCC(C(O2)C)(CC)O)C)C(=O)C(C)C(C(C)CCC3=C(C(=C(C=C3)C)O)C(=O)[O-])O.[Na+]",
+                "compound": "lasalocid",
+                "database_id": [
+                    "pubchem:2724110"
+                ],
+                "mol_mass": 612.3638129359999,
+                "molecular_formula": "C34H53NaO8"
+            }
+        ],
+        "loci": {
+            "accession": "AB449340.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000086",
+        "minimal": true,
+        "ncbi_tax_id": "324833",
+        "organism_name": "Streptomyces lasaliensis",
+        "publications": [
+            "pubmed:18710235",
+            "pubmed:19129623"
+        ],
+        "status": "active"
+    }
+}

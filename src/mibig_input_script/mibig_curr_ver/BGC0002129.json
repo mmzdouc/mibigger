@@ -1,0 +1,114 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11",
+                "Changed chemical structures for compounds: metathramycin, premetathramycin.",
+                "Added NPAtlas links to compounds: metathramycin, premetathramycin."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CO[C@H](C(=O)[C@@H](O)[C@@H](C)O)C1CC2=C(C(=O)[C@H]1O[C@H]1CC(O[C@H]3C[C@@H](O[C@H]4C[C@](C)(O)[C@H](O)[C@@H](C)O4)[C@@H](O)[C@@H](C)O3)[C@H](O)[C@@H](C)O1)C(O)=C1C(O)=C(C)C(O[C@H]3C[C@](C)(O)[C@H](O)[C@@H](C)O3)=CC1=C2",
+                "compound": "metathramycin",
+                "database_id": [
+                    "npatlas:NPA033018"
+                ],
+                "evidence": [
+                    "Mass spectrometry",
+                    "Other"
+                ],
+                "mass_spec_ion_type": "[M-H]-",
+                "mol_mass": 968.43,
+                "molecular_formula": "C47H68O21"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CO[C@@H]1C(=O)C(C(C)=O)=C(O)C2(O[C@H]3CC(O[C@H]4C[C@@H](O[C@H]5C[C@](C)(O)[C@H](O)[C@@H](C)O5)[C@@H](O)[C@@H](C)O4)[C@H](O)[C@@H](C)O3)C(=O)C3=C(C=C4C=C(O[C@H]5C[C@](C)(O)[C@H](O)[C@@H](C)O5)C(C)=C(O)C4=C3O)CC12",
+                "compound": "premetathramycin",
+                "database_id": [
+                    "npatlas:NPA033019"
+                ],
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry",
+                    "Other"
+                ],
+                "mass_spec_ion_type": "[M-H]-",
+                "mol_mass": 976.39,
+                "molecular_formula": "C48H64O21"
+            }
+        ],
+        "loci": {
+            "accession": "MW512268.1",
+            "completeness": "complete",
+            "evidence": [
+                "Heterologous expression",
+                "Gene expression correlated with compound production"
+            ]
+        },
+        "mibig_accession": "BGC0002129",
+        "minimal": false,
+        "ncbi_tax_id": "77133",
+        "organism_name": "uncultured bacterium",
+        "polyketide": {
+            "cyclases": [
+                "QVQ68793.1",
+                "QVQ68794.1",
+                "QVQ68785.1"
+            ],
+            "cyclic": true,
+            "ketide_length": 10,
+            "starter_unit": "Malonyl-CoA",
+            "subclasses": [
+                "Type II",
+                "Other"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "QVQ68798.1",
+                        "QVQ68799.1"
+                    ]
+                }
+            ]
+        },
+        "publications": [
+            "pubmed:34458799"
+        ],
+        "status": "active"
+    }
+}

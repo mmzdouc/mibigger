@@ -1,0 +1,74 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "CC[C@@H]1[C@]([C@@H]2[C@H](O2)/C=C/C(=O)[C@@H](C[C@@H]([C@@H]([C@H](/C=C/C(=O)O1)C)O[C@H]3[C@@H]([C@H](C[C@H](O3)C)N(C)C)O)C)C)(CO[C@H]4[C@@H]([C@@H]([C@@H]([C@H](O4)C)O)OC)OC)O",
+                "compound": "mycinamicin II",
+                "database_id": [
+                    "pubchem:49787022"
+                ],
+                "mol_mass": 727.4142910120001,
+                "molecular_formula": "C37H61NO13"
+            }
+        ],
+        "loci": {
+            "accession": "AB089954.2",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000102",
+        "minimal": true,
+        "ncbi_tax_id": "28040",
+        "organism_name": "Micromonospora griseorubida",
+        "publications": [
+            "pubmed:12583909"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Remove terpene biosynthetic class"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "compound": "alkyl-O-dihydrogeranyl-methoxyhydroquinones"
+            }
+        ],
+        "loci": {
+            "accession": "AP012319.1",
+            "completeness": "Unknown",
+            "end_coord": 8386219,
+            "start_coord": 8379670
+        },
+        "mibig_accession": "BGC0001077",
+        "minimal": true,
+        "ncbi_tax_id": "512565",
+        "organism_name": "Actinoplanes missouriensis 431",
+        "publications": [
+            "pubmed:21264995"
+        ],
+        "status": "active"
+    }
+}

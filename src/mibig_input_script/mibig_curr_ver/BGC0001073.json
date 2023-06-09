@@ -1,0 +1,84 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Linked new NPAtlas id for kosinostatin (npatlas:NPA05118)",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "5UL74VURKJ25VSPPPO3H2NYB",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "C[C@H]1[C@@]([C@@H](C[C@@H](O1)O[C@@H]2C3=C([C@@H]4C[C@]2(OC45C=C6CCN=C6N5)C)C(=C7C(=C3)C(=O)C8=C(C7=O)C=CC=C8O)O)O)(C(=O)C)O",
+                "compound": "kosinostatin",
+                "database_id": [
+                    "pubchem:102302126",
+                    "npatlas:NPA05118"
+                ],
+                "mol_mass": 616.205695224,
+                "molecular_formula": "C33H32N2O10"
+            }
+        ],
+        "loci": {
+            "accession": "JN038178.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001073",
+        "minimal": true,
+        "ncbi_tax_id": "1182970",
+        "organism_name": "Micromonospora sp. TP-A0468",
+        "publications": [
+            "pubmed:23790490"
+        ],
+        "status": "active"
+    }
+}

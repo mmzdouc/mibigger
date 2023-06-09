@@ -1,0 +1,214 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.2"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)",
+                "Updated genome accession"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "NCC[C@H](O)C[C@H]1NC(=O)[C@H](CO)NC(=O)[C@@H]2C[C@@H](O)CN2C(=O)C2(CC2)NC(=O)[C@H](CO)NC(=O)[C@@H](CO)NC(=O)CCNC1=O",
+                "compound": "serinocyclin A",
+                "database_id": [
+                    "npatlas:NPA015502",
+                    "pubchem:24762344"
+                ],
+                "mol_mass": 672.307868848,
+                "molecular_formula": "C27H44N8O12"
+            },
+            {
+                "chem_struct": "NCCCC[C@H]1NC(=O)[C@H](CO)NC(=O)[C@@H]2C[C@@H](O)CN2C(=O)C2(CC2)NC(=O)[C@H](CO)NC(=O)[C@@H](CO)NC(=O)CCNC1=O",
+                "compound": "serinocyclin B",
+                "database_id": [
+                    "npatlas:NPA016948"
+                ],
+                "mol_mass": 656.312954228,
+                "molecular_formula": "C27H44N8O11"
+            }
+        ],
+        "loci": {
+            "accession": "JELW01000052.1",
+            "completeness": "Unknown",
+            "end_coord": 118026,
+            "start_coord": 89511
+        },
+        "mibig_accession": "BGC0001240",
+        "minimal": false,
+        "ncbi_tax_id": "568076",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "EXU96269.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:18044842"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "1-aminocyclopropane-1-carboxylic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C1CC1(C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:18044842"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "4R-hydroxyproline",
+                                        "proteinogenic": false,
+                                        "structure": "C1[C@H](NC[C@@H]1O)C(=O)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:18044842"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:18044842"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "lysine",
+                                        "proteinogenic": true,
+                                        "structure": "C(CCN)C[C@@H](C(=O)O)N"
+                                    },
+                                    {
+                                        "name": "4S-hydroxylysine",
+                                        "proteinogenic": false,
+                                        "structure": "NCC[C@H](O)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:18044842"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "beta-alanine",
+                                        "proteinogenic": false,
+                                        "structure": "NCCC(=O)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:18044842"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:18044842"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Metarhizium robertsii",
+        "publications": [
+            "pubmed:18044842",
+            "pubmed:18502925"
+        ],
+        "status": "active"
+    }
+}

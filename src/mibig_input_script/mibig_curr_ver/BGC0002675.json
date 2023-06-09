@@ -1,0 +1,40 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "compound": "di-pyrrolyl-dipyrromethene prodigiosin"
+            }
+        ],
+        "loci": {
+            "accession": "CP045429.1",
+            "completeness": "Unknown",
+            "end_coord": 3231052,
+            "evidence": [
+                "Knock-out studies"
+            ],
+            "start_coord": 3210799
+        },
+        "mibig_accession": "BGC0002675",
+        "minimal": true,
+        "ncbi_tax_id": "43658",
+        "organism_name": "Pseudoalteromonas rubra",
+        "publications": [
+            "pubmed:34724731"
+        ],
+        "status": "active"
+    }
+}

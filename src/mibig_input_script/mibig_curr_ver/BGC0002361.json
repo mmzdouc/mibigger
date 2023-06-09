@@ -1,0 +1,71 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Changed chemical structures for compounds: baikalomycin C, baikalomycin B, baikalomycin A.",
+                "Added NPAtlas links to compounds: baikalomycin C, baikalomycin B, baikalomycin A."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide",
+            "Saccharide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C[C@@H]1O[C@@H](O[C@H]2CC[C@@H](C3=C(O)C4=C(C=C3)C(=O)C3(O)C(O)(CCC5(O)CC(C)(O)CC(=O)C53O)C4=O)O[C@@H]2C)CC[C@H]1O",
+                "compound": "baikalomycin B",
+                "database_id": [
+                    "npatlas:NPA033132"
+                ]
+            },
+            {
+                "chem_struct": "C[C@H]1O[C@@H](C2=C(O)C3=C(C=C2)C(=O)C2(O)C(O)(CCC4(O)CC(C)(O)CC(=O)C42O)C3=O)CC[C@@H]1O",
+                "compound": "baikalomycin A",
+                "database_id": [
+                    "npatlas:NPA033131"
+                ]
+            },
+            {
+                "chem_struct": "C[C@@H]1O[C@@H](O[C@H]2CC[C@H](C3=C(O)C4=C(C=C3)C(=O)C3=C(C=CC(C[C@@](C)(O)CC(=O)O)=C3O)C4=O)O[C@@H]2C)C=CC1=O",
+                "compound": "baikalomycin C",
+                "database_id": [
+                    "npatlas:NPA033133"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "SPQF01000031.1",
+            "completeness": "Unknown",
+            "end_coord": 84023,
+            "evidence": [
+                "Heterologous expression",
+                "Knock-out studies"
+            ],
+            "start_coord": 48768
+        },
+        "mibig_accession": "BGC0002361",
+        "minimal": true,
+        "ncbi_tax_id": "2561920",
+        "organism_name": "Streptomyces sp. IB201691-2A2",
+        "publications": [
+            "pubmed:32392775",
+            "doi:10.3390/microorganisms8050680"
+        ],
+        "status": "active"
+    }
+}

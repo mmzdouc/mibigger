@@ -1,0 +1,71 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "QOLAX6MMT6OJDW2ETPRKAERL"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Fetch compound properties from PubChem",
+                "Cleaned up synonym list"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C1CCN(C(=O)CCC(=O)NCCCCN(C(=O)CCC(=O)NC1)O)O",
+                "compound": "putrebactin",
+                "database_id": [
+                    "pubchem:16654915"
+                ],
+                "evidence": [
+                    "Mass spectrometry"
+                ],
+                "mol_mass": 372.200885,
+                "molecular_formula": "C16H28N4O6"
+            },
+            {
+                "chem_struct": "C1CCNC(=O)CCC(=O)N(CCCCNC(=O)CCC(=O)N(CC1)O)O",
+                "compound": "avaroferrin",
+                "database_id": [
+                    "pubchem:102234583"
+                ],
+                "evidence": [
+                    "Mass spectrometry"
+                ],
+                "mol_mass": 386.216535,
+                "molecular_formula": "C17H30N4O6"
+            }
+        ],
+        "loci": {
+            "accession": "NIBS01000001.1",
+            "completeness": "complete",
+            "end_coord": 369084,
+            "evidence": [
+                "Knock-out studies"
+            ],
+            "start_coord": 354427
+        },
+        "mibig_accession": "BGC0001870",
+        "minimal": false,
+        "ncbi_tax_id": "290110",
+        "organism_name": "Xenorhabdus budapestensis",
+        "publications": [
+            "pubmed:28654175"
+        ],
+        "status": "active"
+    }
+}

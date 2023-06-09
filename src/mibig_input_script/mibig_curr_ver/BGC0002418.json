@@ -1,0 +1,43 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC(C(CC(=O)N[C@@H]([C@@H](C(=O)O)O)C(=O)N[C@H](CCCCN=C(N)N)C(=O)N[C@H]([C@H](C(=O)O)O)C(=O)N[C@@H](CO)C(=O)N[C@@H](CCCN(C(=O)C)O)C(=O)N[C@@H]1CCCN(C1=O)O)O)N",
+                "compound": "pacifibactin",
+                "database_id": [
+                    "npatlas:NPA025052"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "CP004387.1",
+            "completeness": "Unknown",
+            "end_coord": 1214287,
+            "start_coord": 1155682
+        },
+        "mibig_accession": "BGC0002418",
+        "minimal": true,
+        "ncbi_tax_id": "391936",
+        "organism_name": "Alcanivorax pacificus W11-5",
+        "publications": [
+            "pubmed:23209202",
+            "doi:10.1128/JB.01845-12"
+        ],
+        "status": "active"
+    }
+}

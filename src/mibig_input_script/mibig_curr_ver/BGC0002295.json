@@ -1,0 +1,84 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Changed chemical structures for compounds: minimycin.",
+                "Added NPAtlas links to compounds: minimycin."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Saccharide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C1=C(C(=O)NC(=O)O1)[C@H]2[C@@H]([C@@H]([C@H](O2)CO)O)O",
+                "compound": "minimycin",
+                "database_id": [
+                    "npatlas:NPA021195"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "MK122964.1",
+            "completeness": "Unknown",
+            "end_coord": 15193,
+            "evidence": [
+                "Heterologous expression",
+                "Knock-out studies"
+            ],
+            "start_coord": 5879
+        },
+        "mibig_accession": "BGC0002295",
+        "minimal": false,
+        "ncbi_tax_id": "1912",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "QDX19369.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "In-vitro experiments"
+                                ],
+                                "publications": [
+                                    "pubmed:31816530"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glutamine",
+                                        "proteinogenic": true,
+                                        "structure": "C(CC(=O)N)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Streptomyces hygroscopicus",
+        "publications": [
+            "pubmed:31816530"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,86 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "FTVL3IN3CWSJUJDTYVJJVU23"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Changed to GenBank accession to match gene annotations",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    }
+                ],
+                "chem_struct": "[H][C@]12CSC(=N1)C1=CSC(=N1)C1=CSC(=N1)C(=C)NC(=O)[C@@]1([H])CSC(=N1)C1=CSC(=N1)C1=CC=C3C(=N1)[C@H](C)NC(=O)[C@]1([H])CCCN1C(=O)\\C(NC(=O)CNC(=O)[C@H](CCCNC(N)=N)NC(=O)C(C)(NC(=O)\\C(NC(=O)C1CSC(=N1)[C@H](CC(N)=O)NC3=O)=C\\C)SC[C@H](NC2=O)C(O)=O)=C\\C",
+                "compound": "cyclothiazomycin b1",
+                "database_id": [
+                    "npatlas:NPA09917"
+                ],
+                "mol_mass": 1527.3428682679992,
+                "molecular_formula": "C61H69N21O13S7"
+            }
+        ],
+        "loci": {
+            "accession": "AORZ01000028.1",
+            "completeness": "Unknown",
+            "end_coord": 50744,
+            "start_coord": 35019
+        },
+        "mibig_accession": "BGC0001145",
+        "minimal": false,
+        "ncbi_tax_id": "1223523",
+        "organism_name": "Streptomyces mobaraensis NBRC 13819 = DSM 40847",
+        "publications": [
+            "pubmed:24937678",
+            "pubmed:21885289",
+            "pubmed:17010619"
+        ],
+        "ripp": {
+            "cyclic": true,
+            "subclass": "Thiopeptide"
+        },
+        "status": "active"
+    }
+}

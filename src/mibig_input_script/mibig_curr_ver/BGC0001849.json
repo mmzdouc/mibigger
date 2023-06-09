@@ -1,0 +1,215 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "INVHNOJJICX7JKSK54CCBDPP"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Removed invalid annotations that should be gene identifiers",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "N-acetylation"
+                    }
+                ],
+                "chem_struct": "O=C(C(C)[NH2+]C(C)=O)N1CCCC1C(NC(C(O)=O)/C=C/CNC(N)=N)=S",
+                "compound": "thiovarsolin A",
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry"
+                ],
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 399.18090076409004,
+                "molecular_formula": "C16H27N6O4S+"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "N-acetylation"
+                    }
+                ],
+                "chem_struct": "O=C(C(C)NC(C)=O)N1CCCC1C(NC(C(O)=O)CCCNC(N)=N)=S",
+                "compound": "thiovarsolin B",
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry"
+                ],
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 400.18927437600007,
+                "molecular_formula": "C16H28N6O4S"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "N-acetylation"
+                    }
+                ],
+                "chem_struct": "O=C(CNC(C)=O)N1CCCC1C(NC(C(O)=O)/C=C/CNC(N)=N)=S",
+                "compound": "thiovarsolin C",
+                "evidence": [
+                    "Mass spectrometry"
+                ],
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 384.1579742480001,
+                "molecular_formula": "C15H24N6O4S"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "N-acetylation"
+                    }
+                ],
+                "chem_struct": "O=C(CNC(C)=O)N1CCCC1C(NC(C(O)=O)CCCNC(N)=N)=S",
+                "compound": "thiovarsolin D",
+                "evidence": [
+                    "Mass spectrometry"
+                ],
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 386.1736243120001,
+                "molecular_formula": "C15H26N6O4S"
+            }
+        ],
+        "genes": {
+            "annotations": [],
+            "extra_genes": [
+                {
+                    "id": "ctg1_1",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 156455,
+                                "start": 155004
+                            }
+                        ],
+                        "strand": -1
+                    }
+                },
+                {
+                    "id": "ctg1_2",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 157267,
+                                "start": 156452
+                            }
+                        ],
+                        "strand": -1
+                    }
+                },
+                {
+                    "id": "ctg1_3",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 158730,
+                                "start": 157384
+                            }
+                        ],
+                        "strand": -1
+                    }
+                },
+                {
+                    "id": "ctg1_4",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 159332,
+                                "start": 158991
+                            }
+                        ],
+                        "strand": -1
+                    }
+                },
+                {
+                    "id": "ctg1_5",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 161185,
+                                "start": 160052
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "ctg1_6",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 161953,
+                                "start": 161264
+                            }
+                        ],
+                        "strand": 1
+                    }
+                }
+            ]
+        },
+        "loci": {
+            "accession": "JOBF01000011.1",
+            "completeness": "complete",
+            "end_coord": 161953,
+            "start_coord": 155004
+        },
+        "mibig_accession": "BGC0001849",
+        "minimal": false,
+        "ncbi_tax_id": "67373",
+        "organism_name": "Streptomyces varsoviensis",
+        "publications": [
+            "doi:10.1101/494286"
+        ],
+        "ripp": {
+            "cyclic": false
+        },
+        "status": "active"
+    }
+}

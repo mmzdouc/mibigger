@@ -1,0 +1,73 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antifungal"
+                    }
+                ],
+                "chem_struct": "CC[C@@H]1C(=CC[C@@H](O1)/C(=C/[C@H](C)/C=C/[C@H]2[C@H]([C@@H]2/C=C/[C@H]3[C@@H]([C@H](C[C@H](O3)CC(=O)O)O)O)C)/C)C",
+                "compound": "ambruticin",
+                "database_id": [
+                    "pubchem:6918547"
+                ],
+                "mol_mass": 474.2981390639999,
+                "molecular_formula": "C28H42O6"
+            }
+        ],
+        "loci": {
+            "accession": "DQ897667.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000014",
+        "minimal": true,
+        "ncbi_tax_id": "56",
+        "organism_name": "Sorangium cellulosum",
+        "publications": [
+            "pubmed:17185223"
+        ],
+        "status": "active"
+    }
+}

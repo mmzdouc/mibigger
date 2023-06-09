@@ -1,0 +1,62 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Corrected biosynthetic class"
+            ],
+            "contributors": [
+                "SJG3CBEHSM6A3I74YXLH6GLA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Terpene"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC1=C[C@@H]2[C@]([C@@H](C1=O)O)([C@]3(C[C@H]([C@H]([C@@]34CO4)O2)O)C)CO",
+                "compound": "deoxynivalenol",
+                "database_id": [
+                    "pubchem:40024"
+                ],
+                "mol_mass": 296.125988,
+                "molecular_formula": "C15H20O6"
+            }
+        ],
+        "loci": {
+            "accession": "AF336365.2",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000930",
+        "minimal": true,
+        "ncbi_tax_id": "5518",
+        "organism_name": "Fusarium graminearum",
+        "publications": [
+            "pubmed:11425709",
+            "pubmed:11976083",
+            "pubmed:26940955",
+            "pubmed:29649280"
+        ],
+        "status": "active"
+    }
+}

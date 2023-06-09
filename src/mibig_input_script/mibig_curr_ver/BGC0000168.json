@@ -1,0 +1,157 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "BMUFDHMMOLZWQLUNJMQED2GP"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Corrected gene identifiers"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "Geranyl-derived spirobicylic ring",
+                        "subcluster": [
+                            "ADI24929.1",
+                            "ADI24928.1",
+                            "ADI24937.1"
+                        ]
+                    }
+                ],
+                "chem_struct": "COC1=C2C3=C(C(O)=C1)C(O)=C1C(=O)[C@]4(O)C(=O)C(C(N)=O)=C(O)C[C@]4(O)[C@@H](O)C1=C3C[C@]21C(C)=CCCC1(C)C",
+                "chem_synonyms": [
+                    "viriditoxin"
+                ],
+                "chem_targets": [
+                    {
+                        "target": "undecaprenyl diphosphate synthase"
+                    }
+                ],
+                "compound": "viridicatumtoxin",
+                "database_id": [
+                    "npatlas:NPA03651",
+                    "pubchem:54679209"
+                ],
+                "mol_mass": 565.1947961919999,
+                "molecular_formula": "C30H31NO10"
+            },
+            {
+                "chem_acts": [],
+                "chem_struct": "OC1=C(C(O)=C(C([C@@](C(C(C(N)=O)=C(O)C2)=O)(O)[C@@]2(O)[C@H]3O)=O)C3=C4C/C=C(C)/CC/C=C(C)/C)C4=CC(OC)=C1",
+                "compound": "previridicatumtoxin",
+                "mol_mass": 567.210446256,
+                "molecular_formula": "C30H33NO10"
+            },
+            {
+                "chem_acts": [],
+                "chem_struct": "OC1=C(C(O)=C(C([C@@](C(C(C(N)=O)=C(O)C2)=O)(O)[C@@]2(O)[C@H]3O)=O)C3=C4)C4=CC(OC)=C1",
+                "compound": "5-hydroxyanthrotainin",
+                "mol_mass": 431.08524574399996,
+                "molecular_formula": "C20H17NO10"
+            },
+            {
+                "chem_acts": [],
+                "chem_struct": "OC1=C(C(O)=C(C([C@@](C(C(C(N)=O)=C(O)C2)=O)(O)[C@@]2(O)C3)=O)C3=C4)C4=CC(O)=C1",
+                "compound": "8-O-desmethylanthrotainin",
+                "mol_mass": 401.07468106,
+                "molecular_formula": "C19H15NO9"
+            }
+        ],
+        "loci": {
+            "accession": "GU574477.1",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies",
+                "Enzymatic assays",
+                "Gene expression correlated with compound production"
+            ]
+        },
+        "mibig_accession": "BGC0000168",
+        "minimal": false,
+        "ncbi_tax_id": "36650",
+        "organism_name": "Penicillium aethiopicum",
+        "polyketide": {
+            "cyclic": true,
+            "release_type": [
+                "Claisen condensation"
+            ],
+            "starter_unit": "Malonamyl-CoA",
+            "subclasses": [
+                "Tetracycline"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "ADI24932.1",
+                        "ADI24926.1"
+                    ],
+                    "iterative": {
+                        "cyclization_type": "C6-C11 first",
+                        "nr_iterations": 8,
+                        "subtype": "Non-reducing"
+                    },
+                    "subclass": [
+                        "Iterative type I"
+                    ],
+                    "thioesterases": [
+                        {
+                            "gene": "ADI24932.1",
+                            "thioesterase_type": "Unknown"
+                        }
+                    ]
+                }
+            ]
+        },
+        "publications": [
+            "pubmed:20534346",
+            "pubmed:22590971",
+            "pubmed:24161266",
+            "pubmed:19168978",
+            "pubmed:23168407",
+            "pubmed:23893651",
+            "pubmed:25317739"
+        ],
+        "status": "active"
+    }
+}

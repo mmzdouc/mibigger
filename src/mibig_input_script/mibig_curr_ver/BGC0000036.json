@@ -1,0 +1,387 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "FEQLSWI73YICHNTDWNWMD3JQ"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Removed ketoreductase stereochemistry annotation from modules without ketoreductases",
+                "Corrected gene identifiers"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide",
+            "Saccharide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "6-methylsalicylic acid",
+                        "subcluster": [
+                            "AAZ77673.1",
+                            "AAZ77675.1",
+                            "AAZ77676.1",
+                            "AAZ77674.1",
+                            "AAZ77678.1",
+                            "AAZ77679.1"
+                        ]
+                    }
+                ],
+                "chem_struct": "C[C@@H](C(C(O)=O)=C1)C[C@@]2(C(O)=C(O3)C(O2)=O)[C@@H]1C=CCCCC[C@@H]4C=C[C@@]([C@@H](O[C@@H]5C[C@H](O)[C@@H](O[C@H]6O[C@@H](C)[C@H](O)[C@@H](OC(C7=C(C)C(Cl)=CC=C7OC)=O)C6)[C@@H](C)O5)CCC8)([H])[C@]8([H])[C@@H]4C3=O",
+                "chem_synonyms": [
+                    "chl"
+                ],
+                "chem_targets": [
+                    {
+                        "target": "Pyruvate biosynthesis"
+                    }
+                ],
+                "compound": "chlorothricin",
+                "mol_mass": 940.3648135520001,
+                "molecular_formula": "C49H61ClO16"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "C[C@@H](C(C(O)=O)=C1)C[C@@]2(C(O)=C(O3)C(O2)=O)[C@@H]1C=CCCCC[C@@H]4C=C[C@@]([C@@H](O[C@@H]5C[C@H](O)[C@@H](O[C@H]6O[C@@H](C)[C@H](O)[C@@H](OC(C7=C(C)C=CC=C7OC)=O)C6)[C@@H](C)O5)CCC8)([H])[C@]8([H])[C@@H]4C3=O",
+                "chem_synonyms": [
+                    "deschl"
+                ],
+                "chem_targets": [
+                    {
+                        "target": "Pyruvate biosynthesis"
+                    }
+                ],
+                "compound": "deschlorothricin",
+                "mol_mass": 906.4037859040001,
+                "molecular_formula": "C49H62O16"
+            }
+        ],
+        "loci": {
+            "accession": "DQ116941.2",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies",
+                "Enzymatic assays",
+                "Heterologous expression",
+                "Gene expression correlated with compound production"
+            ]
+        },
+        "mibig_accession": "BGC0000036",
+        "minimal": false,
+        "ncbi_tax_id": "1890",
+        "organism_name": "Streptomyces antibioticus",
+        "polyketide": {
+            "cyclic": false,
+            "release_type": [
+                "Claisen condensation"
+            ],
+            "starter_unit": "Acetyl-CoA",
+            "subclasses": [
+                "Macrolide"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "AAZ77693.1",
+                        "AAZ77697.1",
+                        "AAZ77698.1",
+                        "AAZ77696.1",
+                        "AAZ77673.1",
+                        "AAZ77694.1",
+                        "AAZ77699.1"
+                    ],
+                    "iterative": {
+                        "cyclization_type": "C2-C7 first",
+                        "nr_iterations": 2,
+                        "subtype": "Partially reducing"
+                    },
+                    "modules": [
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Sequence-based prediction",
+                            "genes": [
+                                "AAZ77693.1"
+                            ],
+                            "module_number": "0"
+                        },
+                        {
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Sequence-based prediction",
+                            "genes": [
+                                "AAZ77693.1"
+                            ],
+                            "kr_stereochem": "L-OH",
+                            "module_number": "1"
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Sequence-based prediction",
+                            "genes": [
+                                "AAZ77693.1"
+                            ],
+                            "kr_stereochem": "L-OH",
+                            "module_number": "2"
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Sequence-based prediction",
+                            "genes": [
+                                "AAZ77694.1"
+                            ],
+                            "kr_stereochem": "L-OH",
+                            "module_number": "3"
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Enoylreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Sequence-based prediction",
+                            "genes": [
+                                "AAZ77694.1"
+                            ],
+                            "kr_stereochem": "L-OH",
+                            "module_number": "4"
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Enoylreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Sequence-based prediction",
+                            "genes": [
+                                "AAZ77696.1"
+                            ],
+                            "kr_stereochem": "L-OH",
+                            "module_number": "5"
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Sequence-based prediction",
+                            "genes": [
+                                "AAZ77696.1"
+                            ],
+                            "kr_stereochem": "L-OH",
+                            "module_number": "6"
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Sequence-based prediction",
+                            "genes": [
+                                "AAZ77696.1"
+                            ],
+                            "kr_stereochem": "L-OH",
+                            "module_number": "7"
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Sequence-based prediction",
+                            "genes": [
+                                "AAZ77697.1"
+                            ],
+                            "kr_stereochem": "L-OH",
+                            "module_number": "8"
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Enoylreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Sequence-based prediction",
+                            "genes": [
+                                "AAZ77698.1"
+                            ],
+                            "kr_stereochem": "L-OH",
+                            "module_number": "9"
+                        },
+                        {
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Sequence-based prediction",
+                            "genes": [
+                                "AAZ77698.1"
+                            ],
+                            "kr_stereochem": "L-OH",
+                            "module_number": "10"
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Sequence-based prediction",
+                            "genes": [
+                                "AAZ77699.1"
+                            ],
+                            "module_number": "11"
+                        }
+                    ],
+                    "subclass": [
+                        "Modular type I",
+                        "Iterative type I"
+                    ]
+                }
+            ]
+        },
+        "publications": [
+            "pubmed:16793515",
+            "pubmed:16677607",
+            "pubmed:20534347",
+            "pubmed:19266533"
+        ],
+        "saccharide": {
+            "glycosyltransferases": [
+                {
+                    "evidence": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "AAZ77691.1",
+                    "specificity": "Unknown"
+                },
+                {
+                    "evidence": [
+                        "Sequence-based prediction"
+                    ],
+                    "gene_id": "AAZ77672.1",
+                    "specificity": "Unknown"
+                }
+            ],
+            "subclass": "oligosaccharide"
+        },
+        "status": "active"
+    }
+}

@@ -1,0 +1,85 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (MIBiG Annotathon)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Linked new NPAtlas id for azanigerone A (npatlas:NPA015930)",
+                "Add new compound: azanigerone B",
+                "Add new compound: azanigerone C",
+                "Add new compound: azanigerone D",
+                "Add new compound: azanigerone E",
+                "Add new compound: azanigerone F",
+                "Cleaned up synonym list"
+            ],
+            "contributors": [
+                "5UL74VURKJ25VSPPPO3H2NYB",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CCC(C)CC(C)C(=O)OC1(C(=O)C=C2C=C(OC=C2C1=O)C(=O)O)C",
+                "compound": "azanigerone A",
+                "database_id": [
+                    "pubchem:122198269",
+                    "npatlas:NPA015930"
+                ],
+                "mol_mass": 362.1365530439999,
+                "molecular_formula": "C19H22O7"
+            },
+            {
+                "compound": "azanigerone B"
+            },
+            {
+                "compound": "azanigerone C"
+            },
+            {
+                "compound": "azanigerone D"
+            },
+            {
+                "compound": "azanigerone E"
+            },
+            {
+                "compound": "azanigerone F"
+            }
+        ],
+        "loci": {
+            "accession": "ACJE01000001.1",
+            "completeness": "Unknown",
+            "end_coord": 462946,
+            "start_coord": 422430
+        },
+        "mibig_accession": "BGC0001143",
+        "minimal": true,
+        "ncbi_tax_id": "380704",
+        "organism_name": "Aspergillus niger ATCC 1015",
+        "publications": [
+            "pubmed:22921072"
+        ],
+        "status": "active"
+    }
+}

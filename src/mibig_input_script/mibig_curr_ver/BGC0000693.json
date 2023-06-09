@@ -1,0 +1,89 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Saccharide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "C1[C@@H]([C@H]([C@@H]([C@H]([C@@H]1NC(=O)[C@H](CCN)O)O)O[C@H]2[C@@H]([C@H]([C@H](O2)CO)O)O)O[C@@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CN)O)O)N)N",
+                "compound": "butirosin A",
+                "database_id": [
+                    "pubchem:12302171"
+                ],
+                "mol_mass": 555.2751717519999,
+                "molecular_formula": "C21H41N5O12"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "C1[C@@H]([C@H]([C@@H]([C@H]([C@@H]1NC(=O)[C@H](CCN)O)O)O[C@H]2[C@@H]([C@@H]([C@H](O2)CO)O)O)O[C@@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CN)O)O)N)N",
+                "compound": "butirosin B",
+                "database_id": [
+                    "pubchem:12302172"
+                ],
+                "mol_mass": 555.2751717519999,
+                "molecular_formula": "C21H41N5O12"
+            }
+        ],
+        "loci": {
+            "accession": "AB097196.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000693",
+        "minimal": true,
+        "ncbi_tax_id": "1397",
+        "organism_name": "Bacillus circulans",
+        "publications": [
+            "pubmed:11132962",
+            "pubmed:16156513"
+        ],
+        "status": "active"
+    }
+}

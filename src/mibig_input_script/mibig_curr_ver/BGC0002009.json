@@ -1,0 +1,79 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Added chemical activity and supporting publication",
+                "Refined reference coordinates"
+            ],
+            "contributors": [
+                "SJG3CBEHSM6A3I74YXLH6GLA",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "compound": "kanglemycin A"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "compound": "kanglemycin V1"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "compound": "kanglemycin V2"
+            }
+        ],
+        "loci": {
+            "accession": "NZ_JNYY01000005.1",
+            "completeness": "Unknown",
+            "end_coord": 518113,
+            "start_coord": 420871
+        },
+        "mibig_accession": "BGC0002009",
+        "minimal": true,
+        "ncbi_tax_id": "208444",
+        "organism_name": "Amycolatopsis vancoresmycina",
+        "publications": [
+            "doi:10.1016/j.molcel.2018.08.028",
+            "pubmed:30297823"
+        ],
+        "status": "active"
+    }
+}

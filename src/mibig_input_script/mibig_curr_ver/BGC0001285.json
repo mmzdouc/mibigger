@@ -1,0 +1,339 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "KRKW7VUNYGF36O3Z7FAQ6YXG"
+            ],
+            "version": "1.2"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Removed gene names of 'No gene ID'",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CCCCCCC1=C(O)CC(CCCCC)OC1=O",
+                "chem_synonyms": [
+                    "alpha-pyrone ii"
+                ],
+                "chem_targets": [
+                    {
+                        "target": "fatty acid synthase II system"
+                    },
+                    {
+                        "target": "membrane disruption"
+                    }
+                ],
+                "compound": "pseudopyronine A",
+                "database_id": [
+                    "npatlas:NPA01300",
+                    "chemspider:10480437"
+                ],
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry"
+                ],
+                "mol_mass": 268.203844756,
+                "molecular_formula": "C16H28O3"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CCCCCCCC1=CC(=O)C(O)(CCCCCC)O1",
+                "chem_synonyms": [
+                    "alpha-pyrone i",
+                    "sch 419560"
+                ],
+                "chem_targets": [
+                    {
+                        "target": "fatty acid synthase II system"
+                    },
+                    {
+                        "target": "membrane disruption"
+                    }
+                ],
+                "compound": "pseudopyronine B",
+                "database_id": [
+                    "npatlas:NPA07296",
+                    "chemspider:10480436"
+                ],
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry"
+                ],
+                "mol_mass": 282.21949482,
+                "molecular_formula": "C17H30O3"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ALJ01853.1",
+                    "product": "membrane protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ALJ01854.1",
+                    "product": "hypothetical protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ALJ01855.1",
+                    "product": "putative dioxygenase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ALJ01856.1",
+                    "product": "hypothetical protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ALJ01857.1",
+                    "product": "hypothetical protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "ALJ01858.1",
+                    "name": "ppyS",
+                    "product": "pseudopyronine synthase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ALJ01859.1",
+                    "product": "glucose-6-phosphate 1-dehydrogenase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ALJ01860.1",
+                    "product": "6-phosphogluconate dehydrogenase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ALJ01861.1",
+                    "product": "hypothetical protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ALJ01862.1",
+                    "name": "glgA",
+                    "product": "glycogen synthase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ALJ01863.1",
+                    "product": "malto-oligosyltrehalose trehalohydrolase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ALJ01864.1",
+                    "product": "4-alpha-glucanotransferase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ALJ01865.1",
+                    "product": "malto-oligosyltrehalose synthase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ALJ01866.1",
+                    "product": "hypothetical protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ALJ01867.1",
+                    "name": "glgX",
+                    "product": "glycogen debranching enzyme"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ALJ01868.1",
+                    "product": "hypothetical protein"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "KT373879.1",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies"
+            ]
+        },
+        "mibig_accession": "BGC0001285",
+        "minimal": false,
+        "ncbi_tax_id": "303",
+        "organism_name": "Pseudomonas putida",
+        "other": {
+            "subclass": "Fatty acid"
+        },
+        "publications": [
+            "pubmed:26507104"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Fixed DOIs"
+            ],
+            "contributors": [
+                "CUSGWVK3I4TVHJH7NHPFAP2L"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Terpene"
+        ],
+        "compounds": [
+            {
+                "compound": "asperterpenoid A"
+            }
+        ],
+        "loci": {
+            "accession": "MK140602.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001969",
+        "minimal": true,
+        "ncbi_tax_id": "28567",
+        "organism_name": "Talaromyces wortmannii",
+        "publications": [
+            "pubmed:30548032"
+        ],
+        "status": "active"
+    }
+}

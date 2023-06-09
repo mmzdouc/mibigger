@@ -1,0 +1,44 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.3"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Terpene"
+        ],
+        "compounds": [
+            {
+                "compound": "cucurbitacin"
+            }
+        ],
+        "loci": {
+            "accession": "MIBIG.BGC0001315.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001315",
+        "minimal": true,
+        "ncbi_tax_id": "3659",
+        "organism_name": "Cucumis sativus",
+        "publications": [
+            "pubmed:25502595"
+        ],
+        "status": "active"
+    }
+}

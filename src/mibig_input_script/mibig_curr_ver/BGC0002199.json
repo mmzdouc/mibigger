@@ -1,0 +1,46 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Alkaloid"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC1(C)CC[C@@H](O)[C@@]2(C)[C@H]1[C@H](O)C=C1COC(=O)[C@@]12O",
+                "compound": "nanangelenin A",
+                "database_id": [
+                    "npatlas:NPA027144"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "MT024570.1",
+            "completeness": "Unknown",
+            "end_coord": 17968,
+            "evidence": [
+                "Heterologous expression",
+                "Enzymatic assays"
+            ],
+            "start_coord": 544
+        },
+        "mibig_accession": "BGC0002199",
+        "minimal": true,
+        "ncbi_tax_id": "2582783",
+        "organism_name": "Aspergillus nanangensis",
+        "publications": [
+            "pubmed:32182055",
+            "doi:10.1021/jacs.0c01605"
+        ],
+        "status": "active"
+    }
+}

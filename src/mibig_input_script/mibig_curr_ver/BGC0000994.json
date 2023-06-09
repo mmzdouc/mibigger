@@ -1,0 +1,99 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "immunosuppressive"
+                    }
+                ],
+                "chem_struct": "[H][C@]12O[C@](O)([C@H](C)C[C@@H]1OC)C(=O)C(=O)N1CCCC[C@@]1([H])C(=O)O[C@@H]([C@H](C)[C@@H](O)CC(=O)[C@H](CC)\\C=C(C)/C[C@H](C)C[C@@H]2OC)C(\\C)=C\\[C@@H]1CC[C@@H](O)C(C1)OC",
+                "compound": "FR-900520",
+                "database_id": [
+                    "npatlas:NPA03615"
+                ],
+                "mol_mass": 791.481976648,
+                "molecular_formula": "C43H69NO12"
+            }
+        ],
+        "loci": {
+            "accession": "AF235504.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000994",
+        "minimal": false,
+        "ncbi_tax_id": "132248",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "AAF86395.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "substrates": [
+                                    {
+                                        "name": "pipecolic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C1CCN[C@@H](C1)C(=O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Streptomyces hygroscopicus subsp. ascomyceticus",
+        "publications": [
+            "pubmed:10863099"
+        ],
+        "status": "active"
+    }
+}

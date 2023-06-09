@@ -1,0 +1,53 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Terpene"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "[H][C@@]12CC[C@]3(C)[C@@H](O)CC[C@@H](C)[C@@]3([H])[C@]1([H])C2(C)C",
+                "compound": "avermitilol",
+                "database_id": [
+                    "npatlas:NPA019411"
+                ],
+                "mol_mass": 222.198365452,
+                "molecular_formula": "C15H26O"
+            }
+        ],
+        "loci": {
+            "accession": "BA000030.3",
+            "completeness": "Unknown",
+            "end_coord": 87080,
+            "start_coord": 86073
+        },
+        "mibig_accession": "BGC0000683",
+        "minimal": true,
+        "ncbi_tax_id": "227882",
+        "organism_name": "Streptomyces avermitilis MA-4680 = NBRC 14893",
+        "publications": [
+            "pubmed:20536237"
+        ],
+        "status": "active"
+    }
+}

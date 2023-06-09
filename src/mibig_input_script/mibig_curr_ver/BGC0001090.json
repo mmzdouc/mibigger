@@ -1,0 +1,381 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "FICEQDRJCNKWHHGNCRVDDP5D"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Corrected NRP module activity",
+                "Removed ketoreductase stereochemistry annotation from modules without ketoreductases",
+                "Corrected gene identifiers",
+                "Updated NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antifungal"
+                    }
+                ],
+                "chem_struct": "CCC(C)CCCCCCCCC1CC(=O)NC(CC(N)=O)C(=O)NC(CC2=CC=C(O)C=C2)C(=O)NC(CC(N)=O)C(=O)N2CCCC2C(=O)NC(CCC(O)=O)C(=O)NC(CO)C(=O)NC(C(C)O)C(=O)N1",
+                "compound": "bacillomycin D",
+                "database_id": [
+                    "npatlas:NPA08510",
+                    "pubchem:3086563"
+                ],
+                "mol_mass": 1044.5491617320001,
+                "molecular_formula": "C49H76N10O15"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ABS74182.1",
+                    "name": "bmyD",
+                    "product": "malonyl-CoA transacylase "
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "ABS74181.1",
+                    "name": "bmyA",
+                    "product": "bacillomycin D synthetase A "
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ABS74180.1",
+                    "name": "bmyB",
+                    "product": "bacillomycin D synthetase B"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ABS74179.1",
+                    "name": "bmyC",
+                    "product": "bacillomycin D synthetase C"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "CP000560.1",
+            "completeness": "complete",
+            "end_coord": 1912622,
+            "evidence": [
+                "Knock-out studies"
+            ],
+            "start_coord": 1867976
+        },
+        "mibig_accession": "BGC0001090",
+        "minimal": false,
+        "ncbi_tax_id": "326423",
+        "nrp": {
+            "cyclic": true,
+            "nrps_genes": [
+                {
+                    "gene_id": "ABS74181.1",
+                    "modules": [
+                        {
+                            "active": true,
+                            "c_dom_subtype": "Unknown",
+                            "module_number": "1"
+                        },
+                        {
+                            "active": true,
+                            "c_dom_subtype": "Unknown",
+                            "modification_domains": [
+                                "Amination"
+                            ],
+                            "module_number": "3"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:14762003"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "asparagine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)C(=O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "4"
+                        },
+                        {
+                            "active": true,
+                            "c_dom_subtype": "DCL",
+                            "module_number": "5"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "ABS74180.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:14762003"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "tyrosine",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC(=CC=C1C[C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "module_number": "5"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": true,
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:14762003"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "asparagine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)C(=O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "DCL",
+                            "module_number": "6"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:14762003"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "proline",
+                                        "proteinogenic": true,
+                                        "structure": "C1C[C@H](NC1)C(=O)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "7"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:14762003"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glutamic acid",
+                                        "proteinogenic": true,
+                                        "structure": "C(CC(=O)O)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "8"
+                        },
+                        {
+                            "active": true,
+                            "c_dom_subtype": "DCL",
+                            "module_number": "9"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "ABS74179.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:14762003"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "threonine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@H]([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "10"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:14762003"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "module_number": "9"
+                        }
+                    ]
+                }
+            ],
+            "subclass": "Other lipopeptide"
+        },
+        "organism_name": "Bacillus velezensis FZB42",
+        "polyketide": {
+            "synthases": [
+                {
+                    "genes": [
+                        "ABS74182.1",
+                        "ABS74181.1"
+                    ],
+                    "modules": [
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "domains": [
+                                "Acyltransferase"
+                            ],
+                            "evidence": "Sequence-based prediction",
+                            "genes": [
+                                "ABS74182.1"
+                            ],
+                            "non_canonical": {
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "iterated": true,
+                                "non_elongating": false,
+                                "skipped": false
+                            }
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "ABS74181.1"
+                            ],
+                            "module_number": "2"
+                        }
+                    ]
+                }
+            ]
+        },
+        "publications": [
+            "pubmed:14762003"
+        ],
+        "status": "active"
+    }
+}

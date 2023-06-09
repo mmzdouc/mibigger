@@ -1,0 +1,100 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "RZXXEFYXH3WXN74YX6LRS5EA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    },
+                    {
+                        "activity": "inhibitor"
+                    }
+                ],
+                "compound": "cyclopiazonic acid",
+                "mol_mass": 336.384,
+                "molecular_formula": "C20H20N2O3"
+            }
+        ],
+        "loci": {
+            "accession": "JN712211.1",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies"
+            ]
+        },
+        "mibig_accession": "BGC0001874",
+        "minimal": false,
+        "ncbi_tax_id": "5059",
+        "nrp": {
+            "cyclic": true,
+            "nrps_genes": [
+                {
+                    "gene_id": "AFA26384.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Feeding study"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "tryptophan",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC=C2C(=C1)C(=CN2)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Aspergillus flavus",
+        "polyketide": {
+            "cyclic": true,
+            "starter_unit": "Malonyl-CoA",
+            "subclasses": [
+                "Other"
+            ]
+        },
+        "publications": [
+            "pubmed:22285533",
+            "pubmed:19038354"
+        ],
+        "status": "active"
+    }
+}

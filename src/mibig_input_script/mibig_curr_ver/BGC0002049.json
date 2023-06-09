@@ -1,0 +1,214 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted",
+                "Removed gene names of 'No gene ID'",
+                "Added version to NCBI accession"
+            ],
+            "contributors": [
+                "KTTDKEJDYAQ7MKSNPMBDOYYX",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Changed chemical structures for compounds: microviridin N7, microviridin N9, microviridin N3, microviridin N4, microviridin N5, microviridin N8, microviridin N6.",
+                "Added NPAtlas links to compounds: microviridin N7, microviridin N9, microviridin N3, microviridin N4, microviridin N5, microviridin N8, microviridin N6."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC(C)C[C@@H]1NC(=O)[C@@H]2CC(=O)O[C@H](C)[C@H](NC(=O)[C@H](CC3=C[NH]C4=CC=CC=C34)NC(=O)[C@@H]3CCCN3C(=O)[C@@H](NC(=O)[C@H](CCC(=O)O)NC(=O)[C@@H](NC(=O)CNC(=O)[C@H](CCC(=O)O)NC(=O)[C@@H](NC(=O)[C@H](C)N)[C@@H](C)O)[C@@H](C)O)C(C)C)C(=O)N[C@@H](CC3=CC=C(O)C=C3)C(=O)N[C@H]3CCCCNC(=O)C[C@@H](C(=O)N[C@@H](CCCNC(=N)N)C(=O)O)NC(=O)[C@H](CCC(=O)OC[C@H](NC(=O)[C@@H]4CCCC4C(=O)[C@H](CC4=CC=CC=C4)NC3=O)C(=O)N2)NC1=O",
+                "compound": "microviridin N9",
+                "database_id": [
+                    "pubchem:155801669",
+                    "npatlas:NPA032898"
+                ],
+                "evidence": [
+                    "Mass spectrometry",
+                    "Chemical derivatization"
+                ],
+                "molecular_formula": "C105H147N25O33"
+            },
+            {
+                "chem_struct": "CC(C)C[C@@H]1NC(=O)[C@@H]2CC(=O)O[C@H](C)[C@H](NC(=O)[C@H](CC3=C[NH]C4=CC=CC=C34)NC(=O)[C@@H]3CCCN3C(=O)[C@@H](NC(=O)[C@H](CCC(=O)O)NC(=O)[C@@H](NC(=O)CNC(=O)[C@H](CCC(=O)O)NC(=O)[C@@H](N)[C@@H](C)O)[C@@H](C)O)C(C)C)C(=O)N[C@@H](CC3=CC=C(O)C=C3)C(=O)N[C@H]3CCCCNC(=O)C[C@@H](C(=O)N[C@@H](CCCNC(=N)N)C(=O)O)NC(=O)[C@H](CCC(=O)OC[C@H](NC(=O)[C@@H]4CCCC4C(=O)[C@H](CC4=CC=CC=C4)NC3=O)C(=O)N2)NC1=O",
+                "compound": "microviridin N8",
+                "database_id": [
+                    "pubchem:155802410",
+                    "npatlas:NPA032897"
+                ],
+                "evidence": [
+                    "Mass spectrometry",
+                    "Chemical derivatization"
+                ],
+                "mass_spec_ion_type": "[M+H]+",
+                "molecular_formula": "C102H142N24O32"
+            },
+            {
+                "chem_struct": "CC(C)C[C@@H]1NC(=O)[C@@H]2CC(=O)O[C@H](C)[C@H](NC(=O)[C@H](CC3=C[NH]C4=CC=CC=C34)NC(=O)[C@@H]3CCCN3C(=O)[C@@H](NC(=O)[C@H](CCC(=O)O)NC(=O)[C@@H](NC(=O)CNC(=O)[C@@H](N)CCC(=O)O)[C@@H](C)O)C(C)C)C(=O)N[C@@H](CC3=CC=C(O)C=C3)C(=O)N[C@H]3CCCCNC(=O)C[C@@H](C(=O)N[C@@H](CCCNC(=N)N)C(=O)O)NC(=O)[C@H](CCC(=O)OC[C@H](NC(=O)[C@@H]4CCCC4C(=O)[C@H](CC4=CC=CC=C4)NC3=O)C(=O)N2)NC1=O",
+                "compound": "microviridin N7",
+                "database_id": [
+                    "pubchem:155802372",
+                    "npatlas:NPA032896"
+                ],
+                "evidence": [
+                    "Mass spectrometry",
+                    "Chemical derivatization"
+                ],
+                "molecular_formula": "C98H135N23O30"
+            },
+            {
+                "chem_struct": "CC(C)C[C@@H]1NC(=O)[C@@H]2CC(=O)O[C@H](C)[C@H](NC(=O)[C@H](CC3=C[NH]C4=CC=CC=C34)NC(=O)[C@@H]3CCCN3C(=O)[C@@H](NC(=O)[C@H](CCC(=O)O)NC(=O)[C@@H](NC(=O)CN)[C@@H](C)O)C(C)C)C(=O)N[C@@H](CC3=CC=C(O)C=C3)C(=O)N[C@H]3CCCCNC(=O)C[C@@H](C(=O)N[C@@H](CCCNC(=N)N)C(=O)O)NC(=O)[C@H](CCC(=O)OC[C@H](NC(=O)[C@@H]4CCCC4C(=O)[C@H](CC4=CC=CC=C4)NC3=O)C(=O)N2)NC1=O",
+                "compound": "microviridin N6",
+                "database_id": [
+                    "pubchem:155802221",
+                    "npatlas:NPA032895"
+                ],
+                "evidence": [
+                    "Mass spectrometry",
+                    "Chemical derivatization"
+                ],
+                "molecular_formula": "C93H128N22O27"
+            },
+            {
+                "chem_struct": "CC(C)C[C@@H]1NC(=O)[C@@H]2CC(=O)O[C@H](C)[C@H](NC(=O)[C@H](CC3=C[NH]C4=CC=CC=C34)NC(=O)[C@@H]3CCCN3C(=O)[C@@H](NC(=O)[C@H](CCC(=O)O)NC(=O)[C@@H](N)[C@@H](C)O)C(C)C)C(=O)N[C@@H](CC3=CC=C(O)C=C3)C(=O)N[C@H]3CCCCNC(=O)C[C@@H](C(=O)N[C@@H](CCCNC(=N)N)C(=O)O)NC(=O)[C@H](CCC(=O)OC[C@H](NC(=O)[C@@H]4CCCC4C(=O)[C@H](CC4=CC=CC=C4)NC3=O)C(=O)N2)NC1=O",
+                "compound": "microviridin N5",
+                "database_id": [
+                    "pubchem:155802367",
+                    "npatlas:NPA032894"
+                ],
+                "evidence": [
+                    "Mass spectrometry",
+                    "Chemical derivatization"
+                ],
+                "molecular_formula": "C91H125N21O26"
+            },
+            {
+                "chem_struct": "CC(C)C[C@@H]1NC(=O)[C@@H]2CC(=O)O[C@H](C)[C@H](NC(=O)[C@H](CC3=C[NH]C4=CC=CC=C34)NC(=O)[C@@H]3CCCN3C(=O)[C@@H](NC(=O)[C@@H](N)CCC(=O)O)C(C)C)C(=O)N[C@@H](CC3=CC=C(O)C=C3)C(=O)N[C@H]3CCCCNC(=O)C[C@@H](C(=O)N[C@@H](CCCNC(=N)N)C(=O)O)NC(=O)[C@H](CCC(=O)OC[C@H](NC(=O)[C@@H]4CCCC4C(=O)[C@H](CC4=CC=CC=C4)NC3=O)C(=O)N2)NC1=O",
+                "compound": "microviridin N4",
+                "database_id": [
+                    "pubchem:155802018",
+                    "npatlas:NPA032893"
+                ],
+                "evidence": [
+                    "Mass spectrometry",
+                    "Chemical derivatization"
+                ],
+                "molecular_formula": " C87H118N20O24"
+            },
+            {
+                "chem_struct": "CC(C)C[C@@H]1NC(=O)[C@@H]2CC(=O)O[C@H](C)[C@H](NC(=O)[C@H](CC3=C[NH]C4=CC=CC=C34)NC(=O)[C@@H]3CCCN3C(=O)[C@@H](N)C(C)C)C(=O)N[C@@H](CC3=CC=C(O)C=C3)C(=O)N[C@H]3CCCCNC(=O)C[C@@H](C(=O)N[C@@H](CCCNC(=N)N)C(=O)O)NC(=O)[C@H](CCC(=O)OC[C@H](NC(=O)[C@@H]4CCCC4C(=O)[C@H](CC4=CC=CC=C4)NC3=O)C(=O)N2)NC1=O",
+                "compound": "microviridin N3",
+                "database_id": [
+                    "pubchem:155802358",
+                    "npatlas:NPA032892"
+                ],
+                "evidence": [
+                    "Mass spectrometry",
+                    "Chemical derivatization"
+                ],
+                "molecular_formula": "C82H111N19O21"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "WP_083782369.1",
+                    "product": "microviridin/marinostatin family tricyclic proteinase inhibitor"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "WP_012408791.1",
+                    "product": "MvdC family ATP-grasp ribosomal peptide maturase",
+                    "tailoring": [
+                        "Heterocyclization"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "WP_041565327.1",
+                    "product": "MvdD family ATP-grasp ribosomal peptide maturase",
+                    "tailoring": [
+                        "Heterocyclization"
+                    ]
+                },
+                {
+                    "id": "WP_012408793.1",
+                    "product": "patatin"
+                },
+                {
+                    "id": "WP_012408794.1",
+                    "product": "hypothetical protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Transport",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "WP_012408795.1",
+                    "product": "ABC transporter ATP-binding protein/permease"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "NC_010628.1",
+            "completeness": "complete",
+            "end_coord": 2716448,
+            "evidence": [
+                "Heterologous expression",
+                "Gene expression correlated with compound production"
+            ],
+            "start_coord": 2708890
+        },
+        "mibig_accession": "BGC0002049",
+        "minimal": true,
+        "ncbi_tax_id": "63737",
+        "organism_name": "Nostoc punctiforme PCC 73102",
+        "publications": [
+            "pubmed:23463784",
+            "pubmed:31091070"
+        ],
+        "ripp": {
+            "cyclic": true,
+            "subclass": "Microviridin"
+        },
+        "status": "active"
+    }
+}

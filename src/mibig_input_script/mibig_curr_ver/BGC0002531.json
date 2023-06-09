@@ -1,0 +1,52 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: cepaciachelin.",
+                "Added NPAtlas links to compounds: cepaciachelin."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "NCCCCNC(=O)C(CCCCNC(=O)C1=C(O)C(O)=CC=C1)NC(=O)C1=C(O)C(O)=CC=C1",
+                "compound": "cepaciachelin",
+                "database_id": [
+                    "npatlas:NPA032790"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "CP000440.1",
+            "completeness": "Unknown",
+            "end_coord": 1694908,
+            "start_coord": 1678058
+        },
+        "mibig_accession": "BGC0002531",
+        "minimal": true,
+        "ncbi_tax_id": "339670",
+        "organism_name": "Burkholderia ambifaria AMMD",
+        "publications": [
+            "pubmed:30181989",
+            "doi:10.3389/fcimb.2018.00305"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,151 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "COC1=C(O)C=C(\\C=C\\C2=NC(C(=O)CC3=NC(C(=O)NC\\C=C\\C=C)=C(C)O3)=C(C)O2)C=C1",
+                "compound": "siphonazole",
+                "database_id": [
+                    "npatlas:NPA09453"
+                ],
+                "mol_mass": 463.17433552,
+                "molecular_formula": "C25H25N3O6"
+            }
+        ],
+        "loci": {
+            "accession": "KX765816.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001780",
+        "minimal": false,
+        "ncbi_tax_id": "2002978",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "ARR97036.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "ATP-PPi exchange assay",
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:27667141"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "3,4-dihydroxybenzoic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC(=C(C=C1C(=O)O)O)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Sequence-based prediction",
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:27667141"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "threonine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@H]([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "ARR97038.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Sequence-based prediction",
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:27667141"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "threonine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@H]([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "ARR97039.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Sequence-based prediction",
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:27667141"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glycine",
+                                        "proteinogenic": true,
+                                        "structure": "NCC(=O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Herpetosiphon sp. B060",
+        "publications": [
+            "pubmed:27667141"
+        ],
+        "status": "active"
+    }
+}

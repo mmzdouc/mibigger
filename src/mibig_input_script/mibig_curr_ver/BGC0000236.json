@@ -1,0 +1,76 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated reference publication(s) (MIBiG Annotathon)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated the NCBI accession",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "CUSGWVK3I4TVHJH7NHPFAP2L",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "CC(=O)O[C@@H]1[C@H](C2=C([C@H]([C@@]1(C)OC(=O)C)OC(=O)C)C(=C3C2=C(C4=CC=CC(=O)C4=C3O)[O-])[N+]#N)O",
+                "compound": "kinamycin",
+                "database_id": [
+                    "pubchem:161863"
+                ],
+                "mol_mass": 496.11179483999996,
+                "molecular_formula": "C24H20N2O10"
+            }
+        ],
+        "loci": {
+            "accession": "AH012623.2",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000236",
+        "minimal": true,
+        "ncbi_tax_id": "224537",
+        "organism_name": "Streptomyces murayamaensis",
+        "publications": [
+            "pubmed:9531987"
+        ],
+        "status": "active"
+    }
+}

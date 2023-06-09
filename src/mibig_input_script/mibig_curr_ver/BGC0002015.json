@@ -1,0 +1,72 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Cleaned up synonym list",
+                "Fetch compound properties from PubChem",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "CCC(C)[C@H]1C(=O)NCC(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)NCC(=O)N[C@H]2CSSC[C@@H](C(=O)N[C@H](C(=O)NCC(=O)N1)CC(C)C)NC(=O)C[C@H]3C(=O)OC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@H](CSSC[C@@H](C(=O)N[C@H](C(=O)N3)CC(=O)N)N)NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)CNC2=O)CC4=CC=C(C=C4)O)C)C(C)C)C(C)C)CC5=CC=CC=C5)CC6=CNC7=CC=CC=C76)C)CC8=CC=CC=C8)CO",
+                "chem_synonyms": [
+                    "Siamycin III",
+                    "L-Cysteinyl-L-leucylglycyl-L-isoleucylglycyl-L-seryl-L-cysteinyl-L-asparaginyl-L-alpha-aspartyl-L-phenylalanyl-L-alanylglycyl-L-cysteinylglycyl-L-tyrosyl-L-alanyl-L-valyl-L-valyl-L-cysteinyl-L-phenylalanyl-L-tryptophen cyclic(9-1)-peptid"
+                ],
+                "compound": "aborycin",
+                "database_id": [
+                    "pubchem:136150874"
+                ],
+                "mol_mass": 2161.851846,
+                "molecular_formula": "C97H131N23O26S4"
+            }
+        ],
+        "loci": {
+            "accession": "NZ_MKCP01000039.1",
+            "completeness": "Unknown",
+            "end_coord": 30566,
+            "start_coord": 18549
+        },
+        "mibig_accession": "BGC0002015",
+        "minimal": true,
+        "ncbi_tax_id": "1904044",
+        "organism_name": "Streptomyces sp. ZS0098",
+        "publications": [
+            "pubmed:30795576"
+        ],
+        "status": "active"
+    }
+}

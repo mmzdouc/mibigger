@@ -1,0 +1,125 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "[H][C@]1(OC(=O)C(C)(C)[C@@H](O)[C@@H](CC2=CC=CC=C2)OC(=O)[C@@H](OC(=O)[C@@H](NC(=O)C2=C(O)C(NC=O)=CC=C2)[C@H](C)OC1=O)C(C)C)[C@@H](C)CC",
+                "compound": "neoantimycin",
+                "database_id": [
+                    "npatlas:NPA010703"
+                ],
+                "mol_mass": 698.305074912,
+                "molecular_formula": "C36H46N2O12"
+            }
+        ],
+        "loci": {
+            "accession": "MH128122.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001695",
+        "minimal": false,
+        "ncbi_tax_id": "1653203",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "AWX24482.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Homology"
+                                ],
+                                "publications": [
+                                    "pubmed:29979567"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "threonine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@H]([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AWX24488.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Homology"
+                                ],
+                                "publications": [
+                                    "pubmed:29979567"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "anthanillic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC=C(C(=C1)C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Streptomyces conglobatus",
+        "publications": [
+            "pubmed:29979567"
+        ],
+        "status": "active"
+    }
+}

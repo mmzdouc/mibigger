@@ -1,0 +1,83 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "inhibitor"
+                    }
+                ],
+                "chem_targets": [
+                    {
+                        "publications": [
+                            "pubmed:26624939"
+                        ],
+                        "target": "Na+/K+ ATPase"
+                    }
+                ],
+                "compound": "tripartilactam"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "inhibitor"
+                    }
+                ],
+                "chem_struct": "C[C@H]\\1CNC(=O)CC(=O)/C=C/C(=C/[C@@H]2[C@H](C=C[C@@H]3[C@H]2[C@H]([C@@H]([C@@H](C3=O)O)O)O)/C(=C/C=C/C=C1)/C)/C",
+                "chem_targets": [
+                    {
+                        "publications": [
+                            "pubmed:26624939"
+                        ],
+                        "target": "Na+/K+ ATPase"
+                    }
+                ],
+                "compound": "niizalactam C",
+                "database_id": [
+                    "npatlas:NPA005723"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "MN305323.1",
+            "completeness": "Unknown",
+            "end_coord": 73855,
+            "evidence": [
+                "Knock-out studies"
+            ],
+            "start_coord": 1
+        },
+        "mibig_accession": "BGC0002517",
+        "minimal": true,
+        "ncbi_tax_id": "1931",
+        "organism_name": "Streptomyces sp.",
+        "publications": [
+            "pubmed:31899637"
+        ],
+        "status": "active"
+    }
+}

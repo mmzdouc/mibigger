@@ -1,0 +1,76 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.1"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "COC(=O)C1=C2N=C(OC2=CC=C1)C1=C2N=C(OC2=CC=C1)C1=C(C)C=CC=C1O",
+                "compound": "nataxazole",
+                "database_id": [
+                    "npatlas:NPA019425"
+                ],
+                "mol_mass": 400.105921612,
+                "molecular_formula": "C23H16N2O5"
+            }
+        ],
+        "loci": {
+            "accession": "KK106988.1",
+            "completeness": "Unknown",
+            "end_coord": 1601776,
+            "start_coord": 1556260
+        },
+        "mibig_accession": "BGC0001213",
+        "minimal": true,
+        "ncbi_tax_id": "1470557",
+        "organism_name": "Streptomyces sp. Tu 6176",
+        "publications": [
+            "pubmed:25892546"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,184 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "J2NUA2GQCUQDOJBDBQUEWJWV"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Corrected NRP module activity",
+                "Changed amino acid substrates to lower case"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "swarming motility"
+                    },
+                    {
+                        "activity": "biofilm"
+                    }
+                ],
+                "chem_struct": "CCCCCCCC1CC(=O)NC(CO)C(=O)NC(CC(C)C)C(=O)OC(CCCCC)CC(=O)NC(CC(C)C)C(=O)NC(CO)C(=O)O1",
+                "compound": "icosalide A",
+                "mol_mass": 712.462244248,
+                "molecular_formula": "C36H64N4O10"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "swarming motility"
+                    },
+                    {
+                        "activity": "biofilm"
+                    }
+                ],
+                "chem_struct": "CCCCC[C@H](CC(N[C@@H](C(N[C@@H](C(O[C@H](CCCCC)CC1=O)=O)CC(C)C)=O)CO)=O)OC([C@H](CO)NC([C@@H](CC(C)C)N1)=O)=O",
+                "compound": "icosalide B",
+                "evidence": [
+                    "NMR"
+                ],
+                "mol_mass": 684.4309441199998,
+                "molecular_formula": "C34H60N4O10"
+            }
+        ],
+        "loci": {
+            "accession": "MH790860.1",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies"
+            ]
+        },
+        "mibig_accession": "BGC0001833",
+        "minimal": false,
+        "ncbi_tax_id": "28095",
+        "nrp": {
+            "cyclic": true,
+            "lipid_moiety": "β-hydroxy decanoic acid, β-hydroxy octanoic acid",
+            "nrps_genes": [
+                {
+                    "gene_id": "AYA44686.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "leucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Starter",
+                            "module_number": "1"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Dual",
+                            "module_number": "2"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Starter",
+                            "module_number": "4"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "leucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "5"
+                        }
+                    ]
+                }
+            ],
+            "release_type": [
+                "Macrolactonization"
+            ],
+            "subclass": "Other lipopeptide"
+        },
+        "organism_name": "Burkholderia gladioli",
+        "publications": [
+            "doi:10.1021/acschembio.8b00600"
+        ],
+        "status": "active"
+    }
+}

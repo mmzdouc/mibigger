@@ -1,0 +1,43 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "compound": "class IV lanthipeptide"
+            },
+            {
+                "compound": "SflA"
+            }
+        ],
+        "loci": {
+            "accession": "NZ_JOIU01000038.1",
+            "completeness": "Unknown",
+            "end_coord": 51979,
+            "evidence": [
+                "Heterologous expression"
+            ],
+            "start_coord": 49239
+        },
+        "mibig_accession": "BGC0002337",
+        "minimal": true,
+        "ncbi_tax_id": "1463880",
+        "organism_name": "Streptomyces sp. NRRL S-1022",
+        "publications": [
+            "pubmed:32356655"
+        ],
+        "status": "active"
+    }
+}

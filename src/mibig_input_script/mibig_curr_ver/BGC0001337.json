@@ -1,0 +1,117 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "TFC7LOLNUCTKZCZQ4X3ELKJ7"
+            ],
+            "version": "1.3"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "alkaloid": {
+            "subclass": "Indole/benzopyrrole"
+        },
+        "biosyn_class": [
+            "Alkaloid"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "Indole group",
+                        "subcluster": [
+                            "AKQ20701.1"
+                        ]
+                    }
+                ],
+                "chem_struct": "O=C1[C@@]2(O)N3C(C4=C([C@@]2(O)C(N1C)=O)C5=CC(Cl)=CC=C5N4)=C(OC)C6=CC(O)=C(Cl)C=C63",
+                "chem_synonyms": [
+                    "lazarimide"
+                ],
+                "compound": "lazarimide A",
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry"
+                ],
+                "mass_spec_ion_type": "[M-H]-",
+                "mol_mass": 487.03379056,
+                "molecular_formula": "C22H15Cl2N3O6"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "COC1=C2N(C3=C1C=CC(Cl)=C3)[C@]1(O)C(=O)N(C)C(=O)[C@]1(O)C1=C2NC2=C1C=C(Cl)C=C2",
+                "compound": "lazarimide B",
+                "mol_mass": 471.03887593999997,
+                "molecular_formula": "C22H15Cl2N3O5"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "O[C@@]12C(=O)NC(=O)[C@]1(O)C1=C(NC3=C1C=C(Cl)C=C3)C1=C2C2=C(N1)C=C(Cl)C=C2",
+                "compound": "lazarimide C",
+                "mol_mass": 427.01266119200005,
+                "molecular_formula": "C20H11Cl2N3O4"
+            }
+        ],
+        "loci": {
+            "accession": "KR052816.1",
+            "completeness": "complete",
+            "end_coord": 25639,
+            "evidence": [
+                "Heterologous expression",
+                "Gene expression correlated with compound production"
+            ],
+            "start_coord": 3107
+        },
+        "mibig_accession": "BGC0001337",
+        "minimal": false,
+        "ncbi_tax_id": "77133",
+        "organism_name": "uncultured bacterium",
+        "publications": [
+            "pubmed:26150486"
+        ],
+        "status": "active"
+    }
+}

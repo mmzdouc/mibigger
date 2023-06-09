@@ -1,0 +1,83 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    },
+                    {
+                        "activity": "herbicidal"
+                    }
+                ],
+                "chem_struct": "CO[C@H]1C[C@H](C)[C@@H](OC)C2=CC(=O)C=C(NC(=O)\\C(C)=C\\C=C/[C@H](OC)[C@@H](OC(N)=O)\\C(C)=C\\[C@H](C)[C@H]1OC)C2=O",
+                "compound": "herbimycin A",
+                "database_id": [
+                    "npatlas:NPA03301"
+                ],
+                "mol_mass": 574.289030924,
+                "molecular_formula": "C30H42N2O9"
+            }
+        ],
+        "loci": {
+            "accession": "AY947889.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000074",
+        "minimal": true,
+        "ncbi_tax_id": "1912",
+        "organism_name": "Streptomyces hygroscopicus",
+        "publications": [
+            "pubmed:16085885"
+        ],
+        "status": "active"
+    }
+}

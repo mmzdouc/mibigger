@@ -1,0 +1,84 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "[H][C@@](C)(N)C(=O)N[C@@H]1[C@]2([H])[C@@H](O)[C@H](O)CC(O)=C2C(=O)O[C@]1(C)C(Cl)Cl",
+                "compound": "bactobolin",
+                "database_id": [
+                    "npatlas:NPA05764",
+                    "pubchem:54676871"
+                ],
+                "mol_mass": 382.06984172,
+                "molecular_formula": "C14H20Cl2N2O6"
+            }
+        ],
+        "loci": {
+            "accession": "CP000085.1",
+            "completeness": "Unknown",
+            "end_coord": 1482269,
+            "start_coord": 1445675
+        },
+        "mibig_accession": "BGC0000961",
+        "minimal": true,
+        "ncbi_tax_id": "271848",
+        "organism_name": "Burkholderia thailandensis E264",
+        "publications": [
+            "pubmed:21615115"
+        ],
+        "status": "active"
+    }
+}

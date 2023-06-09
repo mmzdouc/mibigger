@@ -1,0 +1,58 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Changed chemical structures for compounds: BAB, BAA.",
+                "Added NPAtlas links to compounds: BAB, BAA."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C/C=C/C(O)C/C=C/C=C/C=C/C(=O)O",
+                "compound": "BAB",
+                "database_id": [
+                    "npatlas:NPA033167"
+                ]
+            },
+            {
+                "chem_struct": "C/C=C/C(O)C/C=C/C=C/C=C\\C(=O)O",
+                "compound": "BAA",
+                "database_id": [
+                    "npatlas:NPA033166"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "JNNZ01000213.1",
+            "completeness": "Unknown",
+            "end_coord": 39968,
+            "start_coord": 28438
+        },
+        "mibig_accession": "BGC0002240",
+        "minimal": true,
+        "ncbi_tax_id": "5530",
+        "organism_name": "Metarhizium anisopliae",
+        "publications": [
+            "pubmed:33991663"
+        ],
+        "status": "active"
+    }
+}

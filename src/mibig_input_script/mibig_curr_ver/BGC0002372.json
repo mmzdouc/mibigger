@@ -1,0 +1,66 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Changed chemical structures for compounds: marinoterpin A, marinoterpin C, marinoterpin B.",
+                "Added NPAtlas links to compounds: marinoterpin A, marinoterpin C, marinoterpin B."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide",
+            "Terpene",
+            "Alkaloid"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC(C)=CC1C/C(=C/CC/C(C)=C/C2C/C(=C/CC/C(C)=C/CC3=CC4=CC=CC=C4[N+]([O-])=C3C)CO2)CO1",
+                "compound": "marinoterpin B",
+                "database_id": [
+                    "npatlas:NPA033305"
+                ]
+            },
+            {
+                "chem_struct": "CC(C)=C[C@H]1C/C(=C/CC/C(C)=C/[C@H]2C/C(=C/CCC(C)CC(=O)C3=CC4=CC=CC=C4[N+]([O-])=C3C)CO2)CO1",
+                "compound": "marinoterpin A",
+                "database_id": [
+                    "npatlas:NPA033304"
+                ]
+            },
+            {
+                "chem_struct": "CC(C)=CC1C/C(=C/CC/C(C)=C/C2C/C(=C/CC/C(C)=C/CC3=CC4=CC=CC=C4N=C3CO)CO2)CO1",
+                "compound": "marinoterpin C",
+                "database_id": [
+                    "npatlas:NPA033306"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "MW452943.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0002372",
+        "minimal": true,
+        "ncbi_tax_id": "1931",
+        "organism_name": "Streptomyces sp.",
+        "publications": [
+            "pubmed:33844925",
+            "doi:10.1021/acs.joc.1c00262"
+        ],
+        "status": "active"
+    }
+}

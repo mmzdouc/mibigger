@@ -1,0 +1,60 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.3"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Terpene"
+        ],
+        "compounds": [
+            {
+                "compound": "monoterpenes-diterpenes"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "comments": "cis-prenyl transferase 8",
+                    "id": "pseudo41887__42385"
+                },
+                {
+                    "comments": "cis-prenyl transferase 9",
+                    "id": "pseudo83763_86338"
+                },
+                {
+                    "comments": "alcohol acyltransferase 1",
+                    "id": "pseudo99527_100291"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "KC807996.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001324",
+        "minimal": true,
+        "ncbi_tax_id": "4084",
+        "organism_name": "Solanum pimpinellifolium",
+        "publications": [
+            "pubmed:23757397"
+        ],
+        "status": "active"
+    }
+}

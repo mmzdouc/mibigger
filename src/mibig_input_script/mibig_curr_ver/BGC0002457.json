@@ -1,0 +1,55 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: alazopeptin.",
+                "Added NPAtlas links to compounds: alazopeptin."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C=CCNC(CCC(=O)C=[N+]=[N-])C(=O)NC(CCC(=O)C=[N+]=[N-])C(=O)O",
+                "compound": "alazopeptin",
+                "database_id": [
+                    "npatlas:NPA033438"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "LC593325.1",
+            "completeness": "Unknown",
+            "end_coord": 20544,
+            "evidence": [
+                "Heterologous expression"
+            ],
+            "start_coord": 3104
+        },
+        "mibig_accession": "BGC0002457",
+        "minimal": true,
+        "ncbi_tax_id": "66896",
+        "organism_name": "Streptacidiphilus griseoplanus",
+        "publications": [
+            "pubmed:33624374",
+            "doi:10.1002/anie.202100462"
+        ],
+        "status": "active"
+    }
+}

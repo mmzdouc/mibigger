@@ -1,0 +1,310 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Removed empty gene annotations",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "siderophore"
+                    }
+                ],
+                "compound": "salinichelins"
+            }
+        ],
+        "genes": {
+            "extra_genes": [
+                {
+                    "id": "ctg1_orf16",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 19001,
+                                "start": 18414
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "ctg1_orf17",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 20111,
+                                "start": 19164
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "ctg1_orf18",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 21708,
+                                "start": 20368
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "ctg1_orf19",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 22872,
+                                "start": 21847
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "ctg1_orf20",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 38531,
+                                "start": 23028
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "ctg1_orf21",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 38737,
+                                "start": 38528
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "ctg1_orf22",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 40714,
+                                "start": 38882
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "ctg1_orf23",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 42482,
+                                "start": 40770
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "ctg1_orf24",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 43764,
+                                "start": 42769
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "ctg1_orf25",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 44900,
+                                "start": 43761
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "ctg1_orf26",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 45775,
+                                "start": 44897
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "ctg1_orf27",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 47373,
+                                "start": 45793
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "ctg1_orf28",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 48220,
+                                "start": 47654
+                            }
+                        ],
+                        "strand": 1
+                    }
+                }
+            ]
+        },
+        "loci": {
+            "accession": "KB897466.1",
+            "completeness": "Unknown",
+            "end_coord": 48531,
+            "start_coord": 18300
+        },
+        "mibig_accession": "BGC0001767",
+        "minimal": false,
+        "ncbi_tax_id": "1169181",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "ctg1_orf20",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:28809850"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "N5-hydroxyornithine",
+                                        "proteinogenic": false,
+                                        "structure": "C(C[C@@H](C(=O)O)N)CNO"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:28809850"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "arginine",
+                                        "proteinogenic": true,
+                                        "structure": "C(C[C@@H](C(=O)O)N)CN=C(N)N"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:28809850"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "N5-hydroxyornithine",
+                                        "proteinogenic": false,
+                                        "structure": "C(C[C@@H](C(=O)O)N)CNO"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:28809850"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "N5-hydroxyornithine",
+                                        "proteinogenic": false,
+                                        "structure": "C(C[C@@H](C(=O)O)N)CNO"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Salinispora pacifica CNY331",
+        "publications": [
+            "pubmed:28809850"
+        ],
+        "status": "active"
+    }
+}

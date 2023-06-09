@@ -1,0 +1,81 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.2"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "COC1=CC=C(C(O)=O)C(=O)C1=[N+]=[N-]",
+                "compound": "cremeomycin",
+                "database_id": [
+                    "npatlas:NPA06413",
+                    "pubchem:54704722"
+                ],
+                "mol_mass": 194.032756672,
+                "molecular_formula": "C8H6N2O4"
+            }
+        ],
+        "loci": {
+            "accession": "KT381192.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001295",
+        "minimal": true,
+        "ncbi_tax_id": "66881",
+        "organism_name": "Streptomyces cremeus",
+        "publications": [
+            "pubmed:26278892"
+        ],
+        "status": "active"
+    }
+}

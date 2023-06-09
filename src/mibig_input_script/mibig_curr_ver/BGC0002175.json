@@ -1,0 +1,52 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Changed chemical structures for compounds: YWA1.",
+                "Added NPAtlas links to compounds: YWA1."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC1(O)CC(=O)C2=C(O)C3=C(O)C=C(O)C=C3C=C2O1",
+                "compound": "YWA1",
+                "database_id": [
+                    "pubchem:100923872",
+                    "npatlas:NPA033448"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "BA000052.1",
+            "completeness": "Unknown",
+            "end_coord": 3044735,
+            "start_coord": 3037581
+        },
+        "mibig_accession": "BGC0002175",
+        "minimal": true,
+        "ncbi_tax_id": "510516",
+        "organism_name": "Aspergillus oryzae RIB40",
+        "publications": [
+            "pubmed:31655589"
+        ],
+        "status": "active"
+    }
+}

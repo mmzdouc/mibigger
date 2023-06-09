@@ -1,0 +1,213 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "F65XGYSSLMUEJC2Q4T3BLCPS"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Fix incorrect accession",
+                "Corrected NRP module activity",
+                "Corrected gene identifiers",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "siderophore"
+                    }
+                ],
+                "chem_struct": "NCCCCNC(=O)[C@H](CCCN(O)C=O)NC(=O)[C@H](CO)NC(=O)[C@H](NC(=O)[C@H](CCCN(=O)=O)NC=O)[C@@H](O)C(O)=O",
+                "compound": "malleobactin A",
+                "database_id": [
+                    "npatlas:NPA010125"
+                ],
+                "mol_mass": 636.27148334,
+                "molecular_formula": "C23H40N8O13"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "siderophore"
+                    }
+                ],
+                "chem_struct": "NCCCCNC(=O)[C@H](CCCN(O)C=O)NC(=O)[C@H](CO)NC(=O)[C@H](NC(=O)[C@H](CCCNO)NC=O)[C@@H](O)C(O)=O",
+                "compound": "malleobactin B",
+                "database_id": [
+                    "npatlas:NPA04563"
+                ],
+                "mol_mass": 622.292218784,
+                "molecular_formula": "C23H42N8O12"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "siderophore"
+                    }
+                ],
+                "chem_struct": "NCCCCNC(=O)[C@H](CCCN(O)C=O)NC(=O)[C@H](CO)NC(=O)[C@H](NC(=O)[C@H](CCCN=O)NC=O)[C@@H](O)C(O)=O",
+                "compound": "malleobactin C",
+                "database_id": [
+                    "npatlas:NPA08351"
+                ],
+                "mol_mass": 620.27656872,
+                "molecular_formula": "C23H40N8O12"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "siderophore"
+                    }
+                ],
+                "chem_struct": "NCCCCNC(=O)[C@H](CCCN(O)C=O)NC(=O)[C@H](CO)NC(=O)[C@H](NC(=O)[C@H](CCCN=N(=O)CCC[C@H](NC=O)C(=O)N[C@H]([C@@H](O)C(O)=O)C(=O)N[C@@H](CO)C(=O)N[C@@H](CCCN(O)C=O)C(=O)NCCCCN)NC=O)[C@@H](O)C(O)=O",
+                "compound": "malleobactin D",
+                "database_id": [
+                    "npatlas:NPA06044"
+                ],
+                "mol_mass": 1224.5582228199999,
+                "molecular_formula": "C46H80N16O23"
+            }
+        ],
+        "loci": {
+            "accession": "CP000086.1",
+            "completeness": "complete",
+            "end_coord": 2778630,
+            "evidence": [
+                "Knock-out studies"
+            ],
+            "start_coord": 2748130
+        },
+        "mibig_accession": "BGC0000386",
+        "minimal": false,
+        "ncbi_tax_id": "271848",
+        "nrp": {
+            "cyclic": false,
+            "nrps_genes": [
+                {
+                    "gene_id": "ABC36450.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "substrates": [
+                                    {
+                                        "name": "N5-hydroxyornithine",
+                                        "proteinogenic": false,
+                                        "structure": "C(C[C@@H](C(=O)O)N)CNO"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "1"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": true,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "aspartic acid",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)C(=O)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "beta-hydroxylation"
+                            ],
+                            "module_number": "2"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "3"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "ABC37099.1",
+                    "modules": [
+                        {
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "3"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "substrates": [
+                                    {
+                                        "name": "N5-formyl-N5-hydroxyornithine",
+                                        "proteinogenic": false,
+                                        "structure": "C(C[C@@H](C(=O)O)N)CN(C=O)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "4"
+                        }
+                    ]
+                }
+            ],
+            "subclass": "NRP siderophore"
+        },
+        "organism_name": "Burkholderia thailandensis E264",
+        "publications": [
+            "pubmed:23821334",
+            "pubmed:24707815",
+            "pubmed:16452439"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Terpene"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "[H][C@@]23CC/C1=C(C/C=C(C)\\[C@@H]1CC)\\[C@@]2(C)CCC[C@@]3(C)C",
+                "compound": "hordediene"
+            },
+            {
+                "chem_struct": "[H][C@@]23CCc1c(CC)c(C)cc(O)c1[C@@]2(C)CCC[C@@]3(C)C",
+                "compound": "11-hydroxy-hordetriene"
+            },
+            {
+                "chem_struct": "[H][C@@]23CCc1c(ccc(C)c1CC)[C@@]2(C)CCC[C@@]3(C)C",
+                "compound": "hordetriene"
+            }
+        ],
+        "loci": {
+            "accession": "GPC_000011790.1",
+            "completeness": "Unknown",
+            "end_coord": 10180879,
+            "evidence": [
+                "Heterologous expression",
+                "Enzymatic assays"
+            ],
+            "start_coord": 9581242
+        },
+        "mibig_accession": "BGC0002395",
+        "minimal": true,
+        "ncbi_tax_id": "112509",
+        "organism_name": "Hordeum vulgare subsp. vulgare",
+        "publications": [
+            "doi:10.1101/2021.05.21.445084"
+        ],
+        "status": "active"
+    }
+}

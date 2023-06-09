@@ -1,0 +1,152 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "[H][C@@]12CCCN1C(=O)[C@]([H])(NC(=O)[C@@]([H])(NC(=O)C1=CC=C(C)C3=C1N=C1C(O3)=C(C)C(=O)C(N)=C1C(=O)N[C@]1([H])C(=O)N[C@]([H])(C(C)C)C(=O)N3CCC[C@@]3([H])C(=O)N(C)CC(=O)N(C)[C@@]([H])(C(C)C)C(=O)O[C@]1([H])C)[C@@]([H])(C)OC(=O)[C@]([H])(C(C)C)N(C)C(=O)CN(C)C2=O)C(C)C",
+                "compound": "actinomycin D",
+                "database_id": [
+                    "npatlas:NPA07563"
+                ],
+                "mol_mass": 1254.6284746719998,
+                "molecular_formula": "C62H86N12O16"
+            }
+        ],
+        "loci": {
+            "accession": "HM038106.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000296",
+        "minimal": false,
+        "ncbi_tax_id": "1892",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "ADG27358.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "substrates": [
+                                    {
+                                        "name": "threonine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@H]([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "substrates": [
+                                    {
+                                        "name": "valine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "ADG27359.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "substrates": [
+                                    {
+                                        "name": "proline",
+                                        "proteinogenic": true,
+                                        "structure": "C1C[C@H](NC1)C(=O)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "substrates": [
+                                    {
+                                        "name": "glycine",
+                                        "proteinogenic": true,
+                                        "structure": "NCC(=O)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "substrates": [
+                                    {
+                                        "name": "valine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Streptomyces anulatus",
+        "publications": [
+            "pubmed:10212227",
+            "pubmed:10780924",
+            "pubmed:20304989"
+        ],
+        "status": "active"
+    }
+}

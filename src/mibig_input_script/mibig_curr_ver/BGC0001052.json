@@ -1,0 +1,266 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "RIBLHRV4YSJAGJ5EVZV4GS2Z"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Linked new NPAtlas id for tirandamycin (npatlas:NPA017695)",
+                "Corrected NRP module activity",
+                "Removed ketoreductase stereochemistry annotation from modules without ketoreductases",
+                "Changed amino acid substrates to lower case"
+            ],
+            "contributors": [
+                "5UL74VURKJ25VSPPPO3H2NYB",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "C[C@H]1[C@@H]2C(=O)[C@H]3[C@](O3)([C@@](O2)(O[C@@H]1[C@H](C)/C=C(\\C)/C=C/C(=O)C4=C(NCC4=O)O)C)C",
+                "compound": "tirandamycin",
+                "database_id": [
+                    "npatlas:NPA017695"
+                ],
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 417.178752204,
+                "molecular_formula": "C22H27NO7"
+            }
+        ],
+        "loci": {
+            "accession": "GU385216.1",
+            "completeness": "complete",
+            "evidence": [
+                "Enzymatic assays"
+            ]
+        },
+        "mibig_accession": "BGC0001052",
+        "minimal": false,
+        "ncbi_tax_id": "529089",
+        "nrp": {
+            "cyclic": false,
+            "nrps_genes": [
+                {
+                    "gene_id": "ADC79642.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glycine",
+                                        "proteinogenic": true,
+                                        "structure": "NCC(=O)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "8"
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Streptomyces sp. 307-9",
+        "polyketide": {
+            "cyclic": true,
+            "starter_unit": "Malonyl-CoA",
+            "subclasses": [
+                "Ansamycin"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "ADC79637.1",
+                        "ADC79638.1",
+                        "ADC79639.1"
+                    ],
+                    "modules": [
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Sequence-based prediction",
+                            "genes": [
+                                "ADC79637.1"
+                            ],
+                            "module_number": "0"
+                        },
+                        {
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Sequence-based prediction",
+                            "genes": [
+                                "ADC79637.1"
+                            ],
+                            "kr_stereochem": "Inactive",
+                            "module_number": "1"
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Sequence-based prediction",
+                            "genes": [
+                                "ADC79637.1"
+                            ],
+                            "kr_stereochem": "L-OH",
+                            "module_number": "2"
+                        },
+                        {
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Dehydratase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Sequence-based prediction",
+                            "genes": [
+                                "ADC79637.1"
+                            ],
+                            "kr_stereochem": "L-OH",
+                            "module_number": "3"
+                        },
+                        {
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Sequence-based prediction",
+                            "genes": [
+                                "ADC79638.1"
+                            ],
+                            "kr_stereochem": "D-OH",
+                            "module_number": "4"
+                        },
+                        {
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Dehydratase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Sequence-based prediction",
+                            "genes": [
+                                "ADC79638.1"
+                            ],
+                            "kr_stereochem": "L-OH",
+                            "module_number": "5"
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Dehydratase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Sequence-based prediction",
+                            "genes": [
+                                "ADC79639.1"
+                            ],
+                            "kr_stereochem": "L-OH",
+                            "module_number": "6"
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Sequence-based prediction",
+                            "genes": [
+                                "ADC79639.1"
+                            ],
+                            "module_number": "7"
+                        }
+                    ],
+                    "subclass": [
+                        "Modular type I"
+                    ]
+                }
+            ]
+        },
+        "publications": [
+            "pubmed:20127927"
+        ],
+        "status": "active"
+    }
+}

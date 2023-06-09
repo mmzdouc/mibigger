@@ -1,0 +1,43 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C\\C(C=C)=C/[C@@]1(C)SC(=O)C(C)=C1O",
+                "compound": "thiolactomycin",
+                "mol_mass": 210.071450688,
+                "molecular_formula": "C11H14O2S"
+            }
+        ],
+        "loci": {
+            "accession": "LN879412.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001353",
+        "minimal": true,
+        "ncbi_tax_id": "1718437",
+        "organism_name": "Lentzea sp. ATCC 31319",
+        "publications": [
+            "doi:10.1039/C5SC03059e"
+        ],
+        "retirement_reasons": [
+            "Entry is spread over multiple contigs"
+        ],
+        "status": "retired"
+    },
+    "comments": "Sulfur insertion is performed by tlmJ/S genes located on LN879413.1"
+}

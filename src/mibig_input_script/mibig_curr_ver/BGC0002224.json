@@ -1,0 +1,38 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "compound": "zopfiellin"
+            }
+        ],
+        "loci": {
+            "accession": "MT724049.1",
+            "completeness": "Unknown",
+            "evidence": [
+                "Knock-out studies"
+            ]
+        },
+        "mibig_accession": "BGC0002224",
+        "minimal": true,
+        "ncbi_tax_id": "2819868",
+        "organism_name": "Diffractella curvata",
+        "publications": [
+            "pubmed:34094403"
+        ],
+        "status": "active"
+    }
+}

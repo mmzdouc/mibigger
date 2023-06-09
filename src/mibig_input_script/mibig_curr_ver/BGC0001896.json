@@ -1,0 +1,73 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Cleaned up synonym list",
+                "Fetch compound properties from PubChem",
+                "Fixed DOIs",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA",
+                "CUSGWVK3I4TVHJH7NHPFAP2L"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    }
+                ],
+                "chem_struct": "CC1=C(C(=C(C2=C1NC3=CC=CC=C32)O)OC)C",
+                "compound": "carbazomycin B",
+                "database_id": [
+                    "pubchem:166449"
+                ],
+                "mol_mass": 241.110279,
+                "molecular_formula": "C15H15NO2"
+            }
+        ],
+        "loci": {
+            "accession": "CP034587.1",
+            "completeness": "Unknown",
+            "end_coord": 7193029,
+            "start_coord": 7184701
+        },
+        "mibig_accession": "BGC0001896",
+        "minimal": true,
+        "ncbi_tax_id": "66425",
+        "organism_name": "Streptomyces luteoverticillatus",
+        "publications": [
+            "doi:10.1007/s00284-019-01711-x"
+        ],
+        "status": "active"
+    }
+}

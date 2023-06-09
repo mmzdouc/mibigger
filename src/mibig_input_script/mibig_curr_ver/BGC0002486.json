@@ -1,0 +1,52 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: tolypamide.",
+                "Added NPAtlas links to compounds: tolypamide."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC(C)=CCO[C@H](C)[C@@H]1CC(=O)[C@@H]2CSC(=N2)[C@H](CC2=CC=C(O)C=C2)NC(=O)[C@@H]2CSC(=N2)[C@@H]2CCCN2C(=O)[C@H](C)NC1=O",
+                "compound": "tolypamide",
+                "database_id": [
+                    "npatlas:NPA033095"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "JH930363.1",
+            "completeness": "Unknown",
+            "end_coord": 248358,
+            "start_coord": 237885
+        },
+        "mibig_accession": "BGC0002486",
+        "minimal": true,
+        "ncbi_tax_id": "1188",
+        "organism_name": "Tolypothrix sp. PCC 7601",
+        "publications": [
+            "pubmed:33586286",
+            "doi:10.1002/anie.202015975"
+        ],
+        "status": "active"
+    }
+}

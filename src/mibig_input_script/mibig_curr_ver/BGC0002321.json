@@ -1,0 +1,71 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Changed chemical structures for compounds: pulcherrimin.",
+                "Added NPAtlas links to compounds: pulcherrimin."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC(C)CC1=C(O)N(=O)=C(CC(C)C)C(O)=N1=O",
+                "compound": "pulcherriminic acid",
+                "database_id": [
+                    "npatlas:NPA012181"
+                ]
+            },
+            {
+                "chem_struct": "CC(C)CC1=C(O)[N+](O)=C(CC(C)C)C(O)=[N+]1O.[Fe].[Fe]",
+                "compound": "pulcherrimin",
+                "database_id": [
+                    "pubchem:70698372",
+                    "npatlas:NPA033322"
+                ]
+            },
+            {
+                "chem_struct": "O=C(C(CC(C)C)N1)NC(CC(C)C)C1=O",
+                "compound": "cyclodileucine"
+            },
+            {
+                "chem_struct": "O=C(C(CC(C)C)N1O)N(O)C(CC(C)C)C1=O",
+                "compound": "compound 3"
+            }
+        ],
+        "loci": {
+            "accession": "CP034458.1",
+            "completeness": "Unknown",
+            "end_coord": 1436146,
+            "evidence": [
+                "Gene expression correlated with compound production"
+            ],
+            "start_coord": 1429481
+        },
+        "mibig_accession": "BGC0002321",
+        "minimal": true,
+        "ncbi_tax_id": "2163413",
+        "organism_name": "Metschnikowia aff. pulcherrima",
+        "publications": [
+            "pubmed:31081214",
+            "doi:10.1111/mmi.14272"
+        ],
+        "status": "active"
+    }
+}

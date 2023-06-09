@@ -1,0 +1,137 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Fetch compound properties from PubChem",
+                "Retired as duplicate of BGC0001957",
+                "Updated bioactivity data",
+                "Added AMP-binding domain substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA",
+                "SJG3CBEHSM6A3I74YXLH6GLA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antifungal"
+                    }
+                ],
+                "chem_struct": "C1CC(C(C1)N)C(=O)NC(C2CC(C(C(O2)N3C=NC4=CN=C(N=C43)N)O)(C(CO)O)O)C(=O)O",
+                "chem_synonyms": [
+                    "Amipurimycin",
+                    "61991-08-0",
+                    "Ampurimycin",
+                    "9H-Purin-2-amine, 9-[6-[[(2-aminocyclopentyl)carbonyl]amino]-4,6-dideoxy-3-C-(1,2-dihydroxyethyl)heptopyranuronosyl]-",
+                    "DTXSID50977531",
+                    "2-[(2-aminocyclopentanecarbonyl)amino]-2-[6-(2-aminopurin-9-yl)-4-(1,2-dihydroxyethyl)-4,5-dihydroxy-tetrahydropyran-2-yl]acetic acid",
+                    "9-[6-{[(2-Aminocyclopentyl)(hydroxy)methylidene]amino}-4,6-dideoxy-3-C-(1,2-dihydroxyethyl)heptopyranuronosyl]-1,9-dihydro-2H-purin-2-imine"
+                ],
+                "compound": "amipurimycin",
+                "database_id": [
+                    "pubchem:162956"
+                ],
+                "mol_mass": 495.207761,
+                "molecular_formula": "C20H29N7O8"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "domains": [
+                        {
+                            "location": {
+                                "begin": 201,
+                                "end": 591
+                            },
+                            "name": "AMP-binding",
+                            "substrates": [
+                                {
+                                    "evidence": [
+                                        "Sequence-based prediction",
+                                        "Structure-based inference"
+                                    ],
+                                    "name": "2-ketoglutaric acid",
+                                    "publications": [
+                                        "pubmed:3115026"
+                                    ],
+                                    "structure": "C(CC(=O)O)C(=O)C(=O)O"
+                                }
+                            ]
+                        }
+                    ],
+                    "id": "QCX41944.1"
+                },
+                {
+                    "domains": [
+                        {
+                            "location": {
+                                "begin": 41,
+                                "end": 378
+                            },
+                            "name": "AMP-binding",
+                            "substrates": [
+                                {
+                                    "evidence": [
+                                        "Sequence-based prediction",
+                                        "Structure-based inference"
+                                    ],
+                                    "name": "succinic semialdehyde",
+                                    "publications": [
+                                        "pubmed:3115026"
+                                    ],
+                                    "structure": "C(CC(=O)O)C=O"
+                                }
+                            ]
+                        }
+                    ],
+                    "id": "QCX41962.1"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "MH534949.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001958",
+        "minimal": false,
+        "ncbi_tax_id": "2586640",
+        "organism_name": "Streptomyces novoguineensis",
+        "publications": [
+            "pubmed:30990701"
+        ],
+        "retirement_reasons": [
+            "Duplicate of BGC0001957"
+        ],
+        "see_also": [
+            "BGC0001957"
+        ],
+        "status": "retired"
+    }
+}

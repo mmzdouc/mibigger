@@ -1,0 +1,139 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Fix gene ids",
+                "Add organism name and tax ID",
+                "Add NPAtlas link from BGC0002481",
+                "Un-retire entry"
+            ],
+            "contributors": [
+                "3UOU7PODQJXIM6BEPUHHRRA5"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C[C@H](CC)[C@@H](C(N[C@@H](CO)C(N1[C@H](C(N[C@@H](C)C(N[C@@H](CC(C)C)C(N[C@@H](CC(C)C)C(N[C@@H](C)C(N[C@@H](CO)C(N[C@@H](CC(C)C)C(N[C@H](C(N)=O)C(C)C)=O)=O)=O)=O)=O)=O)=O)CCC1)=O)=O)NC",
+                "compound": "scytodecamide",
+                "database_id": [
+                    "npatlas:NPA025827"
+                ],
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry"
+                ],
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 995.6379171600003,
+                "molecular_formula": "C47H85N11O12"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "scdC",
+                    "name": "scdC",
+                    "product": "cyanobactin biosynthesis PatC/TenC/TruC family protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "scdB",
+                    "name": "scdB",
+                    "product": "cyanobactin biosynthesis system PatB/AcyB/McaB family"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "scdMT",
+                    "name": "scdMT",
+                    "product": "methyltransferase",
+                    "tailoring": [
+                        "Methylation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Activation / processing",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "scdA",
+                    "name": "scdA",
+                    "product": "PatA/PatG family cyanobactin maturation protease"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "scdTA",
+                    "name": "scdTA",
+                    "product": "transamidase",
+                    "tailoring": [
+                        "Amination"
+                    ]
+                }
+            ]
+        },
+        "loci": {
+            "accession": "MN265868.1",
+            "completeness": "complete",
+            "end_coord": 9601,
+            "start_coord": 1339
+        },
+        "mibig_accession": "BGC0001880",
+        "minimal": true,
+        "ncbi_tax_id": "2304196",
+        "organism_name": "Scytonema sp. UIC 10036",
+        "publications": [
+            "pubmed:31769581"
+        ],
+        "ripp": {
+            "cyclic": false,
+            "subclass": "Cyanobactin"
+        },
+        "status": "active"
+    }
+}

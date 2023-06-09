@@ -1,0 +1,53 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Fetch compound properties from PubChem",
+                "Cleaned up synonym list"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Alkaloid"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC(=O)N[C@@H](CSCCC1=C2C(=CC(=N1)C(=O)O)C3=CC=CC=C3N2)C(=O)O",
+                "compound": "kitasetaline",
+                "database_id": [
+                    "pubchem:102452748"
+                ],
+                "mol_mass": 401.104542,
+                "molecular_formula": "C19H19N3O5S"
+            }
+        ],
+        "loci": {
+            "accession": "AP010968.1",
+            "completeness": "Unknown",
+            "end_coord": 8046734,
+            "start_coord": 8040817
+        },
+        "mibig_accession": "BGC0002031",
+        "minimal": true,
+        "ncbi_tax_id": "452652",
+        "organism_name": "Kitasatospora setae KM-6054",
+        "publications": [
+            "pubmed:30788639"
+        ],
+        "status": "active"
+    }
+}

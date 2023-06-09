@@ -1,0 +1,84 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "inhibitor"
+                    }
+                ],
+                "chem_struct": "C[C@@H]1[C@@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N2CCC[C@H]2C(=O)N[C@H]3COC(=O)C[C@H](NC(=O)[C@@H](NC(=O)[C@H](CC(=O)O1)NC3=O)CO)C(=O)N[C@@H](CCC(=O)O)C(=O)O)CC4=CC=C(C=C4)O)CCCN=C(N)N)CCSC)NC(=O)[C@H](C)NC(=O)[C@H](CC5=CC=CC=C5)N",
+                "chem_targets": [
+                    {
+                        "publications": [
+                            "doi:10.1021/bi048034x.s001"
+                        ],
+                        "target": "Protease"
+                    }
+                ],
+                "compound": "marinostatin",
+                "database_id": [
+                    "pubchem:42624949"
+                ],
+                "mol_mass": 1381.5608656759998,
+                "molecular_formula": "C60H83N15O21S"
+            }
+        ],
+        "loci": {
+            "accession": "AB011418.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000591",
+        "minimal": true,
+        "ncbi_tax_id": "29456",
+        "organism_name": "Alteromonas sp. B-10-31",
+        "publications": [
+            "pubmed:9972273"
+        ],
+        "ripp": {
+            "subclass": "Microviridin"
+        },
+        "status": "active"
+    }
+}

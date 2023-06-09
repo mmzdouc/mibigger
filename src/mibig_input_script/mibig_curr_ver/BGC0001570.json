@@ -1,0 +1,139 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "inhibitor"
+                    }
+                ],
+                "chem_targets": [
+                    {
+                        "publications": [
+                            "pubmed:27797509"
+                        ],
+                        "target": "Protease"
+                    }
+                ],
+                "compound": "deimino-antipain"
+            }
+        ],
+        "loci": {
+            "accession": "LWBU01000384.1",
+            "completeness": "Unknown",
+            "end_coord": 240028,
+            "start_coord": 224545
+        },
+        "mibig_accession": "BGC0001570",
+        "minimal": false,
+        "ncbi_tax_id": "68570",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "OAL11435.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "publications": [
+                                    "pubmed:27797509"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "arginine",
+                                        "proteinogenic": true,
+                                        "structure": "C(C[C@@H](C(=O)O)N)CN=C(N)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "OAL11436.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "publications": [
+                                    "pubmed:27797509"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "phenylalanine",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC=C(C=C1)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "OAL11475.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "publications": [
+                                    "pubmed:27797509"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "valine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Streptomyces albulus",
+        "publications": [
+            "pubmed:27797509"
+        ],
+        "status": "active"
+    }
+}

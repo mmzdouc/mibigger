@@ -1,0 +1,171 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "4ACA66D6INRVNJRPWB3JQW5E"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Corrected NRP module activity",
+                "Removed ketoreductase stereochemistry annotation from modules without ketoreductases",
+                "Updated bioactivity data",
+                "Updated NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "inhibitor"
+                    }
+                ],
+                "chem_struct": "[H][C@](C)(CC)[C@]([H])(NC(=O)[C@@H]1CCCNN1C(=O)[C@H](CCCCC)CC(=O)NO)C(=O)CC",
+                "chem_targets": [
+                    {
+                        "publications": [
+                            "doi:10.7164/antibiotics.45.1733"
+                        ],
+                        "target": "typeIV collagenase"
+                    }
+                ],
+                "compound": "matlystatin A",
+                "database_id": [
+                    "npatlas:NPA012386",
+                    "pubchem:10054339"
+                ],
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry"
+                ],
+                "mol_mass": 440.2998703799999,
+                "molecular_formula": "C22H40N4O5"
+            }
+        ],
+        "loci": {
+            "accession": "NZ_KB907224.1",
+            "completeness": "complete",
+            "end_coord": 56356,
+            "evidence": [
+                "Knock-out studies",
+                "Heterologous expression"
+            ],
+            "start_coord": 32199
+        },
+        "mibig_accession": "BGC0001443",
+        "minimal": false,
+        "ncbi_tax_id": "1120936",
+        "nrp": {
+            "cyclic": false,
+            "nrps_genes": [
+                {
+                    "gene_id": "WP_019634556.1",
+                    "modules": [
+                        {
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "1"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "WP_026341873.1",
+                    "modules": [
+                        {
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "2"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "WP_019634550.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "isoleucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC[C@H](C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "module_number": "2"
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Actinomadura atramentaria DSM 43919",
+        "polyketide": {
+            "synthases": [
+                {
+                    "genes": [
+                        "WP_019634550.1"
+                    ],
+                    "modules": [
+                        {
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Feeding study",
+                            "genes": [
+                                "WP_019634550.1"
+                            ],
+                            "module_number": "3"
+                        }
+                    ]
+                }
+            ]
+        },
+        "publications": [
+            "pubmed:7844042",
+            "pubmed:7844043"
+        ],
+        "status": "active"
+    }
+}

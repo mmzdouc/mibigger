@@ -1,0 +1,141 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "siderophore"
+                    }
+                ],
+                "compound": "mirubactin"
+            }
+        ],
+        "loci": {
+            "accession": "CP001630.1",
+            "completeness": "Unknown",
+            "end_coord": 3141040,
+            "start_coord": 3113324
+        },
+        "mibig_accession": "BGC0000392",
+        "minimal": false,
+        "ncbi_tax_id": "446462",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "ACU36654.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Mass spectrometry",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:22578145"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "arginine",
+                                        "proteinogenic": true,
+                                        "structure": "C(C[C@@H](C(=O)O)N)CN=C(N)N"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Mass spectrometry",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:22578145"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "N5-formyl-N5-hydroxyornithine",
+                                        "proteinogenic": false,
+                                        "structure": "C(C[C@@H](C(=O)O)N)CN(C=O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "ACU36660.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Mass spectrometry",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:22578145"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "2,3-dihydroxybenzoic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC(=C(C(=C1)O)O)C(=O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Actinosynnema mirum DSM 43827",
+        "publications": [
+            "pubmed:22578145"
+        ],
+        "status": "active"
+    }
+}

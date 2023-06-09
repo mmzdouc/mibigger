@@ -1,0 +1,265 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted",
+                "Added NRP substrate specificities",
+                "Fixed biosynthetic classes"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11",
+                "Changed chemical structures for compounds: sandarazol A.",
+                "Added compounds: sandarazol C, sandarazol E, sandarazol G, sandarazol B, sandarazol D, sandarazol F.",
+                "Added NPAtlas links to compounds: sandarazol C, sandarazol E, sandarazol G, sandarazol B, sandarazol D, sandarazol A, sandarazol F."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "N,N dimethyl diaminopropionic acid"
+                    }
+                ],
+                "chem_struct": "CC(C)=CC(=O)[C@@H]1O[C@@H]1/C=C/CC(=O)N[C@H](CN(C)C)C(=O)N[C@H](C(=O)N1C(=O)C(C)=C(O)[C@@H]1CC(C)C)C(C)C",
+                "compound": "sandarazol A",
+                "database_id": [
+                    "npatlas:NPA033243"
+                ],
+                "evidence": [
+                    "NMR"
+                ],
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 575.34,
+                "molecular_formula": "C30H46N4O7"
+            },
+            {
+                "chem_struct": "CC(C)=CC(=O)[C@@H]1O[C@@H]1/C=C/CC(=O)N[C@H](CN(C)C)C(=O)N[C@H](C(=O)N[C@@H](CC(C)C)C(=O)C(C)Cl)C(C)C",
+                "compound": "sandarazol C",
+                "database_id": [
+                    "npatlas:NPA033248"
+                ]
+            },
+            {
+                "chem_struct": "CC(C)=CC(=O)/C=C/C=C/CC(=O)N[C@H](CN(C)C)C(=O)N[C@H](C(=O)N1C(=O)C(C)=C(O)[C@@H]1CC(C)C)C(C)C",
+                "compound": "sandarazol E",
+                "database_id": [
+                    "npatlas:NPA033245"
+                ]
+            },
+            {
+                "chem_struct": "CC1=C(O)[C@H](CC(C)C)N(C(=O)[C@@H](NC(=O)[C@@H](CN(C)C)NC(=O)C/C=C/CCC(=O)CC(C)C)C(C)C)C1=O",
+                "compound": "sandarazol G",
+                "database_id": [
+                    "npatlas:NPA033247"
+                ]
+            },
+            {
+                "chem_struct": "CC1=C(O)[C@H](CC(C)C)N(C(=O)[C@@H](NC(=O)[C@@H](CN(C)C)NC(=O)C/C=C/[C@H]2O[C@H]2C(=O)CC(C)C)C(C)C)C1=O",
+                "compound": "sandarazol B",
+                "database_id": [
+                    "npatlas:NPA033244"
+                ]
+            },
+            {
+                "chem_struct": "CC(C)CC(=O)[C@@H]1O[C@@H]1/C=C/CC(=O)N[C@H](CN(C)C)C(=O)N[C@H](C(=O)N[C@@H](CC(C)C)C(=O)C(C)Cl)C(C)C",
+                "compound": "sandarazol D",
+                "database_id": [
+                    "npatlas:NPA033249"
+                ]
+            },
+            {
+                "chem_struct": "CC(C)=CC(=O)CC/C=C/CC(=O)N[C@H](CN(C)C)C(=O)N[C@H](C(=O)N1C(=O)C(C)=C(O)[C@@H]1CC(C)C)C(C)C",
+                "compound": "sandarazol F",
+                "database_id": [
+                    "npatlas:NPA033246"
+                ]
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "id": "QRN75749.1",
+                    "product": "Oxidoreductase FAD/NAD(P)-binding domain protein"
+                },
+                {
+                    "id": "QRN75750.1",
+                    "product": "3-Aminoalanin synthase"
+                },
+                {
+                    "id": "QRN75751.1",
+                    "product": "Acyltransferase/malonyl CoA-acyl carrier protein transacylase"
+                },
+                {
+                    "id": "QRN75752.1",
+                    "product": "Enoyl-CoA hydratase/isomerase"
+                },
+                {
+                    "id": "QRN75753.1",
+                    "product": "Polyketide synthase"
+                },
+                {
+                    "id": "QRN75754.1",
+                    "product": "Polyketide synthase"
+                },
+                {
+                    "id": "QRN75755.1",
+                    "product": "Amino acid adenylation domain protein"
+                },
+                {
+                    "id": "QRN75756.1",
+                    "product": "Short-chain dehydrogenase/reductase SDR"
+                },
+                {
+                    "id": "QRN75757.1",
+                    "product": "halogenase"
+                },
+                {
+                    "id": "QRN75758.1",
+                    "name": "acpP1",
+                    "product": "Pyridoxal-phosphate dependent enzyme family"
+                },
+                {
+                    "id": "QRN75759.1",
+                    "name": "acpP2",
+                    "product": "Acyl carrier protein"
+                },
+                {
+                    "id": "QRN75760.1",
+                    "product": "Beta-ketoacyl-ACP synthase"
+                },
+                {
+                    "id": "QRN75761.1",
+                    "product": "hydroxymethylglutaryl-CoA synthase"
+                },
+                {
+                    "id": "QRN75762.1",
+                    "product": "Enoyl-CoA hydratase/isomerase"
+                },
+                {
+                    "id": "QRN75763.1",
+                    "product": "Thioesterase"
+                },
+                {
+                    "id": "QRN75764.1",
+                    "product": "FAD binding monooxygenase"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "MW053453.1",
+            "completeness": "complete",
+            "end_coord": 89000,
+            "evidence": [
+                "Heterologous expression"
+            ],
+            "start_coord": 43000
+        },
+        "mibig_accession": "BGC0002114",
+        "minimal": false,
+        "ncbi_tax_id": "2024858",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "QRN75754.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:33534143"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "2,3-diaminopropionic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C([C@@H](C(=O)O)N)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "QRN75755.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:33534143"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "valine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:33534143"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "leucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Sandaracinus sp. MSr10575",
+        "polyketide": {
+            "cyclic": false,
+            "release_type": [
+                "Other"
+            ],
+            "starter_unit": "Acetyl-CoA",
+            "subclasses": [
+                "Trans-AT type I",
+                "Other"
+            ]
+        },
+        "publications": [
+            "doi:10.1002/anie.202014671"
+        ],
+        "status": "active"
+    },
+    "comments": ""
+}

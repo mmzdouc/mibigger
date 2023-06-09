@@ -1,0 +1,60 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Changed chemical structures for compounds: beauvericin.",
+                "Added NPAtlas links to compounds: beauvericin."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC(C)C1C(=O)N(C(C(=O)OC(C(=O)N(C(C(=O)OC(C(=O)N(C(C(=O)O1)CC2=CC=CC=C2)C)C(C)C)CC3=CC=CC=C3)C)C(C)C)CC4=CC=CC=C4)C",
+                "compound": "beauvericin",
+                "database_id": [
+                    "npatlas:NPA001888"
+                ],
+                "evidence": [
+                    "Mass spectrometry"
+                ],
+                "mass_spec_ion_type": "[M+Na]+",
+                "mol_mass": 806.0,
+                "molecular_formula": "C45H57N3O9"
+            }
+        ],
+        "loci": {
+            "accession": "JACTAS010000067.1",
+            "completeness": "incomplete",
+            "end_coord": 47769,
+            "start_coord": 15369
+        },
+        "mibig_accession": "BGC0002113",
+        "minimal": false,
+        "ncbi_tax_id": "2765005",
+        "organism_name": "Fusarium sp. 190-020-2",
+        "publications": [
+            "pubmed:33166889"
+        ],
+        "retirement_reasons": [
+            "Missing gene annotations"
+        ],
+        "status": "retired"
+    }
+}

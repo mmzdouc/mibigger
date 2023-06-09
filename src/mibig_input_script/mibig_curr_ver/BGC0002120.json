@@ -1,0 +1,181 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added",
+                "Fix precursor gene ID"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Changed chemical structures for compounds: nocathioamide A.",
+                "Added NPAtlas links to compounds: nocathioamide A."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C=C1NC(=O)C2CSCC3NC(=O)C(CSC(C)C(NC(=S)C(CC4=CN=C[NH]4)NC(=O)C4=CSC(C(C)NC(C)=O)=N4)C(=O)N[C@@H](CC(C)C(=O)NC(=O)CC(C(=O)O)NC(=O)C(C)NC3=O)C(=O)N2)NC(=O)[C@H]2CCCN2C(=O)[C@@H](CC(C)C)NC1=O",
+                "compound": "nocathioamide A",
+                "database_id": [
+                    "npatlas:NPA033270"
+                ],
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry"
+                ],
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 1315.4481,
+                "molecular_formula": "C54H74N16O15S4"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "id": "NQE92404.1",
+                    "name": "ntaJ",
+                    "product": "TOMM precursor leader peptide-binding protein",
+                    "tailoring": [
+                        "Heterocyclization"
+                    ]
+                },
+                {
+                    "id": "NQE92405.1",
+                    "name": "ntaI",
+                    "product": "hypothetical protein",
+                    "tailoring": [
+                        "Heterocyclization"
+                    ]
+                },
+                {
+                    "id": "NQE92406.1",
+                    "name": "ntaH",
+                    "product": "GNAT family N-acetyltransferase",
+                    "tailoring": [
+                        "Acetylation"
+                    ]
+                },
+                {
+                    "id": "NQE92407.1",
+                    "name": "ntaG",
+                    "product": "hypothetical protein",
+                    "tailoring": [
+                        "Dehydration"
+                    ]
+                },
+                {
+                    "id": "NQE92408.1",
+                    "name": "ntaF",
+                    "product": "hypothetical protein",
+                    "tailoring": [
+                        "Dehydration"
+                    ]
+                },
+                {
+                    "id": "NQE92409.1",
+                    "name": "ntaE",
+                    "product": "SagB/ThcOx family dehydrogenase",
+                    "tailoring": [
+                        "Dehydration"
+                    ]
+                },
+                {
+                    "id": "NQE92410.1",
+                    "name": "ntaD",
+                    "product": "alpha/beta fold hydrolase",
+                    "tailoring": [
+                        "Unknown"
+                    ]
+                },
+                {
+                    "id": "NQE92411.1",
+                    "name": "ntaC",
+                    "product": "methyltransferase domain-containing protein",
+                    "tailoring": [
+                        "Epimerization"
+                    ]
+                },
+                {
+                    "id": "NQE92412.1",
+                    "name": "ntaB",
+                    "product": "lanthionine synthetase C family protein",
+                    "tailoring": [
+                        "Other"
+                    ]
+                },
+                {
+                    "id": "NQE92413.1",
+                    "name": "ntaA",
+                    "product": "hypothetical protein"
+                },
+                {
+                    "id": "NQE92414.1",
+                    "name": "ntaK",
+                    "product": "hypothetical protein",
+                    "tailoring": [
+                        "Other"
+                    ]
+                },
+                {
+                    "id": "NQE92415.1",
+                    "name": "ntaL",
+                    "product": "YcaO-like family protein",
+                    "tailoring": [
+                        "Other"
+                    ]
+                },
+                {
+                    "id": "NQE92416.1",
+                    "name": "ntaM",
+                    "product": "cytochrome P450",
+                    "tailoring": [
+                        "Oxidation"
+                    ]
+                },
+                {
+                    "id": "NQE92417.1",
+                    "name": "ntaN",
+                    "product": "GNAT family N-acetyltransferase"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "JABMCZ010000005.1",
+            "completeness": "complete",
+            "end_coord": 118707,
+            "start_coord": 100790
+        },
+        "mibig_accession": "BGC0002120",
+        "minimal": false,
+        "ncbi_tax_id": "455432",
+        "organism_name": "Nocardia terpenica IFM 0706",
+        "publications": [
+            "pubmed:32816977"
+        ],
+        "ripp": {
+            "cyclic": true,
+            "precursor_genes": [
+                {
+                    "core_sequence": [
+                        "MKMMKRNEEVAESGYDDFDLNIIDSSMFDDESSRPAAPACHTLSSLPCCAN"
+                    ],
+                    "gene_id": "NQE92413.1"
+                }
+            ],
+            "subclass": "Lanthipeptide"
+        },
+        "status": "active"
+    }
+}

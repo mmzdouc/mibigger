@@ -1,0 +1,46 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Terpene"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C/C1=C/CC[C@@]2(C)CC/C3=C(C)/CCC(CC12)[C@]3(C)C",
+                "compound": "taxa-4(5),11(12)-diene"
+            },
+            {
+                "chem_struct": "C=C1CCC[C@@]2(C)CC/C3=C(C)/CCC(CC12)[C@]3(C)C",
+                "compound": "taxa-4(20),11(12)-diene"
+            }
+        ],
+        "loci": {
+            "accession": "CM034154.1",
+            "completeness": "Unknown",
+            "end_coord": 55566904,
+            "evidence": [
+                "Heterologous expression",
+                "Gene expression correlated with compound production"
+            ],
+            "start_coord": 55305455
+        },
+        "mibig_accession": "BGC0002394",
+        "minimal": true,
+        "ncbi_tax_id": "29808",
+        "organism_name": "Taxus chinensis",
+        "publications": [
+            "pubmed:34267359"
+        ],
+        "status": "active"
+    }
+}

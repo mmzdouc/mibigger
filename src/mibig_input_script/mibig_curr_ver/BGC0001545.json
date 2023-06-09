@@ -1,0 +1,54 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C[C@H](O)C1=NC2=C(C=CC=C2)C(=O)N1",
+                "compound": "chrysogine",
+                "database_id": [
+                    "npatlas:NPA09507"
+                ],
+                "mol_mass": 190.07422756,
+                "molecular_formula": "C10H10N2O2"
+            }
+        ],
+        "loci": {
+            "accession": "NC_026476.1",
+            "completeness": "Unknown",
+            "end_coord": 7283610,
+            "start_coord": 7266100
+        },
+        "mibig_accession": "BGC0001545",
+        "minimal": true,
+        "ncbi_tax_id": "229533",
+        "organism_name": "Fusarium graminearum PH-1",
+        "publications": [
+            "pubmed:28708398",
+            "pubmed:29196288"
+        ],
+        "status": "active"
+    }
+}

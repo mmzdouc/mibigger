@@ -1,0 +1,116 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted",
+                "Added version to NCBI accession",
+                "Convert from RefSeq to Genbank",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "SJG3CBEHSM6A3I74YXLH6GLA",
+                "AAAAAAAAAAAAAAAAAAAAAAAA",
+                "3UOU7PODQJXIM6BEPUHHRRA5"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11",
+                "Changed chemical structures for compounds: holomycin."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "inhibitor"
+                    }
+                ],
+                "chem_struct": "CC(=O)NC1=C2C(=CSS2)NC1=O",
+                "chem_targets": [
+                    {
+                        "target": "RNA polymerase"
+                    }
+                ],
+                "compound": "holomycin",
+                "database_id": [
+                    "npatlas:NPA013565",
+                    "pubchem:10262683",
+                    "chebi:156451",
+                    "chembl:CHEMBL476226",
+                    "chemspider:8438162"
+                ],
+                "evidence": [
+                    "NMR"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "ACCC01000028.1",
+            "completeness": "complete",
+            "end_coord": 21565,
+            "evidence": [
+                "Knock-out studies",
+                "Heterologous expression",
+                "Gene expression correlated with compound production"
+            ],
+            "start_coord": 3593
+        },
+        "mibig_accession": "BGC0002091",
+        "minimal": false,
+        "ncbi_tax_id": "527005",
+        "nrp": {
+            "cyclic": false,
+            "nrps_genes": [
+                {
+                    "gene_id": "EEP98516.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:23572522"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "cysteine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)S"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            "thioesterases": [
+                {
+                    "gene": "yruck0001_11720",
+                    "thioesterase_type": "Unknown"
+                }
+            ]
+        },
+        "organism_name": "Yersinia ruckeri ATCC 29473",
+        "publications": [
+            "pubmed:23572522",
+            "pubmed:11158751"
+        ],
+        "status": "active"
+    }
+}

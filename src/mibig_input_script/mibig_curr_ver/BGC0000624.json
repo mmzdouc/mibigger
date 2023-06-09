@@ -1,0 +1,47 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "compound": "salivaricin CRL1328 α peptide"
+            },
+            {
+                "compound": "salivaricin CRL1328 β peptide"
+            }
+        ],
+        "loci": {
+            "accession": "EF592482.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000624",
+        "minimal": true,
+        "ncbi_tax_id": "1624",
+        "organism_name": "Lactobacillus salivarius",
+        "publications": [
+            "pubmed:19591924"
+        ],
+        "status": "active"
+    }
+}

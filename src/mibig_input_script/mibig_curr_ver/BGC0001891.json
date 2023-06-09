@@ -1,0 +1,56 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Fetch compound properties from PubChem",
+                "Fixed DOIs",
+                "Expanded location to fit publication",
+                "Cleaned up synonym list"
+            ],
+            "contributors": [
+                "CUSGWVK3I4TVHJH7NHPFAP2L",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C1=CC(=CC=C1C(=S)NCCC(=S)NCCC(=S)NCCCNC(=S)CCNC(=S)CCNC(=S)C2=CC=C(C=C2)O)O",
+                "compound": "closthioamide",
+                "database_id": [
+                    "pubchem:135937227"
+                ],
+                "mol_mass": 694.138052,
+                "molecular_formula": "C29H38N6O2S6"
+            }
+        ],
+        "loci": {
+            "accession": "CP001348.1",
+            "completeness": "Unknown",
+            "end_coord": 3815207,
+            "start_coord": 3804343
+        },
+        "mibig_accession": "BGC0001891",
+        "minimal": true,
+        "ncbi_tax_id": "394503",
+        "organism_name": "Ruminiclostridium cellulolyticum H10",
+        "publications": [
+            "doi:10.1002/anie.201807970"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,98 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC(C)C1OC(=O)C(CC2=CC=CC=C2)N(C)C(=O)C(OC(=O)C(CC2=CC=CC=C2)N(C)C(=O)C(OC(=O)C(CC2=CC=CC=C2)N(C)C1=O)C(C)C)C(C)C",
+                "compound": "beauvericin",
+                "database_id": [
+                    "npatlas:NPA01888",
+                    "pubchem:3007984"
+                ],
+                "mol_mass": 783.409480404,
+                "molecular_formula": "C45H57N3O9"
+            }
+        ],
+        "loci": {
+            "accession": "EU886196.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000313",
+        "minimal": false,
+        "ncbi_tax_id": "176275",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "ACI30655.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "2R-hydroxyisovaleric acid",
+                                        "proteinogenic": false,
+                                        "structure": "CC(C)[C@H](C(=O)O)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "phenylalanine",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC=C(C=C1)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Beauveria bassiana",
+        "publications": [
+            "pubmed:18804027"
+        ],
+        "status": "active"
+    }
+}

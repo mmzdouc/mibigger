@@ -1,0 +1,84 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Added NRP substrate specificities",
+                "Fixed biosynthetic classes"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C/C=C(/C)\\C=C(/C)\\C=C(/C)\\C=C\\C=C(/C)\\C(=O)[C@@]12[C@@H](O1)[C@](NC2=O)(CCO)O",
+                "compound": "fusarin",
+                "database_id": [
+                    "pubchem:15942871"
+                ],
+                "mol_mass": 387.20457302799997,
+                "molecular_formula": "C22H29NO5"
+            }
+        ],
+        "loci": {
+            "accession": "AY604568.1",
+            "completeness": "Unknown",
+            "evidence": [
+                "Knock-out studies"
+            ]
+        },
+        "mibig_accession": "BGC0000064",
+        "minimal": false,
+        "ncbi_tax_id": "117187",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "AAT28740.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "substrates": [
+                                    {
+                                        "name": "proline",
+                                        "proteinogenic": true,
+                                        "structure": "C1C[C@H](NC1)C(=O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Fusarium verticillioides",
+        "publications": [
+            "pubmed:15368570"
+        ],
+        "status": "active"
+    }
+}

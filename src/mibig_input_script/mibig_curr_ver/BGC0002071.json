@@ -1,0 +1,268 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted",
+                "Corrected NRP module activity",
+                "Added version to NCBI accession",
+                "Updated NRP substrate specificities"
+            ],
+            "contributors": [
+                "O3ZSI4V6BQREG2DOQHOQ27FT",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CCCCCCC[C@@H](O)CC(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CC(C)C)C(=O)N[C@H](CCC(N)=O)C(=O)N[C@@H](CC(C)C)C(=O)N[C@H](CO)C(=O)N[C@H](C(=O)N[C@H](CC(C)C)C(=O)N[C@@H](CC(C)C)C(=O)O)C(C)C",
+                "compound": "virginiafactin A",
+                "database_id": [
+                    "npatlas:NPA028626"
+                ],
+                "evidence": [
+                    "Total synthesis"
+                ],
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 1067.7206,
+                "molecular_formula": "C53H97N9O13"
+            },
+            {
+                "chem_struct": "CCCCCCC[C@@H](O)CC(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CC(C)C)C(=O)N[C@H](CCC(N)=O)C(=O)N[C@@H](CC(C)C)C(=O)N[C@H](CO)C(=O)N[C@H](C(=O)N[C@H](CC(C)C)C(=O)N[C@@H](CC(C)C)C(=O)O)[C@@H](C)CC",
+                "compound": "virginiafactin B",
+                "database_id": [
+                    "npatlas:NPA028627"
+                ]
+            },
+            {
+                "chem_struct": "CCCCCCCCC[C@@H](O)CC(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CC(C)C)C(=O)N[C@H](CCC(N)=O)C(=O)N[C@@H](CC(C)C)C(=O)N[C@H](CO)C(=O)N[C@H](C(=O)N[C@H](CC(C)C)C(=O)N[C@@H](CC(C)C)C(=O)O)C(C)C",
+                "compound": "virginiafactin C",
+                "database_id": [
+                    "npatlas:NPA028628"
+                ]
+            },
+            {
+                "chem_struct": "CCCCCCCCC[C@@H](O)CC(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CC(C)C)C(=O)N[C@H](CCC(N)=O)C(=O)N[C@@H](CC(C)C)C(=O)N[C@H](CO)C(=O)N[C@H](C(=O)N[C@H](CC(C)C)C(=O)N[C@@H](CC(C)C)C(=O)O)[C@@H](C)CC",
+                "compound": "virginiafactin D",
+                "database_id": [
+                    "npatlas:NPA028629"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "NZ_PHSU01000004.1",
+            "completeness": "complete",
+            "end_coord": 316980,
+            "evidence": [
+                "Knock-out studies"
+            ],
+            "start_coord": 289715
+        },
+        "mibig_accession": "BGC0002071",
+        "minimal": false,
+        "ncbi_tax_id": "2056244",
+        "nrp": {
+            "cyclic": false,
+            "lipid_moiety": "(R)-3-hydroxydecanoic acid",
+            "nrps_genes": [
+                {
+                    "gene_id": "WP_100939442.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:32953002"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "leucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Starter",
+                            "module_number": "1"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:32953002"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "leucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Dual",
+                            "module_number": "2"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:32953002"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glutamine",
+                                        "proteinogenic": true,
+                                        "structure": "C(CC(=O)N)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Dual",
+                            "module_number": "3"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "WP_100939443.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": true,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:32953002"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "leucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Dual",
+                            "module_number": "4"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:32953002"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "5"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": true,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:32953002"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "isoleucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC[C@H](C)[C@@H](C(=O)O)N"
+                                    },
+                                    {
+                                        "name": "valine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Dual",
+                            "module_number": "6"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:32953002"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "leucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "7"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": true,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:32953002"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "leucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Dual",
+                            "module_number": "8"
+                        }
+                    ]
+                }
+            ],
+            "release_type": [
+                "Hydrolysis"
+            ],
+            "subclass": "Other lipopeptide"
+        },
+        "organism_name": "Pseudomonas sp. QS1027",
+        "publications": [
+            "doi:10.1039/c9sc03633d"
+        ],
+        "status": "active"
+    }
+}

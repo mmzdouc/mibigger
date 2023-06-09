@@ -1,0 +1,265 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "GTMWOIPTWIF6ILYNEBGWTDRO"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Removed ketoreductase stereochemistry annotation from modules without ketoreductases",
+                "Added AMP-binding domain substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide",
+            "Alkaloid"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "neurotoxic"
+                    }
+                ],
+                "chem_struct": "CC(=O)C1=CCC[C@@H]2CC[C@H]1N2",
+                "chem_targets": [
+                    {
+                        "target": "Nicotinic acetylcholine receptor"
+                    }
+                ],
+                "compound": "anatoxin-a",
+                "database_id": [
+                    "pubchem:3034748"
+                ],
+                "mol_mass": 165.1153641,
+                "molecular_formula": "C10H15NO"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "neurotoxic"
+                    }
+                ],
+                "chem_struct": "CCC(=O)C1=CCC[C@@H]2CC[C@H]1N2",
+                "chem_targets": [
+                    {
+                        "target": "Nicotinic acetylcholine receptor"
+                    }
+                ],
+                "compound": "homoanatoxin-a",
+                "database_id": [
+                    "pubchem:126727"
+                ],
+                "mol_mass": 179.131014164,
+                "molecular_formula": "C11H17NO"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Other enzymatic",
+                            "evidence": [
+                                "Heterologous expression",
+                                "Activity assay",
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ACR33074.1",
+                    "name": "anaB",
+                    "product": "Prolyl-ACP oxidase"
+                },
+                {
+                    "domains": [
+                        {
+                            "location": {
+                                "begin": 11,
+                                "end": 433
+                            },
+                            "name": "AMP-binding",
+                            "substrates": [
+                                {
+                                    "evidence": [
+                                        "ATP-PPi exchange assay"
+                                    ],
+                                    "name": "proline",
+                                    "publications": [
+                                        "pubmed:19954230"
+                                    ],
+                                    "structure": "C1C[C@H](NC1)C(=O)O"
+                                },
+                                {
+                                    "evidence": [
+                                        "ATP-PPi exchange assay"
+                                    ],
+                                    "name": "3,4-dehydroproline",
+                                    "publications": [
+                                        "pubmed:19954230"
+                                    ],
+                                    "structure": "C1C=C[C@H](N1)C(=O)O"
+                                }
+                            ]
+                        }
+                    ],
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Heterologous expression",
+                                "Activity assay",
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ACR33075.1",
+                    "name": "anaC",
+                    "product": "Proline adenylation protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Heterologous expression",
+                                "Activity assay",
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ACR33076.1",
+                    "name": "anaD",
+                    "product": "Acyl carrier protein"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "FJ477836.1",
+            "completeness": "complete",
+            "evidence": [
+                "Enzymatic assays"
+            ]
+        },
+        "mibig_accession": "BGC0000017",
+        "minimal": false,
+        "ncbi_tax_id": "272129",
+        "organism_name": "[Oscillatoria] sp. PCC 6506",
+        "polyketide": {
+            "cyclic": true,
+            "subclasses": [
+                "Other"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "anaA",
+                        "anaG",
+                        "anaF",
+                        "anaE"
+                    ],
+                    "modules": [
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Enoylreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "anaE"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "1"
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "anaF"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "2"
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase"
+                            ],
+                            "genes": [
+                                "anaG"
+                            ],
+                            "module_number": "3"
+                        }
+                    ],
+                    "subclass": [
+                        "Modular type I"
+                    ],
+                    "thioesterases": [
+                        {
+                            "gene": "anaA",
+                            "thioesterase_type": "Type II"
+                        }
+                    ]
+                }
+            ]
+        },
+        "publications": [
+            "pubmed:25108149",
+            "pubmed:24311576",
+            "pubmed:21786780",
+            "pubmed:20675499",
+            "pubmed:19954230",
+            "pubmed:19489636",
+            "pubmed:19447947",
+            "pubmed:21873484",
+            "pubmed:23277585"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added",
+                "Retire as duplicate of BGC0001190"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA",
+                "3UOU7PODQJXIM6BEPUHHRRA5"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Changed chemical structures for compounds: fusaric acid.",
+                "Updated NPAtlas ID for compounds: fusaric acid."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide",
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CCCCC1=CN=C(C(=O)O)C=C1",
+                "compound": "fusaric acid",
+                "database_id": [
+                    "npatlas:NPA019642",
+                    "pubchem:3442",
+                    "lotus:Q905703"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "CM000580.1",
+            "completeness": "Unknown",
+            "end_coord": 802994,
+            "evidence": [
+                "Heterologous expression"
+            ],
+            "start_coord": 786581
+        },
+        "mibig_accession": "BGC0002231",
+        "minimal": true,
+        "ncbi_tax_id": "334819",
+        "organism_name": "Fusarium verticillioides 7600",
+        "publications": [
+            "pubmed:33155797"
+        ],
+        "retirement_reasons": [
+            "Duplicate of BGC0001190"
+        ],
+        "see_also": [
+            "BGC0001190"
+        ],
+        "status": "retired"
+    }
+}

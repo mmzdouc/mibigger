@@ -1,0 +1,163 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "V5OJFE3GCDVKSA62LSGPW5E6"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Removed gene names of 'No gene ID'"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Terpene"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antioxidant"
+                    }
+                ],
+                "chem_struct": "CC1=C(C(CCC1)(C)C)/C=C/C(=C/C=C/C(=C/C=C/C=C(/C=C/C=C(/C=C/C2=C(CCCC2(C)C)C)\\C)\\C)/C)/C",
+                "chem_synonyms": [
+                    "b-carotein"
+                ],
+                "compound": "β-carotein",
+                "database_id": [
+                    "pubchem:5280489"
+                ],
+                "mol_mass": 536.438201792,
+                "molecular_formula": "C40H56"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ACI04496.1",
+                    "product": "CrtY"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ACI04497.1",
+                    "product": "CrtE"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ACI04498.1",
+                    "product": "CrtI",
+                    "tailoring": [
+                        "Reduction"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ACI04499.1",
+                    "product": "CrtB"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ACI04500.1",
+                    "product": "hypothetical protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ACI04501.1",
+                    "product": "CrtX"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "FJ151553.1",
+            "completeness": "complete",
+            "evidence": [
+                "Heterologous expression"
+            ]
+        },
+        "mibig_accession": "BGC0000646",
+        "minimal": false,
+        "ncbi_tax_id": "77133",
+        "organism_name": "uncultured bacterium",
+        "publications": [
+            "pubmed:19146479"
+        ],
+        "status": "active",
+        "terpene": {
+            "carbon_count_subclass": "Hemiterpene",
+            "structural_subclass": "Sterol",
+            "terpene_precursor": "DMAPP"
+        }
+    }
+}

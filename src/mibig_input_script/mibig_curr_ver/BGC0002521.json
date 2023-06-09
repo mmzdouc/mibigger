@@ -1,0 +1,62 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: putisolvin V, putisolvin III.",
+                "Added NPAtlas links to compounds: putisolvin V, putisolvin III."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CCCCCC(=O)NC(CC(C)C)C(=O)NC(CCC(=O)O)C(=O)NC(CC(C)C)C(=O)NC(CC(C)C)C(=O)NC(CCC(N)=O)C(=O)NC(CO)C(=O)NC(C(=O)NC(CC(C)C)C(=O)NC1COC(=O)C(CO)NC(=O)C(C(C)C)NC(=O)C(CC(C)C)NC1=O)C(C)C",
+                "compound": "putisolvin III",
+                "database_id": [
+                    "npatlas:NPA032997"
+                ]
+            },
+            {
+                "compound": "putisolvin VI"
+            },
+            {
+                "chem_struct": "CCCCCC(=O)NC(CC(C)C)C(=O)NC(CCC(=O)O)C(=O)NC(CC(C)C)C(=O)NC(CC(C)C)C(=O)NC(CCC(N)=O)C(=O)NC(CO)C(=O)NC(C(=O)NC(CC(C)C)C(=O)NC1COC(=O)C(CO)NC(=O)C(CC(C)C)NC(=O)C(CC(C)C)NC1=O)C(C)C",
+                "compound": "putisolvin V",
+                "database_id": [
+                    "npatlas:NPA032998"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "MT511054.1",
+            "completeness": "Unknown",
+            "end_coord": 47772,
+            "start_coord": 1
+        },
+        "mibig_accession": "BGC0002521",
+        "minimal": true,
+        "ncbi_tax_id": "303",
+        "organism_name": "Pseudomonas putida",
+        "publications": [
+            "pubmed:32524747",
+            "doi:10.1111/1462-2920.15127"
+        ],
+        "status": "active"
+    }
+}

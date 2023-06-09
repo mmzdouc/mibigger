@@ -1,0 +1,164 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.3"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C[C@H]1CCCCC(CCCC(Cl)Cl)C2=C(O)C=C(C=C2O)[C@H](OC(N)=O)[C@@H](C)CCCCC(CCCC(Cl)Cl)C2=C(O)C=C(C=C2O)[C@@H]1OC(N)=O",
+                "compound": "carbamidocyclophane A",
+                "database_id": [
+                    "npatlas:NPA09092",
+                    "pubchem:16215902"
+                ],
+                "mol_mass": 806.2634274080002,
+                "molecular_formula": "C38H54Cl4N2O8"
+            },
+            {
+                "chem_struct": "C[C@H]1CCCCC(CCCCCl)C2=C(O)C=C(C=C2O)[C@H](OC(N)=O)[C@@H](C)CCCCC(CCCC(Cl)Cl)C2=C(O)C=C(C=C2O)[C@@H]1OC(N)=O",
+                "compound": "carbamidocyclophane B",
+                "database_id": [
+                    "npatlas:NPA03410",
+                    "pubchem:16215903"
+                ],
+                "mol_mass": 772.3023997600001,
+                "molecular_formula": "C38H55Cl3N2O8"
+            },
+            {
+                "chem_struct": "CCCCC1CCCC[C@H](C)[C@@H](OC(N)=O)C2=CC(O)=C(C(CCCC(Cl)Cl)CCCC[C@H](C)[C@@H](OC(N)=O)C3=CC(O)=C1C(O)=C3)C(O)=C2",
+                "compound": "carbamidocyclophane C",
+                "database_id": [
+                    "npatlas:NPA017958",
+                    "pubchem:16216030"
+                ],
+                "mol_mass": 738.341372112,
+                "molecular_formula": "C38H56Cl2N2O8"
+            },
+            {
+                "chem_struct": "CCCCC1CCCC[C@H](C)[C@@H](OC(N)=O)C2=CC(O)=C(C(CCCCCl)CCCC[C@H](C)[C@@H](OC(N)=O)C3=CC(O)=C1C(O)=C3)C(O)=C2",
+                "compound": "carbamidocyclophane D",
+                "database_id": [
+                    "npatlas:NPA017132",
+                    "pubchem:16216031"
+                ],
+                "mol_mass": 704.3803444640001,
+                "molecular_formula": "C38H57ClN2O8"
+            },
+            {
+                "chem_struct": "CCCCC1CCCC[C@H](C)[C@@H](OC(N)=O)C2=CC(O)=C(C(CCCC)CCCC[C@H](C)[C@@H](OC(N)=O)C3=CC(O)=C1C(O)=C3)C(O)=C2",
+                "compound": "carbamidocyclophane E",
+                "database_id": [
+                    "npatlas:NPA016180",
+                    "pubchem:16216032"
+                ],
+                "mol_mass": 670.4193168160001,
+                "molecular_formula": "C38H58N2O8"
+            },
+            {
+                "chem_struct": "C[C@H]1CCCC[C@H](CCCC(Cl)Cl)C2=C(O)C=C(C=C2O)[C@H](OC(N)=O)[C@@H](C)CCCC[C@H](CCCC(Cl)Cl)C2=C(O)C=C(C=C2O)[C@@H]1O",
+                "compound": "carbamidocyclophane F",
+                "database_id": [
+                    "npatlas:NPA06200",
+                    "pubchem:102126547"
+                ],
+                "mol_mass": 763.2576137560002,
+                "molecular_formula": "C37H53Cl4NO7"
+            },
+            {
+                "chem_struct": "[H]C([H])CCC[C@H]1CCCC[C@H](C)[C@@H](OC(N)=O)C2=CC(O)=C([C@@H](CCCC([H])[H])CCCC[C@H](C)[C@@H](O)C3=CC(O)=C1C(O)=C3)C(O)=C2",
+                "compound": "carbamidocyclophane H",
+                "mol_mass": 627.413503164,
+                "molecular_formula": "C37H57NO7"
+            },
+            {
+                "chem_struct": "[H]C([H])CCC[C@H]1CCCC[C@H](C)[C@@H](OC(N)=O)C2=CC(O)=C([C@@H](CCCC([H])Br)CCCC[C@H](C)[C@@H](OC(N)=O)C3=CC(O)=C1C(O)=C3)C(O)=C2",
+                "compound": "carbamidocyclophane M",
+                "mol_mass": 748.3298288840001,
+                "molecular_formula": "C38H57BrN2O8"
+            },
+            {
+                "chem_struct": "[H]C(Br)CCC[C@H]1CCCC[C@H](C)[C@@H](OC(N)=O)C2=CC(O)=C([C@@H](CCCC([H])Br)CCCC[C@H](C)[C@@H](OC(N)=O)C3=CC(O)=C1C(O)=C3)C(O)=C2",
+                "compound": "carbamidocyclophane N",
+                "mol_mass": 826.2403409520001,
+                "molecular_formula": "C38H56Br2N2O8"
+            },
+            {
+                "chem_struct": "[H]C([H])CCC[C@H]1CCCC[C@H](C)[C@@H](OC(N)=O)C2=CC(O)=C([C@@H](CCCC(Br)Br)CCCC[C@H](C)[C@@H](OC(N)=O)C3=CC(O)=C1C(O)=C3)C(O)=C2",
+                "compound": "carbamidocyclophane O",
+                "mol_mass": 826.2403409520001,
+                "molecular_formula": "C38H56Br2N2O8"
+            },
+            {
+                "chem_struct": "[H]C(Br)CCC[C@H]1CCCC[C@H](C)[C@@H](OC(N)=O)C2=CC(O)=C([C@@H](CCCC(Br)Br)CCCC[C@H](C)[C@@H](OC(N)=O)C3=CC(O)=C1C(O)=C3)C(O)=C2",
+                "compound": "carbamidocyclophane P",
+                "mol_mass": 904.1508530200001,
+                "molecular_formula": "C38H55Br3N2O8"
+            },
+            {
+                "chem_struct": "C[C@H]1CCCC[C@H](CCCC(Br)Br)C2=C(O)C=C(C=C2O)[C@H](OC(N)=O)[C@@H](C)CCCC[C@H](CCCC(Br)Br)C2=C(O)C=C(C=C2O)[C@@H]1OC(N)=O",
+                "compound": "carbamidocyclophane Q",
+                "mol_mass": 982.0613650880001,
+                "molecular_formula": "C38H54Br4N2O8"
+            },
+            {
+                "chem_struct": "[H]C([H])CCC[C@H]1CCCC[C@H](C)[C@@H](O)C2=CC(O)=C([C@@H](CCCC([H])Br)CCCC[C@H](C)[C@@H](OC(N)=O)C3=CC(O)=C1C(O)=C3)C(O)=C2",
+                "compound": "carbamidocyclophane R",
+                "mol_mass": 705.3240152320001,
+                "molecular_formula": "C37H56BrNO7"
+            },
+            {
+                "chem_struct": "[H]C([H])CCC[C@H]1CCCC[C@H](C)[C@@H](O)C2=CC(O)=C([C@@H](CCCC(Br)Br)CCCC[C@H](C)[C@@H](OC(N)=O)C3=CC(O)=C1C(O)=C3)C(O)=C2",
+                "compound": "carbamidocyclophane S",
+                "mol_mass": 783.2345273000001,
+                "molecular_formula": "C37H55Br2NO7"
+            },
+            {
+                "chem_struct": "[H]C(Br)CCC[C@H]1CCCC[C@H](C)[C@@H](O)C2=CC(O)=C([C@@H](CCCC(Br)Br)CCCC[C@H](C)[C@@H](OC(N)=O)C3=CC(O)=C1C(O)=C3)C(O)=C2",
+                "compound": "carbamidocyclophane T",
+                "mol_mass": 861.1450393680002,
+                "molecular_formula": "C37H54Br3NO7"
+            },
+            {
+                "chem_struct": "C[C@H]1CCCC[C@H](CCCC(Br)Br)C2=C(O)C=C(C=C2O)[C@H](OC(N)=O)[C@@H](C)CCCC[C@H](CCCC(Br)Br)C2=C(O)C=C(C=C2O)[C@@H]1O",
+                "compound": "carbamidocyclophane U",
+                "mol_mass": 939.0555514360001,
+                "molecular_formula": "C37H53Br4NO7"
+            }
+        ],
+        "loci": {
+            "accession": "KT826756.1",
+            "completeness": "Unknown",
+            "end_coord": 28337,
+            "start_coord": 1406
+        },
+        "mibig_accession": "BGC0001357",
+        "minimal": true,
+        "ncbi_tax_id": "1510471",
+        "organism_name": "Nostoc sp. CAVN2",
+        "publications": [
+            "pubmed:26805858"
+        ],
+        "status": "active"
+    }
+}

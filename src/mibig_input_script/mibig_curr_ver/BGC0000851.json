@@ -1,0 +1,79 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated reference publication(s) (MIBiG Annotathon)",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CC(C)\\C=C1/NC(=O)\\C(NC1=O)=C\\C1=CC=CC=C1",
+                "compound": "albonoursin",
+                "database_id": [
+                    "npatlas:NPA016033",
+                    "pubchem:6109346"
+                ],
+                "mol_mass": 256.121177752,
+                "molecular_formula": "C15H16N2O2"
+            }
+        ],
+        "loci": {
+            "accession": "AY129235.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000851",
+        "minimal": true,
+        "ncbi_tax_id": "316284",
+        "organism_name": "Streptomyces noursei ATCC 11455",
+        "publications": [
+            "pubmed:12498889"
+        ],
+        "status": "active"
+    }
+}

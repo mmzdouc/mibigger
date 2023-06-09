@@ -1,0 +1,90 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "T4ZY6CWFJ6LI7OH7I2U6R7OF"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "O[C@@H]1C=CC([C@](C2)([H])[C@H]1OC(C(OCC(C(O)C(CCCCC)=O)=C)=O)=C)=C(O)C2=O",
+                "compound": "tundrenone",
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry"
+                ],
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 420.1784178559999,
+                "molecular_formula": "C22H28O8"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "WP_027148176.1",
+                    "name": "tunJ",
+                    "product": "Acyl-CoA ligase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Regulation",
+                            "evidence": [
+                                "Other in vivo study",
+                                "Activity assay"
+                            ]
+                        }
+                    ],
+                    "id": "WP_006890625.1",
+                    "name": "mbaR",
+                    "product": "LuxR family transcriptional regulator"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "NZ_JMLA01000001.1",
+            "completeness": "Unknown",
+            "end_coord": 853163,
+            "evidence": [
+                "Knock-out studies",
+                "Gene expression correlated with compound production"
+            ],
+            "start_coord": 833380
+        },
+        "mibig_accession": "BGC0001480",
+        "minimal": false,
+        "ncbi_tax_id": "1408450",
+        "organism_name": "Methylobacter tundripaludum 21/22",
+        "publications": [
+            "pubmed:29361220",
+            "pubmed:27994019"
+        ],
+        "status": "active"
+    }
+}

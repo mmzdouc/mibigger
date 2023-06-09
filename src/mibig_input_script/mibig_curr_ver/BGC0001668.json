@@ -1,0 +1,94 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Cleaned up synonym list",
+                "Added new publication",
+                "Changed compound name to that commonly used in literature",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "OC1OC(=O)C(=C1CC1=CC=CC=C1)C1=CC=CC=C1",
+                "compound": "microperfuranone",
+                "database_id": [
+                    "npatlas:NPA016720"
+                ],
+                "mol_mass": 266.094294308,
+                "molecular_formula": "C17H14O3"
+            }
+        ],
+        "loci": {
+            "accession": "BN001306.1",
+            "completeness": "Unknown",
+            "end_coord": 797948,
+            "start_coord": 790405
+        },
+        "mibig_accession": "BGC0001668",
+        "minimal": false,
+        "ncbi_tax_id": "227321",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "CBF82791.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Heterologous expression",
+                                    "Mass spectrometry"
+                                ],
+                                "publications": [
+                                    "pubmed:22627757"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "phenylpyruvic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC=C(C=C1)CC(=O)C(=O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Aspergillus nidulans FGSC A4",
+        "publications": [
+            "pubmed:22627757",
+            "pubmed:32526136"
+        ],
+        "status": "active"
+    }
+}

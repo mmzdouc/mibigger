@@ -1,0 +1,105 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted",
+                "Added version to NCBI accession"
+            ],
+            "contributors": [
+                "SSSZYUCEUV37TGDT5UNOPARF",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11",
+                "Added NPAtlas links to compounds: sesbanimide F, sesbanimide E."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CC1C(=C)COC1(C(C(CC2CC(=O)NC(=O)C2)O)OC)O",
+                "compound": "sesbanimide C",
+                "database_id": [
+                    "npatlas:NPA018944"
+                ],
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry"
+                ]
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "C=C(COC(=O)CCCCC/C=C/C=C/C(=O)O)C(C)C(=O)C(OC)C(O)CC1CC(=O)NC(=O)C1",
+                "compound": "sesbanimide F",
+                "database_id": [
+                    "npatlas:NPA033221"
+                ],
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry"
+                ]
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "C=C(CO)C(C)C(=O)C(OC)C(O)CC1CC(=O)NC(=O)C1",
+                "compound": "sesbanimide E",
+                "database_id": [
+                    "npatlas:NPA033220"
+                ],
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "CP046908.1",
+            "completeness": "complete",
+            "end_coord": 4466149,
+            "start_coord": 4404390
+        },
+        "mibig_accession": "BGC0002082",
+        "minimal": false,
+        "ncbi_tax_id": "538381",
+        "nrp": {
+            "cyclic": false
+        },
+        "organism_name": "Stappia indica",
+        "polyketide": {
+            "cyclic": false,
+            "starter_unit": "Aminomalonyl-CoA",
+            "subclasses": [
+                "Other"
+            ]
+        },
+        "publications": [
+            "doi:10.7164/antibiotics.51.64"
+        ],
+        "status": "active"
+    }
+}

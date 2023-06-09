@@ -1,0 +1,76 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "COC1=CC=CC2=C1[C@H](O)[C@]1(O)C=CC3=C4[C@@H]1[C@@H]2OC4=CC(C)=C3",
+                "compound": "kiamycin",
+                "database_id": [
+                    "npatlas:NPA02858"
+                ],
+                "mol_mass": 322.120509056,
+                "molecular_formula": "C20H18O4"
+            }
+        ],
+        "loci": {
+            "accession": "AGSW01000147.1",
+            "completeness": "Unknown",
+            "end_coord": 139606,
+            "start_coord": 118282
+        },
+        "mibig_accession": "BGC0000235",
+        "minimal": true,
+        "ncbi_tax_id": "1055352",
+        "organism_name": "Streptomyces sp. W007",
+        "publications": [
+            "pubmed:22536997"
+        ],
+        "status": "active"
+    }
+}

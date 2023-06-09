@@ -1,0 +1,59 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: baumannoferrin A.",
+                "Added NPAtlas links to compounds: baumannoferrin A."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CCCCCCC/C=C/C(=O)N(O)CCCNC(=O)C(CC(=O)NCCC(C(=O)O)N1C(=O)CCC1(O)C(=O)O)C(=O)O",
+                "compound": "baumannoferrin A",
+                "database_id": [
+                    "npatlas:NPA032594"
+                ]
+            },
+            {
+                "chem_struct": "CCCCCCCCCC(=O)N(CCCNC(=O)C(CC(=O)NCCC(C(=O)O)N1C(=O)CCC1(C(=O)O)O)C(=O)O)O",
+                "compound": "baumannoferrin B",
+                "database_id": [
+                    "npatlas:NPA001975"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "CU459141.1",
+            "completeness": "Unknown",
+            "end_coord": 2064050,
+            "start_coord": 2048827
+        },
+        "mibig_accession": "BGC0002471",
+        "minimal": true,
+        "ncbi_tax_id": "509173",
+        "organism_name": "Acinetobacter baumannii AYE",
+        "publications": [
+            "pubmed:26235845",
+            "doi:10.1002/cbic.201500147"
+        ],
+        "status": "active"
+    }
+}

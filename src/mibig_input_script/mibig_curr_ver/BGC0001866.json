@@ -1,0 +1,198 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "SP3TSEAU4FOO7XSAAVENWCIW"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Merged annotations from duplicate entry BGC0002030"
+            ],
+            "contributors": [
+                "SJG3CBEHSM6A3I74YXLH6GLA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "COC1=C(C2=C(C(=C1)O)C(=C3C(=C2)C[C@H](OC3=O)CC(=O)OC)O)C4=C(C=C(C5=C4C=C6C[C@H](OC(=O)C6=C5O)CC(=O)OC)O)OC",
+                "chem_targets": [
+                    {
+                        "target": "FtsZ"
+                    }
+                ],
+                "compound": "viriditoxin",
+                "database_id": [
+                    "pubchem:53343291"
+                ],
+                "evidence": [
+                    "NMR"
+                ],
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 662.163556,
+                "molecular_formula": "C34H30O14"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "id": "XP_028481812.1",
+                    "name": "vdtB",
+                    "product": "multi-copper oxidase/laccase",
+                    "tailoring": [
+                        "Oxidation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "id": "XP_028481813.1",
+                    "name": "vdtC",
+                    "product": "O-methyltransferase",
+                    "tailoring": [
+                        "Methylation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Other enzymatic",
+                            "evidence": [
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "id": "XP_028481814.1",
+                    "name": "vdtD",
+                    "product": "Alpha/Beta hydrolase-like dirigent protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "id": "XP_028481815.1",
+                    "name": "vdtE",
+                    "product": "Baeyer-Villiger monoxygenase(BVMO)",
+                    "tailoring": [
+                        "Oxidation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "id": "XP_028481816.1",
+                    "name": "vdtF",
+                    "product": "short chain dehydrogenase/reductase",
+                    "tailoring": [
+                        "Reduction"
+                    ]
+                },
+                {
+                    "id": "XP_028481817.1",
+                    "name": "vdtG",
+                    "product": "MFS transporter"
+                },
+                {
+                    "id": "XP_028481818.1",
+                    "name": "vdtR",
+                    "product": "transcription factor"
+                },
+                {
+                    "id": "XP_028481819.1",
+                    "name": "orf1",
+                    "product": "highly-reducing poluketide synthase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "id": "XP_028481820.1",
+                    "name": "vdtA",
+                    "product": "non-reducing polyketide synthase"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "NW_021167153.1",
+            "completeness": "complete",
+            "end_coord": 427864,
+            "evidence": [
+                "Heterologous expression"
+            ],
+            "start_coord": 394575
+        },
+        "mibig_accession": "BGC0001866",
+        "minimal": false,
+        "ncbi_tax_id": "264951",
+        "organism_name": "Byssochlamys spectabilis",
+        "polyketide": {
+            "cyclic": true,
+            "starter_unit": "Acetyl-CoA",
+            "subclasses": [
+                "Other"
+            ]
+        },
+        "publications": [
+            "pubmed:31045362",
+            "pubmed:31304040"
+        ],
+        "status": "active"
+    }
+}

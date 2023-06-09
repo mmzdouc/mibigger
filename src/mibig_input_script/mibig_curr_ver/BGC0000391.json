@@ -1,0 +1,199 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AADADFAEMFE2AOMR24EUYNFH"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Added NRP module",
+                "Updated NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    },
+                    {
+                        "activity": "signalling"
+                    }
+                ],
+                "chem_struct": "CC[C@H](C)[C@H]1C(=O)N[C@@H](CC2=CNC3=C(C=CC(=C23)N1C)C(C)(C)C=C)CO",
+                "compound": "methylpendolmycin",
+                "mass_spec_ion_type": "M+",
+                "mol_mass": 383.257277296,
+                "molecular_formula": "C23H33N3O2"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "signalling"
+                    }
+                ],
+                "chem_struct": "CC(C)[C@H]1C(=O)N[C@@H](CC2=CNC3=C(C=CC(=C23)N1C)C(C)(C)C=C)CO",
+                "compound": "pendolmycin",
+                "mass_spec_ion_type": "M+",
+                "mol_mass": 369.241627232,
+                "molecular_formula": "C22H31N3O2"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "AFO85454.1",
+                    "name": "mpnC",
+                    "product": "P450-like monoxygenase",
+                    "tailoring": [
+                        "Heterocyclization"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "AFO85453.1",
+                    "name": "mpnB",
+                    "product": "non-ribosomal peptide synthetase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "AFO85455.1",
+                    "name": "mpnD",
+                    "product": "aromatic prenyltransferase",
+                    "tailoring": [
+                        "Prenylation"
+                    ]
+                }
+            ]
+        },
+        "loci": {
+            "accession": "JN634585.1",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies"
+            ]
+        },
+        "mibig_accession": "BGC0000391",
+        "minimal": false,
+        "ncbi_tax_id": "531310",
+        "nrp": {
+            "cyclic": true,
+            "nrps_genes": [
+                {
+                    "gene_id": "AFO85453.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "substrates": [
+                                    {
+                                        "name": "isoleucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC[C@H](C)[C@@H](C(=O)O)N"
+                                    },
+                                    {
+                                        "name": "valine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "Methylation"
+                            ],
+                            "module_number": "1"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Knock-out studies"
+                                ],
+                                "publications": [
+                                    "doi:10.1002/cbic.201100700"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "tryptophan",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC=C2C(=C1)C(=CN2)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "module_number": "2"
+                        }
+                    ]
+                }
+            ],
+            "release_type": [
+                "Reductive release"
+            ]
+        },
+        "organism_name": "Marinactinospora thermotolerans",
+        "publications": [
+            "pubmed:22362652"
+        ],
+        "status": "active"
+    }
+}

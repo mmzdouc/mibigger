@@ -1,0 +1,153 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Add compound details",
+                "Updated bioactivity data",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "SJG3CBEHSM6A3I74YXLH6GLA",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "virulence factor"
+                    }
+                ],
+                "chem_struct": "CC(C)C1=NC=C(NC1=O)CC2=CC=C(C=C2)O",
+                "compound": "aureusimine A",
+                "database_id": [
+                    "pubchem:49838500"
+                ],
+                "mol_mass": 244.121177757,
+                "molecular_formula": "C14H16N2O2"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "virulence factor"
+                    }
+                ],
+                "chem_struct": "CC(C)C1=NC=C(NC1=O)CC2=CC=CC=C2",
+                "compound": "aureusimine B",
+                "database_id": [
+                    "pubchem:10376483"
+                ],
+                "mol_mass": 228.126263138,
+                "molecular_formula": "C14H16N2O"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "virulence factor"
+                    }
+                ],
+                "chem_struct": "CC(C)CC1=CN=C(C(=O)N1)C(C)C",
+                "compound": "aureusimine C",
+                "database_id": [
+                    "pubchem:121434429"
+                ],
+                "mol_mass": 194.141913202,
+                "molecular_formula": "C11H18N2O"
+            }
+        ],
+        "loci": {
+            "accession": "CP002120.1",
+            "completeness": "Unknown",
+            "end_coord": 183901,
+            "start_coord": 176051
+        },
+        "mibig_accession": "BGC0000308",
+        "minimal": false,
+        "ncbi_tax_id": "546342",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "ADL64235.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "substrates": [
+                                    {
+                                        "name": "valine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "ATP-PPi exchange assay"
+                                ],
+                                "publications": [
+                                    "doi:10.1021/bi301330q"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "tyrosine",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC(=CC=C1C[C@@H](C(=O)O)N)O"
+                                    },
+                                    {
+                                        "name": "phenylalanine",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC=C(C=C1)C[C@@H](C(=O)O)N"
+                                    },
+                                    {
+                                        "name": "4-aminophenylalanine",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC(=CC=C1C[C@@H](C(=O)O)N)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Staphylococcus aureus subsp. aureus str. JKD6008",
+        "publications": [
+            "pubmed:23302043"
+        ],
+        "status": "active"
+    }
+}

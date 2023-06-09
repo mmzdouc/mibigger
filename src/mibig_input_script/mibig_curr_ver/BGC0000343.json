@@ -1,0 +1,78 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Refined reference coordinates",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11",
+                "Changed chemical structures for compounds: enterobactin."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "siderophore"
+                    }
+                ],
+                "chem_struct": "C1C(C(=O)OCC(C(=O)OCC(C(=O)O1)NC(=O)C2=C(C(=CC=C2)O)O)NC(=O)C3=C(C(=CC=C3)O)O)NC(=O)C4=C(C(=CC=C4)O)O",
+                "compound": "enterobactin",
+                "database_id": [
+                    "npatlas:NPA018623",
+                    "pubchem:34231"
+                ],
+                "mol_mass": 669.144217164,
+                "molecular_formula": "C30H27N3O15"
+            }
+        ],
+        "loci": {
+            "accession": "GQ370384.1",
+            "completeness": "Unknown",
+            "start_coord": 27847
+        },
+        "mibig_accession": "BGC0000343",
+        "minimal": true,
+        "ncbi_tax_id": "674034",
+        "organism_name": "Pseudomonas sp. J465",
+        "publications": [
+            "pubmed:19710707"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.3"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C/C=C(\\C)/C=C(\\C)/CC(C)C(C(C1C/C=C\\C=C\\C(CC(C(C2=NC(=CS2)/C=C(/C(=O)O1)\\C)CO)O)O)O)O",
+                "compound": "Cmc-thuggacin A",
+                "database_id": [
+                    "pubchem:59317598"
+                ],
+                "mol_mass": 561.2760237159998,
+                "molecular_formula": "C30H43NO7S"
+            },
+            {
+                "chem_struct": "C/C=C(\\C)/C=C(\\C)/CC(C)C1C(C(C/C=C\\C=C\\C(CC(C(C2=NC(=CS2)/C=C(/C(=O)O1)\\C)CO)O)O)O)O",
+                "compound": "Cmc-thuggacin B",
+                "database_id": [
+                    "pubchem:59317595"
+                ],
+                "mol_mass": 561.2760237159998,
+                "molecular_formula": "C30H43NO7S"
+            }
+        ],
+        "loci": {
+            "accession": "GQ981381.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001342",
+        "minimal": true,
+        "ncbi_tax_id": "52",
+        "organism_name": "Chondromyces crocatus",
+        "publications": [
+            "pubmed:20416506"
+        ],
+        "status": "active"
+    }
+}

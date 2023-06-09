@@ -1,0 +1,73 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Terpene"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "CC(=CCC/C(=C/C[C@]12C(=O)C3=CC(=CC(=C3C(=O)[C@]1(C[C@H](C(O2)(C)C)Cl)Cl)O)O)/C)C",
+                "compound": "napyradiomycin",
+                "database_id": [
+                    "pubchem:6438953"
+                ],
+                "mol_mass": 480.1470294199999,
+                "molecular_formula": "C25H30Cl2O5"
+            }
+        ],
+        "loci": {
+            "accession": "EF397639.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000652",
+        "minimal": true,
+        "ncbi_tax_id": "418855",
+        "organism_name": "Streptomyces sp. CNQ525",
+        "publications": [
+            "pubmed:17392281"
+        ],
+        "status": "active"
+    }
+}

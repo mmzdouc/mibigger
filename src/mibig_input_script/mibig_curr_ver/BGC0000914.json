@@ -1,0 +1,82 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    }
+                ],
+                "chem_struct": "C[C@@]12O[C@]1(C)C(=O)C(=C)[C@H]2C(O)=O",
+                "compound": "methylenomycin A",
+                "database_id": [
+                    "npatlas:NPA013552"
+                ],
+                "mol_mass": 182.0579088,
+                "molecular_formula": "C9H10O4"
+            }
+        ],
+        "loci": {
+            "accession": "AL589148.1",
+            "completeness": "Unknown",
+            "end_coord": 251017,
+            "start_coord": 231676
+        },
+        "mibig_accession": "BGC0000914",
+        "minimal": true,
+        "ncbi_tax_id": "100226",
+        "organism_name": "Streptomyces coelicolor A3(2)",
+        "publications": [
+            "pubmed:19054329",
+            "pubmed:18988741",
+            "pubmed:12000953",
+            "pubmed:9573173"
+        ],
+        "status": "active"
+    }
+}

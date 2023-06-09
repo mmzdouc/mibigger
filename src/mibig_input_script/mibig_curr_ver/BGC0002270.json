@@ -1,0 +1,73 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C1C[C@H]([C@@H]2[C@@H]([C@@H](CN2C1)O)O)O",
+                "compound": "swainsonine",
+                "database_id": [
+                    "pubchem:51683",
+                    "chemspider:46788"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "ADNJ02000001.1",
+            "completeness": "Unknown",
+            "end_coord": 6782169,
+            "evidence": [
+                "Knock-out studies"
+            ],
+            "start_coord": 6738325
+        },
+        "mibig_accession": "BGC0002270",
+        "minimal": false,
+        "ncbi_tax_id": "655844",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "EFY95969.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:32786262"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "pipecolic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C1CCN[C@@H](C1)C(=O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Metarhizium robertsii ARSEF 23",
+        "publications": [
+            "pubmed:32786262"
+        ],
+        "status": "active"
+    }
+}

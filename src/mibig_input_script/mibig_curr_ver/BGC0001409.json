@@ -1,0 +1,77 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.3"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CCC[C@@H](C)\\C=C(\\C)C(=O)OC1C(C)OC(CC1(C)O)OC1CCC(O[C@@H]2C(O)=C(C(C)=O)C(=O)[C@@]3(O)C(=O)C4=C(O)C5=C(C(C)=C4C[C@@]23O)C(=O)C(OC)=CC5=O)OC1C",
+                "compound": "dutomycin",
+                "database_id": [
+                    "npatlas:NPA07234"
+                ],
+                "mol_mass": 854.336100268,
+                "molecular_formula": "C44H54O17"
+            }
+        ],
+        "loci": {
+            "accession": "KP710956.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001409",
+        "minimal": true,
+        "ncbi_tax_id": "67329",
+        "organism_name": "Streptomyces minoensis",
+        "publications": [
+            "pubmed:27195476"
+        ],
+        "status": "active"
+    }
+}

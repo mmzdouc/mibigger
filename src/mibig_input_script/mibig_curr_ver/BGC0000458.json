@@ -1,0 +1,121 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "C1[C@@H](N=C(NC1[C@@H]2C(=O)NC[C@H](C(=O)N[C@@H](C(=O)N[C@H](C(=O)N/C(=C\\NC(=O)N)/C(=O)N2)CO)CO)NC(=O)C[C@@H](CCCN)N)N)O.OS(=O)(=O)O",
+                "compound": "viomycin",
+                "database_id": [
+                    "pubchem:3034080"
+                ],
+                "mol_mass": 783.2929641200001,
+                "molecular_formula": "C25H45N13O14S"
+            }
+        ],
+        "loci": {
+            "accession": "AY263398.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000458",
+        "minimal": false,
+        "ncbi_tax_id": "1960",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "AAP92491.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AAP92505.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "substrates": [
+                                    {
+                                        "name": "beta-lysine",
+                                        "proteinogenic": false,
+                                        "structure": "C(C[C@@H](CC(=O)O)N)CN"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Streptomyces vinaceus",
+        "publications": [
+            "pubmed:12936980"
+        ],
+        "status": "active"
+    }
+}

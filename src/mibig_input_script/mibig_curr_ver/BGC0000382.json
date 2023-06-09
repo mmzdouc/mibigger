@@ -1,0 +1,104 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "inhibitor"
+                    }
+                ],
+                "chem_struct": "CCCCCC[C@H]1[C@H](C[C@H](C\\C=C/C\\C=C/CCCCC)OC(=O)[C@H](CC(C)C)NC=O)OC1=O",
+                "chem_targets": [
+                    {
+                        "publications": [
+                            "pubmed:30020314"
+                        ],
+                        "target": "human pancreatic lipase"
+                    }
+                ],
+                "compound": "lipstatin",
+                "database_id": [
+                    "npatlas:NPA016962",
+                    "pubchem:6438672"
+                ],
+                "mol_mass": 491.3610736679999,
+                "molecular_formula": "C29H49NO5"
+            }
+        ],
+        "loci": {
+            "accession": "KJ872771.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000382",
+        "minimal": false,
+        "ncbi_tax_id": "67369",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "AIT38302.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "substrates": [
+                                    {
+                                        "name": "leucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Streptomyces toxytricini",
+        "publications": [
+            "pubmed:25239907"
+        ],
+        "status": "active"
+    }
+}

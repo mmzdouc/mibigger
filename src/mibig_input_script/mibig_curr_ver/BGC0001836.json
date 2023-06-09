@@ -1,0 +1,116 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "CUIZDUBUBVAF27VHF4OZXTI3"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "C[C@H]1[C@@]2(O)O[C@H](CC(C[C@H](CC/C=C/C=C\\CC[C@H](C)OC(C([C@@]3(O)[C@H](C)CC[C@@H](CC(C[C@H](CC/C=C/C=C\\CC[C@H](C)OC(C2O)=O)O)=O)O3)O)=O)O)=O)CC1",
+                "compound": "tartrolon D",
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry"
+                ],
+                "mass_spec_ion_type": "[M+Na]+",
+                "mol_mass": 820.4609068560002,
+                "molecular_formula": "C44H68O14"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "C[C@H]1[C@@]2(O)O[C@H](CC(C[C@H](CC/C=C/C=C\\CC[C@H](C)OC(C([C@@]3(O)[C@H](C)CC[C@@H](CC(C[C@H](CC/C=C/C=C\\CC[C@H](C)OC(C2O)=O)O)O)O3)O)=O)O)=O)CC1",
+                "compound": "tartrolon F",
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry"
+                ],
+                "mass_spec_ion_type": "[M+Na]+",
+                "mol_mass": 822.4765569200002,
+                "molecular_formula": "C44H70O14"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "C[C@H]1[C@@]2(O)O[C@H](CC(O)C[C@H](CC/C=C/C=C\\CC[C@H](C)OC(C([C@@]3(O)[C@H](C)CC[C@@H](CC(C[C@H](CC/C=C/C=C\\CC[C@H](C)OC(C2O)=O)O)O)O3)O)=O)O)CC1",
+                "compound": "tartrolon G",
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry"
+                ],
+                "mass_spec_ion_type": "[M+Na]+",
+                "mol_mass": 824.4922069840002,
+                "molecular_formula": "C44H72O14"
+            }
+        ],
+        "loci": {
+            "accession": "BK010667.1",
+            "completeness": "complete",
+            "end_coord": 3777880,
+            "start_coord": 3696140
+        },
+        "mibig_accession": "BGC0001836",
+        "minimal": false,
+        "ncbi_tax_id": "1445510",
+        "organism_name": "Gynuella sunshinyii YC6258",
+        "polyketide": {
+            "cyclic": true,
+            "release_type": [
+                "Macrolactonization"
+            ],
+            "subclasses": [
+                "Other"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "DAC80059.1"
+                    ],
+                    "subclass": [
+                        "Trans-AT type I"
+                    ],
+                    "trans_at": {
+                        "genes": [
+                            "DAC80059.1"
+                        ]
+                    }
+                }
+            ]
+        },
+        "publications": [
+            "pubmed:23288898",
+            "pubmed:31308532"
+        ],
+        "status": "active"
+    }
+}

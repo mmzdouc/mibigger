@@ -1,0 +1,48 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CN1[C@H]2CS[C@@H]1[C@H]3CS[C@@H](N3C2=O)[C@H]4CSC(=N4)C5=CC=CC=C5O",
+                "compound": "ulbactin F",
+                "database_id": [
+                    "npatlas:NPA001813"
+                ]
+            },
+            {
+                "chem_struct": "CN1[C@H]2CS[C@@H]1[C@H]3CS[C@H](N3C2=O)[C@H]4CSC(=N4)C5=CC=CC=C5O",
+                "compound": "ulbactin G",
+                "database_id": [
+                    "npatlas:NPA008909"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "NZ_BDFB01000007.1",
+            "completeness": "Unknown",
+            "end_coord": 379176,
+            "start_coord": 356897
+        },
+        "mibig_accession": "BGC0002472",
+        "minimal": true,
+        "ncbi_tax_id": "1393",
+        "organism_name": "Brevibacillus brevis",
+        "publications": [
+            "doi:10.1016/j.genrep.2016.10.006"
+        ],
+        "status": "active"
+    }
+}

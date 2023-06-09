@@ -1,0 +1,46 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "compound": "venemycin"
+            }
+        ],
+        "loci": {
+            "accession": "NZ_CP018074.1",
+            "completeness": "Unknown",
+            "end_coord": 549437,
+            "start_coord": 519875
+        },
+        "mibig_accession": "BGC0001819",
+        "minimal": true,
+        "ncbi_tax_id": "54571",
+        "organism_name": "Streptomyces venezuelae",
+        "publications": [
+            "pubmed:27605017"
+        ],
+        "status": "active"
+    }
+}

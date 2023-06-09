@@ -1,0 +1,108 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Added missing NRP class",
+                "Updated bioactivity data",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "CUSGWVK3I4TVHJH7NHPFAP2L",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "[H][C@](O)([C@@]1([H])CCCC=C1)[C@@]12NC(=O)[C@H](CCCl)[C@]1(C)OC2=O",
+                "compound": "salinosporamide A",
+                "database_id": [
+                    "npatlas:NPA011013",
+                    "pubchem:11695330"
+                ],
+                "mol_mass": 313.10808579999997,
+                "molecular_formula": "C15H20ClNO4"
+            }
+        ],
+        "loci": {
+            "accession": "EF397502.1",
+            "completeness": "Unknown",
+            "evidence": [
+                "Knock-out studies"
+            ]
+        },
+        "mibig_accession": "BGC0000145",
+        "minimal": false,
+        "ncbi_tax_id": "168695",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "ABP73646.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:19590008"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "3S-cyclohex-2-enylalanine",
+                                        "proteinogenic": false,
+                                        "structure": "C1C=C[C@H](CC1)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Salinispora tropica",
+        "publications": [
+            "pubmed:19590008"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,69 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Removed compounds: mycemycin.",
+                "Added compounds: mycemycin C, mycemycin A, mycemycin B.",
+                "Added NPAtlas links to compounds: mycemycin C, mycemycin A, mycemycin B."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC1=C(C=C(C2=C1OC3=C(C=C(C=C3)Cl)C(=O)N2)C(=O)OC)Cl",
+                "compound": "mycemycin C",
+                "database_id": [
+                    "npatlas:NPA014370"
+                ]
+            },
+            {
+                "chem_struct": "COC(=O)C1=C2C(=CC=C1)OC3=CC=CC=C3C(=O)N2",
+                "compound": "mycemycin A",
+                "database_id": [
+                    "npatlas:NPA002608"
+                ]
+            },
+            {
+                "chem_struct": "COC(=O)C1=C2C(=CC=C1)OC3=C(C=C(C=C3)Cl)C(=O)N2",
+                "compound": "mycemycin B",
+                "database_id": [
+                    "npatlas:NPA019900"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "MG837055.1",
+            "completeness": "Unknown",
+            "end_coord": 32300,
+            "evidence": [
+                "Heterologous expression"
+            ],
+            "start_coord": 1
+        },
+        "mibig_accession": "BGC0002443",
+        "minimal": true,
+        "ncbi_tax_id": "47716",
+        "organism_name": "Streptomyces olivaceus",
+        "publications": [
+            "pubmed:29558441"
+        ],
+        "status": "active"
+    }
+}

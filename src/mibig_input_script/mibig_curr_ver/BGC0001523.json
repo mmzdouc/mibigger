@@ -1,0 +1,77 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    }
+                ],
+                "chem_struct": "CC(CCC\\C=C\\CCCNC(N)=N)C1OC(=O)\\C(C)=C/C=C\\C(C)C(O)CC(O)C(C)C(O)CCC(C)C(O)CC2(O)OC(CC(O)C2O)CC(CC(O)CC(O)CC(O)\\C(C)=C/C=C\\C1C)OC(=O)CC(O)=O",
+                "compound": "azalomycin F3a",
+                "database_id": [
+                    "npatlas:NPA05717"
+                ],
+                "mol_mass": 1067.6504985160002,
+                "molecular_formula": "C55H93N3O17"
+            }
+        ],
+        "loci": {
+            "accession": "KY484834.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001523",
+        "minimal": true,
+        "ncbi_tax_id": "686293",
+        "organism_name": "Streptomyces sp. 211726",
+        "publications": [
+            "pubmed:28418225"
+        ],
+        "status": "active"
+    }
+}

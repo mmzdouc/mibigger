@@ -1,0 +1,589 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "DPAKSDGGIIU3JRGIDNMS7RSG"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated reference publication(s) (MIBiG Annotathon)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Corrected NRP module activity",
+                "Removed gene names of 'No gene ID'",
+                "Removed ketoreductase stereochemistry annotation from modules without ketoreductases",
+                "Removed extra gene with no information",
+                "Changed amino acid substrates to lower case"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "4-amido-2,4-pentadienoate",
+                        "subcluster": [
+                            "WP_019032754.1"
+                        ]
+                    },
+                    {
+                        "moiety": "Lipid",
+                        "subcluster": [
+                            "WP_019032757.1"
+                        ]
+                    }
+                ],
+                "chem_struct": "O=C(CNC([C@](O)(C)C1=O)=O)NC(/C=C/C(N(C)CC(O[C@@H](CCCCCCCCCCC(C)C)[C@@H]1C)=O)=O)=C",
+                "compound": "BE-43547A1",
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry",
+                    "Total synthesis"
+                ],
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 563.357050908,
+                "molecular_formula": "C30H49N3O7"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "Lipid",
+                        "subcluster": [
+                            "WP_019032757.1"
+                        ]
+                    },
+                    {
+                        "moiety": "4-amido-2,4-pentadienoate",
+                        "subcluster": [
+                            "WP_019032754.1"
+                        ]
+                    }
+                ],
+                "chem_struct": "O=C(CNC([C@](O)(C)C1=O)=O)NC(/C=C/C(N(C)CC(O[C@@H](CCCCCCCCCCCCC)[C@@H]1C)=O)=O)=C",
+                "compound": "BE-43547A2",
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry"
+                ],
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 563.357050908,
+                "molecular_formula": "C30H49N3O7"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "Lipid",
+                        "subcluster": [
+                            "WP_019032757.1"
+                        ]
+                    },
+                    {
+                        "moiety": "4-amido-2,4-pentadienoate",
+                        "subcluster": [
+                            "WP_019032754.1"
+                        ]
+                    }
+                ],
+                "chem_struct": "O=C(CNC([C@](O)(C)C1=O)=O)NC(/C=C/C(N(C)CC(O[C@@H](CCCCCCCCCCC(C)CC)[C@@H]1C)=O)=O)=C",
+                "compound": "BE-43547B1",
+                "evidence": [
+                    "Mass spectrometry"
+                ],
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 577.372700972,
+                "molecular_formula": "C31H51N3O7"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "Lipid",
+                        "subcluster": [
+                            "WP_019032757.1"
+                        ]
+                    },
+                    {
+                        "moiety": "4-amido-2,4-pentadienoate",
+                        "subcluster": [
+                            "WP_019032754.1"
+                        ]
+                    }
+                ],
+                "chem_struct": "O=C(CNC([C@](O)(C)C1=O)=O)NC(/C=C/C(N(C)CC(O[C@@H](CCCCCCCCCCCC(C)C)[C@@H]1C)=O)=O)=C",
+                "compound": "BE-43547B2",
+                "evidence": [
+                    "Mass spectrometry"
+                ],
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 577.372700972,
+                "molecular_formula": "C31H51N3O7"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "Lipid",
+                        "subcluster": [
+                            "WP_019032757.1"
+                        ]
+                    },
+                    {
+                        "moiety": "4-amido-2,4-pentadienoate",
+                        "subcluster": [
+                            "WP_019032754.1"
+                        ]
+                    }
+                ],
+                "chem_struct": "O=C(CNC([C@](O)(C)C1=O)=O)NC(/C=C/C(N(C)CC(O[C@@H](CCCCCCCCCCCCCC)[C@@H]1C)=O)=O)=C",
+                "compound": "BE-43547B3",
+                "evidence": [
+                    "Mass spectrometry"
+                ],
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 577.372700972,
+                "molecular_formula": "C31H51N3O7"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "Lipid",
+                        "subcluster": [
+                            "WP_019032757.1"
+                        ]
+                    },
+                    {
+                        "moiety": "4-amido-2,4-pentadienoate",
+                        "subcluster": [
+                            "WP_019032754.1"
+                        ]
+                    }
+                ],
+                "chem_struct": "O=C(CNC([C@](O)(C)C1=O)=O)NC(/C=C/C(N(C)CC(O[C@@H](CCCCCCCCCCCCCCC)[C@@H]1C)=O)=O)=C",
+                "compound": "BE-43547C1",
+                "evidence": [
+                    "Mass spectrometry"
+                ],
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 591.388351036,
+                "molecular_formula": "C32H53N3O7"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "Lipid",
+                        "subcluster": [
+                            "WP_019032757.1"
+                        ]
+                    },
+                    {
+                        "moiety": "4-amido-2,4-pentadienoate",
+                        "subcluster": [
+                            "WP_019032754.1"
+                        ]
+                    }
+                ],
+                "chem_struct": "O=C(CNC([C@](O)(C)C1=O)=O)NC(/C=C/C(N(C)CC(O[C@@H](CCCCCCCCCCCCC(C)C)[C@@H]1C)=O)=O)=C",
+                "compound": "BE-43547C2",
+                "evidence": [
+                    "Mass spectrometry"
+                ],
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 591.388351036,
+                "molecular_formula": "C32H53N3O7"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Transport",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "WP_019032749.1",
+                    "product": "hypothetical protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Transport",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "WP_019032750.1",
+                    "product": "multidrug ABC transporter ATP-binding protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "WP_019032752.1",
+                    "product": "hypothetical protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "WP_019032753.1",
+                    "product": "non-ribosomal peptide synthetase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "WP_019032754.1",
+                    "product": "type I polyketide synthase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "WP_019032755.1",
+                    "product": "non-ribosomal peptide synthetase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "WP_019032756.1",
+                    "product": "type I polyketide synthase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "WP_019032757.1",
+                    "product": "type I polyketide synthase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "WP_019032758.1",
+                    "product": "hypothetical protein",
+                    "tailoring": [
+                        "Monooxygenation"
+                    ]
+                },
+                {
+                    "comments": "Derived by automated computational analysis using gene prediction method: GeneMarkS+.",
+                    "id": "F583_RS0124875",
+                    "product": "hypothetical protein"
+                }
+            ],
+            "extra_genes": [
+                {
+                    "id": "F583_RS0124875",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 44587,
+                                "start": 44342
+                            }
+                        ],
+                        "strand": -1
+                    }
+                }
+            ]
+        },
+        "loci": {
+            "accession": "NZ_KB900339.1",
+            "completeness": "complete",
+            "end_coord": 45645,
+            "start_coord": 10670
+        },
+        "mibig_accession": "BGC0001331",
+        "minimal": false,
+        "ncbi_tax_id": "1169167",
+        "nrp": {
+            "cyclic": true,
+            "nrps_genes": [
+                {
+                    "gene_id": "WP_019032755.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glycine",
+                                        "proteinogenic": true,
+                                        "structure": "NCC(=O)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "3"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "4"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "WP_019032753.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glycine",
+                                        "proteinogenic": true,
+                                        "structure": "NCC(=O)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "Methylation"
+                            ],
+                            "module_number": "6"
+                        },
+                        {
+                            "active": false,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "7",
+                            "non_canonical": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "iterated": false,
+                                "non_elongating": false,
+                                "skipped": false
+                            }
+                        }
+                    ]
+                }
+            ],
+            "release_type": [
+                "Macrolactonization"
+            ],
+            "subclass": "Cyclic depsipeptide",
+            "thioesterases": [
+                {
+                    "gene": "WP_019032752.1",
+                    "thioesterase_type": "Unknown"
+                }
+            ]
+        },
+        "organism_name": "Salinispora arenicola CNR107",
+        "polyketide": {
+            "cyclic": true,
+            "release_type": [
+                "Macrolactonization"
+            ],
+            "subclasses": [
+                "Macrolide"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "WP_019032756.1",
+                        "WP_019032754.1",
+                        "WP_019032757.1"
+                    ],
+                    "modules": [
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "CoA-ligase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "genes": [
+                                "WP_019032757.1"
+                            ],
+                            "module_number": "0"
+                        },
+                        {
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "genes": [
+                                "WP_019032757.1"
+                            ],
+                            "kr_stereochem": "L-OH",
+                            "module_number": "1"
+                        },
+                        {
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "genes": [
+                                "WP_019032756.1"
+                            ],
+                            "module_number": "2"
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "genes": [
+                                "WP_019032754.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "5"
+                        }
+                    ],
+                    "subclass": [
+                        "Modular type I"
+                    ]
+                }
+            ]
+        },
+        "publications": [
+            "pubmed:28221346"
+        ],
+        "status": "active"
+    },
+    "comments": "The only prior publication on this class of molecules are a japanese patent from 1998. I put in a placeholder PMID until our paper is accepted."
+}

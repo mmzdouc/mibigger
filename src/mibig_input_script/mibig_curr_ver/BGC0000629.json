@@ -1,0 +1,47 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Terpene"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "[H][C@]12CC3=C(NC4=CC=CC(=C34)C(C)(C)C=C)[C@]1(C)[C@@]1(C)CC[C@@]34O[C@@H](C(=O)C=C3[C@]1(O)CC2)C(C)(C)O4",
+                "compound": "aflatrem",
+                "database_id": [
+                    "npatlas:NPA013289",
+                    "pubchem:107718"
+                ],
+                "mol_mass": 501.2879087279999,
+                "molecular_formula": "C32H39NO4"
+            }
+        ],
+        "loci": {
+            "accession": "AY559849.2",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000629",
+        "minimal": true,
+        "ncbi_tax_id": "5059",
+        "organism_name": "Aspergillus flavus",
+        "publications": [
+            "pubmed:15528556",
+            "pubmed:19801473"
+        ],
+        "retirement_reasons": [
+            "Retired in the 2.0 release for unknown reasons"
+        ],
+        "status": "retired"
+    }
+}

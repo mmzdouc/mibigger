@@ -1,0 +1,284 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.3"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (MIBiG Annotathon)",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Removed empty gene annotations",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antifungal"
+                    }
+                ],
+                "chem_struct": "CC1=CC(O)=CC2=C1C1OC(C)(CC3=C1C(O)=C1C(=O)C4=C(C=C(O)C=C4O)C(C)(C)C1=C3)O2",
+                "compound": "BE-24566B",
+                "database_id": [
+                    "npatlas:NPA01814",
+                    "pubchem:9868865"
+                ],
+                "mol_mass": 460.1522031079999,
+                "molecular_formula": "C27H24O7"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antifungal"
+                    }
+                ],
+                "chem_struct": "CC1=CC(O)=C(Cl)C2=C1C1OC(C)(CC3=C1C(O)=C1C(=O)C4=C(C(Cl)=C(O)C=C4O)C(C)(C)C1=C3)O2",
+                "compound": "zunyimycin A",
+                "mol_mass": 528.0742584039999,
+                "molecular_formula": "C27H22Cl2O7"
+            }
+        ],
+        "genes": {
+            "extra_genes": [
+                {
+                    "id": "ctg1_orf1",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 274,
+                                "start": 11
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "ctg1_orf2",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 2492,
+                                "start": 681
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "ctg1_orf3",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 3191,
+                                "start": 2568
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "ctg1_orf4",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 4846,
+                                "start": 3374
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "ctg1_orf5",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 5694,
+                                "start": 5011
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "ctg1_orf6",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 6168,
+                                "start": 5743
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "ctg1_orf7",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 7430,
+                                "start": 6165
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "ctg1_orf8",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 8707,
+                                "start": 7427
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "ctg1_orf9",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 8982,
+                                "start": 8725
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "ctg1_orf10",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 9494,
+                                "start": 8991
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "ctg1_orf11",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 9882,
+                                "start": 9541
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "ctg1_orf12",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 11211,
+                                "start": 9901
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "ctg1_orf13",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 11489,
+                                "start": 11019
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "ctg1_orf14",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 12585,
+                                "start": 11554
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "ctg1_orf15",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 14057,
+                                "start": 12582
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "ctg1_orf16",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 15268,
+                                "start": 14222
+                            }
+                        ],
+                        "strand": 1
+                    }
+                }
+            ]
+        },
+        "loci": {
+            "accession": "KU243130.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001366",
+        "minimal": true,
+        "ncbi_tax_id": "1840610",
+        "organism_name": "Streptomyces sp. FJS31-2",
+        "publications": [
+            "pubmed:27248985"
+        ],
+        "status": "active"
+    }
+}

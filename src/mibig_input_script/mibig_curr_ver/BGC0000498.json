@@ -1,0 +1,73 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "signalling"
+                    }
+                ],
+                "compound": "bovicin HJ50"
+            }
+        ],
+        "loci": {
+            "accession": "EU497962.2",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000498",
+        "minimal": true,
+        "ncbi_tax_id": "1335",
+        "organism_name": "Streptococcus equinus",
+        "publications": [
+            "pubmed:19202107"
+        ],
+        "ripp": {
+            "subclass": "Lanthipeptide"
+        },
+        "status": "active"
+    }
+}

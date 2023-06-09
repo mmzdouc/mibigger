@@ -1,0 +1,69 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cyst formation"
+                    }
+                ],
+                "compound": "phenolic lipids"
+            }
+        ],
+        "loci": {
+            "accession": "CP001157.1",
+            "completeness": "Unknown",
+            "end_coord": 3053697,
+            "start_coord": 3041749
+        },
+        "mibig_accession": "BGC0000284",
+        "minimal": true,
+        "ncbi_tax_id": "322710",
+        "organism_name": "Azotobacter vinelandii DJ",
+        "publications": [
+            "pubmed:16597676"
+        ],
+        "status": "active"
+    }
+}

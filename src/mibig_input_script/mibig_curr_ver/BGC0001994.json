@@ -1,0 +1,76 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Cleaned up synonym list",
+                "Fetch compound properties from PubChem",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11",
+                "Merge annotations from duplicate entry BGC0002094"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "C#C[C@H]([C@@H](C(=O)O)N)O",
+                "chem_synonyms": [
+                    "beta-ethynylserine",
+                    "L-beta-ethynylserine"
+                ],
+                "compound": "β-ethynylserine",
+                "database_id": [
+                    "pubchem:127838"
+                ],
+                "mol_mass": 129.042593,
+                "molecular_formula": "C5H7NO3"
+            }
+        ],
+        "loci": {
+            "accession": "NC_016113.1",
+            "completeness": "Unknown",
+            "end_coord": 1132417,
+            "evidence": [
+                "Heterologous expression"
+            ],
+            "start_coord": 1125448
+        },
+        "mibig_accession": "BGC0001994",
+        "minimal": true,
+        "ncbi_tax_id": "1003195",
+        "organism_name": "Streptomyces cattleya NRRL 8057 = DSM 46488",
+        "publications": [
+            "pubmed:30867596"
+        ],
+        "status": "active"
+    }
+}

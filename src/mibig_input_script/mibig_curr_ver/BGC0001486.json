@@ -1,0 +1,57 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "ZMZXFLPDGFEHMQPX76IB4OQ3"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Fixed DOI",
+                "Merged annotations from duplicate entry BGC0002027"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "compound": "3-thiaglutamate"
+            }
+        ],
+        "loci": {
+            "accession": "AEAK01000424.1",
+            "completeness": "Unknown",
+            "end_coord": 22510,
+            "start_coord": 11297
+        },
+        "mibig_accession": "BGC0001486",
+        "minimal": true,
+        "ncbi_tax_id": "629265",
+        "organism_name": "Pseudomonas syringae pv. maculicola str. ES4326",
+        "publications": [
+            "doi:10.1101/338681",
+            "pubmed:31320540"
+        ],
+        "status": "active"
+    }
+}

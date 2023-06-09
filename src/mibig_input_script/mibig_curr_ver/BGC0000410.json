@@ -1,0 +1,105 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated reference publication(s) (MIBiG Annotathon)",
+                "Updated compound(s) information (MIBiG Annotathon)",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Cleaned up synonym list",
+                "Updated bioactivity data",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "siderophore"
+                    }
+                ],
+                "chem_struct": "CC1ON(CCC2=CNC=N2)C(=O)C1NC(=O)C1=CC=CC=C1O",
+                "compound": "pseudomonine",
+                "database_id": [
+                    "npatlas:NPA014034"
+                ],
+                "mol_mass": 330.13280505599994,
+                "molecular_formula": "C16H18N4O4"
+            }
+        ],
+        "loci": {
+            "accession": "EF484930.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000410",
+        "minimal": false,
+        "ncbi_tax_id": "294",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "ABS50184.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "ATP-PPi exchange assay"
+                                ],
+                                "publications": [
+                                    "pubmed:18710233"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "threonine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@H]([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Pseudomonas fluorescens",
+        "publications": [
+            "pubmed:11222588"
+        ],
+        "status": "active"
+    }
+}

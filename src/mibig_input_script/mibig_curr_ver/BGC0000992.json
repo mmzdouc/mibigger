@@ -1,0 +1,95 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Update compound structure (SMILES) for fusaridione A",
+                "Linked new PubChem id for fusaridione A (pubchem:91819845)",
+                "Add new compound: (3R,5S)-5-(4-hydroxybenzyl)-3-methyl-3-((2E,4E,6E,8E,10E)-4,8,10-trimethyldodeca-2,4,6,8,10-pentaenoyl)pyrrolidine-2,4-dione",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "5UL74VURKJ25VSPPPO3H2NYB",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C/C=C(\\C)/C=C(\\C)/C=C/C=C(\\C)/C=C/C(=O)[C@@]1(C(=O)[C@@H](NC1=O)CC2=CC=C(C=C2)O)C",
+                "compound": "fusaridione A",
+                "database_id": [
+                    "pubchem:5458342",
+                    "pubchem:91819845"
+                ],
+                "mol_mass": 433.225308472,
+                "molecular_formula": "C27H31NO4"
+            },
+            {
+                "chem_struct": "C/C=C(/C=C(/C=C/C=C(/C=C/C(C(C)C(N[C@H](CC1=CC=C(O)C=C1)C(O)=O)=O)=O)C)C)C",
+                "compound": "(3R,5S)-5-(4-hydroxybenzyl)-3-methyl-3-((2E,4E,6E,8E,10E)-4,8,10-trimethyldodeca-2,4,6,8,10-pentaenoyl)pyrrolidine-2,4-dione",
+                "mol_mass": 451.23587315599985,
+                "molecular_formula": "C27H33NO5"
+            }
+        ],
+        "loci": {
+            "accession": "AY700570.3",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000992",
+        "minimal": false,
+        "ncbi_tax_id": "42747",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "AAV66110.2",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "publications": [
+                                    "pubmed:23614392"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "tyrosine",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC(=CC=C1C[C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Fusarium heterosporum",
+        "publications": [
+            "pubmed:15724180",
+            "pubmed:23614392"
+        ],
+        "status": "active"
+    }
+}

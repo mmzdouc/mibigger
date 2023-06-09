@@ -1,0 +1,41 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "compound": "nisin J"
+            }
+        ],
+        "loci": {
+            "accession": "MN602039.1",
+            "completeness": "Unknown",
+            "end_coord": 31905,
+            "start_coord": 22148
+        },
+        "mibig_accession": "BGC0002323",
+        "minimal": true,
+        "ncbi_tax_id": "29388",
+        "organism_name": "Staphylococcus capitis",
+        "publications": [
+            "pubmed:31740495"
+        ],
+        "ripp": {
+            "cyclic": true,
+            "subclass": "Lanthipeptide"
+        },
+        "status": "active"
+    }
+}

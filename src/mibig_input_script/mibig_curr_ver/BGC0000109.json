@@ -1,0 +1,75 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated reference publication(s) (MIBiG Annotathon)",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "anthelmintic"
+                    }
+                ],
+                "chem_struct": "[H][C@@]12OC\\C3=C/C=C/[C@H](C)C\\C(C)=C\\C[C@@H]4C[C@@H](C[C@]5(C[C@H](O)[C@H](C)[C@H](O5)C(\\C)=C\\C(C)C)O4)OC(=O)[C@H](C=C(C)[C@H]1O)[C@@]23O",
+                "compound": "LL-F28249α",
+                "database_id": [
+                    "npatlas:NPA02610"
+                ],
+                "mol_mass": 612.366218624,
+                "molecular_formula": "C36H52O8"
+            }
+        ],
+        "loci": {
+            "accession": "AB363939.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000109",
+        "minimal": true,
+        "ncbi_tax_id": "477245",
+        "organism_name": "Streptomyces cyaneogriseus subsp. noncyanogenus",
+        "publications": [
+            "patent:US7670827B2"
+        ],
+        "status": "active"
+    }
+}

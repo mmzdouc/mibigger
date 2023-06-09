@@ -1,0 +1,62 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Extended location to include missing genes"
+            ],
+            "contributors": [
+                "64RUXY2S4BJ436Z2M77CGKA7"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CCC1C(C(C(/C=C\\C=C/C=C\\C=C/C=C\\C(C[C@H]2[C@@]([C@H](C[C@](O2)(C[C@H](C[C@H]([C@@H](CCC(=O)O1)O)O)O)O)O)(C)O)O[C@H]3[C@H]([C@H]([C@@H]([C@H](O3)C)O)O)O)C)[C@H]4C[C@H]([C@H]([C@@H](O4)C)OC)O)C",
+                "compound": "selvamicin",
+                "database_id": [
+                    "pubchem:132609742"
+                ],
+                "mol_mass": 912.508250972,
+                "molecular_formula": "C47H76O17"
+            }
+        ],
+        "loci": {
+            "accession": "CP013855.1",
+            "completeness": "Unknown",
+            "end_coord": 204191,
+            "start_coord": 94748
+        },
+        "mibig_accession": "BGC0001773",
+        "minimal": true,
+        "ncbi_tax_id": "1690815",
+        "organism_name": "Pseudonocardia sp. HH130630-07",
+        "publications": [
+            "pubmed:27803316"
+        ],
+        "status": "active"
+    }
+}

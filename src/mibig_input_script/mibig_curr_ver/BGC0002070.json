@@ -1,0 +1,64 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Changed chemical structures for compounds: pentangumycin, SEK90.",
+                "Added NPAtlas links to compounds: pentangumycin, SEK90."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CCCC(C1=C(O)C=C(CC2=CC=CC(O)=C2C(=O)C2=C(O)C=C(O)C=C2C)OC1=O)C1=C(O)C=C(CC2=CC=CC(O)=C2C(=O)C2=C(O)C=C(O)C=C2C)OC1=O",
+                "compound": "SEK90",
+                "database_id": [
+                    "npatlas:NPA033499"
+                ]
+            },
+            {
+                "chem_struct": "COC1=CC(CNC(C)=O)=CC2=CC(C3=CC=C(O)C=C3)=C3C(=O)C4=C(C=CC=C4O)C(=O)C3=C12",
+                "compound": "pentangumycin",
+                "database_id": [
+                    "npatlas:NPA033498"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "HE804045.1",
+            "completeness": "Unknown",
+            "end_coord": 6148184,
+            "evidence": [
+                "Heterologous expression",
+                "Knock-out studies",
+                "Gene expression correlated with compound production"
+            ],
+            "start_coord": 6124164
+        },
+        "mibig_accession": "BGC0002070",
+        "minimal": true,
+        "ncbi_tax_id": "1179773",
+        "organism_name": "Saccharothrix espanaensis DSM 44229",
+        "publications": [
+            "pubmed:33352664",
+            "doi:10.3390/microorganisms8122034"
+        ],
+        "status": "active"
+    }
+}

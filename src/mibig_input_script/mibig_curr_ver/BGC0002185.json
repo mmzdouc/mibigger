@@ -1,0 +1,39 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC/C=C/C=C/C1(C(=O)C(=C(O1)OC)C(=O)/C=C/C)C",
+                "compound": "gregatin A",
+                "database_id": [
+                    "pubchem:101316768"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "LC522971.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0002185",
+        "minimal": true,
+        "ncbi_tax_id": "5081",
+        "organism_name": "Penicillium sp.",
+        "publications": [
+            "pubmed:32275405"
+        ],
+        "status": "active"
+    }
+}

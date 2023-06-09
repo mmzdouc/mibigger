@@ -1,0 +1,106 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated reference publication(s) (MIBiG Annotathon)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Add product details",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "SJG3CBEHSM6A3I74YXLH6GLA",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "C1=C(C=C(C(=C1C2=C(C(=CC(=C2)Br)Br)O)O)Br)Br",
+                "compound": "bromophene",
+                "database_id": [
+                    "pubchem:30891"
+                ],
+                "mol_mass": 501.70603,
+                "molecular_formula": "C12H6Br4O2"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "C1(=C(C(=C(N1)Br)Br)Br)C2=C(C(=C(N2)Br)Br)Br",
+                "compound": "bistribromopyrrole",
+                "database_id": [
+                    "pubchem:23426790"
+                ],
+                "mol_mass": 605.52568,
+                "molecular_formula": "C8H2Br6N2"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "C1=C(C=C(C(=C1C2=C(C(=C(N2)Br)Br)Br)O)Br)Br",
+                "compound": "pentabromopseudilin",
+                "database_id": [
+                    "pubchem:324093"
+                ],
+                "mol_mass": 552.61688,
+                "molecular_formula": "C10H4Br5NO"
+            }
+        ],
+        "loci": {
+            "accession": "NC_015276.1",
+            "completeness": "Unknown",
+            "end_coord": 4533494,
+            "start_coord": 4521275
+        },
+        "mibig_accession": "BGC0001465",
+        "minimal": true,
+        "ncbi_tax_id": "717774",
+        "organism_name": "Marinomonas mediterranea MMB-1",
+        "publications": [
+            "pubmed:24974229"
+        ],
+        "status": "active"
+    }
+}

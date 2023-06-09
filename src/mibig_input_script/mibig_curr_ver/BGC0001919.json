@@ -1,0 +1,120 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Cleaned up synonym list",
+                "Fetch compound properties from PubChem",
+                "Updated bioactivity data",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CCC(C)C1C(=O)OC(C(C(=O)OC(C(=O)OC(C(C(C(=O)O1)(C)C)O)CC2=CC=CC=C2)C(C)C)NC(=O)C3=C(C(=CC=C3)NC=O)O)C",
+                "compound": "neoantimycin",
+                "database_id": [
+                    "pubchem:585842"
+                ],
+                "mol_mass": 698.305075,
+                "molecular_formula": "C36H46N2O12"
+            }
+        ],
+        "loci": {
+            "accession": "LC375136.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001919",
+        "minimal": false,
+        "ncbi_tax_id": "67339",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "BBD17759.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Homology",
+                                    "Heterologous expression"
+                                ],
+                                "publications": [
+                                    "pubmed:30166552"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "threonine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@H]([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "BBD17766.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Homology",
+                                    "Heterologous expression"
+                                ],
+                                "publications": [
+                                    "pubmed:30166552"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "anthanillic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC=C(C(=C1)C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Streptomyces orinoci",
+        "publications": [
+            "pubmed:30166552"
+        ],
+        "status": "active"
+    }
+}

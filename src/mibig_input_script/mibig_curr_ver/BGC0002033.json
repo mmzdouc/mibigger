@@ -1,0 +1,71 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Cleaned up synonym list",
+                "Fetch compound properties from PubChem",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antiprotozoal"
+                    }
+                ],
+                "chem_struct": "C[C@@H]1C/C=C/C=C/[C@@H]([C@@H](C[C@@H]([C@@H]([C@H]([C@@H](CC(=O)O1)O)OC)OC2C(C(C(C(O2)C)OC3CC(C(C(O3)C)O)(C)O)N(C)C)O)CC=O)C)OC4CCC(C(O4)C)N(C)C",
+                "compound": "spiramycin",
+                "database_id": [
+                    "pubchem:6419898"
+                ],
+                "mol_mass": 842.514005,
+                "molecular_formula": "C43H74N2O14"
+            }
+        ],
+        "loci": {
+            "accession": "NZ_CP012382.1",
+            "completeness": "Unknown",
+            "end_coord": 6057980,
+            "start_coord": 5967886
+        },
+        "mibig_accession": "BGC0002033",
+        "minimal": true,
+        "ncbi_tax_id": "278992",
+        "organism_name": "Streptomyces ambofaciens ATCC 23877",
+        "publications": [
+            "pubmed:18048924"
+        ],
+        "status": "active"
+    }
+}

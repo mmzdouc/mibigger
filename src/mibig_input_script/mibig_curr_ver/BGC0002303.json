@@ -1,0 +1,54 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Changed chemical structures for compounds: pristinin A3.",
+                "Added NPAtlas links to compounds: pristinin A3."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C=C1NC(=O)C(NC(=O)C(C)NC(=O)C(NC(=O)C(C)NC(=O)C(C)NC(=O)C(C)NC(=O)C2CSC(C)C(N(C)C)C(=O)N/C(=C\\C)C(=O)C3CCCC3C(=O)NC(C(C)C)C(=O)N2)C(C)C)CSCC(C(=O)NC(C)C(=O)NC(C)C(=O)NC(C)C(=O)NC(C)C(=O)NC(C)C(=O)NC(C)C(=O)NC(C(=O)NC(C)C(=O)NCC(=O)NC(C)C(=O)NC2C(=O)NC(CC3=CC=C(O)C=C3)C(=O)NC(CCC(=O)O)C(=O)NC(C)C(=O)NCC(=O)N/C=C\\SC2C)C(C)CC)NC(=O)C(CC2=C[NH]C3=CC=CC=C23)NC(=O)/C(=C/C)NC1=O",
+                "compound": "pristinin A3",
+                "database_id": [
+                    "npatlas:NPA032995"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "CP011340.1",
+            "completeness": "Unknown",
+            "end_coord": 4390172,
+            "evidence": [
+                "Gene expression correlated with compound production"
+            ],
+            "start_coord": 4374106
+        },
+        "mibig_accession": "BGC0002303",
+        "minimal": true,
+        "ncbi_tax_id": "38300",
+        "organism_name": "Streptomyces pristinaespiralis",
+        "publications": [
+            "pubmed:33351797"
+        ],
+        "status": "active"
+    }
+}

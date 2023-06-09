@@ -1,0 +1,43 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C[C@H]([C@@H](/C=C/C=C/C=C/C=C/C(C)=C/C(C)=C/CC)OC(C1)=O)C1=O",
+                "compound": "4-methyl-5-dimethyltetradecahexaene-β-ketolactone"
+            },
+            {
+                "chem_struct": "C\\C=C\\C=C\\C=C(/C)C1OC(=O)CC(=O)C1C",
+                "compound": "4-methyl-5-methylheptatriene-β-ketolactone"
+            }
+        ],
+        "loci": {
+            "accession": "LC492132.1",
+            "completeness": "Unknown",
+            "evidence": [
+                "Heterologous expression"
+            ]
+        },
+        "mibig_accession": "BGC0002170",
+        "minimal": true,
+        "ncbi_tax_id": "1549217",
+        "organism_name": "Aspergillus stellatus",
+        "publications": [
+            "pubmed:31678008"
+        ],
+        "status": "active"
+    }
+}

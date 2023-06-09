@@ -1,0 +1,425 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "B54ZPFB4PBVBWY2K6JZNBOD5"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Corrected NRP module activity",
+                "Removed extra genes with no information",
+                "Fix coordinates",
+                "Corrected NRP module 3",
+                "Updated NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "inhibitor"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "Ureido bond"
+                    }
+                ],
+                "chem_struct": "CC[C@H](C)[C@@H]1NC(=O)[C@@H](CCCCNC(=O)[C@H](CCC2=CC=C(O)C=C2)NC(=O)CN(C)C(=O)[C@H](CCC2=CC=C(O)C=C2)NC1=O)NC(=O)N[C@@H](CC1=CC=CC=C1)C(O)=O",
+                "chem_targets": [
+                    {
+                        "target": "Protease"
+                    }
+                ],
+                "compound": "anabaenopeptin NZ857",
+                "database_id": [
+                    "npatlas:NPA06342",
+                    "pubchem:133562467"
+                ],
+                "evidence": [
+                    "Mass spectrometry"
+                ],
+                "mol_mass": 857.4323410879999,
+                "molecular_formula": "C45H59N7O10"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "inhibitor"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "Ureido bond"
+                    }
+                ],
+                "chem_struct": "O=C(NCCCC[C@@H](NC(N[C@@H](CC1=CC=CC=C1)C(O)=O)=O)C2=O)[C@H](CCC3=CC=C(O)C=C3)NC(CN(C)C([C@@H](NC([C@@H](N2)[C@@H](CC)C)=O)CCC4=CC=CC=C4)=O)=O",
+                "chem_targets": [
+                    {
+                        "target": "Protease"
+                    }
+                ],
+                "compound": "nostamide A",
+                "evidence": [
+                    "Mass spectrometry"
+                ],
+                "mol_mass": 841.437426468,
+                "molecular_formula": "C45H59N7O9"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "id": "ACC81018.1",
+                    "name": "hphB",
+                    "product": "isocitrate/isopropylmalate dehydrogenase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "id": "ACC81019.1",
+                    "name": "hphC",
+                    "product": "homoaconitate hydratase family protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "id": "ACC81020.1",
+                    "name": "hphD",
+                    "product": "conserved hypothetical protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ACC81021.1",
+                    "name": "aptA",
+                    "product": "non-ribosomal peptide synthetase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ACC81022.1",
+                    "name": "aptB",
+                    "product": "non-ribosomal peptide synthetase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ACC81023.1",
+                    "name": "aptC",
+                    "product": "non-ribosomal peptide synthetase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "ACC81024.1",
+                    "name": "aptD",
+                    "product": "non-ribosomal peptide synthetase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "id": "ACC81025.1",
+                    "name": "hphA/aptE",
+                    "product": "pyruvate carboxyltransferase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Transport",
+                            "evidence": [
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "id": "ACC81026.1",
+                    "name": "aptF",
+                    "product": "ABC Transporter"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "CP001037.1",
+            "completeness": "complete",
+            "end_coord": 3081156,
+            "evidence": [
+                "Heterologous expression"
+            ],
+            "start_coord": 3052001
+        },
+        "mibig_accession": "BGC0001479",
+        "minimal": false,
+        "ncbi_tax_id": "63737",
+        "nrp": {
+            "cyclic": true,
+            "nrps_genes": [
+                {
+                    "gene_id": "ACC81021.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "doi:10.1016/j.chembiol.2010.01.017"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "phenylalanine",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC=C(C=C1)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "module_number": "0"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": true,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "doi:10.1016/j.chembiol.2010.01.017"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "lysine",
+                                        "proteinogenic": true,
+                                        "structure": "C(CCN)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Dual",
+                            "module_number": "1"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "ACC81022.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "doi:10.1016/j.chembiol.2010.01.017"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "isoleucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC[C@H](C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "DCL",
+                            "module_number": "2"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "ACC81023.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "doi:10.1016/j.chembiol.2010.01.017"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "homotyrosine",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC(=CC=C1CC[C@@H](C(=O)O)N)O"
+                                    },
+                                    {
+                                        "name": "homophenylalanine",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC=C(C=C1)CC[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "3"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "doi:10.1016/j.chembiol.2010.01.017"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glycine",
+                                        "proteinogenic": true,
+                                        "structure": "NCC(=O)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "integrated_monomers": [
+                                {
+                                    "evidence": [
+                                        "Structure-based inference"
+                                    ],
+                                    "name": "N-methylglycine",
+                                    "structure": "CNCC(=O)O"
+                                }
+                            ],
+                            "modification_domains": [
+                                "N-methylation"
+                            ],
+                            "module_number": "4"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "ACC81024.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "doi:10.1016/j.chembiol.2010.01.017"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "homotyrosine",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC(=CC=C1CC[C@@H](C(=O)O)N)O"
+                                    },
+                                    {
+                                        "name": "homophenylalanine",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC=C(C=C1)CC[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "5"
+                        }
+                    ]
+                }
+            ],
+            "release_type": [
+                "Hydrolysis"
+            ],
+            "thioesterases": [
+                {
+                    "gene": "ACC81024.1",
+                    "thioesterase_type": "Type I"
+                }
+            ]
+        },
+        "organism_name": "Nostoc punctiforme PCC 73102",
+        "publications": [
+            "pubmed:20338518",
+            "pubmed:29548983",
+            "pubmed:23354699"
+        ],
+        "status": "active"
+    }
+}

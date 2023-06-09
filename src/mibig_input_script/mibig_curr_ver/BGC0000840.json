@@ -1,0 +1,74 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "NQ4XH53U6SBHJITINA72OVAX"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "pigment"
+                    }
+                ],
+                "chem_struct": "COC1=C(Br)C=CC(=C1)C(\\Br)=C\\C=C\\C=C\\C=C\\C=C\\C=C\\C=C\\C=C\\C(=O)OCC(C)C",
+                "compound": "xanthomonadin I",
+                "database_id": [
+                    "npatlas:NPA012218"
+                ],
+                "mol_mass": 572.05616902,
+                "molecular_formula": "C28H30Br2O3"
+            }
+        ],
+        "loci": {
+            "accession": "AY010120.2",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000840",
+        "minimal": true,
+        "ncbi_tax_id": "64187",
+        "organism_name": "Xanthomonas oryzae pv. oryzae",
+        "publications": [
+            "pubmed:12057948"
+        ],
+        "status": "active"
+    }
+}

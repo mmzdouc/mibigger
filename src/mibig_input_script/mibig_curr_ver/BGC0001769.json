@@ -1,0 +1,77 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "C[C@@H]1O[C@H](CC[C@@H]1O[C@@H]1O[C@@H](C)C(=O)C=C1)O[C@@]1(C)CC(=O)[C@]2(O)C3=C(C=C[C@]2(O)C1)C(=O)C1=C(O)C(=CC=C1C3=O)[C@H]1C[C@@H](O)[C@H](O[C@@H]2O[C@@H](C)C(=O)C=C2)[C@@H](C)O1",
+                "compound": "saquayamycin A",
+                "database_id": [
+                    "npatlas:NPA010796"
+                ],
+                "mol_mass": 820.294235456,
+                "molecular_formula": "C43H48O16"
+            }
+        ],
+        "loci": {
+            "accession": "KX356541.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001769",
+        "minimal": true,
+        "ncbi_tax_id": "1931",
+        "organism_name": "Streptomyces sp.",
+        "publications": [
+            "pubmed:28892347"
+        ],
+        "status": "active"
+    }
+}

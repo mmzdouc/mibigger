@@ -1,0 +1,196 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "HILCSTTNNBO2LQISZK5KTJZB"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Corrected organism name",
+                "Retired due to involving multiple contigs",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "I3D2K5SU7JJDS2LEEQM3W3SO",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Saccharide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "farnesyl-3-phosphoglycerate",
+                        "subcluster": [
+                            "abj90164.1"
+                        ]
+                    }
+                ],
+                "chem_struct": "[H][C@](COP(O)(=O)O[C@H]1O[C@H](C(N)=O)[C@@](C)(O)[C@H](OC(N)=O)[C@H]1O[C@@H]1O[C@H](CO[C@@H]2O[C@H](CO)[C@@H](O)[C@H](O)[C@H]2O)[C@@H](O[C@@H]2O[C@H](C)[C@@H](O[C@@H]3O[C@@H]([C@H](O)[C@H](O)[C@H]3O)C(=O)NC3=C(O)CCC3=O)[C@H](O)[C@H]2NC(C)=O)[C@H](O)[C@H]1NC(C)=O)(OC\\C=C(\\C)CC\\C=C\\C(C)(C)CCC(=C)C\\C=C(/C)CCC=C(C)C)C(O)=O",
+                "chem_synonyms": [
+                    "bambermycin",
+                    "flavofosfolipol",
+                    "flavomycin"
+                ],
+                "chem_targets": [
+                    {
+                        "target": "peptidoglycan glycosyltransferases"
+                    }
+                ],
+                "compound": "moenomycin",
+                "database_id": [
+                    "npatlas:NPA07626",
+                    "pubchem:46926246"
+                ],
+                "mol_mass": 1581.661332166,
+                "molecular_formula": "C69H108N5O34P"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "ABJ90146.1",
+                    "name": "moeA4"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "ABJ90148.1",
+                    "name": "moeC4"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "DQ988993.1",
+            "completeness": "complete",
+            "end_coord": 5623,
+            "evidence": [
+                "Knock-out studies",
+                "Enzymatic assays",
+                "Heterologous expression",
+                "Gene expression correlated with compound production"
+            ],
+            "start_coord": 898
+        },
+        "mibig_accession": "BGC0000805",
+        "minimal": false,
+        "ncbi_tax_id": "566461",
+        "organism_name": "Streptomyces ghanaensis ATCC 14672",
+        "publications": [
+            "pubmed:17379141",
+            "pubmed:19640006",
+            "pubmed:24164498",
+            "pubmed:22505780"
+        ],
+        "retirement_reasons": [
+            "Entry is spread over multiple contigs"
+        ],
+        "saccharide": {
+            "glycosyltransferases": [
+                {
+                    "evidence": [
+                        "Activity assay"
+                    ],
+                    "gene_id": "ABJ90158.1",
+                    "specificity": "D-galacturonic acid"
+                },
+                {
+                    "evidence": [
+                        "Knock-out construct"
+                    ],
+                    "gene_id": "ABJ90161.1",
+                    "specificity": "N-acetyl-D-glucosamine"
+                },
+                {
+                    "evidence": [
+                        "Knock-out construct"
+                    ],
+                    "gene_id": "ABJ90167.1",
+                    "specificity": "Chinovosamine"
+                },
+                {
+                    "evidence": [
+                        "Knock-out construct"
+                    ],
+                    "gene_id": "ABJ90167.1",
+                    "specificity": "N-acetyl-D-glucosamine"
+                },
+                {
+                    "evidence": [
+                        "Knock-out construct"
+                    ],
+                    "gene_id": "ABJ90168.1",
+                    "specificity": "D-galacturonic acid"
+                },
+                {
+                    "evidence": [
+                        "Knock-out construct"
+                    ],
+                    "gene_id": "ABJ90169.1",
+                    "specificity": "D-glucose"
+                }
+            ],
+            "sugar_subclusters": [
+                [
+                    "moeE5"
+                ],
+                [
+                    "moeR5",
+                    "moeS5"
+                ]
+            ]
+        },
+        "status": "retired"
+    }
+}

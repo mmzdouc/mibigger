@@ -1,0 +1,40 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Saccharide",
+            "Terpene"
+        ],
+        "compounds": [
+            {
+                "compound": "astaxanthin dideoxyglycoside"
+            }
+        ],
+        "loci": {
+            "accession": "KF724895.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001086",
+        "minimal": true,
+        "ncbi_tax_id": "1355329",
+        "organism_name": "Sphingomonas lacus",
+        "publications": [
+            "pubmed:25193422"
+        ],
+        "retirement_reasons": [
+            "Entry is spread over multiple contigs"
+        ],
+        "status": "retired"
+    },
+    "comments": "Entry split over two contigs: KF724895.1, and KF724896.1"
+}

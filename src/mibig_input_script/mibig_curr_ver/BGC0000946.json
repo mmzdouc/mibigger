@@ -1,0 +1,75 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Update compound structure (SMILES) for vibrioferrin",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "H5KVDLSVQ3TJW7SKCDNBDEVC",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "siderophore"
+                    }
+                ],
+                "chem_struct": "O=C1CCC(O)(C(O)=O)N1[C@@H](C)C(NCCOC(C[C@](C(O)=O)(O)CC(O)=O)=O)=O",
+                "compound": "vibrioferrin",
+                "database_id": [
+                    "pubchem:197680"
+                ],
+                "mol_mass": 434.1172741439998,
+                "molecular_formula": "C16H22N2O12"
+            }
+        ],
+        "loci": {
+            "accession": "AB082123.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000946",
+        "minimal": true,
+        "ncbi_tax_id": "670",
+        "organism_name": "Vibrio parahaemolyticus",
+        "publications": [
+            "pubmed:14617658"
+        ],
+        "status": "active"
+    }
+}

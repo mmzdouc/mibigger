@@ -1,0 +1,55 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Refined reference coordinates"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "compound": "colicin V"
+            }
+        ],
+        "loci": {
+            "accession": "NC_011980.1",
+            "completeness": "Unknown",
+            "end_coord": 19808,
+            "start_coord": 15749
+        },
+        "mibig_accession": "BGC0001555",
+        "minimal": true,
+        "ncbi_tax_id": "475609",
+        "organism_name": "Escherichia coli chi7122",
+        "publications": [
+            "pubmed:28810737"
+        ],
+        "status": "active"
+    }
+}

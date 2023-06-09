@@ -1,0 +1,315 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "F65XGYSSLMUEJC2Q4T3BLCPS"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Removed ketoreductase stereochemistry annotation from modules without ketoreductases",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CC[C@@H]\\1CC[C@]23CC(=O)[C@H]([C@H](O2)C4=CC(=CC(=C4O3)NC(=O)C/C=C(\\C(=O)O[C@@H](/C=C1)C(C=C(C)C)O)/C)O)C",
+                "compound": "divergolide A",
+                "database_id": [
+                    "pubchem:102590735",
+                    "chemspider:27026593"
+                ],
+                "mol_mass": 553.2675672079998,
+                "molecular_formula": "C31H39NO8"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CC[C@@H]1CCC(=O)/C=C\\2/C(=CC3=CC(=CC(=C3O2)NC(=O)C/C=C(/C(=O)O[C@H]([C@H](C=C1)O)C=C(C)C)\\C)O)C",
+                "compound": "divergolide B",
+                "database_id": [
+                    "pubchem:102590736",
+                    "chemspider:27026594"
+                ],
+                "mol_mass": 535.2570025239999,
+                "molecular_formula": "C31H37NO7"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CC[C@@H]/1CCC(=O)C2=C3C(=CC(=C2O)C)C(=C4C(=C3O)[C@](C=CC(=O)N4)(C(=O)O[C@H]([C@H](/C=C1)O)C=C(C)C)C)O",
+                "compound": "divergolide C",
+                "database_id": [
+                    "pubchem:102590737",
+                    "chemspider:27026602"
+                ],
+                "mol_mass": 549.2362670799998,
+                "molecular_formula": "C31H35NO8"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CC[C@@H]/1CC(C2=C3C(=CC(=C2O)C)[C@@]4([C@H](/C=C(\\C(=O)O[C@@H](/C=C1)[C@H](C=C(C)C)O)/C)C(=O)NC4=CC3=O)O)C=O",
+                "compound": "divergolide D",
+                "database_id": [
+                    "pubchem:102590738",
+                    "chemspider:27026603"
+                ],
+                "mol_mass": 549.2362670799998,
+                "molecular_formula": "C31H35NO8"
+            }
+        ],
+        "loci": {
+            "accession": "HF563079.1",
+            "completeness": "complete"
+        },
+        "mibig_accession": "BGC0001119",
+        "minimal": false,
+        "ncbi_tax_id": "995841",
+        "organism_name": "Streptomyces sp. HKI0576",
+        "polyketide": {
+            "cyclic": true,
+            "release_type": [
+                "Macrolactamization"
+            ],
+            "starter_unit": "3,5-AHBA-CoA",
+            "subclasses": [
+                "Ansamycin"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "CCP20047.1",
+                        "CCP20050.1",
+                        "CCP20048.1",
+                        "CCP20051.1",
+                        "CCP20049.1"
+                    ],
+                    "modules": [
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketoreductase",
+                                "CoA-ligase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "CCP20047.1"
+                            ],
+                            "kr_stereochem": "Inactive",
+                            "module_number": "0"
+                        },
+                        {
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Sequence-based prediction",
+                            "genes": [
+                                "CCP20047.1"
+                            ],
+                            "kr_stereochem": "L-OH",
+                            "module_number": "1"
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Sequence-based prediction",
+                            "genes": [
+                                "CCP20047.1"
+                            ],
+                            "module_number": "2"
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "CCP20047.1"
+                            ],
+                            "kr_stereochem": "D-OH",
+                            "module_number": "3"
+                        },
+                        {
+                            "at_specificities": [
+                                "Ethylmalonyl-CoA"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Enoylreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Sequence-based prediction",
+                            "genes": [
+                                "CCP20048.1"
+                            ],
+                            "kr_stereochem": "L-OH",
+                            "module_number": "4"
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Sequence-based prediction",
+                            "genes": [
+                                "CCP20049.1"
+                            ],
+                            "kr_stereochem": "L-OH",
+                            "module_number": "5"
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Enoylreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "genes": [
+                                "CCP20050.1"
+                            ],
+                            "kr_stereochem": "L-OH",
+                            "module_number": "6"
+                        },
+                        {
+                            "at_specificities": [
+                                "Methylmalonyl-CoA"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Sequence-based prediction",
+                            "genes": [
+                                "CCP20051.1"
+                            ],
+                            "module_number": "7"
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Dehydratase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Sequence-based prediction",
+                            "genes": [
+                                "CCP20051.1"
+                            ],
+                            "kr_stereochem": "L-OH",
+                            "module_number": "8"
+                        }
+                    ],
+                    "subclass": [
+                        "Modular type I"
+                    ]
+                }
+            ]
+        },
+        "publications": [
+            "pubmed:24867126",
+            "pubmed:24768719",
+            "pubmed:21308920",
+            "pubmed:21506215"
+        ],
+        "status": "active"
+    }
+}

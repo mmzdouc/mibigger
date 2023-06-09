@@ -1,0 +1,140 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.3"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)",
+                "Added extra genes (ptmO, ptmJ, ptmK, ptmE, ptmL)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Corrected gene identifiers"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Terpene"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC(=C)[C@@H]1[C@@H]([C@@H]2[C@@]3(O2)[C@@H](O1)CC[C@]4([C@]3(CC[C@@H]5[C@@]4(C6=C7[C@H]5OC([C@H]8C[C@H]9[C@@]8(C1=C7C(=CC(=C1CC9=C)Cl)N6)O)(C)C)C)O)C)O",
+                "compound": "penitrem A",
+                "database_id": [
+                    "pubchem:6610243"
+                ],
+                "mol_mass": 633.285715808,
+                "molecular_formula": "C37H44ClNO6"
+            },
+            {
+                "chem_struct": "[H][C@]12C[C@@]3([H])[C@@]1([H])C1=C(CC2=C)C=CC2=C1C1=C(N2)[C@@]2(C)[C@@]([H])(CC[C@@]4(O)[C@@]56O[C@@H]5[C@@H](O)[C@H](O[C@@]6([H])CC[C@]24C)C(C)=C)[C@]1([H])OC3(C)C",
+                "compound": "penitrem B",
+                "database_id": [
+                    "npatlas:NPA03988",
+                    "pubchem:3084087"
+                ],
+                "mol_mass": 583.3297735399998,
+                "molecular_formula": "C37H45NO5"
+            },
+            {
+                "chem_struct": "CC(=C)C1OC2CCC3(C)C4(C)C(CCC3(O)C2=CC1O)C1OC(C)(C)C2CC3C2C2=C(CC3=C)C(Cl)=CC3=C2C1=C4N3",
+                "compound": "penitrem C",
+                "database_id": [
+                    "npatlas:NPA05425",
+                    "pubchem:76316105"
+                ],
+                "mol_mass": 601.2958865679999,
+                "molecular_formula": "C37H44ClNO4"
+            },
+            {
+                "chem_struct": "[H][C@]12C[C@@]3([H])[C@@]1([H])C1=C4C(NC5=C4[C@@]([H])(OC3(C)C)[C@]3([H])CC[C@@]4(O)C6=C[C@@H](O)[C@H](O[C@@]6([H])CC[C@]4(C)[C@@]53C)C(C)=C)=CC=C1CC2=C",
+                "compound": "penitrem D",
+                "database_id": [
+                    "npatlas:NPA018451",
+                    "pubchem:3035208"
+                ],
+                "mol_mass": 567.33485892,
+                "molecular_formula": "C37H45NO4"
+            },
+            {
+                "chem_struct": "[H][C@]12C[C@@]3([H])[C@@]1(O)C1=C(CC2=C)C=CC2=C1C1=C(N2)[C@@]2(C)[C@@]([H])(CC[C@@]4(O)[C@@]56O[C@@H]5[C@@H](O)[C@H](O[C@@]6([H])CC[C@]24C)C(C)=C)[C@]1([H])OC3(C)C",
+                "compound": "penitrem E",
+                "database_id": [
+                    "npatlas:NPA017969",
+                    "pubchem:3086087"
+                ],
+                "mol_mass": 599.3246881599999,
+                "molecular_formula": "C37H45NO6"
+            },
+            {
+                "chem_struct": "[H][C@]12C[C@@]3([H])[C@@]1([H])C1=C(CC2=C)C(Cl)=CC2=C1C1=C(N2)[C@@]2(C)[C@@]([H])(CC[C@@]4(O)[C@@]56O[C@@H]5[C@@H](O)[C@H](O[C@@]6([H])CC[C@]24C)C(C)=C)[C@]1([H])OC3(C)C",
+                "compound": "penitrem F",
+                "database_id": [
+                    "npatlas:NPA05947",
+                    "pubchem:3086086"
+                ],
+                "mol_mass": 617.2908011879999,
+                "molecular_formula": "C37H44ClNO5"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "id": "BAU61564.1",
+                    "name": "ptmO",
+                    "product": "putative FAD binding domain protein"
+                },
+                {
+                    "id": "BAU61565.1",
+                    "name": "ptmJ",
+                    "product": "putative cytochrome P450"
+                },
+                {
+                    "id": "BAU61566.1",
+                    "name": "ptmK",
+                    "product": "putative cytochrome P450"
+                },
+                {
+                    "id": "BAU61567.1",
+                    "name": "ptmE",
+                    "product": "putative prenyltransferase"
+                },
+                {
+                    "id": "BAU61568.1",
+                    "name": "ptmL",
+                    "product": "putative cytochrome P450"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "LC027937.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001375",
+        "minimal": true,
+        "ncbi_tax_id": "69488",
+        "organism_name": "Penicillium simplicissimum",
+        "publications": [
+            "pubmed:25831977"
+        ],
+        "status": "active"
+    }
+}

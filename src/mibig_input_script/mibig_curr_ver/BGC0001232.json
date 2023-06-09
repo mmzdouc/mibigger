@@ -1,0 +1,49 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated reference publication(s) (MIBiG Annotathon)",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CO[C@H]1[C@H](OC2CC(O)(OC(C(C)C)C2C)C(C)C(O)C(C)C2OC(=O)\\C(OC)=C\\C(\\C)=C\\C(C)C(O)C(C)C\\C(C)=C\\C=C\\C2OC)O[C@@H](C)[C@H](O)[C@H]1O",
+                "compound": "leucanicidin",
+                "database_id": [
+                    "npatlas:NPA03336"
+                ],
+                "mol_mass": 782.4816423000001,
+                "molecular_formula": "C42H70O13"
+            }
+        ],
+        "loci": {
+            "accession": "NZ_JAIY01000017.1",
+            "completeness": "Unknown",
+            "end_coord": 40233,
+            "start_coord": 1
+        },
+        "mibig_accession": "BGC0001232",
+        "minimal": true,
+        "ncbi_tax_id": "1444769",
+        "organism_name": "Kitasatospora sp. MBT66",
+        "publications": [
+            "pubmed:26675041"
+        ],
+        "retirement_reasons": [
+            "Entry is spread over multiple contigs"
+        ],
+        "status": "retired"
+    },
+    "comments": "Cluster continues on NZ_JAIY01000011.1"
+}

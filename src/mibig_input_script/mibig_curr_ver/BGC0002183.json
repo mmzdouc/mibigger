@@ -1,0 +1,98 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C1C(C(=O)OCC(C(=O)OCC(C(=O)O1)NC(=O)C2=C(C(=CC=C2)O)O)NC(=O)C3=C(C(=CC=C3)O)O)NC(=O)C4=C(C(=CC=C4)O)O",
+                "compound": "enterobactin",
+                "database_id": [
+                    "npatlas:NPA018623",
+                    "pubchem:34231"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "NREG01000002.1",
+            "completeness": "Unknown",
+            "end_coord": 174262,
+            "evidence": [
+                "Gene expression correlated with compound production"
+            ],
+            "start_coord": 130279
+        },
+        "mibig_accession": "BGC0002183",
+        "minimal": false,
+        "ncbi_tax_id": "49331",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "ctg1_114",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:30799038"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "ctg1_116",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:30799038"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "2,3-dihydroxybenzoic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC(=C(C(=C1)O)O)C(=O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Wickerhamiella pararugosa",
+        "publications": [
+            "pubmed:30799038",
+            "doi:10.1016/j.cell.2019.01.034"
+        ],
+        "retirement_reasons": [
+            "Missing gene annotations"
+        ],
+        "status": "retired"
+    }
+}

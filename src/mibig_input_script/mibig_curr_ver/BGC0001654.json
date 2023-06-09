@@ -1,0 +1,69 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Saccharide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cell envelope"
+                    }
+                ],
+                "compound": "lipooligosaccharide"
+            }
+        ],
+        "loci": {
+            "accession": "AE015928.1",
+            "completeness": "Unknown",
+            "end_coord": 4357778,
+            "start_coord": 4337976
+        },
+        "mibig_accession": "BGC0001654",
+        "minimal": true,
+        "ncbi_tax_id": "226186",
+        "organism_name": "Bacteroides thetaiotaomicron VPI-5482",
+        "publications": [
+            "pubmed:29535205"
+        ],
+        "status": "active"
+    }
+}

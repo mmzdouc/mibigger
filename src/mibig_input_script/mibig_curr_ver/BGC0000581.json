@@ -1,0 +1,79 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "surfactant"
+                    }
+                ],
+                "chem_struct": "CCC(C)C1NC(=O)CNC(=O)C(NC(=O)C(CC2=CC=CC=C2)NC(=O)C(CC2=CC=C(O)C=C2)NC(=O)C(CCC(O)=O)NC(=O)C2CCCN2C(=O)C(NC(=O)C(CC2=CN=CN2)NC(=O)CNC(=O)C(C)NC(=O)CNC(=O)CNC(=O)CNC(=O)C(CC2=CC=C(O)C=C2)NC(=O)C(CC2=CC=CC=C2)NC(=O)C(CO)NC(=O)C(NC(=O)C2CCCN2C(=O)C(NC(=O)CNC1=O)C(C)O)C(C)CC)C(C)C)C(C)C",
+                "compound": "microcin J25",
+                "database_id": [
+                    "npatlas:NPA05946",
+                    "pubchem:57397977"
+                ],
+                "mol_mass": 2106.0210761879985,
+                "molecular_formula": "C101H139N23O27"
+            }
+        ],
+        "loci": {
+            "accession": "AF061787.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000581",
+        "minimal": true,
+        "ncbi_tax_id": "562",
+        "organism_name": "Escherichia coli",
+        "publications": [
+            "pubmed:8655570",
+            "pubmed:10198038"
+        ],
+        "ripp": {
+            "subclass": "Linaridin"
+        },
+        "status": "active"
+    }
+}

@@ -1,0 +1,57 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: variobactin B, variobactin A.",
+                "Added NPAtlas links to compounds: variobactin B, variobactin A."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CCCCCCCCCCCC(=O)NC(CCCN(O)C(C)=O)C1OC(=O)C(CCCN(O)C(C)=O)NC(=O)C(CCCNC(N)=O)NC(=O)C(CCCN)NC(=O)C(CO)NC(=O)C(C(O)C(=O)O)NC(=O)C1C",
+                "compound": "variobactin A",
+                "database_id": [
+                    "npatlas:NPA032830"
+                ]
+            },
+            {
+                "chem_struct": "CCCCCCCCCC(=O)NC(CCCN(O)C(C)=O)C1OC(=O)C(CCCN(O)C(C)=O)NC(=O)C(CCCNC(N)=O)NC(=O)C(CCCN)NC(=O)C(CO)NC(=O)C(C(O)C(=O)O)NC(=O)C1C",
+                "compound": "variobactin B",
+                "database_id": [
+                    "npatlas:NPA032831"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "KT362218.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0002416",
+        "minimal": true,
+        "ncbi_tax_id": "34073",
+        "organism_name": "Variovorax paradoxus",
+        "publications": [
+            "pubmed:26412281"
+        ],
+        "status": "active"
+    }
+}

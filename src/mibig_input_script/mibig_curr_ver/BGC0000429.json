@@ -1,0 +1,1046 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "M2JBIQNJAZIP5YVYS7CZLALR"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (MIBiG Annotathon)",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Manually updates compound information for skyllamycin A & B (Structure from Pubchem isn't correct)",
+                "Corrected NRP module activity",
+                "Removed gene names of 'No gene ID'",
+                "Removed duplicate gene names",
+                "Removed ketoreductase stereochemistry annotation from modules without ketoreductases",
+                "Removed module numbers from incomplete PKS modules",
+                "Updated NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C[C@@H](OC([C@H]([C@H](O)C(C)C)NC([C@@H](CC(C)C)NC(C(O)NC([C@H](NC([C@@H](NC([C@@H]1CCCN1C([C@@H](NC(CNC([C@H]([C@@H](C(O)=O)C)NC([C@H](C)NC2=O)=O)=O)=O)[C@H](O)C3=CC=CC=C3)=O)=O)[C@@H](O)C4=CC=C(OC)C=C4)=O)CC5=CNC6=C5C=CC=C6)=O)=O)=O)=O)[C@@H]2NC(/C=C/C7=C(C=CC=C7)/C=C\\C)=O",
+                "compound": "skyllamycin A",
+                "mol_mass": 1482.6707335218,
+                "molecular_formula": "C75H94N12O20"
+            },
+            {
+                "chem_struct": "C[C@@H](OC([C@H]([C@H](O)C(C)C)NC([C@@H](CC(C)C)NC(C(O)NC([C@H](NC([C@@H](NC([C@@H]1CCCN1C([C@@H](NC(CNC([C@H](C(C(O)=O)[H])NC([C@H](C)NC2=O)=O)=O)=O)[C@H](O)C3=CC=CC=C3)=O)=O)[C@@H](O)C4=CC=C(OC)C=C4)=O)CC5=CNC6=C5C=CC=C6)=O)=O)=O)=O)[C@@H]2NC(/C=C/C7=C(C=CC=C7)/C=C\\C)=O",
+                "compound": "skyllamycin B",
+                "mol_mass": 1468.6550834575999,
+                "molecular_formula": "C74H92N12O20"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Transport",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30245.1",
+                    "name": "sky1",
+                    "product": "putative SMR-type multi-drug efflux transporter"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Transport",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30244.1",
+                    "name": "sky2",
+                    "product": "putative SMR-type multi-drug efflux transporter"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30246.1",
+                    "product": "putative cytosine/adenosine deaminase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30247.1",
+                    "name": "sky4",
+                    "product": "putative oxidoreductase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30248.1",
+                    "name": "sky5",
+                    "product": "putative isomerase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30249.1",
+                    "name": "sky6",
+                    "product": "putative N-acetyltransferase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30250.1",
+                    "product": "hypothetical protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30251.1",
+                    "name": "sky8",
+                    "product": "putative DNA-binding protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30252.1",
+                    "product": "hypothetical protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30253.1",
+                    "product": "putative integrin-like protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30254.1",
+                    "name": "sky11",
+                    "product": "putative carboxyltransferase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30255.1",
+                    "product": "putative isoprenyl diphosphate synthase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30256.1",
+                    "name": "sky13",
+                    "product": "putative ACP-acyltransferase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30257.1",
+                    "name": "sky14",
+                    "product": "putative ABC1-family protein kinase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30258.1",
+                    "name": "sky15",
+                    "product": "putative MbtH-like protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30259.1",
+                    "name": "sky16",
+                    "product": "putative acyl carrier protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30260.1",
+                    "name": "sky17",
+                    "product": "putative 3-oxoacyl-ACP synthase II"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30261.1",
+                    "name": "sky18",
+                    "product": "putative 3-oxoacyl-ACP synthase II"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30262.1",
+                    "name": "sky19",
+                    "product": "putative 3-oxoacyl-ACP synthase I"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30263.1",
+                    "name": "sky20",
+                    "product": "putative hydrolase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30264.1",
+                    "name": "sky21",
+                    "product": "putative thioesterase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30265.1",
+                    "name": "sky22",
+                    "product": "putative 3-oxoacyl-ACP synthase I"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30266.1",
+                    "name": "sky23",
+                    "product": "putative acyl carrier protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30267.1",
+                    "name": "sky24",
+                    "product": "putative dehydratase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30268.1",
+                    "name": "sky25",
+                    "product": "putative 3-hydroxyacyl-ACP dehydratase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30269.1",
+                    "name": "sky26",
+                    "product": "putative 3-oxoacyl-ACP reductase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30270.1",
+                    "name": "sky27",
+                    "product": "putative isomerase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30271.1",
+                    "name": "sky28",
+                    "product": "putative oxidoreductase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30272.1",
+                    "name": "sky29",
+                    "product": "peptide synthetase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30273.1",
+                    "name": "sky30",
+                    "product": "peptide synthetase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30274.1",
+                    "name": "sky31",
+                    "product": "peptide synthetase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Activity assay"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30275.1",
+                    "name": "sky32",
+                    "product": "P450 monooxygenase",
+                    "tailoring": [
+                        "Hydroxylation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30276.1",
+                    "name": "sky33",
+                    "product": "putative type II thioesterase",
+                    "tailoring": [
+                        "Unknown"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30277.1",
+                    "product": "hypothetical protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Transport",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30278.1",
+                    "name": "sky35",
+                    "product": "putative ABC transporter"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Transport",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30279.1",
+                    "name": "sky36",
+                    "product": "putative ABC transporter"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30280.1",
+                    "name": "sky37",
+                    "product": "O-methyltransferase",
+                    "tailoring": [
+                        "Methylation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Transport",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30281.1",
+                    "name": "sky38",
+                    "product": "putative ABC transporter"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30282.1",
+                    "name": "sky39",
+                    "product": "flavin-dependent monooxygenase",
+                    "tailoring": [
+                        "Hydroxylation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30283.1",
+                    "name": "sky40",
+                    "product": "putative flavin reductase",
+                    "tailoring": [
+                        "Reduction"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30284.1",
+                    "name": "sky41",
+                    "product": "glutamate mutase subunit B",
+                    "tailoring": [
+                        "Unknown"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30285.1",
+                    "name": "sky42",
+                    "product": "glutamate mutase subunit A",
+                    "tailoring": [
+                        "Unknown"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Regulation",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30286.1",
+                    "name": "sky43",
+                    "product": "putative IclR-family transcriptional regulator"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Regulation",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30287.1",
+                    "name": "sky44",
+                    "product": "putative AfsR-like transcriptional regulator"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Regulation",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30288.1",
+                    "name": "sky45",
+                    "product": "putative IclR-family transcriptional regulator"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Regulation",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30289.1",
+                    "name": "sky46",
+                    "product": "putative LuxR-family transcriptional regulator"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Regulation",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30290.1",
+                    "name": "sky47",
+                    "product": "putative LuxR-family transcriptional regulator"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Regulation",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30291.1",
+                    "name": "sky48",
+                    "product": "putative DNA-binding protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AEA30292.1",
+                    "product": "putative DNA polymerase III"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "JF430460.1",
+            "completeness": "complete",
+            "evidence": [
+                "Heterologous expression"
+            ]
+        },
+        "mibig_accession": "BGC0000429",
+        "minimal": false,
+        "ncbi_tax_id": "1001349",
+        "nrp": {
+            "cyclic": true,
+            "nrps_genes": [
+                {
+                    "gene_id": "AEA30272.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "threonine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@H]([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Starter",
+                            "module_number": "1"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "alanine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "2"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "aspartic acid",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)C(=O)O"
+                                    },
+                                    {
+                                        "name": "3S-methylaspartic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C[C@@H]([C@@H](C(=O)O)N)C(=O)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "3"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": true,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glycine",
+                                        "proteinogenic": true,
+                                        "structure": "NCC(=O)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "4"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AEA30273.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Knock-out studies"
+                                ],
+                                "publications": [
+                                    "doi:10.1021/ja108971p"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "phenylalanine",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC=C(C=C1)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Unknown",
+                            "modification_domains": [
+                                "Oxidation"
+                            ],
+                            "module_number": "5"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "proline",
+                                        "proteinogenic": true,
+                                        "structure": "C1C[C@H](NC1)C(=O)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "6"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Knock-out studies"
+                                ],
+                                "publications": [
+                                    "doi:10.1021/ja108971p"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "O-methyltyrosine",
+                                        "proteinogenic": false,
+                                        "structure": "COC1=CC=C(C=C1)C[C@@H](C(=O)O)N"
+                                    },
+                                    {
+                                        "name": "phenylalanine",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC=C(C=C1)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "Oxidation"
+                            ],
+                            "module_number": "7"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": true,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "doi:10.1021/ja108971p"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "tryptophan",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC=C2C(=C1)C(=CN2)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "8"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AEA30274.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": true,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "leucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "10"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "leucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Unknown",
+                            "modification_domains": [
+                                "Oxidation"
+                            ],
+                            "module_number": "11"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glycine",
+                                        "proteinogenic": true,
+                                        "structure": "NCC(=O)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Unknown",
+                            "module_number": "9"
+                        }
+                    ]
+                }
+            ],
+            "release_type": [
+                "Macrolactonization"
+            ],
+            "subclass": "Cyclic depsipeptide",
+            "thioesterases": [
+                {
+                    "gene": "AEA30274.1",
+                    "thioesterase_type": "Unknown"
+                }
+            ]
+        },
+        "organism_name": "Streptomyces sp. Acta 2897",
+        "polyketide": {
+            "synthases": [
+                {
+                    "genes": [
+                        "AEA30262.1",
+                        "AEA30261.1",
+                        "AEA30256.1",
+                        "AEA30260.1"
+                    ],
+                    "modules": [
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Acyltransferase"
+                            ],
+                            "genes": [
+                                "AEA30256.1"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketosynthase"
+                            ],
+                            "genes": [
+                                "AEA30260.1"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketosynthase"
+                            ],
+                            "genes": [
+                                "AEA30261.1"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketosynthase"
+                            ],
+                            "genes": [
+                                "AEA30262.1"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "publications": [
+            "pubmed:21456593",
+            "pubmed:11480883"
+        ],
+        "status": "active"
+    }
+}

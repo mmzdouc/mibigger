@@ -1,0 +1,78 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.3"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Merged publication from duplicate entry BGC0001815",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "SJG3CBEHSM6A3I74YXLH6GLA",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "CC(O)[C@@]12O[C@@]11[C@H](O)C#C\\C=C/C#C[C@@H]2NC2=C1C=C(O)C1=C2C(=O)C2=CC=CC=C2C1=O",
+                "compound": "uncialamycin",
+                "database_id": [
+                    "npatlas:NPA01771",
+                    "pubchem:16744765"
+                ],
+                "mol_mass": 439.10558726399995,
+                "molecular_formula": "C26H17NO6"
+            }
+        ],
+        "loci": {
+            "accession": "KT762610.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001377",
+        "minimal": true,
+        "ncbi_tax_id": "1048205",
+        "organism_name": "Streptomyces uncialis",
+        "publications": [
+            "pubmed:25019332",
+            "pubmed:27999165"
+        ],
+        "status": "active"
+    }
+}

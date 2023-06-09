@@ -1,0 +1,76 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.2"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antiprotozoal"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "C1=CC(=C(C(=C1)O)NC(=O)C2=C(C=CC=N2)O)C3=NC4=C(C=CC=C4O3)C(=O)O",
+                "compound": "A33853",
+                "database_id": [
+                    "pubchem:133379"
+                ],
+                "mol_mass": 391.08043513599995,
+                "molecular_formula": "C20H13N3O6"
+            }
+        ],
+        "loci": {
+            "accession": "KR476659.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001292",
+        "minimal": true,
+        "ncbi_tax_id": "1715678",
+        "organism_name": "Streptomyces sp. NRRL 12068",
+        "publications": [
+            "pubmed:26496684"
+        ],
+        "status": "active"
+    }
+}

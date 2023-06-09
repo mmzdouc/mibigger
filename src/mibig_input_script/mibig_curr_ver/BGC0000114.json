@@ -1,0 +1,132 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "CKAYQ42GR5EX6WJLHMEET7FX"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Cleaned up synonym list",
+                "Corrected gene identifiers",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "antimalarial"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    },
+                    {
+                        "activity": "ionophore"
+                    }
+                ],
+                "chem_struct": "[H][C@](C)(C(O)=O)[C@]1([H])O[C@@H](C[C@@H]2C[C@@H](OC)[C@@H](C)[C@@]3(O[C@@](C)(C[C@H]3C)[C@@]3([H])CC[C@](C)(O3)[C@]3([H])O[C@]([H])(C[C@@H]3C)[C@@]3([H])O[C@@](O)(CO)[C@H](C)C[C@@H]3C)O2)CC[C@@H]1C",
+                "chem_synonyms": [
+                    "azalomycin m",
+                    "helexin c",
+                    "polyetherin a"
+                ],
+                "chem_targets": [
+                    {
+                        "target": "metal ion"
+                    }
+                ],
+                "compound": "nigericin",
+                "database_id": [
+                    "npatlas:NPA01792",
+                    "pubchem:34230"
+                ],
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry"
+                ],
+                "mol_mass": 724.476162996,
+                "molecular_formula": "C40H68O11"
+            }
+        ],
+        "loci": {
+            "accession": "DQ354110.1",
+            "completeness": "complete",
+            "evidence": [
+                "Gene expression correlated with compound production"
+            ]
+        },
+        "mibig_accession": "BGC0000114",
+        "minimal": false,
+        "ncbi_tax_id": "68280",
+        "organism_name": "Streptomyces violaceusniger",
+        "polyketide": {
+            "cyclic": false,
+            "release_type": [
+                "Hydrolysis"
+            ],
+            "starter_unit": "Acetyl-CoA",
+            "subclasses": [
+                "Polyether"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "ABC84462.1"
+                    ],
+                    "subclass": [
+                        "Modular type I"
+                    ],
+                    "thioesterases": [
+                        {
+                            "gene": "ABC84462.1",
+                            "thioesterase_type": "Unknown"
+                        }
+                    ]
+                }
+            ]
+        },
+        "publications": [
+            "pubmed:17584617"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,75 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "inhibitor"
+                    }
+                ],
+                "chem_targets": [
+                    {
+                        "publications": [
+                            "doi:10.1002/cbic.200800560"
+                        ],
+                        "target": "Protease"
+                    }
+                ],
+                "compound": "microviridin K"
+            }
+        ],
+        "loci": {
+            "accession": "EU438895.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000594",
+        "minimal": true,
+        "ncbi_tax_id": "388467",
+        "organism_name": "Planktothrix agardhii NIVA-CYA 126/8",
+        "publications": [
+            "pubmed:19035375"
+        ],
+        "status": "active"
+    }
+}

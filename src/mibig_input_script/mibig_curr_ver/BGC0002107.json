@@ -1,0 +1,196 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: fabrubactin A, fabrubactin B.",
+                "Added NPAtlas links to compounds: fabrubactin A, fabrubactin B."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CCCCCCCC(O)CC(O)(C(=O)O)C(=O)NCCC(=O)NCCC(O)(C(=O)O)C(=O)NC(C)C1=NC(C(=O)NCC(=O)NC(C)C(=O)NCC(=O)NC2CC3=CC(O)=C(O)C=C3[N+](C)(C)C2)=CS1",
+                "compound": "fabrubactin A",
+                "database_id": [
+                    "npatlas:NPA033168"
+                ]
+            },
+            {
+                "chem_struct": "CCCCCCCC(O)CC(O)(C(=O)O)C(=O)NC(C)C(=O)NCCC(O)(C(=O)O)C(=O)NC(C)C1=NC(C(=O)NCC(=O)NC(C)C(=O)NCC(=O)NC2CC3=CC(O)=C(O)C=C3[N+](C)(C)C2)=CS1",
+                "compound": "fabrubactin B",
+                "database_id": [
+                    "npatlas:NPA033169"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "AE007870.2",
+            "completeness": "Unknown",
+            "end_coord": 769035,
+            "evidence": [
+                "Enzymatic assays"
+            ],
+            "start_coord": 715559
+        },
+        "mibig_accession": "BGC0002107",
+        "minimal": false,
+        "ncbi_tax_id": "176299",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "AAK89731.2",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "ATP-PPi exchange assay"
+                                ],
+                                "publications": [
+                                    "pubmed:26194087"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "beta-alanine",
+                                        "proteinogenic": false,
+                                        "structure": "NCCC(=O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AAK89720.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "ATP-PPi exchange assay"
+                                ],
+                                "publications": [
+                                    "pubmed:26194087"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "alanine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "ATP-PPi exchange assay"
+                                ],
+                                "publications": [
+                                    "pubmed:26194087"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "cysteine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)S"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AAK89719.2",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "ATP-PPi exchange assay"
+                                ],
+                                "publications": [
+                                    "pubmed:26194087"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glycine",
+                                        "proteinogenic": true,
+                                        "structure": "NCC(=O)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "ATP-PPi exchange assay"
+                                ],
+                                "publications": [
+                                    "pubmed:26194087"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "alanine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AAK89727.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "ATP-PPi exchange assay"
+                                ],
+                                "publications": [
+                                    "pubmed:26194087"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "3-hydroxytyrosine",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC(=C(C=C1C[C@@H](C(=O)O)N)O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Agrobacterium fabrum str. C58",
+        "publications": [
+            "pubmed:33373180",
+            "doi:10.1021/acschembio.0c00809"
+        ],
+        "status": "active"
+    }
+}

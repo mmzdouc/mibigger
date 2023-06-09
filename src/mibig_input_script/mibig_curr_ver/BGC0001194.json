@@ -1,0 +1,79 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.1"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "C/C/1=C/[C@H]2C[C@@H](C(=C2C(=O)C[C@H](CC/C=C/C[C@@H](NC(=O)/C=C\\C=C1)C3=CC=CC=C3)O)O)OC",
+                "compound": "hitachimycin",
+                "database_id": [
+                    "pubchem:6436205"
+                ],
+                "mol_mass": 477.2515232199999,
+                "molecular_formula": "C29H35NO5"
+            }
+        ],
+        "loci": {
+            "accession": "LC008143.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001194",
+        "minimal": true,
+        "ncbi_tax_id": "159449",
+        "organism_name": "Streptomyces scabrisporus",
+        "publications": [
+            "pubmed:25786909"
+        ],
+        "status": "active"
+    }
+}

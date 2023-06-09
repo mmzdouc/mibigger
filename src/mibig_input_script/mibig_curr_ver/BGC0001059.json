@@ -1,0 +1,81 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    }
+                ],
+                "chem_struct": "NC(CO)C(O)CC(O)[C@@H](N)[C@@H](O)[C@H](O)C(=O)NC(CNC(N)=O)C(N)=O",
+                "compound": "zwittermicin A",
+                "database_id": [
+                    "npatlas:NPA02819"
+                ],
+                "mol_mass": 396.196861856,
+                "molecular_formula": "C13H28N6O8"
+            }
+        ],
+        "loci": {
+            "accession": "FJ430564.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001059",
+        "minimal": true,
+        "ncbi_tax_id": "1396",
+        "organism_name": "Bacillus cereus",
+        "publications": [
+            "pubmed:8763956",
+            "pubmed:10521664",
+            "pubmed:14711631",
+            "pubmed:19098220"
+        ],
+        "status": "active"
+    }
+}

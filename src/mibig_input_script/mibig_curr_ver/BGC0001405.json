@@ -1,0 +1,71 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.3"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Remove duplicated citations"
+            ],
+            "contributors": [
+                "3UOU7PODQJXIM6BEPUHHRRA5"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC[C@@H](C)\\C=C\\C1=CC2=C(Cl)C(=O)[C@@]3(C)OC(=O)C(C(=O)[C@@H](C)[C@@H](C)O)=C3C2=CO1",
+                "compound": "chaetoviridin E",
+                "database_id": [
+                    "npatlas:NPA014614"
+                ],
+                "mol_mass": 432.1339662,
+                "molecular_formula": "C23H25ClO6"
+            },
+            {
+                "chem_struct": "[H][C@]12C(=O)O[C@H](C)[C@@H](C)[C@@]1(O)O[C@]1(C)C(=O)C(Cl)=C3C=C(OC=C3[C@]21[H])\\C=C\\[C@H](C)[C@@H](C)O",
+                "compound": "11-epichaetomugilin A",
+                "database_id": [
+                    "npatlas:NPA09796"
+                ],
+                "mol_mass": 450.14453088399995,
+                "molecular_formula": "C23H27ClO7"
+            }
+        ],
+        "loci": {
+            "accession": "CH408033.1",
+            "completeness": "Unknown",
+            "end_coord": 2507160,
+            "start_coord": 2447651
+        },
+        "mibig_accession": "BGC0001405",
+        "minimal": true,
+        "ncbi_tax_id": "306901",
+        "organism_name": "Chaetomium globosum CBS 148.51",
+        "publications": [
+            "pubmed:23072467"
+        ],
+        "status": "active"
+    }
+}

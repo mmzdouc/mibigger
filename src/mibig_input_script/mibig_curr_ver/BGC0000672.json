@@ -1,0 +1,77 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Merge annotations from duplicate entry BGC0002388"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Terpene"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C[C@@H]1[C@@H]2CC[C@@H]3[C@@]([C@H]2C(=O)C=C1C=C)(C[C@@H](C(=O)C3(C)C)O)C",
+                "compound": "phytocassane",
+                "database_id": [
+                    "pubchem:10313699"
+                ],
+                "mol_mass": 316.20384475599997,
+                "molecular_formula": "C20H28O3"
+            },
+            {
+                "chem_struct": "C[C@@]12[C@@H](OC(=O)C(C1CC[C@]34C2CCC(C3)[C@]5(C4O5)C)(C)C)O",
+                "compound": "oryzalides",
+                "database_id": [
+                    "pubchem:90658693"
+                ],
+                "mol_mass": 320.19875937599994,
+                "molecular_formula": "C19H28O4"
+            }
+        ],
+        "loci": {
+            "accession": "AP008208.2",
+            "completeness": "Unknown",
+            "end_coord": 22764099,
+            "evidence": [
+                "Heterologous expression",
+                "Gene expression correlated with compound production",
+                "Enzymatic assays"
+            ],
+            "start_coord": 22520469
+        },
+        "mibig_accession": "BGC0000672",
+        "minimal": true,
+        "ncbi_tax_id": "39947",
+        "organism_name": "Oryza sativa Japonica Group",
+        "publications": [
+            "pubmed:21985968",
+            "pubmed:19825834",
+            "doi:10.1105/tpc.108.063677"
+        ],
+        "status": "active"
+    }
+}

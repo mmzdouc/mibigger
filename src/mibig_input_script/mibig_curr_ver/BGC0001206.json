@@ -1,0 +1,75 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.1"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "[H][C@](C)(C1=CNC2=CC=CC=C12)[C@@]1([H])OC(NC)=NC1=O",
+                "compound": "indolmycin",
+                "database_id": [
+                    "npatlas:NPA015391",
+                    "pubchem:3082186"
+                ],
+                "mol_mass": 257.11642672,
+                "molecular_formula": "C14H15N3O2"
+            }
+        ],
+        "loci": {
+            "accession": "KM596502.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001206",
+        "minimal": true,
+        "ncbi_tax_id": "67263",
+        "organism_name": "Streptomyces griseus subsp. griseus",
+        "publications": [
+            "pubmed:25730866"
+        ],
+        "status": "active"
+    }
+}

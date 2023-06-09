@@ -1,0 +1,65 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated reference publication(s) (MIBiG Annotathon)",
+                "Updated compound(s) information (MIBiG Annotathon)",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Corrected location"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CCCCC\\C=C\\C=C\\C1=C(O)C(=O)C2=C(O1)C(=C)N(C)C2=O",
+                "compound": "pyranonigrin E",
+                "database_id": [
+                    "npatlas:NPA013692",
+                    "chemspider:58827644"
+                ],
+                "mol_mass": 315.147058152,
+                "molecular_formula": "C18H21NO4"
+            }
+        ],
+        "loci": {
+            "accession": "ACJE01000019.1",
+            "completeness": "Unknown",
+            "end_coord": 153844,
+            "start_coord": 122605
+        },
+        "mibig_accession": "BGC0001124",
+        "minimal": true,
+        "ncbi_tax_id": "380704",
+        "organism_name": "Aspergillus niger ATCC 1015",
+        "publications": [
+            "pubmed:21543515"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,83 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Cleaned up synonym list",
+                "Fetch compound properties from PubChem",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CCCCCCC[C@@H](C/C=C/CCC(=O)NC/C(=C/Cl)/[C@@]12[C@@H](O1)[C@@H](CCC2=O)OC(=O)C)OC",
+                "compound": "malyngamide C acetate",
+                "database_id": [
+                    "pubchem:49782891"
+                ],
+                "mol_mass": 497.254416,
+                "molecular_formula": "C26H40ClNO6"
+            }
+        ],
+        "loci": {
+            "accession": "MK142792.1",
+            "completeness": "Unknown",
+            "end_coord": 68730,
+            "start_coord": 283
+        },
+        "mibig_accession": "BGC0001970",
+        "minimal": false,
+        "ncbi_tax_id": "1458930",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "AZH23792.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Sequence-based prediction",
+                                    "Structure-based inference",
+                                    "Feeding study"
+                                ],
+                                "publications": [
+                                    "pubmed:30444349"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glycine",
+                                        "proteinogenic": true,
+                                        "structure": "NCC(=O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Okeania hirsuta",
+        "publications": [
+            "pubmed:30444349"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,80 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (MIBiG Annotathon)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "C[C@H]1C[C@H](C(=O)CCCC[C@H]([C@H](OC(=O)/C=C/[C@@H]([C@H]1O[C@H]2[C@@H]([C@H](C[C@H](O2)C)OC)O)C)C)O[C@H]3[C@@H]([C@@H]([C@@H]([C@H](O3)C)O)OC)OC)C",
+                "compound": "10,11-dihydro-8-deoxy-12,13-deepoxy-12,13-dihydrochalcomycin",
+                "database_id": [
+                    "pubchem:102274629"
+                ],
+                "mol_mass": 658.3928272960001,
+                "molecular_formula": "C34H58O12"
+            }
+        ],
+        "loci": {
+            "accession": "AY118081.2",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000047",
+        "minimal": true,
+        "ncbi_tax_id": "201500",
+        "organism_name": "Streptomyces sp. KCTC 0041BP",
+        "publications": [
+            "pubmed:17053005"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,175 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "UJYWT4SZRXDY2IOPYAIF6MII"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Corrected NRP module activity",
+                "Removed ketoreductase stereochemistry annotation from modules without ketoreductases"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide",
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "inhibitor"
+                    }
+                ],
+                "chem_struct": "NC1=C(N=C2)C(C2=CC(C(/C=C/OC)=O)=N3)=C3C(NC(C)=O)=C1",
+                "chem_targets": [
+                    {
+                        "target": "mTOR"
+                    }
+                ],
+                "compound": "lymphostin",
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 310.10659030799997,
+                "molecular_formula": "C16H14N4O3"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "inhibitor"
+                    }
+                ],
+                "chem_struct": "NC1=C(N=C2)C(C2=CC(C(CCO)=O)=N3)=C3C(NC(CC)=O)=C1",
+                "chem_targets": [
+                    {
+                        "target": "mTOR"
+                    }
+                ],
+                "compound": "neolymphostinol B",
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 312.12224037199996,
+                "molecular_formula": "C16H16N4O3"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "inhibitor"
+                    }
+                ],
+                "chem_struct": "NC1=C(N=C2)C(C2=CC(C(CCO)=O)=N3)=C3C(NC(C)=O)=C1",
+                "chem_targets": [
+                    {
+                        "target": "mTOR"
+                    }
+                ],
+                "compound": "lymphostinol",
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 298.10659030799997,
+                "molecular_formula": "C15H14N4O3"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "inhibitor"
+                    }
+                ],
+                "chem_struct": "NC1=C(N=C2)C(C2=CC(C(/C=C/OC)=O)=N3)=C3C(NC(CC)=O)=C1",
+                "chem_targets": [
+                    {
+                        "target": "mTOR"
+                    }
+                ],
+                "compound": "neolymphostin b",
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 324.12224037199996,
+                "molecular_formula": "C17H16N4O3"
+            }
+        ],
+        "loci": {
+            "accession": "CP000850.1",
+            "completeness": "complete",
+            "end_coord": 3805331,
+            "start_coord": 3781645
+        },
+        "mibig_accession": "BGC0001007",
+        "minimal": false,
+        "ncbi_tax_id": "391037",
+        "nrp": {
+            "cyclic": false,
+            "nrps_genes": [
+                {
+                    "gene_id": "ABV99085.1",
+                    "modules": [
+                        {
+                            "active": true,
+                            "module_number": "0"
+                        }
+                    ]
+                }
+            ],
+            "release_type": [
+                "Reductive release"
+            ]
+        },
+        "organism_name": "Salinispora arenicola CNS-205",
+        "polyketide": {
+            "synthases": [
+                {
+                    "genes": [
+                        "ABV99085.1"
+                    ],
+                    "modules": [
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "evidence": "Structure-based inference",
+                            "genes": [
+                                "ABV99085.1"
+                            ],
+                            "module_number": "1"
+                        }
+                    ]
+                }
+            ]
+        },
+        "publications": [
+            "pubmed:19474814",
+            "pubmed:21815669"
+        ],
+        "status": "active"
+    }
+}

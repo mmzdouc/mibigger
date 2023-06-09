@@ -1,0 +1,127 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC(C)[C@@H](/C=C(\\C)/C(=O)O)N(C)C(=O)[C@H](C(C)C)NC(=O)[C@H](CO)N=C(N)N",
+                "compound": "cryptomaldamide",
+                "database_id": [
+                    "pubchem:132489951"
+                ],
+                "mol_mass": 399.2481691560001,
+                "molecular_formula": "C18H33N5O5"
+            }
+        ],
+        "loci": {
+            "accession": "KY315923.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001560",
+        "minimal": false,
+        "ncbi_tax_id": "1454205",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "ARO38317.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Mass spectrometry",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:28448144"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "cysteine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)S"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Mass spectrometry",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:28448144"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "valine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Mass spectrometry",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:28448144"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "valine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Moorea producens JHB",
+        "publications": [
+            "pubmed:28448144"
+        ],
+        "status": "active"
+    }
+}

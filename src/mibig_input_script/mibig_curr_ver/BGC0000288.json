@@ -1,0 +1,116 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "COC1C(OC(N)=O)C(OC1C(OC1OC(=CC(O)C1O)C(=O)NC1CCCC(C)NC1=O)C(N)=O)N1C=CC(=O)NC1=O",
+                "compound": "A-503083 A",
+                "database_id": [
+                    "npatlas:NPA05142"
+                ],
+                "mol_mass": 626.2183851480002,
+                "molecular_formula": "C25H34N6O13"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "COC1C(OC(N)=O)C(OC1C(OC1OC(=CC(O)C1O)C(=O)NC1CCCCNC1=O)C(N)=O)N1C=CC(=O)NC1=O",
+                "compound": "A-503083 B",
+                "database_id": [
+                    "npatlas:NPA02482"
+                ],
+                "mol_mass": 612.2027350840001,
+                "molecular_formula": "C24H32N6O13"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "COC1C(OC(N)=O)C(OC1C(OC1OC(=CC(O)C1O)C(=O)OC)C(N)=O)N1C=CC(=O)NC1=O",
+                "compound": "A-503083 E",
+                "database_id": [
+                    "npatlas:NPA06239"
+                ],
+                "mol_mass": 516.1339868279999,
+                "molecular_formula": "C19H24N4O13"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "COC1C(OC(N)=O)C(OC1C(OC1OC(=CC(O)C1O)C(O)=O)C(N)=O)N1C=CC(=O)NC1=O",
+                "compound": "A-503083 F",
+                "database_id": [
+                    "npatlas:NPA03"
+                ],
+                "mol_mass": 502.11833676399993,
+                "molecular_formula": "C18H22N4O13"
+            }
+        ],
+        "loci": {
+            "accession": "AB538860.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000288",
+        "minimal": true,
+        "ncbi_tax_id": "701528",
+        "organism_name": "Streptomyces sp. SANK 62799",
+        "publications": [
+            "pubmed:20562876"
+        ],
+        "status": "active"
+    }
+}

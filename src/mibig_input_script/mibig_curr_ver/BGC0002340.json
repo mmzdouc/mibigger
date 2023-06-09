@@ -1,0 +1,100 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: pyrroloformamide A.",
+                "Added NPAtlas links to compounds: pyrroloformamide A."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC(=O)N(C)C1C(=O)NC2=CSSC21",
+                "compound": "pyrroloformamide A",
+                "database_id": [
+                    "npatlas:NPA021225"
+                ]
+            },
+            {
+                "compound": "pyrroloformamide B"
+            },
+            {
+                "chem_struct": "CN(C=O)C1=C2C(=CSS2(=O)=O)NC1=O",
+                "compound": "pyrroloformamide D",
+                "database_id": [
+                    "npatlas:NPA029605"
+                ]
+            },
+            {
+                "chem_struct": "CN(C=O)C1=C2SCSC=C2NC1=O",
+                "compound": "pyrroloformamide C",
+                "database_id": [
+                    "npatlas:NPA029604"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "JACSCH020000013.1",
+            "completeness": "Unknown",
+            "end_coord": 28112,
+            "evidence": [
+                "Knock-out studies"
+            ],
+            "start_coord": 1
+        },
+        "mibig_accession": "BGC0002340",
+        "minimal": false,
+        "ncbi_tax_id": "2542736",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "E0F75_025360",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Feeding study"
+                                ],
+                                "publications": [
+                                    "pubmed:32049520"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "cysteine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)S"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Streptomyces sp. CB02980",
+        "publications": [
+            "pubmed:32049520"
+        ],
+        "status": "active"
+    }
+}

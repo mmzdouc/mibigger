@@ -1,0 +1,148 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Changed chemical structures for compounds: tentoxin.",
+                "Added NPAtlas links to compounds: tentoxin."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC(C)C[C@@H]1NC(=O)[C@H](C)N(C)C(=O)CNC(=O)/C(=C/C2=CC=CC=C2)N(C)C1=O",
+                "compound": "tentoxin",
+                "database_id": [
+                    "pubchem:5281143",
+                    "npatlas:NPA032752"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "CP061875.1",
+            "completeness": "Unknown",
+            "end_coord": 81847,
+            "evidence": [
+                "Knock-out studies"
+            ],
+            "start_coord": 63092
+        },
+        "mibig_accession": "BGC0002179",
+        "minimal": false,
+        "ncbi_tax_id": "5599",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "AMT84997.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:27490569"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glycine",
+                                        "proteinogenic": true,
+                                        "structure": "NCC(=O)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:27490569"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "alanine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:27490569"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "leucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:27490569"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "dehydrophenylalanine",
+                                        "proteinogenic": false,
+                                        "structure": "N/C(=C\\C1=CC=CC=C1)/C(=O)O"
+                                    },
+                                    {
+                                        "name": "S-beta-hydroxyphenylalanine",
+                                        "proteinogenic": false,
+                                        "structure": "O[C@@H](C1=CC=CC=C1)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "integrated_monomers": [
+                                {
+                                    "name": "dehydrophenylalanine",
+                                    "structure": "N/C(=C\\C1=CC=CC=C1)/C(=O)O"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Alternaria alternata",
+        "publications": [
+            "pubmed:27490569",
+            "doi:10.3390/toxins8080234"
+        ],
+        "retirement_reasons": [
+            "Missing gene annotations"
+        ],
+        "status": "retired"
+    }
+}

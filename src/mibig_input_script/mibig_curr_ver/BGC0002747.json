@@ -1,0 +1,55 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: lentinulin A.",
+                "Added NPAtlas links to compounds: lentinulin A."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC[C@H](C)[C@@H]1NC(=O)[C@@H]([C@@H](C)CC)N(C)C(=O)[C@H](CC2=C[NH]C3=CC=CC=C23)NC(=O)CN(C)C(=O)[C@H](C(C)C)N(C)C(=O)[C@@H](C(C)C)NC(=O)CNC(=O)[C@@H](C(C)C)N(C)C(=O)[C@H](C(C)C)N(C)C(=O)CN(C)C(=O)[C@H](C(C)C)N(C)C(=O)[C@@H](C(C)C)N(C)C1=O",
+                "compound": "lentinulin A",
+                "database_id": [
+                    "npatlas:NPA033152"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "JABWDW010000010.1",
+            "completeness": "Unknown",
+            "end_coord": 828214,
+            "evidence": [
+                "Heterologous expression"
+            ],
+            "start_coord": 799861
+        },
+        "mibig_accession": "BGC0002747",
+        "minimal": true,
+        "ncbi_tax_id": "5353",
+        "organism_name": "Lentinula edodes",
+        "publications": [
+            "pubmed:33574430",
+            "doi:10.1038/s41598-021-91767-2"
+        ],
+        "status": "active"
+    }
+}

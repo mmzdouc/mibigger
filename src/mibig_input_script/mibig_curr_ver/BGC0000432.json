@@ -1,0 +1,126 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "C1[C@H]([C@@H]2[C@@H](C(=O)N1)N=C(N2)N[C@H]3[C@@H]([C@@H]([C@H]([C@H](O3)CO)OC(=O)N)O)NC(=O)C[C@H](CCCNC(=O)C[C@H](CCCNC(=O)C[C@H](CCCNC(=O)C[C@H](CCCNC(=O)C[C@H](CCCNC(=O)C[C@H](CCCN)N)N)N)N)N)N)O",
+                "compound": "streptothricin",
+                "database_id": [
+                    "pubchem:198906"
+                ],
+                "mol_mass": 1142.7247750679996,
+                "molecular_formula": "C49H94N18O13"
+            }
+        ],
+        "loci": {
+            "accession": "AB684619.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000432",
+        "minimal": false,
+        "ncbi_tax_id": "1928",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "BAL15718.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "ATP-PPi exchange assay",
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:22820420"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "beta-lysine",
+                                        "proteinogenic": false,
+                                        "structure": "C(C[C@@H](CC(=O)O)N)CN"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "BAL15732.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "ATP-PPi exchange assay",
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:22820420"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "beta-lysine",
+                                        "proteinogenic": false,
+                                        "structure": "C(C[C@@H](CC(=O)O)N)CN"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Streptomyces rochei",
+        "publications": [
+            "pubmed:22820420"
+        ],
+        "status": "active"
+    }
+}

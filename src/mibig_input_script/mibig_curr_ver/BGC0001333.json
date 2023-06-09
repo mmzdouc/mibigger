@@ -1,0 +1,104 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "TFC7LOLNUCTKZCZQ4X3ELKJ7"
+            ],
+            "version": "1.3"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Cleaned up synonym list"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "alkaloid": {
+            "subclass": "Indole/benzopyrrole"
+        },
+        "biosyn_class": [
+            "Alkaloid"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "Indole group",
+                        "subcluster": [
+                            "AEF32092.1"
+                        ]
+                    }
+                ],
+                "chem_struct": "COC1=C2N(C3=CC=CC=C13)[C@]1(O)C(=O)N(C)C(=O)[C@]1(O)C1=C2N(C)C2=CC=C(Cl)C=C12",
+                "chem_synonyms": [
+                    "unii-t7972epw8p"
+                ],
+                "chem_targets": [
+                    {
+                        "target": "V-ATPase"
+                    }
+                ],
+                "compound": "BE-54017",
+                "database_id": [
+                    "npatlas:NPA05807",
+                    "pubchem:66575233"
+                ],
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry"
+                ],
+                "mol_mass": 451.093498356,
+                "molecular_formula": "C23H18ClN3O5"
+            }
+        ],
+        "loci": {
+            "accession": "JF439215.1",
+            "completeness": "complete",
+            "end_coord": 22587,
+            "evidence": [
+                "Heterologous expression",
+                "Gene expression correlated with compound production"
+            ],
+            "start_coord": 2570
+        },
+        "mibig_accession": "BGC0001333",
+        "minimal": false,
+        "ncbi_tax_id": "1047164",
+        "organism_name": "uncultured bacterium AB1650",
+        "publications": [
+            "pubmed:21542592"
+        ],
+        "status": "active"
+    }
+}

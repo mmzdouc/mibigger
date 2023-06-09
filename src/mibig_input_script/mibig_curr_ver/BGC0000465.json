@@ -1,0 +1,137 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "SCFYH7235HZBUM2XBV52IUHT"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CN[C@@H](CC(C)C)C(=O)N(C)[C@@H](CC1=CC=CC=C1)C(=O)NCCC1=CC=CC=C1",
+                "compound": "xenortide A",
+                "database_id": [
+                    "npatlas:NPA010726",
+                    "pubchem:24900168"
+                ],
+                "mol_mass": 409.27292736000004,
+                "molecular_formula": "C25H35N3O2"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CN[C@@H](CC(C)C)C(=O)N(C)[C@@H](CC1=CC=CC=C1)C(=O)NCCC1=CNC2=C1C=CC=C2",
+                "compound": "xenortide B",
+                "database_id": [
+                    "npatlas:NPA018977",
+                    "pubchem:24900169"
+                ],
+                "mol_mass": 448.28382639200004,
+                "molecular_formula": "C27H36N4O2"
+            },
+            {
+                "chem_acts": [],
+                "chem_struct": "CN[C@@H](C(C)C)C(N([C@H](C(NCCC1=CC=CC=C1)=O)CC2=CC=CC=C2)C)=O",
+                "compound": "xenortide C",
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 395.257277296,
+                "molecular_formula": "C24H33N3O2"
+            },
+            {
+                "chem_acts": [],
+                "chem_struct": "CN[C@@H](C(C)C)C(=O)N(C)[C@@H](CC1=CC=CC=C1)C(=O)NCCC1=CNC2=CC=CC=C12",
+                "compound": "xenortide D",
+                "database_id": [
+                    "npatlas:NPA016799"
+                ],
+                "mol_mass": 434.26817632800004,
+                "molecular_formula": "C26H34N4O2"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "XNC1_2299",
+                    "name": "xndA"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "XNC1_2300",
+                    "name": "xndB"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "FN667742.1",
+            "completeness": "complete",
+            "end_coord": 2245621,
+            "evidence": [
+                "Knock-out studies"
+            ],
+            "start_coord": 2235579
+        },
+        "mibig_accession": "BGC0000465",
+        "minimal": false,
+        "ncbi_tax_id": "406817",
+        "nrp": {
+            "cyclic": false
+        },
+        "organism_name": "Xenorhabdus nematophila ATCC 19061",
+        "publications": [
+            "pubmed:25080196",
+            "pubmed:18491867",
+            "pubmed:21888371"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,78 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated reference publication(s) (MIBiG Annotathon)",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antioxidant"
+                    },
+                    {
+                        "activity": "surfactant"
+                    }
+                ],
+                "chem_struct": "CC(=O)[C@H]1C2=C3C(C(C(C)=O)=C2C2=CC=CC(O)=C2[C@@]1(O)C(O)=O)=C(O)C(=O)C1=C(O)C=CC=C31",
+                "compound": "erdacin",
+                "database_id": [
+                    "npatlas:NPA015846"
+                ],
+                "mol_mass": 474.0950821559999,
+                "molecular_formula": "C26H18O9"
+            }
+        ],
+        "loci": {
+            "accession": "FJ719113.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000221",
+        "minimal": true,
+        "ncbi_tax_id": "684592",
+        "organism_name": "uncultured soil bacterium V167",
+        "publications": [
+            "pubmed:19621341"
+        ],
+        "status": "active"
+    }
+}

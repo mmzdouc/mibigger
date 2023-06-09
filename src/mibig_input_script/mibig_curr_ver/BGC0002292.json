@@ -1,0 +1,65 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Changed chemical structures for compounds: pyrazofurin.",
+                "Added NPAtlas links to compounds: pyrazofurin.",
+                "Retired as duplicate of BGC0001985"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "NC(=O)C1=C(O)C([C@@H]2O[C@H](CO)[C@@H](O)[C@H]2O)=N[NH]1",
+                "compound": "pyrazofurin",
+                "database_id": [
+                    "pubchem:135413551",
+                    "chembl:CHEMBL2105330",
+                    "chemspider:10570780",
+                    "npatlas:NPA033439"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "MN305320.1",
+            "completeness": "Unknown",
+            "end_coord": 90882,
+            "evidence": [
+                "Enzymatic assays"
+            ],
+            "start_coord": 67514
+        },
+        "mibig_accession": "BGC0002292",
+        "minimal": true,
+        "ncbi_tax_id": "67283",
+        "organism_name": "Streptomyces candidus",
+        "publications": [
+            "pubmed:31518483",
+            "doi:10.1002/anie.201910356"
+        ],
+        "retirement_reasons": [
+            "Duplicate of BGC0001985"
+        ],
+        "see_also": [
+            "BGC0001985"
+        ],
+        "status": "retired"
+    }
+}

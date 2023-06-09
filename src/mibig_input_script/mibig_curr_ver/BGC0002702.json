@@ -1,0 +1,265 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added",
+                "Updated bioactivity data",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "inhibitor"
+                    }
+                ],
+                "chem_targets": [
+                    {
+                        "publications": [
+                            "pubmed:33067466"
+                        ],
+                        "target": "PG"
+                    },
+                    {
+                        "publications": [
+                            "pubmed:33067466"
+                        ],
+                        "target": "autolysins"
+                    }
+                ],
+                "compound": "GP6738"
+            }
+        ],
+        "loci": {
+            "accession": "CP029618.1",
+            "completeness": "Unknown",
+            "end_coord": 7842803,
+            "evidence": [
+                "Heterologous expression"
+            ],
+            "start_coord": 7785350
+        },
+        "mibig_accession": "BGC0002702",
+        "minimal": false,
+        "ncbi_tax_id": "2203210",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "AZM50110.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Sequence-based prediction",
+                                    "Mass spectrometry"
+                                ],
+                                "publications": [
+                                    "pubmed:33067466"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "tryptophan",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC=C2C(=C1)C(=CN2)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AZM50111.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Sequence-based prediction",
+                                    "Mass spectrometry"
+                                ],
+                                "publications": [
+                                    "pubmed:33067466"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "4-hydroxyphenylglycine",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC(=CC=C1[C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Sequence-based prediction",
+                                    "Mass spectrometry"
+                                ],
+                                "publications": [
+                                    "pubmed:33067466"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "3,5-dihydroxyphenylglycine",
+                                        "proteinogenic": false,
+                                        "structure": "N[C@H](C(=O)O)c1cc(O)cc(O)c1"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Sequence-based prediction",
+                                    "Mass spectrometry"
+                                ],
+                                "publications": [
+                                    "pubmed:33067466"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "tyrosine",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC(=CC=C1C[C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AZM51139.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Sequence-based prediction",
+                                    "Mass spectrometry"
+                                ],
+                                "publications": [
+                                    "pubmed:33067466"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "3,5-dihydroxyphenylglycine",
+                                        "proteinogenic": false,
+                                        "structure": "N[C@H](C(=O)O)c1cc(O)cc(O)c1"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Sequence-based prediction",
+                                    "Mass spectrometry"
+                                ],
+                                "publications": [
+                                    "pubmed:33067466"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "3,5-dihydroxyphenylglycine",
+                                        "proteinogenic": false,
+                                        "structure": "N[C@H](C(=O)O)c1cc(O)cc(O)c1"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Sequence-based prediction",
+                                    "Mass spectrometry"
+                                ],
+                                "publications": [
+                                    "pubmed:33067466"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "valine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AZM51140.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Sequence-based prediction",
+                                    "Mass spectrometry"
+                                ],
+                                "publications": [
+                                    "pubmed:33067466"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "3,5-dihydroxyphenylglycine",
+                                        "proteinogenic": false,
+                                        "structure": "N[C@H](C(=O)O)c1cc(O)cc(O)c1"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AZM51141.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Sequence-based prediction",
+                                    "Mass spectrometry"
+                                ],
+                                "publications": [
+                                    "pubmed:33067466"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "3,5-dihydroxyphenylglycine",
+                                        "proteinogenic": false,
+                                        "structure": "N[C@H](C(=O)O)c1cc(O)cc(O)c1"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Streptomyces sp. WAC 06738",
+        "publications": [
+            "pubmed:33067466",
+            "doi:10.1038/s41467-020-19138-5"
+        ],
+        "status": "active"
+    }
+}

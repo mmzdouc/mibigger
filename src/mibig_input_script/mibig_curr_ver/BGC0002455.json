@@ -1,0 +1,58 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11",
+                "Added chemical structures for compounds: lagriene.",
+                "Added NPAtlas links to compounds: lagriene."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "COC1C/C=C\\C=C\\CC(C)C(O)CC(O)C(C)C(O)CC(=O)OC(/C=C(\\C)CC/C=C/C=C/CC(O)CC(C)CCC(=O)O)C(C)C(O)CC(O)CCC1",
+                "compound": "lagriene",
+                "database_id": [
+                    "npatlas:NPA032863"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "LT797838.1",
+            "completeness": "Unknown",
+            "end_coord": 129213,
+            "start_coord": 1
+        },
+        "mibig_accession": "BGC0002455",
+        "minimal": true,
+        "ncbi_tax_id": "28095",
+        "organism_name": "Burkholderia gladioli",
+        "publications": [
+            "pubmed:28452358"
+        ],
+        "status": "active"
+    }
+}

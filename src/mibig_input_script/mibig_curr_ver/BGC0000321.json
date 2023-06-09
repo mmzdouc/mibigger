@@ -1,0 +1,412 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Removed empty gene annotations",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CN1C(=O)C23CC4(C(N2C(=O)C1(SS3)CO)NC5=CC=CC=C54)C67CC89C(=O)N(C(C(=O)N8C6NC1=CC=CC=C71)(SS9)CO)C",
+                "compound": "chaetocin",
+                "database_id": [
+                    "pubchem:161591"
+                ],
+                "mol_mass": 696.0953166160001,
+                "molecular_formula": "C30H28N6O6S4"
+            }
+        ],
+        "genes": {
+            "extra_genes": [
+                {
+                    "id": "ctg1_orf000000",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 2775,
+                                "start": 2327
+                            },
+                            {
+                                "end": 1914,
+                                "start": 1870
+                            },
+                            {
+                                "end": 1748,
+                                "start": 1658
+                            }
+                        ],
+                        "strand": -1
+                    }
+                },
+                {
+                    "id": "ctg1_orf00001",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 3141,
+                                "start": 3136
+                            },
+                            {
+                                "end": 3287,
+                                "start": 3217
+                            },
+                            {
+                                "end": 4280,
+                                "start": 3502
+                            },
+                            {
+                                "end": 4402,
+                                "start": 4350
+                            },
+                            {
+                                "end": 4475,
+                                "start": 4449
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "ctg1_orf0002",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 5947,
+                                "start": 4724
+                            },
+                            {
+                                "end": 4719,
+                                "start": 4676
+                            },
+                            {
+                                "end": 4662,
+                                "start": 4620
+                            }
+                        ],
+                        "strand": -1
+                    }
+                },
+                {
+                    "id": "ctg1_orf003",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 9507,
+                                "start": 8948
+                            },
+                            {
+                                "end": 10051,
+                                "start": 9696
+                            },
+                            {
+                                "end": 10202,
+                                "start": 10105
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "ctg1_orf04",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 12746,
+                                "start": 12728
+                            },
+                            {
+                                "end": 14297,
+                                "start": 13016
+                            },
+                            {
+                                "end": 14570,
+                                "start": 14360
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "ctg1_orf5",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 17028,
+                                "start": 16401
+                            },
+                            {
+                                "end": 17236,
+                                "start": 17084
+                            },
+                            {
+                                "end": 18601,
+                                "start": 18518
+                            },
+                            {
+                                "end": 19480,
+                                "start": 19159
+                            },
+                            {
+                                "end": 20137,
+                                "start": 19531
+                            },
+                            {
+                                "end": 21569,
+                                "start": 20201
+                            },
+                            {
+                                "end": 22052,
+                                "start": 21657
+                            },
+                            {
+                                "end": 22374,
+                                "start": 22145
+                            },
+                            {
+                                "end": 22738,
+                                "start": 22595
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "ctg1_orf6",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 25399,
+                                "start": 25023
+                            },
+                            {
+                                "end": 25546,
+                                "start": 25475
+                            },
+                            {
+                                "end": 25887,
+                                "start": 25617
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "ctg1_orf7",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 26849,
+                                "start": 26666
+                            },
+                            {
+                                "end": 26617,
+                                "start": 26404
+                            },
+                            {
+                                "end": 26161,
+                                "start": 26143
+                            }
+                        ],
+                        "strand": -1
+                    }
+                },
+                {
+                    "id": "ctg1_orf8",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 27032,
+                                "start": 27004
+                            },
+                            {
+                                "end": 27711,
+                                "start": 27249
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "ctg1_orf9",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 28681,
+                                "start": 28184
+                            },
+                            {
+                                "end": 28124,
+                                "start": 28028
+                            },
+                            {
+                                "end": 27855,
+                                "start": 27812
+                            }
+                        ],
+                        "strand": -1
+                    }
+                },
+                {
+                    "id": "ctg1_orf10",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 36908,
+                                "start": 36290
+                            },
+                            {
+                                "end": 36075,
+                                "start": 29834
+                            }
+                        ],
+                        "strand": -1
+                    }
+                },
+                {
+                    "id": "ctg1_orf11",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 37471,
+                                "start": 37337
+                            },
+                            {
+                                "end": 37673,
+                                "start": 37561
+                            },
+                            {
+                                "end": 38342,
+                                "start": 37727
+                            },
+                            {
+                                "end": 38926,
+                                "start": 38822
+                            },
+                            {
+                                "end": 39234,
+                                "start": 38989
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "ctg1_orf12",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 41143,
+                                "start": 40756
+                            },
+                            {
+                                "end": 40687,
+                                "start": 40227
+                            },
+                            {
+                                "end": 40155,
+                                "start": 39616
+                            }
+                        ],
+                        "strand": -1
+                    }
+                },
+                {
+                    "id": "ctg1_orf13",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 41786,
+                                "start": 41603
+                            },
+                            {
+                                "end": 41912,
+                                "start": 41846
+                            },
+                            {
+                                "end": 42452,
+                                "start": 41985
+                            },
+                            {
+                                "end": 42651,
+                                "start": 42528
+                            }
+                        ],
+                        "strand": 1
+                    }
+                },
+                {
+                    "id": "ctg1_orforf14",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 43703,
+                                "start": 43161
+                            }
+                        ],
+                        "strand": 1
+                    }
+                }
+            ]
+        },
+        "loci": {
+            "accession": "KF496217.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000321",
+        "minimal": false,
+        "ncbi_tax_id": "1934374",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "ctg1_orf10",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "substrates": [
+                                    {
+                                        "name": "tryptophan",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC=C2C(=C1)C(=CN2)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Collariella virescens",
+        "publications": [
+            "pubmed:24123808"
+        ],
+        "status": "active"
+    }
+}

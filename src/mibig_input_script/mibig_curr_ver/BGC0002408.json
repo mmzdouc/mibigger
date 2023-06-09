@@ -1,0 +1,55 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: malleobactin X.",
+                "Added NPAtlas links to compounds: malleobactin X."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "NCCCCNC(=O)C(CCCN(O)C=O)NC(=O)C(CO)NC(=O)C(NC(=O)C(N)CCCN(O)C=O)C(O)C(=O)O",
+                "compound": "malleobactin X",
+                "database_id": [
+                    "npatlas:NPA033068"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "WXXL01000019.1",
+            "completeness": "Unknown",
+            "end_coord": 53320,
+            "evidence": [
+                "Knock-out studies"
+            ],
+            "start_coord": 22045
+        },
+        "mibig_accession": "BGC0002408",
+        "minimal": true,
+        "ncbi_tax_id": "279113",
+        "organism_name": "Collimonas pratensis",
+        "publications": [
+            "pubmed:33817942",
+            "doi:10.1111/1462-2920.15508"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,69 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated genome accession (the wrong operon was assigned)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "phytotoxic"
+                    }
+                ],
+                "compound": "mangotoxin"
+            }
+        ],
+        "loci": {
+            "accession": "JQ409468.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000387",
+        "minimal": true,
+        "ncbi_tax_id": "321",
+        "organism_name": "Pseudomonas syringae pv. syringae",
+        "publications": [
+            "pubmed:22615797",
+            "pubmed:17506328"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,102 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Changed chemical structures for compounds: acu-dioxomorpholine B.",
+                "Added NPAtlas links to compounds: acu-dioxomorpholine B."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C=CC(C)(C)[C@]12C[C@@H]3C(=O)O[C@H](CC4=CC=CC=C4)C(=O)N3[C@H]1N(C)C1=CC=CC=C12",
+                "compound": "acu-dioxomorpholine B",
+                "database_id": [
+                    "npatlas:NPA032821"
+                ]
+            },
+            {
+                "chem_struct": "[H][C@]12NC3=CC=CC=C3[C@@]1(C(C)(C)C=C)CC4C2C([C@@H](CC5=CC=CC=C5)OC4=O)=O",
+                "compound": "acu-dioxomorpholine A"
+            }
+        ],
+        "loci": {
+            "accession": "KV878985.1",
+            "completeness": "Unknown",
+            "end_coord": 104699,
+            "evidence": [
+                "Heterologous expression"
+            ],
+            "start_coord": 92151
+        },
+        "mibig_accession": "BGC0002226",
+        "minimal": false,
+        "ncbi_tax_id": "690307",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "OJJ96433.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:29631395"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "tryptophan",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC=C2C(=C1)C(=CN2)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:29631395"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "D-phenyllactic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC=C(C=C1)C[C@H](C(=O)O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Aspergillus aculeatus ATCC 16872",
+        "publications": [
+            "pubmed:29631395"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: kyamicin.",
+                "Added NPAtlas links to compounds: kyamicin."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC1CC(=O)C(CC2=CC=CC=C2)NC(=O)C2NC(=O)C(CC3=CC=CC=C3)NC(=O)C3CCCN3C(=O)CNC(=O)C(C)NC(=O)C3CNCCCCC(C(=O)O)NC(=O)C4NC(=O)C(CO)NC(=O)CNC(=O)C(C(O)C(=O)O)NC(=O)C(CSC(C)C(NC(=O)C(CO)NC(=O)C(C)NC(=O)C(N)CSC4C)C(=O)NC(CSC2C)C(=O)N3)NC1=O",
+                "compound": "kyamicin",
+                "database_id": [
+                    "npatlas:NPA033500"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "MK251553.1",
+            "completeness": "Unknown",
+            "end_coord": 11935,
+            "evidence": [
+                "Heterologous expression"
+            ],
+            "start_coord": 1
+        },
+        "mibig_accession": "BGC0002346",
+        "minimal": true,
+        "ncbi_tax_id": "33915",
+        "organism_name": "Saccharopolyspora sp.",
+        "publications": [
+            "pubmed:31732571",
+            "doi:10.1128/AEM.01876-19"
+        ],
+        "status": "active"
+    }
+}

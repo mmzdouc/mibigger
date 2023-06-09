@@ -1,0 +1,91 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "SJOI7JSMELHUIOC3HESCTFXV"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Corrected NCBI accession to match gene naming in the reference",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CC(C(N/C(C(N1C(CCC1)C(NC(C)C(NC(C(NC(C(NC(C(NC(C(NC(C(NC(C(NC(C(NC(C(NC(C(N/C(C(NC(C(NC(C(NC(C(NC2C(C)C)=O)CC(C)C)=O)CS/C=C\\NC2=O)=O)[C@H](C)CC)=O)=C/C)=O)CO)=O)[H])=O)CCC(N)=O)=O)[C@H](C)CC)=O)C(C)C)=O)CC3=CC=CC=C3)=O)CCC(N)=O)=O)C)=O)C(C)C)=O)=O)=O)=C\\C)=O)N(C)C",
+                "chem_targets": [
+                    {
+                        "publications": [
+                            "pubmed:26958869"
+                        ],
+                        "target": "HL-60 cells|but mechanism unknown"
+                    }
+                ],
+                "compound": "grisemycin",
+                "mass_spec_ion_type": "Molecular ion",
+                "mol_mass": 1832.0018614039986,
+                "molecular_formula": "C86H137N21O21S"
+            }
+        ],
+        "loci": {
+            "accession": "AP009493.1",
+            "completeness": "complete",
+            "end_coord": 7576934,
+            "evidence": [
+                "Knock-out studies",
+                "Heterologous expression",
+                "Gene expression correlated with compound production"
+            ],
+            "start_coord": 7570210
+        },
+        "mibig_accession": "BGC0000583",
+        "minimal": false,
+        "ncbi_tax_id": "455632",
+        "organism_name": "Streptomyces griseus subsp. griseus NBRC 13350",
+        "publications": [
+            "pubmed:21421760"
+        ],
+        "ripp": {
+            "cyclic": true,
+            "subclass": "Linaridin"
+        },
+        "status": "active"
+    }
+}

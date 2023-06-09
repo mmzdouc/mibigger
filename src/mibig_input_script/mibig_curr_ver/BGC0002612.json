@@ -1,0 +1,56 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Changed chemical structures for compounds: anditomin.",
+                "Added NPAtlas links to compounds: anditomin."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Terpene"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C=C1C2C(=O)[C@]3(C)C[C@@H]4C(=O)OC[C@]14[C@@]1(CC[C@H]4C(C)(C)OC(=O)C=C[C@]4(C)[C@H]21)C3",
+                "compound": "anditomin",
+                "database_id": [
+                    "pubchem:91820511",
+                    "npatlas:NPA032767"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "AB981314.1",
+            "completeness": "Unknown",
+            "end_coord": 31032,
+            "evidence": [
+                "Enzymatic assays"
+            ],
+            "start_coord": 101
+        },
+        "mibig_accession": "BGC0002612",
+        "minimal": true,
+        "ncbi_tax_id": "1549217",
+        "organism_name": "Aspergillus stellatus",
+        "publications": [
+            "pubmed:25216349",
+            "doi:10.1021/ja508127q"
+        ],
+        "status": "active"
+    }
+}

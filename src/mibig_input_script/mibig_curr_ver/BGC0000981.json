@@ -1,0 +1,51 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C[C@H]1[C@H](C[C@@H]2C[C@@H](NC3=NC[C@H]1N23)[C@@H](C4=CC(=O)NC(=O)N4)O)OS(=O)(=O)O",
+                "compound": "cylindrospermopsin",
+                "database_id": [
+                    "pubchem:115005"
+                ],
+                "mol_mass": 415.11616901199994,
+                "molecular_formula": "C15H21N5O7S"
+            }
+        ],
+        "loci": {
+            "accession": "GQ385961.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000981",
+        "minimal": true,
+        "ncbi_tax_id": "459664",
+        "organism_name": "Aphanizomenon sp. 10E6",
+        "publications": [
+            "pubmed:20430808"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Changed chemical structures for compounds: berninamycin J, berninamycin K.",
+                "Added NPAtlas links to compounds: berninamycin J, berninamycin K."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C=C(NC(=O)C(=C)NC(=O)C1=CC=C(C2=NC(C(=O)N[C@H](C(N)=O)[C@@H](C)O)=CS2)C(C2=COC(C(=C)NC(=O)C(=C)NC(=O)C3=C(C)OC(C(=C)NC(=O)[C@@H](NC(=O)C(=C)NC(=O)C4=C(C)OC(C(=O)CC)=N4)C(C)(C)O)=N3)=N2)=N1)C(N)=O",
+                "compound": "berninamycin K",
+                "database_id": [
+                    "npatlas:NPA033063"
+                ]
+            },
+            {
+                "chem_struct": "C=C(NC(=O)C(=C)NC(=O)C1=CC=C(C2=NC(C(=O)N[C@H](C(N)=O)[C@@H](C)O)=CS2)C(C2=COC(C(=C)NC(=O)C(=C)NC(=O)C3=C(C)OC(C(=C)NC(=O)[C@@H](NC(=O)C(=C)NC(=O)C4=C(C)OC(C(=O)CC)=N4)C(C)C)=N3)=N2)=N1)C(N)=O",
+                "compound": "berninamycin J",
+                "database_id": [
+                    "npatlas:NPA033062"
+                ]
+            },
+            {
+                "chem_struct": "C/C=C\\1/C2=NC(=C(O2)C)C(=O)NC(=C)C(=O)N[C@H](C(=O)NC(=C)C3=NC(=C(O3)C)C(=O)NC(=C)C(=O)NC(=C)C4=NC(=CO4)C5=C(C=CC(=N5)C(=O)NC(=C)C(=O)NC(=C)C(=O)N)C6=NC(=CS6)C(=O)N[C@H](C(=O)N1)[C@@H](C)O)C(C)(C)O",
+                "compound": "berninamycin A",
+                "database_id": [
+                    "npatlas:NPA001733"
+                ]
+            },
+            {
+                "chem_struct": "C/C=C\\1/C2=NC(=C(O2)C)C(=O)NC(=C)C(=O)N[C@H](C(=O)NC(=C)C3=NC(=C(O3)C)C(=O)NC(=C)C(=O)NC(=C)C4=NC(=CO4)C5=C(C=CC(=N5)C(=O)NC(=C)C(=O)NC(=C)C(=O)N)C6=NC(=CS6)C(=O)N[C@H](C(=O)N1)[C@@H](C)O)C(C)C",
+                "compound": "berninamycin B",
+                "database_id": [
+                    "npatlas:NPA017719"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "MT362006.1",
+            "completeness": "Unknown",
+            "end_coord": 22640,
+            "evidence": [
+                "Heterologous expression",
+                "Gene expression correlated with compound production"
+            ],
+            "start_coord": 1
+        },
+        "mibig_accession": "BGC0002363",
+        "minimal": true,
+        "ncbi_tax_id": "1931",
+        "organism_name": "Streptomyces sp.",
+        "publications": [
+            "pubmed:34617948"
+        ],
+        "status": "active"
+    }
+}

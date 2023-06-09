@@ -1,0 +1,232 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C[C@H]1[C@@H](NC(=O)[C@@H](NC(=O)[C@H]([C@@H](NC(=O)[C@@H](NC(=O)[C@H](NC(=O)C(=C)N(C(=O)CC[C@@H](NC1=O)C(=O)O)C)C)CC(C)C)C(=O)O)C)CCCN=C(N)N)/C=C/C(=C/[C@H](C)[C@H](CC2=CC=CC=C2)OC)/C",
+                "compound": "microcystin-LR",
+                "mol_mass": 994.548767808,
+                "molecular_formula": "C49H74N10O12"
+            },
+            {
+                "chem_struct": "CO[C@@H](CC1=CC=CC=C1)[C@@H](C)\\C=C(/C)\\C=C\\[C@@H]1NC(=O)[C@H](CCCNC(N)=N)NC(=O)[C@@H](C)[C@@H](NC(=O)[C@H](CC2=CC=CC=C2)NC(=O)[C@@H](C)NC(=O)C(=C)N(C)C(=O)CC[C@@H](NC(=O)[C@H]1C)C(O)=O)C(O)=O",
+                "compound": "microcystin-FR",
+                "database_id": [
+                    "npatlas:NPA0266"
+                ],
+                "mol_mass": 1028.5331177440003,
+                "molecular_formula": "C52H72N10O12"
+            },
+            {
+                "chem_struct": "C[C@H]1[C@@H](NC(=O)[C@@H](NC(=O)[C@H]([C@@H](NC(=O)[C@@H](NC(=O)[C@H](NC(=O)C(=C)N(C(=O)CC[C@@H](NC1=O)C(=O)O)C)C)CC(C)C)C(=O)O)C)C)/C=C/C(=C/[C@H](C)[C@H](CC2=CC=CC=C2)OC)/C",
+                "compound": "microcystin-LA",
+                "mol_mass": 909.484770584,
+                "molecular_formula": "C46H67N7O12"
+            },
+            {
+                "chem_struct": "C[C@H]1[C@@H](NC(=O)C(NC(=O)[C@H]([C@@H](NC(=O)[C@@H](NC(=O)[C@H](NC(=O)C(=C)N(C(=O)CC[C@@H](NC1=O)C(=O)O)C)C)CC(C)C)C(=O)O)C)(C)C)/C=C/C(=C/[C@H](C)[C@H](CC2=CC=CC=C2)OC)/C",
+                "compound": "microcystin-LAba",
+                "mol_mass": 923.500420648,
+                "molecular_formula": "C47H69N7O12"
+            },
+            {
+                "chem_struct": "C[C@@H](/C=C(\\C)/C=C/C([C@H](C)C(=O)N(C)[C@H](CC[C]=O)C(=O)O)NC(=O)[C@H](CCSC)NC(=O)[C@@H](C)[C@H](C(=O)O)NC(=O)[C@H](CC(C)C)NC(=O)[C@@H](C)NC(=O)C(=C)N)[C@H](CC1=CC=CC=C1)OC",
+                "compound": "microcystin-LM",
+                "mol_mass": 970.4959667439999,
+                "molecular_formula": "C48H72N7O12S"
+            },
+            {
+                "compound": "microcystin-LV"
+            },
+            {
+                "chem_struct": "C[C@H]1[C@@H](NC(=O)[C@@H](NC(=O)[C@H]([C@@H](NC(=O)[C@@H](NC(=O)C(NC(=O)C(=C)N(C(=O)CC[C@@H](NC1=O)C(=O)O)C)C)CC(C)C)C(=O)O)C)CC(C)C)/C=C/C(=C/[C@H](C)[C@H](CC2=CC=CC=C2)OC)/C",
+                "compound": "microcystin-LL",
+                "mol_mass": 951.531720776,
+                "molecular_formula": "C49H73N7O12"
+            }
+        ],
+        "loci": {
+            "accession": "KX891213.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001667",
+        "minimal": false,
+        "ncbi_tax_id": "548826",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "AQH32481.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction",
+                                    "Mass spectrometry"
+                                ],
+                                "publications": [
+                                    "pubmed:29154789"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glutamic acid",
+                                        "proteinogenic": true,
+                                        "structure": "C(CC(=O)O)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AQH32484.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction",
+                                    "Mass spectrometry"
+                                ],
+                                "publications": [
+                                    "pubmed:29154789"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction",
+                                    "Mass spectrometry"
+                                ],
+                                "publications": [
+                                    "pubmed:29154789"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "alanine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AQH32485.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction",
+                                    "Mass spectrometry"
+                                ],
+                                "publications": [
+                                    "pubmed:29154789"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "leucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction",
+                                    "Mass spectrometry"
+                                ],
+                                "publications": [
+                                    "pubmed:29154789"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "tyrosine",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC(=CC=C1C[C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AQH32486.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction",
+                                    "Mass spectrometry"
+                                ],
+                                "publications": [
+                                    "pubmed:29154789"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Fischerella sp. CENA161",
+        "publications": [
+            "pubmed:29154789"
+        ],
+        "status": "active"
+    }
+}

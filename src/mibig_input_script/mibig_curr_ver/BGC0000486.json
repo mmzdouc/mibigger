@@ -1,0 +1,58 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Corrected coordinates to match reference"
+            ],
+            "contributors": [
+                "SJG3CBEHSM6A3I74YXLH6GLA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "compound": "butyrivibriocin AR10"
+            }
+        ],
+        "loci": {
+            "accession": "AF076529.2",
+            "completeness": "Unknown",
+            "end_coord": 5898,
+            "start_coord": 1470
+        },
+        "mibig_accession": "BGC0000486",
+        "minimal": true,
+        "ncbi_tax_id": "831",
+        "organism_name": "Butyrivibrio fibrisolvens",
+        "publications": [
+            "pubmed:15162201"
+        ],
+        "ripp": {
+            "subclass": "Head-to-tailcyclized peptide"
+        },
+        "status": "active"
+    }
+}

@@ -1,0 +1,59 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: vacidobactin A, vacidobactin B.",
+                "Added NPAtlas links to compounds: vacidobactin A, vacidobactin B."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC1CC(=O)NC(CCCN(O)C=O)C(O)C(C)C(=O)NC(C(C)O)C(=O)NC(CCCNO)C(=O)NC(CO)C(=O)NC(C(O)C(=O)O)C(=O)O1",
+                "compound": "vacidobactin A",
+                "database_id": [
+                    "npatlas:NPA032828"
+                ]
+            },
+            {
+                "chem_struct": "CC1CC(=O)NC(CCCN(O)C=O)C(O)C(C)C(=O)NC(C(C)O)C(=O)NC(CCCN)C(=O)NC(CO)C(=O)NC(C(O)C(=O)O)C(=O)O1",
+                "compound": "vacidobactin B",
+                "database_id": [
+                    "npatlas:NPA032829"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "CP001635.1",
+            "completeness": "Unknown",
+            "end_coord": 3970005,
+            "start_coord": 3932878
+        },
+        "mibig_accession": "BGC0002420",
+        "minimal": true,
+        "ncbi_tax_id": "543728",
+        "organism_name": "Variovorax paradoxus S110",
+        "publications": [
+            "pubmed:26412281"
+        ],
+        "status": "active"
+    }
+}

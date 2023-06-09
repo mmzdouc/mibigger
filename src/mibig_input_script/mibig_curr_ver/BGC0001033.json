@@ -1,0 +1,312 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Add new compound structure (SMILES) for paenilamicin",
+                "Add new compound: paenilamicin A2",
+                "Add new compound: paenilamicin B1",
+                "Add new compound: paenilamicin B2",
+                "Fixed incorrect publication",
+                "Updated bioactivity data",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "5UL74VURKJ25VSPPPO3H2NYB",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "NCCCCNCCCNC(CNC([C@@H](NC(C[C@H](C[C@H]([C@@H](NC([C@@H]([C@H](N)CCCCN)NC([C@@H](NC([C@@H](C)NC([C@H](O)[C@@H](O)C[C@@H](CCCCN)O)=O)=O)CNC)=O)=O)CO)O)O)=O)CNC)=O)=O",
+                "compound": "paenilamicin",
+                "mol_mass": 1008.6655288760004,
+                "molecular_formula": "C43H88N14O13"
+            },
+            {
+                "chem_acts": [],
+                "chem_struct": "NCCCCNCCCNC(CNC([C@@H](NC(C[C@H](C[C@H]([C@@H](NC([C@@H]([C@H](N)CCCCN)NC([C@@H](NC([C@@H](C)NC([C@H](O)[C@@H](O)C[C@@H](CCCN)O)=O)=O)CNC)=O)=O)CO)O)O)=O)CNC)=O)=O",
+                "compound": "paenilamicin A2",
+                "mol_mass": 994.6498788120005,
+                "molecular_formula": "C42H86N14O13"
+            },
+            {
+                "chem_acts": [],
+                "chem_struct": "NCCCCNCCCNC(CNC([C@@H](NC(C[C@H](C[C@H]([C@@H](NC([C@@H]([C@H](N)CCCNC(N)=N)NC([C@@H](NC([C@@H](C)NC([C@H](O)[C@@H](O)C[C@@H](CCCCN)O)=O)=O)CNC)=O)=O)CO)O)O)=O)CNC)=O)=O",
+                "compound": "paenilamicin B1",
+                "mol_mass": 1036.6716768760004,
+                "molecular_formula": "C43H88N16O13"
+            },
+            {
+                "chem_acts": [],
+                "chem_struct": "NCCCCNCCCNC(CNC([C@@H](NC(C[C@H](C[C@H]([C@@H](NC([C@@H]([C@H](N)CCCNC(N)=N)NC([C@@H](NC([C@@H](C)NC([C@H](O)[C@@H](O)C[C@@H](CCCN)O)=O)=O)CNC)=O)=O)CO)O)O)=O)CNC)=O)=O",
+                "compound": "paenilamicin B2",
+                "mol_mass": 1022.6560268120004,
+                "molecular_formula": "C42H86N16O13"
+            }
+        ],
+        "loci": {
+            "accession": "CP003355.1",
+            "completeness": "Unknown",
+            "end_coord": 1788675,
+            "start_coord": 1729923
+        },
+        "mibig_accession": "BGC0001033",
+        "minimal": false,
+        "ncbi_tax_id": "697284",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "AHD05614.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Mass spectrometry"
+                                ],
+                                "publications": [
+                                    "pubmed:25080172",
+                                    "pubmed:25044543"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "lysine",
+                                        "proteinogenic": true,
+                                        "structure": "C(CCN)C[C@@H](C(=O)O)N"
+                                    },
+                                    {
+                                        "name": "arginine",
+                                        "proteinogenic": true,
+                                        "structure": "C(C[C@@H](C(=O)O)N)CN=C(N)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AHD05615.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:25080172",
+                                    "pubmed:25044543"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "D-alanine",
+                                        "proteinogenic": false,
+                                        "structure": "C[C@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AHD05616.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:25080172",
+                                    "pubmed:25044543"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "2,3-diaminopropionic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C([C@@H](C(=O)O)N)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AHD05617.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Mass spectrometry"
+                                ],
+                                "publications": [
+                                    "pubmed:25080172",
+                                    "pubmed:25044543"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "lysine",
+                                        "proteinogenic": true,
+                                        "structure": "C(CCN)C[C@@H](C(=O)O)N"
+                                    },
+                                    {
+                                        "name": "ornithine",
+                                        "proteinogenic": false,
+                                        "structure": "C(C[C@@H](C(=O)O)N)CN"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AHD05618.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:25080172",
+                                    "pubmed:25044543"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AHD05621.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "publications": [
+                                    "pubmed:25080172",
+                                    "pubmed:25044543"
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:25080172",
+                                    "pubmed:25044543"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "2,3-diaminopropionic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C([C@@H](C(=O)O)N)N"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:25080172",
+                                    "pubmed:25044543"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glycine",
+                                        "proteinogenic": true,
+                                        "structure": "NCC(=O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AHD05627.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Sequence-based prediction",
+                                    "Homology"
+                                ],
+                                "publications": [
+                                    "pubmed:25080172",
+                                    "pubmed:25044543"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "asparagine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)C(=O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Paenibacillus larvae subsp. larvae DSM 25430",
+        "publications": [
+            "pubmed:25044543",
+            "pubmed:25080172"
+        ],
+        "status": "active"
+    }
+}

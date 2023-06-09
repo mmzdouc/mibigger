@@ -1,0 +1,106 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CCC(C)[C@H]1C(=O)OC(CCC(CC(CC(CC(/C=C(/C(=O)N[C@H](C(=O)N1)C(C)C)\\C)C)C)C)C)C",
+                "compound": "valactamide A",
+                "database_id": [
+                    "pubchem:126963414"
+                ],
+                "mol_mass": 506.408358208,
+                "molecular_formula": "C30H54N2O4"
+            }
+        ],
+        "loci": {
+            "accession": "KX449366.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001816",
+        "minimal": false,
+        "ncbi_tax_id": "1955450",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "AQM58286.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:28604695"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "valine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:28604695"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "isoleucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC[C@H](C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Shuttle vector AtFAC9J20",
+        "publications": [
+            "pubmed:28604695"
+        ],
+        "status": "active"
+    }
+}

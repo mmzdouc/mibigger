@@ -1,0 +1,81 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated reference publication(s) (MIBiG Annotathon)",
+                "Updated loci"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Update compound structure (SMILES) for alginate",
+                "Linked new PubChem id for alginate (pubchem:131704328)",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "H5KVDLSVQ3TJW7SKCDNBDEVC",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Saccharide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antioxidant"
+                    }
+                ],
+                "chem_struct": "[C@@H]1([C@@H]([C@H](OC([C@H]1O)O)C(=O)O)O)O.C(=O)[C@H]([C@H]([C@@H]([C@H](C(=O)[O-])O)O)O)O.OC1O[C@@H]([C@H]([C@@H]([C@@H]1OC(C)=O)OC(C)=O)O)C(O)=O",
+                "compound": "alginate",
+                "database_id": [
+                    "pubchem:25202446",
+                    "pubchem:131704328"
+                ],
+                "mol_mass": 665.14181089591,
+                "molecular_formula": "C22H33O23-"
+            }
+        ],
+        "loci": {
+            "accession": "AE004091.2",
+            "completeness": "Unknown",
+            "end_coord": 3979476,
+            "start_coord": 3962825
+        },
+        "mibig_accession": "BGC0000725",
+        "minimal": true,
+        "ncbi_tax_id": "208964",
+        "organism_name": "Pseudomonas aeruginosa PAO1",
+        "publications": [
+            "pubmed:7686997"
+        ],
+        "status": "active"
+    }
+}

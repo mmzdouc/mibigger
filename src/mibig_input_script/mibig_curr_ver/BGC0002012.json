@@ -1,0 +1,72 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Fixed DOIs",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "CUSGWVK3I4TVHJH7NHPFAP2L",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "compound": "julichrome Q3-3"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "compound": "julichrome Q3-5"
+            }
+        ],
+        "loci": {
+            "accession": "NZ_KE354310.1",
+            "completeness": "Unknown",
+            "end_coord": 34051,
+            "start_coord": 8349
+        },
+        "mibig_accession": "BGC0002012",
+        "minimal": true,
+        "ncbi_tax_id": "1283301",
+        "organism_name": "Streptomyces afghaniensis 772",
+        "publications": [
+            "pubmed:24746278",
+            "doi:10.1016/S0040-4020(01)98729-0",
+            "doi:10.1016/0040-4020(70)80008-4"
+        ],
+        "status": "active"
+    }
+}

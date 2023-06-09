@@ -1,0 +1,83 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Cleaned up synonym list",
+                "Fetch compound properties from PubChem",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC(C)/C=C/[C@H]([C@@H]([C@H]([C@H](C(=O)N[C@H]1CCCCNC1=O)OC)O)O)O",
+                "chem_synonyms": [
+                    "Bengamide E"
+                ],
+                "compound": "bengamide",
+                "database_id": [
+                    "pubchem:6444155"
+                ],
+                "mol_mass": 358.210387,
+                "molecular_formula": "C17H30N2O6"
+            }
+        ],
+        "loci": {
+            "accession": "KP143770.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001902",
+        "minimal": false,
+        "ncbi_tax_id": "83456",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "AJY78094.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:26514647"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "lysine",
+                                        "proteinogenic": true,
+                                        "structure": "C(CCN)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Myxococcus virescens",
+        "publications": [
+            "pubmed:26514647"
+        ],
+        "status": "active"
+    }
+}

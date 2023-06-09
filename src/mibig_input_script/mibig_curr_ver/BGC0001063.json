@@ -1,0 +1,85 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CCCCCCCCCCCC1=CC=C(N1)\\C=C1\\N=C(C=C1OC)C1=CC=CN1",
+                "compound": "undecylprodigiosin",
+                "database_id": [
+                    "npatlas:NPA09372",
+                    "pubchem:6438379"
+                ],
+                "mol_mass": 393.27801274,
+                "molecular_formula": "C25H35N3O"
+            }
+        ],
+        "loci": {
+            "accession": "AL645882.2",
+            "completeness": "Unknown",
+            "end_coord": 6464206,
+            "start_coord": 6432566
+        },
+        "mibig_accession": "BGC0001063",
+        "minimal": true,
+        "ncbi_tax_id": "100226",
+        "organism_name": "Streptomyces coelicolor A3(2)",
+        "publications": [
+            "pubmed:12000953",
+            "pubmed:8843436"
+        ],
+        "status": "active"
+    }
+}

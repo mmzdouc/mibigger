@@ -1,0 +1,76 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.3"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "C/C=C/1\\C2=NC(=CS2)C(=O)NC(C3=NC(=CS3)C(=O)NC(C4=NC(=CS4)C5=C(C=CC(=N5)C6=NC(=CS6)C7=NC(=CS7)C(=O)N/C(=C/C)/C(=O)NCC(C)O)C8=NC(=CS8)C(=O)NC(C(=O)N1)C(C)O)C(C)O)C(C)C",
+                "compound": "micrococcin P1",
+                "database_id": [
+                    "pubchem:6446886"
+                ],
+                "mol_mass": 1143.210046148,
+                "molecular_formula": "C48H49N13O9S6"
+            }
+        ],
+        "loci": {
+            "accession": "KM613043.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000607",
+        "minimal": true,
+        "ncbi_tax_id": "69966",
+        "organism_name": "Macrococcus caseolyticus",
+        "publications": [
+            "pubmed:25313391"
+        ],
+        "ripp": {
+            "subclass": "Thiopeptide"
+        },
+        "status": "active"
+    }
+}

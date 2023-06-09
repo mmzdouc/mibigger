@@ -1,0 +1,77 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated reference publication(s) (MIBiG Annotathon)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antiviral"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CNCC(=O)NC(CO)C(=O)NC1C(C(C(OC1C(=O)N)N2C=CC(=NC2=O)N)O)O",
+                "compound": "gougerotin",
+                "mol_mass": 443.17646076000005,
+                "molecular_formula": "C16H25N7O8"
+            }
+        ],
+        "loci": {
+            "accession": "KY089035.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001610",
+        "minimal": true,
+        "ncbi_tax_id": "387850",
+        "organism_name": "Streptomyces ahygroscopicus subsp. wuzhouensis",
+        "publications": [
+            "pubmed:23352137"
+        ],
+        "status": "active"
+    }
+}

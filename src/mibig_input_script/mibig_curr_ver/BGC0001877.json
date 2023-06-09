@@ -1,0 +1,72 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "D573CRWGF3Z73VN2NY3DHI3L"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "anthelmintic"
+                    },
+                    {
+                        "activity": "antifungal"
+                    }
+                ],
+                "chem_struct": "CCC(OC1CC(C)(O)C(OC2CCC(OC(=O)C(C)C(O)C3=CC4=C(C=C3)C(=O)C(C)=CC4=O)C(C)O2)C(C)O1)C(C)C(O)C(C)C(O)C(C)C1OC(=O)\\C=C\\C(C)C(O)CC(O)CCCC(O)CCC(C)C(O)C(=O)C2(O)CC(O)CC(CC(O)CC(O)CC(O)CCCC(O)\\C=C\\C1C)O2",
+                "compound": "cyphomycin",
+                "mol_mass": 1462.8224340239997,
+                "molecular_formula": "C77H122O26"
+            }
+        ],
+        "loci": {
+            "accession": "VOQD01000001.1",
+            "completeness": "complete",
+            "end_coord": 622305,
+            "start_coord": 427967
+        },
+        "mibig_accession": "BGC0001877",
+        "minimal": false,
+        "ncbi_tax_id": "2601673",
+        "organism_name": "Streptomyces sp. ISID311",
+        "polyketide": {
+            "cyclic": true,
+            "subclasses": [
+                "Polyene"
+            ]
+        },
+        "publications": [
+            "pubmed:30705269"
+        ],
+        "status": "active"
+    }
+}

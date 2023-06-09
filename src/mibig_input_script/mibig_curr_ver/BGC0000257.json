@@ -1,0 +1,79 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CCCCCC1=C(NC(=C1)/C=C\\2/C(=C/C(=C/3\\C=CC=N3)/N2)OC)C",
+                "compound": "prodigiosin",
+                "database_id": [
+                    "pubchem:5351169"
+                ],
+                "mol_mass": 323.19976242,
+                "molecular_formula": "C20H25N3O"
+            }
+        ],
+        "loci": {
+            "accession": "AB469822.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000257",
+        "minimal": true,
+        "ncbi_tax_id": "45398",
+        "organism_name": "Streptomyces griseoviridis",
+        "publications": [
+            "pubmed:19329986"
+        ],
+        "status": "active"
+    }
+}

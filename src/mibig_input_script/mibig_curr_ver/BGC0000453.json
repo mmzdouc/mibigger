@@ -1,0 +1,186 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "DUUOEWRWRZA5NTLPQCYGT6Z6"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "antiviral"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    },
+                    {
+                        "activity": "insecticidal"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "D-alpha-hydroxyisovaleric acid",
+                        "subcluster": [
+                            "ABA59547.1"
+                        ]
+                    }
+                ],
+                "chem_struct": "CC(C)[C@@H]1NC(=O)C(C)OC(=O)[C@H](NC(=O)[C@H](OC(=O)[C@@H](NC(=O)[C@H](C)OC(=O)[C@H](NC(=O)[C@H](OC(=O)[C@@H](NC(=O)[C@H](C)OC(=O)[C@H](NC(=O)[C@H](OC1=O)C(C)C)C(C)C)C(C)C)C(C)C)C(C)C)C(C)C)C(C)C)C(C)C",
+                "compound": "valinomycin",
+                "database_id": [
+                    "npatlas:NPA06953"
+                ],
+                "mol_mass": 1110.63116004,
+                "molecular_formula": "C54H90N6O18"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "ABA59547.1",
+                    "name": "76884874",
+                    "product": "NRPS"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "ABA59548.1",
+                    "name": "76884875",
+                    "product": "NRPS"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "DQ174261.1",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies"
+            ]
+        },
+        "mibig_accession": "BGC0000453",
+        "minimal": false,
+        "ncbi_tax_id": "285482",
+        "nrp": {
+            "cyclic": true,
+            "nrps_genes": [
+                {
+                    "gene_id": "ABA59547.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "publications": [
+                                    "pubmed:16511823"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "2-ketoisovaleric acid",
+                                        "proteinogenic": false,
+                                        "structure": "O=C(C(=O)O)C(C)C"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "publications": [
+                                    "pubmed:16511823"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "valine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "ABA59548.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "publications": [
+                                    "pubmed:16511823"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "pyruvic acid",
+                                        "proteinogenic": false,
+                                        "structure": "CC(=O)C(=O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            "subclass": "Cyclic depsipeptide"
+        },
+        "organism_name": "Streptomyces tsusimaensis",
+        "publications": [
+            "pubmed:16511823"
+        ],
+        "status": "active"
+    }
+}

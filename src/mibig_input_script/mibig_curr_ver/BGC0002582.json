@@ -1,0 +1,62 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: guanipiperazine A, guanipiperazine B.",
+                "Added NPAtlas links to compounds: guanipiperazine A, guanipiperazine B."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "NC1=NC2=C([NH]C(C3=CC4=CC(=C3O)OC3=CC=C(C=C3)C[C@H]3CN[C@H](CN3)C4)=N2)C(=O)[NH]1",
+                "compound": "guanipiperazine A",
+                "database_id": [
+                    "npatlas:NPA033117"
+                ]
+            },
+            {
+                "chem_struct": "NC1=NC2=C([NH]C(OC3=CC=C4C=C3OC3=CC=C(C=C3)C[C@H]3CN[C@H](CN3)C4)=N2)C(=O)[NH]1",
+                "compound": "guanipiperazine B",
+                "database_id": [
+                    "npatlas:NPA033118"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "MW051641.1",
+            "completeness": "Unknown",
+            "end_coord": 7207,
+            "evidence": [
+                "Heterologous expression",
+                "Enzymatic assays"
+            ],
+            "start_coord": 1
+        },
+        "mibig_accession": "BGC0002582",
+        "minimal": true,
+        "ncbi_tax_id": "68185",
+        "organism_name": "Streptomyces chrestomyceticus",
+        "publications": [
+            "pubmed:34164059"
+        ],
+        "status": "active"
+    }
+}

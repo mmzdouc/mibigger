@@ -1,0 +1,49 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated reference publication(s) (MIBiG Annotathon)",
+                "Retired, this is a duplicate entry of BGC0000696"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Saccharide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C[C@@]1(CO[C@@H]([C@@H]([C@H]1NC)O)O[C@H]2[C@@H](C[C@@H]([C@H]([C@@H]2O)O[C@@H]3[C@@H](CC[C@H](O3)CN)N)N)N)O",
+                "compound": "gentamicin",
+                "database_id": [
+                    "pubchem:72396"
+                ],
+                "mol_mass": 449.2849485880001,
+                "molecular_formula": "C19H39N5O7"
+            }
+        ],
+        "loci": {
+            "accession": "AY524043.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000697",
+        "minimal": true,
+        "ncbi_tax_id": "1877",
+        "organism_name": "Micromonospora echinospora",
+        "publications": [
+            "pubmed:15376556"
+        ],
+        "retirement_reasons": [
+            "Duplicate of BGC0000696"
+        ],
+        "see_also": [
+            "BGC0000696"
+        ],
+        "status": "retired"
+    }
+}

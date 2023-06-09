@@ -1,0 +1,145 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "4ACA66D6INRVNJRPWB3JQW5E"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    },
+                    {
+                        "activity": "inhibitor"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "beta-lactone"
+                    }
+                ],
+                "chem_struct": "CC[C@H](C)[C@H]1[C@@H](OC1=O)C(=O)N[C@H]1C[C@@H]1C[C@H](NC(=O)[C@H](C)N)C(O)=O",
+                "chem_targets": [
+                    {
+                        "target": "20S proteasome"
+                    }
+                ],
+                "compound": "belactosin A",
+                "database_id": [
+                    "npatlas:NPA014378",
+                    "pubchem:25053219"
+                ],
+                "evidence": [
+                    "Mass spectrometry"
+                ],
+                "mol_mass": 369.189985584,
+                "molecular_formula": "C17H27N3O6"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    },
+                    {
+                        "activity": "inhibitor"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "beta-lactone"
+                    }
+                ],
+                "chem_struct": "CC[C@H](C)[C@H]1[C@@H](OC1=O)C(=O)NCCC[C@H](NC(=O)[C@H](C)N)C(O)=O",
+                "chem_targets": [
+                    {
+                        "target": "20S proteasome"
+                    }
+                ],
+                "compound": "belactosin C",
+                "database_id": [
+                    "npatlas:NPA010752",
+                    "pubchem:10666031"
+                ],
+                "evidence": [
+                    "Mass spectrometry"
+                ],
+                "mol_mass": 357.189985584,
+                "molecular_formula": "C16H27N3O6"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "ARO49578.1",
+                    "name": "belJ",
+                    "product": "2-IPM synthase"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "KY249118.1",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies",
+                "Enzymatic assays"
+            ]
+        },
+        "mibig_accession": "BGC0001441",
+        "minimal": false,
+        "ncbi_tax_id": "1931",
+        "organism_name": "Streptomyces sp.",
+        "publications": [
+            "pubmed:28452105",
+            "pubmed:14698035",
+            "pubmed:10724015"
+        ],
+        "status": "active"
+    }
+}

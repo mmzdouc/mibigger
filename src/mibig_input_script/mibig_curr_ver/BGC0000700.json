@@ -1,0 +1,75 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated reference publication(s) (MIBiG Annotathon)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Saccharide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "CNC1C(CC(C(C1O)OC2C(CCC(O2)CN)N)N)OC",
+                "compound": "istamycin",
+                "database_id": [
+                    "pubchem:3056186"
+                ],
+                "mol_mass": 318.22670544,
+                "molecular_formula": "C14H30N4O4"
+            }
+        ],
+        "loci": {
+            "accession": "AJ845083.2",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000700",
+        "minimal": true,
+        "ncbi_tax_id": "29308",
+        "organism_name": "Streptomyces tenjimariensis",
+        "publications": [
+            "pubmed:19362651",
+            "doi:10.1002/9780470149676.ch2"
+        ],
+        "status": "active"
+    }
+}

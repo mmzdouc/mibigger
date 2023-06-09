@@ -1,0 +1,95 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Fix products",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "SJG3CBEHSM6A3I74YXLH6GLA",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "C[C@@H]1C[C@H]([C@H]([C@@]2(O1)C3=C([C@@H]4[C@H](O2)CC(=O)O4)C(=O)C5=C(C3=O)C(=CC=C5)O)O)OC(=O)C",
+                "compound": "griseusin A",
+                "database_id": [
+                    "pubchem:16102131"
+                ],
+                "mol_mass": 444.10564683,
+                "molecular_formula": "C22H20O10"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "C[C@@H]1C[C@H]([C@@H]([C@@]2(O1)C3=C(C[C@H](O2)CC(=O)O)C(=O)C4=C(C3=O)C(=CC=C4)O)O)OC(=O)C",
+                "compound": "griseusin B",
+                "database_id": [
+                    "pubchem:10321333"
+                ],
+                "mol_mass": 446.12129689,
+                "molecular_formula": "C22H22O10"
+            }
+        ],
+        "loci": {
+            "accession": "X77865.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000231",
+        "minimal": true,
+        "ncbi_tax_id": "1911",
+        "organism_name": "Streptomyces griseus",
+        "publications": [
+            "pubmed:8169211"
+        ],
+        "status": "active"
+    }
+}

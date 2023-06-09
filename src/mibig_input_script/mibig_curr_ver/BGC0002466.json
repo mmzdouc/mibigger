@@ -1,0 +1,54 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: peucechelin.",
+                "Added NPAtlas links to compounds: peucechelin."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC(=O)N[C@@H](CCCN(O)C=O)C(=O)N[C@H](CCCN=C(N)N)C(=O)N(O)CCC[C@H]1NC(=O)[C@H](CCCN(O)C=O)NC1=O",
+                "compound": "peucechelin",
+                "database_id": [
+                    "npatlas:NPA032825"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "CP022438.1",
+            "completeness": "Unknown",
+            "end_coord": 853949,
+            "evidence": [
+                "Knock-out studies"
+            ],
+            "start_coord": 816396
+        },
+        "mibig_accession": "BGC0002466",
+        "minimal": true,
+        "ncbi_tax_id": "316280",
+        "organism_name": "Streptomyces peucetius subsp. caesius ATCC 27952",
+        "publications": [
+            "pubmed:26085470"
+        ],
+        "status": "active"
+    }
+}

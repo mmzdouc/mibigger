@@ -1,0 +1,101 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "67IIUGVPORSPZSAXSJ6T72RE"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Corrected compound details",
+                "Removed incorrect polyketide information",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other",
+            "Saccharide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    }
+                ],
+                "chem_struct": "C1[C@@H]([C@H]([C@@H](C([C@H]1N[C@H]2C=C([C@H]([C@@H]([C@H]2O)O)O)CO)O)O)O[C@H]3C(C([C@@H](C(O3)CO)O)O)O)CO",
+                "chem_targets": [
+                    {
+                        "target": "Trehalose synthase"
+                    }
+                ],
+                "compound": "validamycin A",
+                "database_id": [
+                    "npatlas:NPA021209"
+                ],
+                "evidence": [
+                    "NMR"
+                ],
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 497.2108,
+                "molecular_formula": "C20H35NO13"
+            }
+        ],
+        "loci": {
+            "accession": "DQ164098.1",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies",
+                "Enzymatic assays",
+                "Heterologous expression",
+                "Gene expression correlated with compound production"
+            ]
+        },
+        "mibig_accession": "BGC0000722",
+        "minimal": false,
+        "ncbi_tax_id": "311982",
+        "organism_name": "Streptomyces hygroscopicus subsp. jinggangensis",
+        "other": {
+            "subclass": "Cyclitol"
+        },
+        "publications": [
+            "pubmed:16632251",
+            "pubmed:16151088",
+            "pubmed:17335096",
+            "pubmed:18563934",
+            "pubmed:19477421"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Changed chemical structures for compounds: lucensomycin.",
+                "Added NPAtlas links to compounds: lucensomycin."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CCCCC1CC=CC=CC=CC=CC(OC2OC(C)C(O)C(N)C2O)CC2OC(O)(CC(O)CC3OC3C=CC(=O)O1)CC(O)C2C(=O)O",
+                "compound": "lucensomycin",
+                "database_id": [
+                    "pubchem:5382508",
+                    "npatlas:NPA032743"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "MW175861.1",
+            "completeness": "Unknown",
+            "end_coord": 87572,
+            "evidence": [
+                "Knock-out studies"
+            ],
+            "start_coord": 67
+        },
+        "mibig_accession": "BGC0002333",
+        "minimal": true,
+        "ncbi_tax_id": "80860",
+        "organism_name": "Streptomyces cyanogenus",
+        "publications": [
+            "pubmed:33568768"
+        ],
+        "status": "active"
+    }
+}

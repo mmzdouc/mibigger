@@ -1,0 +1,53 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C/C(=C\\C(=O)O)/C1=CC=C(C(=O)O1)CO",
+                "compound": "prolipyrone B",
+                "database_id": [
+                    "npatlas:NPA000132",
+                    "pubchem:71569922"
+                ]
+            },
+            {
+                "chem_struct": "CC1=CC=C(OC1=O)/C(=C/C(=O)O)/C",
+                "compound": "gibepyrone D",
+                "database_id": [
+                    "npatlas:NPA009225"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "CM000575.1",
+            "completeness": "Unknown",
+            "end_coord": 7181236,
+            "evidence": [
+                "Gene expression correlated with compound production"
+            ],
+            "start_coord": 7172173
+        },
+        "mibig_accession": "BGC0002191",
+        "minimal": true,
+        "ncbi_tax_id": "229533",
+        "organism_name": "Fusarium graminearum PH-1",
+        "publications": [
+            "pubmed:30200525",
+            "doi:10.3390/molecules23092232"
+        ],
+        "status": "active"
+    }
+}

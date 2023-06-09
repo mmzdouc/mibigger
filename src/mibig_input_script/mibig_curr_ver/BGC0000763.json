@@ -1,0 +1,71 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated reference publication(s) (MIBiG Annotathon)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Saccharide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "biofilm"
+                    },
+                    {
+                        "activity": "virulence factor"
+                    }
+                ],
+                "compound": "stewartan"
+            }
+        ],
+        "loci": {
+            "accession": "AF077292.2",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000763",
+        "minimal": true,
+        "ncbi_tax_id": "660596",
+        "organism_name": "Pantoea stewartii subsp. stewartii DC283",
+        "publications": [
+            "doi:10.1016/0008-6215(96)00070-5"
+        ],
+        "status": "active"
+    }
+}

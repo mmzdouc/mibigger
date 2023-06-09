@@ -1,0 +1,51 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: parabactin.",
+                "Added NPAtlas links to compounds: parabactin."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C[C@H]1OC(C2=CC=CC=C2O)=N[C@@H]1C(=O)N(CCCCNC(=O)C1=C(O)C(O)=CC=C1)CCCNC(=O)C1=C(O)C(O)=CC=C1",
+                "compound": "parabactin",
+                "database_id": [
+                    "npatlas:NPA032762"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "CP000489.1",
+            "completeness": "Unknown",
+            "end_coord": 2385957,
+            "start_coord": 2379882
+        },
+        "mibig_accession": "BGC0002493",
+        "minimal": true,
+        "ncbi_tax_id": "318586",
+        "organism_name": "Paracoccus denitrificans PD1222",
+        "publications": [
+            "pubmed:24927540"
+        ],
+        "status": "active"
+    }
+}

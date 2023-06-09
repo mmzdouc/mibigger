@@ -1,0 +1,390 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "BAJIZJS2YANDM4M7JHS5DFUK"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Corrected NRP module activity",
+                "Removed ketoreductase stereochemistry annotation from modules without ketoreductases",
+                "Updated NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "hepatotoxic"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "D-erythro-beta-methylaspartic acid"
+                    }
+                ],
+                "chem_struct": "C[C@H]1[C@@H](NC(=O)[C@@H](NC(=O)[C@H]([C@@H](NC(=O)[C@@H](NC(=O)[C@H](NC(=O)C(=C)N(C(=O)CC[C@@H](NC1=O)C(=O)O)C)C)CC(C)C)C(=O)O)C)CCCN=C(N)N)/C=C/C(=C/[C@H](C)[C@H](CC2=CC=CC=C2)OC)/C",
+                "chem_targets": [
+                    {
+                        "target": "Eukaryotic protein phosphatase 1 and 2A"
+                    }
+                ],
+                "compound": "microcystin",
+                "database_id": [
+                    "pubchem:445434"
+                ],
+                "mol_mass": 994.548767808,
+                "molecular_formula": "C49H74N10O12"
+            }
+        ],
+        "loci": {
+            "accession": "AY212249.1",
+            "completeness": "complete"
+        },
+        "mibig_accession": "BGC0001016",
+        "minimal": false,
+        "ncbi_tax_id": "46234",
+        "nrp": {
+            "cyclic": true,
+            "nrps_genes": [
+                {
+                    "gene_id": "AAO62588.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "doi:10.1128/AEM.70.2.686-692.2004",
+                                    "doi:10.1128/aem.58.8.2495-2500.1992"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "arginine",
+                                        "proteinogenic": true,
+                                        "structure": "C(C[C@@H](C(=O)O)N)CN=C(N)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "11"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AAO62587.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "doi:10.1128/AEM.70.2.686-692.2004",
+                                    "doi:10.1128/aem.58.8.2495-2500.1992"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "leucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)C[C@@H](C(=O)O)N"
+                                    },
+                                    {
+                                        "name": "arginine",
+                                        "proteinogenic": true,
+                                        "structure": "C(C[C@@H](C(=O)O)N)CN=C(N)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "DCL",
+                            "module_number": "9"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "doi:10.1128/AEM.70.2.686-692.2004",
+                                    "doi:10.1128/aem.58.8.2495-2500.1992"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "3S-methyl-D-aspartic acid branched",
+                                        "proteinogenic": false,
+                                        "structure": "N[C@H]([C@H](O)C(O)=O)C(O)=O"
+                                    },
+                                    {
+                                        "name": "aspartic acid branched",
+                                        "proteinogenic": false,
+                                        "structure": "C([C@@H](C(=O)O)N)C(=O)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "10"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AAO62586.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Homology"
+                                ],
+                                "publications": [
+                                    "doi:10.1128/AEM.70.2.686-692.2004",
+                                    "doi:10.1128/aem.58.8.2495-2500.1992"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "modification_domains": [
+                                "Methylation"
+                            ],
+                            "module_number": "7"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": true,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "doi:10.1128/AEM.70.2.686-692.2004",
+                                    "doi:10.1128/aem.58.8.2495-2500.1992"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "alanine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "DCL",
+                            "module_number": "8"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AAO62585.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Homology"
+                                ],
+                                "publications": [
+                                    "doi:10.1021/cb500007v",
+                                    "doi:10.1128/AEM.70.2.686-692.2004"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "cinnamic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC=C(C=C1)/C=C/C(=O)O"
+                                    },
+                                    {
+                                        "name": "hydrocinnamic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC=C(C=C1)CCC(=O)O"
+                                    },
+                                    {
+                                        "name": "D-phenylalanine",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC=C(C=C1)C[C@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "module_number": "0"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AAO62582.1",
+                    "modules": [
+                        {
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "Aminotransferase"
+                            ],
+                            "module_number": "5"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "doi:10.1128/AEM.70.2.686-692.2004",
+                                    "doi:10.1128/aem.58.8.2495-2500.1992"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "D-glutamic acid branched",
+                                        "proteinogenic": false,
+                                        "structure": "C(CC(=O)O)[C@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "6"
+                        }
+                    ]
+                }
+            ],
+            "release_type": [
+                "Hydrolysis"
+            ]
+        },
+        "organism_name": "Anabaena sp. 90",
+        "polyketide": {
+            "synthases": [
+                {
+                    "genes": [
+                        "AAO62584.1",
+                        "AAO62585.1",
+                        "AAO62582.1"
+                    ],
+                    "modules": [
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "AAO62585.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "1",
+                            "pks_mod_doms": [
+                                "Methylation"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Dehydratase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "AAO62584.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "2",
+                            "pks_mod_doms": [
+                                "Methylation"
+                            ]
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Dehydratase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "AAO62584.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "3"
+                        },
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "AAO62582.1"
+                            ],
+                            "module_number": "4",
+                            "pks_mod_doms": [
+                                "Methylation"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "publications": [
+            "pubmed:14766543",
+            "pubmed:17163649"
+        ],
+        "status": "active"
+    }
+}

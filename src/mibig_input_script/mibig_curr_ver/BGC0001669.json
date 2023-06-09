@@ -1,0 +1,69 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "surfactant"
+                    }
+                ],
+                "compound": "microvionin"
+            }
+        ],
+        "loci": {
+            "accession": "MG673929.1",
+            "completeness": "Unknown",
+            "end_coord": 40001,
+            "start_coord": 1
+        },
+        "mibig_accession": "BGC0001669",
+        "minimal": true,
+        "ncbi_tax_id": "33883",
+        "organism_name": "Microbacterium arborescens",
+        "publications": [
+            "pubmed:29915235"
+        ],
+        "status": "active"
+    }
+}

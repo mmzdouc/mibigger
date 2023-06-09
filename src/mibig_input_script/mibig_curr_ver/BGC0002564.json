@@ -1,0 +1,101 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: megapolibactin Bcyc, megapolibactin Acyc.",
+                "Added NPAtlas links to compounds: megapolibactin Bcyc, megapolibactin Acyc."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CCCCCCC[C@@H](O)CC(=O)NCC(=O)N[C@@H](C(=O)N[C@H]1COC(=O)[C@@H](CCC[N+]([O-])=NO)NC(=O)[C@H](C)NC(=O)[C@@H](CCC[N+]([O-])=NO)NC(=O)[C@@H]([C@@H](C)O)NC1=O)[C@@H](O)C(=O)O",
+                "compound": "megapolibactin Acyc",
+                "database_id": [
+                    "npatlas:NPA033107"
+                ]
+            },
+            {
+                "chem_struct": "CCCCCCCCC[C@@H](O)CC(=O)NCC(=O)N[C@@H](C(=O)N[C@H]1COC(=O)[C@@H](CCCN(O)N=O)NC(=O)[C@H](C)NC(=O)[C@@H](CCCN(O)N=O)NC(=O)[C@@H]([C@@H](C)O)NC1=O)[C@@H](O)C(=O)O",
+                "compound": "megapolibactin Bcyc",
+                "database_id": [
+                    "npatlas:NPA033108"
+                ]
+            },
+            {
+                "chem_struct": "CCCCCCC[C@@H](O)CC(=O)NCC(=O)N[C@@H](C(=O)N[C@@H](CO)C(=O)N[C@@H](C(=O)N[C@H](CCCN(O)N=O)C(=O)N[C@@H](C)C(=O)N[C@H](CCCN(O)N=O)C(=O)O)[C@@H](C)O)[C@@H](O)C(=O)O",
+                "compound": "megapolibactin A",
+                "database_id": [
+                    "npatlas:NPA025683"
+                ]
+            },
+            {
+                "chem_struct": "CCCCCCCCC[C@@H](O)CC(=O)NCC(=O)N[C@@H](C(=O)N[C@@H](CO)C(=O)N[C@@H](C(=O)N[C@H](CCCN(O)N=O)C(=O)N[C@@H](C)C(=O)N[C@H](CCCN(O)N=O)C(=O)O)[C@@H](C)O)[C@@H](O)C(=O)O",
+                "compound": "megapolibactin B",
+                "database_id": [
+                    "npatlas:NPA025684"
+                ]
+            },
+            {
+                "chem_struct": "CCCCCCCCCCC[C@@H](O)CC(=O)NCC(=O)N[C@@H](C(=O)N[C@@H](CO)C(=O)N[C@@H](C(=O)N[C@H](CCCN(O)N=O)C(=O)N[C@@H](C)C(=O)N[C@H](CCCN(O)N=O)C(=O)O)[C@@H](C)O)[C@@H](O)C(=O)O",
+                "compound": "megapolibactin C",
+                "database_id": [
+                    "npatlas:NPA025685"
+                ]
+            },
+            {
+                "chem_struct": "CCCCCCC[C@@H](O)CC(=O)NCC(=O)N[C@@H](C(=O)N[C@@H](CO)C(=O)N[C@@H](C(=O)N[C@H](CCCN(O)N=O)C(=O)N[C@@H](CO)C(=O)N[C@H](CCCN(O)N=O)C(=O)O)[C@@H](C)O)[C@@H](O)C(=O)O",
+                "compound": "megapolibactin D",
+                "database_id": [
+                    "npatlas:NPA025686"
+                ]
+            },
+            {
+                "chem_struct": "CCCCCCCCC[C@@H](O)CC(=O)NCC(=O)N[C@@H](C(=O)N[C@@H](CO)C(=O)N[C@@H](C(=O)N[C@H](CCCN(O)N=O)C(=O)N[C@@H](CO)C(=O)N[C@H](CCCN(O)N=O)C(=O)O)[C@@H](C)O)[C@@H](O)C(=O)O",
+                "compound": "megapolibactin E",
+                "database_id": [
+                    "npatlas:NPA025687"
+                ]
+            },
+            {
+                "chem_struct": "CCCCCCCCCCC[C@@H](O)CC(=O)NCC(=O)N[C@@H](C(=O)N[C@@H](CO)C(=O)N[C@@H](C(=O)N[C@H](CCCN(O)N=O)C(=O)N[C@@H](CO)C(=O)N[C@H](CCCN(O)N=O)C(=O)O)[C@@H](C)O)[C@@H](O)C(=O)O",
+                "compound": "megapolibactin F",
+                "database_id": [
+                    "npatlas:NPA025688"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "CP041745.1",
+            "completeness": "Unknown",
+            "end_coord": 941056,
+            "start_coord": 901250
+        },
+        "mibig_accession": "BGC0002564",
+        "minimal": true,
+        "ncbi_tax_id": "420953",
+        "organism_name": "Paraburkholderia megapolitana",
+        "publications": [
+            "pubmed:31276269",
+            "doi:10.1002/anie.201906326"
+        ],
+        "status": "active"
+    }
+}

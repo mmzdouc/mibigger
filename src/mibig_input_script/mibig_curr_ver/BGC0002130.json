@@ -1,0 +1,85 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added",
+                "Fix precursor gene ID"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11",
+                "Added chemical structures for compounds: cacaoidin.",
+                "Added NPAtlas links to compounds: cacaoidin."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "C=C1NC(=O)[C@H](N(C)C)CSC[C@H](C(=O)N[C@@H](CC)C(=O)N[C@H](C(=O)N[C@H](CC2=CC=C(O[C@H]3O[C@@H](C)[C@H](O)[C@@H](O[C@H]4O[C@@H](C)[C@@H](O)[C@H](O)[C@@H]4O)[C@H]3O)C=C2)C(=O)N[C@H](C)C(=O)N[C@@H](C)C(=O)N[C@H](C(=O)N[C@@H](C)C(=O)N[C@H](C)C(=O)CN[C@H](C)C(=O)N[C@H](C(=O)N[C@H](C)C(=O)N[C@@H](C)C(=O)N[C@H]2C(=O)N[C@H](C)C(=O)N[C@H](CO)C(=O)N[C@@H](CC3=CNC4=CC=CC=C34)C(=O)NCC(=O)N/C=C/S[C@H]2C)[C@H](C)CC)C(C)C)[C@@H](C)CC)NC(=O)C2CCCN2C(=O)[C@@H](C)NC1=O",
+                "compound": "cacaoidin",
+                "database_id": [
+                    "npatlas:NPA031549"
+                ],
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry"
+                ],
+                "mass_spec_ion_type": "Other multiply charged ion",
+                "molecular_formula": "C107H162N24O32S2"
+            }
+        ],
+        "loci": {
+            "accession": "MT210103.1",
+            "completeness": "complete",
+            "evidence": [
+                "Heterologous expression"
+            ]
+        },
+        "mibig_accession": "BGC0002130",
+        "minimal": false,
+        "ncbi_tax_id": "1898",
+        "organism_name": "Streptomyces cacaoi CA-170360",
+        "publications": [
+            "pubmed:33917820",
+            "pubmed:32407589"
+        ],
+        "ripp": {
+            "cyclic": false,
+            "precursor_genes": [
+                {
+                    "core_sequence": [
+                        "SSAPCTIYASVSASISATASWGC"
+                    ],
+                    "crosslinks": [
+                        {
+                            "crosslink_type": "None",
+                            "first_AA": -1,
+                            "second_AA": -1
+                        }
+                    ],
+                    "gene_id": "QKI29070.1"
+                }
+            ],
+            "subclass": "Lanthipeptide"
+        },
+        "status": "active"
+    }
+}

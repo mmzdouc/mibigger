@@ -1,0 +1,55 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.2"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)",
+                "Updated loci information"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Terpene"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "[H][C@]12CC3=C(NC4=CC=CC=C34)[C@]1(C)[C@@]1(C)CC[C@]3([H])O[C@@H](C[C@@H](O)[C@@]3(C)[C@]1([H])CC2)C(C)(C)O",
+                "compound": "terpendole E",
+                "database_id": [
+                    "npatlas:NPA016267",
+                    "pubchem:10094631"
+                ],
+                "mol_mass": 437.29299410799996,
+                "molecular_formula": "C28H39NO3"
+            }
+        ],
+        "loci": {
+            "accession": "AB725916.1",
+            "completeness": "Unknown",
+            "end_coord": 18699,
+            "start_coord": 3424
+        },
+        "mibig_accession": "BGC0001260",
+        "minimal": true,
+        "ncbi_tax_id": "124418",
+        "organism_name": "Tolypocladium album",
+        "publications": [
+            "pubmed:23261604"
+        ],
+        "status": "active"
+    }
+}

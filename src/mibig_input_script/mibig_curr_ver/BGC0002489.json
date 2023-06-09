@@ -1,0 +1,37 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "compound": "pseudopaline"
+            }
+        ],
+        "loci": {
+            "accession": "AE004091.2",
+            "completeness": "Unknown",
+            "end_coord": 5429842,
+            "start_coord": 5424761
+        },
+        "mibig_accession": "BGC0002489",
+        "minimal": true,
+        "ncbi_tax_id": "208964",
+        "organism_name": "Pseudomonas aeruginosa PAO1",
+        "publications": [
+            "pubmed:32817386"
+        ],
+        "status": "active"
+    }
+}

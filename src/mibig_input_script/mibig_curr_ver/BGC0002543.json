@@ -1,0 +1,59 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11",
+                "Added chemical structures for compounds: acrophiarin.",
+                "Added NPAtlas links to compounds: acrophiarin."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antifungal"
+                    }
+                ],
+                "chem_struct": "CCCCCCCCCCCCCC(=O)N[C@H]1C[C@@H](O)[C@@H](O)NC(=O)[C@@H]2[C@@H](O)[C@@H](C)CN2C(=O)[C@H]([C@H](O)CC(N)=O)NC(=O)[C@H]([C@H](O)[C@@H](O)C2=CC=C(O)C=C2)NC(=O)[C@@H]2C[C@@H](O)CN2C(=O)[C@H]([C@@H](C)O)NC1=O",
+                "compound": "acrophiarin",
+                "database_id": [
+                    "npatlas:NPA033491"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "MN518690.1",
+            "completeness": "Unknown",
+            "end_coord": 66625,
+            "start_coord": 1
+        },
+        "mibig_accession": "BGC0002543",
+        "minimal": true,
+        "ncbi_tax_id": "168477",
+        "organism_name": "Phialomyces arenicola",
+        "publications": [
+            "pubmed:32239586",
+            "doi:10.1111/1462-2920.15004"
+        ],
+        "status": "active"
+    }
+}

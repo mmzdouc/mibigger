@@ -1,0 +1,54 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: tetramycin B.",
+                "Added NPAtlas links to compounds: tetramycin B."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CCC1/C=C/C=C/C=C/C=C/C(OC2O[C@H](C)[C@@H](O)[C@H](N)[C@@H]2O)CC2OC(O)(CC(O)CC(O)C(O)/C=C/C(=O)OC1C)CC(O)C2C(=O)O",
+                "compound": "tetramycin B",
+                "database_id": [
+                    "npatlas:NPA032769"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "MN604040.1",
+            "completeness": "Unknown",
+            "end_coord": 108563,
+            "evidence": [
+                "Heterologous expression"
+            ],
+            "start_coord": 1
+        },
+        "mibig_accession": "BGC0002540",
+        "minimal": true,
+        "ncbi_tax_id": "2719566",
+        "organism_name": "Streptomyces hygrospinosus subsp. beijingensis",
+        "publications": [
+            "pubmed:31989221"
+        ],
+        "status": "active"
+    }
+}

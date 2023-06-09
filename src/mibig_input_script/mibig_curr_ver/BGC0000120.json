@@ -1,0 +1,237 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "7M4BGWDEABIQBOJEBD7LO4YZ"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (MIBiG Annotathon)",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Cleaned up synonym list"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "C1C=C2C(=CC(=O)O2)C(O1)O",
+                "chem_synonyms": [
+                    "Clavacin",
+                    "Expansin",
+                    "Clavatin",
+                    "Claviform",
+                    "Expansine",
+                    "Patuline",
+                    "Clairformin",
+                    "Claviformin",
+                    "Gigantin",
+                    "Leucopin",
+                    "Tercinin",
+                    "Mycoin",
+                    "Mycoine C3",
+                    "Mycoin C3",
+                    "Penicidin",
+                    "Mycosin",
+                    "Penatin",
+                    "Terinin",
+                    "Mycoin C",
+                    "Sch-351633",
+                    "Clavicin",
+                    "Clavitin",
+                    "Expansion"
+                ],
+                "compound": "patulin",
+                "mol_mass": 154.026608672,
+                "molecular_formula": "C7H6O4"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Heterologous expression"
+                            ]
+                        }
+                    ],
+                    "id": "AIG62144.1",
+                    "name": "patH",
+                    "product": "M-cresol hydroxylase",
+                    "tailoring": [
+                        "Hydroxylation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Heterologous expression"
+                            ]
+                        }
+                    ],
+                    "id": "AIG62133.1",
+                    "name": "patG",
+                    "product": "6-methylsalicylic decarboxylase",
+                    "tailoring": [
+                        "Decarboxylation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "AIG62135.1",
+                    "name": "patD",
+                    "product": "hypothetical protein",
+                    "tailoring": [
+                        "Unknown"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Regulation",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "AIG62143.1",
+                    "name": "patL",
+                    "product": "C6 transcription activator"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Heterologous expression"
+                            ]
+                        }
+                    ],
+                    "id": "AIG62145.1",
+                    "name": "patI",
+                    "product": "M-hydroxybenzyl alcohol hydroxylase",
+                    "tailoring": [
+                        "Hydroxylation"
+                    ]
+                }
+            ]
+        },
+        "loci": {
+            "accession": "KF899892.1",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies",
+                "Heterologous expression",
+                "Gene expression correlated with compound production"
+            ]
+        },
+        "mibig_accession": "BGC0000120",
+        "minimal": false,
+        "ncbi_tax_id": "27334",
+        "organism_name": "Penicillium expansum",
+        "polyketide": {
+            "cyclic": true,
+            "starter_unit": "Acetyl-CoA",
+            "subclasses": [
+                "Other"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "AIG62146.1"
+                    ],
+                    "iterative": {
+                        "cyclization_type": "C2-C7 first",
+                        "nr_iterations": 3,
+                        "subtype": "Partially reducing"
+                    },
+                    "modules": [
+                        {
+                            "at_specificities": [
+                                "Malonyl-CoA"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Dehydratase",
+                                "Ketoreductase",
+                                "Thiolation (ACP/PCP)"
+                            ],
+                            "genes": [
+                                "AIG62146.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "1",
+                            "non_canonical": {
+                                "evidence": [
+                                    "Activity assay"
+                                ],
+                                "iterated": true,
+                                "non_elongating": false,
+                                "skipped": false
+                            }
+                        }
+                    ],
+                    "subclass": [
+                        "Iterative type I"
+                    ]
+                }
+            ]
+        },
+        "publications": [
+            "pubmed:25120234",
+            "pubmed:26582186",
+            "pubmed:27913847",
+            "pubmed:24334092",
+            "pubmed:19383676"
+        ],
+        "status": "active"
+    },
+    "comments": "The patulin genes cluster and its boudaries have been validated by the deletetion of patL (AIG62143), gene encoding the specific transcription factor (PMID: 26582186 ).\\n\\nThe patulin cluster has been described in A. clavatus (PMID:19383676)\\n\\nThe role of PatH (AIG62144) , PatI (AIG62145) and PatG (AIG62133) has been determined by heterologous expression studies (PMID:19383676 and PMID:24334092)\\n\\nThe role of PatE (AIG62134) has been determined by knock-out (27913847)."
+}

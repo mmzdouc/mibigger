@@ -1,0 +1,51 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Fixed DOIs"
+            ],
+            "contributors": [
+                "CUSGWVK3I4TVHJH7NHPFAP2L"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C/C(=C/C=C/C1=CC=CC=C1)/C(=C\\OC)/C(=O)OC",
+                "compound": "strobilurin A",
+                "database_id": [
+                    "npatlas:NPA021114"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "KY070339.1",
+            "completeness": "Unknown",
+            "evidence": [
+                "Heterologous expression"
+            ]
+        },
+        "mibig_accession": "BGC0001909",
+        "minimal": true,
+        "ncbi_tax_id": "41251",
+        "organism_name": "Strobilurus tenacellus",
+        "publications": [
+            "pubmed:30258052"
+        ],
+        "status": "active"
+    }
+}

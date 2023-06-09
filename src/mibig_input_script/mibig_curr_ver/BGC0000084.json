@@ -1,0 +1,78 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CCC(=O)OC(C(C)C1OC2(CCC(C)(O2)C2CCC(C)(O2)C2OC(CC2C)C2OC(O)(CO)C(C)CC2C)CC(O)C1C)C(C)C(O)=O",
+                "compound": "laidlomycin",
+                "database_id": [
+                    "npatlas:NPA016744",
+                    "pubchem:91790"
+                ],
+                "mol_mass": 698.4241274240001,
+                "molecular_formula": "C37H62O12"
+            }
+        ],
+        "loci": {
+            "accession": "JQ793783.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000084",
+        "minimal": true,
+        "ncbi_tax_id": "272618",
+        "organism_name": "Streptomyces sp. CS684",
+        "publications": [
+            "pubmed:17342048"
+        ],
+        "status": "active"
+    }
+}

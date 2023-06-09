@@ -1,0 +1,122 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Retired as duplicate of BGC0000446",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "SJG3CBEHSM6A3I74YXLH6GLA",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C1C[C@H]2[C@@H](NC3=C(C=CC=C3O)C(=O)N2C1)C4=CNC5=CC=CC=C54",
+                "compound": "tilivalline",
+                "mol_mass": 333.147726848,
+                "molecular_formula": "C20H19N3O2"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "id": "AUTOORF_00001",
+                    "product": "Glutathione S-transferase, unnamed subgroup 2"
+                }
+            ],
+            "extra_genes": [
+                {
+                    "id": "AUTOORF_00001",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 4106,
+                                "start": 3499
+                            }
+                        ],
+                        "strand": -1
+                    }
+                }
+            ]
+        },
+        "loci": {
+            "accession": "HG425356.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001805",
+        "minimal": false,
+        "ncbi_tax_id": "571",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "CDG76957.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "substrates": [
+                                    {
+                                        "name": "2,3-dihydroxybenzoic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC(=C(C(=C1)O)O)C(=O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "CDG76959.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "substrates": [
+                                    {
+                                        "name": "proline",
+                                        "proteinogenic": true,
+                                        "structure": "C1C[C@H](NC1)C(=O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Klebsiella oxytoca",
+        "publications": [
+            "pubmed:28977734"
+        ],
+        "retirement_reasons": [
+            "Duplicate of BGC0000446"
+        ],
+        "see_also": [
+            "BGC0000446"
+        ],
+        "status": "retired"
+    }
+}

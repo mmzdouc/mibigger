@@ -1,0 +1,78 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated to a complete accession",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "SJG3CBEHSM6A3I74YXLH6GLA",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "[H][C@@]12CC3=C(C(O)=C4C(O)=C(C)C=CC4=C3C)C(=O)[C@]1(O)C(=O)C(C(C)=O)=C(O)[C@@H]2N",
+                "compound": "chelocardin",
+                "database_id": [
+                    "npatlas:NPA018131",
+                    "pubchem:71402"
+                ],
+                "mol_mass": 411.131802012,
+                "molecular_formula": "C22H21NO7"
+            }
+        ],
+        "loci": {
+            "accession": "KC870000.2",
+            "completeness": "complete"
+        },
+        "mibig_accession": "BGC0000208",
+        "minimal": true,
+        "ncbi_tax_id": "76022",
+        "organism_name": "Amycolatopsis sulphurea",
+        "publications": [
+            "pubmed:24043447",
+            "pubmed:33341113"
+        ],
+        "status": "active"
+    }
+}

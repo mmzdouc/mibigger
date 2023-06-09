@@ -1,0 +1,80 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "IROSGRAECON7XFWB774QFHDN"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11",
+                "Retired as duplicate of BGC0000821"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "alkaloid": {
+            "subclass": "Indole/benzopyrrole"
+        },
+        "biosyn_class": [
+            "Alkaloid"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CO[C@@H]1[C@H](O[C@H]([C@@H]([C@H]1O)O)N2C3=C(C=CC=C3Cl)C4=C5C(=C6C7=C(C(=CC=C7)Cl)NC6=C42)C(=O)NC5=O)CO",
+                "chem_targets": [
+                    {
+                        "target": "DNA topoisomerase I"
+                    }
+                ],
+                "compound": "rebeccamycin",
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 569.0756553720001,
+                "molecular_formula": "C27H21Cl2N3O7"
+            }
+        ],
+        "loci": {
+            "accession": "AJ414559.1",
+            "completeness": "complete",
+            "evidence": [
+                "Heterologous expression"
+            ]
+        },
+        "mibig_accession": "BGC0000822",
+        "minimal": false,
+        "ncbi_tax_id": "68170",
+        "organism_name": "Lechevalieria aerocolonigenes",
+        "publications": [
+            "pubmed:11983340"
+        ],
+        "retirement_reasons": [
+            "Duplicate of BGC0000821"
+        ],
+        "see_also": [
+            "BGC0000821"
+        ],
+        "status": "retired"
+    }
+}

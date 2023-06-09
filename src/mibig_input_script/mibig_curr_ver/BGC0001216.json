@@ -1,0 +1,86 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.1"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Add compound details",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "SJG3CBEHSM6A3I74YXLH6GLA",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "inhibitor"
+                    }
+                ],
+                "chem_struct": "CCC(C)C(=O)O[C@H]1[C@@H](OC(=O)[C@H]([C@H](OC(=O)[C@@H]1CC2=CC=CC=C2)C)NC(=O)C3=C(C(=CC=C3)NC=O)O)C",
+                "chem_targets": [
+                    {
+                        "publications": [
+                            "pubmed:30417645"
+                        ],
+                        "target": "cytokine IL-4"
+                    }
+                ],
+                "compound": "splenocin C",
+                "database_id": [
+                    "pubchem:42626285"
+                ],
+                "mol_mass": 554.22643067,
+                "molecular_formula": "C29H34N2O9"
+            }
+        ],
+        "loci": {
+            "accession": "KP719128.1",
+            "completeness": "Unknown",
+            "end_coord": 31635,
+            "start_coord": 6356
+        },
+        "mibig_accession": "BGC0001216",
+        "minimal": true,
+        "ncbi_tax_id": "1571532",
+        "organism_name": "Streptomyces sp. CNQ431",
+        "publications": [
+            "pubmed:25763681"
+        ],
+        "status": "active"
+    }
+}

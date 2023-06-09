@@ -1,0 +1,59 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: variochelin A, variochelin B.",
+                "Added NPAtlas links to compounds: variochelin A, variochelin B."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CCCCCCCCCCCC(=O)N[C@@H](CCCN=C(N)N)[C@@H](O)[C@H](C)C(=O)N[C@H](C(=O)N[C@H](CO)C(=O)N1CCC[C@H]1C(=O)N[C@@H](CCCN(O)C(C)=O)C(=O)N[C@@H](CCCN(O)C(C)=O)C(=O)O)[C@H](O)C(=O)O",
+                "compound": "variochelin A",
+                "database_id": [
+                    "npatlas:NPA032836"
+                ]
+            },
+            {
+                "chem_struct": "CCCCCCCCCCCCCC(=O)N[C@@H](CCCN=C(N)N)[C@@H](O)[C@H](C)C(=O)N[C@H](C(=O)N[C@H](CO)C(=O)N1CCC[C@H]1C(=O)N[C@@H](CCCN(O)C(C)=O)C(=O)N[C@@H](CCCN(O)C(C)=O)C(=O)O)[C@H](O)C(=O)O",
+                "compound": "variochelin B",
+                "database_id": [
+                    "npatlas:NPA032837"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "CP003911.1",
+            "completeness": "Unknown",
+            "end_coord": 4110613,
+            "start_coord": 4072277
+        },
+        "mibig_accession": "BGC0002417",
+        "minimal": true,
+        "ncbi_tax_id": "1246301",
+        "organism_name": "Variovorax paradoxus B4",
+        "publications": [
+            "pubmed:27023373"
+        ],
+        "status": "active"
+    }
+}

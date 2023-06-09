@@ -1,0 +1,80 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Refined reference coordinates",
+                "Added AMP-binding domain substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "compound": "pyxidicycline A"
+            },
+            {
+                "compound": "pyxidicycline B"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "domains": [
+                        {
+                            "location": {
+                                "begin": 183,
+                                "end": 584
+                            },
+                            "name": "AMP-binding",
+                            "substrates": [
+                                {
+                                    "evidence": [
+                                        "Structure-based inference",
+                                        "Heterologous expression",
+                                        "Knock-out studies"
+                                    ],
+                                    "name": "serine",
+                                    "publications": [
+                                        "pubmed:29910943"
+                                    ],
+                                    "structure": "C([C@@H](C(=O)O)N)O"
+                                }
+                            ]
+                        }
+                    ],
+                    "id": "AXM42922.1"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "MH048639.1",
+            "completeness": "Unknown",
+            "end_coord": 21113,
+            "start_coord": 1739
+        },
+        "mibig_accession": "BGC0001940",
+        "minimal": false,
+        "ncbi_tax_id": "394095",
+        "organism_name": "Pyxidicoccus fallax",
+        "publications": [
+            "pubmed:29910943"
+        ],
+        "status": "active"
+    }
+}

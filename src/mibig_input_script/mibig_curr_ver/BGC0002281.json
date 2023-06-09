@@ -1,0 +1,78 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide",
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CCC(C)CC(C)/C=C(\\C)/[C@H]1[C@@H](CC[C@H](O1)C2=C(C(=CN(C2=O)C)C3=CC=C(C=C3)O)O)C",
+                "compound": "sambutoxin",
+                "database_id": [
+                    "npatlas:NPA015617"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "BCHB01000008.1",
+            "completeness": "Unknown",
+            "end_coord": 1994750,
+            "evidence": [
+                "Heterologous expression",
+                "Gene expression correlated with compound production"
+            ],
+            "start_coord": 1971642
+        },
+        "mibig_accession": "BGC0002281",
+        "minimal": false,
+        "ncbi_tax_id": "249398",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "smbA",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Heterologous expression"
+                                ],
+                                "publications": [
+                                    "pubmed:34581588"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "phenylalanine",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC=C(C=C1)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Fusarium commune",
+        "publications": [
+            "pubmed:34581588",
+            "doi:10.1021/acs.orglett.1c02836"
+        ],
+        "retirement_reasons": [
+            "Missing gene annotations"
+        ],
+        "status": "retired"
+    }
+}

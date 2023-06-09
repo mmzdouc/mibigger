@@ -1,0 +1,126 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: 21R-citrinadin A.",
+                "Added compounds: aetokthonotoxin.",
+                "Added NPAtlas links to compounds: aetokthonotoxin, 21R-citrinadin A."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Alkaloid",
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CN[C@]12CN3[C@@H](C)C[C@@H](OC(=O)[C@@H](C(C)C)N(C)C)C[C@@H]3C[C@]1(O)C(C)(C)[C@]1(C2)C(=O)NC2=C(C(=O)[C@@H]3OC3(C)C)C=CC=C21",
+                "compound": "21R-citrinadin A",
+                "database_id": [
+                    "npatlas:NPA033504"
+                ]
+            },
+            {
+                "chem_struct": "N#CC1=C(N2C(Br)=C(Br)C3=C2C=CC(Br)=C3)[NH]C2=C1C=C(Br)C=C2Br",
+                "compound": "aetokthonotoxin",
+                "database_id": [
+                    "npatlas:NPA033237"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "BCKA01000016.1",
+            "completeness": "Unknown",
+            "end_coord": 263083,
+            "evidence": [
+                "Knock-out studies",
+                "Enzymatic assays"
+            ],
+            "start_coord": 210729
+        },
+        "mibig_accession": "BGC0002368",
+        "minimal": false,
+        "ncbi_tax_id": "5077",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "ctg16_307",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Homology"
+                                ],
+                                "publications": [
+                                    "pubmed:34230497"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "6S-methyl-pipecolic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C1C[C@H](C)N[C@@H](C1)C(=O)O"
+                                    }
+                                ]
+                            },
+                            "integrated_monomers": [
+                                {
+                                    "name": "6S-methyl-pipecolic acid",
+                                    "structure": "C1C[C@H](C)N[C@@H](C1)C(=O)O"
+                                }
+                            ]
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Homology"
+                                ],
+                                "publications": [
+                                    "pubmed:34230497"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "tryptophan",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC=C2C(=C1)C(=CN2)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "integrated_monomers": [
+                                {
+                                    "name": "tryptophan",
+                                    "structure": "C1=CC=C2C(=C1)C(=CN2)C[C@@H](C(=O)O)N"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Penicillium citrinum",
+        "publications": [
+            "pubmed:34230497",
+            "doi:10.1038/s41467-021-24421-0"
+        ],
+        "retirement_reasons": [
+            "Missing gene annotations"
+        ],
+        "status": "retired"
+    }
+}

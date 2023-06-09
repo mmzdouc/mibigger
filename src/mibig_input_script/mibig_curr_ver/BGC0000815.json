@@ -1,0 +1,76 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Update compound structure (SMILES) for loline",
+                "Add new compound: N-acetylnorloline",
+                "Add new compound: N-formylloline"
+            ],
+            "contributors": [
+                "H5KVDLSVQ3TJW7SKCDNBDEVC"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Alkaloid"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CNC1[C@H]2CN3C1[C@@H](O2)CC3",
+                "compound": "loline",
+                "database_id": [
+                    "npatlas:NPA05369",
+                    "pubchem:716098"
+                ],
+                "mol_mass": 154.110613068,
+                "molecular_formula": "C8H14N2O"
+            },
+            {
+                "chem_struct": "CC(NC1[C@H]2CN3C1[C@@H](O2)CC3)=O",
+                "compound": "N-acetylnorloline",
+                "mol_mass": 182.105527688,
+                "molecular_formula": "C9H14N2O2"
+            },
+            {
+                "chem_struct": "[H]C(N(C)C1[C@H]2CN3C1[C@@H](O2)CC3)=O",
+                "compound": "N-formylloline",
+                "mol_mass": 182.105527688,
+                "molecular_formula": "C9H14N2O2"
+            }
+        ],
+        "loci": {
+            "accession": "AY723749.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000815",
+        "minimal": true,
+        "ncbi_tax_id": "5050",
+        "organism_name": "Epichloe uncinata",
+        "publications": [
+            "pubmed:12135580",
+            "pubmed:15654104",
+            "pubmed:18655839"
+        ],
+        "status": "active"
+    }
+}

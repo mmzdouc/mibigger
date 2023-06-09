@@ -1,0 +1,106 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: nanangelenin B.",
+                "Added NPAtlas links to compounds: nanangelenin B."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "NC1=CC=CC=C1C(=O)N[C@H]1CC(=O)C2=CC=CC=C2NC1=O",
+                "chem_synonyms": [
+                    "(S)-terreazepine"
+                ],
+                "compound": "nanangelenin B",
+                "database_id": [
+                    "npatlas:NPA032973"
+                ]
+            },
+            {
+                "chem_struct": "NC1=C(C=CC=C1)C(=O)NC1CC(=O)C2=CC=CC=C2NC1=O",
+                "compound": "terreazepine"
+            }
+        ],
+        "loci": {
+            "accession": "MT376588.1",
+            "completeness": "Unknown",
+            "end_coord": 114922,
+            "evidence": [
+                "Heterologous expression",
+                "Knock-out studies"
+            ],
+            "start_coord": 1
+        },
+        "mibig_accession": "BGC0002198",
+        "minimal": false,
+        "ncbi_tax_id": "2081996",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "QMS79067.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:32843555"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "anthranilic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC=C(C(=C1)C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:32843555"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "kynurenine",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC=C(C(=C1)C(=O)C[C@@H](C(=O)O)N)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Aspergillus terreus var. terreus",
+        "publications": [
+            "pubmed:32843555"
+        ],
+        "status": "active"
+    }
+}

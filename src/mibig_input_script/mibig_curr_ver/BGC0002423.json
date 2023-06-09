@@ -1,0 +1,54 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: arsinothricin.",
+                "Added NPAtlas links to compounds: arsinothricin."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C[As](=O)(O)CCC(N)C(=O)O",
+                "compound": "arsinothricin",
+                "database_id": [
+                    "npatlas:NPA032834"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "JAGSIB010000059.1",
+            "completeness": "Unknown",
+            "end_coord": 20095,
+            "evidence": [
+                "Knock-out studies"
+            ],
+            "start_coord": 15759
+        },
+        "mibig_accession": "BGC0002423",
+        "minimal": true,
+        "ncbi_tax_id": "28095",
+        "organism_name": "Burkholderia gladioli",
+        "publications": [
+            "pubmed:34378964"
+        ],
+        "status": "active"
+    }
+}

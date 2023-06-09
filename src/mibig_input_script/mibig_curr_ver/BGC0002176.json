@@ -1,0 +1,73 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Changed chemical structures for compounds: culmorin.",
+                "Added NPAtlas links to compounds: culmorin."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Terpene"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC1(C)CCCC2(C)C3C(O)CC2(C)C(O)C31",
+                "compound": "culmorin",
+                "database_id": [
+                    "pubchem:368926",
+                    "npatlas:NPA032745"
+                ]
+            },
+            {
+                "chem_struct": "CC1(CCCC2(C3C1[C@@H](C2(CC3)C)O)C)C",
+                "compound": "(+)-juniperol(longiborneol)",
+                "database_id": [
+                    "pubchem:6432447"
+                ]
+            },
+            {
+                "chem_struct": "CC1=C[C@@H]2[C@]([C@@H](C1=O)O)([C@]3(C[C@H]([C@H]([C@@]34CO4)O2)O)C)COC(=O)C",
+                "compound": "15-acetyldeoxynivalenol",
+                "database_id": [
+                    "pubchem:10382483"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "CM000574.1",
+            "completeness": "Unknown",
+            "end_coord": 10718727,
+            "evidence": [
+                "Knock-out studies",
+                "Heterologous expression"
+            ],
+            "start_coord": 10717529
+        },
+        "mibig_accession": "BGC0002176",
+        "minimal": true,
+        "ncbi_tax_id": "229533",
+        "organism_name": "Fusarium graminearum PH-1",
+        "publications": [
+            "pubmed:19880637",
+            "pubmed:26673640",
+            "doi:10.1128/AEM.02017-09",
+            "doi:10.1021/acs.jnatprod.5b00676"
+        ],
+        "status": "active"
+    }
+}

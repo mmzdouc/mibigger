@@ -1,0 +1,159 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "YKUWK3FUALS4CFYG5HJIMS53"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Corrected gene identifiers",
+                "Updated NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    },
+                    {
+                        "activity": "irritant"
+                    },
+                    {
+                        "activity": "tumor promoter"
+                    },
+                    {
+                        "activity": "vesicant"
+                    }
+                ],
+                "chem_struct": "CC(C)[C@H]1C(=O)N[C@@H](CC2=CNC3=C(C=CC(=C23)N1C)[C@](C)(CCC=C(C)C)C=C)CO",
+                "chem_targets": [
+                    {
+                        "target": "Protein kinase C (activator)"
+                    }
+                ],
+                "compound": "lyngbyatoxin",
+                "database_id": [
+                    "pubchem:91706",
+                    "chebi:80050",
+                    "chemspider:10472344"
+                ],
+                "mol_mass": 437.304227488,
+                "molecular_formula": "C27H39N3O2"
+            }
+        ],
+        "loci": {
+            "accession": "AY588942.1",
+            "completeness": "complete",
+            "evidence": [
+                "Enzymatic assays",
+                "Heterologous expression"
+            ]
+        },
+        "mibig_accession": "BGC0000384",
+        "minimal": false,
+        "ncbi_tax_id": "158786",
+        "nrp": {
+            "cyclic": true,
+            "nrps_genes": [
+                {
+                    "gene_id": "AAT12283.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Homology"
+                                ],
+                                "publications": [
+                                    "doi:10.1021/np50072a035",
+                                    "doi:10.1126/science.107586",
+                                    "doi:10.1021/ja047876g"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "tryptophan",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC=C2C(=C1)C(=CN2)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "2"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "valine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Unknown",
+                            "modification_domains": [
+                                "Methylation"
+                            ],
+                            "module_number": "1"
+                        }
+                    ]
+                }
+            ],
+            "release_type": [
+                "Reductive release"
+            ]
+        },
+        "organism_name": "Lyngbya majuscula",
+        "publications": [
+            "pubmed:107586",
+            "pubmed:15366877",
+            "pubmed:20000453",
+            "pubmed:22314229",
+            "pubmed:13880125",
+            "pubmed:24839542",
+            "pubmed:23751865"
+        ],
+        "status": "active"
+    },
+    "comments": "Only one condensation domain is present within AAT12283"
+}

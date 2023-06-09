@@ -1,0 +1,60 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Changed chemical structures for compounds: spiromarmycin.",
+                "Added NPAtlas links to compounds: spiromarmycin."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide",
+            "Terpene"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CCCCCC1OC(=O)C=C2C3=C(OC(C)(C)[C@@H](O)C3)C(=O)C(O)=C21",
+                "compound": "spiromarmycin",
+                "database_id": [
+                    "chemspider:98644135",
+                    "npatlas:NPA033492"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "WXTY01000002.1",
+            "completeness": "Unknown",
+            "end_coord": 4751266,
+            "evidence": [
+                "Gene expression correlated with compound production"
+            ],
+            "start_coord": 4688058
+        },
+        "mibig_accession": "BGC0002263",
+        "minimal": true,
+        "ncbi_tax_id": "2695271",
+        "organism_name": "Spiromastix sp. SCSIO F190",
+        "publications": [
+            "pubmed:32968175",
+            "doi:10.1038/s42003-020-01239-y"
+        ],
+        "retirement_reasons": [
+            "Missing gene annotations"
+        ],
+        "status": "retired"
+    }
+}

@@ -1,0 +1,86 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Changed chemical structures for compounds: calbistrin A.",
+                "Added NPAtlas links to compounds: calbistrin A."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C[C@H]1C[C@@H]([C@H]2C(=C1)C=C[C@@]([C@]2(C)C(=O)CCO)(C)O)O",
+                "compound": "decumbenone a",
+                "database_id": [
+                    "pubchem:636563",
+                    "chemspider:552322"
+                ]
+            },
+            {
+                "chem_struct": "CC(/C=C/C=C(\\C)[C@H](O)[C@H](C)C(=O)O[C@H]1C[C@H](C)C=C2C=C[C@@]3(C)O[C@@H](O)CC(=O)[C@]3(C)[C@H]21)=C\\C=C\\C(=O)O",
+                "compound": "calbistrin A",
+                "database_id": [
+                    "pubchem:6438423",
+                    "npatlas:NPA032785"
+                ]
+            },
+            {
+                "chem_struct": "C[C@@H]1C[C@@H]([C@H]2C(=C1)C=C[C@@]([C@]2(C)C(=O)CCO)(C)O)OC(=O)C(C)C(/C(=C/C=C/C(=C/C=C/C(=O)O)/C)/C)O",
+                "compound": "calbistrin C",
+                "database_id": [
+                    "pubchem:6474046"
+                ]
+            },
+            {
+                "chem_struct": "C[C@@H]1C[C@@H]2C=C[C@@]([C@]([C@H]2[C@H](C1)O)(C)C(=O)CCO)(C)O",
+                "compound": "decumbenone B",
+                "database_id": [
+                    "pubchem:11000505"
+                ]
+            },
+            {
+                "chem_struct": "C[C@H]1C[C@@H]([C@@H]2[C@@]([C@](C=C[C@]2(C1)O)(C)O)(C)C(=O)CCO)O",
+                "compound": "decumbenone c",
+                "database_id": [
+                    "pubchem:71528821"
+                ]
+            },
+            {
+                "chem_struct": "OC(/C=C/C=C(\\C=C\\C=C([C@@H](O)[C@H](C(O)=O)C)/C)C)=O",
+                "compound": "dioic acid moiety"
+            }
+        ],
+        "loci": {
+            "accession": "MW315913.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0002168",
+        "minimal": true,
+        "ncbi_tax_id": "1549217",
+        "organism_name": "Aspergillus stellatus",
+        "publications": [
+            "pubmed:30598828",
+            "pubmed:33480463",
+            "doi:10.1186/s40694-018-0063-4",
+            "doi:10.1002/anie.202016525"
+        ],
+        "status": "active"
+    }
+}

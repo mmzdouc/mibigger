@@ -1,0 +1,60 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Fix DOI"
+            ],
+            "contributors": [
+                "3UOU7PODQJXIM6BEPUHHRRA5"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "[H][C@@]12O[C@@]11C[C@@]34SSC(C5=CC=C(OC)C(OC)=C5O)[C@@]([H])(NC3=O)C(=O)N4O[C@@]1([H])[C@H](O)C=C2",
+                "compound": "gliovirin",
+                "database_id": [
+                    "npatlas:NPA016022"
+                ],
+                "mol_mass": 480.06610759999995,
+                "molecular_formula": "C20H20N2O8S2"
+            }
+        ],
+        "loci": {
+            "accession": "ABDF02000047.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001609",
+        "minimal": true,
+        "ncbi_tax_id": "413071",
+        "organism_name": "Trichoderma virens Gv29-8",
+        "publications": [
+            "doi:10.1002/slct.201700262"
+        ],
+        "status": "active"
+    }
+}

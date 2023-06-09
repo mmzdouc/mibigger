@@ -1,0 +1,140 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Changed chemical structures for compounds: hancockiamide A, hancockiamide E, hancockiamide C, hancockiamide B, hancockiamide F.",
+                "Added NPAtlas links to compounds: hancockiamide A, hancockiamide E, hancockiamide C, hancockiamide B, hancockiamide F, hancockiamide D."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "COC1=CC(C[C@H]2CN[C@@H](CC3=CC4=C(OCO4)C(OC)=C3)CN2C(=O)/C=C/C2=CC=CC=C2)=CC(OC)=C1O",
+                "compound": "hancockiamide E",
+                "database_id": [
+                    "npatlas:NPA033183"
+                ]
+            },
+            {
+                "chem_struct": "COC1=CC(C[C@H]2CN(C(C)=O)[C@@H](CC3=CC=CC=C3)CN2C(=O)/C=C/C2=CC=CC=C2)=CC(OC)=C1O",
+                "compound": "hancockiamide B",
+                "database_id": [
+                    "npatlas:NPA033180"
+                ]
+            },
+            {
+                "chem_struct": "COC1=CC(C[C@H]2CN(C(C)=O)[C@@H](CC3=CC=CC=C3)CN2C(=O)/C=C/C2=CC=CC=C2)=CC2=C1OCO2",
+                "compound": "hancockiamide C",
+                "database_id": [
+                    "npatlas:NPA033181"
+                ]
+            },
+            {
+                "chem_struct": "COC1=CC(C[C@H]2CN[C@@H](CC3=CC=CC=C3)CN2)=CC(OC)=C1O",
+                "compound": "hancockiamide D",
+                "database_id": [
+                    "npatlas:NPA033182"
+                ]
+            },
+            {
+                "chem_struct": "COC1=CC(C[C@H]2CN[C@@H](CC3=CC=CC=C3)CN2C(=O)/C=C/C2=CC=CC=C2)=CC(OC)=C1O",
+                "compound": "hancockiamide A",
+                "database_id": [
+                    "npatlas:NPA033179"
+                ]
+            },
+            {
+                "chem_struct": "COC1=CC(CC(=O)CN(C(C)=O)[C@H](CNC(=O)/C=C/C2=CC=CC=C2)CC2=CC=CC=C2)=CC2=C1OCO2",
+                "compound": "hancockiamide F",
+                "database_id": [
+                    "npatlas:NPA033184"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "MBFL02000005.1",
+            "completeness": "Unknown",
+            "end_coord": 93497,
+            "evidence": [
+                "Heterologous expression",
+                "Enzymatic assays"
+            ],
+            "start_coord": 62010
+        },
+        "mibig_accession": "BGC0002264",
+        "minimal": false,
+        "ncbi_tax_id": "1873369",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "KAF7597139.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:33242032"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "cinnamic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC=C(C=C1)/C=C/C(=O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "KAF7597140.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:33242032"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "phenylalanine",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC=C(C=C1)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Aspergillus hancockii",
+        "publications": [
+            "pubmed:33242032",
+            "doi:10.1039/D0OB02243H"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,197 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (MIBiG Annotathon)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC[C@H](C)[C@H]1C(=O)NCC(=O)N[C@@H]([C@H](C(=O)N[C@@H](C(=O)N1)C2=CC(=C(C(=C2Cl)O)C)O)NC(=O)[C@H](C)NC(=O)[C@@H]([C@@H](C)O)NC(=O)CC(=O)C(C)CC(C)C[C@H](C)[C@H]([C@H](C)[C@@H]([C@@H](C)O)O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)OC)O)O)O)C",
+                "compound": "totopotensamide A",
+                "database_id": [
+                    "pubchem:57409240"
+                ],
+                "mol_mass": 1145.5510511480002,
+                "molecular_formula": "C52H84ClN7O19"
+            },
+            {
+                "chem_struct": "CC[C@H](C)[C@H]1C(=O)NCC(=O)N[C@@H]([C@H](C(=O)N[C@@H](C(=O)N1)C2=CC(=C(C(=C2Cl)O)C)O)NC(=O)[C@H](C)NC(=O)[C@@H]([C@@H](C)O)NC(=O)CC(=O)C(C)CC(C)C[C@H](C)[C@H]([C@H](C)[C@@H](C(C)O)O)O)C",
+                "compound": "totopotensamide B",
+                "database_id": [
+                    "pubchem:101572704"
+                ],
+                "mol_mass": 969.4825776640001,
+                "molecular_formula": "C45H72ClN7O14"
+            }
+        ],
+        "loci": {
+            "accession": "MG012231.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001807",
+        "minimal": false,
+        "ncbi_tax_id": "68249",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "ATL73036.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:29019409"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "threonine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@H]([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:29019409"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "alanine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:29019409"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "2,4-diaminobutyric acid",
+                                        "proteinogenic": false,
+                                        "structure": "C(CN)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:29019409"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "2-chloro-3,5-dihydroxy-4-methylphenylglycine",
+                                        "proteinogenic": false,
+                                        "structure": "CC1=C(O)C(Cl)=C(C=C(O)1)[C@@H](C(=O)O)N"
+                                    },
+                                    {
+                                        "name": "3,5-dihydroxyphenylglycine",
+                                        "proteinogenic": false,
+                                        "structure": "N[C@H](C(=O)O)c1cc(O)cc(O)c1"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:29019409"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "isoleucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC[C@H](C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "ATL73045.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:29019409"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glycine",
+                                        "proteinogenic": true,
+                                        "structure": "NCC(=O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Streptomyces pactum",
+        "publications": [
+            "pubmed:29019409"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,129 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "4ACA66D6INRVNJRPWB3JQW5E"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    },
+                    {
+                        "activity": "inhibitor"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "beta-lactone"
+                    }
+                ],
+                "chem_struct": "CC[C@H](C)[C@H](NC(=O)[C@@H](NC(=O)C1OC(=O)C1C(C)C)C(C)C)C(O)=O",
+                "chem_targets": [
+                    {
+                        "target": "20S proteasome"
+                    }
+                ],
+                "compound": "cystargolide A",
+                "database_id": [
+                    "npatlas:NPA04240",
+                    "pubchem:122204527"
+                ],
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry"
+                ],
+                "mol_mass": 370.21038667999994,
+                "molecular_formula": "C18H30N2O6"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    },
+                    {
+                        "activity": "inhibitor"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "beta-lactone"
+                    }
+                ],
+                "chem_struct": "CC(C)[C@H](NC(=O)[C@@H](NC(=O)C1OC(=O)C1C(C)C)C(C)C)C(O)=O",
+                "chem_targets": [
+                    {
+                        "target": "20S proteasome"
+                    }
+                ],
+                "compound": "cystargolide B",
+                "database_id": [
+                    "npatlas:NPA019521",
+                    "pubchem:122204528"
+                ],
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry"
+                ],
+                "mol_mass": 356.19473661599994,
+                "molecular_formula": "C17H28N2O6"
+            }
+        ],
+        "loci": {
+            "accession": "KY249117.1",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies",
+                "Enzymatic assays"
+            ]
+        },
+        "mibig_accession": "BGC0001440",
+        "minimal": false,
+        "ncbi_tax_id": "58350",
+        "organism_name": "Kitasatospora cystarginea",
+        "publications": [
+            "pubmed:28452105",
+            "pubmed:25769015"
+        ],
+        "status": "active"
+    }
+}

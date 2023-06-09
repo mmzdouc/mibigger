@@ -1,0 +1,76 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC[C@H](C)[C@H]1C(=C(C(=O)N1)C(=O)C)O",
+                "compound": "tenuazonic acid",
+                "database_id": [
+                    "npatlas:NPA015602",
+                    "pubchem:54683011",
+                    "chemspider:19953674"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "CM001233.1",
+            "completeness": "Unknown",
+            "end_coord": 5813348,
+            "start_coord": 5799814
+        },
+        "mibig_accession": "BGC0002158",
+        "minimal": false,
+        "ncbi_tax_id": "242507",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "EHA53213.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Steady-state kinetics"
+                                ],
+                                "publications": [
+                                    "pubmed:26503170"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "isoleucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC[C@H](C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Pyricularia oryzae 70-15",
+        "publications": [
+            "pubmed:26503170",
+            "pubmed:28820236",
+            "pubmed:32565425",
+            "doi:10.1038/ncomms9758",
+            "doi:10.1074/jbc.RA120.013105"
+        ],
+        "status": "active"
+    }
+}

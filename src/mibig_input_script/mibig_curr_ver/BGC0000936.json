@@ -1,0 +1,78 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    }
+                ],
+                "chem_struct": "CN1C2=CC=CC=C2N=C2C(=O)C=CC=C12",
+                "compound": "pyocyanine",
+                "database_id": [
+                    "npatlas:NPA0489",
+                    "pubchem:6817"
+                ],
+                "mol_mass": 210.07931294,
+                "molecular_formula": "C13H10N2O"
+            }
+        ],
+        "loci": {
+            "accession": "AF005404.2",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000936",
+        "minimal": true,
+        "ncbi_tax_id": "208964",
+        "organism_name": "Pseudomonas aeruginosa PAO1",
+        "publications": [
+            "pubmed:11591691"
+        ],
+        "status": "active"
+    }
+}

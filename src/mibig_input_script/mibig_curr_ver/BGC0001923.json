@@ -1,0 +1,58 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Fetch compound properties from PubChem",
+                "Cleaned up synonym list"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Terpene",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C[C@@H]1CCC(=O)[C@@H]([C@@]1(C)/C=C/C(=C/CC2=C(C(=C(C(=C2O)Cl)C)C=O)O)/C)C",
+                "chem_synonyms": [
+                    "Ilicicolin D",
+                    "LL-Z 1272 gamma",
+                    "Asochlorin",
+                    "Antibiotics LL-Z 1272g"
+                ],
+                "compound": "ascochlorin",
+                "database_id": [
+                    "pubchem:11258227"
+                ],
+                "mol_mass": 404.175437,
+                "molecular_formula": "C23H29ClO4"
+            }
+        ],
+        "loci": {
+            "accession": "LC406756.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001923",
+        "minimal": true,
+        "ncbi_tax_id": "749675",
+        "organism_name": "Acremonium egyptiacum",
+        "publications": [
+            "pubmed:30952781"
+        ],
+        "status": "active"
+    }
+}

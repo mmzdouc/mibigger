@@ -1,0 +1,69 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antiviral"
+                    }
+                ],
+                "compound": "MS-271"
+            }
+        ],
+        "loci": {
+            "accession": "FONR01000003.1",
+            "completeness": "Unknown",
+            "end_coord": 407939,
+            "start_coord": 396027
+        },
+        "mibig_accession": "BGC0001674",
+        "minimal": true,
+        "ncbi_tax_id": "68239",
+        "organism_name": "Streptomyces mirabilis",
+        "publications": [
+            "pubmed:29974638"
+        ],
+        "status": "active"
+    }
+}

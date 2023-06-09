@@ -1,0 +1,156 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Added missing compound details",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "YQF4634PJETKNUL6ADZ4RRW4",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC(C[C@@H](C(=O)O)NC(=O)C1CC2=C([C@@H]3N1C(=O)[C@@H](N3)CC4=CNC5=CC=CC=C54)C(=O)C(=C(C2=O)O)OC)CO",
+                "compound": "imizoquin A",
+                "database_id": [
+                    "pubchem:146684532"
+                ],
+                "mol_mass": 566.6,
+                "molecular_formula": "C28H30N4O9"
+            },
+            {
+                "chem_struct": "COC1=C(C(=O)C2=C(C1=O)[C@H]3N[C@H](C(=O)N3C(C2)C(=O)N[C@@H](CC(CO)CO)C(=O)O)CC4=CNC5=CC=CC=C54)O",
+                "compound": "imizoquin B",
+                "database_id": [
+                    "pubchem:146684533"
+                ],
+                "mol_mass": 582.6,
+                "molecular_formula": "C28H30N4O10"
+            },
+            {
+                "chem_struct": "COC1=C(C2=C(CC(N3[C@@H]2N[C@H](C3=O)CC4=CNC5=CC=CC=C54)C(=O)N[C@@H](CC(CO)CO)C(=O)O)C(=C1O)O)O",
+                "compound": "imizoquin C",
+                "database_id": [
+                    "pubchem:146684534"
+                ],
+                "mol_mass": 584.6,
+                "molecular_formula": "C28H32N4O10"
+            },
+            {
+                "chem_struct": "COC1=C(C2=C(CC(N3C2=NC(=C3O)C=C4C=NC5=CC=CC=C54)C(=O)N[C@@H](CC(CO)CO)C(=O)O)C(=C1O)O)O",
+                "compound": "imizoquin D",
+                "database_id": [
+                    "pubchem:146684535"
+                ],
+                "mol_mass": 580.5,
+                "molecular_formula": "C28H28N4O10"
+            },
+            {
+                "chem_struct": "COC1=C(O)C=C2C[C@H](N(CC2=C1O)C(=O)[C@@H](N)CC1=CNC2=CC=CC=C12)C(=O)N[C@@H](CC(CO)CO)C(O)=O",
+                "compound": "TMC-2A",
+                "database_id": [
+                    "npatlas:NPA02280"
+                ],
+                "mol_mass": 570.2325786680001,
+                "molecular_formula": "C28H34N4O9"
+            },
+            {
+                "chem_struct": "COC1=C(O)C=C2C[C@H](N(CC2=C1O)C(=O)[C@@H](N)CC1=CNC2=C1C=CC=C2)C(=O)N[C@@H](CC(C)CO)C(O)=O",
+                "compound": "TMC-2B",
+                "database_id": [
+                    "npatlas:NPA02350"
+                ],
+                "mol_mass": 554.237664048,
+                "molecular_formula": "C28H34N4O8"
+            }
+        ],
+        "loci": {
+            "accession": "NW_002477244.1",
+            "completeness": "Unknown",
+            "end_coord": 53073,
+            "start_coord": 25905
+        },
+        "mibig_accession": "BGC0001621",
+        "minimal": false,
+        "ncbi_tax_id": "332952",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "XP_002379984.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Sequence-based prediction",
+                                    "Structure-based inference",
+                                    "Mass spectrometry"
+                                ],
+                                "publications": [
+                                    "pubmed:29182847"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "tryptophan",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC=C2C(=C1)C(=CN2)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Sequence-based prediction",
+                                    "Structure-based inference",
+                                    "Mass spectrometry"
+                                ],
+                                "publications": [
+                                    "pubmed:29182847"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "tyrosine",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC(=CC=C1C[C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Aspergillus flavus NRRL3357",
+        "publications": [
+            "pubmed:29182847"
+        ],
+        "status": "active"
+    }
+}

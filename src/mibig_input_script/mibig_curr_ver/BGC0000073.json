@@ -1,0 +1,74 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "CCC(O)C(C)C(O)CC(O)C(O)\\C=C(/C)CC(C)C1CC(O)C(C)\\C=C\\C=C\\CC(C)C(=O)CC2CCC(C)C(O)(C\\C=C(\\C)/C=C(C)/C(O)C(=O)\\C=C(C)\\C(=O)O1)O2",
+                "compound": "halstoctacosanolide A",
+                "database_id": [
+                    "npatlas:NPA016676"
+                ],
+                "mol_mass": 844.5336778720001,
+                "molecular_formula": "C48H76O12"
+            }
+        ],
+        "loci": {
+            "accession": "AB241068.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000073",
+        "minimal": true,
+        "ncbi_tax_id": "1944",
+        "organism_name": "Streptomyces halstedii",
+        "publications": [
+            "pubmed:16568718"
+        ],
+        "status": "active"
+    }
+}

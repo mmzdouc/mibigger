@@ -1,0 +1,62 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "siderophore"
+                    }
+                ],
+                "chem_struct": "C1CCNC(=O)CCC(=O)NCCCCCN(C(=O)CCC(=O)NCCCCCN(C(=O)CCC(=O)NCC1)O)O",
+                "chem_synonyms": [
+                    "terragine E"
+                ],
+                "compound": "dehydroxynocardamine",
+                "database_id": [
+                    "npatlas:NPA017033"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "RBMD01000006.1",
+            "completeness": "Unknown",
+            "end_coord": 122861,
+            "evidence": [
+                "Gene expression correlated with compound production"
+            ],
+            "start_coord": 112874
+        },
+        "mibig_accession": "BGC0002073",
+        "minimal": true,
+        "ncbi_tax_id": "43769",
+        "organism_name": "Corynebacterium propinquum",
+        "publications": [
+            "pubmed:30578265"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Fetch compound properties from PubChem",
+                "Fixed DOIs",
+                "Cleaned up synonym list"
+            ],
+            "contributors": [
+                "CUSGWVK3I4TVHJH7NHPFAP2L",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Terpene"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC(C)C1CCC2(CO2)C3C1C=C(COC3=O)C(=O)O",
+                "compound": "heptelidic acid",
+                "database_id": [
+                    "pubchem:10016502"
+                ],
+                "mol_mass": 280.131074,
+                "molecular_formula": "C15H20O5"
+            }
+        ],
+        "loci": {
+            "accession": "NC_036441.1",
+            "completeness": "Unknown",
+            "end_coord": 1067040,
+            "start_coord": 1039554
+        },
+        "mibig_accession": "BGC0001995",
+        "minimal": true,
+        "ncbi_tax_id": "510516",
+        "organism_name": "Aspergillus oryzae RIB40",
+        "publications": [
+            "doi:10.1080/09168451.2018.1549934"
+        ],
+        "status": "active"
+    }
+}

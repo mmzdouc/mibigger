@@ -1,0 +1,218 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Retired as duplicate of BGC0001592",
+                "Updated bioactivity data",
+                "Added AMP-binding domain substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "compound": "bagremycin A"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "compound": "bagremycin B"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "compound": "bagremycin C"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "compound": "bagremycin E"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "compound": "bagremycin F"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "compound": "bagremycin G"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "compound": "ferroverdin A"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "compound": "ferroverdin B"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "compound": "ferroverdin C"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "domains": [
+                        {
+                            "location": {
+                                "begin": 85,
+                                "end": 276
+                            },
+                            "name": "AMP-binding",
+                            "substrates": [
+                                {
+                                    "evidence": [
+                                        "Structure-based inference",
+                                        "Homology"
+                                    ],
+                                    "name": "3-amino-4-hydroxybenzoic acid",
+                                    "structure": "C1=CC(=C(C=C1C(=O)O)N)O"
+                                },
+                                {
+                                    "evidence": [
+                                        "Structure-based inference",
+                                        "Homology"
+                                    ],
+                                    "name": "4-hydroxy-3-nitrobenzoic acid",
+                                    "structure": "C1=CC(=C(C=C1C(=O)O)[N+](=O)[O-])O"
+                                }
+                            ]
+                        }
+                    ],
+                    "id": "AVI10276.1"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "MG708299.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0002029",
+        "minimal": false,
+        "ncbi_tax_id": "1535768",
+        "organism_name": "Streptomyces lunaelactis",
+        "publications": [
+            "pubmed:31409675"
+        ],
+        "retirement_reasons": [
+            "Duplicate of BGC0001592"
+        ],
+        "see_also": [
+            "BGC0001592"
+        ],
+        "status": "retired"
+    }
+}

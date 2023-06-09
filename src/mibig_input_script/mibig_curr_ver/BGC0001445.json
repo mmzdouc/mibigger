@@ -1,0 +1,158 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "YBVE4IRPJQLTEDBWA2WPXAKO"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Removed gene names of 'No gene ID'"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "insecticidal"
+                    },
+                    {
+                        "activity": "siderophore"
+                    }
+                ],
+                "chem_struct": "CC(CCC1)C(C1C(/C=C/C)O2)C3=C2C(C4=CC=CC=C4)=CN(O)C3=O",
+                "compound": "leporin B",
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry"
+                ],
+                "mass_spec_ion_type": "M+",
+                "mol_mass": 351.18344366,
+                "molecular_formula": "C22H25NO3"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Regulation",
+                            "evidence": [
+                                "Heterologous expression"
+                            ]
+                        }
+                    ],
+                    "id": "EED49868.1",
+                    "product": "conserved hypothetical protein"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "EQ963479.1",
+            "completeness": "complete",
+            "end_coord": 736312,
+            "evidence": [
+                "Knock-out studies"
+            ],
+            "start_coord": 704693
+        },
+        "mibig_accession": "BGC0001445",
+        "minimal": false,
+        "ncbi_tax_id": "332952",
+        "nrp": {
+            "cyclic": true,
+            "nrps_genes": [
+                {
+                    "gene_id": "EED49862.1",
+                    "modules": [
+                        {
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "2"
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Aspergillus flavus NRRL3357",
+        "polyketide": {
+            "cyclic": true,
+            "starter_unit": "Acetyl-CoA",
+            "subclasses": [
+                "Other"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "EED49862.1"
+                    ],
+                    "iterative": {
+                        "cyclization_type": "Unknown",
+                        "nr_iterations": 5,
+                        "subtype": "Partially reducing"
+                    },
+                    "modules": [
+                        {
+                            "at_specificities": [
+                                "Unknown"
+                            ],
+                            "domains": [
+                                "Ketosynthase",
+                                "Acyltransferase",
+                                "Dehydratase",
+                                "Ketoreductase"
+                            ],
+                            "genes": [
+                                "EED49862.1"
+                            ],
+                            "kr_stereochem": "Unknown",
+                            "module_number": "1",
+                            "pks_mod_doms": [
+                                "Methylation"
+                            ]
+                        }
+                    ],
+                    "subclass": [
+                        "Iterative type I"
+                    ]
+                }
+            ]
+        },
+        "publications": [
+            "pubmed:26051490"
+        ],
+        "status": "active"
+    }
+}

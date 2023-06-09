@@ -1,0 +1,259 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "BAJIZJS2YANDM4M7JHS5DFUK"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Remove negative molecular mass",
+                "Removed gene names of 'No gene ID'",
+                "Add compound details"
+            ],
+            "contributors": [
+                "3UOU7PODQJXIM6BEPUHHRRA5",
+                "AAAAAAAAAAAAAAAAAAAAAAAA",
+                "SJG3CBEHSM6A3I74YXLH6GLA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC(C)[C@H]1C(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N2CCC[C@H]2C(=O)N[C@H](C(=O)N[C@H](C(=O)NCC(=O)N1)CO)CCSC)CC(=O)N)CC3=CC=C(C=C3)O)CC4=CC=C(C=C4)OC/C=C(/C)\\CCC=C(C)C)CC(=O)O",
+                "compound": "piricyclamide 7005E1",
+                "database_id": [
+                    "pubchem:146684880"
+                ],
+                "mol_mass": 1162.53688299,
+                "molecular_formula": "C56H78N10O15S"
+            },
+            {
+                "chem_struct": "CC[C@H](C)[C@H]1C(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)NCC(=O)N[C@H](C(=O)N[C@H](C(=O)N2CCC[C@H]2C(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N3CCC[C@H]3C(=O)N[C@H](C(=O)N1)CC4=CNC5=CC=CC=C54)C)CC(=O)N)CCCCN)CCCN=C(N)N)[C@@H](C)O)CC(=O)O)C)CC(C)C)CC(C)C",
+                "compound": "piricyclamide 7005E2",
+                "database_id": [
+                    "pubchem:146684882"
+                ],
+                "mol_mass": 1532.8463468,
+                "molecular_formula": "C71H112N20O18"
+            },
+            {
+                "chem_struct": "C[C@H]([C@H]1C(=O)NCC(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)NCC(=O)N2CCC[C@H]2C(=O)N[C@H](C(=O)N[C@@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N1)CCC(=O)N)CCSC)CC3=CC=CC=C3)CCC(=O)O)CC(=O)N)CO)CC4=CC=C(C=C4)O)CO)O",
+                "compound": "piricyclamide 7005E3",
+                "database_id": [
+                    "pubchem:146684883"
+                ],
+                "mol_mass": 1298.52375211,
+                "molecular_formula": "C56H78N14O20S"
+            },
+            {
+                "chem_struct": "C[C@H]1C(=O)N[C@H](C(=O)N[C@@H](C(=O)N[C@H](C(=O)N[C@@H]2CSSC[C@@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N1)CC(C)C)CC(=O)O)NC(=O)[C@@H](NC(=O)[C@H](NC(=O)[C@@H]3CCCN3C(=O)[C@@H](NC2=O)CC4=CC=C(C=C4)O)[C@@H](C)O)CC5=CC=CC=C5)CCC(=O)N)CCCCN)[C@@H](C)O",
+                "compound": "piricyclamide 7005E4",
+                "database_id": [
+                    "pubchem:146684884"
+                ],
+                "mol_mass": 1368.58424436,
+                "molecular_formula": "C61H88N14O18S2"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AFK79987.1",
+                    "name": "pirE2",
+                    "product": "piricyclamide precursor"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AFK79988.1",
+                    "name": "pirE3",
+                    "product": "piricyclamide precursor"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AFK79989.1",
+                    "name": "pirF",
+                    "product": "prenyltransferase",
+                    "tailoring": [
+                        "Prenylation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AFK79990.1",
+                    "product": "hypothetical protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AFK79991.1",
+                    "product": "hypothetical protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AFK79992.1",
+                    "product": "hypothetical protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AFK79993.1",
+                    "name": "pirA",
+                    "product": "N-terminal cyanobactin protease"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AFK79994.1",
+                    "name": "pirB",
+                    "product": "hypothetical protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AFK79995.1",
+                    "name": "pirC",
+                    "product": "hypothetical protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AFK79996.1",
+                    "name": "pirE4",
+                    "product": "piricyclamide precursor"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Unknown",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AFK79997.1",
+                    "product": "hypothetical protein"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AFK79998.1",
+                    "name": "pirG",
+                    "product": "C-terminal cyanoabactin protease"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "JQ951924.1",
+            "completeness": "complete",
+            "evidence": [
+                "Heterologous expression"
+            ]
+        },
+        "mibig_accession": "BGC0001167",
+        "minimal": false,
+        "ncbi_tax_id": "267870",
+        "organism_name": "Microcystis aeruginosa PCC 7005",
+        "publications": [
+            "pubmed:22952627"
+        ],
+        "ripp": {
+            "cyclic": true,
+            "peptidases": [
+                "AFK79993.1",
+                "AFK79998.1"
+            ]
+        },
+        "status": "active"
+    }
+}

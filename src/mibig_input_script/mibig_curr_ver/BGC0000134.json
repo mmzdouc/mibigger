@@ -1,0 +1,52 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC1CC2OC2C=CC=CC(=O)CC2=C(C(O)=CC(O)=C2Cl)C(=O)O1",
+                "compound": "radicicol",
+                "database_id": [
+                    "npatlas:NPA03487",
+                    "pubchem:6323491"
+                ],
+                "mol_mass": 364.071365944,
+                "molecular_formula": "C18H17ClO6"
+            }
+        ],
+        "loci": {
+            "accession": "EU520419.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000134",
+        "minimal": true,
+        "ncbi_tax_id": "280754",
+        "organism_name": "Pochonia chlamydosporia",
+        "publications": [
+            "pubmed:18567690"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: tetrachlorizine.",
+                "Added NPAtlas links to compounds: tetrachlorizine."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "O=C(/C=C/C1=C(O)C=CC(C(=O)C2=CC(Cl)=C(Cl)[NH]2)=C1O)C1=CC(Cl)=C(Cl)[NH]1",
+                "compound": "tetrachlorizine",
+                "database_id": [
+                    "npatlas:NPA033165"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "SKBR01000004.1",
+            "completeness": "Unknown",
+            "end_coord": 382500,
+            "evidence": [
+                "Enzymatic assays"
+            ],
+            "start_coord": 347100
+        },
+        "mibig_accession": "BGC0002096",
+        "minimal": true,
+        "ncbi_tax_id": "2545265",
+        "organism_name": "Streptomyces sp. AJS327",
+        "publications": [
+            "pubmed:33656337",
+            "doi:10.1021/jacs.0c12415"
+        ],
+        "status": "active"
+    }
+}

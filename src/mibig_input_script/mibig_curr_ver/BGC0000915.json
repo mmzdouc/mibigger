@@ -1,0 +1,97 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "RIBLHRV4YSJAGJ5EVZV4GS2Z"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Linked new NPAtlas id for mitomycin (npatlas:NPA020531)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "3-Amino-5-hydroxybenzoic acid",
+                        "subcluster": [
+                            "AAD28452.1",
+                            "mitT",
+                            "AAD28453.1",
+                            "mitS",
+                            "AAD28456.1",
+                            "mitP",
+                            "AAD28452.1",
+                            "mitJ",
+                            "AAD32723.1",
+                            "mitA"
+                        ]
+                    }
+                ],
+                "chem_struct": "CC1=C(C(=O)C2=C(C1=O)N3C[C@H]4[C@@H]([C@@]3([C@@H]2COC(=O)N)OC)N4)N",
+                "compound": "mitomycin",
+                "database_id": [
+                    "npatlas:NPA020531"
+                ],
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 334.127719676,
+                "molecular_formula": "C15H18N4O5"
+            }
+        ],
+        "loci": {
+            "accession": "AF127374.2",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies"
+            ]
+        },
+        "mibig_accession": "BGC0000915",
+        "minimal": false,
+        "ncbi_tax_id": "1914",
+        "organism_name": "Streptomyces lavendulae",
+        "other": {
+            "subclass": "Aminocoumarin"
+        },
+        "publications": [
+            "pubmed:10099135"
+        ],
+        "status": "active"
+    }
+}

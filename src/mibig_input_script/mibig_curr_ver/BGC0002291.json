@@ -1,0 +1,59 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Changed chemical structures for compounds: efomycin L, efomycin K.",
+                "Added NPAtlas links to compounds: efomycin L, efomycin K."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C[C@H]1/C=C/C=C/C(=O)O[C@H]([C@@H](C)[C@@H](O)[C@H](C)C(=O)/C=C/[C@H](C)[C@@H](C)O)[C@@H](C)/C=C/C=C/C(=O)O[C@@H]1[C@@H](C)[C@@H](O)[C@H](C)C(=O)/C=C/[C@H](C)[C@@H](C)O",
+                "compound": "efomycin K",
+                "database_id": [
+                    "npatlas:NPA032890"
+                ]
+            },
+            {
+                "chem_struct": "CC[C@@H](/C=C/C(=O)[C@@H](C)[C@H](O)[C@H](C)[C@H]1OC(=O)/C=C/C=C/[C@H](C)[C@@H]([C@@H](C)[C@@H](O)[C@H](C)C(=O)/C=C/[C@H](C)[C@@H](C)O)OC(=O)/C=C/C=C/[C@@H]1C)[C@@H](C)O",
+                "compound": "efomycin L",
+                "database_id": [
+                    "npatlas:NPA032891"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "CP025018.1",
+            "completeness": "Unknown",
+            "end_coord": 2109226,
+            "start_coord": 2046004
+        },
+        "mibig_accession": "BGC0002291",
+        "minimal": true,
+        "ncbi_tax_id": "1495638",
+        "organism_name": "Streptomyces sp. M56",
+        "publications": [
+            "pubmed:31447803",
+            "doi:10.3389/fmicb.2019.01739"
+        ],
+        "status": "active"
+    }
+}

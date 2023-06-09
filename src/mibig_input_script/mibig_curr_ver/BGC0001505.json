@@ -1,0 +1,58 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated reference publication(s) (MIBiG Annotathon)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Merged annotations from duplicate entry BGC0001933"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "compound": "anacyclamide D8P"
+            },
+            {
+                "compound": "sphaerocyclamide"
+            }
+        ],
+        "loci": {
+            "accession": "MF140698.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001505",
+        "minimal": true,
+        "ncbi_tax_id": "1380707",
+        "organism_name": "Sphaerospermopsis sp. LEGE 00249",
+        "publications": [
+            "pubmed:30266955",
+            "doi:10.26434/chemrxiv.5346739.v1"
+        ],
+        "status": "active"
+    }
+}

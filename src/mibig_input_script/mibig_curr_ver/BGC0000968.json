@@ -1,0 +1,164 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "ZUAEFEJPIFGA5SNZGJWBG3IU"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Change compound name chaetoglobosins -> chaetoglobosin A (npatlas:NPA013078)",
+                "Added new compound: chaetoglobosin C (npatlas:NPA017501)",
+                "Corrected NRP module activity",
+                "Corrected gene identifiers",
+                "Updated NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA",
+                "H5KVDLSVQ3TJW7SKCDNBDEVC"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CC[C@H]1[C@H]2[C@@H](NC(=O)[C@@]23[C@@H](/C=C/C[C@@H](/C=C(\\[C@H](C(=O)/C=C/C3=O)O)/C)C)[C@H]4[C@@]1(O4)C)[C@@H](C)C5=CNC6=CC=CC=C65",
+                "compound": "chaetoglobosin A",
+                "database_id": [
+                    "npatlas:NPA013078"
+                ],
+                "mol_mass": 556.29372238,
+                "molecular_formula": "C34H40N2O5"
+            },
+            {
+                "chem_acts": [],
+                "chem_struct": "C[C@H]\\1C/C=C/[C@H]2[C@H]3[C@](O3)([C@H]([C@@H]4[C@@]2(C(=O)CCC(=O)C(=O)/C(=C1)/C)C(=O)N[C@H]4CC5=CNC6=CC=CC=C65)C)C",
+                "compound": "chaetoglobosin C",
+                "database_id": [
+                    "npatlas:NPA017501"
+                ],
+                "mol_mass": 528.2624,
+                "molecular_formula": "C32H36N2O5"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Other in vivo study"
+                            ]
+                        }
+                    ],
+                    "id": "CAO91861.1",
+                    "name": "cheA",
+                    "product": "PKS-NRPS hybrid"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "AM779763.1",
+            "completeness": "complete",
+            "evidence": [
+                "Gene expression correlated with compound production"
+            ]
+        },
+        "mibig_accession": "BGC0000968",
+        "minimal": false,
+        "ncbi_tax_id": "27334",
+        "nrp": {
+            "cyclic": false,
+            "nrps_genes": [
+                {
+                    "gene_id": "CAO91861.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Knock-out studies"
+                                ],
+                                "publications": [
+                                    "doi:10.1021/ja072884t"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "tryptophan",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC=C2C(=C1)C(=CN2)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Unknown",
+                            "module_number": "1"
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Penicillium expansum",
+        "polyketide": {
+            "cyclic": false,
+            "starter_unit": "Acetyl-CoA",
+            "subclasses": [
+                "Other"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "CAO91861.1"
+                    ],
+                    "iterative": {
+                        "cyclization_type": "Unknown",
+                        "nr_iterations": 8,
+                        "subtype": "Highly reducing"
+                    },
+                    "subclass": [
+                        "Iterative type I"
+                    ]
+                }
+            ]
+        },
+        "publications": [
+            "pubmed:17636916",
+            "pubmed:3611317"
+        ],
+        "status": "active"
+    }
+}

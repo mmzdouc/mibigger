@@ -1,0 +1,70 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Add compound details"
+            ],
+            "contributors": [
+                "SJG3CBEHSM6A3I74YXLH6GLA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C[C@@H]1[C@@H](C[C@H](C[C@@H](C[C@H](C[C@@H](C[C@H](CC=C(C=CC(=O)O[C@@H](CC=CCCCCCC[C@H](CCC[C@H](CCC[C@H](CC=C([C@H]1O)C)O)O)O)[C@@H](C)[C@@H](CCCCC[C@@H](C)O)O)C)O)O)O)O)O)O",
+                "compound": "lacunalide A",
+                "database_id": [
+                    "pubchem:139591548"
+                ],
+                "mol_mass": 970.6956578,
+                "molecular_formula": "C54H98O14"
+            },
+            {
+                "chem_struct": "C[C@@H]1[C@@H](C[C@H](C[C@@H](C[C@H](C[C@@H](C[C@H](CC=C(C=CC(=O)O[C@@H](CC=CCCCCCC[C@H](CCC[C@H](CCC[C@H](CC=C[C@H]1O)O)O)O)[C@@H](C)[C@@H](CCCCC[C@@H](C)O)O)C)O)O)O)O)O)O",
+                "compound": "lacunalide B",
+                "database_id": [
+                    "pubchem:139591549"
+                ],
+                "mol_mass": 956.68000773,
+                "molecular_formula": "C53H96O14"
+            }
+        ],
+        "loci": {
+            "accession": "CP007142.1",
+            "completeness": "Unknown",
+            "end_coord": 3965219,
+            "start_coord": 3836738
+        },
+        "mibig_accession": "BGC0001644",
+        "minimal": true,
+        "ncbi_tax_id": "1445510",
+        "organism_name": "Gynuella sunshinyii YC6258",
+        "publications": [
+            "pubmed:30025185"
+        ],
+        "status": "active"
+    }
+}

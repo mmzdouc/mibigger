@@ -1,0 +1,128 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated reference publication(s) (MIBiG Annotathon)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Merged annotations from duplicate entry BGC0002029",
+                "Updated bioactivity data",
+                "Added AMP-binding domain substrate specificities from duplicate entry BGC0002029"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "C=CC1=CC=C(C=C1)OC(=O)C2=CC(=C(C=C2)[O-])N=O.C=CC1=CC=C(C=C1)OC(=O)C2=CC(=C(C=C2)[O-])N=O.C=CC1=CC=C(C=C1)OC(=O)C2=CC(=C(C=C2)[O-])N=O.[Na+].[Fe+2]",
+                "compound": "ferroverdin",
+                "mol_mass": 883.1076551800002,
+                "molecular_formula": "C45H30FeN3NaO12"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "compound": "bagremycin"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "domains": [
+                        {
+                            "location": {
+                                "begin": 85,
+                                "end": 276
+                            },
+                            "name": "AMP-binding",
+                            "substrates": [
+                                {
+                                    "evidence": [
+                                        "Structure-based inference",
+                                        "Homology"
+                                    ],
+                                    "name": "3-amino-4-hydroxybenzoic acid",
+                                    "structure": "C1=CC(=C(C=C1C(=O)O)N)O"
+                                },
+                                {
+                                    "evidence": [
+                                        "Structure-based inference",
+                                        "Homology"
+                                    ],
+                                    "name": "4-hydroxy-3-nitrobenzoic acid",
+                                    "structure": "C1=CC(=C(C=C1C(=O)O)[N+](=O)[O-])O"
+                                }
+                            ]
+                        }
+                    ],
+                    "id": "AVI10276.1"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "MG708299.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001592",
+        "minimal": false,
+        "ncbi_tax_id": "1535768",
+        "organism_name": "Streptomyces lunaelactis",
+        "publications": [
+            "pubmed:31409675",
+            "doi:10.1101/631242"
+        ],
+        "status": "active"
+    }
+}

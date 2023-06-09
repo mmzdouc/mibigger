@@ -1,0 +1,133 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (MIBiG Annotathon)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Cleaned up synonym list",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "regulatory"
+                    },
+                    {
+                        "activity": "signalling"
+                    }
+                ],
+                "chem_struct": "C1CC(=O)OC1",
+                "chem_synonyms": [
+                    "gamma-Butyrolactone",
+                    "Butyrylactone",
+                    "Butyryl lactone",
+                    "Butyric acid lactone",
+                    "Tetrahydro-2-furanone",
+                    "gamma-BL",
+                    "oxolan-2-one",
+                    "Dihydro-2-furanone",
+                    "Agrisynth BLO",
+                    "gamma-Hydroxybutyric acid lactone",
+                    "gamma-Hydroxybutyrolactone",
+                    "g-Butyrolactone",
+                    "gamma-6480",
+                    "gama-Butyrolactone",
+                    "gamma Butyrolactone",
+                    "No Go",
+                    "Caswell No. 132B",
+                    "gamma-Butanolactone",
+                    "gamma-Hydroxybutyric Acid cyclic ester",
+                    "FEMA No. 3291",
+                    "tetrahydrofuran-2-one",
+                    "gamma-Butalactone",
+                    "gamma-butyrolacton",
+                    "Paint Clean G",
+                    "gamma-Butyryllactone",
+                    "butyrolactonL",
+                    "butyrl lactone",
+                    "y-Butyrolactone",
+                    "g-Butalactone",
+                    "g-Butyryllactone",
+                    "gammabutyrolactone",
+                    "gamma BL",
+                    "and oxolan-2-one",
+                    "Dihyro-2-furanone",
+                    "sigma-Butyrolactone",
+                    "dihydrofuran-2-one",
+                    "gamma-butyro-lactone",
+                    "dihydro-furan-2-one",
+                    "Hydroxybutanoic Acid Lactone",
+                    "g-Hydroxybutyric acid lactone",
+                    "ACMC-209s75",
+                    "gamma-hydroxybutyric acid lactonL",
+                    "Gamma-Lactone 4-hydroxybutyric acid",
+                    "Gamma-Lactone 4-hydroxy-butyric acid",
+                    "Gamma-Lactone 4-hydroxybutanoic acid",
+                    "Gamma-Lactone 4-hydroxy-butanoic acid",
+                    "gamm a-hydroxybutyric acid cyclic ester"
+                ],
+                "chem_targets": [
+                    {
+                        "publications": [
+                            "doi:10.1046/j.1365-2958.2001.02562.x",
+                            "doi:10.1016/b978-0-12-404634-4.00004-8"
+                        ],
+                        "target": "receptor protein"
+                    }
+                ],
+                "compound": "γ-butyrolactone",
+                "mol_mass": 86.036779432,
+                "molecular_formula": "C4H6O2"
+            }
+        ],
+        "loci": {
+            "accession": "FJ821515.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000850",
+        "minimal": true,
+        "ncbi_tax_id": "42234",
+        "organism_name": "Streptomyces acidiscabies",
+        "publications": [
+            "pubmed:19465647"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Fix compound name spelling"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Terpene"
+        ],
+        "compounds": [
+            {
+                "compound": "HEx-tc3 terpene"
+            }
+        ],
+        "loci": {
+            "accession": "FQ790293.1",
+            "completeness": "Unknown",
+            "end_coord": 131296,
+            "start_coord": 97750
+        },
+        "mibig_accession": "BGC0002217",
+        "minimal": true,
+        "ncbi_tax_id": "999810",
+        "organism_name": "Botrytis cinerea T4",
+        "publications": [
+            "pubmed:29651464"
+        ],
+        "status": "active"
+    }
+}

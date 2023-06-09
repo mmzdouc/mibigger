@@ -1,0 +1,128 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.3"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "[H][C@@](CC(C)C)(NC(=O)[C@]([H])(CCC(N)=O)NC(=O)[C@]([H])(CC(N)=O)NC(=O)C[C@H](O)CCCCCCCCC)C=O",
+                "compound": "fellutamide B",
+                "database_id": [
+                    "npatlas:NPA014580",
+                    "pubchem:9829143"
+                ],
+                "mol_mass": 555.363198908,
+                "molecular_formula": "C27H49N5O7"
+            }
+        ],
+        "loci": {
+            "accession": "BN001302.1",
+            "completeness": "Unknown",
+            "end_coord": 3948000,
+            "start_coord": 3924000
+        },
+        "mibig_accession": "BGC0001399",
+        "minimal": false,
+        "ncbi_tax_id": "227321",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "CBF76036.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:27294372"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "asparagine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)C(=O)N"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:27294372"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glutamine",
+                                        "proteinogenic": true,
+                                        "structure": "C(CC(=O)N)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "CBF76038.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:27294372"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "leucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Aspergillus nidulans FGSC A4",
+        "publications": [
+            "pubmed:27294372"
+        ],
+        "status": "active"
+    }
+}

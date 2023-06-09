@@ -1,0 +1,50 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: enantio-pyochelin.",
+                "Added NPAtlas links to compounds: enantio-pyochelin."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CN1C([C@@H]2CSC(C3=CC=CC=C3O)=N2)SC[C@@H]1C(=O)O",
+                "compound": "enantio-pyochelin",
+                "database_id": [
+                    "npatlas:NPA028468"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "EU088199.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0002475",
+        "minimal": true,
+        "ncbi_tax_id": "380021",
+        "organism_name": "Pseudomonas protegens",
+        "publications": [
+            "pubmed:17938167",
+            "doi:10.1074/jbc.M707039200"
+        ],
+        "status": "active"
+    }
+}

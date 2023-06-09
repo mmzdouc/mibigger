@@ -1,0 +1,164 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "WBX64IC5EUFODOV2ECKGLTGC"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated reference publication(s) (MIBiG Annotathon)",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Removed invalid subcluster entry"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "Indole group"
+                    }
+                ],
+                "chem_struct": "OC1=CC2=C(NC=C2C2=CC(C(=O)N2)=C2C(=O)NC3=C2C=CC=C3)C=C1",
+                "chem_targets": [
+                    {
+                        "target": "TNF-alpha-1"
+                    }
+                ],
+                "compound": "violacein",
+                "database_id": [
+                    "npatlas:NPA015879",
+                    "pubchem:9928039"
+                ],
+                "mol_mass": 343.095691276,
+                "molecular_formula": "C20H13N3O3"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AAM21200.1",
+                    "name": "vioA",
+                    "product": "vioA"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AAM21201.1",
+                    "name": "vioB",
+                    "product": "vioB"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AAM21202.1",
+                    "name": "vioC",
+                    "product": "vioC",
+                    "tailoring": [
+                        "Monooxygenation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "AAM21203.1",
+                    "name": "vioD",
+                    "product": "vioD",
+                    "tailoring": [
+                        "Monooxygenation"
+                    ]
+                }
+            ],
+            "operons": [
+                {
+                    "evidence": [
+                        "Sequence-based prediction"
+                    ],
+                    "genes": [
+                        "AAM21200.1",
+                        "AAM21202.1",
+                        "AAM21203.1",
+                        "AAM21201.1"
+                    ]
+                }
+            ]
+        },
+        "loci": {
+            "accession": "AF367409.1",
+            "completeness": "complete"
+        },
+        "mibig_accession": "BGC0000830",
+        "minimal": false,
+        "ncbi_tax_id": "77133",
+        "organism_name": "uncultured bacterium",
+        "other": {
+            "subclass": "Aminocoumarin"
+        },
+        "publications": [
+            "pubmed:11418029"
+        ],
+        "status": "active"
+    }
+}

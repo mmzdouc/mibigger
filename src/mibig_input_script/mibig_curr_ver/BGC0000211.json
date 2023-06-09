@@ -1,0 +1,80 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated reference publication(s) (MIBiG Annotathon)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antiviral"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "C[C@@H]1[C@@H]([C@@]([C@H]([C@@H](O1)C2=C3C(=C(C=C2)O)C(=CC4=C3OC(=O)C5=CC(=CC(=C54)OC)C)OC)O)(C)O)O",
+                "compound": "chrysomycin",
+                "database_id": [
+                    "pubchem:16219149"
+                ],
+                "mol_mass": 496.17333247599987,
+                "molecular_formula": "C27H28O9"
+            }
+        ],
+        "loci": {
+            "accession": "FN565166.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000211",
+        "minimal": true,
+        "ncbi_tax_id": "68172",
+        "organism_name": "Streptomyces albaduncus",
+        "publications": [
+            "pubmed:20140934"
+        ],
+        "status": "active"
+    }
+}

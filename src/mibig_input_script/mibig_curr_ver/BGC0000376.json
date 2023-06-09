@@ -1,0 +1,180 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "other",
+                        "comment": "radical scavanging"
+                    }
+                ],
+                "chem_struct": "C[C@@H](NC(=O)[C@@]1(C)COC(=N1)C1=CN(C)C2=CC(Cl)=C(C)C(O)=C12)C(=O)N[C@@H](CO)C(O)=O",
+                "compound": "JBIR-34",
+                "database_id": [
+                    "npatlas:NPA01973"
+                ],
+                "mol_mass": 480.14117681999994,
+                "molecular_formula": "C21H25ClN4O7"
+            },
+            {
+                "chem_struct": "C[C@@H](NC(=O)[C@@]1(C)COC(=N1)C1=CN(C)C2=CC(Cl)=CC(O)=C12)C(=O)N[C@@H](CO)C(O)=O",
+                "compound": "JBIR-35",
+                "database_id": [
+                    "npatlas:NPA018112"
+                ],
+                "mol_mass": 466.12552675599994,
+                "molecular_formula": "C20H23ClN4O7"
+            }
+        ],
+        "loci": {
+            "accession": "AB902962.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000376",
+        "minimal": false,
+        "ncbi_tax_id": "630397",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "BAP16684.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "ATP-PPi exchange assay"
+                                ],
+                                "publications": [
+                                    "doi:10.1016/j.chembiol.2014.06.004"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "tryptophan",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC=C2C(=C1)C(=CN2)C[C@@H](C(=O)O)N"
+                                    },
+                                    {
+                                        "name": "6-chlorotryptophan",
+                                        "proteinogenic": false,
+                                        "structure": "C1=C(Cl)C=C2C(=C1)C(=CN2)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "BAP16689.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "substrates": [
+                                    {
+                                        "name": "4-hydroxyindole-3-carboxylic acid",
+                                        "proteinogenic": false,
+                                        "structure": "c1cc2c(c(c1)O)c(c[nH]2)C(=O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "BAP16693.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "substrates": [
+                                    {
+                                        "name": "2-methylserine",
+                                        "proteinogenic": false,
+                                        "structure": "C[C@](CO)(C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "BAP16697.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "substrates": [
+                                    {
+                                        "name": "D-alanine",
+                                        "proteinogenic": false,
+                                        "structure": "C[C@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "BAP16699.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Streptomyces sp. Sp080513GE-23",
+        "publications": [
+            "pubmed:25041948"
+        ],
+        "status": "active"
+    }
+}

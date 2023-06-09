@@ -1,0 +1,218 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Add compound details",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "SJG3CBEHSM6A3I74YXLH6GLA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CCC(C)CCCCCCCCCC[C@H]1CC(=O)N[C@H](C(=O)N[C@@H](C(=O)N[C@@H](C(=O)N[C@H](C(=O)N2CCC[C@@H]2C(=O)N[C@@H](C(=O)N[C@H](C(=O)N1)CC(=O)N)CC(=O)N)CCC(=O)N)CC(=O)N)CC3=CC=C(C=C3)O)CC(=O)N",
+                "compound": "paenilarvin A",
+                "database_id": [
+                    "pubchem:139588779"
+                ],
+                "mol_mass": 1111.60259431,
+                "molecular_formula": "C52H81N13O14"
+            },
+            {
+                "chem_struct": "CCC(C)CCCCCCCCCC[C@H]1CC(=O)N[C@H](C(=O)N[C@@H](C(=O)N[C@@H](C(=O)N[C@H](C(=O)N2CCC[C@@H]2C(=O)N[C@@H](C(=O)N[C@H](C(=O)N1)CC(=O)N)CC(=O)N)CCC(=O)N)CC(=O)N)CC3=CC=C(C=C3)O)CC(=O)O",
+                "compound": "paenilarvin B",
+                "database_id": [
+                    "pubchem:139588780"
+                ],
+                "mol_mass": 1112.58660989,
+                "molecular_formula": "C52H80N12O15"
+            },
+            {
+                "chem_struct": "CC(C)CCCCCCCCC[C@H]1CC(=O)N[C@H](C(=O)N[C@@H](C(=O)N[C@@H](C(=O)N[C@H](C(=O)N2CCC[C@@H]2C(=O)N[C@@H](C(=O)N[C@H](C(=O)N1)CC(=O)N)CC(=O)N)CCC(=O)N)CC(=O)N)CC3=CC=C(C=C3)O)CC(=O)N",
+                "compound": "paenilarvin C",
+                "database_id": [
+                    "pubchem:139588781"
+                ],
+                "mol_mass": 1083.57129418,
+                "molecular_formula": "C50H77N13O14"
+            }
+        ],
+        "loci": {
+            "accession": "CP003355.1",
+            "completeness": "Unknown",
+            "end_coord": 1878357,
+            "start_coord": 1841078
+        },
+        "mibig_accession": "BGC0000402",
+        "minimal": false,
+        "ncbi_tax_id": "697284",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "AHD05677.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "doi:10.1002/cbic.201402139"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "asparagine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)C(=O)N"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "doi:10.1002/cbic.201402139"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AHD05678.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "doi:10.1002/cbic.201402139"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "tyrosine",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC(=CC=C1C[C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "doi:10.1002/cbic.201402139"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "asparagine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)C(=O)N"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "doi:10.1002/cbic.201402139"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glutamine",
+                                        "proteinogenic": true,
+                                        "structure": "C(CC(=O)N)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "doi:10.1002/cbic.201402139"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "proline",
+                                        "proteinogenic": true,
+                                        "structure": "C1C[C@H](NC1)C(=O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AHD05679.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "doi:10.1002/cbic.201402139"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "asparagine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)C(=O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Paenibacillus larvae subsp. larvae DSM 25430",
+        "publications": [
+            "pubmed:25069424"
+        ],
+        "status": "active"
+    }
+}

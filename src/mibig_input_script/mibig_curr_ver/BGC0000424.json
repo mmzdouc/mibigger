@@ -1,0 +1,368 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "2EUPHFNFSB4J4GBDL2SYVJGJ"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Corrected NRP module activity",
+                "Corrected NRP gene names",
+                "Updated NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "siderophore"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "Lipid"
+                    }
+                ],
+                "chem_struct": "O=C(NC(C(O)C(O)=O)C(NC(CO)C(NC(C(O)C(O)=O)C(NC(C(C)O)C(NC(CO)C(NC1CCCN(O)C1=O)=O)=O)=O)=O)=O)CCCCCCCCCCCCC",
+                "compound": "serobactin C",
+                "mass_spec_ion_type": "M+Na+",
+                "mol_mass": 877.4280435560001,
+                "molecular_formula": "C37H63N7O17"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "siderophore"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "Lipid"
+                    }
+                ],
+                "chem_struct": "CCCCCCCCCCCC(NC(C(O)C(O)=O)C(NC(CO)C(NC(C(O)C(O)=O)C(NC(C(C)O)C(NC(CO)C(NC1CCCN(O)C1=O)=O)=O)=O)=O)=O)=O",
+                "compound": "serobactin B",
+                "mass_spec_ion_type": "M+Na+",
+                "mol_mass": 849.3967434280003,
+                "molecular_formula": "C35H59N7O17"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "siderophore"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "Lipid"
+                    }
+                ],
+                "chem_struct": "CCCCCCCCCC(NC(C(O)C(O)=O)C(NC(CO)C(NC(C(O)C(O)=O)C(NC(C(C)O)C(NC(CO)C(NC1CCCN(O)C1=O)=O)=O)=O)=O)=O)=O",
+                "compound": "serobactin A",
+                "mass_spec_ion_type": "M+Na+",
+                "mol_mass": 821.3654433000002,
+                "molecular_formula": "C33H55N7O17"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Transport",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "Hsero_2349",
+                    "name": "pvdE"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "Hsero_2346",
+                    "tailoring": [
+                        "Hydroxylation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Transport",
+                            "evidence": [
+                                "Knock-out",
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "Hsero_2345",
+                    "name": "fhuA",
+                    "product": "TonB-dependent Fe3+-serobactin transporter"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out",
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "Hsero_2343",
+                    "product": "Serobactin synthetase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "Hsero_2342",
+                    "tailoring": [
+                        "Hydroxylation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Regulation",
+                            "evidence": [
+                                "Knock-out",
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "Hsero_2338",
+                    "name": "pfrI"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Regulation",
+                            "evidence": [
+                                "Knock-out",
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "Hsero_2337",
+                    "name": "cirA",
+                    "product": "TonB-dependent transducer"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "CP002039.1",
+            "completeness": "complete",
+            "end_coord": 2687402,
+            "evidence": [
+                "Knock-out studies",
+                "Gene expression correlated with compound production"
+            ],
+            "start_coord": 2645251
+        },
+        "mibig_accession": "BGC0000424",
+        "minimal": false,
+        "ncbi_tax_id": "757424",
+        "nrp": {
+            "cyclic": false,
+            "nrps_genes": [
+                {
+                    "gene_id": "ADJ63842.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": true,
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:23320867"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "3-hydroxyaspartic acid",
+                                        "proteinogenic": false,
+                                        "structure": "N[C@@H](C(C(=O)O)O)(C(=O)O)"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "1"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:23320867"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "DCL",
+                            "module_number": "2"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:23320867"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "3-hydroxyaspartic acid",
+                                        "proteinogenic": false,
+                                        "structure": "N[C@@H](C(C(=O)O)O)(C(=O)O)"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "modification_domains": [
+                                "Hydroxylation"
+                            ],
+                            "module_number": "3"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": true,
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:23320867"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "threonine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@H]([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "4"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:23320867"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "DCL",
+                            "module_number": "5"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [
+                                    "Hsero_2346"
+                                ],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:23320867"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "N5-hydroxyornithine",
+                                        "proteinogenic": false,
+                                        "structure": "C(C[C@@H](C(=O)O)N)CNO"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "DCL",
+                            "module_number": "6"
+                        }
+                    ]
+                }
+            ],
+            "release_type": [
+                "Hydrolysis"
+            ],
+            "subclass": "NRP siderophore"
+        },
+        "organism_name": "Herbaspirillum seropedicae SmR1",
+        "publications": [
+            "pubmed:23320867"
+        ],
+        "status": "active"
+    }
+}

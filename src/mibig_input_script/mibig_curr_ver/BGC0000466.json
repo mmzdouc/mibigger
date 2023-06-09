@@ -1,0 +1,78 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "COC1=CC2=C(NC(=C2)C(=O)N2CC3CC33C4=C(NC(=C4)C(=O)N4CCC5=C6C=C(NC6=C(OC)C(O)=C45)SC(C)=O)C(=O)C=C23)C=C1O",
+                "compound": "yatakemycin",
+                "database_id": [
+                    "npatlas:NPA01250",
+                    "pubchem:11721692"
+                ],
+                "mol_mass": 679.173683888,
+                "molecular_formula": "C35H29N5O8S"
+            }
+        ],
+        "loci": {
+            "accession": "JF429418.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000466",
+        "minimal": true,
+        "ncbi_tax_id": "991125",
+        "organism_name": "Streptomyces sp. TP-A2060",
+        "publications": [
+            "pubmed:22612591"
+        ],
+        "status": "active"
+    }
+}

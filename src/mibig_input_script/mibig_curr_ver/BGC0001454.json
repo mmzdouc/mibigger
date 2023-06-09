@@ -1,0 +1,97 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated reference publication(s) (MIBiG Annotathon)",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "inhibitor"
+                    }
+                ],
+                "chem_struct": "CCC(C)C1=CC(O)=C(CC)C(=O)O1",
+                "compound": "germicidin",
+                "database_id": [
+                    "npatlas:NPA010967"
+                ],
+                "mol_mass": 196.109944372,
+                "molecular_formula": "C11H16O3"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "id": "gcsA",
+                    "product": "germicidin synthase"
+                }
+            ],
+            "extra_genes": [
+                {
+                    "id": "gcsA",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 1185,
+                                "start": 1
+                            }
+                        ],
+                        "strand": 1
+                    }
+                }
+            ]
+        },
+        "loci": {
+            "accession": "LT989884.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001454",
+        "minimal": true,
+        "ncbi_tax_id": "41951",
+        "organism_name": "Streptomyces argillaceus",
+        "publications": [
+            "pubmed:29795673"
+        ],
+        "status": "active"
+    }
+}

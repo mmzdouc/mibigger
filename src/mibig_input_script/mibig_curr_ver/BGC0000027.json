@@ -1,0 +1,199 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "KT6LT7RJM7ROU6KBJOTWGU5X"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Remove record accession from PKS gene list"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CCCCCCCC(=O)C1C2CC3=C(COC(\\C=C\\C)=C3)C(=O)C2(C)OC1=O",
+                "compound": "ankaflavin",
+                "database_id": [
+                    "npatlas:NPA05638",
+                    "pubchem:15294091"
+                ],
+                "mol_mass": 386.2093240599999,
+                "molecular_formula": "C23H30O5"
+            },
+            {
+                "chem_struct": "[H]\\C(C)=C(\\[H])C1=CC2=C(CO1)C(=O)[C@]1(C)OC(=O)[C@H](C(=O)CCCCC)[C@@]1([H])C2",
+                "compound": "monascin",
+                "database_id": [
+                    "npatlas:NPA09686",
+                    "pubchem:12118082"
+                ],
+                "mol_mass": 358.17802393200003,
+                "molecular_formula": "C21H26O5"
+            },
+            {
+                "chem_struct": "CCCCCC(=O)C1=C2C=C3C=C(OC=C3C(=O)[C@]2(C)OC1=O)\\C=C\\C",
+                "compound": "rubropunctatine",
+                "database_id": [
+                    "npatlas:NPA017529"
+                ],
+                "mol_mass": 354.146723804,
+                "molecular_formula": "C21H22O5"
+            },
+            {
+                "chem_struct": "CCCCCCCC(=O)C1=C2C=C3C=C(OC=C3C(=O)[C@]2(C)OC1=O)\\C=C\\C",
+                "compound": "monascorubrin",
+                "database_id": [
+                    "npatlas:NPA02306",
+                    "pubchem:12118084"
+                ],
+                "mol_mass": 382.1780239319999,
+                "molecular_formula": "C23H26O5"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "AGN71607.1",
+                    "name": "mppB",
+                    "product": "acyltransferase",
+                    "tailoring": [
+                        "Acylation"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "AGN71606.1",
+                    "name": "mppA",
+                    "product": "ketoreductase ",
+                    "tailoring": [
+                        "Reduction"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "AGN71608.1",
+                    "name": "mppC",
+                    "product": "dehydrogenase",
+                    "tailoring": [
+                        "Reduction"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "AGN71622.1",
+                    "name": "mpp7",
+                    "product": "dehydratase",
+                    "tailoring": [
+                        "Dehydration"
+                    ]
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "AGN71623.1",
+                    "name": "mppF",
+                    "product": "hydroxylase",
+                    "tailoring": [
+                        "Monooxygenation"
+                    ]
+                }
+            ]
+        },
+        "loci": {
+            "accession": "KC148521.1",
+            "completeness": "complete"
+        },
+        "mibig_accession": "BGC0000027",
+        "minimal": false,
+        "ncbi_tax_id": "89488",
+        "organism_name": "Monascus pilosus",
+        "polyketide": {
+            "cyclic": true,
+            "release_type": [
+                "Hydrolysis"
+            ],
+            "starter_unit": "Acetoacetyl-CoA",
+            "subclasses": [
+                "Other"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "2362MpPKS5"
+                    ],
+                    "iterative": {
+                        "cyclization_type": "C2-C7 first",
+                        "nr_iterations": 5,
+                        "subtype": "Non-reducing"
+                    },
+                    "subclass": [
+                        "Iterative type I"
+                    ]
+                }
+            ]
+        },
+        "publications": [
+            "pubmed:23504076"
+        ],
+        "status": "active"
+    }
+}

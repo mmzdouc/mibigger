@@ -1,0 +1,42 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC1C(N=C(O1)C2=C(C(=CC=C2)O)O)C(=O)NCCCCNC(=O)C3=C(C(=CC=C3)O)O",
+                "compound": "photobactin",
+                "database_id": [
+                    "npatlas:NPA014343"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "AY042783.1",
+            "completeness": "Unknown",
+            "end_coord": 20777,
+            "start_coord": 1107
+        },
+        "mibig_accession": "BGC0002495",
+        "minimal": true,
+        "ncbi_tax_id": "29488",
+        "organism_name": "Photorhabdus luminescens",
+        "publications": [
+            "pubmed:12902261",
+            "doi:10.1128/AEM.69.8.4706-4713.2003"
+        ],
+        "status": "active"
+    }
+}

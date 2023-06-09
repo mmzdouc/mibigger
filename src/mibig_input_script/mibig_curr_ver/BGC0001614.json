@@ -1,0 +1,252 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (MIBiG Annotathon)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C/C=C1NC(C(NC(C(NC(C(C(OC(C(NC(C(N(C(CNC(C(NC\\1=O)CCC(N)=O)=O)=O)C)C(OC2OC(C(C(C2O)O)O)CO)C)=O)CCC(N)=O)=O)C)NC(C(C(O)C)NC(C(C(CCCCCCCCCCCCC)O)O)=O)=O)=O)C(O)C)=O)Cc3ccc(O)cc3)=O",
+                "compound": "hassallidin E",
+                "mol_mass": 1409.7177431759994,
+                "molecular_formula": "C64H103N11O24"
+            }
+        ],
+        "loci": {
+            "accession": "LT546031.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001614",
+        "minimal": false,
+        "ncbi_tax_id": "671068",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "CZT62784.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Mass spectrometry",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:28489343"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "2,3-dihydroxyhexadecanoic acid",
+                                        "proteinogenic": false,
+                                        "structure": "CCCCCCCCCCCCCC(C(C(=O)O)O)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Mass spectrometry",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:28489343"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "threonine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@H]([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Mass spectrometry",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:28489343"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "threonine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@H]([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "CZT62785.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Mass spectrometry",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:28489343"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "threonine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@H]([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Mass spectrometry",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:28489343"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "tyrosine",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC(=CC=C1C[C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "CZT62792.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Mass spectrometry",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:28489343"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "threonine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@H]([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Mass spectrometry",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:28489343"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glutamine",
+                                        "proteinogenic": true,
+                                        "structure": "C(CC(=O)N)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "CZT62794.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Mass spectrometry",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:28489343"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glycine",
+                                        "proteinogenic": true,
+                                        "structure": "NCC(=O)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Mass spectrometry",
+                                    "Sequence-based prediction"
+                                ],
+                                "publications": [
+                                    "pubmed:28489343"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "threonine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@H]([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Planktothrix serta PCC 8927",
+        "publications": [
+            "pubmed:28489343"
+        ],
+        "status": "active"
+    }
+}

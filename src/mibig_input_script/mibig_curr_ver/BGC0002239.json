@@ -1,0 +1,82 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide",
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "compound": "GKK1032 A2"
+            },
+            {
+                "chem_struct": "C[C@@H]1C[C@@H]([C@H]2[C@@H]3[C@@H]4[C@H]([C@@H](C=C([C@@H]4[C@@]2(C1)C)C)C=C)C(=O)C5=C[C@](CC6=CC=C(O3)C=C6)(NC5=O)O)C",
+                "compound": "pyrrocidine A",
+                "database_id": [
+                    "pubchem:10907072",
+                    "chembl:CHEMBL520703"
+                ]
+            },
+            {
+                "chem_struct": "C[C@@H]1C[C@@H]([C@H]2[C@@H]3[C@@H]4[C@H]([C@@H](C=C([C@@H]4[C@@]2(C1)C)C)C=C)C(=O)[C@@H]5C[C@](CC6=CC=C(O3)C=C6)(NC5=O)O)C",
+                "compound": "pyrrocidine B",
+                "database_id": [
+                    "npatlas:NPA005887"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "MW690134.1",
+            "completeness": "Unknown",
+            "evidence": [
+                "Heterologous expression"
+            ]
+        },
+        "mibig_accession": "BGC0002239",
+        "minimal": false,
+        "ncbi_tax_id": "2046025",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "QXF14600.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:33834778"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "tyrosine",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC(=CC=C1C[C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Acremonium sp.",
+        "publications": [
+            "pubmed:33834778",
+            "doi:10.1021/jacs.1c00098"
+        ],
+        "status": "active"
+    }
+}

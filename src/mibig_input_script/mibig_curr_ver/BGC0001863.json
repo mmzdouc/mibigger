@@ -1,0 +1,70 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "7QOHKU3C2WTCRJ5TNJXSNBTP"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Remove negative molecular mass"
+            ],
+            "contributors": [
+                "3UOU7PODQJXIM6BEPUHHRRA5"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP",
+            "Terpene"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "compound": "bacillicn CER074",
+                "evidence": [
+                    "Mass spectrometry"
+                ],
+                "mass_spec_ion_type": "[M+H]+"
+            }
+        ],
+        "loci": {
+            "accession": "NZ_JH791994.1",
+            "completeness": "incomplete",
+            "evidence": [
+                "Heterologous expression"
+            ]
+        },
+        "mibig_accession": "BGC0001863",
+        "minimal": true,
+        "ncbi_tax_id": "1405",
+        "organism_name": "Bacillus mycoides",
+        "publications": [
+            "pubmed:30183259"
+        ],
+        "ripp": {
+            "cyclic": true,
+            "subclass": "Glycocin"
+        },
+        "status": "active"
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "CC[C@H](C)[C@@H](C(=O)N[C@@H](C)C(=O)NCC(=O)N[C@@H](C)C(=O)NCC(=O)O)NC(=O)CNC(=O)[C@H](CC(=O)O)NC(=O)[C@@H]1CCCN1C(=O)[C@H]([C@@H](C)CC)NC(=O)[C@@H]2CCCN2C(=O)CNC(=O)[C@H](CC(=O)O)NC(=O)[C@H](C(C)C)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CS)NC(=O)[C@H](C)NC(=O)[C@H](C)NC(=O)CNC(=O)[C@H]([C@@H](C)CC)NC(=O)[C@H](CO)NC(=O)[C@H](CS)NC(=O)[C@H]([C@@H](C)O)NC(=O)[C@H](C)NC(=O)[C@H](CS)NC(=O)CNC(=O)[C@H](CCCCN)NC(=O)[C@H](CC(=O)N)NC(=O)CNC(=O)[C@H](CC3=CNC4=CC=CC=C43)NC(=O)[C@H](CC(C)C)NC(=O)CNC(=O)[C@H](CC(C)C)NC(=O)CN",
+                "compound": "subtilosin A",
+                "database_id": [
+                    "pubchem:16132390"
+                ],
+                "mol_mass": 3013.4459830760015,
+                "molecular_formula": "C129H208N36O41S3"
+            }
+        ],
+        "loci": {
+            "accession": "AJ430547.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000602",
+        "minimal": true,
+        "ncbi_tax_id": "703612",
+        "organism_name": "Bacillus subtilis subsp. spizizenii ATCC 6633",
+        "publications": [
+            "pubmed:15066831"
+        ],
+        "ripp": {
+            "subclass": "Thiopeptide"
+        },
+        "status": "active"
+    }
+}

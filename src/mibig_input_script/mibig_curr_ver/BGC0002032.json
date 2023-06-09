@@ -1,0 +1,78 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Cleaned up synonym list",
+                "Fetch compound properties from PubChem",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "antiprotozoal"
+                    }
+                ],
+                "chem_struct": "CCCCC[C@H]([C@@H]1[C@H](C[C@H](C[C@H](C[C@H](C[C@H](C[C@H]([C@H]([C@@H](/C(=C/C=C/C=C/C=C/C=C/[C@@H]([C@H](OC1=O)C)O)/C)O)O)O)O)O)O)O)O)O",
+                "chem_synonyms": [
+                    "Fungichromin",
+                    "Cogomycin",
+                    "Lagosin",
+                    "Cantricin",
+                    "Moldcidin B"
+                ],
+                "compound": "pentamycin",
+                "database_id": [
+                    "pubchem:5282200"
+                ],
+                "mol_mass": 670.392827,
+                "molecular_formula": "C35H58O12"
+            }
+        ],
+        "loci": {
+            "accession": "QQVZ01000001.1",
+            "completeness": "Unknown",
+            "end_coord": 233940,
+            "start_coord": 152300
+        },
+        "mibig_accession": "BGC0002032",
+        "minimal": true,
+        "ncbi_tax_id": "2283197",
+        "organism_name": "Streptomyces sp. S816",
+        "publications": [
+            "pubmed:31095370"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CCN1C(=O)\\C2=C3/CO[C@](OC)([C@H]3O)[C@@H](O)CCCCC[C@@]12C",
+                "compound": "phyllostictine A",
+                "database_id": [
+                    "npatlas:NPA016308"
+                ],
+                "mol_mass": 325.188922964,
+                "molecular_formula": "C17H27NO5"
+            },
+            {
+                "chem_struct": "CCN1C(=O)\\C2=C3/CO[C@](OC)([C@H]3O)[C@@H](O)CCC[C@@]12C",
+                "compound": "phyllostictine B",
+                "database_id": [
+                    "npatlas:NPA07656"
+                ],
+                "mol_mass": 297.15762283600003,
+                "molecular_formula": "C15H23NO5"
+            }
+        ],
+        "loci": {
+            "accession": "KY682688.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001741",
+        "minimal": true,
+        "ncbi_tax_id": "1986016",
+        "organism_name": "Phyllosticta cirsii",
+        "publications": [
+            "pubmed:28467083"
+        ],
+        "status": "active"
+    }
+}

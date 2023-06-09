@@ -1,0 +1,50 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C1=C(C(=C(N1)Cl)Cl)[N+](=O)[O-]",
+                "compound": "pyrrolomycin",
+                "database_id": [
+                    "pubchem:133275"
+                ],
+                "mol_mass": 179.949332664,
+                "molecular_formula": "C4H2Cl2N2O2"
+            }
+        ],
+        "loci": {
+            "accession": "EF140903.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000132",
+        "minimal": true,
+        "ncbi_tax_id": "428401",
+        "organism_name": "Streptomyces sp. UC 11065",
+        "publications": [
+            "pubmed:17158935"
+        ],
+        "status": "active"
+    }
+}

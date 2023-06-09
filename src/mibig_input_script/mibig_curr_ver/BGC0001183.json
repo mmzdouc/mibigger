@@ -1,0 +1,75 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated reference publication(s) (MIBiG Annotathon)",
+                "Updated compound(s) information (MIBiG Annotathon)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "C[C@H]1C[C@@H]([C@@H]([C@@H]2[C@@H]1[C@]3([C@@H](C=C2)/C(=C\\C[C@@H](/C(=C\\[C@@H]4C=C([C@@H](C[C@@]45C(=O)C(=C3O)C(=O)O5)C)CO)/C)O[C@H]6C[C@]([C@H]([C@H](O6)C)NC(=O)OC)(C)N)/C)C)O[C@H]7C[C@H]([C@H]([C@@H](O7)C)O)O[C@H]8C[C@H]([C@H]([C@@H](O8)C)O[C@@H]9C[C@H]([C@H]([C@@H](O9)C)OC)O)O)C",
+                "compound": "lobophorin A",
+                "database_id": [
+                    "pubchem:100983786"
+                ],
+                "mol_mass": 1156.629428724,
+                "molecular_formula": "C61H92N2O19"
+            }
+        ],
+        "loci": {
+            "accession": "JX306680.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001183",
+        "minimal": true,
+        "ncbi_tax_id": "579932",
+        "organism_name": "Streptomyces sp. FXJ7.023",
+        "publications": [
+            "pubmed:27005505"
+        ],
+        "status": "active"
+    }
+}

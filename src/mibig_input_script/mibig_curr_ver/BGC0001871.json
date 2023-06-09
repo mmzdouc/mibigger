@@ -1,0 +1,45 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted",
+                "Added version to NCBI accession",
+                "Retired as minimal entry duplicate of BGC0000287"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "compound": "L-2-amino-4-methoxy-trans-3-butenoic acid"
+            }
+        ],
+        "loci": {
+            "accession": "AE004091.2",
+            "completeness": "Unknown",
+            "end_coord": 2545669,
+            "start_coord": 2532659
+        },
+        "mibig_accession": "BGC0001871",
+        "minimal": true,
+        "ncbi_tax_id": "208964",
+        "organism_name": "Pseudomonas aeruginosa PAO1",
+        "publications": [
+            "pubmed:29633497"
+        ],
+        "retirement_reasons": [
+            "Duplicate of BGC0000287"
+        ],
+        "see_also": [
+            "BGC0000287"
+        ],
+        "status": "retired"
+    }
+}

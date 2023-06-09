@@ -1,0 +1,101 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Linked new NPAtlas id for albicidin (npatlas:NPA020027)",
+                "Updated bioactivity data",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    }
+                ],
+                "chem_struct": "C/C(=C\\C1=CC=C(C=C1)O)/C(=O)NC2=CC=C(C=C2)C(=O)N[C@@H](CC#N)C(=O)NC3=CC=C(C=C3)C(=O)NC4=C(C(=C(C=C4)C(=O)NC5=C(C(=C(C=C5)C(=O)O)O)OC)O)OC",
+                "compound": "albicidin",
+                "database_id": [
+                    "pubchem:78322514",
+                    "npatlas:NPA020027"
+                ],
+                "mol_mass": 842.2547706560003,
+                "molecular_formula": "C44H38N6O12"
+            }
+        ],
+        "loci": {
+            "accession": "AJ586576.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001088",
+        "minimal": false,
+        "ncbi_tax_id": "29447",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "CAE52342.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "substrates": [
+                                    {
+                                        "name": "asparagine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)C(=O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Xanthomonas albilineans",
+        "publications": [
+            "pubmed:15077674"
+        ],
+        "status": "active"
+    }
+}

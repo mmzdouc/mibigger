@@ -1,0 +1,74 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated reference publication(s) (MIBiG Annotathon)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Saccharide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "CC([C@@H]1CC[C@H]([C@H](O1)O[C@@H]2[C@H]([C@@H]([C@@H]([C@H]([C@H]2O)N(C)C(=O)CN)OC)O)N)N)N.OS(=O)(=O)O.OS(=O)(=O)O",
+                "compound": "fortimicin",
+                "database_id": [
+                    "pubchem:51565"
+                ],
+                "mol_mass": 601.193492928,
+                "molecular_formula": "C17H39N5O14S2"
+            }
+        ],
+        "loci": {
+            "accession": "AJ628421.2",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000695",
+        "minimal": true,
+        "ncbi_tax_id": "1880",
+        "organism_name": "Micromonospora olivasterospora",
+        "publications": [
+            "pubmed:1494349"
+        ],
+        "status": "active"
+    }
+}

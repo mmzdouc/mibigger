@@ -1,0 +1,49 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Changed chemical structures for compounds: scytalidin.",
+                "Added NPAtlas links to compounds: scytalidin."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CCCCCC1CC2=C(CC(O)(CCCC)CC3=C1C(=O)OC3=O)C(=O)OC2=O",
+                "compound": "scytalidin",
+                "database_id": [
+                    "npatlas:NPA032753"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "MT724050.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0002223",
+        "minimal": true,
+        "ncbi_tax_id": "1525810",
+        "organism_name": "Scytalidium album",
+        "publications": [
+            "pubmed:34094403"
+        ],
+        "status": "active"
+    }
+}

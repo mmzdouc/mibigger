@@ -1,0 +1,151 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "UBQR4UUVGCLQKBSM72W5IS2P"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Update compound structure (SMILES) for staphyloferrin A"
+            ],
+            "contributors": [
+                "H5KVDLSVQ3TJW7SKCDNBDEVC"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "siderophore"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "citric acid"
+                    },
+                    {
+                        "moiety": "L-ornithine"
+                    }
+                ],
+                "chem_struct": "O=C(O)[C@H](NC(CC(C(O)=O)(O)CC(O)=O)=O)CCCNC(CC(C(O)=O)(O)CC(O)=O)=O",
+                "chem_targets": [
+                    {
+                        "target": "Iron"
+                    }
+                ],
+                "compound": "staphyloferrin A",
+                "mass_spec_ion_type": "[M-H]-",
+                "mol_mass": 480.12275344799986,
+                "molecular_formula": "C17H24N2O14"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Transport",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "SAOUHSC_02434",
+                    "name": "sfaA",
+                    "product": "Siderophore Transporter"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Precursor biosynthesis",
+                            "evidence": [
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "SAOUHSC_02436",
+                    "name": "sfaC",
+                    "product": "L-ornithine Racemase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Activity assay"
+                            ]
+                        }
+                    ],
+                    "id": "SAOUHSC_02435",
+                    "name": "sfaB",
+                    "product": "Nonribosomal peptide synthetase independent siderophore (NIS) Synthetase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Activity assay"
+                            ]
+                        }
+                    ],
+                    "id": "SAOUHSC_02433",
+                    "name": "sfaD",
+                    "product": "Nonribosomal peptide synthetase independent siderophore (NIS) Synthetase"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "CP000253.1",
+            "completeness": "complete",
+            "end_coord": 2263981,
+            "evidence": [
+                "Knock-out studies",
+                "Enzymatic assays",
+                "Heterologous expression"
+            ],
+            "start_coord": 2257889
+        },
+        "mibig_accession": "BGC0000944",
+        "minimal": false,
+        "ncbi_tax_id": "93061",
+        "organism_name": "Staphylococcus aureus subsp. aureus NCTC 8325",
+        "other": {
+            "subclass": "Non-NRP siderophore"
+        },
+        "publications": [
+            "pubmed:19138128",
+            "pubmed:19400778"
+        ],
+        "status": "active"
+    }
+}

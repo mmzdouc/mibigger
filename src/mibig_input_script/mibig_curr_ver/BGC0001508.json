@@ -1,0 +1,51 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "[H][C@]12CC[C@@]3(C)[C@@]([H])(C=C(C)[C@@]4(C)C(=O)C(C)=C(O)[C@@]34C(=O)OC)[C@@]1(CC[C@H](OC(C)=O)C2(C)C)C=O",
+                "compound": "andrastin A",
+                "database_id": [
+                    "npatlas:NPA013834"
+                ],
+                "mol_mass": 486.2617535559999,
+                "molecular_formula": "C28H38O7"
+            }
+        ],
+        "loci": {
+            "accession": "KY349137.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001508",
+        "minimal": true,
+        "ncbi_tax_id": "5082",
+        "organism_name": "Penicillium roqueforti",
+        "publications": [
+            "pubmed:28529508"
+        ],
+        "status": "active"
+    }
+}

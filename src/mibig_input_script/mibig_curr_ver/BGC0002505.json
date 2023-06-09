@@ -1,0 +1,56 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: xenoacremone A.",
+                "Added NPAtlas links to compounds: xenoacremone A."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide",
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C=C[C@@H]1C=C[C@@H]2[C@@H]3C[C@H](C)C[C@H](C)[C@H]3[C@H]3OC4=CC=C(C=C4)C[C@@]4(O)NC(=O)C(=C(O)[C@H]1[C@@H]23)[C@@H]4O",
+                "compound": "xenoacremone A",
+                "database_id": [
+                    "npatlas:NPA033154"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "MT876600.1",
+            "completeness": "Unknown",
+            "end_coord": 25320,
+            "evidence": [
+                "Heterologous expression",
+                "Knock-out studies"
+            ],
+            "start_coord": 1
+        },
+        "mibig_accession": "BGC0002505",
+        "minimal": true,
+        "ncbi_tax_id": "2480843",
+        "organism_name": "Xenoacremonium sp. BF-2018a",
+        "publications": [
+            "pubmed:34900544"
+        ],
+        "status": "active"
+    }
+}

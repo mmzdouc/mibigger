@@ -1,0 +1,78 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    }
+                ],
+                "chem_struct": "ClC1=CNC=C1C1=CC=CC(Cl)=C1N(=O)=O",
+                "compound": "pyrrolnitrin",
+                "database_id": [
+                    "npatlas:NPA018752",
+                    "pubchem:13916"
+                ],
+                "mol_mass": 255.980632792,
+                "molecular_formula": "C10H6Cl2N2O2"
+            }
+        ],
+        "loci": {
+            "accession": "EU188755.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000924",
+        "minimal": true,
+        "ncbi_tax_id": "587753",
+        "organism_name": "Pseudomonas chlororaphis",
+        "publications": [
+            "pubmed:19889032"
+        ],
+        "status": "active"
+    }
+}

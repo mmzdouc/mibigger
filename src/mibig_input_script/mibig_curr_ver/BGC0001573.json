@@ -1,0 +1,47 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Alkaloid"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CN1CC(CC2C1CC3=CNC4=CC=CC2=C34)C(=O)O",
+                "compound": "dihydrolysergic acid",
+                "mol_mass": 270.136827816,
+                "molecular_formula": "C16H18N2O2"
+            }
+        ],
+        "loci": {
+            "accession": "KY677717.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001573",
+        "minimal": true,
+        "ncbi_tax_id": "83212",
+        "organism_name": "Claviceps africana",
+        "publications": [
+            "pubmed:28476772"
+        ],
+        "status": "active"
+    }
+}

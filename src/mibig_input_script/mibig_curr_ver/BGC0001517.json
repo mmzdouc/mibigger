@@ -1,0 +1,49 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C1=CC=C(C=C1)C[C@@H](COC(=O)[C@H](CC2=CC=CC=C2)NC(=O)C3=CC=CC=C3)NC(=O)C4=CC=CC=C4",
+                "compound": "asperphenamate",
+                "mol_mass": 506.22055744,
+                "molecular_formula": "C32H30N2O4"
+            }
+        ],
+        "loci": {
+            "accession": "NT_165937.1",
+            "completeness": "Unknown",
+            "end_coord": 184270,
+            "start_coord": 159865
+        },
+        "mibig_accession": "BGC0001517",
+        "minimal": true,
+        "ncbi_tax_id": "341663",
+        "organism_name": "Aspergillus terreus NIH2624",
+        "publications": [
+            "pubmed:29719714"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Changed chemical structures for compounds: brasilane F, xylarenic acid B, brasilane D, brasilane E.",
+                "Added NPAtlas links to compounds: brasilane F, brasilane D, brasilane E.",
+                "Renamed compounds: xylarenic acid to xylarenic acid B.",
+                "Updated NPAtlas ID for compounds: xylarenic acid B."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Terpene"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C/C(CO)=C1/CC(C)(C)C[C@H]2[C@@H](C)CC[C@H]12",
+                "compound": "trichobrasilenol",
+                "database_id": [
+                    "npatlas:NPA025694",
+                    "pubchem:146682173"
+                ]
+            },
+            {
+                "chem_struct": "CC(C(=O)O)=C1CC(C)(C)C[C@@H]2[C@@H]1C[C@@H](O)[C@@H]2C",
+                "compound": "xylarenic acid B",
+                "database_id": [
+                    "npatlas:NPA010614",
+                    "pubchem:4787195"
+                ]
+            },
+            {
+                "chem_struct": "CC1CCC\\2C1CC(C/C2=C(/C)\\CO[C@@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)O)NC(=O)C)(C)C",
+                "compound": "brasilane A",
+                "database_id": [
+                    "pubchem:139583101"
+                ]
+            },
+            {
+                "chem_struct": "CC(CO)=C1CC(C)(C)C[C@@H]2[C@@H]1C[C@@H](O)[C@@H]2C",
+                "compound": "brasilane F",
+                "database_id": [
+                    "npatlas:NPA033047"
+                ]
+            },
+            {
+                "chem_struct": "CC(=O)N[C@H]1[C@@H](OC[C@@]2(C=O)O[C@@]23CC(C)(C)C[C@H]2[C@@H](C)CC[C@@H]23)O[C@H](CO)[C@@H](O)[C@@H]1O",
+                "compound": "brasilane E",
+                "database_id": [
+                    "npatlas:NPA033046"
+                ]
+            },
+            {
+                "chem_struct": "CC(=O)N[C@H]1[C@@H](OC/C(CO)=C2\\CC(C)(C)C[C@H]3[C@@H](C)CC[C@H]23)O[C@H](CO)[C@@H](O)[C@@H]1O",
+                "compound": "brasilane D",
+                "database_id": [
+                    "npatlas:NPA033045"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "MT383109.1",
+            "completeness": "Unknown",
+            "evidence": [
+                "Heterologous expression"
+            ]
+        },
+        "mibig_accession": "BGC0002260",
+        "minimal": true,
+        "ncbi_tax_id": "327061",
+        "organism_name": "Annulohypoxylon truncatum",
+        "publications": [
+            "pubmed:32936132"
+        ],
+        "status": "active"
+    }
+}

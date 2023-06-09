@@ -1,0 +1,81 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Merged annotations from duplicate entry BGC0001871",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CO\\C=C\\[C@H](N)C(O)=O",
+                "compound": "L-2-amino-4-methoxy-trans-3-butenoic acid",
+                "database_id": [
+                    "npatlas:NPA017445"
+                ],
+                "mol_mass": 131.058243148,
+                "molecular_formula": "C5H9NO3"
+            }
+        ],
+        "loci": {
+            "accession": "AE004091.2",
+            "completeness": "Unknown",
+            "end_coord": 2545669,
+            "start_coord": 2532659
+        },
+        "mibig_accession": "BGC0000287",
+        "minimal": true,
+        "ncbi_tax_id": "208964",
+        "organism_name": "Pseudomonas aeruginosa PAO1",
+        "publications": [
+            "pubmed:20543073",
+            "pubmed:29633497"
+        ],
+        "status": "active"
+    }
+}

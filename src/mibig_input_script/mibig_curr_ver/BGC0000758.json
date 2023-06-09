@@ -1,0 +1,64 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "DIX2QU7W2JWACDVFXMQJZD5O"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Remove negative molecular mass",
+                "Refined location to match reference paper"
+            ],
+            "contributors": [
+                "3UOU7PODQJXIM6BEPUHHRRA5",
+                "SJG3CBEHSM6A3I74YXLH6GLA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Saccharide"
+        ],
+        "compounds": [
+            {
+                "compound": "capsular polysaccharide"
+            }
+        ],
+        "loci": {
+            "accession": "U10927.2",
+            "completeness": "complete",
+            "end_coord": 26879,
+            "evidence": [
+                "Knock-out studies"
+            ],
+            "start_coord": 11342
+        },
+        "mibig_accession": "BGC0000758",
+        "minimal": false,
+        "ncbi_tax_id": "1280",
+        "organism_name": "Staphylococcus aureus",
+        "publications": [
+            "pubmed:7961465",
+            "pubmed:12057957"
+        ],
+        "saccharide": {
+            "subclass": "exopolysaccharide"
+        },
+        "status": "active"
+    }
+}

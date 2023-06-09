@@ -1,0 +1,184 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Changed amino acid substrates to lower case"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "OC(=O)[C@@H](NC(=O)[C@H](CCC(=O)O)NC(=O)[C@@H](CCCCN)NC(=O)[C@@H](CO)NC(=O)[C@H](CC(N)=O)NC(=O)[C@@H](CCC(N)=O)NC(=O)CCCCCCCCCCCCC)C(C)O",
+                "compound": "xenolindicin A",
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 915.527698016,
+                "molecular_formula": "C41H73N9O14"
+            }
+        ],
+        "genes": {},
+        "loci": {
+            "accession": "MIBIG.BGC0001129.1",
+            "completeness": "Unknown",
+            "evidence": [
+                "Heterologous expression"
+            ]
+        },
+        "mibig_accession": "BGC0001129",
+        "minimal": false,
+        "ncbi_tax_id": "12908",
+        "nrp": {
+            "cyclic": false,
+            "lipid_moiety": "n-terminal myristic acid",
+            "nrps_genes": [
+                {
+                    "gene_id": "-",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": true,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glutamine",
+                                        "proteinogenic": true,
+                                        "structure": "C(CC(=O)N)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": false,
+                            "c_dom_subtype": "Starter",
+                            "module_number": "1"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "asparagine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)C(=O)N"
+                                    }
+                                ]
+                            },
+                            "active": false,
+                            "c_dom_subtype": "Dual",
+                            "module_number": "2"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": true,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "active": false,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "3"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": true,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "lysine",
+                                        "proteinogenic": true,
+                                        "structure": "C(CCN)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": false,
+                            "c_dom_subtype": "Dual",
+                            "module_number": "4"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glutamic acid",
+                                        "proteinogenic": true,
+                                        "structure": "C(CC(=O)O)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "active": false,
+                            "c_dom_subtype": "Dual",
+                            "module_number": "5"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "aa_subcluster": [],
+                                "epimerized": false,
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "threonine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@H]([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "active": false,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "6"
+                        }
+                    ]
+                }
+            ],
+            "release_type": [
+                "Hydrolysis"
+            ],
+            "subclass": "Other lipopeptide"
+        },
+        "organism_name": "unidentified unclassified sequences.",
+        "publications": [
+            "pubmed:24816640"
+        ],
+        "retirement_reasons": [
+            "Low quality entry"
+        ],
+        "status": "retired"
+    }
+}

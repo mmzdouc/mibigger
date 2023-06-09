@@ -1,0 +1,76 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "C/C=C\\1/C2=NC(=CS2)C(=O)NC3CC(C(=O)OCC4=C5C(=C(C(=O)SCC(C6=NC(=CS6)C7=N/C(=C/8\\NC(=CS8)C(=O)NC(=C)C(=O)N)/C(=O)C=C7C9=NC(=CS9)C(=O)NC(C(=O)N1)C(C)O)NC(=O)C1=CSC3=N1)NC5=CC=C4)C)O",
+                "compound": "nosiheptide",
+                "database_id": [
+                    "pubchem:70691386"
+                ],
+                "mol_mass": 1221.1478398159998,
+                "molecular_formula": "C51H43N13O12S6"
+            }
+        ],
+        "loci": {
+            "accession": "FJ438820.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000610",
+        "minimal": true,
+        "ncbi_tax_id": "1885",
+        "organism_name": "Streptomyces actuosus",
+        "publications": [
+            "pubmed:19678698"
+        ],
+        "ripp": {
+            "subclass": "Thiopeptide"
+        },
+        "status": "active"
+    }
+}

@@ -1,0 +1,84 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "V2OY43CO37GLH274YHEO5ABU"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Removed extra genes with no information"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "O=C1C2=CSC(C3=C(C4=CSC(C5=CSC([C@@H](NC([C@H](CC6=CC=C(O)C=C6)NC(C7=CSC([C@H]([C@H](O)C8=CC=CC=C8)NC(C9=C(C)SC([C@H](CC(N)=O)N1)=N9)=O)=N7)=O)=O)[C@H](C)C%10CO%10)=N5)=N4)N=C(C%11=NC(C(NC(C(NC(C(N[C@@H](C)C(O)=O)=O)=C)=O)=C)=O)=CS%11)C=C3)=N2",
+                "chem_targets": [
+                    {
+                        "target": "EF-Tu"
+                    }
+                ],
+                "compound": "thiomuracin",
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry"
+                ],
+                "mass_spec_ion_type": "M+",
+                "mol_mass": 1409.2428028199993,
+                "molecular_formula": "C62H55N15O13S6"
+            }
+        ],
+        "loci": {
+            "accession": "CP001874.1",
+            "completeness": "complete",
+            "end_coord": 621192,
+            "evidence": [
+                "Enzymatic assays"
+            ],
+            "start_coord": 604806
+        },
+        "mibig_accession": "BGC0001860",
+        "minimal": false,
+        "ncbi_tax_id": "469371",
+        "organism_name": "Thermobispora bispora DSM 43833",
+        "publications": [
+            "pubmed:26675417",
+            "pubmed:27700071",
+            "pubmed:28301141",
+            "pubmed:29158402",
+            "pubmed:29190095"
+        ],
+        "ripp": {
+            "cyclic": true,
+            "subclass": "Thiopeptide"
+        },
+        "status": "active"
+    }
+}

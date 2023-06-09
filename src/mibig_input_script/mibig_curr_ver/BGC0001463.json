@@ -1,0 +1,89 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "UJYWT4SZRXDY2IOPYAIF6MII"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "inhibitor"
+                    },
+                    {
+                        "activity": "signalling"
+                    }
+                ],
+                "chem_moieties": [
+                    {
+                        "moiety": "Pyrrole ring"
+                    }
+                ],
+                "chem_synonyms": [
+                    "tetrabromopyrrole"
+                ],
+                "chem_targets": [
+                    {
+                        "target": "microsomal sarcoplasmic/endoplasmic reticulum (SR/ER) Ca2+ ATPase"
+                    }
+                ],
+                "compound": "2,3,4,5-tetrabromopyrrole",
+                "database_id": [
+                    "chemspider:3797328"
+                ],
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry",
+                    "Total synthesis"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "KT808878.1",
+            "completeness": "complete",
+            "evidence": [
+                "Enzymatic assays",
+                "Heterologous expression"
+            ]
+        },
+        "mibig_accession": "BGC0001463",
+        "minimal": false,
+        "ncbi_tax_id": "43662",
+        "organism_name": "Pseudoalteromonas piscicida",
+        "publications": [
+            "pubmed:27001835",
+            "pubmed:24974229",
+            "pubmed:27676265",
+            "pubmed:29617551"
+        ],
+        "status": "active"
+    }
+}

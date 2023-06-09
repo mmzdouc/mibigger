@@ -1,0 +1,75 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Saccharide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "CNC1C(O)C(NC)C2OC3(O)C(OC(C)CC3=O)OC2C1O",
+                "compound": "actinospectacin",
+                "database_id": [
+                    "npatlas:NPA011641"
+                ],
+                "mol_mass": 332.158351108,
+                "molecular_formula": "C14H24N2O7"
+            }
+        ],
+        "loci": {
+            "accession": "EU255259.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000715",
+        "minimal": true,
+        "ncbi_tax_id": "68270",
+        "organism_name": "Streptomyces spectabilis",
+        "publications": [
+            "pubmed:10650224",
+            "pubmed:18663525"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,87 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "TTYNBWNDJR6YSNQQMLZQM46S"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Corrected gene references to remove duplications",
+                "Extended end position to fully include last relevant gene"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "compound": "SLI-2138",
+                "mass_spec_ion_type": "M+",
+                "mol_mass": 2138.17
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "id": "SSPG_RS41710",
+                    "product": "protein kinase"
+                },
+                {
+                    "comments": "3' partial",
+                    "id": "SSPG_RS25525",
+                    "product": "serine/threonine protein kinase"
+                },
+                {
+                    "id": "SSPG_RS25550",
+                    "product": "acetyl CoA carboxylase alpha subunit"
+                },
+                {
+                    "comments": "3' partial",
+                    "id": "SSPG_RS25555",
+                    "product": "acetyl CoA carboxylase beta subunit"
+                },
+                {
+                    "id": "SSPG_RS25590",
+                    "product": "hypothetical protein"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "NZ_GG657756.1",
+            "completeness": "incomplete",
+            "end_coord": 5690586,
+            "start_coord": 5668767
+        },
+        "mibig_accession": "BGC0000596",
+        "minimal": true,
+        "ncbi_tax_id": "457428",
+        "organism_name": "Streptomyces lividans TK24",
+        "publications": [
+            "pubmed:21983601"
+        ],
+        "ripp": {
+            "cyclic": false
+        },
+        "status": "active"
+    }
+}

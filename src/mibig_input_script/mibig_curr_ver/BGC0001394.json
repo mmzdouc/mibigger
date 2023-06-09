@@ -1,0 +1,107 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.3"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    }
+                ],
+                "chem_struct": "C[C@@H](CO)NC(=O)C(\\C)=C\\C=C\\C=C\\C=C\\C(\\C)=C\\[C@@H](C)[C@@H](O)C(\\C)=C\\[C@@H](C)CCC1=CC=CC=C1",
+                "compound": "phenalamide A2",
+                "database_id": [
+                    "npatlas:NPA018050"
+                ],
+                "mol_mass": 491.3399443,
+                "molecular_formula": "C32H45NO3"
+            }
+        ],
+        "loci": {
+            "accession": "CP004025.1",
+            "completeness": "Unknown",
+            "end_coord": 5568893,
+            "start_coord": 5512653
+        },
+        "mibig_accession": "BGC0001394",
+        "minimal": false,
+        "ncbi_tax_id": "1278073",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "AGC45618.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:27291672"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "alanine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Myxococcus stipitatus DSM 14675",
+        "publications": [
+            "pubmed:27291672"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,83 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Changed chemical structures for compounds: flavunoidine.",
+                "Added NPAtlas links to compounds: flavunoidine."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Terpene",
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C[C@@H]1CC[C@@H]2[C@]3(C)OC4(C)CC(OC(=O)[C@@H]5CCC(C)(C)CN5)[C@@]21C[C@@H]4[C@@H]3NCCCCCN(C)C",
+                "compound": "flavunoidine",
+                "database_id": [
+                    "npatlas:NPA033042"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "CP059868.1",
+            "completeness": "Unknown",
+            "end_coord": 3965100,
+            "evidence": [
+                "Heterologous expression"
+            ],
+            "start_coord": 3943530
+        },
+        "mibig_accession": "BGC0002248",
+        "minimal": false,
+        "ncbi_tax_id": "332952",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "QMW30133.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "NMR"
+                                ],
+                                "publications": [
+                                    "pubmed:31885262"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "5,5-dimethylpipecolic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C1C(C)(C)CN[C@@H](C1)C(=O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Aspergillus flavus NRRL3357",
+        "publications": [
+            "pubmed:31885262"
+        ],
+        "status": "active"
+    }
+}

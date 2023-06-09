@@ -1,0 +1,127 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.3"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "siderophore"
+                    }
+                ],
+                "chem_struct": "OC[C@H](CCCCNC(=O)C1=CC=CC(O)=C1O)NC(=O)C1=CC=CC(O)=C1O",
+                "compound": "myxochelin A",
+                "database_id": [
+                    "npatlas:NPA02219",
+                    "pubchem:16093504"
+                ],
+                "mol_mass": 404.1583511079999,
+                "molecular_formula": "C20H24N2O7"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "siderophore"
+                    }
+                ],
+                "chem_struct": "C1=CC(=C(C(=C1)O)O)C(=O)NCCCC[C@@H](CN)NC(=O)C2=C(C(=CC=C2)O)O",
+                "compound": "myxochelin B",
+                "database_id": [
+                    "pubchem:10873133"
+                ],
+                "mol_mass": 403.17433551999994,
+                "molecular_formula": "C20H25N3O6"
+            }
+        ],
+        "loci": {
+            "accession": "AF299336.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001345",
+        "minimal": false,
+        "ncbi_tax_id": "675526",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "AAG31128.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "substrates": [
+                                    {
+                                        "name": "2,3-dihydroxybenzoic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC(=C(C(=C1)O)O)C(=O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AAG31130.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "substrates": [
+                                    {
+                                        "name": "lysine",
+                                        "proteinogenic": true,
+                                        "structure": "C(CCN)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Stigmatella aurantiaca Sg a15",
+        "publications": [
+            "pubmed:11562468",
+            "pubmed:18498160"
+        ],
+        "status": "active"
+    }
+}

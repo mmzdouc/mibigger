@@ -1,0 +1,353 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Added version to NCBI accession",
+                "Changed amino acid substrates to lower case"
+            ],
+            "contributors": [
+                "572PGVN4FCFMN3D46RF5EJPT",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "CCCCCCC[C@H](CC(=O)N/C(=C\\C)/C(=O)N1CCC[C@@H]1C(=O)N[C@H]([C@H](C)CC)C(=O)N[C@H](C(C)C)C(=O)N[C@H](C)C(=O)N[C@H](C)C(=O)N[C@@H](C)C(=O)N[C@H](C(C)C)C(=O)N[C@H](CO)C(=O)N[C@H](C)C(=O)N[C@H](C(C)C)C(=O)N[C@H](C)C(=O)N[C@H](CC(C)C)C(=O)N/C(=C\\C)/C(=O)N[C@@H]2[C@H](OC(=O)[C@@H](NC(=O)[C@H](NC(=O)[C@@H](NC(=O)[C@@H](NC2=O)C)CCN)CO)CC3=CC=CC=C3)C)O",
+                "compound": "jessenipeptin",
+                "database_id": [
+                    "pubchem:145720625"
+                ],
+                "evidence": [
+                    "Chemical derivatization"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "MT505440.1",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies"
+            ]
+        },
+        "mibig_accession": "BGC0001629",
+        "minimal": false,
+        "ncbi_tax_id": "2056244",
+        "nrp": {
+            "cyclic": true,
+            "lipid_moiety": "3-hydroxydecanoic acid",
+            "nrps_genes": [
+                {
+                    "gene_id": "QMS47799.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "substrates": [
+                                    {
+                                        "name": "threonine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@H]([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "c_dom_subtype": "Starter",
+                            "module_number": "1"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "substrates": [
+                                    {
+                                        "name": "proline",
+                                        "proteinogenic": true,
+                                        "structure": "C1C[C@H](NC1)C(=O)O"
+                                    }
+                                ]
+                            },
+                            "c_dom_subtype": "Dual",
+                            "module_number": "2"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "substrates": [
+                                    {
+                                        "name": "isoleucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC[C@H](C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "c_dom_subtype": "Dual",
+                            "module_number": "3"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "substrates": [
+                                    {
+                                        "name": "valine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "c_dom_subtype": "Dual",
+                            "module_number": "4"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "substrates": [
+                                    {
+                                        "name": "alanine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "c_dom_subtype": "Dual",
+                            "module_number": "5"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "QMS47798.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "substrates": [
+                                    {
+                                        "name": "alanine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "c_dom_subtype": "Dual",
+                            "module_number": "10"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "substrates": [
+                                    {
+                                        "name": "alanine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "c_dom_subtype": "Dual",
+                            "module_number": "6"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "substrates": [
+                                    {
+                                        "name": "alanine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "c_dom_subtype": "Dual",
+                            "module_number": "7"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "substrates": [
+                                    {
+                                        "name": "valine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "c_dom_subtype": "Dual",
+                            "module_number": "8"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "c_dom_subtype": "Dual",
+                            "module_number": "9"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "QMS47800.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "substrates": [
+                                    {
+                                        "name": "valine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "c_dom_subtype": "Dual",
+                            "module_number": "11"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "substrates": [
+                                    {
+                                        "name": "alanine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "c_dom_subtype": "Dual",
+                            "module_number": "12"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "substrates": [
+                                    {
+                                        "name": "leucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "c_dom_subtype": "Dual",
+                            "module_number": "13"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "substrates": [
+                                    {
+                                        "name": "threonine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@H]([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "c_dom_subtype": "Dual",
+                            "module_number": "14"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "substrates": [
+                                    {
+                                        "name": "threonine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@H]([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "c_dom_subtype": "Dual",
+                            "module_number": "15"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "substrates": [
+                                    {
+                                        "name": "alanine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "c_dom_subtype": "Dual",
+                            "module_number": "16"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "substrates": [
+                                    {
+                                        "name": "2,4-Diaminobutyric acid",
+                                        "proteinogenic": false,
+                                        "structure": "C(CN)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "c_dom_subtype": "LCL",
+                            "module_number": "17"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            },
+                            "c_dom_subtype": "LCL",
+                            "module_number": "18"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "substrates": [
+                                    {
+                                        "name": "phenylalanine",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC=C(C=C1)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            },
+                            "c_dom_subtype": "Dual",
+                            "module_number": "19"
+                        }
+                    ]
+                }
+            ],
+            "release_type": [
+                "Macrolactonization"
+            ],
+            "subclass": "Other lipopeptide"
+        },
+        "organism_name": "Pseudomonas sp. QS1027",
+        "publications": [
+            "doi:10.1073/pnas.1721790115"
+        ],
+        "status": "active"
+    }
+}

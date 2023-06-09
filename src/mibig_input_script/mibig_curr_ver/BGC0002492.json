@@ -1,0 +1,61 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: myxochelin B.",
+                "Added NPAtlas links to compounds: myxochelin B."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "NCC(CCCCNC(=O)C1=C(O)C(O)=CC=C1)NC(=O)C1=C(O)C(O)=CC=C1",
+                "compound": "myxochelin B",
+                "database_id": [
+                    "npatlas:NPA032737"
+                ]
+            },
+            {
+                "chem_struct": "C1=CC(=C(C(=C1)O)O)C(=O)NCCCC[C@@H](CO)NC(=O)C2=C(C(=CC=C2)O)O",
+                "compound": "myxochelin A",
+                "database_id": [
+                    "npatlas:NPA002219"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "CP000113.1",
+            "completeness": "Unknown",
+            "end_coord": 4350875,
+            "evidence": [
+                "Enzymatic assays"
+            ],
+            "start_coord": 4337073
+        },
+        "mibig_accession": "BGC0002492",
+        "minimal": true,
+        "ncbi_tax_id": "246197",
+        "organism_name": "Myxococcus xanthus DK 1622",
+        "publications": [
+            "pubmed:30217842"
+        ],
+        "status": "active"
+    }
+}

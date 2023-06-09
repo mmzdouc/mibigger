@@ -1,0 +1,60 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "compound": "curacozole"
+            }
+        ],
+        "loci": {
+            "accession": "NZ_KQ947987.1",
+            "completeness": "Unknown",
+            "end_coord": 246792,
+            "start_coord": 235088
+        },
+        "mibig_accession": "BGC0002013",
+        "minimal": true,
+        "ncbi_tax_id": "146536",
+        "organism_name": "Streptomyces curacoi",
+        "publications": [
+            "pubmed:30310179"
+        ],
+        "status": "active"
+    }
+}

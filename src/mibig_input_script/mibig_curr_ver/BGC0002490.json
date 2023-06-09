@@ -1,0 +1,37 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "compound": "yersinopine"
+            }
+        ],
+        "loci": {
+            "accession": "AL590842.1",
+            "completeness": "Unknown",
+            "end_coord": 1513232,
+            "start_coord": 1507268
+        },
+        "mibig_accession": "BGC0002490",
+        "minimal": true,
+        "ncbi_tax_id": "214092",
+        "organism_name": "Yersinia pestis CO92",
+        "publications": [
+            "pubmed:32817386"
+        ],
+        "status": "active"
+    }
+}

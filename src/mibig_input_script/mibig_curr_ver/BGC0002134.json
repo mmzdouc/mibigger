@@ -1,0 +1,214 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted",
+                "Added AMP-binding domain substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11",
+                "Changed chemical structures for compounds: leupeptin A.",
+                "Added NPAtlas links to compounds: leupeptin A."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "inhibitor"
+                    }
+                ],
+                "chem_struct": "CC(C)C[C@@H](C(=O)N[C@@H](CC(C)C)C(=O)NC(CCCN=C(N)N)C=O)NC(=O)C",
+                "chem_synonyms": [
+                    "leupeptin"
+                ],
+                "compound": "leupeptin A",
+                "database_id": [
+                    "npatlas:NPA017329"
+                ],
+                "evidence": [
+                    "Mass spectrometry",
+                    "Other"
+                ],
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 427.5695,
+                "molecular_formula": "C20H38N6O4"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "inhibitor"
+                    }
+                ],
+                "chem_struct": "O=CC(CC1=CC=C(O)C=C1)NC([C@H](CC(C)C)NC([C@H](CC(C)C)NC(C)=O)=O)=O",
+                "compound": "leupeptin B",
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry",
+                    "Chemical derivatization"
+                ],
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 434.5565,
+                "molecular_formula": "C23H35N3O5"
+            },
+            {
+                "chem_acts": [],
+                "chem_struct": "O=CC(CCSC)NC([C@H](CC(C)C)NC([C@H](CC(C)C)NC(C)=O)=O)=O",
+                "compound": "leupeptin D",
+                "evidence": [
+                    "Mass spectrometry",
+                    "Chemical derivatization"
+                ],
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 402.5735,
+                "molecular_formula": "C19H35N3O4S"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "inhibitor"
+                    }
+                ],
+                "chem_struct": "O=CC(CC1=CC=CC=C1)NC([C@H](CC(C)C)NC([C@H](CC(C)C)NC(C)=O)=O)=O",
+                "compound": "leupeptin C",
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry",
+                    "Chemical derivatization",
+                    "Total synthesis"
+                ],
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 418.5575,
+                "molecular_formula": "C23H35N3O4"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "id": "CBJ79719.1",
+                    "mut_pheno": "accumulation of leupeptic acid, no leupeptin production",
+                    "name": "leupA",
+                    "product": "activate carboxylate with CoA"
+                },
+                {
+                    "domains": [
+                        {
+                            "location": {
+                                "begin": 464,
+                                "end": 663
+                            },
+                            "name": "AMP-binding",
+                            "substrates": [
+                                {
+                                    "evidence": [
+                                        "Structure-based inference"
+                                    ],
+                                    "name": "arginine",
+                                    "publications": [
+                                        "pubmed:32609431"
+                                    ],
+                                    "structure": "C(C[C@@H](C(=O)O)N)CN=C(N)N"
+                                },
+                                {
+                                    "evidence": [
+                                        "Structure-based inference"
+                                    ],
+                                    "name": "tyrosine",
+                                    "publications": [
+                                        "pubmed:32609431"
+                                    ],
+                                    "structure": "C1=CC(=CC=C1C[C@@H](C(=O)O)N)O"
+                                },
+                                {
+                                    "evidence": [
+                                        "Structure-based inference"
+                                    ],
+                                    "name": "phenylalanine",
+                                    "publications": [
+                                        "pubmed:32609431"
+                                    ],
+                                    "structure": "C1=CC=C(C=C1)C[C@@H](C(=O)O)N"
+                                },
+                                {
+                                    "evidence": [
+                                        "Structure-based inference"
+                                    ],
+                                    "name": "methionine",
+                                    "publications": [
+                                        "pubmed:32609431"
+                                    ],
+                                    "structure": "CSCC[C@@H](C(=O)O)N"
+                                },
+                                {
+                                    "evidence": [
+                                        "Structure-based inference"
+                                    ],
+                                    "name": "valine",
+                                    "publications": [
+                                        "pubmed:32609431"
+                                    ],
+                                    "structure": "CC(C)[C@@H](C(=O)O)N"
+                                }
+                            ]
+                        }
+                    ],
+                    "id": "CBJ79718.1",
+                    "mut_pheno": "no leupeptic acid produced",
+                    "name": "leupB",
+                    "product": "ligate third amino acid, reduce CoA thioester to aldehyde",
+                    "tailoring": [
+                        "Reduction"
+                    ]
+                },
+                {
+                    "id": "CBJ79717.1",
+                    "mut_pheno": "no production of ac-leu-leu and other dipeptides",
+                    "name": "leupC",
+                    "product": "activate carboxylate with ATP and ligate second amino acid"
+                },
+                {
+                    "id": "CBJ79716.1",
+                    "mut_pheno": "reduced production level of acetyl-leu",
+                    "name": "leupD",
+                    "product": "acetylation"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "FN667741.1",
+            "completeness": "complete",
+            "end_coord": 594000,
+            "evidence": [
+                "Heterologous expression"
+            ],
+            "start_coord": 588227
+        },
+        "mibig_accession": "BGC0002134",
+        "minimal": false,
+        "ncbi_tax_id": "406818",
+        "organism_name": "Xenorhabdus bovienii SS-2004",
+        "other": {
+            "subclass": "Other"
+        },
+        "publications": [
+            "doi:10.1002/anie.202005506"
+        ],
+        "status": "active"
+    },
+    "comments": "This pathway is non-NRP, using separate AMP-dependent ligases to form amide bonds, with a reductase to form aldehyde."
+}

@@ -1,0 +1,67 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cell wall"
+                    }
+                ],
+                "compound": "teichuronic acid"
+            }
+        ],
+        "loci": {
+            "accession": "AF015609.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000868",
+        "minimal": true,
+        "ncbi_tax_id": "224308",
+        "organism_name": "Bacillus subtilis subsp. subtilis str. 168",
+        "publications": [
+            "pubmed:10048024"
+        ],
+        "status": "active"
+    }
+}

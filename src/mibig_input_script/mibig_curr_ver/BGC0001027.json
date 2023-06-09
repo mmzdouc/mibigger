@@ -1,0 +1,158 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Update compound structure (SMILES) for nocobactin NA",
+                "Add new compound: nocobactin NA 10152B",
+                "Updated bioactivity data",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "5UL74VURKJ25VSPPPO3H2NYB",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "siderophore"
+                    }
+                ],
+                "chem_struct": "CCCCCCC[C@H](OC([C@@H](NC(C1=C(C)OC(N1)=C2C=CC=CC2=O)=O)CCCCN(O)C(C)=O)=O)[C@H](C(N[C@@H]3CCCCN(O)C3=O)=O)C",
+                "compound": "nocobactin NA",
+                "database_id": [
+                    "pubchem:102002485"
+                ],
+                "mol_mass": 715.3792428959999,
+                "molecular_formula": "C36H53N5O10"
+            },
+            {
+                "chem_acts": [],
+                "chem_struct": "C[C@@H](C(N[C@@H]1CCCCN(O)C1=O)=O)[C@@H](OC([C@@H](NC(C2=C(C)OC(N2)=C3C=CC=CC3=O)=O)CCCCN(O)C(C)=O)=O)CCCCCCCCC",
+                "compound": "nocobactin NA 10152B",
+                "mol_mass": 743.410543024,
+                "molecular_formula": "C38H57N5O10"
+            }
+        ],
+        "loci": {
+            "accession": "AP006618.1",
+            "completeness": "Unknown",
+            "end_coord": 840689,
+            "start_coord": 820180
+        },
+        "mibig_accession": "BGC0001027",
+        "minimal": false,
+        "ncbi_tax_id": "247156",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "BAD55611.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "X-ray crystallography"
+                                ],
+                                "publications": [
+                                    "doi:10.1128/JB.00897-10",
+                                    "doi:10.1074/jbc.M114.629485",
+                                    "doi:10.1016/j.abb.2016.08.004"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "N6-hydroxylysine",
+                                        "proteinogenic": false,
+                                        "structure": "C(CCNO)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "BAD55612.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "X-ray crystallography"
+                                ],
+                                "publications": [
+                                    "doi:10.1128/JB.00897-10",
+                                    "doi:10.1074/jbc.M114.629485",
+                                    "doi:10.1016/j.abb.2016.08.004"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "N6-hydroxylysine",
+                                        "proteinogenic": false,
+                                        "structure": "C(CCNO)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "BAD55613.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "substrates": [
+                                    {
+                                        "name": "threonine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@H]([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Nocardia farcinica IFM 10152",
+        "publications": [
+            "pubmed:21097631"
+        ],
+        "status": "active"
+    }
+}

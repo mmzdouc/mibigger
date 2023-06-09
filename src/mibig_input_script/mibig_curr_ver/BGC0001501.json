@@ -1,0 +1,80 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Alkaloid"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "C[C@@]1(CC[C@@]2(O)C3=C1C=CC(C)(C)C1=C3C3=C(N1)C=CC=C3C2(C)C)C=C",
+                "compound": "ambiguine P",
+                "database_id": [
+                    "npatlas:NPA010396"
+                ],
+                "mol_mass": 359.224914548,
+                "molecular_formula": "C25H29NO"
+            }
+        ],
+        "loci": {
+            "accession": "KY026488.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001501",
+        "minimal": true,
+        "ncbi_tax_id": "1930928",
+        "organism_name": "Fischerella sp. TAU",
+        "publications": [
+            "pubmed:28288107"
+        ],
+        "status": "active"
+    }
+}

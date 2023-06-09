@@ -1,0 +1,102 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.2"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antiprotozoal"
+                    }
+                ],
+                "chem_struct": "C[C@H]1CC=CC=C(C)C=C(C)C=C\\C=C/[C@H](O)C[C@H](O)[C@@H](O)[C@H](O)[C@@H](C)C=CC=CC=CC(=O)N1",
+                "compound": "lobosamide A",
+                "database_id": [
+                    "npatlas:NPA01294"
+                ],
+                "mol_mass": 483.29847341199996,
+                "molecular_formula": "C29H41NO5"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antiprotozoal"
+                    }
+                ],
+                "chem_struct": "C[C@H]1CC=CC=C(C)C=C(C)C=C\\C=C\\[C@H](O)C[C@H](O)[C@@H](O)[C@H](O)[C@@H](C)C=CC=CC=CC(=O)N1",
+                "compound": "lobosamide B",
+                "database_id": [
+                    "npatlas:NPA015369"
+                ],
+                "mol_mass": 483.29847341199996,
+                "molecular_formula": "C29H41NO5"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antiprotozoal"
+                    }
+                ],
+                "chem_struct": "C[C@H]1CC=CC=C(C)C=C(C)C=C\\C=C/[C@H](O)C[C@H](O)C[C@H](O)[C@@H](C)C=CC=CC=CC(=O)N1",
+                "compound": "lobosamide C",
+                "database_id": [
+                    "npatlas:NPA01511"
+                ],
+                "mol_mass": 467.303558792,
+                "molecular_formula": "C29H41NO4"
+            }
+        ],
+        "loci": {
+            "accession": "KT209587.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001303",
+        "minimal": true,
+        "ncbi_tax_id": "1703433",
+        "organism_name": "Micromonospora sp. RL09-050-HVF-A",
+        "publications": [
+            "pubmed:26270237"
+        ],
+        "status": "active"
+    }
+}

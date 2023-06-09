@@ -1,0 +1,56 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (MIBiG Annotathon)",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C\\C=C(/C)C(O)C(C)\\C=C\\C=C\\CCC(O)CC1=C(C)C(=O)C(O)(O1)C(C)O",
+                "compound": "E-492",
+                "database_id": [
+                    "npatlas:NPA016270"
+                ],
+                "mol_mass": 394.2355388079999,
+                "molecular_formula": "C22H34O6"
+            },
+            {
+                "chem_struct": "CC\\C=C(/C)C(O)C(C)\\C=C\\C=C\\CCC(O)CC1=C(C)C(=O)C(O)(O1)C(C)O",
+                "compound": "E-975",
+                "database_id": [
+                    "npatlas:NPA013786",
+                    "pubchem:11509754"
+                ],
+                "mol_mass": 408.2511888719999,
+                "molecular_formula": "C23H36O6"
+            }
+        ],
+        "loci": {
+            "accession": "DQ272521.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000049",
+        "minimal": true,
+        "ncbi_tax_id": "358765",
+        "organism_name": "Streptomyces sp. Eco86",
+        "publications": [
+            "pubmed:16724457"
+        ],
+        "retirement_reasons": [
+            "Retired in the 2.0 release for unknown reasons"
+        ],
+        "status": "retired"
+    }
+}

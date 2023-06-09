@@ -1,0 +1,163 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "LPHAMZXQ3BT6INJWOLKUYGWU"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Removed gene names of 'No gene ID'"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide",
+            "Saccharide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CO[C@@H]1[C@H](O)[C@@H](O)[C@H](C)O[C@H]1O[C@H]1[C@H](OC)[C@](C)(O)C(=O)C2=CC3=C(C(O)=C12)C(=O)C1=C(C=CC=C1O)C3=O",
+                "chem_targets": [
+                    {
+                        "target": "collagenase"
+                    },
+                    {
+                        "target": "DNA synthesis"
+                    }
+                ],
+                "compound": "aranciamycin",
+                "database_id": [
+                    "npatlas:NPA019110",
+                    "pubchem:15177995",
+                    "chembl:CHEMBL1096602"
+                ],
+                "mol_mass": 544.1580763359999,
+                "molecular_formula": "C27H28O12"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "ABL09959.1",
+                    "product": "ketoacyl synthase"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Tailoring",
+                            "evidence": [
+                                "Activity assay"
+                            ]
+                        }
+                    ],
+                    "id": "ABL09968.1",
+                    "product": "L-rhamnosyltransferase",
+                    "tailoring": [
+                        "Glycosylation"
+                    ]
+                }
+            ]
+        },
+        "loci": {
+            "accession": "DQ915964.1",
+            "completeness": "complete",
+            "evidence": [
+                "Heterologous expression"
+            ]
+        },
+        "mibig_accession": "BGC0000197",
+        "minimal": false,
+        "ncbi_tax_id": "67293",
+        "organism_name": "Streptomyces echinatus",
+        "polyketide": {
+            "cyclases": [
+                "ABL09954.1",
+                "ABL09960.1"
+            ],
+            "cyclic": true,
+            "ketide_length": 10,
+            "subclasses": [
+                "Anthracycline"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "ABL09959.1",
+                        "ABL09954.1",
+                        "ABL09960.1"
+                    ],
+                    "subclass": [
+                        "Type II"
+                    ]
+                }
+            ]
+        },
+        "publications": [
+            "pubmed:17357167",
+            "pubmed:5433438",
+            "pubmed:1335359",
+            "pubmed:5478623",
+            "pubmed:1322986",
+            "pubmed:16713002",
+            "pubmed:18553079"
+        ],
+        "saccharide": {
+            "glycosyltransferases": [
+                {
+                    "evidence": [
+                        "Knock-out construct"
+                    ],
+                    "gene_id": "ABL09968.1",
+                    "specificity": "Multiple (promiscuous)"
+                }
+            ],
+            "subclass": "hybrid/tailoring"
+        },
+        "status": "active"
+    }
+}

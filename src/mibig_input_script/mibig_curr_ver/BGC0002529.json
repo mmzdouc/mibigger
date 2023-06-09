@@ -1,0 +1,65 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: protochelin, azotochelin, aminochelin.",
+                "Added NPAtlas links to compounds: protochelin, azotochelin, aminochelin."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "NCCCCNC(=O)C1=C(O)C(O)=CC=C1",
+                "compound": "aminochelin",
+                "database_id": [
+                    "npatlas:NPA033100"
+                ]
+            },
+            {
+                "chem_struct": "O=C(NCCCC[C@H](NC(=O)C1=C(O)C(O)=CC=C1)C(=O)O)C1=C(O)C(O)=CC=C1",
+                "compound": "azotochelin",
+                "database_id": [
+                    "npatlas:NPA032747"
+                ]
+            },
+            {
+                "chem_struct": "O=C(NCCCCNC(=O)C(CCCCNC(=O)C1=C(O)C(O)=CC=C1)NC(=O)C1=C(O)C(O)=CC=C1)C1=C(O)C(O)=CC=C1",
+                "compound": "protochelin",
+                "database_id": [
+                    "npatlas:NPA032789"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "CP005094.1",
+            "completeness": "Unknown",
+            "end_coord": 925603,
+            "start_coord": 910020
+        },
+        "mibig_accession": "BGC0002529",
+        "minimal": true,
+        "ncbi_tax_id": "1283330",
+        "organism_name": "Azotobacter vinelandii CA",
+        "publications": [
+            "pubmed:26452553"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,269 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: kitacinnamycin F, kitacinnamycin C, kitacinnamycin A, kitacinnamycin D, kitacinnamycin B, kitacinnamycin E.",
+                "Added NPAtlas links to compounds: kitacinnamycin F, kitacinnamycin C, kitacinnamycin A, kitacinnamycin D, kitacinnamycin B, kitacinnamycin E."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC(C)C[C@@H]1NC(=O)[C@@H](C(C)C)NC(=O)CNC(=O)CNC(=O)[C@@H](C(C)C)NC(=O)[C@H](CC2=CC=CC=C2)NC(=O)[C@@H](C(C)C)NC(=O)[C@@H](CC(N)=O)NC(=O)[C@H](NC(=O)/C=C/C2=CC=CC=C2/C=C/C(=O)O[C@@H]2O[C@H](CO)[C@@H](O)[C@H](O)[C@H]2O[C@@H]2O[C@H](CO)[C@@H](O)C(O)[C@H]2O)[C@@H](C)OC1=O",
+                "compound": "kitacinnamycin A",
+                "database_id": [
+                    "npatlas:NPA033005"
+                ]
+            },
+            {
+                "chem_struct": "CC[C@H](C)[C@H]1NC(=O)[C@@H](CC(N)=O)NC(=O)[C@H](NC(=O)/C=C/C2=CC=CC=C2/C=C/C(=O)O[C@@H]2O[C@H](CO)[C@@H](O)[C@H](O)[C@H]2O[C@@H]2O[C@H](CO)[C@@H](O)C(O)[C@H]2O)[C@@H](C)OC(=O)[C@H](CC(C)C)NC(=O)[C@@H](C(C)C)NC(=O)CNC(=O)CNC(=O)[C@@H](C(C)C)NC(=O)[C@H](CC2=CC=CC=C2)NC1=O",
+                "compound": "kitacinnamycin B",
+                "database_id": [
+                    "npatlas:NPA033006"
+                ]
+            },
+            {
+                "chem_struct": "CC(=O)N[C@H]1[C@H](OC/C=C/C2=CC=CC=C2/C=C/C(=O)N[C@H]2C(=O)N[C@H](CC(N)=O)C(=O)N[C@H](C(C)C)C(=O)N[C@@H](CC3=CC=CC=C3)C(=O)N[C@H](C(C)C)C(=O)NCC(=O)NCC(=O)N[C@H](C(C)C)C(=O)N[C@@H](CC(C)C)C(=O)O[C@@H]2C)O[C@H](CO)[C@@H](O)[C@@H]1O",
+                "compound": "kitacinnamycin C",
+                "database_id": [
+                    "npatlas:NPA033007"
+                ]
+            },
+            {
+                "chem_struct": "CC[C@H](C)[C@H]1NC(=O)[C@@H](CC(N)=O)NC(=O)[C@H](NC(=O)/C=C/C2=CC=CC=C2/C=C/CO[C@@H]2O[C@H](CO)[C@@H](O)[C@H](O)[C@H]2NC(C)=O)[C@@H](C)OC(=O)[C@H](CC(C)C)NC(=O)[C@@H](C(C)C)NC(=O)CNC(=O)CNC(=O)[C@@H](C(C)C)NC(=O)[C@H](CC2=CC=CC=C2)NC1=O",
+                "compound": "kitacinnamycin D",
+                "database_id": [
+                    "npatlas:NPA033008"
+                ]
+            },
+            {
+                "chem_struct": "CC(C)C[C@@H]1NC(=O)[C@@H](C(C)C)NC(=O)CNC(=O)CNC(=O)[C@@H](C(C)C)NC(=O)[C@H](CC2=CC=CC=C2)NC(=O)[C@@H](C(C)C)NC(=O)[C@@H](CC(N)=O)NC(=O)[C@H](NC(=O)/C=C/C2=CC=CC=C2/C=C/C(=O)O)[C@@H](C)OC1=O",
+                "compound": "kitacinnamycin E",
+                "database_id": [
+                    "npatlas:NPA033009"
+                ]
+            },
+            {
+                "chem_struct": "CC[C@H](C)[C@H]1NC(=O)[C@@H](CC(N)=O)NC(=O)[C@H](NC(=O)/C=C/C2=CC=CC=C2/C=C/C(=O)O)[C@@H](C)OC(=O)[C@H](CC(C)C)NC(=O)[C@@H](C(C)C)NC(=O)CNC(=O)CNC(=O)[C@@H](C(C)C)NC(=O)[C@H](CC2=CC=CC=C2)NC1=O",
+                "compound": "kitacinnamycin F",
+                "database_id": [
+                    "npatlas:NPA033010"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "MK371213.1",
+            "completeness": "Unknown",
+            "end_coord": 82312,
+            "evidence": [
+                "Knock-out studies",
+                "Enzymatic assays"
+            ],
+            "start_coord": 5489
+        },
+        "mibig_accession": "BGC0002109",
+        "minimal": false,
+        "ncbi_tax_id": "1871188",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "QDJ74273.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:31160959"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "threonine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@H]([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:31160959"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "asparagine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)C(=O)N"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference",
+                                    "Mass spectrometry"
+                                ],
+                                "publications": [
+                                    "pubmed:31160959"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "isoleucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC[C@H](C)[C@@H](C(=O)O)N"
+                                    },
+                                    {
+                                        "name": "valine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:31160959"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "phenylalanine",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC=C(C=C1)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "QDJ74274.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:31160959"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "valine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "QDJ74275.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:31160959"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glycine",
+                                        "proteinogenic": true,
+                                        "structure": "NCC(=O)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:31160959"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glycine",
+                                        "proteinogenic": true,
+                                        "structure": "NCC(=O)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:31160959"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "valine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:31160959"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "leucine",
+                                        "proteinogenic": true,
+                                        "structure": "CC(C)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Kitasatospora sp.",
+        "publications": [
+            "pubmed:31160959"
+        ],
+        "status": "active"
+    }
+}

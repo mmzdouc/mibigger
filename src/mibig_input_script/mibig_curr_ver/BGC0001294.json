@@ -1,0 +1,76 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.2"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "CC(C)=CCC1=CC=CC2=C1NC(=O)C2=O",
+                "compound": "7-prenylisatin",
+                "database_id": [
+                    "npatlas:NPA014784"
+                ],
+                "mol_mass": 215.094628656,
+                "molecular_formula": "C13H13NO2"
+            }
+        ],
+        "loci": {
+            "accession": "NZ_LARV01000172.1",
+            "completeness": "Unknown",
+            "end_coord": 35886,
+            "start_coord": 26868
+        },
+        "mibig_accession": "BGC0001294",
+        "minimal": true,
+        "ncbi_tax_id": "1488357",
+        "organism_name": "Streptomyces sp. MBT28",
+        "publications": [
+            "pubmed:26438963"
+        ],
+        "status": "active"
+    }
+}

@@ -1,0 +1,210 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "IROSGRAECON7XFWB774QFHDN"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data",
+                "Updated NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "CSCC1N(C)C(=O)C2CSSCC(N(C)C(=O)CNC(=O)C(CSC1=O)NC(=O)C1=NC3=CC=CC=C3C=C1O)C(=O)N(C)C(CSC)C(=O)SCC(NC(=O)C1=C(O)C=C3C=CC=CC3=N1)C(=O)NCC(=O)N2C",
+                "chem_targets": [
+                    {
+                        "target": "DNA polymerase alpha"
+                    }
+                ],
+                "compound": "thiocoraline",
+                "database_id": [
+                    "npatlas:NPA019774"
+                ],
+                "mol_mass": 1156.240343232,
+                "molecular_formula": "C48H56N10O12S6"
+            }
+        ],
+        "genes": {
+            "annotations": [
+                {
+                    "functions": [
+                        {
+                            "category": "Scaffold biosynthesis",
+                            "evidence": [
+                                "Knock-out"
+                            ]
+                        }
+                    ],
+                    "id": "CAJ34374.1",
+                    "name": "tioR"
+                }
+            ]
+        },
+        "loci": {
+            "accession": "AM113472.1",
+            "completeness": "complete",
+            "evidence": [
+                "Knock-out studies",
+                "Heterologous expression"
+            ]
+        },
+        "mibig_accession": "BGC0000445",
+        "minimal": false,
+        "ncbi_tax_id": "349725",
+        "nrp": {
+            "cyclic": true,
+            "nrps_genes": [
+                {
+                    "gene_id": "CAJ34374.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": true,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "cysteine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)S"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Unknown",
+                            "module_number": "1"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glycine",
+                                        "proteinogenic": true,
+                                        "structure": "NCC(=O)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Unknown",
+                            "module_number": "2"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "CAJ34375.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "cysteine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)S"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Unknown",
+                            "modification_domains": [
+                                "Methylation"
+                            ],
+                            "module_number": "3"
+                        },
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Sequence-based prediction"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "cysteine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)S"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "Unknown",
+                            "modification_domains": [
+                                "Methylation"
+                            ],
+                            "module_number": "4"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "CAJ34368.1",
+                    "modules": [
+                        {
+                            "active": true,
+                            "c_dom_subtype": "Unknown",
+                            "module_number": "0"
+                        }
+                    ]
+                }
+            ],
+            "release_type": [
+                "Hydrolysis"
+            ],
+            "subclass": "Cyclic depsipeptide"
+        },
+        "organism_name": "Micromonospora sp. ML1",
+        "publications": [
+            "pubmed:16408310"
+        ],
+        "status": "active"
+    }
+}

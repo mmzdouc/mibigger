@@ -1,0 +1,252 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Cleaned up synonym list",
+                "Fetch compound properties from PubChem",
+                "Corrected biosynthetic class",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA",
+                "D5JND5QKNDZL5GA5REF5XZTD"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)O[C@@H]2[C@H]([C@@H]([C@H](O[C@H]2OC3=C4C=C5C=C3OC6=C(C=C(C=C6)[C@H]([C@H]7C(=O)N[C@@H](C8=C(C(=CC(=C8)O)O[C@@H]9[C@H]([C@H]([C@@H]([C@H](O9)CO)O)O)O)C1=C(C=CC(=C1)[C@H](C(=O)N7)NC(=O)[C@@H]5NC(=O)[C@@H](NC(=O)[C@@H]([C@@H](C1=CC=C(O4)C=C1)O)NC(=O)[C@@H](C1=CC(=C(C=C1)O)Cl)N)CC1=CC=CC=C1)O)C(=O)O)O[C@H]1C[C@@H]([C@H]([C@@H](O1)C)OC)N)Cl)CO)O)O)O)O)O",
+                "compound": "keratinimicin A",
+                "database_id": [
+                    "pubchem:134822039"
+                ],
+                "mol_mass": 1810.514383,
+                "molecular_formula": "C84H92Cl2N8O33"
+            },
+            {
+                "chem_struct": "C[C@H]1[C@@H]([C@H](C[C@@H](O1)O[C@@H]2[C@H]([C@@H]([C@H](O[C@H]2OC3=C4C=C5C=C3OC6=C(C=C(C=C6)[C@H]([C@H]7C(=O)N[C@@H](C8=C(C(=CC(=C8)O)O)C9=C(C=CC(=C9)[C@H](C(=O)N7)NC(=O)[C@@H]5NC(=O)[C@@H](NC(=O)[C@@H]([C@@H](C1=CC=C(O4)C=C1)O)NC(=O)[C@@H](C1=CC(=C(C=C1)O)Cl)N)CC1=CC=CC=C1)O)C(=O)O)O[C@H]1C[C@@H]([C@H]([C@@H](O1)C)OC)N)Cl)CO)O)O)N)O",
+                "compound": "keratinimicin B",
+                "database_id": [
+                    "pubchem:134822036"
+                ],
+                "mol_mass": 1631.482629,
+                "molecular_formula": "C78H83Cl2N9O26"
+            },
+            {
+                "chem_struct": "C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)O[C@@H]2[C@H]([C@@H]([C@H](O[C@H]2OC3=C4C=C5C=C3OC6=C(C=C(C=C6)[C@H]([C@H]7C(=O)N[C@@H](C8=C(C(=CC(=C8)O)O[C@@H]9[C@H]([C@H]([C@@H]([C@H](O9)CO)O)O)O)C1=C(C=CC(=C1)[C@H](C(=O)N7)NC(=O)[C@@H]5NC(=O)[C@@H](NC(=O)[C@@H]([C@@H](C1=CC=C(O4)C=C1)O)NC(=O)C(=O)C1=CC(=C(C=C1)O)Cl)CC1=CC=CC=C1)O)C(=O)O)O[C@H]1C[C@@H]([C@H]([C@@H](O1)C)OC)N)Cl)CO)O)O)O)O)O",
+                "chem_synonyms": [
+                    "Keratinimicin D"
+                ],
+                "compound": "keratinimicin C",
+                "database_id": [
+                    "pubchem:134822033"
+                ],
+                "mol_mass": 1809.482748,
+                "molecular_formula": "C84H89Cl2N7O34"
+            },
+            {
+                "chem_struct": "C[C@H]1[C@@H]([C@H](C[C@@H](O1)O[C@@H]2[C@H]([C@@H]([C@H](O[C@H]2OC3=C4C=C5C=C3OC6=C(C=C(C=C6)[C@H]([C@H]7C(=O)N[C@@H](C8=C(C(=CC(=C8)O)O[C@@H]9[C@H]([C@H]([C@@H]([C@H](O9)CO)O)O)O)C1=C(C=CC(=C1)[C@H](C(=O)N7)NC(=O)[C@@H]5NC(=O)[C@@H](NC(=O)[C@@H]([C@@H](C1=CC=C(O4)C=C1)O)NC(=O)C(=O)C1=CC(=C(C=C1)O)Cl)CC1=CC=CC=C1)O)C(=O)O)O[C@H]1C[C@@H]([C@H]([C@@H](O1)C)OC)N)Cl)CO)O)O)N)O",
+                "chem_synonyms": [
+                    "Keratinimicin C"
+                ],
+                "compound": "keratinimicin D",
+                "database_id": [
+                    "pubchem:134822032"
+                ],
+                "mol_mass": 1792.503818,
+                "molecular_formula": "C84H90Cl2N8O32"
+            }
+        ],
+        "loci": {
+            "accession": "MH428036.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001955",
+        "minimal": false,
+        "ncbi_tax_id": "129921",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "AYA22318.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Homology"
+                                ],
+                                "publications": [
+                                    "pubmed:30617293"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "tyrosine",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC(=CC=C1C[C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AYA22333.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:30617293"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "3,5-dihydroxyphenylglycine",
+                                        "proteinogenic": false,
+                                        "structure": "N[C@H](C(=O)O)c1cc(O)cc(O)c1"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AYA22334.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:30617293"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "4-hydroxyphenylglycine",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC(=CC=C1[C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:30617293"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "4-hydroxyphenylglycine",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC(=CC=C1[C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:30617293"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "R-beta-hydroxytyrosine",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC(=CC=C1[C@H]([C@@H](C(=O)O)N)O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AYA22335.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:30617293"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "phenylalanine",
+                                        "proteinogenic": true,
+                                        "structure": "C1=CC=C(C=C1)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AYA22336.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:30617293"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "4-hydroxyphenylglycine",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC(=CC=C1[C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:30617293"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "R-beta-hydroxytyrosine",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC(=CC=C1[C@H]([C@@H](C(=O)O)N)O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Amycolatopsis keratiniphila",
+        "publications": [
+            "pubmed:30617293"
+        ],
+        "status": "active"
+    }
+}

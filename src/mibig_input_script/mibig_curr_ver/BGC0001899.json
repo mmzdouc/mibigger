@@ -1,0 +1,57 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Fetch compound properties from PubChem",
+                "Cleaned up synonym list"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC1=CC(=O)CC(C1(/C=C/C(=C\\C(=O)O)/C)O)(C)C",
+                "chem_synonyms": [
+                    "(+)-Abscisic acid",
+                    "Dormin"
+                ],
+                "compound": "abscisic acid",
+                "database_id": [
+                    "pubchem:5375199"
+                ],
+                "mol_mass": 264.136159,
+                "molecular_formula": "C15H20O4"
+            }
+        ],
+        "loci": {
+            "accession": "FP929136.1",
+            "completeness": "Unknown",
+            "end_coord": 807208,
+            "start_coord": 752399
+        },
+        "mibig_accession": "BGC0001899",
+        "minimal": true,
+        "ncbi_tax_id": "985895",
+        "organism_name": "Leptosphaeria maculans JN3",
+        "publications": [
+            "pubmed:31034868"
+        ],
+        "status": "active"
+    }
+}

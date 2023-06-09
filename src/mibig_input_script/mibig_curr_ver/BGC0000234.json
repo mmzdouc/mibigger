@@ -1,0 +1,78 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "cytotoxic"
+                    }
+                ],
+                "chem_struct": "[H][C@@]12OC(=O)[C@]([H])(C(C)CC)N1C1=C(C(=O)C3=CC=CC(O)=C3C1=O)C1=C(O)C=C(C)C=C21",
+                "compound": "jadomycin",
+                "database_id": [
+                    "npatlas:NPA018705",
+                    "pubchem:443806"
+                ],
+                "mol_mass": 419.13688739199995,
+                "molecular_formula": "C24H21NO6"
+            }
+        ],
+        "loci": {
+            "accession": "AF126429.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000234",
+        "minimal": true,
+        "ncbi_tax_id": "953739",
+        "organism_name": "Streptomyces venezuelae ATCC 10712",
+        "publications": [
+            "pubmed:7881555"
+        ],
+        "status": "active"
+    }
+}

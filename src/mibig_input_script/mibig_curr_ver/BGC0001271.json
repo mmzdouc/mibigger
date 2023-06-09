@@ -1,0 +1,46 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC1=CC2=C(C(=C1OCC=C(C)C)CO)C(=O)C3=C(C=CC(=C3O2)CC=C(C)C)O",
+                "compound": "emericellin",
+                "database_id": [
+                    "pubchem:5491812"
+                ],
+                "mol_mass": 408.1936739959999,
+                "molecular_formula": "C25H28O5"
+            }
+        ],
+        "loci": {
+            "accession": "BN001308.1",
+            "completeness": "Unknown",
+            "end_coord": 4406428,
+            "start_coord": 4376518
+        },
+        "mibig_accession": "BGC0001271",
+        "minimal": true,
+        "ncbi_tax_id": "227321",
+        "organism_name": "Aspergillus nidulans FGSC A4",
+        "publications": [
+            "pubmed:21351751"
+        ],
+        "retirement_reasons": [
+            "Entry is split over multiple genomic loci"
+        ],
+        "status": "retired"
+    }
+}

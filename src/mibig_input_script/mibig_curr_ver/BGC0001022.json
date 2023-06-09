@@ -1,0 +1,120 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Add new compound: myxalamid A",
+                "Add new compound: myxalamid C",
+                "Add new compound: myxalamid D",
+                "Updated bioactivity data",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA",
+                "5UL74VURKJ25VSPPPO3H2NYB"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antifungal"
+                    }
+                ],
+                "chem_struct": "C[C@@H](CO)NC(=O)/C(=C/C=C/C=C\\C=C\\C(=C\\[C@@H](C)[C@H](/C(=C/C(C)C)/C)O)\\C)/C",
+                "compound": "myxalamid",
+                "database_id": [
+                    "pubchem:5282085"
+                ],
+                "mol_mass": 401.292994108,
+                "molecular_formula": "C25H39NO3"
+            },
+            {
+                "chem_acts": [],
+                "chem_struct": "CC[C@H](C)/C=C(\\C)/[C@@H]([C@H](C)/C=C(\\C)/C=C/C=C\\C=C\\C=C(/C)\\C(=O)N[C@@H](C)CO)O",
+                "compound": "myxalamid A",
+                "mol_mass": 415.30864417199996,
+                "molecular_formula": "C26H41NO3"
+            },
+            {
+                "chem_acts": [],
+                "chem_struct": "CC/C=C(\\C)/[C@@H]([C@H](C)/C=C(\\C)/C=C/C=C\\C=C\\C=C(/C)\\C(=O)N[C@@H](C)CO)O",
+                "compound": "myxalamid C",
+                "mol_mass": 387.27734404399996,
+                "molecular_formula": "C24H37NO3"
+            },
+            {
+                "chem_acts": [],
+                "compound": "myxalamid D"
+            }
+        ],
+        "loci": {
+            "accession": "AF319998.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001022",
+        "minimal": false,
+        "ncbi_tax_id": "41",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "AAK57184.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "substrates": [
+                                    {
+                                        "name": "alanine",
+                                        "proteinogenic": true,
+                                        "structure": "C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Stigmatella aurantiaca",
+        "publications": [
+            "pubmed:11182319"
+        ],
+        "status": "active"
+    }
+}

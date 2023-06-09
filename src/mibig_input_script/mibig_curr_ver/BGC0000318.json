@@ -1,0 +1,46 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "C=C1CS[C@@H](N=C1C(=O)O)[C@@H](C(=O)O)NC(=O)CCCC[C@H](C(=O)O)N",
+                "compound": "cephalosporin, cefEFG genes",
+                "database_id": [
+                    "pubchem:25058126"
+                ],
+                "mol_mass": 387.110021012,
+                "molecular_formula": "C15H21N3O7S"
+            }
+        ],
+        "loci": {
+            "accession": "JPKY01000040.1",
+            "completeness": "Unknown",
+            "end_coord": 136157,
+            "start_coord": 130387
+        },
+        "mibig_accession": "BGC0000318",
+        "minimal": true,
+        "ncbi_tax_id": "857340",
+        "organism_name": "Acremonium chrysogenum ATCC 11550",
+        "publications": [
+            "pubmed:0"
+        ],
+        "retirement_reasons": [
+            "Missing publication"
+        ],
+        "status": "retired"
+    }
+}

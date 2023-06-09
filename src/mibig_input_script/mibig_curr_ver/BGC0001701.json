@@ -1,0 +1,57 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Add RiPP subclass entry"
+            ],
+            "contributors": [
+                "3UOU7PODQJXIM6BEPUHHRRA5"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "compound": "nisin O"
+            }
+        ],
+        "loci": {
+            "accession": "KY914474.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001701",
+        "minimal": true,
+        "ncbi_tax_id": "40520",
+        "organism_name": "Blautia obeum",
+        "publications": [
+            "pubmed:28857034"
+        ],
+        "ripp": {
+            "cyclic": true,
+            "subclass": "Lanthipeptide"
+        },
+        "status": "active"
+    }
+}

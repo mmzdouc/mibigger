@@ -1,0 +1,48 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC1=CC(=CC(=C1C(=O)O)O)O",
+                "compound": "orsellinic acid",
+                "database_id": [
+                    "npatlas:NPA024876"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "JNBV01000031.1",
+            "completeness": "Unknown",
+            "end_coord": 71593,
+            "evidence": [
+                "Knock-out studies"
+            ],
+            "start_coord": 64805
+        },
+        "mibig_accession": "BGC0002595",
+        "minimal": true,
+        "ncbi_tax_id": "2696576",
+        "organism_name": "Taiwanofungus camphoratus",
+        "publications": [
+            "pubmed:28255687",
+            "doi:10.1007/s00253-017-8196-6"
+        ],
+        "retirement_reasons": [
+            "Missing gene annotations"
+        ],
+        "status": "retired"
+    }
+}

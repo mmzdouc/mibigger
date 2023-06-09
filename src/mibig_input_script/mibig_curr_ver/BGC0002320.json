@@ -1,0 +1,59 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added",
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Terpene"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "signalling"
+                    }
+                ],
+                "chem_struct": "C[C@H]1[C@@H](CC(=O)[C@]2([C@@]13C[C@]4(CCC([C@H]4[C@@H]3CC2)(C)C)C)C)O",
+                "compound": "conidiogenone",
+                "database_id": [
+                    "npatlas:NPA017609"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "AM920435.1",
+            "completeness": "Unknown",
+            "end_coord": 2517120,
+            "evidence": [
+                "Heterologous expression"
+            ],
+            "start_coord": 2509978
+        },
+        "mibig_accession": "BGC0002320",
+        "minimal": true,
+        "ncbi_tax_id": "500485",
+        "organism_name": "Penicillium rubens Wisconsin 54-1255",
+        "publications": [
+            "pubmed:30343633"
+        ],
+        "status": "active"
+    }
+}

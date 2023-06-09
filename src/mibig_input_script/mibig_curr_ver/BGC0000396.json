@@ -1,0 +1,75 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "phytotoxic"
+                    }
+                ],
+                "chem_struct": "CO[C@@H](CC1=CC=CC=C1)[C@@H](C)\\C=C(/C)\\C=C\\[C@@H]1NC(=O)[C@H](CCCNC(N)=N)NC(=O)[C@@H](C)[C@@H](NC(=O)\\C(=C\\C)N(C)C(=O)CC[C@@H](NC(=O)[C@H]1C)C(O)=O)C(O)=O",
+                "compound": "nodularin",
+                "database_id": [
+                    "npatlas:NPA05387",
+                    "pubchem:14217092"
+                ],
+                "mol_mass": 824.4432401200002,
+                "molecular_formula": "C41H60N8O10"
+            }
+        ],
+        "loci": {
+            "accession": "JF342711.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000396",
+        "minimal": true,
+        "ncbi_tax_id": "707671",
+        "organism_name": "Nostoc sp. 73.1",
+        "publications": [
+            "pubmed:22456448"
+        ],
+        "status": "active"
+    }
+}

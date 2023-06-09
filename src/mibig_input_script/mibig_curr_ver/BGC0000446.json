@@ -1,0 +1,186 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "O7W664GPYKX3NUS2LLMP5XCG"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Corrected NRP module activity",
+                "Removed annotation for duplicate of pseudogene",
+                "Updated bioactivity data",
+                "Updated NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "cytotoxic"
+                    },
+                    {
+                        "activity": "enterotoxic"
+                    }
+                ],
+                "chem_struct": "C1C[C@H]2[C@@H](NC3=C(C=CC=C3O)C(=O)N2C1)C4=CNC5=CC=CC=C54",
+                "compound": "tilivalline",
+                "database_id": [
+                    "pubchem:128363"
+                ],
+                "evidence": [
+                    "Mass spectrometry"
+                ],
+                "mol_mass": 333.147726848,
+                "molecular_formula": "C20H19N3O2"
+            },
+            {
+                "chem_acts": [],
+                "chem_struct": "O=C1C2=C(C=CC=C2)N[C@@H](C3=CNC4=C3C=CC=C4)[C@@]5([H])N1CCC5",
+                "compound": "9-deoxy tilivalline",
+                "evidence": [
+                    "Mass spectrometry"
+                ],
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 317.152812228,
+                "molecular_formula": "C20H19N3O"
+            },
+            {
+                "chem_acts": [],
+                "chem_struct": "O=C1C2=C(C(O)=CC(O)=C2)N[C@@H](C3=CNC4=C3C=CC=C4)[C@@]5([H])N1CCC5",
+                "compound": "dihydroxy tilivalline",
+                "evidence": [
+                    "Mass spectrometry"
+                ],
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 349.1426414680001,
+                "molecular_formula": "C20H19N3O3"
+            },
+            {
+                "chem_acts": [],
+                "chem_struct": "O=C1C2=C(C(O)=CC=C2)N[C@@H](C3=CNC4=C3C=CC=C4)[C@@]5([H])N1C=CC5",
+                "compound": "dehydro tilivalline",
+                "evidence": [
+                    "Mass spectrometry"
+                ],
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 331.13207678400005,
+                "molecular_formula": "C20H17N3O2"
+            },
+            {
+                "chem_acts": [],
+                "chem_struct": "O=C1C2=C(C(O)=CC(O)=C2)N[C@@H](C3=CNC4=C3C=CC=C4)[C@@]5([H])N1C=CC5",
+                "compound": "dihydroxy-dehydro tilivalline",
+                "evidence": [
+                    "Mass spectrometry"
+                ],
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 347.1269914040001,
+                "molecular_formula": "C20H17N3O3"
+            }
+        ],
+        "loci": {
+            "accession": "HG425356.1",
+            "completeness": "complete",
+            "evidence": [
+                "Gene expression correlated with compound production"
+            ]
+        },
+        "mibig_accession": "BGC0000446",
+        "minimal": false,
+        "ncbi_tax_id": "571",
+        "nrp": {
+            "cyclic": true,
+            "nrps_genes": [
+                {
+                    "gene_id": "CDG76957.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Feeding study"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "2,3-dihydroxybenzoic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC(=C(C(=C1)O)O)C(=O)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "module_number": "0"
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "CDG76959.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "epimerized": false,
+                                "evidence": [
+                                    "Feeding study"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "proline",
+                                        "proteinogenic": true,
+                                        "structure": "C1C[C@H](NC1)C(=O)O"
+                                    }
+                                ]
+                            },
+                            "active": true,
+                            "c_dom_subtype": "LCL",
+                            "module_number": "1"
+                        }
+                    ]
+                }
+            ],
+            "release_type": [
+                "Reductive release"
+            ],
+            "subclass": "Pyrrolobenzodiazepine"
+        },
+        "organism_name": "Klebsiella oxytoca",
+        "publications": [
+            "pubmed:25157164",
+            "pubmed:28977734",
+            "pubmed:28972161",
+            "pubmed:29389112"
+        ],
+        "status": "active"
+    }
+}

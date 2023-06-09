@@ -1,0 +1,46 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Expanded start coordinate to include precursors"
+            ],
+            "contributors": [
+                "SJG3CBEHSM6A3I74YXLH6GLA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "compound": "huazacin"
+            }
+        ],
+        "loci": {
+            "accession": "CM000756.1",
+            "completeness": "Unknown",
+            "end_coord": 6189849,
+            "start_coord": 6185533
+        },
+        "mibig_accession": "BGC0001887",
+        "minimal": true,
+        "ncbi_tax_id": "527030",
+        "organism_name": "Bacillus thuringiensis serovar huazhongensis BGSC 4BD1",
+        "publications": [
+            "pubmed:31059252"
+        ],
+        "status": "active"
+    }
+}

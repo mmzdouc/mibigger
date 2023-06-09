@@ -1,0 +1,232 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated reference publication(s) (MIBiG Annotathon)",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "siderophore"
+                    }
+                ],
+                "chem_struct": "C1C[C@@H](C(=O)OC[C@@H](C(=O)N(C1)O)NC(=O)CNC(=O)CNC(=O)[C@@H](CCCN=C(N)N)NC(=O)C2=C(C(=CC=C2)O)O)NC(=O)CNC(=O)CNC(=O)[C@@H](CCCN=C(N)N)NC(=O)C3=C(C(=CC=C3)O)O",
+                "compound": "fuscachelin A",
+                "database_id": [
+                    "pubchem:60166555"
+                ],
+                "mol_mass": 1029.426420808,
+                "molecular_formula": "C42H59N15O16"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "siderophore"
+                    }
+                ],
+                "chem_struct": "C1=CC(=C(C(=C1)O)O)C(=O)N[C@H](CCCN=C(N)N)C(=O)NCC(=O)NCC(=O)N[C@@H](CCCN(C(=O)[C@H](CO)NC(=O)CNC(=O)CNC(=O)[C@@H](CCCN=C(N)N)NC(=O)C2=C(C(=CC=C2)O)O)O)C(=O)O",
+                "compound": "fuscachelin B",
+                "database_id": [
+                    "pubchem:60166556"
+                ],
+                "mol_mass": 1047.436985492,
+                "molecular_formula": "C42H61N15O17"
+            },
+            {
+                "chem_acts": [
+                    {
+                        "activity": "siderophore"
+                    }
+                ],
+                "chem_struct": "C1=CC(=C(C(=C1)O)O)C(=O)N[C@H](CCCN=C(N)N)C(=O)NCC(=O)NCC(=O)N[C@@H](CCCN(C(=O)[C@H](CO)NC(=O)CNC(=O)CNC(=O)[C@@H](CCCN=C(N)N)NC(=O)C2=C(C(=CC=C2)O)O)O)C(=O)N",
+                "compound": "fuscachelin C",
+                "database_id": [
+                    "pubchem:102390328"
+                ],
+                "mol_mass": 1046.452969904,
+                "molecular_formula": "C42H62N16O16"
+            }
+        ],
+        "loci": {
+            "accession": "CP000088.1",
+            "completeness": "Unknown",
+            "end_coord": 2196882,
+            "start_coord": 2172724
+        },
+        "mibig_accession": "BGC0000359",
+        "minimal": false,
+        "ncbi_tax_id": "269800",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "AAZ55898.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:18832174"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "N5-hydroxyornithine",
+                                        "proteinogenic": false,
+                                        "structure": "C(C[C@@H](C(=O)O)N)CNO"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AAZ55899.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:18832174"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "serine",
+                                        "proteinogenic": true,
+                                        "structure": "C([C@@H](C(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AAZ55900.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:18832174"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "arginine",
+                                        "proteinogenic": true,
+                                        "structure": "C(C[C@@H](C(=O)O)N)CN=C(N)N"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:18832174"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glycine",
+                                        "proteinogenic": true,
+                                        "structure": "NCC(=O)O"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:18832174"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "glycine",
+                                        "proteinogenic": true,
+                                        "structure": "NCC(=O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AAZ55904.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:18832174"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "2,3-dihydroxybenzoic acid",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC(=C(C(=C1)O)O)C(=O)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Thermobifida fusca YX",
+        "publications": [
+            "pubmed:18832174"
+        ],
+        "status": "active"
+    }
+}

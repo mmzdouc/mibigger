@@ -1,0 +1,66 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added chemical structures for compounds: propanochelin, butanochelin, pentanochelin.",
+                "Added NPAtlas links to compounds: propanochelin, butanochelin, pentanochelin."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "O=C(NCCCNC(=O)C1=C(O)C(O)=CC=C1)C1=C(O)C(O)=CC=C1",
+                "compound": "propanochelin",
+                "database_id": [
+                    "npatlas:NPA033092"
+                ]
+            },
+            {
+                "chem_struct": "O=C(NCCCCNC(=O)C1=C(O)C(O)=CC=C1)C1=C(O)C(O)=CC=C1",
+                "compound": "butanochelin",
+                "database_id": [
+                    "npatlas:NPA033093"
+                ]
+            },
+            {
+                "chem_struct": "O=C(NCCCCCNC(=O)C1=C(O)C(O)=CC=C1)C1=C(O)C(O)=CC=C1",
+                "compound": "pentanochelin",
+                "database_id": [
+                    "npatlas:NPA033094"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "NZ_KB892261.1",
+            "completeness": "Unknown",
+            "end_coord": 41799,
+            "start_coord": 30960
+        },
+        "mibig_accession": "BGC0002473",
+        "minimal": true,
+        "ncbi_tax_id": "1120925",
+        "organism_name": "Acinetobacter bouvetii DSM 14964 = CIP 107468",
+        "publications": [
+            "pubmed:32926028",
+            "doi:10.1039/d0cc04171h"
+        ],
+        "status": "active"
+    }
+}

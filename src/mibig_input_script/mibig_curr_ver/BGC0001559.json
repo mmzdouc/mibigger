@@ -1,0 +1,70 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.4"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (MIBiG Annotathon)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Corrected source genome and location from crocacin to crocagin",
+                "Cleaned up synonym list"
+            ],
+            "contributors": [
+                "SJG3CBEHSM6A3I74YXLH6GLA",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC[C@H](C)[C@@H](C(=O)N[C@H]1[C@H](N2c3ccccc3[C@@H]4[C@H]2N(C1=O)[C@@H]([C@H]4OC(=O)N)C(=O)O)c5ccc(cc5)O)NC",
+                "compound": "crocagin A",
+                "database_id": [
+                    "chemspider:59718412"
+                ],
+                "mol_mass": 551.237998396,
+                "molecular_formula": "C28H33N5O7"
+            },
+            {
+                "chem_struct": "CN[C@@H]([C@@H](CC)C)C(NC(C(N([C@@]1([H])N2c3ccccc3[C@@]41[H])[C@@H]([C@H]4OC(N)=O)C(O)=O)=O)=C2c5ccc(O)cc5)=O",
+                "compound": "crocagin B",
+                "mol_mass": 549.2223483319998,
+                "molecular_formula": "C28H31N5O7"
+            }
+        ],
+        "loci": {
+            "accession": "CP012159.1",
+            "completeness": "Unknown",
+            "end_coord": 3383702,
+            "start_coord": 3370600
+        },
+        "mibig_accession": "BGC0001559",
+        "minimal": true,
+        "ncbi_tax_id": "52",
+        "organism_name": "Chondromyces crocatus",
+        "publications": [
+            "pubmed:28544148"
+        ],
+        "status": "active"
+    }
+}

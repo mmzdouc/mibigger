@@ -1,0 +1,66 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted",
+                "Added version to NCBI accession"
+            ],
+            "contributors": [
+                "LOOLDPJUN4VZBEJ3W5R2EHIG",
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11",
+                "Changed chemical structures for compounds: ulleungdin.",
+                "Added NPAtlas links to compounds: ulleungdin."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "anticancer",
+                        "comment": "cancer cell migration inhibitor"
+                    }
+                ],
+                "chem_struct": "CC[C@H](C)[C@@H]1NC(=O)[C@H](CC2=CC=CC=C2)NC(=O)CNC(=O)C[C@@H](C(=O)N[C@H](C(=O)N[C@@H](CC2=CC=CC=C2)C(=O)NCC(=O)N[C@@H](CC2=CN=C[NH]2)C(=O)N[C@@H](CC2=CC=C(O)C=C2)C(=O)NCC(=O)NCC(=O)O)[C@@H](C)CC)NC(=O)[C@H](CCCCN)NC(=O)CNC(=O)[C@H](CC2=C[NH]C3=CC=CC=C23)NC(=O)CNC1=O",
+                "compound": "ulleungdin",
+                "database_id": [
+                    "npatlas:NPA032873"
+                ],
+                "evidence": [
+                    "Mass spectrometry"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "MT149903.1",
+            "completeness": "complete"
+        },
+        "mibig_accession": "BGC0002053",
+        "minimal": true,
+        "ncbi_tax_id": "1931",
+        "organism_name": "Streptomyces sp.",
+        "publications": [
+            "pubmed:33712632",
+            "doi:10.1021/acs.jnatprod.8b00449"
+        ],
+        "ripp": {
+            "cyclic": true,
+            "subclass": "Lassopeptide"
+        },
+        "status": "active"
+    }
+}

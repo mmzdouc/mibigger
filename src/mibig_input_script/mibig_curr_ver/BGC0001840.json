@@ -1,0 +1,40 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted",
+                "Added version to NCBI accession",
+                "Fix DOI"
+            ],
+            "contributors": [
+                "W7M5EW4IK7TDA54GG67QEM7H",
+                "AAAAAAAAAAAAAAAAAAAAAAAA",
+                "3UOU7PODQJXIM6BEPUHHRRA5"
+            ],
+            "version": "3.0"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP",
+            "Polyketide"
+        ],
+        "compounds": [
+            {
+                "compound": "detoxin S1"
+            }
+        ],
+        "loci": {
+            "accession": "BK010707.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001840",
+        "minimal": true,
+        "ncbi_tax_id": "1463899",
+        "organism_name": "Streptomyces sp. NRRL S-325",
+        "publications": [
+            "doi:10.1101/445270"
+        ],
+        "status": "active"
+    }
+}

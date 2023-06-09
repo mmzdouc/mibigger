@@ -1,0 +1,78 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.3"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "Other"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antiprotozoal"
+                    }
+                ],
+                "chem_struct": "NC1=NC=NC2=C1N=CN2[C@@H]1O[C@](F)(COS(N)(=O)=O)[C@@H](O)[C@H]1O",
+                "compound": "nucleocidin",
+                "database_id": [
+                    "npatlas:NPA011799",
+                    "pubchem:72299"
+                ],
+                "mol_mass": 364.06013135599994,
+                "molecular_formula": "C10H13FN6O6S"
+            }
+        ],
+        "loci": {
+            "accession": "KU881767.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0001387",
+        "minimal": true,
+        "ncbi_tax_id": "67282",
+        "organism_name": "Streptomyces calvus",
+        "publications": [
+            "pubmed:26374477"
+        ],
+        "status": "active"
+    }
+}

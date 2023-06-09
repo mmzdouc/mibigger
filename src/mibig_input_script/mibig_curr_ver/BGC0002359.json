@@ -1,0 +1,83 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Entry added",
+                "Added NRP substrate specificities"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Changed chemical structures for compounds: dudomycin A.",
+                "Added NPAtlas links to compounds: dudomycin A."
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "NRP"
+        ],
+        "compounds": [
+            {
+                "chem_struct": "CC(C)CCC(O)CC(=O)NCCCCC(NC(=O)CC(CCC(C)C)OC(=O)CC(O)CCC(C)C)C(=O)O",
+                "compound": "dudomycin A",
+                "database_id": [
+                    "npatlas:NPA033496"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "VJOK01000001.1",
+            "completeness": "Unknown",
+            "end_coord": 4784363,
+            "evidence": [
+                "Heterologous expression",
+                "Knock-out studies"
+            ],
+            "start_coord": 4756396
+        },
+        "mibig_accession": "BGC0002359",
+        "minimal": false,
+        "ncbi_tax_id": "337066",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "NSC23530.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "Structure-based inference"
+                                ],
+                                "publications": [
+                                    "pubmed:33207845"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "lysine",
+                                        "proteinogenic": true,
+                                        "structure": "C(CCN)C[C@@H](C(=O)O)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "organism_name": "Streptomyces albus subsp. chlorinus",
+        "publications": [
+            "pubmed:33207845",
+            "doi:10.3390/microorganisms8111800"
+        ],
+        "status": "active"
+    }
+}

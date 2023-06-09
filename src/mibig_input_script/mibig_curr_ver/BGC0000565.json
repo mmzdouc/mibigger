@@ -1,0 +1,77 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Submitted"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "1.0"
+        },
+        {
+            "comments": [
+                "Migrated from v1.4",
+                "Updated compound(s) information (NPAtlas curation)"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "2.0"
+        },
+        {
+            "comments": [
+                "Updated bioactivity data"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update chemical activity to schema version 2.11"
+            ],
+            "contributors": [
+                "AAAAAAAAAAAAAAAAAAAAAAAA"
+            ],
+            "version": "3.1"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "chem_struct": "CC[C@H](C)[C@H](NC(=O)C1=C(C)OC(=N1)C(=C)NC(=O)[C@@H](NC(=O)C1=C(C)OC(=N1)[C@H](C)NC(C)=O)C(C)C)C(=O)N[C@@H](CC(C)C)C1=NC(=CS1)C(=O)N[C@@H](CO)C(=O)NCC(=O)NCC1=NC(C(=O)N[C@@H](CC(C)C)C(=O)NC(=C)C2=NC(=CO2)C(=O)N[C@@H](C)C(=O)NCC2=NC(=CS2)C(=O)N[C@@H](C(C)C)C(O)=O)=C(C)O1",
+                "compound": "goadsporin",
+                "database_id": [
+                    "npatlas:NPA013181"
+                ],
+                "mol_mass": 1611.6598685039992,
+                "molecular_formula": "C72H97N19O20S2"
+            }
+        ],
+        "loci": {
+            "accession": "AB205012.1",
+            "completeness": "Unknown"
+        },
+        "mibig_accession": "BGC0000565",
+        "minimal": true,
+        "ncbi_tax_id": "314563",
+        "organism_name": "Streptomyces sp. TP-A0584",
+        "publications": [
+            "pubmed:16339937"
+        ],
+        "ripp": {
+            "subclass": "LAP"
+        },
+        "status": "active"
+    }
+}
