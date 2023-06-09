@@ -4,6 +4,7 @@ import argparse
 from Bio import Entrez
 from importlib import metadata
 import json
+import jsonschema
 from pathlib import Path
 from typing import Dict
 
@@ -96,7 +97,17 @@ def write_mibig_entry(
 
     # call duplicate check
 
-    # get json string for validation script (can be called from aux)
+    json_string = mibig_entry.return_json_string()
+
+    with open(ROOT.joinpath("schema.json")) as schema_handle:
+        schema = json.load(schema_handle)
+    try:
+        jsonschema.validate(json.loads(json_string), schema)
+        print("MIBiG JSON is valid.")
+    except jsonschema.ValidationError as e:
+        print("MIBiG JSON is invalid. Error:", e)
+        print("Abort file storage.")
+        exit()
 
     if path_existing is None:
         new_entry_path = (
@@ -117,12 +128,12 @@ def main() -> None:
     Serves as main entry point for the program execution.
     It performs the following tasks:
     - Create the program interface via `argparse`
-    - (Optional) Perform checks on input entry
-    - Initialize a `MibigEntry()` instance
-    - (Optional) Parse an existing MIBiG entry
-    - Accept input to add to entry, run verification checks
-    - Write the changelog
-    - Dump the entry as json file
+    - Run auxilliary functions
+    - Initialize a `Base` instance, take and test input data
+    - Initialized a `Changelog` instance, write changelog entry
+    - Initialize a `WriteMiBig` instance, prepare for export
+    - Validate resulting JSON file
+    - Store JSON file
 
     Parameters:
         None

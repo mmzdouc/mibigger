@@ -1,26 +1,67 @@
-This repository contains scripts to help in creating new entries for
-the upcoming version of MIBiG (4.0).
+This repository contains scripts to help in creating new entries and
+modify existing entries for the upcoming version of MIBiG (4.0).
 
-This script is currently for internal use only and requires some
-knowledge regarding MIBiG entries and command-line usage.
+The script takes input, tests it for correctness where possible,
+validates the resulting JSON file against the MIBiG JSON schema, and
+saves the data as JSON file.
+
+This script is currently for internal use in the Medema/Weber groups
+only and requires some knowledge regarding MIBiG entries and command-line usage.
 
 Installation
 ============
 
 - Create a new virtual env using `python version 3.11`
-- Install the requirements using `pip install -e .`
-- Set up pre-commit via `pre-commit install`
+- Install the package and download requirements using `pip install -e .`
+
+Background
+==========
+
+The program is mainly conceptualized to quickly create and modify MIBiG
+entries for the next iteration of MIBiG. The script can also be used
+for the modification of existing entries (from previous MIBiG iterations).
+
+Currently, the script is limited to create a **minimal** MIBIG entry (or
+manipulate the minimum information for a MIBiG entry). This includes
+the biosynthetic class, NCBI accession number, organism etc. Support for
+additional information is planned for future releases
+
+**Currently** included modules are:
+- **base** (essential information)
+- **changelog** (writes changelog)
+- **write_mibig** (validates and writes MIBiG json files)
+
+**Planned** modules are:
+- **compound** (detailed information on compound(s), such as SMILES)
+- **ripp** (detailed information on RiPPs)
+- **gene_annotation** (annotation of individual genes)
+
 
 Usage
 =====
 
-- The program can be started with `python ./src/mibig-input-script/main.py`
-- The help can be displayed using the `-h` flag (i.e. `python ./src/mibig-input-script/main.py` )
-- The program allows to create new entries OR manipulate existing entries. These two actions are mutually exclusive
-- For both creating/manipulating an entry, the curator need to "log in" using their curator ID as first command line argument (i.e. `python ./src/mibig-input-script/main.py MMZ`)
-- New entries must be initiated using the flags `-n --minimal`. If necessary, additional flags can be set to add more information (e.g. `--gene_ann`
-- Existing entries can be manipulated using the `-e <MIBIG_ACCESSION_NUMBER>`, using additional flags specifying the type of information that is going to be manipulated (e.g. `minimal`, `gene_ann`). These additional flags
+- Start the program with `python ./src/mibig-input-script/main.py`
+- Display the help with the `-h` flag.
+- To create a new entry, provide the curator ID together with the `-n` flag (e.g. `... MMZ -n`)
+- To modify an existing entry, provide the curator ID, the `-e` flag, and the MIBiG ID (e.g. `... MMZ -e BGC0001234`)
 
+Note: The curator ID is taken from `src/mibig_input_script/curators.csv`
+
+For developers
+==============
+
+In this project, a number of tools are used to keep code and style consistent.
+These tools include:
+- `black` (v23.3.0)
+- `flake8` (v6.0.0)
+
+We recommend using the package `pre-commit` to run these tools before committing.
+`pre-commit` can be installed with `pre-commit install`.
+
+Besides, we use type hinting and document code using Google-style docstrings.
+A convenient tool to check documentation style is `pycodestyle`.
+
+We use [Semantic Versioning](http://semver.org/) for versioning.
 
 About
 =====
@@ -29,59 +70,12 @@ About
 
 A list of dependencies can be found in [requirements.txt](requirements.txt).
 
+
 ## License
 
 TBA
 
-For developers
-==============
+Authors
+=======
+- Mitja M. Zdouc (Wageningen University)
 
-## Contributing
-
-We document code with Google-style docstrings -> see the examples below
-
-```
-class MyClass:
-    """Brief summary of the class.
-
-    More detailed description of the class.
-
-    Attributes:
-        attr1 (type): Description of attr1.
-        attr2 (type): Description of attr2.
-
-    Methods:
-        method1(arg1 : type, arg2 : type) -> type:
-            Description of method1.
-        method2(arg1 : type) -> type:
-            Description of method2.
-
-    """
-    # class implementation goes here
-```
-
-```
-def myfunct(arg1: float, arg2: float) -> float:
-    """Brief summary of the function.
-
-    Args:
-        arg1: Description of arg1.
-        arg2: Description of arg2.
-
-    Returns:
-        Description of return value
-
-    Notes:
-        Optional details on function
-    """
-    # function implementation goes here
-```
-
-
-## Versioning
-
-We use [Semantic Versioning](http://semver.org/) for versioning.
-
-## TO DO (REMOVE LATER)
-
-- Add pre-commit code from Simon to main.py

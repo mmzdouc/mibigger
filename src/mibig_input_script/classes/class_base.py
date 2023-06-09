@@ -22,29 +22,32 @@ class Base:
     Identical routes for existing and new entries except for beginning:
     For a new entry, an empty "shell" entry is constructed, which is
     then filled with data. For existing entries, the data is modified
-    directly in the data structure (dict). This way, there is no data
-    loss.
+    directly in the data structure (dict). This prevents data loss.
 
     Attributes:
         mibig_accession (str | None): existing/new accession number
         mibig_dict (Dict | None): existing/new data for MIBiG entry
 
+    Methods:
+        error_message_formatted(self: Self, string: str) -> None
+        get_new_mibig_accession(
+            self: Self, args: argparse.Namespace, ROOT: Path
+            ) -> None
+        create_new_entry(self: Self) -> None
+        load_existing_entry(self: Self, existing: Dict) -> None
+        get_input(self: Self, existing: Dict) -> None
+        get_biosynth_class(self: Self) -> None
+        get_compound_name(self: Self) -> None
+        get_ncbi_data(self: Self) -> None
+        get_organism_data(self: Self) -> None
+        get_evidence(self: Self) -> None
+        get_reference(self: Self) -> None
+        test_presence_data(self: Self) -> bool
+        set_flags(self: Self) -> None
+        export_attributes_to_dict(self: Self) -> Dict
+
     Note:
         Deepcopy required to prevent implicit changing of original dict "existing"
-        To access entries for manipulation:
-            self.mibig_dict['cluster']['biosyn_class']
-            self.mibig_dict["cluster"]["compounds"][i]["compound"]
-            self.mibig_dict["cluster"]["loci"]["accession"]
-            self.mibig_dict["cluster"]["loci"]["start_coord"]
-            self.mibig_dict["cluster"]["loci"]["end_coord"]
-            self.mibig_dict["cluster"]["organism_name"]
-            self.mibig_dict["cluster"]["ncbi_tax_id"]
-            self.mibig_dict["cluster"]["publications"]
-            self.mibig_dict["cluster"]["loci"]["evidence"]
-            self.mibig_dict["cluster"]["mibig_accession"]
-            self.mibig_dict["cluster"]["minimal"]
-            self.mibig_dict["cluster"]["status"]
-            self.mibig_dict["cluster"]["loci"]["completeness"]
     """
 
     def __init__(self: Self):

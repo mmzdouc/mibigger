@@ -18,6 +18,20 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.1"
+        },
+        {
+            "comments": [
+                "Test entry (MMZ 08-06-2023 20:09)",
+                "Another test entry (MMZ 08-06-2023 20:10)",
+                "Updated DOI (JCNM 08-06-2023 20:16)",
+                "New entry (JCNM 09-06-2023 09:00)",
+                "Test entry (JCNM 09-06-2023 09:03)"
+            ],
+            "contributors": [
+                "JCNM",
+                "MMZ"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -92,6 +106,7 @@
         "ncbi_tax_id": "1004150",
         "organism_name": "Photorhabdus khanii HGB 1456",
         "publications": [
+            "doi:10.1038/s41586-020-2063-9",
             "pubmed:32269338"
         ],
         "ripp": {

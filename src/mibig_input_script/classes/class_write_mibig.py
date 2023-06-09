@@ -1,8 +1,8 @@
 """
-Module to handle data to create/modify a MIBiG entry
+Module to handle data to create/modify a MIBiG entry.
 
 Handles dict created by other modules, performs tests to prevent
-duplication of entries, writes json files
+duplication of entries, writes json files.
 """
 
 from copy import deepcopy
@@ -15,11 +15,13 @@ class WriteMibig:
     """Class to prepare, test, and write a new/existing MIBiG entry to disk.
 
     Attributes:
-        TBA
+        export_dict (Dict) : stores the dictionary for export
 
     Methods:
-        TBA
-
+        error_message_formatted(self: Self, string: str) -> None:
+            Print a formatted error message
+        concatenate_dicts(self: Self, mibig_dict: Dict, changelog: Dict) -> None:
+            Concatenate individual dicts for export
     Note:
         Deepcopy required to prevent implicit changing of original dict "existing"
     """
@@ -33,7 +35,7 @@ class WriteMibig:
         Returns:
             None
         """
-        self.export_dict: Dict = None
+        self.export_dict: Dict | None = None
 
     def error_message_formatted(self: Self, string: str) -> None:
         """Print a formatted error message.
@@ -74,16 +76,38 @@ class WriteMibig:
             "cluster": deepcopy(mibig_dict["cluster"]),
         }
 
-    def test_duplicate_entries(self: Self, ROOT) -> None:
-        """Check existing entries for similar-looking entry"""
-        pass
+    def return_json_string(self: Self) -> str:
+        """Returns a json string.
 
-    def return_json_string(self: Self, ROOT) -> None:
-        """Validate modified entry before writing"""
-        # return a json string to test with validation script of Simon/Kai
-        pass
+        Parameters:
+            `self` : The instance of class WriteMibig.
+
+        Returns:
+            Returns a json string
+        """
+        return json.dumps(self.export_dict, indent=4, ensure_ascii=False)
 
     def export_to_json(self: Self, path_to_write: Path) -> None:
-        """Save to json"""
+        """Save MIBiG entry to json file using the specified path.
+
+        Parameters:
+            `self` : The instance of class WriteMibig.
+            `path_to_write` : a `Path` object pointing towards file location
+
+        Returns:
+            None
+        """
         with open(path_to_write, "w", encoding="utf-8") as outfile:
             json.dump(self.export_dict, outfile, indent=4, ensure_ascii=False)
+
+    def test_duplicate_entries(self: Self, ROOT) -> None:
+        """Placeholder entry to test for duplicate entries when creating a new entry
+
+        Parameters:
+            `self` : The instance of class WriteMibig.
+            `ROOT` : a `Path` object of the "base" directory
+
+        Returns:
+            None
+        """
+        return

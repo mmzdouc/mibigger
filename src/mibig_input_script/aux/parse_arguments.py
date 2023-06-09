@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import argparse
 from pathlib import Path
 from typing import List
@@ -53,29 +51,23 @@ def add_parser_args(VERSION: str, ROOT: Path) -> argparse.ArgumentParser:
         help="Manipulate an existing entry by specifying its MIBiG accession number.",
     )
 
-    parser.add_argument(
-        "--minimal",
-        action="store_true",
-        help="Create/manipulate the minimal information of a MIBiG entry.",
-    )
+    # ~ parser.add_argument(
+    # ~ "--gene_ann",
+    # ~ action="store_true",
+    # ~ help="TBA Add information on domains, functions, products, ... in locus.",
+    # ~ )
 
-    parser.add_argument(
-        "--gene_ann",
-        action="store_true",
-        help="TBA Add information on domains, functions, products, ... in locus.",
-    )
+    # ~ parser.add_argument(
+    # ~ "--ripp_ann",
+    # ~ action="store_true",
+    # ~ help="TBA Add information on leader/core peptides, crosslinks, ... of RiPPs.",
+    # ~ )
 
-    parser.add_argument(
-        "--ripp_ann",
-        action="store_true",
-        help="TBA Add information on leader/core peptides, crosslinks, ... of RiPPs.",
-    )
-
-    parser.add_argument(
-        "--all",
-        action="store_true",
-        help="TBA Add full information suite at once",
-    )
+    # ~ parser.add_argument(
+    # ~ "--all",
+    # ~ action="store_true",
+    # ~ help="TBA Add full information suite at once",
+    # ~ )
 
     return parser
 
