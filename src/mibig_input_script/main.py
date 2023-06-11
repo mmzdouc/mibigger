@@ -95,7 +95,7 @@ def write_mibig_entry(
 
     # CONTINUE HERE
 
-    # call duplicate check
+    mibig_entry.test_duplicate_entries(ROOT)
 
     json_string = mibig_entry.return_json_string()
 
@@ -103,7 +103,6 @@ def write_mibig_entry(
         schema = json.load(schema_handle)
     try:
         jsonschema.validate(json.loads(json_string), schema)
-        print("MIBiG JSON is valid.")
     except jsonschema.ValidationError as e:
         print("MIBiG JSON is invalid. Error:", e)
         print("Abort file storage.")
@@ -116,10 +115,13 @@ def write_mibig_entry(
             .with_suffix(".json")
         )
         mibig_entry.export_to_json(new_entry_path)
-        return
+        print("New entry successfully created.")
+        mibig_entry.append_to_csv_existing(ROOT)
     else:
         mibig_entry.export_to_json(path_existing)
-        return
+        print("Existing entry successfully modified.")
+
+    return
 
 
 def main() -> None:

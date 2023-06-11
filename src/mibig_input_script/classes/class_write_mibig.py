@@ -8,6 +8,7 @@ duplication of entries, writes json files.
 from copy import deepcopy
 import json
 from pathlib import Path
+import pandas as pd
 from typing import Dict, Self
 
 
@@ -53,6 +54,52 @@ class WriteMibig:
             "++++++++++++++++++++++++++++++++++++++++++++++++\n"
         )
         print(error_message)
+        return
+
+    def alert_message_formatted(self: Self, string: str, var: str) -> None:
+        """Print a formatted alert message.
+
+        Parameters:
+            `self` : The instance of class Changelog.
+            string : input to customize message
+
+
+        Returns:
+            None
+        """
+        alert_message = (
+            "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n"
+            f"ALERT: {string}.\n"
+            f"{var}\n"
+            "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n"
+        )
+        print(alert_message)
+        return
+
+    def ask_proceed_input(self: Self) -> None:
+        """Ask user to proceed/stop.
+
+        Parameters:
+            `self` : The instance of class Changelog.
+
+        Returns:
+            None
+        """
+        alert_message = (
+            "================================================\n"
+            "Do you want to proceed (yes/no)?\n"
+            "================================================\n"
+        )
+        while True:
+            user_input = input(alert_message)
+
+            if user_input == "no":
+                quit()
+            elif user_input == "yes":
+                break
+            else:
+                print("Please type in yes or no.")
+
         return
 
     def concatenate_dicts(self: Self, mibig_dict: Dict, changelog: Dict) -> None:
@@ -101,7 +148,7 @@ class WriteMibig:
             json.dump(self.export_dict, outfile, indent=4, ensure_ascii=False)
 
     def test_duplicate_entries(self: Self, ROOT) -> None:
-        """Placeholder entry to test for duplicate entries when creating a new entry
+        """Test for duplicate entries when creating a new entry.
 
         Parameters:
             `self` : The instance of class WriteMibig.
@@ -110,4 +157,73 @@ class WriteMibig:
         Returns:
             None
         """
+        existing = "existing_mibig_entries.csv"
+        df = pd.read_csv(ROOT.joinpath(existing))
+
+        current_mibig_acc = self.export_dict["cluster"]["mibig_accession"]
+        ncbi_acc = self.export_dict["cluster"]["loci"]["accession"]
+        compounds = [
+            self.export_dict["cluster"]["compounds"][i]["compound"]
+            for i in range(len(self.export_dict["cluster"]["compounds"]))
+        ]
+
+        if not (
+            matches := df.loc[df["accession"].str.contains(ncbi_acc) == True]
+        ).empty:
+            if current_mibig_acc not in matches["mibig_accession"].to_list():
+                self.alert_message_formatted(
+                    f"Similar existing accession number in '{existing}' found", matches
+                )
+                self.ask_proceed_input()
+            else:
+                return
+        else:
+            pass
+
+        for compound in compounds:
+            if not (
+                matches := df.loc[df["compounds"].str.contains(compound) == True]
+            ).empty:
+                if current_mibig_acc not in matches["mibig_accession"].to_list():
+                    self.alert_message_formatted(
+                        f"Similar existing compound name in '{existing}' found", matches
+                    )
+                    self.ask_proceed_input()
+                else:
+                    return
+            else:
+                return
+
+    def append_to_csv_existing(self: Self, ROOT) -> None:
+        """Append info of new entry to existing_mibig_entries.csv
+
+        Parameters:
+            `self` : The instance of class WriteMibig.
+            `ROOT` : a `Path` object of the "base" directory
+
+        Returns:
+            None
+        """
+        existing = "existing_mibig_entries.csv"
+        df = pd.read_csv(ROOT.joinpath(existing))
+
+        current_mibig_acc = self.export_dict["cluster"]["mibig_accession"]
+        ncbi_acc = self.export_dict["cluster"]["loci"]["accession"]
+        compounds = "|".join(
+            [
+                self.export_dict["cluster"]["compounds"][i]["compound"]
+                for i in range(len(self.export_dict["cluster"]["compounds"]))
+            ]
+        )
+
+        new_row = {
+            "mibig_accession": current_mibig_acc,
+            "compounds": compounds,
+            "accession": ncbi_acc,
+        }
+
+        df2 = pd.concat([df, pd.DataFrame([new_row])], ignore_index=True)
+
+        df2.to_csv(existing, index=False)
+
         return
