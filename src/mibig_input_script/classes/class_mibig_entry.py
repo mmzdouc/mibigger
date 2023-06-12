@@ -16,7 +16,7 @@ from typing import Dict, Self, List
 from urllib.error import HTTPError
 
 
-class Base:
+class MibigEntry:
     """Collect data for MIBiG minimal entry.
 
     Identical routes for existing and new entries except for beginning:
@@ -33,9 +33,9 @@ class Base:
         get_new_mibig_accession(
             self: Self, args: argparse.Namespace, ROOT: Path
             ) -> None
-        create_new_entry(self: Self) -> None
+        create_new_entry(self: Self, curator: str, CURATION_ROUND: str) -> None
         load_existing_entry(self: Self, existing: Dict) -> None
-        get_input(self: Self, existing: Dict) -> None
+        get_input(self: Self) -> None
         get_biosynth_class(self: Self) -> None
         get_compound_name(self: Self) -> None
         get_ncbi_data(self: Self) -> None
@@ -102,19 +102,41 @@ class Base:
         ):
             counter += 1
 
-        self.mibig_accession = "_".join([str(args.curator), str(counter)])
+        self.mibig_accession = "".join([str(args.curator), str(counter)])
         return
 
-    def create_new_entry(self: Self) -> None:
+    def create_new_entry(
+        self: Self,
+        curator: str,
+        CURATION_ROUND: str,
+    ) -> None:
         """Create a new base MIBiG entry.
 
         Parameters:
             `self` : The instance of class Minimal.
+            `curator` : name of curator creating new entry
+            `CURATION_ROUND` : `str` of mibig curation round version to use in changelog
 
         Returns:
             None
         """
+
+        message = (
+            f"================================================\n"
+            f"You are CREATING a new MIBiG entry with the ID\n"
+            f"{self.mibig_accession}\n"
+            "================================================"
+        )
+        print(message)
+
         self.mibig_dict = {
+            "changelog": [
+                {
+                    "comments": [],
+                    "contributors": [curator],
+                    "version": CURATION_ROUND,
+                }
+            ],
             "cluster": {
                 "biosyn_class": [],
                 "compounds": [],
@@ -131,14 +153,16 @@ class Base:
                 "organism_name": "None",
                 "publications": [],
                 "status": "None",
-            }
+            },
         }
+        return
 
     def load_existing_entry(self: Self, existing: Dict) -> None:
         """Load the data of an existing entry for later manipulation.
 
         Parameters:
             `self` : The instance of class Minimal.
+            `existing` : The existing mibig entry
 
         Returns:
             None
@@ -146,33 +170,25 @@ class Base:
         self.mibig_dict = deepcopy(existing)
         self.mibig_accession = self.mibig_dict["cluster"]["mibig_accession"]
 
-    def get_input(self: Self, existing: Dict) -> None:
+        message = (
+            f"================================================\n"
+            f"You are MODIFYING the existing MIBiG entry:\n"
+            f"{self.mibig_accession}\n"
+            "================================================"
+        )
+        print(message)
+
+        return
+
+    def get_input(self: Self) -> None:
         """Handle methods for user input and data validation.
 
         Parameters:
             `self` : The instance of class Minimal.
-            `existing` : The loaded MIBiG json entry as `dict`.
 
         Returns:
             None
         """
-        if existing is not None:
-            message = (
-                f"================================================\n"
-                f"You are MODIFYING the existing MIBiG entry:\n"
-                f"{self.mibig_accession}\n"
-                "================================================"
-            )
-            print(message)
-        else:
-            message = (
-                f"================================================\n"
-                f"You are CREATING a new MIBiG entry with the ID\n"
-                f"{self.mibig_accession}\n"
-                "================================================"
-            )
-            print(message)
-
         options = {
             "1": self.get_biosynth_class,
             "2": self.get_compound_name,
@@ -231,6 +247,7 @@ class Base:
             else:
                 self.error_message_formatted("Invalid input provided")
                 continue
+        return
 
     def get_biosynth_class(self: Self) -> None:
         """Get the biosynthetic class of BGC and test if valid.

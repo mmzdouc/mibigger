@@ -1,3 +1,8 @@
+"""
+Collection of auxiliary read functions.
+
+Contains auxiliary functions that read from files.
+"""
 import csv
 import json
 from pathlib import Path
@@ -6,13 +11,13 @@ from typing import Dict, List
 
 
 def read_mibig_json(path: Path | None) -> Dict | None:
-    """Read an existing MIBiG json file
+    """Read an existing MIBiG json file.
 
     Parameters:
         `path` : a `Path` object OR `None`
 
     Returns:
-        `json` MIBiG entry in form of `dict` OR `None`
+        MIBiG entry in form of `dict` OR `None`
     """
     if path is not None:
         with open(path.resolve(), "r") as jsonfile:
@@ -23,7 +28,7 @@ def read_mibig_json(path: Path | None) -> Dict | None:
 
 
 def get_curators(ROOT: Path) -> List[str]:
-    """Get the list of possible curators defined in ../curators.csv
+    """Get the list of possible curators defined in `../curators.csv`.
 
     Parameters:
         `ROOT`: `Path` object indicating "root" directory of script
@@ -37,7 +42,7 @@ def get_curators(ROOT: Path) -> List[str]:
 
 
 def get_curator_email(ROOT: Path, curator: str) -> str:
-    """Get the email of the specified curator
+    """Get the email of the specified curator.
 
     Parameters:
         `ROOT`: `Path` object indicating "root" directory of script

@@ -19,24 +19,36 @@ class WriteMibig:
         export_dict (Dict) : stores the dictionary for export
 
     Methods:
-        error_message_formatted(self: Self, string: str) -> None:
+        error_message_formatted(self: Self, string: str) -> None
             Print a formatted error message
-        concatenate_dicts(self: Self, mibig_dict: Dict, changelog: Dict) -> None:
-            Concatenate individual dicts for export
+        alert_message_formatted(self: Self, string: str, var: str) -> None
+            Print a formatted alert message
+        ask_proceed_input(self: Self) -> None
+            Ask user to proceed/stop.
+        return_json_string(self: Self) -> str
+            Returns a json string
+        export_to_json(self: Self, path_to_write: Path) -> None
+            Save MIBiG entry to json file using the specified path
+        test_duplicate_entries(self: Self, ROOT) -> None
+            Test for duplicate entries when creating a new entry
+        append_to_csv_existing(self: Self, ROOT) -> None:
+            Append info of new entry to existing_mibig_entries.csv
+
     Note:
-        Deepcopy required to prevent implicit changing of original dict "existing"
+        Deepcopy required to prevent implicit changing of original dict
     """
 
-    def __init__(self: Self):
+    def __init__(self: Self, mibig_entry: Dict):
         """Initialize class attributes.
 
         Parameters:
             `self` : The instance of class WriteMibig.
+            `mibig_entry` : The mibig entry as `dict`.
 
         Returns:
             None
         """
-        self.export_dict: Dict | None = None
+        self.export_dict: Dict = deepcopy(mibig_entry)
 
     def error_message_formatted(self: Self, string: str) -> None:
         """Print a formatted error message.
@@ -56,12 +68,13 @@ class WriteMibig:
         print(error_message)
         return
 
-    def alert_message_formatted(self: Self, string: str, var: str) -> None:
+    def alert_message_formatted(self: Self, warning: str, output: str) -> None:
         """Print a formatted alert message.
 
         Parameters:
             `self` : The instance of class Changelog.
-            string : input to customize message
+            warning : warning message
+            output : output of test
 
 
         Returns:
@@ -69,8 +82,8 @@ class WriteMibig:
         """
         alert_message = (
             "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n"
-            f"ALERT: {string}.\n"
-            f"{var}\n"
+            f"ALERT: {warning}.\n"
+            f"{output}\n"
             "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n"
         )
         print(alert_message)
@@ -98,30 +111,9 @@ class WriteMibig:
             elif user_input == "yes":
                 break
             else:
-                print("Please type in yes or no.")
+                print("Please type 'yes' or 'no'.")
 
         return
-
-    def concatenate_dicts(self: Self, mibig_dict: Dict, changelog: Dict) -> None:
-        """Concatenate individual dicts for export.
-
-        Parameters:
-            `self` : The instance of class WriteMibig.
-            `mibig_dict` : a `dict` containing the minimal MIBiG info
-            `changelog` : a `dict` containing the MIBiG changelog
-
-        Returns:
-            None
-
-        Notes:
-            Once script goes beyond minimal input (e.g. ripp_dict):
-            If ripp_dict not None:
-                concatenate to export_dict
-        """
-        self.export_dict = {
-            "changelog": deepcopy(changelog["changelog"]),
-            "cluster": deepcopy(mibig_dict["cluster"]),
-        }
 
     def return_json_string(self: Self) -> str:
         """Returns a json string.
@@ -195,7 +187,7 @@ class WriteMibig:
                 return
 
     def append_to_csv_existing(self: Self, ROOT) -> None:
-        """Append info of new entry to existing_mibig_entries.csv
+        """Append info of new entry to existing_mibig_entries.csv.
 
         Parameters:
             `self` : The instance of class WriteMibig.

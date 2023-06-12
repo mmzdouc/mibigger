@@ -1,9 +1,7 @@
 """
 Module to create/modify a MIBiG changelog.
 
-Manages new/existing entries, keeps track of changes and who performed them
-For new entries, write a new changelog
-For existing entries not modified in current curation round, create new
+For existing entries not modified in current round of curation, create new
 changelog entry
 For existing entries already modified in current curation round, append
 to the last changelog entry.
@@ -29,8 +27,6 @@ class Changelog:
             Print a formatted error message.
         get_comment(self: Self) -> None:
             Get a changelog comment from curator.
-        create_new_changelog(self: Self) -> Dict:
-            Create a new changelog from scratch.
         create_new_entry_changelog(self: Self, existing: Dict) -> Dict:
             Add a new changelog entry to existing changelog.
         append_last_entry_changelog(self: Self, existing: Dict) -> Dict:
@@ -103,38 +99,17 @@ class Changelog:
                 )
                 break
 
-    def create_new_changelog(self: Self) -> Dict:
-        """Create a new changelog from scratch.
-
-        Parameters:
-            `self` : The instance of class Minimal.
-
-        Returns:
-            A json-compatible dict of a "changelog" MIBiG entry.
-        """
-        self.get_comment()
-
-        return {
-            "changelog": [
-                {
-                    "comments": self.comments,
-                    "contributors": [self.curator],
-                    "version": self.version,
-                }
-            ]
-        }
-
-    def create_new_entry_changelog(self: Self, existing: Dict) -> Dict:
+    def create_new_entry_changelog(self: Self, mibig_entry: Dict) -> Dict:
         """Add a new changelog entry to existing changelog.
 
         Parameters:
             `self` : The instance of class Minimal.
-            `existing` : The loaded MIBiG json entry as `dict`.
+            `mibig_entry` : The loaded MIBiG json entry as `dict`.
 
         Returns:
             A json-compatible dict of a "changelog" MIBiG entry.
         """
-        self.existing_entry = deepcopy(existing)
+        self.existing_entry = deepcopy(mibig_entry)
         self.get_comment()
 
         self.existing_entry["changelog"].append(
@@ -145,27 +120,27 @@ class Changelog:
             }
         )
 
-        return {"changelog": self.existing_entry["changelog"]}
+        return self.existing_entry
 
-    def append_last_entry_changelog(self: Self, existing: Dict) -> Dict:
+    def append_last_entry_changelog(self: Self, mibig_entry: Dict) -> Dict:
         """Append info to last entry of existing changelog.
 
         Parameters:
             `self` : The instance of class Minimal.
-            `existing` : The loaded MIBiG json entry as `dict`.
+            `mibig_entry` : The loaded MIBiG json entry as `dict`.
 
         Returns:
             A json-compatible dict of a "changelog" MIBiG entry.
         """
-        self.existing_entry = deepcopy(existing)
+        self.existing_entry = deepcopy(mibig_entry)
 
-        self.comments = existing["changelog"][-1]["comments"]
+        self.comments = deepcopy(mibig_entry["changelog"][-1]["comments"])
         self.get_comment()
 
-        self.set_curators.update(existing["changelog"][-1]["contributors"])
+        self.set_curators.update(deepcopy(mibig_entry["changelog"][-1]["contributors"]))
         self.set_curators.add(self.curator)
 
         self.existing_entry["changelog"][-1]["comments"] = self.comments
         self.existing_entry["changelog"][-1]["contributors"] = list(self.set_curators)
 
-        return {"changelog": self.existing_entry["changelog"]}
+        return self.existing_entry

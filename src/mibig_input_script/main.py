@@ -13,9 +13,10 @@ from mibig_input_script.aux.read_functions import get_curator_email
 from mibig_input_script.aux.read_functions import read_mibig_json
 from mibig_input_script.aux.verify_existence_entry import verify_existence_entry
 
-from mibig_input_script.classes.class_write_mibig import WriteMibig
-from mibig_input_script.classes.class_base import Base
+
+from mibig_input_script.classes.class_mibig_entry import MibigEntry
 from mibig_input_script.classes.class_changelog import Changelog
+from mibig_input_script.classes.class_write_mibig import WriteMibig
 
 
 VERSION = metadata.version("mibig-input-script")
@@ -23,39 +24,13 @@ ROOT = Path(__file__).resolve().parent
 CURATION_ROUND = "next"
 
 
-def get_mibig_dict(
-    existing_mibig: Dict | None, args: argparse.Namespace, ROOT: Path
-) -> Dict:
-    """Collect information to create a minimal MIBiG entry
-
-    Parameters:
-        `existing_mibig` : existing MIBiG entry as `dict` or None
-        `args` : arguments provided by user
-        `ROOT` : `Path` object indicating "root" directory of script
-
-    Returns:
-        JSON-compatible dict
-    """
-    mibig = Base()
-
-    if existing_mibig is not None:
-        mibig.load_existing_entry(existing_mibig)
-    else:
-        mibig.get_new_mibig_accession(args, ROOT)
-        mibig.create_new_entry()
-
-    mibig.get_input(existing_mibig)
-
-    return mibig.export_attributes_to_dict()
-
-
-def get_changelog(
+def get_mibig_entry(
     existing_mibig: Dict | None,
     args: argparse.Namespace,
     ROOT: Path,
     CURATION_ROUND: str,
 ) -> Dict:
-    """Collect information for a minimal MIBiG entry
+    """Collect information to create a minimal MIBiG entry
 
     Parameters:
         `existing_mibig` : existing MIBiG entry as `dict` or None
@@ -64,40 +39,60 @@ def get_changelog(
         `CURATION_ROUND` : `str` of mibig curation round version to use in changelog
 
     Returns:
-        JSON-compatible dict
+        new/modified mibig entry as `dict`
     """
-    changelog = Changelog(args.curator, CURATION_ROUND)
+    mibig_entry = MibigEntry()
 
-    if existing_mibig is None:
-        return changelog.create_new_changelog()
-    elif existing_mibig["changelog"][-1]["version"] != CURATION_ROUND:
-        return changelog.create_new_entry_changelog(existing_mibig)
+    if existing_mibig is not None:
+        mibig_entry.load_existing_entry(existing_mibig)
     else:
-        return changelog.append_last_entry_changelog(existing_mibig)
+        mibig_entry.get_new_mibig_accession(args, ROOT)
+        mibig_entry.create_new_entry(args.curator, CURATION_ROUND)
+
+    mibig_entry.get_input()
+
+    return mibig_entry.export_attributes_to_dict()
 
 
-def write_mibig_entry(
-    ROOT: Path, path_existing: Path, mibig_dict: Dict, changelog_dict: Dict
-) -> None:
+def get_changelog(
+    mibig_entry: Dict,
+    args: argparse.Namespace,
+    CURATION_ROUND: str,
+) -> Dict:
+    """Collect information for a minimal MIBiG entry
+
+    Parameters:
+        `mibig_entry` : MIBiG entry as `dict`
+        `args` : arguments provided by user
+        `CURATION_ROUND` : `str` of mibig curation round version to use in changelog
+
+    Returns:
+        new/modified mibig entry as `dict`
+    """
+    modify_changelog = Changelog(args.curator, CURATION_ROUND)
+
+    if mibig_entry["changelog"][-1]["version"] != CURATION_ROUND:
+        return modify_changelog.create_new_entry_changelog(mibig_entry)
+    else:
+        return modify_changelog.append_last_entry_changelog(mibig_entry)
+
+
+def export_mibig_entry(mibig_entry: Dict, path_existing: Path, ROOT: Path) -> None:
     """Concatenate information and create/modify a MIBiG entry
 
     Parameters:
-        `ROOT` : `Path` object indicating "root" directory of script
-        `path_existing` : `Path` object indicating location of optional existing entry
         `mibig_dict` : `dict` containing the mibig entry information
-        `changelog_dict` : `dict` containing a changelog
+        `path_existing` : `Path` object indicating location of optional existing entry
+        `ROOT` : `Path` object indicating "root" directory of script
 
-    Returns:
-        JSON-compatible dict
+    Returns
+        None
     """
-    mibig_entry = WriteMibig()
-    mibig_entry.concatenate_dicts(mibig_dict, changelog_dict)
+    write_mibig = WriteMibig(mibig_entry)
 
-    # CONTINUE HERE
+    write_mibig.test_duplicate_entries(ROOT)
 
-    mibig_entry.test_duplicate_entries(ROOT)
-
-    json_string = mibig_entry.return_json_string()
+    json_string = write_mibig.return_json_string()
 
     with open(ROOT.joinpath("schema.json")) as schema_handle:
         schema = json.load(schema_handle)
@@ -111,14 +106,14 @@ def write_mibig_entry(
     if path_existing is None:
         new_entry_path = (
             ROOT.joinpath("mibig_next_ver")
-            .joinpath(mibig_entry.export_dict["cluster"]["mibig_accession"])
+            .joinpath(write_mibig.export_dict["cluster"]["mibig_accession"])
             .with_suffix(".json")
         )
-        mibig_entry.export_to_json(new_entry_path)
+        write_mibig.export_to_json(new_entry_path)
         print("New entry successfully created.")
-        mibig_entry.append_to_csv_existing(ROOT)
+        write_mibig.append_to_csv_existing(ROOT)
     else:
-        mibig_entry.export_to_json(path_existing)
+        write_mibig.export_to_json(path_existing)
         print("Existing entry successfully modified.")
 
     return
@@ -131,9 +126,9 @@ def main() -> None:
     It performs the following tasks:
     - Create the program interface via `argparse`
     - Run auxilliary functions
-    - Initialize a `Base` instance, take and test input data
+    - Initialize a `MibigEntry` instance, take and test input data
     - Initialized a `Changelog` instance, write changelog entry
-    - Initialize a `WriteMiBig` instance, prepare for export
+    - Initialize a `WriteMibig` instance, prepare for export
     - Validate resulting JSON file
     - Store JSON file
 
@@ -146,18 +141,16 @@ def main() -> None:
     args = parse_arguments(VERSION, ROOT)
 
     Entrez.email = get_curator_email(ROOT, args.curator)
-
     path_existing = verify_existence_entry(args.existing, ROOT)
-
     existing_mibig = read_mibig_json(path_existing)
 
-    mibig_dict = get_mibig_dict(existing_mibig, args, ROOT)
+    mibig_entry = get_mibig_entry(existing_mibig, args, ROOT, CURATION_ROUND)
 
-    changelog_dict = get_changelog(existing_mibig, args, ROOT, CURATION_ROUND)
+    # EXPAND HERE FOR ADDITIONAL DATA ENTRIES
 
-    # EXPAND HERE FOR ADDITIONAL ENTRIES
+    mibig_entry = get_changelog(mibig_entry, args, CURATION_ROUND)
 
-    write_mibig_entry(ROOT, path_existing, mibig_dict, changelog_dict)
+    export_mibig_entry(mibig_entry, path_existing, ROOT)
 
 
 if __name__ == "__main__":
