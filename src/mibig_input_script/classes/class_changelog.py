@@ -11,8 +11,10 @@ from copy import deepcopy
 from datetime import datetime
 from typing import Set, Dict, List, Self
 
+from mibig_input_script.classes.class_base import BaseClass
 
-class Changelog:
+
+class Changelog(BaseClass):
     """Collect data for MIBiG minimal entry.
 
     Attributes:
@@ -52,24 +54,6 @@ class Changelog:
         self.set_curators: Set = set()
         self.version: str = CURATION_ROUND
         self.comments: List = list()
-
-    def error_message_formatted(self: Self, string: str) -> None:
-        """Print a formatted error message.
-
-        Parameters:
-            `self` : The instance of class Changelog.
-            string : input to customize message
-
-        Returns:
-            None
-        """
-        error_message = (
-            "++++++++++++++++++++++++++++++++++++++++++++++++\n"
-            f"ERROR: {string}.\n"
-            "++++++++++++++++++++++++++++++++++++++++++++++++\n"
-        )
-        print(error_message)
-        return
 
     def get_comment(self: Self) -> None:
         """Get a changelog comment from curator.

@@ -11,8 +11,10 @@ from pathlib import Path
 import pandas as pd
 from typing import Dict, Self
 
+from mibig_input_script.classes.class_base import BaseClass
 
-class WriteMibig:
+
+class WriteMibig(BaseClass):
     """Class to prepare, test, and write a new/existing MIBiG entry to disk.
 
     Attributes:
@@ -50,32 +52,13 @@ class WriteMibig:
         """
         self.export_dict: Dict = deepcopy(mibig_entry)
 
-    def error_message_formatted(self: Self, string: str) -> None:
-        """Print a formatted error message.
-
-        Parameters:
-            `self` : The instance of class Changelog.
-            string : input to customize message
-
-        Returns:
-            None
-        """
-        error_message = (
-            "++++++++++++++++++++++++++++++++++++++++++++++++\n"
-            f"ERROR: {string}.\n"
-            "++++++++++++++++++++++++++++++++++++++++++++++++\n"
-        )
-        print(error_message)
-        return
-
     def alert_message_formatted(self: Self, warning: str, output: str) -> None:
         """Print a formatted alert message.
 
         Parameters:
-            `self` : The instance of class Changelog.
+            `self` : The instance of class WriteMibig.
             warning : warning message
             output : output of test
-
 
         Returns:
             None
@@ -87,32 +70,6 @@ class WriteMibig:
             "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n"
         )
         print(alert_message)
-        return
-
-    def ask_proceed_input(self: Self) -> None:
-        """Ask user to proceed/stop.
-
-        Parameters:
-            `self` : The instance of class Changelog.
-
-        Returns:
-            None
-        """
-        alert_message = (
-            "================================================\n"
-            "Do you want to proceed (yes/no)?\n"
-            "================================================\n"
-        )
-        while True:
-            user_input = input(alert_message)
-
-            if user_input == "no":
-                quit()
-            elif user_input == "yes":
-                break
-            else:
-                print("Please type 'yes' or 'no'.")
-
         return
 
     def return_json_string(self: Self) -> str:
