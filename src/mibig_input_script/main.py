@@ -13,6 +13,7 @@ from mibig_input_script.aux.read_functions import get_curator_email
 from mibig_input_script.aux.read_functions import read_mibig_json
 from mibig_input_script.aux.verify_existence_entry import verify_existence_entry
 
+
 from mibig_input_script.classes.class_mibig_entry import MibigEntry
 from mibig_input_script.classes.class_changelog import Changelog
 from mibig_input_script.classes.class_write_mibig import WriteMibig

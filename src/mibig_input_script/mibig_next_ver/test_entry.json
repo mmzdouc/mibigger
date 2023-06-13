@@ -28,11 +28,14 @@
                 "Test entry (JCNM 09-06-2023 09:03)",
                 "asdasd (MMZ 11-06-2023 11:25)",
                 "test entry (MMZ 12-06-2023 09:21)",
-                "test (MMZ 12-06-2023 13:43)"
+                "test (MMZ 12-06-2023 13:43)",
+                "Test entry (MMZ 13-06-2023 09:49)",
+                "new comment (MMZ 13-06-2023 09:56)",
+                "test entry (MMZ 13-06-2023 11:20)"
             ],
             "contributors": [
-                "MMZ",
-                "JCNM"
+                "JCNM",
+                "MMZ"
             ],
             "version": "next"
         }
@@ -98,16 +101,16 @@
         "loci": {
             "accession": "NZ_WHZZ01000001.1",
             "completeness": "complete",
-            "end_coord": 1243174,
+            "end_coord": 2,
             "evidence": [
                 "Heterologous expression"
             ],
-            "start_coord": 1236987
+            "start_coord": 1
         },
         "mibig_accession": "BGC0002116",
         "minimal": false,
         "ncbi_tax_id": "1004150",
-        "organism_name": "Photorhabdus khanii HGB 1456",
+        "organism_name": "Photorhabdus khanii",
         "publications": [
             "doi:10.1038/s41586-020-2063-9",
             "pubmed:32269338"

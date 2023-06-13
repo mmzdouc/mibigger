@@ -20,7 +20,13 @@ class BaseClass:
     Attributes:
         None
 
-    Methods
+    Methods:
+        error_message_formatted(self: Self, string: str) -> None
+            Print a formatted error message.
+        ask_proceed_input(self: Self) -> None
+            Ask user to proceed/stop.
+        get_reference(self: Self) -> List | None
+            Get reference and test for correct format.
 
     """
 

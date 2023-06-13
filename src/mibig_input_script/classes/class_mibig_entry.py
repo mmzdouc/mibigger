@@ -31,9 +31,12 @@ class MibigEntry(BaseClass):
             ) -> None
         create_new_entry(self: Self, curator: str, CURATION_ROUND: str) -> None
         load_existing_entry(self: Self, existing: Dict) -> None
+        prepare_selection_menu_message(self: Self) -> str
         get_input(self: Self) -> None
         get_biosynth_class(self: Self) -> None
         get_compound_name(self: Self) -> None
+        get_ncbi_accession(self: Self) -> Dict
+        get_coordinates(self: Self) -> Dict
         get_accession_data(self: Self) -> None
         get_organism_data(self: Self) -> None
         get_evidence(self: Self) -> None
@@ -93,12 +96,11 @@ class MibigEntry(BaseClass):
         Parameters:
             `self` : The instance of class MibigEntry.
             `curator` : name of curator creating new entry
-            `CURATION_ROUND` : `str` of mibig curation round version to use in changelog
+            `CURATION_ROUND` : `str` of mibig curation round version
 
         Returns:
             None
         """
-
         message = (
             f"================================================\n"
             f"You are CREATING a new MIBiG entry with the ID\n"
@@ -158,6 +160,51 @@ class MibigEntry(BaseClass):
 
         return
 
+    def prepare_selection_menu_message(self: Self) -> str:
+        """Prints message for selection menu.
+
+        Parameters:
+            `self` : The instance of class MibigEntry.
+
+        Returns:
+            String for selection menu
+        """
+        biosyn_class = self.mibig_dict["cluster"]["biosyn_class"]
+        compounds = [
+            self.mibig_dict["cluster"]["compounds"][i]["compound"]
+            for i in range(len(self.mibig_dict["cluster"]["compounds"]))
+        ]
+        accession = self.mibig_dict["cluster"]["loci"]["accession"]
+        start_coord = self.mibig_dict["cluster"]["loci"]["start_coord"]
+        end_coord = self.mibig_dict["cluster"]["loci"]["end_coord"]
+        organism_name = self.mibig_dict["cluster"]["organism_name"]
+        ncbi_tax_id = self.mibig_dict["cluster"]["ncbi_tax_id"]
+        publications = self.mibig_dict["cluster"]["publications"]
+        try:
+            evidence = self.mibig_dict["cluster"]["loci"]["evidence"]
+        except KeyError:
+            evidence = "None"
+
+        line_3 = "NCBI Accession number, start/end coordinates"
+        line_4 = "Organism name, NCBI Taxonomy ID"
+
+        input_message = (
+            "================================================\n"
+            "Modify the minimum information of a MIBiG entry:\n"
+            "Enter a number and press enter.\n"
+            "Press 'Ctrl+D' to cancel without saving.\n"
+            "================================================\n"
+            "0) Save and continue\n"
+            f"1) Biosynthetic class(es) (currently: {biosyn_class})\n"
+            f"2) Compound name(s) (currently: {compounds}):\n"
+            f"3) {line_3} (currently: {accession}, {start_coord}:{end_coord})\n"
+            f"4) {line_4} (currently: {organism_name}, {ncbi_tax_id})\n"
+            f"5) BGC evidence (currently: {evidence})\n"
+            f"6) Publication/reference (currently: {publications})\n"
+            f"================================================\n"
+        )
+        return input_message
+
     def get_input(self: Self) -> None:
         """Handle methods for user input and data validation.
 
@@ -177,39 +224,7 @@ class MibigEntry(BaseClass):
         }
 
         while True:
-            # put into a new function "print_selection_menu"
-
-            biosyn_class = self.mibig_dict["cluster"]["biosyn_class"]
-            compounds = [
-                self.mibig_dict["cluster"]["compounds"][i]["compound"]
-                for i in range(len(self.mibig_dict["cluster"]["compounds"]))
-            ]
-            accession = self.mibig_dict["cluster"]["loci"]["accession"]
-            start_coord = self.mibig_dict["cluster"]["loci"]["start_coord"]
-            end_coord = self.mibig_dict["cluster"]["loci"]["end_coord"]
-            organism_name = self.mibig_dict["cluster"]["organism_name"]
-            ncbi_tax_id = self.mibig_dict["cluster"]["ncbi_tax_id"]
-            publications = self.mibig_dict["cluster"]["publications"]
-            try:
-                evidence = self.mibig_dict["cluster"]["loci"]["evidence"]
-            except KeyError:
-                evidence = "None"
-
-            input_message = (
-                "================================================\n"
-                "Modify the minimum information of a MIBiG entry:\n"
-                "Enter a number and press enter.\n"
-                "Press 'Ctrl+D' to cancel without saving.\n"
-                "================================================\n"
-                "0) Save and continue\n"
-                f"1) Biosynthetic class(es) (currently: {biosyn_class})\n"
-                f"2) Compound name(s) (currently: {compounds}):\n"
-                f"3) NCBI Accession number, start/end coordinates (currently: {accession}, {start_coord}:{end_coord})\n"
-                f"4) Organism name, NCBI Taxonomy ID (currently: {organism_name}, {ncbi_tax_id})\n"
-                f"5) BGC evidence (currently: {evidence})\n"
-                f"6) Publication/reference (currently: {publications})\n"
-                f"================================================\n"
-            )
+            input_message = self.prepare_selection_menu_message()
             user_input = input(input_message)
 
             if user_input == "0":
