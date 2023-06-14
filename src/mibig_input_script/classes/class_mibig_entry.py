@@ -31,7 +31,7 @@ class MibigEntry(BaseClass):
             ) -> None
         create_new_entry(self: Self, curator: str, CURATION_ROUND: str) -> None
         load_existing_entry(self: Self, existing: Dict) -> None
-        prepare_selection_menu_message(self: Self) -> str
+        generate_selection_menu_message(self: Self) -> str
         get_input(self: Self) -> None
         get_biosynth_class(self: Self) -> None
         get_compound_name(self: Self) -> None
@@ -43,7 +43,7 @@ class MibigEntry(BaseClass):
         assign_reference(self: Self) -> None
         test_presence_data(self: Self) -> bool
         set_flags(self: Self) -> None
-        export_attributes_to_dict(self: Self) -> Dict
+        export_dict(self: Self) -> Dict
 
     Note:
         Deepcopy required to prevent implicit changing of original dict "existing"
@@ -137,17 +137,17 @@ class MibigEntry(BaseClass):
         }
         return
 
-    def load_existing_entry(self: Self, existing: Dict) -> None:
+    def load_existing_entry(self: Self, mibig_entry: Dict) -> None:
         """Load the data of an existing entry for later manipulation.
 
         Parameters:
             `self` : The instance of class MibigEntry.
-            `existing` : The existing mibig entry
+            `mibig_entry` : The existing mibig entry
 
         Returns:
             None
         """
-        self.mibig_dict = deepcopy(existing)
+        self.mibig_dict = deepcopy(mibig_entry)
         self.mibig_accession = self.mibig_dict["cluster"]["mibig_accession"]
 
         message = (
@@ -160,7 +160,7 @@ class MibigEntry(BaseClass):
 
         return
 
-    def prepare_selection_menu_message(self: Self) -> str:
+    def generate_selection_menu_message(self: Self) -> str:
         """Prints message for selection menu.
 
         Parameters:
@@ -196,7 +196,7 @@ class MibigEntry(BaseClass):
             "================================================\n"
             "0) Save and continue\n"
             f"1) Biosynthetic class(es) (currently: {biosyn_class})\n"
-            f"2) Compound name(s) (currently: {compounds}):\n"
+            f"2) Compound name(s) (currently: {compounds})\n"
             f"3) {line_3} (currently: {accession}, {start_coord}:{end_coord})\n"
             f"4) {line_4} (currently: {organism_name}, {ncbi_tax_id})\n"
             f"5) BGC evidence (currently: {evidence})\n"
@@ -224,7 +224,7 @@ class MibigEntry(BaseClass):
         }
 
         while True:
-            input_message = self.prepare_selection_menu_message()
+            input_message = self.generate_selection_menu_message()
             user_input = input(input_message)
 
             if user_input == "0":
@@ -677,13 +677,13 @@ class MibigEntry(BaseClass):
             self.mibig_dict["cluster"]["loci"]["completeness"] = "complete"
             return
 
-    def export_attributes_to_dict(self: Self) -> Dict:
+    def export_dict(self: Self) -> Dict:
         """Summarize values in json-compatible dict.
 
         Parameters:
             `self` : The instance of class Minimal.
 
         Returns:
-            A json-compatible dict of MIBiG "cluster" entry.
+            A json-compatible dict of MIBiG entry
         """
-        return self.mibig_dict
+        return deepcopy(self.mibig_dict)

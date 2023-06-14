@@ -6,6 +6,7 @@ from importlib import metadata
 import json
 import jsonschema
 from pathlib import Path
+import readline
 from typing import Dict
 
 from mibig_input_script.aux.parse_arguments import parse_arguments
@@ -14,6 +15,7 @@ from mibig_input_script.aux.read_functions import read_mibig_json
 from mibig_input_script.aux.verify_existence_entry import verify_existence_entry
 
 
+from mibig_input_script.classes.class_ripp import Ripp
 from mibig_input_script.classes.class_mibig_entry import MibigEntry
 from mibig_input_script.classes.class_changelog import Changelog
 from mibig_input_script.classes.class_write_mibig import WriteMibig
@@ -30,7 +32,7 @@ def get_mibig_entry(
     ROOT: Path,
     CURATION_ROUND: str,
 ) -> Dict:
-    """Collect information to create a minimal MIBiG entry
+    """Collect information to create a minimal MIBiG entry.
 
     Parameters:
         `existing_mibig` : existing MIBiG entry as `dict` or None
@@ -41,17 +43,80 @@ def get_mibig_entry(
     Returns:
         new/modified mibig entry as `dict`
     """
-    mibig_entry = MibigEntry()
+    mibig_entry_object = MibigEntry()
 
     if existing_mibig is not None:
-        mibig_entry.load_existing_entry(existing_mibig)
+        mibig_entry_object.load_existing_entry(existing_mibig)
     else:
-        mibig_entry.get_new_mibig_accession(args, ROOT)
-        mibig_entry.create_new_entry(args.curator, CURATION_ROUND)
+        mibig_entry_object.get_new_mibig_accession(args, ROOT)
+        mibig_entry_object.create_new_entry(args.curator, CURATION_ROUND)
 
-    mibig_entry.get_input()
+    mibig_entry_object.get_input()
 
-    return mibig_entry.export_attributes_to_dict()
+    return mibig_entry_object.export_dict()
+
+
+def get_ripp(mibig_entry: Dict) -> Dict:
+    """Collect data related to RiPPs.
+
+    Parameters:
+        `mibig_entry` : MIBiG entry as `dict`
+
+    Returns:
+        new/modified mibig entry as `dict`
+    """
+    if "RiPP" not in mibig_entry["cluster"]["biosyn_class"]:
+        print("Cannot add information if 'biosynthetic class' is not RiPP!")
+        return mibig_entry
+    else:
+        ripp_object = Ripp(mibig_entry)
+
+        try:
+            ripp_object.mibig_dict["cluster"]["ripp"]
+        except KeyError:
+            ripp_object.initialize_ripp_entry()
+
+        ripp_object.get_input()
+
+        return ripp_object.export_dict()
+
+
+def get_optional_data(mibig_entry: Dict) -> Dict:
+    """Collect optional data on RiPPs.
+
+    Parameters:
+        `mibig_entry` : MIBiG entry as `dict`
+
+    Returns:
+        new/modified mibig entry as `dict`
+
+    Notes:
+        Expand here for additional data input
+    """
+    input_message = (
+        "================================================\n"
+        "Modify the optional information of a MIBiG entry:\n"
+        "Enter a number and press enter.\n"
+        "Press 'Ctrl+D' to cancel without saving.\n"
+        "================================================\n"
+        "0) Save and continue\n"
+        "1) RiPP Annotation (experimental)\n"
+        "================================================\n"
+    )
+
+    while True:
+        user_input = input(input_message)
+
+        if user_input == "0":
+            break
+        elif user_input == "1":
+            mibig_entry = get_ripp(mibig_entry)
+            continue
+        else:
+            print("Invalid input provided")
+            continue
+
+    return mibig_entry
 
 
 def get_changelog(
@@ -59,7 +124,7 @@ def get_changelog(
     args: argparse.Namespace,
     CURATION_ROUND: str,
 ) -> Dict:
-    """Collect information for a minimal MIBiG entry
+    """Collect information for a minimal MIBiG entry.
 
     Parameters:
         `mibig_entry` : MIBiG entry as `dict`
@@ -69,16 +134,16 @@ def get_changelog(
     Returns:
         new/modified mibig entry as `dict`
     """
-    modify_changelog = Changelog(args.curator, CURATION_ROUND)
+    changelog_object = Changelog(args.curator, CURATION_ROUND)
 
     if mibig_entry["changelog"][-1]["version"] != CURATION_ROUND:
-        return modify_changelog.create_new_entry_changelog(mibig_entry)
+        return changelog_object.create_new_entry_changelog(mibig_entry)
     else:
-        return modify_changelog.append_last_entry_changelog(mibig_entry)
+        return changelog_object.append_last_entry_changelog(mibig_entry)
 
 
 def export_mibig_entry(mibig_entry: Dict, path_existing: Path, ROOT: Path) -> None:
-    """Concatenate information and create/modify a MIBiG entry
+    """Concatenate information and create/modify a MIBiG entry.
 
     Parameters:
         `mibig_dict` : `dict` containing the mibig entry information
@@ -110,11 +175,11 @@ def export_mibig_entry(mibig_entry: Dict, path_existing: Path, ROOT: Path) -> No
             .with_suffix(".json")
         )
         write_mibig.export_to_json(new_entry_path)
-        print("New entry successfully created.")
+        print("New entry validated and successfully created.")
         write_mibig.append_to_csv_existing(ROOT)
     else:
         write_mibig.export_to_json(path_existing)
-        print("Existing entry successfully modified.")
+        print("Existing entry validated and successfully modified.")
 
     return
 
@@ -146,7 +211,7 @@ def main() -> None:
 
     mibig_entry = get_mibig_entry(existing_mibig, args, ROOT, CURATION_ROUND)
 
-    # EXPAND HERE FOR ADDITIONAL DATA ENTRIES
+    mibig_entry = get_optional_data(mibig_entry)
 
     mibig_entry = get_changelog(mibig_entry, args, CURATION_ROUND)
 

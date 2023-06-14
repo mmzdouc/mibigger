@@ -1201,6 +1201,36 @@
                         "subclass": {
                             "title": "RiPP subclass",
                             "type": "string"
+                        },
+                        "mod_precursor_pep": {
+                            "items": {
+                                "additionalProperties": false,
+                                "properties": {
+                                    "gene_id": {
+                                        "pattern": "^[^, ]*$",
+                                        "title": "Gene ID",
+                                        "type": "string"
+                                    },
+                                    "peptide": {
+                                        "title": "The modified precursor peptide sequence",
+                                        "type": "string"
+                                    },
+                                    "name": {
+                                        "title": "The name of the final product",
+                                        "type": "string"
+                                    }
+                                },
+                                "required": [
+                                    "gene_id",
+                                    "peptide",
+                                    "name"
+                                ],
+                                "title": "Modified RiPP precursor peptide",
+                                "type": "object"
+                            },
+                            "minItems": 1,
+                            "title": "Shorthand notation for modified RiPP precursor peptides",
+                            "type": "array"
                         }
                     },
                     "title": "RiPP-specific parameters",

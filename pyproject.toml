@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "mibig-input-script"
 description = "Script to create and manipulate MIBiG entries"
-version = "0.3.0"
+version = "0.4.0"
 dynamic = ["dependencies"]
 
 [tool.hatch.metadata.hooks.requirements_txt]
