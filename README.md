@@ -30,10 +30,10 @@ additional information is planned for future releases
 - **base** (essential information)
 - **changelog** (writes changelog)
 - **write_mibig** (validates and writes MIBiG json files)
+- **ripp** (detailed information on RiPPs) - partially implemented
 
 **Planned** modules are:
 - **compound** (detailed information on compound(s), such as SMILES)
-- **ripp** (detailed information on RiPPs)
 - **gene_annotation** (annotation of individual genes)
 
 

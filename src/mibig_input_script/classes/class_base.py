@@ -18,9 +18,11 @@ class BaseClass:
     more specialized downstream classes.
 
     Attributes:
-        None
+        allowed_bioactiv (List) : allowed biological activities
 
     Methods:
+        message_formatted(self: Self, string: str) -> None
+            Print a formatted message
         error_message_formatted(self: Self, string: str) -> None
             Print a formatted error message.
         ask_proceed_input(self: Self) -> None
@@ -29,6 +31,78 @@ class BaseClass:
             Get reference and test for correct format.
 
     """
+
+    const_allowed_bioactiv: List = [
+        "adhesion",
+        "anthelmintic",
+        "antialgal",
+        "antibacterial",
+        "anticancer",
+        "anticoccidial",
+        "antifungal",
+        "antiinflammatory",
+        "antimalarial",
+        "antineoplastic",
+        "antioomycete",
+        "antioxidant",
+        "antiparasidal",
+        "antiplasmodial",
+        "antiproliferative",
+        "antiprotozoal",
+        "antitubulin",
+        "antitumor",
+        "antiviral",
+        "biofilm",
+        "carbon storage",
+        "cell differentiation",
+        "cell envelope",
+        "cell protectant",
+        "cell wall",
+        "cold stress",
+        "cyst formation",
+        "cytotoxic",
+        "denitrificative",
+        "dermatotoxic",
+        "DNA-interfering",
+        "emulsifier",
+        "enterotoxic",
+        "exopolysaccharide",
+        "extracelluar capsule",
+        "flavor",
+        "fluorescent",
+        "hemolytic",
+        "hepatotoxic",
+        "herbicidal",
+        "immunomodulatory",
+        "immunosuppressive",
+        "inducer",
+        "inhibitor",
+        "insecticidal",
+        "ionophore",
+        "iron reducing",
+        "irritant",
+        "morphogen",
+        "neuroprotective",
+        "neurotoxic",
+        "nitrogen reduction",
+        "odorous metabolite",
+        "osmolytic",
+        "phytotoxic",
+        "pigment",
+        "predation",
+        "radical scavenging",
+        "regulatory",
+        "siderophore",
+        "signalling",
+        "sodium channel blocking",
+        "surfactant",
+        "swarming motility",
+        "toxic",
+        "tumor promoter",
+        "UV protective",
+        "vesicant",
+        "virulence factor",
+    ]
 
     def __init__(self: Self):
         """Initialize class attributes.
@@ -40,6 +114,24 @@ class BaseClass:
             None
         """
         pass
+
+    def message_formatted(self: Self, string: str) -> None:
+        """Print a formatted message.
+
+        Parameters:
+            `self` : The instance of class Minimal.
+            `string` : input to customize message
+
+        Returns:
+            None
+        """
+        message = (
+            "================================================\n"
+            f"{string}.\n"
+            "================================================\n"
+        )
+        print(message)
+        return
 
     def error_message_formatted(self: Self, string: str) -> None:
         """Print a formatted error message.
@@ -54,19 +146,19 @@ class BaseClass:
         error_message = (
             "++++++++++++++++++++++++++++++++++++++++++++++++\n"
             f"ERROR: {string}.\n"
-            "++++++++++++++++++++++++++++++++++++++++++++++++\n"
+            "++++++++++++++++++++++++++++++++++++++++++++++++"
         )
         print(error_message)
         return
 
-    def ask_proceed_input(self: Self) -> None:
+    def ask_proceed_input(self: Self) -> bool:
         """Ask user to proceed/stop.
 
         Parameters:
             `self` : The instance of class BaseClass.
 
         Returns:
-            None
+            A bool from user input
         """
         alert_message = (
             "================================================\n"
@@ -77,14 +169,12 @@ class BaseClass:
             user_input = input(alert_message)
 
             if user_input == "no":
-                print("Abort process.")
-                quit()
+                return False
             elif user_input == "yes":
-                break
+                return True
             else:
                 print("Please type 'yes' or 'no'.")
-
-        return
+                continue
 
     def get_reference(self: Self) -> List | None:
         """Get reference and test for correct format.

@@ -31,7 +31,6 @@ class MibigEntry(BaseClass):
             ) -> None
         create_new_entry(self: Self, curator: str, CURATION_ROUND: str) -> None
         load_existing_entry(self: Self, existing: Dict) -> None
-        generate_selection_menu_message(self: Self) -> str
         get_input(self: Self) -> None
         get_biosynth_class(self: Self) -> None
         get_compound_name(self: Self) -> None
@@ -160,51 +159,6 @@ class MibigEntry(BaseClass):
 
         return
 
-    def generate_selection_menu_message(self: Self) -> str:
-        """Prints message for selection menu.
-
-        Parameters:
-            `self` : The instance of class MibigEntry.
-
-        Returns:
-            String for selection menu
-        """
-        biosyn_class = self.mibig_dict["cluster"]["biosyn_class"]
-        compounds = [
-            self.mibig_dict["cluster"]["compounds"][i]["compound"]
-            for i in range(len(self.mibig_dict["cluster"]["compounds"]))
-        ]
-        accession = self.mibig_dict["cluster"]["loci"]["accession"]
-        start_coord = self.mibig_dict["cluster"]["loci"]["start_coord"]
-        end_coord = self.mibig_dict["cluster"]["loci"]["end_coord"]
-        organism_name = self.mibig_dict["cluster"]["organism_name"]
-        ncbi_tax_id = self.mibig_dict["cluster"]["ncbi_tax_id"]
-        publications = self.mibig_dict["cluster"]["publications"]
-        try:
-            evidence = self.mibig_dict["cluster"]["loci"]["evidence"]
-        except KeyError:
-            evidence = "None"
-
-        line_3 = "NCBI Accession number, start/end coordinates"
-        line_4 = "Organism name, NCBI Taxonomy ID"
-
-        input_message = (
-            "================================================\n"
-            "Modify the minimum information of a MIBiG entry:\n"
-            "Enter a number and press enter.\n"
-            "Press 'Ctrl+D' to cancel without saving.\n"
-            "================================================\n"
-            "0) Save and continue\n"
-            f"1) Biosynthetic class(es) (currently: {biosyn_class})\n"
-            f"2) Compound name(s) (currently: {compounds})\n"
-            f"3) {line_3} (currently: {accession}, {start_coord}:{end_coord})\n"
-            f"4) {line_4} (currently: {organism_name}, {ncbi_tax_id})\n"
-            f"5) BGC evidence (currently: {evidence})\n"
-            f"6) Publication/reference (currently: {publications})\n"
-            f"================================================\n"
-        )
-        return input_message
-
     def get_input(self: Self) -> None:
         """Handle methods for user input and data validation.
 
@@ -224,7 +178,40 @@ class MibigEntry(BaseClass):
         }
 
         while True:
-            input_message = self.generate_selection_menu_message()
+            biosyn_class = self.mibig_dict["cluster"]["biosyn_class"]
+            compounds = [
+                self.mibig_dict["cluster"]["compounds"][i]["compound"]
+                for i in range(len(self.mibig_dict["cluster"]["compounds"]))
+            ]
+            accession = self.mibig_dict["cluster"]["loci"]["accession"]
+            start_coord = self.mibig_dict["cluster"]["loci"]["start_coord"]
+            end_coord = self.mibig_dict["cluster"]["loci"]["end_coord"]
+            organism_name = self.mibig_dict["cluster"]["organism_name"]
+            ncbi_tax_id = self.mibig_dict["cluster"]["ncbi_tax_id"]
+            publications = self.mibig_dict["cluster"]["publications"]
+            try:
+                evidence = self.mibig_dict["cluster"]["loci"]["evidence"]
+            except KeyError:
+                evidence = "None"
+
+            input_message = (
+                "================================================\n"
+                "Modify the minimum information of a MIBiG entry:\n"
+                "Enter a number and press enter.\n"
+                "Press 'Ctrl+D' to cancel without saving.\n"
+                "================================================\n"
+                "0) Save and continue\n"
+                f"1) Biosynthetic class(es) (currently: {biosyn_class})\n"
+                f"2) Compound name(s) (currently: {compounds})\n"
+                "3) NCBI Accession number, start:end coordinates "
+                f"(currently: '{accession}', '{start_coord}:{end_coord}')\n"
+                "4) Organism name, NCBI Taxonomy ID"
+                f"(currently: '{organism_name}', '{ncbi_tax_id}')\n"
+                f"5) BGC evidence (currently: {evidence})\n"
+                f"6) Publication/reference (currently: {publications})\n"
+                f"================================================\n"
+            )
+
             user_input = input(input_message)
 
             if user_input == "0":
@@ -303,30 +290,283 @@ class MibigEntry(BaseClass):
         Returns:
             None
         """
-        input_message = (
+        number_invar_menu_entries = 3
+
+        while True:
+            input_message_list = [
+                (
+                    "================================================\n"
+                    "Add new compound or modify existing ones:\n"
+                    "Enter a number and press enter.\n"
+                    "================================================\n"
+                    "0) Save and continue\n"
+                    "1) Add a new entry\n"
+                    "2) Delete an entry\n"
+                )
+            ]
+
+            counter = 3
+
+            for entry in range(len(self.mibig_dict["cluster"]["compounds"])):
+                input_message_list.append(
+                    (
+                        f"{counter}) "
+                        f"{self.mibig_dict['cluster']['compounds'][entry]['compound']}"
+                        f"\n"
+                    )
+                )
+                counter += 1
+
+            input_message_list.append(
+                ("================================================\n")
+            )
+
+            input_message = "".join([i for i in input_message_list])
+
+            input_raw = input(input_message)
+
+            if input_raw == "":
+                self.error_message_formatted("Invalid input provided")
+                continue
+            elif input_raw == "0":
+                break
+            elif input_raw == "1":
+                self.get_compound_entry(input_raw)
+                continue
+            elif input_raw == "2":
+                self.remove_compound_entry(number_invar_menu_entries)
+                continue
+            else:
+                try:
+                    input_raw = int(input_raw) - number_invar_menu_entries
+                except ValueError:
+                    self.error_message_formatted("Invalid input provided")
+                    continue
+                if 0 <= input_raw <= len(self.mibig_dict["cluster"]["compounds"]):
+                    self.get_compound_entry(input_raw)
+                    continue
+                else:
+                    self.error_message_formatted("Invalid input provided")
+                    continue
+
+        return
+
+    def remove_compound_entry(self: Self, number_invar_menu_entries: int) -> None:
+        """Remove a compound from the MIBiG entry.
+
+        Parameters:
+            `self` : The instance of class RiPP.
+
+        Returns:
+            None
+
+        Notes:
+        """
+        input_msg_number = (
             "================================================\n"
-            "Enter the compound names associated with the BGC.\n"
+            "Enter the number of compound to remove (a single one):\n"
+            "================================================\n"
+        )
+
+        input_number = input(input_msg_number)
+
+        try:
+            input_number = int(input_number)
+        except ValueError:
+            self.error_message_formatted("Invalid input value")
+            return
+
+        input_number = input_number - number_invar_menu_entries
+
+        if 0 <= input_number <= len(self.mibig_dict["cluster"]["compounds"]):
+            if self.ask_proceed_input():
+                self.mibig_dict["cluster"]["compounds"].pop(input_number)
+                return
+            else:
+                return
+        else:
+            self.error_message_formatted("Entry not found")
+            return
+
+    def get_compound_entry(self: Self, index: int | str) -> None:
+        """Get information on compound.
+
+        Parameters:
+            `self` : The instance of class RiPP.
+            `str` to create a new entry (append), `int` to replace existing.
+
+        Returns:
+            None
+
+        Notes:
+            If `index` is `str`, then a new entry is written (appended).
+            If `index` is `int`, an existing entry is modified (overwritten).
+        """
+        input_msg_name = (
+            "================================================\n"
+            "Enter the compound name (a single one):\n"
+            "================================================\n"
+        )
+
+        input_msg_synonym = (
+            "================================================\n"
+            "Enter synonym name(s) (to SKIP, press enter):\n"
             "To specify multiple names, separate entries with a TAB character.\n"
             "================================================\n"
         )
-        input_raw = input(input_message)
-        user_input = list(filter(None, input_raw.split("\t")))
 
-        if len(user_input) == 0:
+        input_msg_structure = (
+            "================================================\n"
+            "Enter a single compound structure as SMILES string:\n"
+            "(Please create separate entries for congeners)\n"
+            "================================================\n"
+        )
+
+        input_msg_evidence = (
+            "================================================\n"
+            "Enter the structural evidence for the chemical structure:\n"
+            "(Enter one or more numbers separated by a TAB character and press enter)\n"
+            "================================================\n"
+            "1) X-ray crystallography\n"
+            "2) Nuclear Magnetic Resonance (NMR) spectroscopy\n"
+            "3) (Tandem) mass spectrometry (MS/MS)\n"
+            "4) Prediction/other\n"
+            "================================================\n"
+        )
+
+        evidence_options = {
+            "1": "X-ray",
+            "2": "NMR",
+            "3": "MS/MS",
+            "4": "Other",
+        }
+
+        input_msg_activity = [
+            (
+                "================================================\n"
+                "Enter the biological activities (to SKIP, press enter):\n"
+                "(Enter one or more activities separated by a TAB character and press enter)\n"
+                "================================================\n"
+            )
+        ]
+        for option in self.const_allowed_bioactiv:
+            input_msg_activity.append(f"- {option}\n")
+        input_msg_activity.append("================================================\n")
+        input_msg_activity = "".join([i for i in input_msg_activity])
+
+        compound_regexp = r"^[a-zA-Zα-ωΑ-Ω0-9\[\]\'()/&,. +-]+$"
+        smiles_regexp = r"^[\[\]a-zA-Z0-9@()=\\/\\#+.%*-]+$"
+
+        input_name = input(input_msg_name)
+        if input_name == "":
+            self.error_message_formatted("Empty input value")
+            return
+        elif not re.match(compound_regexp, input_name):
+            self.error_message_formatted(f"Invalid compound name '{input_name}'")
+            return
+        else:
+            pass
+
+        input_synonym = input(input_msg_synonym)
+        input_synonym = list(filter(None, input_synonym.split("\t")))
+        if len(input_synonym) == 0:
+            self.message_formatted("Empty input value - SKIP")
+            input_synonym = None
+        else:
+            input_synonym_set = set()
+            for entry in input_synonym:
+                if not re.match(compound_regexp, entry):
+                    self.error_message_formatted(f"Invalid compound name '{entry}'")
+                    return
+                else:
+                    input_synonym_set.add(entry)
+            input_synonym = list(input_synonym_set)
+
+        input_structure = input(input_msg_structure)
+        if input_structure == "":
+            self.error_message_formatted("Empty input value")
+            return
+        elif not re.match(smiles_regexp, input_structure):
+            self.error_message_formatted("Invalid SMILES string. Please check again'")
+            return
+        else:
+            pass
+
+        input_evidence = input(input_msg_evidence)
+        input_evidence = list(filter(None, input_evidence.split("\t")))
+        if len(input_evidence) == 0:
             self.error_message_formatted("Empty input value")
             return
         else:
-            compounds = set()
-            for entry in user_input:
-                compounds.add(entry)
+            input_evidence_set = set()
+            for entry in input_evidence:
+                try:
+                    int(entry)
+                except ValueError:
+                    self.error_message_formatted(f"Input '{entry}' is not a number")
+                    return
+                if int(entry) not in [1, 2, 3, 4]:
+                    self.error_message_formatted(f"Input '{entry}' not valid")
+                    return
+                else:
+                    input_evidence_set.add(evidence_options[entry])
+            input_evidence = list(input_evidence_set)
 
-            compounds = list(compounds)
-            self.mibig_dict["cluster"]["compounds"] = []
-            for entry in range(len(compounds)):
-                self.mibig_dict["cluster"]["compounds"].append(
-                    {"compound": compounds[entry]}
-                )
-            return
+        input_activity = input(input_msg_activity)
+        input_activity = list(filter(None, input_activity.split("\t")))
+        if len(input_activity) == 0:
+            self.message_formatted("Empty input value - SKIP")
+            input_activity = None
+        else:
+            input_activity_set = set()
+            for entry in input_activity:
+                if entry not in self.const_allowed_bioactiv:
+                    self.error_message_formatted(f"Invalid bioactivity '{entry}'")
+                    return
+                else:
+                    input_activity_set.add(entry)
+            input_activity = list(input_activity_set)
+
+        # add target
+        if isinstance(index, str):
+            self.mibig_dict["cluster"]["compounds"].append(
+                {
+                    "compound": input_name,
+                    "chem_struct": input_structure,
+                    "evidence": input_evidence,
+                }
+            )
+            if input_synonym is not None:
+                self.mibig_dict["cluster"]["compounds"][-1][
+                    "chem_synonyms"
+                ] = input_synonym
+            if input_activity is not None:
+                self.mibig_dict["cluster"]["compounds"][-1]["chem_acts"] = []
+                for i in range(len(input_activity)):
+                    self.mibig_dict["cluster"]["compounds"][-1]["chem_acts"].append(
+                        {"activity": input_activity[i]}
+                    )
+
+        elif isinstance(index, int):
+            self.mibig_dict["cluster"]["compounds"][index] = {
+                "compound": input_name,
+                "chem_struct": input_structure,
+                "evidence": input_evidence,
+            }
+            if input_synonym is not None:
+                self.mibig_dict["cluster"]["compounds"][index][
+                    "chem_synonyms"
+                ] = input_synonym
+            if input_activity is not None:
+                self.mibig_dict["cluster"]["compounds"][index]["chem_acts"] = []
+                for i in range(len(input_activity)):
+                    self.mibig_dict["cluster"]["compounds"][index]["chem_acts"].append(
+                        {"activity": input_activity[i]}
+                    )
+        else:
+            pass
+
+        return
 
     def get_ncbi_accession(self: Self) -> Dict:
         """Get the NCBI accession number, test if valid.
@@ -342,7 +582,8 @@ class MibigEntry(BaseClass):
         """
         input_msg_accession = (
             "================================================\n"
-            "Enter the NCBI Accession number (ESearch retrieval takes a few seconds).\n"
+            "Enter the NCBI Accession number "
+            "(ESearch retrieval takes a few seconds).\n"
             "================================================\n"
         )
 
@@ -402,6 +643,18 @@ class MibigEntry(BaseClass):
         elif len(input_accession) < 5:
             self.error_message_formatted("Accession number too short")
             return ncbi_data
+        elif re.search(r"_", input_accession):
+            self.error_message_formatted(
+                (
+                    f"{input_accession} is a RefSeq record.\n"
+                    "Is is recommended to not enter RefSeq records into MIBiG.\n"
+                    "Please consider using a GenBank accession number"
+                )
+            )
+            if self.ask_proceed_input():
+                pass
+            else:
+                return ncbi_data
         else:
             try:
                 ncbi_record = Entrez.read(

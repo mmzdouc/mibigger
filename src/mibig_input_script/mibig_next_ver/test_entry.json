@@ -35,11 +35,15 @@
                 "Changes (MMZ 13-06-2023 13:47)",
                 "changes (MMZ 13-06-2023 13:58)",
                 "Added entry for fakomycin (MMZ 14-06-2023 17:05)",
-                "Added the modified precursor peptide (MMZ 14-06-2023 17:33)"
+                "Added the modified precursor peptide (MMZ 14-06-2023 17:33)",
+                "ahaha (MMZ 16-06-2023 10:17)",
+                "Added new compound (MMZ 16-06-2023 13:59)",
+                "Changed entry name (MMZ 16-06-2023 14:01)",
+                "Removed fakomycin (MMZ 16-06-2023 14:46)"
             ],
             "contributors": [
-                "JCNM",
-                "MMZ"
+                "MMZ",
+                "JCNM"
             ],
             "version": "next"
         }
@@ -141,14 +145,7 @@
                     "gene_id": "GEA64_RS05020"
                 }
             ],
-            "subclass": "Other",
-            "mod_precursor_pep": [
-                {
-                    "gene_id": "GEA64_RS05020",
-                    "peptide": "MHNTLNETVKTQEALNSLAASFKETELSITDKALNELSNKPKIPEITA-WNWSKSF-QEI",
-                    "name": "darobactin A"
-                }
-            ]
+            "subclass": "Other"
         },
         "status": "active"
     }

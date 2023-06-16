@@ -10,12 +10,14 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ### Added
 
-- Ripp class partially implemented. Allows to add RiPP-specific elements. Input functions for "peptidases" and "precursor genes" are still missing
+- Ripp class partially implemented.
 
 ### Changed
 
 - Changed structure of main() to accommodate optional input data
-- Changed json schema to allow the entry "mod_precursor_pep". Allows to add the modified precursor peptide.
+- Introduced warning when a RefSeq entry is specified
+- Added support for SMILES, compound synonym names, compound evidence
+- Specified allowed entries/regular expressions to Base() class for inheritance
 
 
 ## [0.3.0] 12-06-2023
