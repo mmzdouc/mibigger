@@ -39,7 +39,8 @@
                 "ahaha (MMZ 16-06-2023 10:17)",
                 "Added new compound (MMZ 16-06-2023 13:59)",
                 "Changed entry name (MMZ 16-06-2023 14:01)",
-                "Removed fakomycin (MMZ 16-06-2023 14:46)"
+                "Removed fakomycin (MMZ 16-06-2023 14:46)",
+                "fakemycin (MMZ 17-06-2023 15:58)"
             ],
             "contributors": [
                 "MMZ",
@@ -72,6 +73,14 @@
                 "mass_spec_ion_type": "[M+H]+",
                 "mol_mass": 965.4032,
                 "molecular_formula": "C47H55N11O12"
+            },
+            {
+                "compound": "fakemycin",
+                "chem_targets": [
+                    {
+                        "target": "BamA BamB BamC"
+                    }
+                ]
             }
         ],
         "genes": {

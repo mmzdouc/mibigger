@@ -17,6 +17,15 @@ class BaseClass:
     input testing are organized in this class for inheritance by
     more specialized downstream classes.
 
+    All class attributes start with `const_` to distinguish them (defined
+    in single place to be able to adjust centrally)
+
+    Class attributes:
+        const_allowed_bioactiv (List) : allowed bioactivities
+        const_compound_regexp (str) : regexp allowed compound name format
+        const_smiles_regexp (str) : regexp SMILES format
+        const_compound_evidence (str) : allowed compound evidence categories
+
     Attributes:
         allowed_bioactiv (List) : allowed biological activities
 
@@ -104,6 +113,37 @@ class BaseClass:
         "virulence factor",
     ]
 
+    const_compound_regexp = r"^[a-zA-Zα-ωΑ-Ω0-9\[\]\'()/&,. +-]+$"
+    const_smiles_regexp = r"^[\[\]a-zA-Z0-9@()=\\/\\#+.%*-]+$"
+    const_doi_regexp = r"10\.\d{4,9}/[-\._;()/:a-zA-Z0-9]+"
+    const_pubmed_id_regexp = r"\d+"
+    const_url_regexp = r"https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)"
+
+    const_compound_evidence = {
+        "1": "X-ray",
+        "2": "NMR",
+        "3": "MS/MS",
+        "4": "Other",
+    }
+
+    const_biosyn_classes = {
+        "1": "Alkaloid",
+        "2": "Polyketide",
+        "3": "RiPP",
+        "4": "NRP",
+        "5": "Saccharide",
+        "6": "Terpene",
+        "7": "Other",
+    }
+
+    const_bgc_evidence = {
+        "1": "Gene expression correlated with compound production",
+        "2": "Knock-out studies",
+        "3": "Enzymatic assays",
+        "4": "Heterologous expression",
+        "5": "In vitro expression",
+    }
+
     def __init__(self: Self):
         """Initialize class attributes.
 
@@ -175,96 +215,3 @@ class BaseClass:
             else:
                 print("Please type 'yes' or 'no'.")
                 continue
-
-    def get_reference(self: Self) -> List | None:
-        """Get reference and test for correct format.
-
-        Parameters:
-            `self` : The instance of class BaseClass.
-
-        Returns:
-            A list of reference entries OR None.
-        """
-        input_msg_reference = (
-            "================================================\n"
-            "Choose which reference to add.\n"
-            "Separate multiple entries with a TAB character.\n"
-            "================================================\n"
-            "1) Digital Object Identifier (DOI - strongly preferred).\n"
-            "2) Pubmed ID.\n"
-            "3) Patent reference.\n"
-            "4) URL.\n"
-            "================================================\n"
-        )
-        input_msg_doi = (
-            "================================================\n"
-            "Enter a DOI.\n"
-            "================================================\n"
-        )
-        input_msg_pmid = (
-            "================================================\n"
-            "Enter a Pubmed ID.\n"
-            "================================================\n"
-        )
-        input_msg_patent = (
-            "================================================\n"
-            "Enter a patent reference.\n"
-            "================================================\n"
-        )
-        input_msg_url = (
-            "================================================\n"
-            "Enter an URL.\n"
-            "================================================\n"
-        )
-        regex_pattern = {
-            "doi": r"10\.\d{4,9}/[-\._;()/:a-zA-Z0-9]+",
-            "pmid": r"\d+",
-            "patent": r".+",
-            "url": r"https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)",
-        }
-
-        input_raw = input(input_msg_reference)
-        user_input = list(filter(None, input_raw.split("\t")))
-
-        if len(user_input) == 0:
-            self.error_message_formatted("Empty input value")
-            return None
-        else:
-            pass
-
-        reference = list()
-
-        for selection in user_input:
-            if selection == "1":
-                input_doi = input(input_msg_doi).replace(" ", "")
-                if match := re.search(regex_pattern["doi"], input_doi):
-                    reference.append("".join(["doi:", match.group(0)]))
-                else:
-                    self.error_message_formatted("DOI has the wrong fromat")
-                    return None
-            elif selection == "2":
-                input_pmid = input(input_msg_pmid).replace(" ", "")
-                if match := re.search(regex_pattern["pmid"], input_pmid):
-                    reference.append("".join(["pubmed:", match.group(0)]))
-                else:
-                    self.error_message_formatted("Pubmed ID has the wrong format")
-                    return None
-            elif selection == "3":
-                input_patent = input(input_msg_patent).replace(" ", "")
-                if match := re.search(regex_pattern["patent"], input_patent):
-                    reference.append("".join(["patent:", match.group(0)]))
-                else:
-                    self.error_message_formatted("Patent has the wrong format")
-                    return None
-            elif selection == "4":
-                input_url = input(input_msg_url).replace(" ", "")
-                if match := re.search(regex_pattern["url"], input_url):
-                    reference.append("".join(["url:", match.group(0)]))
-                else:
-                    self.error_message_formatted("URL has the wrong format")
-                    return None
-            else:
-                self.error_message_formatted("Invalid input provided")
-                return None
-
-        return reference
