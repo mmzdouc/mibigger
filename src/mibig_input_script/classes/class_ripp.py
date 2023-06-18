@@ -19,13 +19,16 @@ class Ripp(BaseClass):
 
     Methods:
         initialize_ripp_entry(self: Self) -> None
+        export_dict(self: Self) -> Dict
         set_flag_minimal_false(self: Self) -> None
         get_input(self: Self) -> None
         get_cyclic(self: Self) -> None
         get_subclass(self: Self) -> None
+
+
+
         get_mod_precursor_pep(self: Self) -> None
         get_precursor_peptide_entry(self: Self, index: int | str) -> None
-        export_dict(self: Self) -> Dict
 
     """
 
@@ -40,6 +43,17 @@ class Ripp(BaseClass):
             None
         """
         self.mibig_dict = deepcopy(mibig_entry)
+
+    def export_dict(self: Self) -> Dict:
+        """Summarize values in json-compatible dict.
+
+        Parameters:
+            `self` : The instance of class RiPP.
+
+        Returns:
+            A json-compatible dict of MIBiG entry
+        """
+        return deepcopy(self.mibig_dict)
 
     def initialize_ripp_entry(self: Self) -> None:
         """Initialize a minimal ripp entry in dict.
@@ -77,7 +91,7 @@ class Ripp(BaseClass):
         options = {
             "1": self.get_cyclic,
             "2": self.get_subclass,
-            "3": self.get_mod_precursor_pep,
+            "3": self.get_peptidases,
         }
 
         while True:
@@ -92,11 +106,9 @@ class Ripp(BaseClass):
                 subclass = "None"
 
             try:
-                mod_precursor_pep = len(
-                    self.mibig_dict["cluster"]["ripp"]["mod_precursor_pep"]
-                )
+                peptidases = self.mibig_dict["cluster"]["ripp"]["peptidases"]
             except KeyError:
-                mod_precursor_pep = "None"
+                peptidases = "None"
 
             input_message = (
                 "================================================\n"
@@ -107,7 +119,7 @@ class Ripp(BaseClass):
                 "0) Save and continue\n"
                 f"1) Cyclic (currently: '{cyclic}')\n"
                 f"2) RiPP subclass (currently: '{subclass}')\n"
-                f"3) Modified precursor peptides (currently: '{mod_precursor_pep}')\n"
+                f"3) RiPP-cleaving peptidases (currently: '{peptidases}')\n"
                 "================================================\n"
             )
 
@@ -132,7 +144,7 @@ class Ripp(BaseClass):
         Returns:
             None
         """
-        input_message = (
+        input_msg_cyclic = (
             "================================================\n"
             "Is the RiPP cyclic (head-to-tail cyclized)?\n"
             "Enter a number and press enter.\n"
@@ -141,20 +153,16 @@ class Ripp(BaseClass):
             "2) Linear\n"
             "================================================\n"
         )
-
-        while True:
-            input_raw = input(input_message)
-            if input_raw == "1":
-                self.mibig_dict["cluster"]["ripp"]["cyclic"] = True
-                break
-            elif input_raw == "2":
-                self.mibig_dict["cluster"]["ripp"]["cyclic"] = False
-                break
-            else:
-                self.error_message_formatted("Invalid input provided")
-                continue
-
-        return
+        input_cyclic = input(input_msg_cyclic)
+        if input_cyclic == "1":
+            self.mibig_dict["cluster"]["ripp"]["cyclic"] = True
+            return
+        elif input_cyclic == "2":
+            self.mibig_dict["cluster"]["ripp"]["cyclic"] = False
+            return
+        else:
+            self.error_message_formatted("Invalid input provided")
+            return
 
     def get_subclass(self: Self) -> None:
         """Get input which subclass of RiPP it is.
@@ -168,21 +176,54 @@ class Ripp(BaseClass):
         Note:
             May be extended to check for allowed subclasses in the future
         """
-        input_message = (
+        input_msg_subclass = (
             "================================================\n"
-            "Enter the subclass of the RiPP.\n"
+            "Enter the subclass of the RiPP (a single one).\n"
             "================================================\n"
         )
-        while True:
-            input_raw = input(input_message)
-            if input_raw == "":
-                self.error_message_formatted("Invalid input provided")
-                continue
-            else:
-                self.mibig_dict["cluster"]["ripp"]["subclass"] = input_raw
-                break
-        return
 
+        input_subclass = input(input_msg_subclass)
+        if input_subclass == "":
+            self.error_message_formatted("Invalid input provided")
+            return
+        else:
+            self.mibig_dict["cluster"]["ripp"]["subclass"] = input_subclass
+            return
+
+    def get_peptidases(self: Self) -> None:
+        """Get peptidase(s) involved in precursor cleavage.
+
+        Parameters:
+            `self` : The instance of class RiPP.
+
+        Returns:
+            None
+        """
+        input_msg_peptidases = (
+            "================================================\n"
+            "Enter the peptidase(s) involved in precursor cleavage.\n"
+            "To specify multiple entries, separate them with a TAB character.\n"
+            "================================================\n"
+        )
+        input_peptidases = input(input_msg_peptidases)
+        input_peptidases = list(filter(None, input_peptidases.split("\t")))
+
+        if len(input_peptidases) == 0:
+            self.error_message_formatted("Empty input value")
+            return
+        else:
+            peptidases_set = set()
+            for entry in input_peptidases:
+                peptidases_set.add(entry)
+            self.mibig_dict["cluster"]["ripp"]["peptidases"] = list(peptidases_set)
+            return
+
+    # get a list as input
+    # assign to a dict
+    # return
+    # add to selection screen
+
+    ####
     def get_mod_precursor_pep(self: Self) -> None:
         """Get input on the modified precursor peptide structure.
 
@@ -327,14 +368,3 @@ class Ripp(BaseClass):
             pass
 
         return
-
-    def export_dict(self: Self) -> Dict:
-        """Summarize values in json-compatible dict.
-
-        Parameters:
-            `self` : The instance of class RiPP.
-
-        Returns:
-            A json-compatible dict of MIBiG entry
-        """
-        return deepcopy(self.mibig_dict)

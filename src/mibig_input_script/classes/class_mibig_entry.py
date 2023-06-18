@@ -258,8 +258,9 @@ class MibigEntry(BaseClass):
         input_message = [
             (
                 "================================================\n"
+                "Enter the biosynthetic class of the BGC.\n",
                 "Separate multiple entries with a TAB character.\n"
-                "================================================\n"
+                "================================================\n",
             )
         ]
         for option in self.const_biosyn_classes:

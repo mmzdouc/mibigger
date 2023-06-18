@@ -40,11 +40,12 @@
                 "Added new compound (MMZ 16-06-2023 13:59)",
                 "Changed entry name (MMZ 16-06-2023 14:01)",
                 "Removed fakomycin (MMZ 16-06-2023 14:46)",
-                "fakemycin (MMZ 17-06-2023 15:58)"
+                "fakemycin (MMZ 17-06-2023 15:58)",
+                "Added RiPP-acting peptidase function (MMZ 18-06-2023 16:24)"
             ],
             "contributors": [
-                "MMZ",
-                "JCNM"
+                "JCNM",
+                "MMZ"
             ],
             "version": "next"
         }
@@ -154,7 +155,11 @@
                     "gene_id": "GEA64_RS05020"
                 }
             ],
-            "subclass": "Other"
+            "subclass": "Other",
+            "peptidases": [
+                "None",
+                "Unspecified"
+            ]
         },
         "status": "active"
     }

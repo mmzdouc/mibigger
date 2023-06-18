@@ -10,7 +10,8 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ### Added
 
-- Ripp class partially implemented.
+- Added optional input functions for RiPPs.
+- Added functions to RiPP class: cyclic, subclass, peptidases
 - Added support for SMILES, compound synonym names, compound evidence, biological activities, biological targets
 
 ### Changed
@@ -21,7 +22,6 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - Moved constants to Base class -> class attributes
 - Enabled multiple references per MIBiG entry
 - Removed support for patent references
-
 
 
 ## [0.3.0] 12-06-2023
