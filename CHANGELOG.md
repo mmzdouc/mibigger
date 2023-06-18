@@ -11,7 +11,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ### Added
 
 - Added optional input functions for RiPPs.
-- Added functions to RiPP class: cyclic, subclass, peptidases
+- Added functions to RiPP class: cyclic, subclass, peptidases, precursor peptides
 - Added support for SMILES, compound synonym names, compound evidence, biological activities, biological targets
 
 ### Changed

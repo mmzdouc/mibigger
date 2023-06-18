@@ -41,11 +41,12 @@
                 "Changed entry name (MMZ 16-06-2023 14:01)",
                 "Removed fakomycin (MMZ 16-06-2023 14:46)",
                 "fakemycin (MMZ 17-06-2023 15:58)",
-                "Added RiPP-acting peptidase function (MMZ 18-06-2023 16:24)"
+                "Added RiPP-acting peptidase function (MMZ 18-06-2023 16:24)",
+                "Added new precursor peptide (MMZ 18-06-2023 20:51)"
             ],
             "contributors": [
-                "JCNM",
-                "MMZ"
+                "MMZ",
+                "JCNM"
             ],
             "version": "next"
         }
@@ -151,6 +152,13 @@
                             "first_AA": 3,
                             "second_AA": 5
                         }
+                    ],
+                    "gene_id": "GEA64_RS05020"
+                },
+                {
+                    "leader_sequence": "MR",
+                    "core_sequence": [
+                        "YYH"
                     ],
                     "gene_id": "GEA64_RS05020"
                 }
