@@ -1,7 +1,7 @@
 """
-Module to load/crate mibig entry dict.
+Module to create or load/manipulate a mibig entry dict.
 
-For new wntries, creates a new mibig_entry dict.
+For new entries, creates a new mibig_entry dict.
 For existing entries, creates a deep copy of the original entry and
 modifies it directly in place. Returns a mibig entry dict that is consequently
 modified by downstream modules.
@@ -26,17 +26,32 @@ class MibigEntry(BaseClass):
         mibig_dict (Dict | None): existing/new data for MIBiG entry
 
     Methods:
-        get_new_mibig_accession(
-            self: Self, args: argparse.Namespace, ROOT: Path
-            ) -> None
+        get_new_mibig_accession(self: Self,args: argparse.Namespace,ROOT: Path) -> None
         create_new_entry(self: Self, curator: str, CURATION_ROUND: str) -> None
         load_existing_entry(self: Self, existing: Dict) -> None
         get_input(self: Self) -> None
         get_biosynth_class(self: Self) -> None
         get_compounds(self: Self) -> None
-        get_ncbi_accession(self: Self) -> Dict
-        get_coordinates(self: Self) -> Dict
-        get_accession_data(self: Self) -> None
+        remove_compound_entry(self: Self, number_invar_menu_entries: int) -> None
+        get_compound_entry(self: Self, index: int | str) -> None
+        write_compound_entry(
+            self: Self,
+            index: int,
+            input_synonym: List | None,
+            input_structure: str | None,
+            input_activity: List | None,
+            input_evidence: List | None,
+            input_target: List | None,
+        ) -> None
+        get_compound_name(self: Self) -> str | bool
+        get_compound_synonym(self: Self) -> List | bool | None
+        get_compound_smiles(self: Self) -> str | bool | None
+        get_compound_evidence(self: Self) -> List | bool | None
+        get_compound_activity(self: Self) -> List | bool | None
+        get_compound_targets(self: Self) -> List | None
+        get_ncbi_data(self: Self) -> None
+        get_ncbi_accession(self: Self) -> str | None
+        get_coordinates(self: Self) -> Dict | None
         get_organism_data(self: Self) -> None
         get_evidence(self: Self) -> None
         get_reference(self: Self) -> None
@@ -171,7 +186,7 @@ class MibigEntry(BaseClass):
         options = {
             "1": self.get_biosynth_class,
             "2": self.get_compounds,
-            "3": self.get_accession_data,
+            "3": self.get_ncbi_data,
             "4": self.get_organism_data,
             "5": self.get_evidence,
             "6": self.get_reference,
@@ -269,7 +284,7 @@ class MibigEntry(BaseClass):
             return
 
     def get_compounds(self: Self) -> None:
-        """Get the compound name(s).
+        """Get the compound entries.
 
         Parameters:
             `self` : The instance of class MibigEntry.
@@ -631,12 +646,7 @@ class MibigEntry(BaseClass):
         else:
             input_evidence_set = set()
             for entry in input_evidence:
-                try:
-                    int(entry)
-                except ValueError:
-                    self.error_message_formatted(f"Input '{entry}' is not a number")
-                    return False
-                if int(entry) not in [1, 2, 3, 4]:
+                if entry not in self.const_compound_evidence:
                     self.error_message_formatted(f"Input '{entry}' not valid")
                     return False
                 else:
@@ -706,14 +716,76 @@ class MibigEntry(BaseClass):
                 input_target_set.add(entry)
             return list(input_target_set)
 
-    def get_ncbi_accession(self: Self) -> Dict:
+    def get_ncbi_data(self: Self) -> None:
+        """Get the NCBI accession number, test if valid, get auxiliary info.
+
+        Parameters:
+            `self` : The instance of class MibigEntry.
+
+        Returns:
+            None
+        """
+        ncbi_record = None
+
+        input_accession = self.get_ncbi_accession()
+
+        if input_accession is not None:
+            try:
+                ncbi_record = Entrez.read(
+                    Entrez.efetch(db="nuccore", id=input_accession, retmode="xml")
+                )
+            except HTTPError:
+                self.error_message_formatted(
+                    "EFetch retrieval failed: invalid accession"
+                )
+                return
+            self.mibig_dict["cluster"]["loci"]["accession"] = input_accession
+        else:
+            return
+
+        if ncbi_record is not None:
+            try:
+                self.mibig_dict["cluster"]["organism_name"] = ncbi_record[0][
+                    "GBSeq_source"
+                ]
+            except KeyError:
+                self.error_message_formatted(
+                    "Organism name not found in Accession. Please add manually."
+                )
+            try:
+                tax_record = Entrez.read(
+                    Entrez.esearch(db="taxonomy", term=ncbi_record[0]["GBSeq_source"])
+                )
+                if tax_record["IdList"]:
+                    self.mibig_dict["cluster"]["ncbi_tax_id"] = str(
+                        tax_record["IdList"][0]
+                    )
+                else:
+                    self.error_message_formatted("No NCBI taxonomy ID found")
+            except HTTPError:
+                self.error_message_formatted(
+                    "Search for NCBI Taxonomy ID via organism name failed. Please add manually."
+                )
+        else:
+            pass
+
+        coordinates = self.get_coordinates()
+        if coordinates is not None:
+            self.mibig_dict["cluster"]["loci"]["start_coord"] = coordinates["start"]
+            self.mibig_dict["cluster"]["loci"]["end_coord"] = coordinates["end"]
+        else:
+            return
+
+        return
+
+    def get_ncbi_accession(self: Self) -> str | None:
         """Get the NCBI accession number, test if valid.
 
         Parameters:
             `self` : The instance of class MibigEntry.
 
         Returns:
-            A `dict` of variables assigned
+            NCBI accession number as a string
 
         Notes:
             Test suite originally assembled by Barbara Terlouw
@@ -721,66 +793,46 @@ class MibigEntry(BaseClass):
         input_msg_accession = (
             "================================================\n"
             "Enter the NCBI Accession number "
-            "(ESearch retrieval takes a few seconds).\n"
+            "(EFetch retrieval takes a few seconds).\n"
             "================================================\n"
         )
-
-        accession_regex = r"^([A-Za-z0-9_]{3,}\.\d)|(MIBIG\.BGC\d{7}\.\d)$"
-
-        illegal_chars = [
-            ",",
-            "-",
-            "|",
-            "/",
-        ]
-
-        ncbi_data = {
-            "ncbi_accession": "None",
-            "ncbi_organism_name": "None",
-            "ncbi_tax_id": "None",
-        }
 
         input_accession = input(input_msg_accession).replace(" ", "")
 
         if input_accession == "":
             self.error_message_formatted("Empty input value")
-            return ncbi_data
-        elif any(char in input_accession for char in illegal_chars):
-            for char in illegal_chars:
+            return None
+        elif any(char in input_accession for char in self.const_ncbi_acc_illegal_chars):
+            for char in self.const_ncbi_acc_illegal_chars:
                 if char in input_accession:
-                    self.error_message_formatted(
-                        f"Illegal character '{char}' in NCBI accession number"
-                    )
-                    return ncbi_data
+                    self.error_message_formatted(f"Illegal character '{char}'")
+                    return None
+                else:
+                    pass
         elif any(input_accession.startswith(chars) for chars in ["GCF_", "GCA_"]):
             self.error_message_formatted(f"{input_accession} is an assembly ID")
-            return ncbi_data
+            return None
         elif input_accession.startswith("SRR"):
             self.error_message_formatted(
                 f"{input_accession} is a SRA record, please enter an assembled contig"
             )
-            return ncbi_data
-        elif input_accession.startswith("PRJ"):
-            self.error_message_formatted(
-                f"{input_accession} is a bioproject id, please enter a GenBank record"
-            )
-            return ncbi_data
-        elif any(input_accession.startswith(chars) for chars in ["WP_", "YP_"]):
+            return None
+        elif any(input_accession.startswith(entry) for entry in ["WP_", "YP_"]):
             self.error_message_formatted(f"{input_accession} is a protein ID")
-            return ncbi_data
+            return None
         elif input_accession.split(".")[0].endswith("000000"):
             self.error_message_formatted(
                 f"{input_accession} is a WGS record, please supply the actual contig"
             )
-            return ncbi_data
-        elif not re.search(accession_regex, input_accession):
+            return None
+        elif not re.search(self.const_ncbi_accession_regexp, input_accession):
             self.error_message_formatted(
-                f"{input_accession} did not match the expected format"
+                f"{input_accession} did not match the expected NCBI accession format"
             )
-            return ncbi_data
+            return None
         elif len(input_accession) < 5:
-            self.error_message_formatted("Accession number too short")
-            return ncbi_data
+            self.error_message_formatted("NCBI accession number too short")
+            return None
         elif re.search(r"_", input_accession):
             self.error_message_formatted(
                 (
@@ -790,52 +842,20 @@ class MibigEntry(BaseClass):
                 )
             )
             if self.ask_proceed_input():
-                pass
+                return input_accession
             else:
-                return ncbi_data
+                return
         else:
-            try:
-                ncbi_record = Entrez.read(
-                    Entrez.efetch(db="nuccore", id=input_accession, retmode="xml")
-                )
-                ncbi_data["ncbi_accession"] = input_accession
-            except HTTPError:
-                self.error_message_formatted("Invalid input provided")
-                return ncbi_data
+            return input_accession
 
-            try:
-                ncbi_data["ncbi_organism_name"] = ncbi_record[0]["GBSeq_source"]
-            except KeyError:
-                self.error_message_formatted(
-                    "Organism name not found in Accession. Please add manually."
-                )
-                return ncbi_data
-
-            try:
-                tax_record = Entrez.read(
-                    Entrez.esearch(db="taxonomy", term=ncbi_data["ncbi_organism_name"])
-                )
-                if tax_record["IdList"]:
-                    ncbi_data["ncbi_tax_id"] = str(tax_record["IdList"][0])
-                else:
-                    self.error_message_formatted("No NCBI taxonomy ID found")
-                    return ncbi_data
-            except HTTPError:
-                self.error_message_formatted(
-                    "Search for NCBI Taxonomy ID via organism name failed"
-                )
-                return ncbi_data
-
-        return ncbi_data
-
-    def get_coordinates(self: Self) -> Dict:
+    def get_coordinates(self: Self) -> Dict | None:
         """Get the coordinates, test if valid.
 
         Parameters:
             `self` : The instance of class MibigEntry.
 
         Returns:
-            A `dict` of variables assigned
+            A `dict` of variables assigned or None
         """
         input_msg_start_coord = (
             "================================================\n"
@@ -849,7 +869,7 @@ class MibigEntry(BaseClass):
             "================================================\n"
         )
 
-        coordinates = {"start": "None", "end": "None"}
+        coordinates = dict()
 
         try:
             input_start = int(input(input_msg_start_coord).replace(" ", ""))
@@ -857,7 +877,7 @@ class MibigEntry(BaseClass):
             self.error_message_formatted(
                 "Invalid input, start coordinate must be provided"
             )
-            return coordinates
+            return None
 
         try:
             input_end = int(input(input_msg_end_coord).replace(" ", ""))
@@ -865,49 +885,17 @@ class MibigEntry(BaseClass):
             self.error_message_formatted(
                 "Invalid input, end coordinate must be provided"
             )
-            return coordinates
+            return None
 
         if input_start >= input_end:
             self.error_message_formatted(
                 "The end coordinate cannot lie before the start coordinate"
             )
-            return coordinates
+            return None
         else:
             coordinates["start"] = input_start
             coordinates["end"] = input_end
             return coordinates
-
-    def get_accession_data(self: Self) -> None:
-        """Get the NCBI accession number, test if valid, get auxiliary info.
-
-        Parameters:
-            `self` : The instance of class MibigEntry.
-
-        Returns:
-            None
-        """
-        ncbi_data = self.get_ncbi_accession()
-
-        if ncbi_data["ncbi_accession"] != "None":
-            self.mibig_dict["cluster"]["loci"]["accession"] = ncbi_data[
-                "ncbi_accession"
-            ]
-            self.mibig_dict["cluster"]["organism_name"] = ncbi_data[
-                "ncbi_organism_name"
-            ]
-            self.mibig_dict["cluster"]["ncbi_tax_id"] = ncbi_data["ncbi_tax_id"]
-        else:
-            return
-
-        coordinates = self.get_coordinates()
-
-        if coordinates["start"] != "None" and coordinates["end"] != "None":
-            self.mibig_dict["cluster"]["loci"]["start_coord"] = coordinates["start"]
-            self.mibig_dict["cluster"]["loci"]["end_coord"] = coordinates["end"]
-        else:
-            return
-
-        return
 
     def get_organism_data(self: Self) -> None:
         """Get organism and ncbi taxid from user.
@@ -925,28 +913,32 @@ class MibigEntry(BaseClass):
         input_msg_strain = (
             "================================================\n"
             "Enter the organism name (including strain identifier).\n"
+            "(To SKIP, leave empty and press enter)\n"
             "================================================\n"
         )
 
         input_msg_taxid = (
             "================================================\n"
             "Enter the NCBI Taxonomy ID number.\n"
+            "(To SKIP, leave empty and press enter)\n"
             "================================================\n"
         )
 
         input_strain = input(input_msg_strain)
-
         if input_strain == "":
-            self.error_message_formatted("Empty input value")
+            self.message_formatted("Empty input value - SKIP")
         else:
             self.mibig_dict["cluster"]["organism_name"] = input_strain
 
-        try:
-            self.mibig_dict["cluster"]["ncbi_tax_id"] = str(
-                int(input(input_msg_taxid).replace(" ", ""))
-            )
-        except ValueError:
-            self.error_message_formatted("Invalid input provided")
+        input_ncbi_taxid = input(input_msg_taxid).replace(" ", "")
+        if input_strain == "":
+            self.message_formatted("Empty input value - SKIP")
+        else:
+            try:
+                input_ncbi_taxid = int(input_ncbi_taxid)
+                self.mibig_dict["cluster"]["ncbi_tax_id"] = input_ncbi_taxid
+            except ValueError:
+                self.error_message_formatted("Invalid input provided")
 
         return
 
@@ -1008,7 +1000,7 @@ class MibigEntry(BaseClass):
         input_references = list(filter(None, input_references.split("\t")))
         if len(input_references) == 0:
             self.error_message_formatted("Empty input value")
-            return None
+            return
         else:
             input_references_set = set()
             for entry in input_references:

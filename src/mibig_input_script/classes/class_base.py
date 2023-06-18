@@ -118,6 +118,14 @@ class BaseClass:
     const_doi_regexp = r"10\.\d{4,9}/[-\._;()/:a-zA-Z0-9]+"
     const_pubmed_id_regexp = r"\d+"
     const_url_regexp = r"https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)"
+    const_ncbi_accession_regexp = r"^([A-Za-z0-9_]{3,}\.\d)|(MIBIG\.BGC\d{7}\.\d)$"
+
+    const_ncbi_acc_illegal_chars = [
+        ",",
+        "-",
+        "|",
+        "/",
+    ]
 
     const_compound_evidence = {
         "1": "X-ray",

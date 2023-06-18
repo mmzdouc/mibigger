@@ -11,12 +11,12 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ### Added
 
 - Ripp class partially implemented.
+- Added support for SMILES, compound synonym names, compound evidence, biological activities, biological targets
 
 ### Changed
 
 - Changed structure of main() to accommodate optional input data
 - Introduced warning when a RefSeq entry is specified
-- Added support for SMILES, compound synonym names, compound evidence, biological activities, biological targets
 - Specified allowed entries/regular expressions to Base() class for inheritance
 - Moved constants to Base class -> class attributes
 - Enabled multiple references per MIBiG entry
