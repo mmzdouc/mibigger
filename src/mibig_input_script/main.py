@@ -18,6 +18,7 @@ from mibig_input_script.classes.class_ripp import Ripp
 from mibig_input_script.classes.class_mibig_entry import MibigEntry
 from mibig_input_script.classes.class_changelog import Changelog
 from mibig_input_script.classes.class_write_mibig import WriteMibig
+from mibig_input_script.classes.class_genes import Genes
 
 
 VERSION = metadata.version("mibig-input-script")
@@ -80,17 +81,35 @@ def get_ripp(mibig_entry: Dict) -> Dict:
         return ripp_object.export_dict()
 
 
-def get_optional_data(mibig_entry: Dict) -> Dict:
-    """Collect optional data on RiPPs.
+def get_genes(mibig_entry: Dict) -> Dict:
+    """Collect data related to gene.
 
     Parameters:
         `mibig_entry` : MIBiG entry as `dict`
 
     Returns:
         new/modified mibig entry as `dict`
+    """
+    genes_object = Genes(mibig_entry)
 
-    Notes:
-        Expand here for additional data input
+    try:
+        genes_object.mibig_dict["cluster"]["genes"]
+    except KeyError:
+        genes_object.initialize_genes_entry()
+
+    genes_object.get_gene_info()
+
+    return
+
+
+def get_optional_data(mibig_entry: Dict) -> Dict:
+    """Menu to add additional (optional) data.
+
+    Parameters:
+        `mibig_entry` : MIBiG entry as `dict`
+
+    Returns:
+        new/modified mibig entry as `dict`
     """
     input_message = (
         "================================================\n"
@@ -99,7 +118,8 @@ def get_optional_data(mibig_entry: Dict) -> Dict:
         "Press 'Ctrl+D' to cancel without saving.\n"
         "================================================\n"
         "0) Save and continue\n"
-        "1) RiPP Annotation (experimental)\n"
+        "1) Gene annotation\n"
+        "2) RiPP annotation\n"
         "================================================\n"
     )
 
@@ -109,6 +129,9 @@ def get_optional_data(mibig_entry: Dict) -> Dict:
         if user_input == "0":
             break
         elif user_input == "1":
+            mibig_entry = get_genes(mibig_entry)
+            continue
+        elif user_input == "2":
             mibig_entry = get_ripp(mibig_entry)
             continue
         else:
@@ -186,15 +209,36 @@ def export_mibig_entry(mibig_entry: Dict, path_existing: Path, ROOT: Path) -> No
 def main() -> None:
     """Entry point of the program.
 
-    Serves as main entry point for the program execution.
-    It performs the following tasks:
-    - Create the program interface via `argparse`
-    - Run auxilliary functions
-    - Initialize a `MibigEntry` instance, take and test input data
-    - Initialized a `Changelog` instance, write changelog entry
-    - Initialize a `WriteMibig` instance, prepare for export
-    - Validate resulting JSON file
-    - Store JSON file
+    For developers:
+        This program is designed to ask create/modify MIBiG entries
+        by collecting user input, validating it, and writing it in
+        the MIBiG JSON format.
+
+        The program is constructed in a modular way: for each "topic"
+        of data input, there is a separate class that handles the input
+        logic and validates the input. The classes are independent of
+        each other so that they can be added and modified as needed.
+        There are some exceptions:
+            - The Base class, which handles general methods and constants
+                which are inherited by the other classes
+            - The MibigEntry class, handles the minimum information
+                necessary for a MIBiG entry, and which is always executed
+            - The Changelog class, which creates/updates the changelog of
+                the entry, and which is always executed
+            - The WriteMibig class, which converts data into the JSON
+                format, and writes the entry to disk
+        The script is started in main, where separate functions initialize
+        the classes and handle the returned data.
+        Further, there are some general functions that are organized
+        in the `aux` folder.
+
+        The general data handling concept is as follows: an entry is loaded or
+        newly created by the MibigEntry class and handling of essential data
+        takes place. MibigEntry then creates a dict called `mibig_entry`
+        which is further modified by the downstream optional classes.
+        Once this is finished, the Changelog class adds/modifies the
+        changelog, and the WriteMibig class performs final checks and
+        writes/exports the file.
 
     Parameters:
         None

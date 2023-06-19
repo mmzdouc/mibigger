@@ -19,7 +19,6 @@ class Ripp(BaseClass):
     Methods:
         export_dict(self: Self) -> Dict
         initialize_ripp_entry(self: Self) -> None
-        set_flag_minimal_false(self: Self) -> None
         get_input(self: Self) -> None
         get_cyclic(self: Self) -> None
         get_subclass(self: Self) -> None
@@ -78,18 +77,6 @@ class Ripp(BaseClass):
             None
         """
         self.mibig_dict["cluster"]["ripp"] = {}
-        return
-
-    def set_flag_minimal_false(self: Self) -> None:
-        """Set the flag minimal to false.
-
-        Parameters:
-            `self` : The instance of class RiPP.
-
-        Returns:
-            None
-        """
-        self.mibig_dict["cluster"]["minimal"] = False
         return
 
     def get_input(self: Self) -> None:
@@ -310,7 +297,7 @@ class Ripp(BaseClass):
                 if (
                     0
                     <= input_selection
-                    <= len(self.mibig_dict["cluster"]["ripp"]["precursor_genes"])
+                    < len(self.mibig_dict["cluster"]["ripp"]["precursor_genes"])
                 ):
                     self.get_precursor_gene_entry(input_selection)
                     continue
@@ -347,7 +334,7 @@ class Ripp(BaseClass):
         if (
             0
             <= input_number
-            <= len(self.mibig_dict["cluster"]["ripp"]["precursor_genes"])
+            < len(self.mibig_dict["cluster"]["ripp"]["precursor_genes"])
         ):
             if self.ask_proceed_input():
                 self.mibig_dict["cluster"]["ripp"]["precursor_genes"].pop(input_number)

@@ -224,3 +224,15 @@ class BaseClass:
             else:
                 print("Please type 'yes' or 'no'.")
                 continue
+
+    def set_flag_minimal_false(self: Self) -> None:
+        """Set the flag minimal to false.
+
+        Parameters:
+            `self` : The instance of class Base.
+
+        Returns:
+            None
+        """
+        self.mibig_dict["cluster"]["minimal"] = False
+        return

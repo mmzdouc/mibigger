@@ -344,7 +344,7 @@ class MibigEntry(BaseClass):
                 except ValueError:
                     self.error_message_formatted("Invalid input provided")
                     continue
-                if 0 <= input_raw <= len(self.mibig_dict["cluster"]["compounds"]):
+                if 0 <= input_raw < len(self.mibig_dict["cluster"]["compounds"]):
                     self.get_compound_entry(input_raw)
                     continue
                 else:
@@ -378,7 +378,7 @@ class MibigEntry(BaseClass):
 
         input_number = input_number - number_invar_menu_entries
 
-        if 0 <= input_number <= len(self.mibig_dict["cluster"]["compounds"]):
+        if 0 <= input_number < len(self.mibig_dict["cluster"]["compounds"]):
             if self.ask_proceed_input():
                 self.mibig_dict["cluster"]["compounds"].pop(input_number)
                 return
