@@ -17,10 +17,21 @@ class BaseClass:
     input testing are organized in this class for inheritance by
     more specialized downstream classes.
 
+    All class attributes start with `const_` to distinguish them (defined
+    in single place to be able to adjust centrally)
+
+    Class attributes:
+        const_allowed_bioactiv (List) : allowed bioactivities
+        const_compound_regexp (str) : regexp allowed compound name format
+        const_smiles_regexp (str) : regexp SMILES format
+        const_compound_evidence (str) : allowed compound evidence categories
+
     Attributes:
-        None
+        allowed_bioactiv (List) : allowed biological activities
 
     Methods:
+        message_formatted(self: Self, string: str) -> None
+            Print a formatted message
         error_message_formatted(self: Self, string: str) -> None
             Print a formatted error message.
         ask_proceed_input(self: Self) -> None
@@ -29,6 +40,123 @@ class BaseClass:
             Get reference and test for correct format.
 
     """
+
+    cont_invalid_gene_names = [
+        "no_accession",
+        "unknown",
+    ]
+
+    const_allowed_bioactiv: List = [
+        "adhesion",
+        "anthelmintic",
+        "antialgal",
+        "antibacterial",
+        "anticancer",
+        "anticoccidial",
+        "antifungal",
+        "antiinflammatory",
+        "antimalarial",
+        "antineoplastic",
+        "antioomycete",
+        "antioxidant",
+        "antiparasidal",
+        "antiplasmodial",
+        "antiproliferative",
+        "antiprotozoal",
+        "antitubulin",
+        "antitumor",
+        "antiviral",
+        "biofilm",
+        "carbon storage",
+        "cell differentiation",
+        "cell envelope",
+        "cell protectant",
+        "cell wall",
+        "cold stress",
+        "cyst formation",
+        "cytotoxic",
+        "denitrificative",
+        "dermatotoxic",
+        "DNA-interfering",
+        "emulsifier",
+        "enterotoxic",
+        "exopolysaccharide",
+        "extracelluar capsule",
+        "flavor",
+        "fluorescent",
+        "hemolytic",
+        "hepatotoxic",
+        "herbicidal",
+        "immunomodulatory",
+        "immunosuppressive",
+        "inducer",
+        "inhibitor",
+        "insecticidal",
+        "ionophore",
+        "iron reducing",
+        "irritant",
+        "morphogen",
+        "neuroprotective",
+        "neurotoxic",
+        "nitrogen reduction",
+        "odorous metabolite",
+        "osmolytic",
+        "phytotoxic",
+        "pigment",
+        "predation",
+        "radical scavenging",
+        "regulatory",
+        "siderophore",
+        "signalling",
+        "sodium channel blocking",
+        "surfactant",
+        "swarming motility",
+        "toxic",
+        "tumor promoter",
+        "UV protective",
+        "vesicant",
+        "virulence factor",
+    ]
+
+    const_compound_regexp = r"^[a-zA-Zα-ωΑ-Ω0-9\[\]\'()/&,. +-]+$"
+    const_smiles_regexp = r"^[\[\]a-zA-Z0-9@()=\\/\\#+.%*-]+$"
+    const_doi_regexp = r"10\.\d{4,9}/[-\._;()/:a-zA-Z0-9]+"
+    const_pubmed_id_regexp = r"\d+"
+    const_url_regexp = r"https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)"
+    const_ncbi_accession_regexp = r"^([A-Za-z0-9_]{3,}\.\d)|(MIBIG\.BGC\d{7}\.\d)$"
+    const_proteinogenic_aa_regexp = r"^[A-Z]+$"
+
+    const_ncbi_acc_illegal_chars = [
+        ",",
+        "-",
+        "|",
+        "/",
+    ]
+
+    const_compound_evidence = {
+        "1": "X-ray",
+        "2": "NMR",
+        "3": "MS/MS",
+        "4": "Other",
+    }
+
+    const_biosyn_classes = {
+        "1": "Alkaloid",
+        "2": "Polyketide",
+        "3": "RiPP",
+        "4": "NRP",
+        "5": "Saccharide",
+        "6": "Terpene",
+        "7": "Other",
+    }
+
+    const_bgc_evidence = {
+        "1": "Gene expression correlated with compound production",
+        "2": "Knock-out studies",
+        "3": "Enzymatic assays",
+        "4": "Heterologous expression",
+        "5": "In vitro expression",
+    }
 
     def __init__(self: Self):
         """Initialize class attributes.
@@ -40,6 +168,24 @@ class BaseClass:
             None
         """
         pass
+
+    def message_formatted(self: Self, string: str) -> None:
+        """Print a formatted message.
+
+        Parameters:
+            `self` : The instance of class Minimal.
+            `string` : input to customize message
+
+        Returns:
+            None
+        """
+        message = (
+            "================================================\n"
+            f"{string}.\n"
+            "================================================\n"
+        )
+        print(message)
+        return
 
     def error_message_formatted(self: Self, string: str) -> None:
         """Print a formatted error message.
@@ -54,19 +200,19 @@ class BaseClass:
         error_message = (
             "++++++++++++++++++++++++++++++++++++++++++++++++\n"
             f"ERROR: {string}.\n"
-            "++++++++++++++++++++++++++++++++++++++++++++++++\n"
+            "++++++++++++++++++++++++++++++++++++++++++++++++"
         )
         print(error_message)
         return
 
-    def ask_proceed_input(self: Self) -> None:
+    def ask_proceed_input(self: Self) -> bool:
         """Ask user to proceed/stop.
 
         Parameters:
             `self` : The instance of class BaseClass.
 
         Returns:
-            None
+            A bool from user input
         """
         alert_message = (
             "================================================\n"
@@ -77,104 +223,21 @@ class BaseClass:
             user_input = input(alert_message)
 
             if user_input == "no":
-                print("Abort process.")
-                quit()
+                return False
             elif user_input == "yes":
-                break
+                return True
             else:
                 print("Please type 'yes' or 'no'.")
+                continue
 
-        return
-
-    def get_reference(self: Self) -> List | None:
-        """Get reference and test for correct format.
+    def set_flag_minimal_false(self: Self) -> None:
+        """Set the flag minimal to false.
 
         Parameters:
-            `self` : The instance of class BaseClass.
+            `self` : The instance of class Base.
 
         Returns:
-            A list of reference entries OR None.
+            None
         """
-        input_msg_reference = (
-            "================================================\n"
-            "Choose which reference to add.\n"
-            "Separate multiple entries with a TAB character.\n"
-            "================================================\n"
-            "1) Digital Object Identifier (DOI - strongly preferred).\n"
-            "2) Pubmed ID.\n"
-            "3) Patent reference.\n"
-            "4) URL.\n"
-            "================================================\n"
-        )
-        input_msg_doi = (
-            "================================================\n"
-            "Enter a DOI.\n"
-            "================================================\n"
-        )
-        input_msg_pmid = (
-            "================================================\n"
-            "Enter a Pubmed ID.\n"
-            "================================================\n"
-        )
-        input_msg_patent = (
-            "================================================\n"
-            "Enter a patent reference.\n"
-            "================================================\n"
-        )
-        input_msg_url = (
-            "================================================\n"
-            "Enter an URL.\n"
-            "================================================\n"
-        )
-        regex_pattern = {
-            "doi": r"10\.\d{4,9}/[-\._;()/:a-zA-Z0-9]+",
-            "pmid": r"\d+",
-            "patent": r".+",
-            "url": r"https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)",
-        }
-
-        input_raw = input(input_msg_reference)
-        user_input = list(filter(None, input_raw.split("\t")))
-
-        if len(user_input) == 0:
-            self.error_message_formatted("Empty input value")
-            return None
-        else:
-            pass
-
-        reference = list()
-
-        for selection in user_input:
-            if selection == "1":
-                input_doi = input(input_msg_doi).replace(" ", "")
-                if match := re.search(regex_pattern["doi"], input_doi):
-                    reference.append("".join(["doi:", match.group(0)]))
-                else:
-                    self.error_message_formatted("DOI has the wrong fromat")
-                    return None
-            elif selection == "2":
-                input_pmid = input(input_msg_pmid).replace(" ", "")
-                if match := re.search(regex_pattern["pmid"], input_pmid):
-                    reference.append("".join(["pubmed:", match.group(0)]))
-                else:
-                    self.error_message_formatted("Pubmed ID has the wrong format")
-                    return None
-            elif selection == "3":
-                input_patent = input(input_msg_patent).replace(" ", "")
-                if match := re.search(regex_pattern["patent"], input_patent):
-                    reference.append("".join(["patent:", match.group(0)]))
-                else:
-                    self.error_message_formatted("Patent has the wrong format")
-                    return None
-            elif selection == "4":
-                input_url = input(input_msg_url).replace(" ", "")
-                if match := re.search(regex_pattern["url"], input_url):
-                    reference.append("".join(["url:", match.group(0)]))
-                else:
-                    self.error_message_formatted("URL has the wrong format")
-                    return None
-            else:
-                self.error_message_formatted("Invalid input provided")
-                return None
-
-        return reference
+        self.mibig_dict["cluster"]["minimal"] = False
+        return

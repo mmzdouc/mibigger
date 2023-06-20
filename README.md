@@ -8,11 +8,19 @@ saves the data as JSON file.
 This script is currently for internal use in the Medema/Weber groups
 only and requires some knowledge regarding MIBiG entries and command-line usage.
 
-Installation
+Download and Installation
 ============
 
-- Create a new virtual env using `python version 3.11`
+- Create a new branch with your initials as suffix (e.g. `dev_mmz`) or fork the repo
+- Clone the new branch/fork locally
+- Create a new virtual env using `python version 3.11` (e.g. with `conda`)
 - Install the package and download requirements using `pip install -e .`
+- Add your name/initials/email to the list of curators in `src/mibig_input_script/curators.csv`
+- Add/modify entries (see below)
+- Once you have added some entries, create a pull request into main and request a reviewer
+- The reviewer (one of us) will double-check the entry for consistency
+- Once reviewed, the new entries are merged into the main branch
+
 
 Background
 ==========
@@ -20,21 +28,17 @@ Background
 The program is mainly conceptualized to quickly create and modify MIBiG
 entries for the next iteration of MIBiG. The script can also be used
 for the modification of existing entries (from previous MIBiG iterations).
-
-Currently, the script is limited to create a **minimal** MIBIG entry (or
-manipulate the minimum information for a MIBiG entry). This includes
-the biosynthetic class, NCBI accession number, organism etc. Support for
-additional information is planned for future releases
+The script is capable to create minimal entries as well as add annotations
+on RiPP precursors and gene annotation. Other functionalities, such as
+on NRPS or PKS annotation is not included yet.
 
 **Currently** included modules are:
-- **base** (essential information)
-- **changelog** (writes changelog)
-- **write_mibig** (validates and writes MIBiG json files)
-
-**Planned** modules are:
-- **compound** (detailed information on compound(s), such as SMILES)
-- **ripp** (detailed information on RiPPs)
-- **gene_annotation** (annotation of individual genes)
+- **Base** (defines constants and allowed entries)
+- **Changelog** (writes changelog)
+- **MibigEntry** (writes the essential information of a MIBiG entry)
+- **Genes** (writes gene annotation data)
+- **RiPP** (writes RiPP annotation data)
+- **WriteMibig** (validates and writes MIBiG json files)
 
 
 Usage
@@ -47,6 +51,7 @@ Usage
 
 Note 1: The curator ID is taken from `src/mibig_input_script/curators.csv`
 Note 2: Start/end coordinates for the locus are mandatory. If the locus equals the BGC, the coordinates still have to be entered ("1" to however long the BGC is).
+Note 3: There are many checks in place to catch erroneous data entry. Still, please take care of typos etc. when entering data to make life of the reviewer easier.
 
 For developers
 ==============
@@ -74,9 +79,10 @@ A list of dependencies can be found in [requirements.txt](requirements.txt).
 
 ## License
 
-TBA
+MIT license (see [LICENSE](LICENSE.md))
 
 Authors
 =======
+
 - Mitja M. Zdouc (Wageningen University)
 

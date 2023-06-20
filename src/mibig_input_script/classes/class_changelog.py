@@ -91,7 +91,7 @@ class Changelog(BaseClass):
             `mibig_entry` : The loaded MIBiG json entry as `dict`.
 
         Returns:
-            A json-compatible dict of a "changelog" MIBiG entry.
+            A json-compatible dict of a MIBiG entry.
         """
         self.existing_entry = deepcopy(mibig_entry)
         self.get_comment()
@@ -104,7 +104,7 @@ class Changelog(BaseClass):
             }
         )
 
-        return self.existing_entry
+        return deepcopy(self.existing_entry)
 
     def append_last_entry_changelog(self: Self, mibig_entry: Dict) -> Dict:
         """Append info to last entry of existing changelog.
@@ -114,7 +114,7 @@ class Changelog(BaseClass):
             `mibig_entry` : The loaded MIBiG json entry as `dict`.
 
         Returns:
-            A json-compatible dict of a "changelog" MIBiG entry.
+            A json-compatible dict of a MIBiG entry.
         """
         self.existing_entry = deepcopy(mibig_entry)
 
@@ -127,4 +127,4 @@ class Changelog(BaseClass):
         self.existing_entry["changelog"][-1]["comments"] = self.comments
         self.existing_entry["changelog"][-1]["contributors"] = list(self.set_curators)
 
-        return self.existing_entry
+        return deepcopy(self.existing_entry)

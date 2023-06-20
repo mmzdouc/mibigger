@@ -25,8 +25,6 @@ class WriteMibig(BaseClass):
             Print a formatted error message
         alert_message_formatted(self: Self, string: str, var: str) -> None
             Print a formatted alert message
-        ask_proceed_input(self: Self) -> None
-            Ask user to proceed/stop.
         return_json_string(self: Self) -> str
             Returns a json string
         export_to_json(self: Self, path_to_write: Path) -> None
@@ -73,7 +71,7 @@ class WriteMibig(BaseClass):
         return
 
     def return_json_string(self: Self) -> str:
-        """Returns a json string.
+        """Return a json string.
 
         Parameters:
             `self` : The instance of class WriteMibig.
@@ -120,10 +118,15 @@ class WriteMibig(BaseClass):
             matches := df.loc[df["accession"].str.contains(ncbi_acc) == True]
         ).empty:
             if current_mibig_acc not in matches["mibig_accession"].to_list():
+                matches = matches.to_string(index=False)
                 self.alert_message_formatted(
                     f"Similar existing accession number in '{existing}' found", matches
                 )
-                self.ask_proceed_input()
+                if self.ask_proceed_input():
+                    pass
+                else:
+                    self.error_message_formatted("Abort process.")
+                    exit()
             else:
                 return
         else:
@@ -134,10 +137,15 @@ class WriteMibig(BaseClass):
                 matches := df.loc[df["compounds"].str.contains(compound) == True]
             ).empty:
                 if current_mibig_acc not in matches["mibig_accession"].to_list():
+                    matches = matches.to_string(index=False)
                     self.alert_message_formatted(
                         f"Similar existing compound name in '{existing}' found", matches
                     )
-                    self.ask_proceed_input()
+                    if self.ask_proceed_input():
+                        pass
+                    else:
+                        self.error_message_formatted("Abort process.")
+                        exit()
                 else:
                     return
             else:
