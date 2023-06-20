@@ -11,7 +11,7 @@ from mibig_input_script.classes.class_base import BaseClass
 
 
 class Ripp(BaseClass):
-    """Module organizing functions to add info about RiPP to MIBiG entry
+    """Module organizing functions to add info about RiPP to MIBiG entry.
 
     Attributes:
         mibig_dict (Dict) : holding the existing mibig entry
@@ -42,6 +42,10 @@ class Ripp(BaseClass):
         get_precursor_gene_id(self: Self) -> str | bool
         get_precursor_gene_cleavage(self: Self) -> List | bool | None
         get_precursor_recognition(self: Self) -> str | bool | None
+
+    Notes:
+        Can be expanded for further annotation entries
+            - `crosslinks` in `get_precursor_genes()`
     """
 
     def __init__(self: Self, mibig_entry: Dict):
@@ -438,7 +442,7 @@ class Ripp(BaseClass):
         input_cleavage: List,
         input_recognition: str,
     ) -> None:
-        """Writes precursor gene entry data to self.mibig_dict
+        """Write precursor gene entry data to self.mibig_dict.
 
         Parameters:
             `self` : The instance of class MibigEntry.

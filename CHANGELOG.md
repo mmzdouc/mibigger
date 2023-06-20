@@ -6,11 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
-## [0.4.0]
+## [0.4.0] - 20-06-2023
 
 ### Added
 
-- Added optional input functions for Gene Annotation
+- Added optional input functions for Gene Annotation.
 - Added optional input functions for RiPPs.
 - Added optional input functions for compounds.
 
@@ -21,7 +21,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - Specified allowed entries/regular expressions to Base() class for inheritance
 - Moved constants to Base class -> class attributes
 - Enabled multiple references per MIBiG entry
-- Removed support for patent references
+- Removed support for patent references as publication
 
 
 ## [0.3.0] 12-06-2023

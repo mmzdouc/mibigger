@@ -12,13 +12,38 @@ from mibig_input_script.classes.class_base import BaseClass
 
 
 class Genes(BaseClass):
-    """Module organizing functions to add gene annotations to MIBiG entry
+    """Module organizing functions to add gene annotations to MIBiG entry.
 
     Attributes:
         mibig_dict (Dict) : holding the existing mibig entry
 
     Methods:
-        TBA
+        export_dict(self: Self) -> Dict
+        initialize_genes_entry(self: Self) -> None
+        get_gene_info(self: Self) -> None
+        get_annotations(self: Self) -> None
+        remove_gene_annotation(self: Self, invar_menu_entries: int) -> None
+        get_gene_annot_entry(self: Self, index: int | str) -> None
+        write_gene_annot_entry(
+            self: Self,
+            index: int,
+            input_id: str,
+            input_name: str,
+            input_product: str,
+            input_tailoring: List,
+            input_comments: str,
+        ) -> None
+        get_gene_annot_id(self: Self) -> str | bool
+        get_gene_annot_name(self: Self) -> str | bool | None
+        get_gene_annot_product(self: Self) -> str | None
+        get_gene_annot_tailoring(self: Self) -> List | None
+        get_gene_annot_comments(self: Self) -> str | None
+
+    Notes:
+        Can be expanded for further annotation entries
+            - `extra_genes` , `operons` in `get_gene_info()`
+            - `domains`, `functions`, `mut_pheno`, `publications`
+                in `get_annotations()`
     """
 
     def __init__(self: Self, mibig_entry: Dict):
@@ -67,8 +92,6 @@ class Genes(BaseClass):
         """
         options = {
             "1": self.get_annotations,
-            # ~ "2": self.get_extra_genes,
-            # ~ "3": self.get_operons,
         }
 
         while True:
@@ -79,14 +102,12 @@ class Genes(BaseClass):
 
             input_message = (
                 "================================================\n"
-                "Add gene information (currently not fully implemented):\n"
+                "Add gene information:\n"
                 "Enter a number and press enter.\n"
                 "Press 'Ctrl+D' to cancel without saving.\n"
                 "================================================\n"
                 "0) Save and continue\n"
                 f"1) Add/modify gene annotations (currently: '{gene_ann}')\n"
-                # ~ "2) Add extra genes\n"
-                # ~ "3) Add operon annotations\n"
                 "================================================\n"
             )
 
@@ -226,7 +247,6 @@ class Genes(BaseClass):
             If `index` is `str`, then a new entry is written (appended).
             If `index` is `int`, an existing entry is modified (overwritten).
         """
-
         input_id = self.get_gene_annot_id()
         if input_id == False:
             return
@@ -240,14 +260,97 @@ class Genes(BaseClass):
             pass
 
         input_product = self.get_gene_annot_product()
+        if input_product == False:
+            return
+        else:
+            pass
 
-        print(input_product)
+        input_tailoring = self.get_gene_annot_tailoring()
+        if input_tailoring == False:
+            return
+        else:
+            pass
 
-        # id : str
-        # name : str
-        # product : str
-        # tailoring : List
-        # comments : str
+        input_comments = self.get_gene_annot_comments()
+        if input_comments == False:
+            return
+        else:
+            pass
+
+        if isinstance(index, str):
+            self.mibig_dict["cluster"]["genes"]["annotations"].append({})
+            index = -1
+            self.write_gene_annot_entry(
+                index,
+                input_id,
+                input_name,
+                input_product,
+                input_tailoring,
+                input_comments,
+            )
+        elif isinstance(index, int):
+            self.write_gene_annot_entry(
+                index,
+                input_id,
+                input_name,
+                input_product,
+                input_tailoring,
+                input_comments,
+            )
+        else:
+            pass
+
+        return
+
+    def write_gene_annot_entry(
+        self: Self,
+        index: int,
+        input_id: str,
+        input_name: str,
+        input_product: str,
+        input_tailoring: List,
+        input_comments: str,
+    ) -> None:
+        """Write gene annotation entry to self.mibig_dict.
+
+        Parameters:
+            `self` : The instance of class Gene.
+
+        Returns:
+            None
+        """
+        if input_id is not None:
+            self.mibig_dict["cluster"]["genes"]["annotations"][index]["id"] = input_id
+        else:
+            pass
+
+        if input_name is not None:
+            self.mibig_dict["cluster"]["genes"]["annotations"][index][
+                "name"
+            ] = input_name
+        else:
+            pass
+
+        if input_product is not None:
+            self.mibig_dict["cluster"]["genes"]["annotations"][index][
+                "product"
+            ] = input_product
+        else:
+            pass
+
+        if input_tailoring is not None:
+            self.mibig_dict["cluster"]["genes"]["annotations"][index][
+                "tailoring"
+            ] = input_tailoring
+        else:
+            pass
+
+        if input_comments is not None:
+            self.mibig_dict["cluster"]["genes"]["annotations"][index][
+                "comments"
+            ] = input_comments
+        else:
+            pass
 
         return
 
@@ -271,6 +374,9 @@ class Genes(BaseClass):
             self.error_message_formatted("Protein ID cannot be empty")
             return False
         elif not re.match(r"^[^, ]*$", input_id):
+            self.error_message_formatted(f"'{input_id}' is not in the correct format")
+            return False
+        elif any(re.match(regexp, input_id) for regexp in self.cont_invalid_gene_names):
             self.error_message_formatted(f"'{input_id}' is not in the correct format")
             return False
         else:
@@ -298,6 +404,11 @@ class Genes(BaseClass):
         elif not re.match(r"^[^, ]*$", input_name):
             self.error_message_formatted(f"'{input_name}' is not in the correct format")
             return False
+        elif any(
+            re.match(regexp, input_name) for regexp in self.cont_invalid_gene_names
+        ):
+            self.error_message_formatted(f"'{input_name}' is not in the correct format")
+            return False
         else:
             return input_name
 
@@ -322,4 +433,50 @@ class Genes(BaseClass):
         else:
             return input_product
 
-    # ~ continue here
+    def get_gene_annot_tailoring(self: Self) -> List | None:
+        """Get a list of tailoring reactions associated to translated gene.
+
+        Parameters:
+            `self` : The instance of class Gene.
+
+        Returns:
+            Return a list of tailoring reactions or None (skip)
+        """
+        input_msg_tailoring = (
+            "================================================\n"
+            "Enter the tailoring reactions associated to translated gene:\n"
+            "To SKIP, press enter.\n"
+            "To specify multiple entries, separate them with a TAB character.\n"
+            "================================================\n"
+        )
+        input_tailoring = input(input_msg_tailoring)
+        input_tailoring = list(filter(None, input_tailoring.split("\t")))
+        if len(input_tailoring) == 0:
+            self.message_formatted("Empty input-value: SKIP")
+            return None
+        else:
+            input_tailoring_set = set()
+            for entry in input_tailoring:
+                input_tailoring_set.add(entry)
+            return list(input_tailoring_set)
+
+    def get_gene_annot_comments(self: Self) -> str | None:
+        """Get comment regarding gene annotation.
+
+        Parameters:
+            `self` : The instance of class Gene.
+
+        Returns:
+            Return a str of the comment or None (skip)
+        """
+        input_msg_comment = (
+            "================================================\n"
+            "Enter a comment regarding the gene annotation (or SKIP by pressing enter):\n"
+            "================================================\n"
+        )
+        input_comment = input(input_msg_comment)
+        if input_comment == "":
+            self.message_formatted("Empty input value - SKIP")
+            return None
+        else:
+            return input_comment

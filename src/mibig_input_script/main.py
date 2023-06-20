@@ -3,8 +3,6 @@
 import argparse
 from Bio import Entrez
 from importlib import metadata
-import json
-import jsonschema
 from pathlib import Path
 import readline
 from typing import Dict
@@ -13,6 +11,7 @@ from mibig_input_script.aux.parse_arguments import parse_arguments
 from mibig_input_script.aux.read_functions import get_curator_email
 from mibig_input_script.aux.read_functions import read_mibig_json
 from mibig_input_script.aux.verify_existence_entry import verify_existence_entry
+from mibig_input_script.aux.validation_mibig import validation_mibig
 
 from mibig_input_script.classes.class_ripp import Ripp
 from mibig_input_script.classes.class_mibig_entry import MibigEntry
@@ -99,7 +98,7 @@ def get_genes(mibig_entry: Dict) -> Dict:
 
     genes_object.get_gene_info()
 
-    return
+    return genes_object.export_dict()
 
 
 def get_optional_data(mibig_entry: Dict) -> Dict:
@@ -118,8 +117,8 @@ def get_optional_data(mibig_entry: Dict) -> Dict:
         "Press 'Ctrl+D' to cancel without saving.\n"
         "================================================\n"
         "0) Save and continue\n"
-        "1) Gene annotation\n"
-        "2) RiPP annotation\n"
+        "1) Gene annotation (partially implemented)\n"
+        "2) RiPP annotation (partially implemented)\n"
         "================================================\n"
     )
 
@@ -179,16 +178,7 @@ def export_mibig_entry(mibig_entry: Dict, path_existing: Path, ROOT: Path) -> No
 
     write_mibig.test_duplicate_entries(ROOT)
 
-    json_string = write_mibig.return_json_string()
-
-    with open(ROOT.joinpath("schema.json")) as schema_handle:
-        schema = json.load(schema_handle)
-    try:
-        jsonschema.validate(json.loads(json_string), schema)
-    except jsonschema.ValidationError as e:
-        print("MIBiG JSON is invalid. Error:", e)
-        print("Abort file storage.")
-        exit()
+    validation_mibig(write_mibig, ROOT)
 
     if path_existing is None:
         new_entry_path = (
@@ -233,7 +223,7 @@ def main() -> None:
         in the `aux` folder.
 
         The general data handling concept is as follows: an entry is loaded or
-        newly created by the MibigEntry class and handling of essential data
+        newly created by the MibigEntry class and handliong of essential data
         takes place. MibigEntry then creates a dict called `mibig_entry`
         which is further modified by the downstream optional classes.
         Once this is finished, the Changelog class adds/modifies the

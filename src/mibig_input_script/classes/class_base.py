@@ -41,6 +41,11 @@ class BaseClass:
 
     """
 
+    cont_invalid_gene_names = [
+        "no_accession",
+        "unknown",
+    ]
+
     const_allowed_bioactiv: List = [
         "adhesion",
         "anthelmintic",

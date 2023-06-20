@@ -479,7 +479,7 @@ class MibigEntry(BaseClass):
         input_evidence: List | None,
         input_target: List | None,
     ) -> None:
-        """Writes compound entry data to self.mibig_dict.
+        """Write compound entry data to self.mibig_dict.
 
         Parameters:
             `self` : The instance of class MibigEntry.

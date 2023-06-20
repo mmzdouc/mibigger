@@ -71,7 +71,7 @@ class WriteMibig(BaseClass):
         return
 
     def return_json_string(self: Self) -> str:
-        """Returns a json string.
+        """Return a json string.
 
         Parameters:
             `self` : The instance of class WriteMibig.
