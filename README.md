@@ -8,7 +8,7 @@ saves the data as JSON file.
 This script is currently for internal use in the Medema/Weber groups
 only and requires some knowledge regarding MIBiG entries and command-line usage.
 
-Download and Installation
+Download, Installation, and Curation Strategy
 ============
 
 - Create a new branch with your initials as suffix (e.g. `dev_mmz`) or fork the repo
