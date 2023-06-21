@@ -21,6 +21,21 @@ Download, Installation, and Curation Strategy
 - The reviewer (one of us) will double-check the entry for consistency
 - Once reviewed, the new entries are merged into the main branch
 
+Usage
+=====
+
+- Start the program with `python ./src/mibig-input-script/main.py`
+- Display the help with the `-h` flag.
+- To create a new entry, provide the curator ID together with the `-n` flag (e.g. `... MMZ -n`)
+- To modify an existing entry, provide the curator ID, the `-e` flag, and the MIBiG ID (e.g. `... MMZ -e BGC0001234`)
+
+Curation Strategy
+=================
+
+- **Typos**: please double-check the data you add for typos to make it easier for the reviewers. Altough we perform many checks for erroneous data, we can't catch all mistakes. 
+- **Coordinates**: Start/end coordinates for the locus are mandatory. If the locus equals the BGC, the coordinates still have to be entered ("1" to however long the BGC is).
+- **Preprints**: BGCs described in preprints are okay to add but additional care has to be taken regarding the authenticity of data. Please also mention the signal word "preprint" in the comment - this way, we can identify the preprint-based entries in the future.
+- **GenBank/RefSeq**: GenBank accessions are strongly preferred over RefSeq accessions since the latter can be changed abruptly. Sometimes, the GenBank entry cannot be taken due to missing annotations. In these cases, the RefSeq entry is tolerated.
 
 Background
 ==========
@@ -39,19 +54,6 @@ on NRPS or PKS annotation is not included yet.
 - **Genes** (writes gene annotation data)
 - **RiPP** (writes RiPP annotation data)
 - **WriteMibig** (validates and writes MIBiG json files)
-
-
-Usage
-=====
-
-- Start the program with `python ./src/mibig-input-script/main.py`
-- Display the help with the `-h` flag.
-- To create a new entry, provide the curator ID together with the `-n` flag (e.g. `... MMZ -n`)
-- To modify an existing entry, provide the curator ID, the `-e` flag, and the MIBiG ID (e.g. `... MMZ -e BGC0001234`)
-
-Note 1: The curator ID is taken from `src/mibig_input_script/curators.csv`
-Note 2: Start/end coordinates for the locus are mandatory. If the locus equals the BGC, the coordinates still have to be entered ("1" to however long the BGC is).
-Note 3: There are many checks in place to catch erroneous data entry. Still, please take care of typos etc. when entering data to make life of the reviewer easier.
 
 For developers
 ==============
@@ -76,7 +78,6 @@ About
 
 A list of dependencies can be found in [requirements.txt](requirements.txt).
 
-
 ## License
 
 MIT license (see [LICENSE](LICENSE.md))
@@ -85,4 +86,3 @@ Authors
 =======
 
 - Mitja M. Zdouc (Wageningen University)
-
