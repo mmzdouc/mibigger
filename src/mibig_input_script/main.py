@@ -12,6 +12,7 @@ from mibig_input_script.aux.read_functions import get_curator_email
 from mibig_input_script.aux.read_functions import read_mibig_json
 from mibig_input_script.aux.verify_existence_entry import verify_existence_entry
 from mibig_input_script.aux.validation_mibig import validation_mibig
+from mibig_input_script.aux.read_functions import get_curators
 
 from mibig_input_script.classes.class_ripp import Ripp
 from mibig_input_script.classes.class_mibig_entry import MibigEntry
@@ -47,8 +48,9 @@ def get_mibig_entry(
     if existing_mibig is not None:
         mibig_entry_object.load_existing_entry(existing_mibig)
     else:
-        mibig_entry_object.get_new_mibig_accession(args, ROOT)
-        mibig_entry_object.create_new_entry(args.curator, CURATION_ROUND)
+        curator_id = get_curators(ROOT)[args.curator]
+        mibig_entry_object.get_new_mibig_accession(curator_id, ROOT)
+        mibig_entry_object.create_new_entry(curator_id, CURATION_ROUND)
 
     mibig_entry_object.get_input()
 
@@ -144,6 +146,7 @@ def get_changelog(
     mibig_entry: Dict,
     args: argparse.Namespace,
     CURATION_ROUND: str,
+    ROOT: Path,
 ) -> Dict:
     """Collect information for a minimal MIBiG entry.
 
@@ -151,11 +154,14 @@ def get_changelog(
         `mibig_entry` : MIBiG entry as `dict`
         `args` : arguments provided by user
         `CURATION_ROUND` : `str` of mibig curation round version to use in changelog
+        `ROOT` : `Path` object indicating "root" directory of script
 
     Returns:
         new/modified mibig entry as `dict`
     """
-    changelog_object = Changelog(args.curator, CURATION_ROUND)
+    curator_id = get_curators(ROOT)[args.curator]
+
+    changelog_object = Changelog(curator_id, CURATION_ROUND)
 
     if mibig_entry["changelog"][-1]["version"] != CURATION_ROUND:
         return changelog_object.create_new_entry_changelog(mibig_entry)
@@ -246,7 +252,7 @@ def main() -> None:
 
     mibig_entry = get_optional_data(mibig_entry)
 
-    mibig_entry = get_changelog(mibig_entry, args, CURATION_ROUND)
+    mibig_entry = get_changelog(mibig_entry, args, CURATION_ROUND, ROOT)
 
     export_mibig_entry(mibig_entry, path_existing, ROOT)
 

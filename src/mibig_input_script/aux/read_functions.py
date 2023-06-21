@@ -27,18 +27,18 @@ def read_mibig_json(path: Path | None) -> Dict | None:
         return None
 
 
-def get_curators(ROOT: Path) -> List[str]:
-    """Get the list of possible curators defined in `../curators.csv`.
+def get_curators(ROOT: Path) -> Dict:
+    """Get a Dict of possible curators and their IDs defined in `../curators.csv`.
 
     Parameters:
         `ROOT`: `Path` object indicating "root" directory of script
 
     Returns:
-        Returns a list of curator ids
+        Returns a dict of curator ids
     """
     csv_path = ROOT / "curators.csv"
     df = pd.read_csv(csv_path)
-    return list(df.loc[:, "id"])
+    return dict(zip(list(df.loc[:, "initials"]), list(df.loc[:, "id"])))
 
 
 def get_curator_email(ROOT: Path, curator: str) -> str:
@@ -53,4 +53,4 @@ def get_curator_email(ROOT: Path, curator: str) -> str:
     """
     csv_path = ROOT / "curators.csv"
     df = pd.read_csv(csv_path)
-    return df.loc[df["id"] == curator]["email"].iloc[0]
+    return df.loc[df["initials"] == curator]["email"].iloc[0]
