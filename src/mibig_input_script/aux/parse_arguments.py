@@ -22,6 +22,7 @@ def add_parser_args(VERSION: str, ROOT: Path) -> argparse.ArgumentParser:
         `argparse.ArgumentParser` object
     """
     curators = get_curators(ROOT)
+    curators_list = [initial for initial in curators]
 
     descr = (
         f"mibig-input-script v{VERSION}: " "Creation and manipulation of MIBiG entries"
@@ -30,7 +31,7 @@ def add_parser_args(VERSION: str, ROOT: Path) -> argparse.ArgumentParser:
 
     parser.add_argument(
         "curator",
-        choices=curators,
+        choices=curators_list,
         help="Give the initials of the curator creating/manipulating the MIBiG entry.",
     )
 

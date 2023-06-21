@@ -75,14 +75,12 @@ class MibigEntry(BaseClass):
         self.mibig_accession: str | None = None
         self.mibig_dict: Dict | None = None
 
-    def get_new_mibig_accession(
-        self: Self, args: argparse.Namespace, ROOT: Path
-    ) -> None:
+    def get_new_mibig_accession(self: Self, curator_id: str, ROOT: Path) -> None:
         """Generate a non-existing temporary MIBiG ID for the new entry.
 
         Parameters:
             `self` : The instance of class MibigEntry.
-            `args` : arguments provided by user
+            `curator_id` : curator ID
             `ROOT` : `Path` object indicating "root" directory of script
 
         Returns:
@@ -92,24 +90,24 @@ class MibigEntry(BaseClass):
 
         while Path.exists(
             ROOT.joinpath("mibig_next_ver")
-            .joinpath("_".join([str(args.curator), str(counter)]))
+            .joinpath("_".join([str(curator_id), str(counter)]))
             .with_suffix(".json")
         ):
             counter += 1
 
-        self.mibig_accession = "".join([str(args.curator), str(counter)])
+        self.mibig_accession = "_".join([str(curator_id), str(counter)])
         return
 
     def create_new_entry(
         self: Self,
-        curator: str,
+        curator_id: str,
         CURATION_ROUND: str,
     ) -> None:
         """Create a new base MIBiG entry.
 
         Parameters:
             `self` : The instance of class MibigEntry.
-            `curator` : name of curator creating new entry
+            `curator_id` : curator_id of curator creating new entry
             `CURATION_ROUND` : `str` of mibig curation round version
 
         Returns:
@@ -127,7 +125,7 @@ class MibigEntry(BaseClass):
             "changelog": [
                 {
                     "comments": [],
-                    "contributors": [curator],
+                    "contributors": [curator_id],
                     "version": CURATION_ROUND,
                 }
             ],
@@ -199,11 +197,21 @@ class MibigEntry(BaseClass):
                 for i in range(len(self.mibig_dict["cluster"]["compounds"]))
             ]
             accession = self.mibig_dict["cluster"]["loci"]["accession"]
-            start_coord = self.mibig_dict["cluster"]["loci"]["start_coord"]
-            end_coord = self.mibig_dict["cluster"]["loci"]["end_coord"]
+
+            try:
+                start_coord = self.mibig_dict["cluster"]["loci"]["start_coord"]
+            except KeyError:
+                start_coord = "None"
+
+            try:
+                end_coord = self.mibig_dict["cluster"]["loci"]["end_coord"]
+            except KeyError:
+                end_coord = "None"
+
             organism_name = self.mibig_dict["cluster"]["organism_name"]
             ncbi_tax_id = self.mibig_dict["cluster"]["ncbi_tax_id"]
             publications = self.mibig_dict["cluster"]["publications"]
+
             try:
                 evidence = self.mibig_dict["cluster"]["loci"]["evidence"]
             except KeyError:
