@@ -151,12 +151,13 @@ class BaseClass:
     }
 
     const_bgc_evidence = {
-        "1": "Homology-based prediction",
-        "2": "Gene expression correlated with compound production",
-        "3": "Knock-out studies",
-        "4": "Enzymatic assays",
-        "5": "Heterologous expression",
-        "6": "In vitro expression",
+        "1": "Correlation of genomic and metabolomic data",
+        "2": "Homology-based prediction",
+        "3": "Gene expression correlated with compound production",
+        "4": "Knock-out studies",
+        "5": "Enzymatic assays",
+        "6": "Heterologous expression",
+        "7": "In vitro expression",
     }
 
     def __init__(self: Self):

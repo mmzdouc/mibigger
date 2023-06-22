@@ -1,0 +1,111 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "New entry (preprint) (C62OJVVH7XOTOTFZSJT727YU 22-06-2023 10:45)"
+            ],
+            "contributors": [
+                "C62OJVVH7XOTOTFZSJT727YU"
+            ],
+            "version": "next"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "compound": "nocapeptin A",
+                "chem_struct": "CC(O)C(NC(=O)C1CCCN1C(=O)CNC(=O)C1CC(=O)NCC(=O)NC2CC3=CN(C4=C3C=CC=C4)c3cc(CC(NC2=O)C(=O)NCC(=O)NC(CO)C(=O)NC(CCC(N)=O)C(=O)NC(CC2=CNC4=C2C=CC=C4)C(=O)N1)ccc3O)C(=O)NCC(=O)NC(CCC(N)=O)C(=O)NC(CCCNC(N)=N)C(=O)NC(CC(O)=O)C(O)=O",
+                "chem_acts": [
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
+                "evidence": [
+                    "NMR"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "NZ_KV411304.1",
+            "completeness": "complete",
+            "start_coord": 1626613,
+            "end_coord": 1632294,
+            "evidence": [
+                "Correlation of genomic and metabolomic data"
+            ]
+        },
+        "mibig_accession": "C62OJVVH7XOTOTFZSJT727YU_1",
+        "minimal": false,
+        "ncbi_tax_id": "455432",
+        "organism_name": "Nocardia terpenica IFM 0406",
+        "publications": [
+            "doi:10.1101/2023.03.06.531328"
+        ],
+        "status": "active",
+        "genes": {
+            "annotations": [
+                {
+                    "id": "WP_171983241.1",
+                    "name": "NopA",
+                    "product": "precursor peptide",
+                    "comments": "Protein ID in publication: WP_195116738.1"
+                },
+                {
+                    "id": "WP_171983240.1",
+                    "name": "NopC",
+                    "product": "Asparagine synthase",
+                    "tailoring": [
+                        "lasso_macrolactam_formation"
+                    ],
+                    "comments": "Protein ID in publication: WP_171983240.1"
+                },
+                {
+                    "id": "WP_156674500.1",
+                    "name": "NopF",
+                    "product": "Cytochrome P450",
+                    "tailoring": [
+                        "biaryl_bond_formation"
+                    ],
+                    "comments": "Protein ID in publication: WP_156674500.1"
+                },
+                {
+                    "id": "WP_171983239.1",
+                    "name": "NopD",
+                    "product": "ABC transporter",
+                    "comments": "Protein ID in publication: WP_171983239.1"
+                },
+                {
+                    "id": "WP_197696517.1",
+                    "name": "NopE",
+                    "product": "Stand alone lasso RRE",
+                    "comments": "Protein ID in publication: WP_067588831.1"
+                },
+                {
+                    "id": "WP_082871451.1",
+                    "name": "NopB",
+                    "product": "Transglutaminase",
+                    "tailoring": [
+                        "lasso_macrolactam_formation"
+                    ],
+                    "comments": "Protein ID in publication: WP_082871451.1"
+                }
+            ]
+        },
+        "ripp": {
+            "cyclic": false,
+            "subclass": "lassopeptide",
+            "precursor_genes": [
+                {
+                    "leader_sequence": "MQQESVYESPVLFKVGTFEYDTQ",
+                    "core_sequence": [
+                        "GWYGSQWDGPTGQRD"
+                    ],
+                    "gene_id": "WP_171983241.1"
+                }
+            ]
+        }
+    }
+}
