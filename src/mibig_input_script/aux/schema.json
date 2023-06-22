@@ -538,7 +538,8 @@
                                     "Enzymatic assays",
                                     "Heterologous expression",
                                     "In vitro expression",
-                                    "Homology-based prediction"
+                                    "Homology-based prediction",
+                                    "Correlation of genomic and metabolomic data"
                                 ],
                                 "type": "string"
                             },
