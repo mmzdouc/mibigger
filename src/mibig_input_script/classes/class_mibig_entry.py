@@ -1032,19 +1032,19 @@ class MibigEntry(BaseClass):
             `bool` to indicate if ready to save entry
         """
         attributes_strs = [
-            self.mibig_dict["cluster"]["loci"]["accession"],
-            self.mibig_dict["cluster"]["loci"]["start_coord"],
-            self.mibig_dict["cluster"]["loci"]["end_coord"],
-            self.mibig_dict["cluster"]["mibig_accession"],
-            self.mibig_dict["cluster"]["organism_name"],
-            self.mibig_dict["cluster"]["ncbi_tax_id"],
+            self.mibig_dict.get("cluster").get("loci").get("accession", "None"),
+            self.mibig_dict.get("cluster").get("loci").get("start_coord", "None"),
+            self.mibig_dict.get("cluster").get("loci").get("end_coord", "None"),
+            self.mibig_dict.get("cluster").get("mibig_accession", "None"),
+            self.mibig_dict.get("cluster").get("organism_name", "None"),
+            self.mibig_dict.get("cluster").get("ncbi_tax_id", "None"),
         ]
 
         attributes_lists = [
-            self.mibig_dict["cluster"]["biosyn_class"],
-            self.mibig_dict["cluster"]["compounds"],
-            self.mibig_dict["cluster"]["loci"]["evidence"],
-            self.mibig_dict["cluster"]["publications"],
+            self.mibig_dict.get("cluster").get("biosyn_class", []),
+            self.mibig_dict.get("cluster").get("compounds", []),
+            self.mibig_dict.get("cluster").get("loci").get("evidence", []),
+            self.mibig_dict.get("cluster").get("publications", []),
         ]
 
         if all(variable != "None" for variable in attributes_strs) and (
