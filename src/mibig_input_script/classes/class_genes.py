@@ -5,6 +5,7 @@ Module to get information about the genes in the BGC.
 """
 
 from copy import deepcopy
+from pathlib import Path
 from typing import Dict, Self, List
 import re
 
@@ -16,6 +17,7 @@ class Genes(BaseClass):
 
     Attributes:
         mibig_dict (Dict) : holding the existing mibig entry
+        path_root (Dict) : holds Path object pointing towards "root" dir
 
     Methods:
         export_dict(self: Self) -> Dict
@@ -46,17 +48,19 @@ class Genes(BaseClass):
                 in `get_annotations()`
     """
 
-    def __init__(self: Self, mibig_entry: Dict):
+    def __init__(self: Self, mibig_entry: Dict, ROOT: Path):
         """Initialize class attributes.
 
         Parameters:
             `self` : The instance of class Genes.
             `mibig_entry` : Existing entry to be modified
+            `ROOT` : A Path object indicating the root directory
 
         Returns:
             None
         """
         self.mibig_dict = deepcopy(mibig_entry)
+        self.path_root = deepcopy(ROOT)
 
     def export_dict(self: Self) -> Dict:
         """Summarize values in json-compatible dict.
@@ -442,22 +446,52 @@ class Genes(BaseClass):
         Returns:
             Return a list of tailoring reactions or None (skip)
         """
-        input_msg_tailoring = (
-            "================================================\n"
-            "Enter the tailoring reactions associated to translated gene:\n"
-            "To SKIP, press enter.\n"
-            "To specify multiple entries, separate them with a TAB character.\n"
-            "================================================\n"
-        )
+        known_tailoring = self.read_known_values_from_json(
+            self.path_root.joinpath("known_values").joinpath("ripp_tailoring.json")
+        )["ripp_tailoring"]
+
+        input_msg_tailoring = [
+            (
+                "================================================\n"
+                "Enter associated tailoring reactions (or SKIP by pressing enter).\n"
+                "Enter a reaction from below or add a new reaction.\n"
+                "To specify multiple entries, separate them with a TAB character.\n"
+                "================================================\n"
+            )
+        ]
+        for entry in range(len(known_tailoring)):
+            input_msg_tailoring.append(f"- {known_tailoring[entry]}\n")
+        input_msg_tailoring.append("================================================\n")
+        input_msg_tailoring = "".join([i for i in input_msg_tailoring])
+
         input_tailoring = input(input_msg_tailoring)
         input_tailoring = list(filter(None, input_tailoring.split("\t")))
+
         if len(input_tailoring) == 0:
             self.message_formatted("Empty input-value: SKIP")
             return None
         else:
             input_tailoring_set = set()
+            new_tailoring_set = set(known_tailoring)
+
             for entry in input_tailoring:
-                input_tailoring_set.add(entry)
+                if entry not in known_tailoring:
+                    input_tailoring_set.add(entry)
+                    new_tailoring_set.add(entry)
+                else:
+                    input_tailoring_set.add(entry)
+
+            if len(known_tailoring) != len(new_tailoring_set):
+                new_tailoring = {"ripp_tailoring": sorted(list(new_tailoring_set))}
+                self.write_known_values_to_json(
+                    self.path_root.joinpath("known_values").joinpath(
+                        "ripp_tailoring.json"
+                    ),
+                    new_tailoring,
+                )
+            else:
+                pass
+
             return list(input_tailoring_set)
 
     def get_gene_annot_comments(self: Self) -> str | None:

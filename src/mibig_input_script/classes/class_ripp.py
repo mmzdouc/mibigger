@@ -4,8 +4,10 @@ Module to get information about RiPP.
 Module to get and store optional RiPP information.
 """
 from copy import deepcopy
-from typing import Dict, Self, List
+from pathlib import Path
 import re
+from typing import Dict, Self, List
+
 
 from mibig_input_script.classes.class_base import BaseClass
 
@@ -15,6 +17,7 @@ class Ripp(BaseClass):
 
     Attributes:
         mibig_dict (Dict) : holding the existing mibig entry
+        path_root (Dict) : holds Path object pointing towards "root" dir
 
     Methods:
         export_dict(self: Self) -> Dict
@@ -48,17 +51,19 @@ class Ripp(BaseClass):
             - `crosslinks` in `get_precursor_genes()`
     """
 
-    def __init__(self: Self, mibig_entry: Dict):
+    def __init__(self: Self, mibig_entry: Dict, ROOT: Path):
         """Initialize class attributes.
 
         Parameters:
             `self` : The instance of class RiPP.
             `mibig_entry` : Existing entry to be modified
+            `ROOT` : A Path object indicating the root directory
 
         Returns:
             None
         """
         self.mibig_dict = deepcopy(mibig_entry)
+        self.path_root = deepcopy(ROOT)
 
     def export_dict(self: Self) -> Dict:
         """Summarize values in json-compatible dict.
@@ -189,18 +194,54 @@ class Ripp(BaseClass):
         Note:
             May be extended to check for allowed subclasses in the future
         """
-        input_msg_subclass = (
-            "================================================\n"
-            "Enter the subclass of the RiPP (or SKIP by pressing enter).\n"
-            "================================================\n"
-        )
+        known_classes = self.read_known_values_from_json(
+            self.path_root.joinpath("known_values").joinpath("ripp_subclasses.json")
+        )["ripp_subclasses"]
+
+        input_msg_subclass = [
+            (
+                "================================================\n"
+                "Enter the subclass of the RiPP (or SKIP by pressing enter).\n"
+                "Enter a subclass from below or add a new subclass.\n"
+                "To specify multiple entries, separate them with a TAB character.\n"
+                "================================================\n"
+            )
+        ]
+        for entry in range(len(known_classes)):
+            input_msg_subclass.append(f"- {known_classes[entry]}\n")
+        input_msg_subclass.append("================================================\n")
+        input_msg_subclass = "".join([i for i in input_msg_subclass])
 
         input_subclass = input(input_msg_subclass)
-        if input_subclass == "":
-            self.message_formatted("Invalid input provided - SKIP")
+        input_subclass = list(filter(None, input_subclass.split("\t")))
+
+        if len(input_subclass) == 0:
+            self.message_formatted("Empty input value - SKIP")
             return
         else:
-            self.mibig_dict["cluster"]["ripp"]["subclass"] = input_subclass
+            input_classes_set = set()
+            new_classes_set = set(known_classes)
+
+            for entry in input_subclass:
+                if entry not in known_classes:
+                    input_classes_set.add(entry)
+                    new_classes_set.add(entry)
+                else:
+                    input_classes_set.add(entry)
+
+            self.mibig_dict["cluster"]["ripp"]["subclass"] = list(input_classes_set)
+
+            if len(known_classes) != len(new_classes_set):
+                new_classes = {"ripp_subclasses": sorted(list(new_classes_set))}
+                self.write_known_values_to_json(
+                    self.path_root.joinpath("known_values").joinpath(
+                        "ripp_subclasses.json"
+                    ),
+                    new_classes,
+                )
+            else:
+                pass
+
             return
 
     def get_peptidases(self: Self) -> None:

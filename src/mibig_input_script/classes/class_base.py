@@ -6,8 +6,10 @@ DRY, these functions are organized in the base class, which the other
 classes inherit.
 """
 
+import json
+from pathlib import Path
+from typing import Self, List, Dict
 import re
-from typing import Self, List
 
 
 class BaseClass:
@@ -26,9 +28,6 @@ class BaseClass:
         const_smiles_regexp (str) : regexp SMILES format
         const_compound_evidence (str) : allowed compound evidence categories
 
-    Attributes:
-        allowed_bioactiv (List) : allowed biological activities
-
     Methods:
         message_formatted(self: Self, string: str) -> None
             Print a formatted message
@@ -38,6 +37,11 @@ class BaseClass:
             Ask user to proceed/stop.
         get_reference(self: Self) -> List | None
             Get reference and test for correct format.
+        read_known_values_from_json(self: Self, location: Path) -> Dict
+            Read a json file containing a list of allowed entries.
+        write_known_values_to_json(self: Self, location: Path, values: Dict) -> None
+            Write the dict containing the known values to file.
+
 
     """
 
@@ -243,3 +247,31 @@ class BaseClass:
         """
         self.mibig_dict["cluster"]["minimal"] = False
         return
+
+    def read_known_values_from_json(self: Self, location: Path) -> Dict:
+        """Read a json file containing a list of allowed entries.
+
+        Parameters:
+            `self` : The instance of class RiPP.
+            `location` : The Path of the file to be loaded.
+
+        Returns:
+            A dict containing the list of allowed entries
+        """
+        with open(location) as f:
+            return json.load(f)
+
+    def write_known_values_to_json(self: Self, location: Path, values: Dict) -> None:
+        """Write the dict containing the known values to file.
+
+        Parameters:
+            `self` : The instance of class RiPP.
+            `location` : The Path of the file to be stored.
+            `values` : A Dict containing the new values.
+
+        Returns:
+            None
+        """
+        with open(location, "w", encoding="utf-8") as f:
+            json.dump(values, f, indent=4, ensure_ascii=False)
+            return

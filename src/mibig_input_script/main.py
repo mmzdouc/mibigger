@@ -57,11 +57,12 @@ def get_mibig_entry(
     return mibig_entry_object.export_dict()
 
 
-def get_ripp(mibig_entry: Dict) -> Dict:
+def get_ripp(mibig_entry: Dict, ROOT: Path) -> Dict:
     """Collect data related to RiPPs.
 
     Parameters:
         `mibig_entry` : MIBiG entry as `dict`
+        `ROOT` : A Path object pointing towards the root dir
 
     Returns:
         new/modified mibig entry as `dict`
@@ -70,7 +71,7 @@ def get_ripp(mibig_entry: Dict) -> Dict:
         print("Cannot add information if 'biosynthetic class' is not RiPP!")
         return mibig_entry
     else:
-        ripp_object = Ripp(mibig_entry)
+        ripp_object = Ripp(mibig_entry, ROOT)
 
         try:
             ripp_object.mibig_dict["cluster"]["ripp"]
@@ -82,16 +83,17 @@ def get_ripp(mibig_entry: Dict) -> Dict:
         return ripp_object.export_dict()
 
 
-def get_genes(mibig_entry: Dict) -> Dict:
+def get_genes(mibig_entry: Dict, ROOT: Path) -> Dict:
     """Collect data related to gene.
 
     Parameters:
         `mibig_entry` : MIBiG entry as `dict`
+        `ROOT` : A Path object pointing towards the "root" dir
 
     Returns:
         new/modified mibig entry as `dict`
     """
-    genes_object = Genes(mibig_entry)
+    genes_object = Genes(mibig_entry, ROOT)
 
     try:
         genes_object.mibig_dict["cluster"]["genes"]
@@ -103,11 +105,12 @@ def get_genes(mibig_entry: Dict) -> Dict:
     return genes_object.export_dict()
 
 
-def get_optional_data(mibig_entry: Dict) -> Dict:
+def get_optional_data(mibig_entry: Dict, ROOT: Path) -> Dict:
     """Menu to add additional (optional) data.
 
     Parameters:
         `mibig_entry` : MIBiG entry as `dict`
+        `ROOT` : A Path object pointing towards the "root" dir
 
     Returns:
         new/modified mibig entry as `dict`
@@ -130,10 +133,10 @@ def get_optional_data(mibig_entry: Dict) -> Dict:
         if user_input == "0":
             break
         elif user_input == "1":
-            mibig_entry = get_genes(mibig_entry)
+            mibig_entry = get_genes(mibig_entry, ROOT)
             continue
         elif user_input == "2":
-            mibig_entry = get_ripp(mibig_entry)
+            mibig_entry = get_ripp(mibig_entry, ROOT)
             continue
         else:
             print("Invalid input provided")
@@ -250,7 +253,7 @@ def main() -> None:
 
     mibig_entry = get_mibig_entry(existing_mibig, args, ROOT, CURATION_ROUND)
 
-    mibig_entry = get_optional_data(mibig_entry)
+    mibig_entry = get_optional_data(mibig_entry, ROOT)
 
     mibig_entry = get_changelog(mibig_entry, args, CURATION_ROUND, ROOT)
 
