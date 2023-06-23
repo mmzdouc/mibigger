@@ -18,8 +18,8 @@ Download, Installation, and Curation Strategy
 - Add your initials(curator_id/name/email to the list of curators in `src/mibig_input_script/curators.csv`
 - Add/modify entries (see below)
 - Once you have added some entries, create a pull request into main and request a reviewer
-- The reviewer (one of us) will double-check the entry for consistency
-- Once reviewed, the new entries are merged into the main branch
+- The reviewer (one of us) will double-check the entry for consistency (see instructions below)
+- Once reviewed and fixed, the new entries are merged into the main branch
 
 Usage
 =====
@@ -37,6 +37,17 @@ Curation Strategy
 - **Coordinates**: Start/end coordinates for the locus are mandatory. If the locus equals the BGC, the coordinates still have to be entered ("1" to however long the BGC is).
 - **Preprints**: BGCs described in preprints are okay to add but additional care has to be taken regarding the authenticity of data. Please also mention the signal word "preprint" in the comment - this way, we can identify the preprint-based entries in the future.
 - **GenBank/RefSeq**: GenBank accessions are strongly preferred over RefSeq accessions since the latter can be changed abruptly. Sometimes, the GenBank entry cannot be taken due to missing annotations. In these cases, the RefSeq entry is tolerated.
+
+Reviewer instructions
+=====================
+
+The input program performes several checks to validate new entries. Still, mistakes can happen and the review can help to catch them:
+
+1) Are there any obvious typos or mistakes?
+2) Is the NCBI accession correct? Are the coordinates correct? Search them in the NCBI (e.g. by replacing `ACCESSION`, `START`, `STOP` in this URL: `https://www.ncbi.nlm.nih.gov/nuccore/ACCESSION?from=START&to=STOP`)
+3) If the entry is considered okay, "Request changes" and add your curator ID, which can be then added to the changelog including a brief comment (e.g. reviewed by XYZ)
+4) The person requesting the review then adds the reviewer to the entry, pushes the changes to the repo.
+5) The reviewer approves and merges the new entry into the main.
 
 Background
 ==========
