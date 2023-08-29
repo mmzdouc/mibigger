@@ -17,6 +17,16 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "2.0"
+        },
+        {
+            "comments": [
+                "Added precursor peptide-encoding gene padeA. Added information on leader and core peptide. (C62OJVVH7XOTOTFZSJT727YU 29-08-2023 19:58)",
+                "Added correct RiPP subclass. (C62OJVVH7XOTOTFZSJT727YU 29-08-2023 20:54)"
+            ],
+            "contributors": [
+                "C62OJVVH7XOTOTFZSJT727YU"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -28,19 +38,52 @@
                 "compound": "paeninodin"
             }
         ],
+        "genes": {
+            "extra_genes": [
+                {
+                    "id": "padeA",
+                    "location": {
+                        "exons": [
+                            {
+                                "start": 24978,
+                                "end": 25104
+                            }
+                        ],
+                        "strand": 1
+                    }
+                }
+            ]
+        },
         "loci": {
             "accession": "AHKH01000064.1",
-            "completeness": "Unknown",
+            "completeness": "complete",
             "end_coord": 28726,
-            "start_coord": 23026
+            "start_coord": 23026,
+            "evidence": [
+                "Heterologous expression"
+            ]
         },
         "mibig_accession": "BGC0001356",
-        "minimal": true,
+        "minimal": false,
         "ncbi_tax_id": "1131935",
         "organism_name": "Paenibacillus dendritiformis C454",
         "publications": [
-            "pubmed:27151214"
+            "pubmed:27151214",
+            "doi:10.1074/jbc.M116.722108"
         ],
-        "status": "active"
+        "status": "active",
+        "ripp": {
+            "cyclic": false,
+            "precursor_genes": [
+                {
+                    "leader_sequence": "MKKQYSKPSLEVLDVHQTM",
+                    "core_sequence": [
+                        "AGPGTSTPDAFQPDPDEDVHYDS"
+                    ],
+                    "gene_id": "padeA"
+                }
+            ],
+            "subclass": "lassopeptide"
+        }
     }
 }
