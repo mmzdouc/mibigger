@@ -203,7 +203,6 @@ class Ripp(BaseClass):
                 "================================================\n"
                 "Enter the subclass of the RiPP (or SKIP by pressing enter).\n"
                 "Enter a subclass from below or add a new subclass.\n"
-                "To specify multiple entries, separate them with a TAB character.\n"
                 "================================================\n"
             )
         ]
@@ -213,34 +212,22 @@ class Ripp(BaseClass):
         input_msg_subclass = "".join([i for i in input_msg_subclass])
 
         input_subclass = input(input_msg_subclass)
-        input_subclass = list(filter(None, input_subclass.split("\t")))
 
         if len(input_subclass) == 0:
             self.message_formatted("Empty input value - SKIP")
             return
         else:
-            input_classes_set = set()
-            new_classes_set = set(known_classes)
+            self.mibig_dict["cluster"]["ripp"]["subclass"] = input_subclass
 
-            for entry in input_subclass:
-                if entry not in known_classes:
-                    input_classes_set.add(entry)
-                    new_classes_set.add(entry)
-                else:
-                    input_classes_set.add(entry)
-
-            self.mibig_dict["cluster"]["ripp"]["subclass"] = list(input_classes_set)
-
-            if len(known_classes) != len(new_classes_set):
-                new_classes = {"ripp_subclasses": sorted(list(new_classes_set))}
+            if input_subclass not in known_classes:
+                known_classes.append(input_subclass)
+                known_classes = sorted(known_classes)
                 self.write_known_values_to_json(
                     self.path_root.joinpath("known_values").joinpath(
                         "ripp_subclasses.json"
                     ),
-                    new_classes,
+                    known_classes,
                 )
-            else:
-                pass
 
             return
 
