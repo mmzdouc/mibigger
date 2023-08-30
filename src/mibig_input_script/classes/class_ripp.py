@@ -631,7 +631,6 @@ class Ripp(BaseClass):
         input_msg_gene_id = (
             "================================================\n"
             "Enter the precursor gene ID:\n"
-            "Only enter proteinogenic amino acids (upper-case letters).\n"
             "================================================\n"
         )
         input_precursor_gene_id = input(input_msg_gene_id)
