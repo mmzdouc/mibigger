@@ -8,7 +8,7 @@ import argparse
 from pathlib import Path
 from typing import List
 
-from mibig_input_script.aux.read_functions import get_curators
+from mibigger.aux.read_functions import get_curators
 
 
 def add_parser_args(VERSION: str, ROOT: Path) -> argparse.ArgumentParser:

@@ -15,7 +15,7 @@ import re
 from typing import Dict, Self, List, Tuple
 from urllib.error import HTTPError
 
-from mibig_input_script.classes.class_base import BaseClass
+from mibigger.classes.class_base import BaseClass
 
 
 class MibigEntry(BaseClass):

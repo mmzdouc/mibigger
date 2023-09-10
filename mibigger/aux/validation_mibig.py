@@ -4,7 +4,7 @@ Validates MIBig entry by checking against JSON schema and performing
 futher checks.
 """
 from pathlib import Path
-from mibig_input_script.classes.class_write_mibig import WriteMibig
+from mibigger.classes.class_write_mibig import WriteMibig
 
 import json
 import jsonschema

@@ -11,7 +11,7 @@ from pathlib import Path
 import pandas as pd
 from typing import Dict, Self
 
-from mibig_input_script.classes.class_base import BaseClass
+from mibigger.classes.class_base import BaseClass
 
 
 class WriteMibig(BaseClass):

@@ -9,7 +9,7 @@ import re
 from typing import Dict, Self, List
 
 
-from mibig_input_script.classes.class_base import BaseClass
+from mibigger.classes.class_base import BaseClass
 
 
 class Ripp(BaseClass):

@@ -11,7 +11,7 @@ from copy import deepcopy
 from datetime import datetime
 from typing import Set, Dict, List, Self
 
-from mibig_input_script.classes.class_base import BaseClass
+from mibigger.classes.class_base import BaseClass
 
 
 class Changelog(BaseClass):

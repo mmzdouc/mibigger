@@ -7,18 +7,18 @@ from pathlib import Path
 import readline
 from typing import Dict
 
-from mibig_input_script.aux.parse_arguments import parse_arguments
-from mibig_input_script.aux.read_functions import get_curator_email
-from mibig_input_script.aux.read_functions import read_mibig_json
-from mibig_input_script.aux.verify_existence_entry import verify_existence_entry
-from mibig_input_script.aux.validation_mibig import validation_mibig
-from mibig_input_script.aux.read_functions import get_curators
+from mibigger.aux.parse_arguments import parse_arguments
+from mibigger.aux.read_functions import get_curator_email
+from mibigger.aux.read_functions import read_mibig_json
+from mibigger.aux.verify_existence_entry import verify_existence_entry
+from mibigger.aux.validation_mibig import validation_mibig
+from mibigger.aux.read_functions import get_curators
 
-from mibig_input_script.classes.class_ripp import Ripp
-from mibig_input_script.classes.class_mibig_entry import MibigEntry
-from mibig_input_script.classes.class_changelog import Changelog
-from mibig_input_script.classes.class_write_mibig import WriteMibig
-from mibig_input_script.classes.class_genes import Genes
+from mibigger.classes.class_ripp import Ripp
+from mibigger.classes.class_mibig_entry import MibigEntry
+from mibigger.classes.class_changelog import Changelog
+from mibigger.classes.class_write_mibig import WriteMibig
+from mibigger.classes.class_genes import Genes
 
 
 VERSION = metadata.version("mibig-input-script")
