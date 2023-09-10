@@ -25,15 +25,15 @@ Usage
 =====
 
 - Start the program with `python ./src/mibig-input-script/main.py`
-- Display the help with the `-h` flag.
-- To create a new entry, provide the curator ID together with the `-n` flag (e.g. `... MMZ -n`)
-- To modify an existing entry, provide the curator ID, the `-e` flag, and the MIBiG ID (e.g. `... MMZ -e BGC0001234`)
+  - Display the help with the `-h` flag.
+  - To create a new entry, provide the curator ID together with the `-n` flag (e.g. `... MMZ -n`)
+  - To modify an existing entry, provide the curator ID, the `-e` flag, and the MIBiG ID (e.g. `... MMZ -e BGC0001234`)
 
 Curation Strategy
 =================
 
 - **Communication**: In distributed development, version control is no substitute for communication. Please briefly announce the entries you are working on in the Slack channel and check if anybody is work on the entry. Do frequent pushes and pull requests to keep the main up-to-date with your work.
-- **Typos**: please double-check the data you add for typos to make it easier for the reviewers. Altough we perform many checks for erroneous data, we can't catch all mistakes.
+- **Typos**: please double-check the data you add for typos to make it easier for the reviewers. Although we perform many checks for erroneous data, we can't catch all mistakes.
 - **Coordinates**: Start/end coordinates for the locus are mandatory. If the locus equals the BGC, the coordinates still have to be entered ("1" to however long the BGC is).
 - **Preprints**: BGCs described in preprints are okay to add but additional care has to be taken regarding the authenticity of data. Please also mention the signal word "preprint" in the comment - this way, we can identify the preprint-based entries in the future.
 - **GenBank/RefSeq**: GenBank accessions are strongly preferred over RefSeq accessions since the latter can be changed abruptly. Sometimes, the GenBank entry cannot be taken due to missing annotations. In these cases, the RefSeq entry is tolerated.
@@ -41,7 +41,7 @@ Curation Strategy
 Reviewer instructions
 =====================
 
-The input program performes several checks to validate new entries. Still, mistakes can happen and the review can help to catch them:
+The input program performs several checks to validate new entries. Still, mistakes can happen and the review can help to catch them:
 
 1) Are there any obvious typos or mistakes?
 2) Is the NCBI accession correct? Are the coordinates correct? Search them in the NCBI (e.g. by replacing `ACCESSION`, `START`, `STOP` in this URL: `https://www.ncbi.nlm.nih.gov/nuccore/ACCESSION?from=START&to=STOP`)
