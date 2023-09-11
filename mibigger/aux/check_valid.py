@@ -14,7 +14,7 @@ from typing import Any, Dict, List
 
 from jsonschema import validate, ValidationError
 
-with open(Path.cwd().joinpath("aux", "schema.json")) as schema_handle:
+with open(Path.cwd().joinpath("mibigger", "aux", "schema.json")) as schema_handle:
     schema = json.load(schema_handle)
 
 
