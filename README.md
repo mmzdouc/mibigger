@@ -78,10 +78,6 @@ Usage
 Curation Tips
 =================
 
-- **Communication**: In distributed development, version control is no substitute
-  for communication.  Please briefly announce the entries you are working on in the
-  Slack  channel and check if anybody is work on the entry. Do frequent
-  pull requests to keep the main up-to-date.
 - **Typos**: please double-check your additions for typos to make it  easier for
   the reviewers. Although we perform many checks for erroneous data, we can't catch
   all mistakes.
@@ -96,6 +92,10 @@ Curation Tips
   accessions since the latter can be changed abruptly. Sometimes, the GenBank  entry
   cannot be taken due to missing annotations. In these cases, the RefSeq entry is
   tolerated.
+- **Missing Genes**: Sometimes, short genes are not picked up by the NCBI annotation
+  algorithm (e.g. for RiPP precursor peptide-encoding genes). In this case, the
+  "extra_genes" field can be used to specify the nucleotide start and stop. See
+  `BGC0001356.json` for an example.
 
 Reviewers (TBA)
 =========
@@ -149,6 +149,7 @@ In this project, a number of tools are used to keep code and style consistent.
 These tools include:
 - `black` (v23.3.0)
 - `flake8` (v6.0.0)
+- `check_valid.py`
 
 We recommend using the package `pre-commit` to run these tools before committing.
 `pre-commit` can be installed with `pre-commit install`.
