@@ -13,9 +13,7 @@ from typing import Any, Dict, List
 
 from jsonschema import validate, ValidationError
 
-print(os.getcwd())
-
-with open("./schema.json") as schema_handle:
+with open("aux/schema.json") as schema_handle:
     schema = json.load(schema_handle)
 
 
