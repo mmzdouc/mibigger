@@ -4,17 +4,26 @@ build-backend = "hatchling.build"
 
 [project]
 name = "mibigger"
+readme = "README.md"
+requires-python = ">=3.11"
 description = "Script to create and manipulate MIBiG entries"
 version = "0.5.0"
 dynamic = ["dependencies"]
+
 
 [tool.hatch.metadata.hooks.requirements_txt]
 files = ["requirements.txt"]
 
 [project.optional-dependencies]
 dev = [
-    "pre-commit",
-    "pytest"
+    "pre-commit==3.3.2",
+    "pytest==7.4.2",
+    "jsonschema==4.17.3"
+]
+
+[tool.hatch]
+install_requires = [
+    "jsonschema==4.17.3",
 ]
 
 [tool.pytest.ini_options]

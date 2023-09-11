@@ -21,4 +21,5 @@ repos:
         name: JSON Validation Kai
         entry: mibigger/aux/check_valid.py
         language: python
+        additional_dependencies: ["jsonschema==4.17.3"]
         files: \.json$
