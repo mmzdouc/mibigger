@@ -8,12 +8,13 @@ from collections import defaultdict
 import glob
 import json
 import os
+from pathlib import Path
 import sys
 from typing import Any, Dict, List
 
 from jsonschema import validate, ValidationError
 
-with open("aux/schema.json") as schema_handle:
+with open(Path.cwd().joinpath("aux", "schema.json")) as schema_handle:
     schema = json.load(schema_handle)
 
 
