@@ -16,6 +16,7 @@ Download, Installation, and Curation Strategy
 - Create a new virtual env using `python version 3.11` (e.g. with `conda`)
 - Install the package and download requirements using `pip install -e .`
 - Add your initials(curator_id/name/email to the list of curators in `src/mibig_input_script/curators.csv`
+- Create a new branch
 - Add/modify entries (see below)
 - Once you have added some entries, create a pull request into main and request a reviewer
 - The reviewer (one of us) will double-check the entry for consistency (see instructions below)

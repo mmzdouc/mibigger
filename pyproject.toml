@@ -3,9 +3,9 @@ requires = ["hatchling", "hatch-requirements-txt"]
 build-backend = "hatchling.build"
 
 [project]
-name = "mibig-input-script"
+name = "mibigger"
 description = "Script to create and manipulate MIBiG entries"
-version = "0.4.1"
+version = "0.5.0"
 dynamic = ["dependencies"]
 
 [tool.hatch.metadata.hooks.requirements_txt]
@@ -24,6 +24,6 @@ testpaths = [
     "tests",
 ]
 pythonpath = [
-  "src"
+  "mibigger"
 ]
 

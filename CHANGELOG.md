@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [0.5.0] - 10-09-2023
+
+### Changed
+
+- Renamed the project to `mibigger`
+
 ## [0.4.1] - 23-06-2023
 
 ### Added
