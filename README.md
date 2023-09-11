@@ -1,7 +1,7 @@
 Overview
 ========
 
-This repository contains scripts to help in creating new entries and
+The `mibigger` program helps in creating new entries and
 modify existing entries for the upcoming version of MIBiG (4.0).
 
 The script takes input, tests it for correctness where possible,
@@ -15,48 +15,55 @@ usage.
 Curation Strategy
 =================
 
-Curation is a prime example of distributed development: multiple people work
-on the same project, adding new information or editing existing ones. To prevent
+Data curation is a prime example of distributed development: multiple people work
+on the same project, adding new or editing existing entries. To prevent
 conflicting files and parallel edits, the following strategies are implemented:
 - Branching model: all curators work on separate branches, which branch out of the
-  main (production) branch. Once a (few) new entries are created/modified, the
+  main (production) branch. Once a entry is created/modified, the
   curator issues a pull request to the main branch. After successful review and
   addition of changes, the branch is incorporated in the main.
 - Reviewing: each pull request needs to be reviewed to guarantee factual correctness
-  (four-eyes-principle). During the pull request, a reviewer can be assigned. For a
-  list of reviewers and their specialities, see below.
+  (four-eyes-principle). During the pull request, a reviewer can be assigned.
+  Reviewing is as important as adding new entries and reviewers are credited in the
+  changelog. For a list of reviewers and their specialities, see below.
 - Communication: version control is no replacement for communication. Both curators
   and reviewers need to communicate which entries they are working on to prevent
   possible redundant work. Please announce your work via the Slack channel.
 - Entry naming: To prevent identical names, all new entries are automatically
   prefixed with the curators initials (or MIBiG annotator ID, if already available)
-- Entry validation: each entry is validated using the `validated.py` script of Kai
-  Blin. The validation can be automated by using the package `pre-commit` (see below).
+- Entry validation: each entry is validated using the `validated.py` script (by Kai
+  Blin). The validation is automated as hook via `pre-commit` and performed at every
+  commit (see below).
 
 
 Download, Installation, Curation
 ================================
 
-- Clone `mibigger` to create a local version
-- Create and activate a new virtual env using `python version 3.11` (e.g. with `conda`)
-- Install the package and download requirements using `pip install -e .`
-- Install pre-commit using `pre-commit install`
+- Clone `mibigger` to create a local version.
+- Create and activate a new virtual env using `python version 3.11` (e.g. with `conda`).
+- Install the package and download requirements using `pip install -e .`.
+- Install pre-commit using `pre-commit install`.
 - Create a new branch using `git checkout -b dev_mmz` (with your initials instead
-  `mmz`)
-- Push your new branch to GitHub using `git push origin dev_mmz`
+  `mmz`).
+- Push your new branch to GitHub using `git push origin dev_mmz`.
 - Set the remote branch to push to using `git branch --set-upstream-to=origin/dev_mmz
-  dev_mmz`
+  dev_mmz`.
 - Add your initials/curator_id/name/email to the list of curators in
-  `src/mibig_input_script/curators.csv`
+  `src/mibig_input_script/curators.csv` if not already present.
 - Add/modify entries (see below) and commit to your branch. Pre-commit will
-  automatically check committed .json-files for correctness and prevent incorrect
-  entries.
+  automatically check committed .json-files and abort the commit in case of
+  incompatibilities with Kai Blin's `check_valid.py` script.
 - Ideally, after each edit/new entry, the changes should be pulled into the main.
   The easiest way of doing so is via the GitHub webpage. Create a pull request and
   request reviewer(s) from the list of collaborators.
 - The reviewer (one of us) will double-check the entry for consistency  (see
   instructions below).
-- Once reviewed and fixed, the new entries are merged into the main branch.
+- Once reviewed and fixed, the new entries are merged into the main branch, and the
+  remote `dev_mmz` branch is deleted. The local `dev_mmz` branch still exists and
+  can be reused for a new entry by pulling the newest changes with `git pull origin
+  main`, creating a new remote branch with `git push origin dev_mmz`, and setting
+  the remote branch to push to via `git branch --set-upstream-to=origin/dev_mmz
+  dev_mmz`.
 
 Usage
 =====
