@@ -124,7 +124,7 @@ class MibigEntry(BaseClass):
             "changelog": [
                 {
                     "comments": [],
-                    "contributors": [curator_id],
+                    "contributors": [],
                     "updated_at": [],
                     "version": CURATION_ROUND,
                 }
@@ -948,7 +948,7 @@ class MibigEntry(BaseClass):
         else:
             try:
                 input_ncbi_taxid = int(input_ncbi_taxid)
-                self.mibig_dict["cluster"]["ncbi_tax_id"] = input_ncbi_taxid
+                self.mibig_dict["cluster"]["ncbi_tax_id"] = str(input_ncbi_taxid)
             except ValueError:
                 self.error_message_formatted("Invalid input provided")
 

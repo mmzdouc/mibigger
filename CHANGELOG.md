@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.1] - 10-09-2023
+
+### Changed
+
+- Fixed wrongly formatted SMILES (double-escaped characters)
 
 ## [0.5.0] - 10-09-2023
 
@@ -16,6 +21,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 - Renamed the project to `mibigger`
 - Updated `schema.json` to version 2.13
+- Renamed folder `aux` to `helper` (`aux` is a forbidden dir name in Windows)
 
 ## [0.4.1] - 23-06-2023
 

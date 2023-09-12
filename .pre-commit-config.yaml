@@ -19,7 +19,7 @@ repos:
     hooks:
     -   id: check-valid-kai
         name: JSON Validation Kai
-        entry: mibigger/aux/check_valid.py
+        entry: mibigger/helper/check_valid.py
         language: python
         additional_dependencies: ["jsonschema==4.17.3"]
         files: \.json$
