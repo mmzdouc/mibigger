@@ -2,10 +2,13 @@
     "changelog": [
         {
             "comments": [
-                "New entry (preprint) (C62OJVVH7XOTOTFZSJT727YU 11-09-2023 11:35)"
+                "New entry (preprint)."
             ],
             "contributors": [
                 "C62OJVVH7XOTOTFZSJT727YU"
+            ],
+            "updated_at": [
+                "2023-09-12T11:20:55.221404"
             ],
             "version": "next"
         }

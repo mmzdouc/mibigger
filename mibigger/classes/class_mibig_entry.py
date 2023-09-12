@@ -7,12 +7,11 @@ modifies it directly in place. Returns a mibig entry dict that is consequently
 modified by downstream modules.
 """
 
-import argparse
 from copy import deepcopy
 from Bio import Entrez
 from pathlib import Path
 import re
-from typing import Dict, Self, List, Tuple
+from typing import Dict, Self, List
 from urllib.error import HTTPError
 
 from mibigger.classes.class_base import BaseClass
@@ -126,6 +125,7 @@ class MibigEntry(BaseClass):
                 {
                     "comments": [],
                     "contributors": [curator_id],
+                    "updated_at": [],
                     "version": CURATION_ROUND,
                 }
             ],
@@ -411,37 +411,37 @@ class MibigEntry(BaseClass):
             If `index` is `int`, an existing entry is modified (overwritten).
         """
         input_name = self.get_compound_name()
-        if input_name == False:
+        if input_name is False:
             return
         else:
             pass
 
         input_synonym = self.get_compound_synonym()
-        if input_name == False:
+        if input_name is False:
             return
         else:
             pass
 
         input_structure = self.get_compound_smiles()
-        if input_structure == False:
+        if input_structure is False:
             return
         else:
             pass
 
         input_evidence = self.get_compound_evidence()
-        if input_evidence == False:
+        if input_evidence is False:
             return
         else:
             pass
 
         input_activity = self.get_compound_activity()
-        if input_activity == False:
+        if input_activity is False:
             return
         else:
             pass
 
         input_target = self.get_compound_targets()
-        if input_target == False:
+        if input_target is False:
             return
         else:
             pass
@@ -628,13 +628,16 @@ class MibigEntry(BaseClass):
             `self` : The instance of class MibigEntry.
 
         Returns:
-            Return a list of evidence for the compound structure or None (skip) or bool (error)
+            Return a list of evidence for the compound structure or None (skip) or
+            bool (error)
         """
         input_msg_evidence = [
             (
                 "================================================\n"
-                "Enter the structural evidence for the compound (or press enter to SKIP):\n"
-                "(Enter one or more numbers separated by a TAB character and press enter)\n"
+                "Enter the structural evidence for the compound (or press enter to "
+                "SKIP):\n"
+                "(Enter one or more numbers separated by a TAB character and press "
+                "enter)\n"
                 "================================================\n"
             )
         ]
@@ -673,7 +676,8 @@ class MibigEntry(BaseClass):
             (
                 "================================================\n"
                 "Enter the biological activities (to SKIP, press enter):\n"
-                "(Enter one or more activities separated by a TAB character and press enter)\n"
+                "(Enter one or more activities separated by a TAB character and "
+                "press enter)\n"
                 "================================================\n"
             )
         ]
@@ -771,7 +775,8 @@ class MibigEntry(BaseClass):
                     self.error_message_formatted("No NCBI taxonomy ID found")
             except HTTPError:
                 self.error_message_formatted(
-                    "Search for NCBI Taxonomy ID via organism name failed. Please add manually."
+                    "Search for NCBI Taxonomy ID via organism name failed. Please "
+                    "add manually."
                 )
         else:
             pass

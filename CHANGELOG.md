@@ -8,9 +8,14 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [0.5.0] - 10-09-2023
 
+### Added
+
+- Pre-commit now includes the `check_valid.py` script to test json files
+
 ### Changed
 
 - Renamed the project to `mibigger`
+- Updated `schema.json` to version 2.13
 
 ## [0.4.1] - 23-06-2023
 

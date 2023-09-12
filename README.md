@@ -32,8 +32,8 @@ conflicting files and parallel edits, the following strategies are implemented:
 - Entry naming: To prevent identical names, all new entries are automatically
   prefixed with the curators initials (or MIBiG annotator ID, if already available)
 - Entry validation: each entry is validated using the `validated.py` script (by Kai
-  Blin). The validation is automated as hook via `pre-commit` and performed at every
-  commit (see below).
+  Blin/Simon Shaw). The validation is automated as hook via `pre-commit` and
+  performed at every commit (see below).
 
 
 Download, Installation, Curation
@@ -52,7 +52,7 @@ Download, Installation, Curation
   `src/mibig_input_script/curators.csv` if not already present.
 - Add/modify entries (see below) and commit to your branch. Pre-commit will
   automatically check committed .json-files and abort the commit in case of
-  incompatibilities with Kai Blin's `check_valid.py` script.
+  incompatibilities with Kai's/Simon's `check_valid.py` script.
 - Ideally, after each edit/new entry, the changes should be pulled into the main.
   The easiest way of doing so is via the GitHub webpage. Create a pull request and
   request reviewer(s) from the list of collaborators.
