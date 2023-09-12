@@ -4,7 +4,6 @@ import argparse
 from Bio import Entrez
 from importlib import metadata
 from pathlib import Path
-import readline
 from typing import Dict
 
 from mibigger.aux.parse_arguments import parse_arguments
@@ -21,7 +20,7 @@ from mibigger.classes.class_write_mibig import WriteMibig
 from mibigger.classes.class_genes import Genes
 
 
-VERSION = metadata.version("mibig-input-script")
+VERSION = metadata.version("mibigger")
 ROOT = Path(__file__).resolve().parent
 CURATION_ROUND = "next"
 
