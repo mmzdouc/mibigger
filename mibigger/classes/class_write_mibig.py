@@ -32,7 +32,7 @@ class WriteMibig(BaseClass):
         test_duplicate_entries(self: Self, ROOT) -> None
             Test for duplicate entries when creating a new entry
         append_to_csv_existing(self: Self, ROOT) -> None:
-            Append info of new entry to existing_mibig_entries.csv
+            Append info of new entry to all_mibig_entries.csv
 
     Note:
         Deepcopy required to prevent implicit changing of original dict
@@ -104,7 +104,7 @@ class WriteMibig(BaseClass):
         Returns:
             None
         """
-        existing = "existing_mibig_entries.csv"
+        existing = "all_mibig_entries.csv"
         df = pd.read_csv(ROOT.joinpath(existing))
 
         current_mibig_acc = self.export_dict["cluster"]["mibig_accession"]
@@ -152,7 +152,7 @@ class WriteMibig(BaseClass):
                 return
 
     def append_to_csv_existing(self: Self, ROOT) -> None:
-        """Append info of new entry to existing_mibig_entries.csv.
+        """Append info of new entry to all_mibig_entries.csv.
 
         Parameters:
             `self` : The instance of class WriteMibig.
@@ -161,7 +161,7 @@ class WriteMibig(BaseClass):
         Returns:
             None
         """
-        existing = "existing_mibig_entries.csv"
+        existing = "all_mibig_entries.csv"
         df = pd.read_csv(ROOT.joinpath(existing))
 
         current_mibig_acc = self.export_dict["cluster"]["mibig_accession"]

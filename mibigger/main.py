@@ -4,7 +4,7 @@ import argparse
 from Bio import Entrez
 from importlib import metadata
 from pathlib import Path
-import readline
+import readline  # must be added to allow for nicer input typing
 from typing import Dict
 
 from mibigger.aux.parse_arguments import parse_arguments
