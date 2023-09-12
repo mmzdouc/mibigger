@@ -104,9 +104,11 @@ Reviewers (TBA)
 - Barbara: NRPS, PKS
 - David: NRPS, PKS
 - Frida: PKS, RiPPs
-- Jorge: All fungal-related
-- Marnix: All
+- Jorge: all fungal-related
+- Kai: all
+- Marnix: all
 - Mitja: RiPPs
+- Zach: siderophores
 
 
 Reviewer instructions
