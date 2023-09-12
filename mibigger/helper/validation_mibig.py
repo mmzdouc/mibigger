@@ -22,7 +22,7 @@ def validation_mibig(write_mibig: WriteMibig, ROOT: Path) -> None:
     """
     json_string = write_mibig.return_json_string()
 
-    with open(ROOT.joinpath("aux").joinpath("schema.json")) as schema_handle:
+    with open(ROOT.joinpath("helper").joinpath("schema.json")) as schema_handle:
         schema = json.load(schema_handle)
     try:
         jsonschema.validate(json.loads(json_string), schema)

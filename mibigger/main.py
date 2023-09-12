@@ -7,12 +7,12 @@ from pathlib import Path
 import readline  # must be added to allow for nicer input typing
 from typing import Dict
 
-from mibigger.aux.parse_arguments import parse_arguments
-from mibigger.aux.read_functions import get_curator_email
-from mibigger.aux.read_functions import read_mibig_json
-from mibigger.aux.verify_existence_entry import verify_existence_entry
-from mibigger.aux.validation_mibig import validation_mibig
-from mibigger.aux.read_functions import get_curators
+from mibigger.helper.parse_arguments import parse_arguments
+from mibigger.helper.read_functions import get_curator_email
+from mibigger.helper.read_functions import read_mibig_json
+from mibigger.helper.verify_existence_entry import verify_existence_entry
+from mibigger.helper.validation_mibig import validation_mibig
+from mibigger.helper.read_functions import get_curators
 
 from mibigger.classes.class_ripp import Ripp
 from mibigger.classes.class_mibig_entry import MibigEntry
@@ -229,7 +229,7 @@ def main() -> None:
         The script is started in main, where separate functions initialize
         the classes and handle the returned data.
         Further, there are some general functions that are organized
-        in the `aux` folder.
+        in the `helper` folder.
 
         The general data handling concept is as follows: an entry is loaded or
         newly created by the MibigEntry class and handliong of essential data

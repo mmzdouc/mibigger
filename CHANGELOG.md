@@ -16,6 +16,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 - Renamed the project to `mibigger`
 - Updated `schema.json` to version 2.13
+- Renamed folder `aux` to `helper` (`aux` is a forbidden dir name in Windows)
 
 ## [0.4.1] - 23-06-2023
 
