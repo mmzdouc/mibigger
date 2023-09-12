@@ -28,7 +28,8 @@ conflicting files and parallel edits, the following strategies are implemented:
   changelog. For a list of reviewers and their specialities, see below.
 - Communication: version control is no replacement for communication. Both curators
   and reviewers need to communicate which entries they are working on to prevent
-  possible redundant work. Please announce your work via the Slack channel.
+  possible redundant work. Please announce your work via the Slack channel and/or
+  adding it to the `coordination_mibigger` file on [Google Docs](https://tinyurl.com/yckbdbe8)
 - Entry naming: To prevent identical names, all new entries are automatically
   prefixed with the curators initials (or MIBiG annotator ID, if already available)
 - Entry validation: each entry is validated using the `validated.py` script (by Kai
