@@ -36,6 +36,21 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.1"
+        },
+        {
+            "comments": [
+                "Added Coordinates",
+                "Changed name to be correct"
+            ],
+            "contributors": [
+                "FV",
+                "FV"
+            ],
+            "updated_at": [
+                "2023-09-12T14:58:25.577824",
+                "2023-09-12T14:59:39.995424"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -45,6 +60,8 @@
         ],
         "compounds": [
             {
+                "compound": "oxazolomycin B",
+                "chem_struct": "COC(CC(C)C(O)\\\\C=C\\\\C=C\\\\CNC(=O)C(C)(C)C(O)C(\\\\C)=C\\\\C=C\\\\C=C\\\\CC1=CN=CO1)C1(O)C(C)C(=O)N(C)C11COC1=O",
                 "chem_acts": [
                     {
                         "activity": "antiviral"
@@ -52,19 +69,17 @@
                     {
                         "activity": "cytotoxic"
                     }
-                ],
-                "chem_struct": "COC(CC(C)C(O)\\C=C\\C=C\\CNC(=O)C(C)(C)C(O)C(\\C)=C\\C=C\\C=C\\CC1=CN=CO1)C1(O)C(C)C(=O)N(C)C11COC1=O",
-                "compound": "oxalomycin B",
-                "database_id": [
-                    "npatlas:NPA012324"
-                ],
-                "mol_mass": 655.346880148,
-                "molecular_formula": "C35H49N3O9"
+                ]
             }
         ],
         "loci": {
             "accession": "EF552687.1",
-            "completeness": "Unknown"
+            "completeness": "complete",
+            "start_coord": 1,
+            "end_coord": 129796,
+            "evidence": [
+                "Heterologous expression"
+            ]
         },
         "mibig_accession": "BGC0001106",
         "minimal": true,
