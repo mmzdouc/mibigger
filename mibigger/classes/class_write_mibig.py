@@ -92,7 +92,8 @@ class WriteMibig(BaseClass):
             None
         """
         with open(path_to_write, "w", encoding="utf-8") as outfile:
-            json.dump(self.export_dict, outfile, indent=4, ensure_ascii=False)
+            json_string = json.dumps(self.export_dict, indent=4, ensure_ascii=False)
+            outfile.write(json_string)
 
     def test_duplicate_entries(self: Self, ROOT) -> None:
         """Test for duplicate entries when creating a new entry.
