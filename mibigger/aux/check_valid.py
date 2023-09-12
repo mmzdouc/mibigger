@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-Adapted from script created by Kai Blin, DTU.
+Adapted from script created by Kai Blin and Simon Shaw, DTU.
 """
 
 from collections import defaultdict
@@ -105,7 +105,8 @@ def check_kr_stereochem(data: Dict[str, Any], prefix: str) -> bool:
         for module in synthase.get("modules", []):
             if "kr_stereochem" in module and "Ketoreductase" not in module["domains"]:
                 print(
-                    f"{prefix}contains KR stereochemistry for modules without KR domains"
+                    f"{prefix}contains KR stereochemistry for modules without KR "
+                    f"domains"
                 )
                 return False
     return True

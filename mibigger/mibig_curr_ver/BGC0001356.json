@@ -20,11 +20,14 @@
         },
         {
             "comments": [
-                "Added precursor peptide-encoding gene padeA, leader and core peptide sequence, correct RiPP subclass, SMILES structure. (C62OJVVH7XOTOTFZSJT727YU 30-08-2023 10:59)"
+                "Added precursor peptide-encoding gene padeA, leader and core peptide sequence, correct RiPP subclass, SMILES structure."
 
             ],
             "contributors": [
                 "C62OJVVH7XOTOTFZSJT727YU"
+            ],
+            "updated_at": [
+                "2023-09-10T11:20:55.221404"
             ],
             "version": "next"
         }

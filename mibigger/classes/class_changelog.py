@@ -9,7 +9,7 @@ to the last changelog entry.
 
 from copy import deepcopy
 from datetime import datetime
-from typing import Set, Dict, List, Self
+from typing import Dict, List, Self
 
 from mibigger.classes.class_base import BaseClass
 
@@ -20,7 +20,7 @@ class Changelog(BaseClass):
     Attributes:
         existing_entry (Dict | None): optional existing entry to append to.
         curator (str) : Curator modifying entry
-        set_curators (Set) : Set of curators modifying entry in curation round
+        list_curators (List) : Curators
         version (str) : current version
         comments (List) : Comment explaining modification
 
@@ -51,7 +51,7 @@ class Changelog(BaseClass):
         """
         self.existing_entry: Dict | None = None
         self.curator: str = curator
-        self.set_curators: Set = set()
+        self.list_curators: List = []
         self.version: str = CURATION_ROUND
         self.comments: List = list()
 
@@ -76,11 +76,7 @@ class Changelog(BaseClass):
                 self.error_message_formatted("Comment cannot be empty")
                 continue
             else:
-                now = datetime.now()
-                formatted_dt = now.strftime("%d-%m-%Y %H:%M")
-                self.comments.append(
-                    input_comment + f" ({self.curator} {formatted_dt})"
-                )
+                self.comments.append(input_comment)
                 break
 
     def create_new_entry_changelog(self: Self, mibig_entry: Dict) -> Dict:
@@ -100,6 +96,7 @@ class Changelog(BaseClass):
             {
                 "comments": self.comments,
                 "contributors": [self.curator],
+                "updated_at": [datetime.now().isoformat()],
                 "version": self.version,
             }
         )
@@ -121,10 +118,13 @@ class Changelog(BaseClass):
         self.comments = deepcopy(mibig_entry["changelog"][-1]["comments"])
         self.get_comment()
 
-        self.set_curators.update(deepcopy(mibig_entry["changelog"][-1]["contributors"]))
-        self.set_curators.add(self.curator)
+        self.list_curators = deepcopy(mibig_entry["changelog"][-1]["contributors"])
+        self.list_curators.append(self.curator)
 
         self.existing_entry["changelog"][-1]["comments"] = self.comments
-        self.existing_entry["changelog"][-1]["contributors"] = list(self.set_curators)
+        self.existing_entry["changelog"][-1]["contributors"] = self.list_curators
+        self.existing_entry["changelog"][-1]["updated_at"].append(
+            datetime.now().isoformat()
+        )
 
         return deepcopy(self.existing_entry)
