@@ -181,6 +181,6 @@ class WriteMibig(BaseClass):
 
         df2 = pd.concat([df, pd.DataFrame([new_row])], ignore_index=True)
 
-        df2.to_csv(existing, index=False)
+        df2.to_csv(ROOT.joinpath(existing), index=False)
 
         return

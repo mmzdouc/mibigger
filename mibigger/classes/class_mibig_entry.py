@@ -124,7 +124,7 @@ class MibigEntry(BaseClass):
             "changelog": [
                 {
                     "comments": [],
-                    "contributors": [curator_id],
+                    "contributors": [],
                     "updated_at": [],
                     "version": CURATION_ROUND,
                 }
