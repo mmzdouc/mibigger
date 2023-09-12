@@ -15,11 +15,11 @@ repos:
     rev: 6.0.0
     hooks:
     -   id: flake8
-#-   repo: local
-#    hooks:
-#    -   id: check-valid-kai
-#        name: JSON Validation Kai
-#        entry: mibigger/aux/check_valid.py
-#        language: python
-#        additional_dependencies: ["jsonschema==4.17.3"]
-#        files: \.json$
+-   repo: local
+    hooks:
+    -   id: check-valid-kai
+        name: JSON Validation Kai
+        entry: mibigger/aux/check_valid.py
+        language: python
+        additional_dependencies: ["jsonschema==4.17.3"]
+        files: \.json$
