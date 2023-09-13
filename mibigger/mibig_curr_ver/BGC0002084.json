@@ -24,13 +24,19 @@
         },
         {
             "comments": [
-                "Removed biarylitide YFH (has own entry BGC0002099); added gene annnotation, precursor annotation, publication DOI, RiPP class."
+                "Removed biarylitide YFH (has own entry BGC0002099); added gene annnotation, precursor annotation, publication DOI, RiPP class.",
+                "Reviewed changes and approved.",
+                "Reviewed changes and approved."
             ],
             "contributors": [
-                "C62OJVVH7XOTOTFZSJT727YU"
+                "C62OJVVH7XOTOTFZSJT727YU",
+                "BRTJ",
+                "FB"
             ],
             "updated_at": [
-                "2023-09-13T08:42:02.394481"
+                "2023-09-13T08:42:02.394481",
+                "2023-09-13T12:07:57.460683",
+                "2023-09-13T12:08:21.701317"
             ],
             "version": "next"
         }
