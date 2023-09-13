@@ -12,13 +12,19 @@
         },
         {
             "comments": [
-                "Fixed name (from biaylite-YFH to biarylitide YFH); restricted range to remove non-associated gene; added RiPP subclass, precursor info, NPAtlas link, gene annotation, tailoring."
+                "Fixed name (from biaylite-YFH to biarylitide YFH); restricted range to remove non-associated gene; added RiPP subclass, precursor info, NPAtlas link, gene annotation, tailoring.",
+                "Reviewed changes and approved.",
+                "Reviewed changes and approved."
             ],
             "contributors": [
-                "C62OJVVH7XOTOTFZSJT727YU"
+                "C62OJVVH7XOTOTFZSJT727YU",
+                "BRTJ",
+                "FB"
             ],
             "updated_at": [
-                "2023-09-13T09:20:19.414513"
+                "2023-09-13T09:20:19.414513",
+                "2023-09-13T12:08:37.918900",
+                "2023-09-13T12:09:05.036121"
             ],
             "version": "next"
         }
