@@ -226,7 +226,7 @@ class Ripp(BaseClass):
                     self.path_root.joinpath("known_values").joinpath(
                         "ripp_subclasses.json"
                     ),
-                    known_classes,
+                    {"ripp_subclasses": known_classes},
                 )
 
             return
@@ -392,13 +392,13 @@ class Ripp(BaseClass):
             If `index` is `int`, an existing entry is modified (overwritten).
         """
         input_leader = self.get_precursor_gene_leader()
-        if input_leader == False:
+        if input_leader is False:
             return
         else:
             pass
 
         input_core = self.get_precursor_gene_core()
-        if input_core == False:
+        if input_core is False:
             return
         elif input_core is None:
             self.error_message_formatted("Core peptide cannot be empty")
@@ -407,13 +407,13 @@ class Ripp(BaseClass):
             pass
 
         input_follower = self.get_precursor_gene_follower()
-        if input_follower == False:
+        if input_follower is False:
             return
         else:
             pass
 
         input_gene_id = self.get_precursor_gene_id()
-        if input_gene_id == False:
+        if input_gene_id is False:
             return
         elif input_gene_id is None:
             self.error_message_formatted("Gene ID cannot be empty")
@@ -422,13 +422,13 @@ class Ripp(BaseClass):
             pass
 
         input_cleavage = self.get_precursor_gene_cleavage()
-        if input_cleavage == False:
+        if input_cleavage is False:
             return
         else:
             pass
 
         input_recognition = self.get_precursor_recognition()
-        if input_recognition == False:
+        if input_recognition is False:
             return
         else:
             pass
@@ -551,7 +551,8 @@ class Ripp(BaseClass):
             return None
         elif not re.match(self.const_proteinogenic_aa_regexp, input_leader):
             self.error_message_formatted(
-                f"'{input_leader}' is not in single-letter proteinogenic amino acid code"
+                f"'{input_leader}' is not in single-letter proteinogenic amino acid "
+                f"code"
             )
             return False
         else:
@@ -583,7 +584,8 @@ class Ripp(BaseClass):
             for entry in input_core:
                 if not re.match(self.const_proteinogenic_aa_regexp, entry):
                     self.error_message_formatted(
-                        f"'{entry}' is not in single-letter proteinogenic amino acid code"
+                        f"'{entry}' is not in single-letter proteinogenic amino "
+                        f"acid code"
                     )
                     return False
                 else:
@@ -612,7 +614,8 @@ class Ripp(BaseClass):
             return None
         elif not re.match(self.const_proteinogenic_aa_regexp, input_follower):
             self.error_message_formatted(
-                f"'{input_follower}' is not in single-letter proteinogenic amino acid code"
+                f"'{input_follower}' is not in single-letter proteinogenic amino "
+                f"acid code"
             )
             return False
         else:
@@ -671,7 +674,8 @@ class Ripp(BaseClass):
             for entry in input_cleavage:
                 if not re.match(self.const_proteinogenic_aa_regexp, entry):
                     self.error_message_formatted(
-                        f"'{entry}' is not in single-letter proteinogenic amino acid code"
+                        f"'{entry}' is not in single-letter proteinogenic amino "
+                        f"acid code"
                     )
                     return False
                 else:
@@ -690,7 +694,8 @@ class Ripp(BaseClass):
         """
         input_msg_recognition = (
             "================================================\n"
-            "Enter the recognition motif in the leader peptide (or SKIP by pressing enter):\n"
+            "Enter the recognition motif in the leader peptide (or SKIP by pressing "
+            "enter):\n"
             "Only enter proteinogenic amino acids (upper-case letters).\n"
             "================================================\n"
         )
@@ -700,7 +705,8 @@ class Ripp(BaseClass):
             return None
         elif not re.match(self.const_proteinogenic_aa_regexp, input_recognition):
             self.error_message_formatted(
-                f"'{input_recognition}' is not in single-letter proteinogenic amino acid code"
+                f"'{input_recognition}' is not in single-letter proteinogenic amino "
+                f"acid code"
             )
             return False
         else:
