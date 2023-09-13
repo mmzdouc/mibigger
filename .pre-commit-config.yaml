@@ -23,3 +23,4 @@ repos:
         language: python
         additional_dependencies: ["jsonschema==4.17.3"]
         files: \.json$
+        exclude: (ripp_subclasses.json|ripp_tailoring.json)

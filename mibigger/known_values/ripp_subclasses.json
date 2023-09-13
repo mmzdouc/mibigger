@@ -1,6 +1,8 @@
 {
     "ripp_subclasses": [
+        "biarylitide",
         "lanthipeptide",
-        "lassopeptide"
+        "lassopeptide",
+        "cyanobactin"
     ]
 }
