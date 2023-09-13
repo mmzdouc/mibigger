@@ -7,7 +7,7 @@ name = "mibigger"
 readme = "README.md"
 requires-python = ">=3.11"
 description = "Script to create and manipulate MIBiG entries"
-version = "0.5.1"
+version = "0.5.2"
 dynamic = ["dependencies"]
 
 
