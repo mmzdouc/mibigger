@@ -18,6 +18,18 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.1"
+        },
+        {
+            "comments": [
+                "Added correct reference governing cluster identification"
+            ],
+            "contributors": [
+                "NLLL"
+            ],
+            "updated_at": [
+                "2023-10-03T15:44:03.255114"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -35,7 +47,7 @@
         ],
         "loci": {
             "accession": "CP007155.1",
-            "completeness": "Unknown",
+            "completeness": "complete",
             "end_coord": 4600486,
             "evidence": [
                 "Heterologous expression",
@@ -48,6 +60,7 @@
         "ncbi_tax_id": "1449976",
         "organism_name": "Kutzneria albida DSM 43870",
         "publications": [
+            "doi:10.3390/biom10071074",
             "pubmed:25301375"
         ],
         "status": "active"
