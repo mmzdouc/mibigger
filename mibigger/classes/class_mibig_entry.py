@@ -1031,6 +1031,7 @@ class MibigEntry(BaseClass):
             self.mibig_dict.get("cluster").get("mibig_accession", "None"),
             self.mibig_dict.get("cluster").get("organism_name", "None"),
             self.mibig_dict.get("cluster").get("ncbi_tax_id", "None"),
+            self.mibig_dict.get("cluster").get("loci").get("completeness", "None"),
         ]
 
         attributes_lists = [
