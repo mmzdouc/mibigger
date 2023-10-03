@@ -24,40 +24,6 @@ class MibigEntry(BaseClass):
         mibig_accession (str | None): existing/new accession number
         mibig_dict (Dict | None): existing/new data for MIBiG entry
 
-    Methods:
-        get_new_mibig_accession(self: Self,args: argparse.Namespace,ROOT: Path) -> None
-        create_new_entry(self: Self, curator: str, CURATION_ROUND: str) -> None
-        load_existing_entry(self: Self, existing: Dict) -> None
-        get_input(self: Self) -> None
-        get_biosynth_class(self: Self) -> None
-        get_compounds(self: Self) -> None
-        remove_compound_entry(self: Self, number_invar_menu_entries: int) -> None
-        get_compound_entry(self: Self, index: int | str) -> None
-        write_compound_entry(
-            self: Self,
-            index: int,
-            input_synonym: List | None,
-            input_structure: str | None,
-            input_activity: List | None,
-            input_evidence: List | None,
-            input_target: List | None,
-        ) -> None
-        get_compound_name(self: Self) -> str | bool
-        get_compound_synonym(self: Self) -> List | bool | None
-        get_compound_smiles(self: Self) -> str | bool | None
-        get_compound_evidence(self: Self) -> List | bool | None
-        get_compound_activity(self: Self) -> List | bool | None
-        get_compound_targets(self: Self) -> List | None
-        get_ncbi_data(self: Self) -> None
-        get_ncbi_accession(self: Self) -> str | None
-        get_coordinates(self: Self) -> Dict | None
-        get_organism_data(self: Self) -> None
-        get_evidence(self: Self) -> None
-        get_reference(self: Self) -> None
-        test_presence_data(self: Self) -> bool
-        set_flags(self: Self) -> None
-        export_dict(self: Self) -> Dict
-
     Note:
         Deepcopy required to prevent implicit changing of original dict "existing"
     """
@@ -188,6 +154,7 @@ class MibigEntry(BaseClass):
             "4": self.get_organism_data,
             "5": self.get_evidence,
             "6": self.get_reference,
+            "7": self.get_completeness,
         }
 
         while True:
@@ -217,6 +184,10 @@ class MibigEntry(BaseClass):
             except KeyError:
                 evidence = "None"
 
+            completeness = self.mibig_dict["cluster"]["loci"].get(
+                "completeness", "None"
+            )
+
             input_message = (
                 "================================================\n"
                 "Modify the minimum information of a MIBiG entry:\n"
@@ -232,6 +203,7 @@ class MibigEntry(BaseClass):
                 f"(currently: '{organism_name}', '{ncbi_tax_id}')\n"
                 f"5) BGC evidence (currently: {evidence})\n"
                 f"6) Publication/reference (currently: {publications})\n"
+                f"7) Completeness (currently: {completeness})\n"
                 f"================================================\n"
             )
 
@@ -254,15 +226,31 @@ class MibigEntry(BaseClass):
                 continue
         return
 
+    def get_completeness(self: Self) -> None:
+        """Get completeness and test if valid."""
+        input_message = [
+            (
+                "================================================\n"
+                "Indicate whether the locus (start:end coordinates) contain all "
+                "genes required for the production of the compound(s).\n"
+                "================================================\n"
+            )
+        ]
+        options = {"1": "incomplete", "2": "complete", "3": "Unknown"}
+        for option in options:
+            input_message.append(f"{option}) {options[option]}\n")
+        input_message.append("================================================\n")
+        input_message = "".join([i for i in input_message])
+
+        user_input = input(input_message)
+        if user_input in options:
+            self.mibig_dict["cluster"]["loci"]["completeness"] = options[user_input]
+        else:
+            self.error_message_formatted("Invalid input provided")
+            return
+
     def get_biosynth_class(self: Self) -> None:
-        """Get the biosynthetic class of BGC and test if valid.
-
-        Parameters:
-            `self` : The instance of class MibigEntry.
-
-        Returns:
-            None
-        """
+        """Get the biosynthetic class of BGC and test if valid."""
         input_message = [
             (
                 "================================================\n"
@@ -1076,10 +1064,8 @@ class MibigEntry(BaseClass):
         if self.mibig_dict["cluster"]["minimal"] == "None":
             self.mibig_dict["cluster"]["minimal"] = True
             self.mibig_dict["cluster"]["status"] = "active"
-            self.mibig_dict["cluster"]["loci"]["completeness"] = "complete"
             return
         else:
-            self.mibig_dict["cluster"]["loci"]["completeness"] = "complete"
             return
 
     def export_dict(self: Self) -> Dict:
