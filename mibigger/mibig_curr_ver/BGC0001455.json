@@ -41,13 +41,16 @@
         },
         {
             "comments": [
-                "Specified compound from 'antimycin' to 'antimycin A1B', changed incorrect SMILES string, mol. formula, mol. mass. Specified BGC evidence according to linked paper. Specified locus start and end. "
+                "Specified compound from 'antimycin' to 'antimycin A1B', changed incorrect SMILES string, mol. formula, mol. mass. Specified BGC evidence according to linked paper. Specified locus start and end. ",
+                "Reviewed and approved changes."
             ],
             "contributors": [
-                "C62OJVVH7XOTOTFZSJT727YU"
+                "C62OJVVH7XOTOTFZSJT727YU",
+                "HEA"
             ],
             "updated_at": [
-                "2023-10-05T09:55:41.010836"
+                "2023-10-05T09:55:41.010836",
+                "2023-10-05T14:17:39.237488"
             ],
             "version": "next"
         }
@@ -65,7 +68,7 @@
                     }
                 ],
                 "chem_struct": "CCCCCCC1C(C(OC(=O)C(C(OC1=O)C)NC(=O)C2=C(C(=CC=C2)NC=O)O)C)OC(=O)CC(C)C",
-                "compound": "antimycin 1AB",
+                "compound": "antimycin A1B",
                 "database_id": [
                     "pubchem:12550"
                 ],
