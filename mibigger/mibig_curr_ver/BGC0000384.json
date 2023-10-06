@@ -39,13 +39,16 @@
         },
         {
             "comments": [
-                "Removed incorrect literature reference PMID:13880125. Specified locus coordinates."
+                "Removed incorrect literature reference PMID:13880125. Specified locus coordinates.",
+                "Reviewed changes and approved."
             ],
             "contributors": [
-                "C62OJVVH7XOTOTFZSJT727YU"
+                "C62OJVVH7XOTOTFZSJT727YU",
+                "PH"
             ],
             "updated_at": [
-                "2023-10-06T14:05:36.957364"
+                "2023-10-06T14:05:36.957364",
+                "2023-10-06T14:18:29.062623"
             ],
             "version": "next"
         }
