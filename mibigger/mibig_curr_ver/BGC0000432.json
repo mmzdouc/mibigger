@@ -36,6 +36,18 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.1"
+        },
+        {
+            "comments": [
+                "Mainly linked the BGC to the correct versions of streptothricin"
+            ],
+            "contributors": [
+                "RKFOW2BJ2UIGZ6GYHFZX4BHF"
+            ],
+            "updated_at": [
+                "2023-10-06T18:48:19.239086"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -44,23 +56,42 @@
         ],
         "compounds": [
             {
-                "chem_acts": [
-                    {
-                        "activity": "antibacterial"
-                    }
-                ],
-                "chem_struct": "C1[C@H]([C@@H]2[C@@H](C(=O)N1)N=C(N2)N[C@H]3[C@@H]([C@@H]([C@H]([C@H](O3)CO)OC(=O)N)O)NC(=O)C[C@H](CCCNC(=O)C[C@H](CCCNC(=O)C[C@H](CCCNC(=O)C[C@H](CCCNC(=O)C[C@H](CCCNC(=O)C[C@H](CCCN)N)N)N)N)N)N)O",
-                "compound": "streptothricin",
-                "database_id": [
-                    "pubchem:198906"
-                ],
-                "mol_mass": 1142.7247750679996,
-                "molecular_formula": "C49H94N18O13"
+                "compound": "streptothricin F",
+                "chem_struct": "NCCC[C@H](N)CC(=O)N[C@@H]1[C@H](O)[C@@H](OC(N)=O)[C@@H](CO)O[C@H]1\\N=C1\\N[C@H]2[C@H](N1)C(=O)NC[C@H]2O",
+                "evidence": [
+                    "Other"
+                ]
+            },
+            {
+                "compound": "streptothricin E",
+                "chem_struct": "NCCC[C@H](N)CC(=O)NCCC[C@H](N)CC(=O)N[C@@H]1[C@H](O)[C@@H](OC(N)=O)[C@@H](CO)O[C@H]1\\N=C1\\N[C@H]2[C@H](N1)C(=O)NC[C@H]2O",
+                "evidence": [
+                    "Other"
+                ]
+            },
+            {
+                "compound": "streptothricin D",
+                "chem_struct": "NCCC[C@H](N)CC(=O)NCCC[C@H](N)CC(=O)NCCC[C@H](N)CC(=O)N[C@@H]1[C@H](O)[C@@H](OC(N)=O)[C@@H](CO)O[C@H]1\\N=C1\\N[C@H]2[C@H](N1)C(=O)NC[C@H]2O",
+                "evidence": [
+                    "Other"
+                ]
+            },
+            {
+                "compound": "streptothricin C",
+                "chem_struct": "NCCC[C@H](N)CC(=O)NCCC[C@H](N)CC(=O)NCCC[C@H](N)CC(=O)NCCC[C@H](N)CC(=O)N[C@@H]1[C@H](O)[C@@H](OC(N)=O)[C@@H](CO)O[C@H]1\\N=C1\\N[C@H]2[C@H](N1)C(=O)NC[C@H]2O",
+                "evidence": [
+                    "Other"
+                ]
             }
         ],
         "loci": {
             "accession": "AB684619.1",
-            "completeness": "Unknown"
+            "completeness": "Unknown",
+            "start_coord": 1,
+            "end_coord": 34051,
+            "evidence": [
+                "Heterologous expression"
+            ]
         },
         "mibig_accession": "BGC0000432",
         "minimal": false,
