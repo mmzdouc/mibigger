@@ -8,6 +8,18 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.0"
+        },
+        {
+            "comments": [
+                "Changed entry BGC0002429 end coordinate as per indication of issue #305"
+            ],
+            "contributors": [
+                "EDP"
+            ],
+            "updated_at": [
+                "2023-10-09T17:13:53.954168"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -27,7 +39,7 @@
         "loci": {
             "accession": "CM004458.1",
             "completeness": "Unknown",
-            "end_coord": 422890,
+            "end_coord": 480233,
             "evidence": [
                 "Heterologous expression"
             ],
