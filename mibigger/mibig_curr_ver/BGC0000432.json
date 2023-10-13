@@ -39,13 +39,16 @@
         },
         {
             "comments": [
-                "Specified congeners F, E, D, and C of streptothricin, as reported in reference https://doi.org/10.1038/nchembio.1040 Also added coordinates and evidence"
+                "Specified congeners F, E, D, and C of streptothricin, as reported in reference https://doi.org/10.1038/nchembio.1040 Also added coordinates and evidence",
+                "Added synonyms and activities to all 4 metabolites (ST-F, E, D, C)"
             ],
             "contributors": [
+                "RKFOW2BJ2UIGZ6GYHFZX4BHF",
                 "RKFOW2BJ2UIGZ6GYHFZX4BHF"
             ],
             "updated_at": [
-                "2023-10-06T18:48:19.239086"
+                "2023-10-06T18:48:19.239086",
+                "2023-10-13T12:56:28.616593"
             ],
             "version": "next"
         }
@@ -57,28 +60,80 @@
         "compounds": [
             {
                 "compound": "streptothricin F",
+                "chem_synonyms": [
+                    "nourseothricin F",
+                    "yazumycin F",
+                    "racemomycin F"
+                ],
                 "chem_struct": "NCCC[C@H](N)CC(=O)N[C@@H]1[C@H](O)[C@@H](OC(N)=O)[C@@H](CO)O[C@H]1\\N=C1\\N[C@H]2[C@H](N1)C(=O)NC[C@H]2O",
+                "chem_acts": [
+                    {
+                        "activity": "toxic"
+                    },
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
                 "evidence": [
                     "Other"
                 ]
             },
             {
                 "compound": "streptothricin E",
+                "chem_synonyms": [
+                    "yazumycin E",
+                    "nourseothricin E",
+                    "racemomycin E"
+                ],
                 "chem_struct": "NCCC[C@H](N)CC(=O)NCCC[C@H](N)CC(=O)N[C@@H]1[C@H](O)[C@@H](OC(N)=O)[C@@H](CO)O[C@H]1\\N=C1\\N[C@H]2[C@H](N1)C(=O)NC[C@H]2O",
+                "chem_acts": [
+                    {
+                        "activity": "toxic"
+                    },
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
                 "evidence": [
                     "Other"
                 ]
             },
             {
                 "compound": "streptothricin D",
+                "chem_synonyms": [
+                    "yazumycin D",
+                    "nourseothricin D",
+                    "racemomycin D"
+                ],
                 "chem_struct": "NCCC[C@H](N)CC(=O)NCCC[C@H](N)CC(=O)NCCC[C@H](N)CC(=O)N[C@@H]1[C@H](O)[C@@H](OC(N)=O)[C@@H](CO)O[C@H]1\\N=C1\\N[C@H]2[C@H](N1)C(=O)NC[C@H]2O",
+                "chem_acts": [
+                    {
+                        "activity": "toxic"
+                    },
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
                 "evidence": [
                     "Other"
                 ]
             },
             {
                 "compound": "streptothricin C",
+                "chem_synonyms": [
+                    "racemomycin C",
+                    "yazumycin C",
+                    "nourseothricin C"
+                ],
                 "chem_struct": "NCCC[C@H](N)CC(=O)NCCC[C@H](N)CC(=O)NCCC[C@H](N)CC(=O)NCCC[C@H](N)CC(=O)N[C@@H]1[C@H](O)[C@@H](OC(N)=O)[C@@H](CO)O[C@H]1\\N=C1\\N[C@H]2[C@H](N1)C(=O)NC[C@H]2O",
+                "chem_acts": [
+                    {
+                        "activity": "toxic"
+                    },
+                    {
+                        "activity": "antibacterial"
+                    }
+                ],
                 "evidence": [
                     "Other"
                 ]
@@ -148,7 +203,7 @@
                 }
             ]
         },
-        "organism_name": "Streptomyces rochei",
+        "organism_name": "Streptomyces rochei NBRC 12908",
         "publications": [
             "pubmed:22820420"
         ],
