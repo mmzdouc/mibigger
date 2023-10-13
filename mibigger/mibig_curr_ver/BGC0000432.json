@@ -39,7 +39,7 @@
         },
         {
             "comments": [
-                "Mainly linked the BGC to the correct versions of streptothricin"
+                "Specified congeners F, E, D, and C of streptothricin, as reported in reference https://doi.org/10.1038/nchembio.1040 Also added coordinates and evidence"
             ],
             "contributors": [
                 "RKFOW2BJ2UIGZ6GYHFZX4BHF"
