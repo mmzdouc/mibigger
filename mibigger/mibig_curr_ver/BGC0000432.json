@@ -40,15 +40,21 @@
         {
             "comments": [
                 "Specified congeners F, E, D, and C of streptothricin, as reported in reference https://doi.org/10.1038/nchembio.1040 Also added coordinates and evidence",
-                "Added synonyms and activities to all 4 metabolites (ST-F, E, D, C)"
+                "Added synonyms and activities to all 4 metabolites (ST-F, E, D, C)",
+                "Changes reviewed and approved",
+                "Changes reviewed and approved"
             ],
             "contributors": [
                 "RKFOW2BJ2UIGZ6GYHFZX4BHF",
-                "RKFOW2BJ2UIGZ6GYHFZX4BHF"
+                "RKFOW2BJ2UIGZ6GYHFZX4BHF",
+                "C62OJVVH7XOTOTFZSJT727YU",
+                "JJY"
             ],
             "updated_at": [
                 "2023-10-06T18:48:19.239086",
-                "2023-10-13T12:56:28.616593"
+                "2023-10-13T12:56:28.616593",
+                "2023-10-17T16:16:17.008122",
+                "2023-10-17T16:17:41.136133"
             ],
             "version": "next"
         }
