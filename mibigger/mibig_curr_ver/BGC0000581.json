@@ -59,6 +59,9 @@
                 "chem_acts": [
                     {
                         "activity": "antibacterial"
+                    },
+                    {
+                        "activity": "antibacterial (Gram-negative)"
                     }
                 ],
                 "chem_targets": [
