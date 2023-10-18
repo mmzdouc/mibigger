@@ -82,7 +82,7 @@
         "loci": {
             "accession": "AF061787.1",
             "completeness": "complete",
-            "start_coord": 62,
+            "start_coord": 1,
             "end_coord": 4496,
             "evidence": [
                 "Heterologous expression"
