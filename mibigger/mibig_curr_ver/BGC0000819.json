@@ -106,6 +106,20 @@
             ],
             "release_type": [
                 "Reductive release"
+            ],
+            "extra_genes": [
+                {
+                    "id": "phqN",
+                    "location": {
+                        "exons": [
+                            {
+                                "start": 43471,
+                                "end": 44349
+                            }
+                        ],
+                        "strand": 1
+                    }
+                }
             ]
         },
         "organism_name": "Penicillium fellutanum",
