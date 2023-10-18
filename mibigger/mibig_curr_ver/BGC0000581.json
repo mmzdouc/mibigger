@@ -61,6 +61,14 @@
                         "activity": "antibacterial"
                     }
                 ],
+                "chem_targets": [
+                    {
+                        "publications" : [
+                            "doi:10.1021/ja036756q"
+                        ],
+                        "target": "DNA-dependent RNA polymerase of Gram-negative bacteria"
+                    }
+                ],
                 "chem_struct": "CCC(C)C(C(=O)NCC(=O)NC(C(C)O)C(=O)N1CCCC1C(=O)NC(C(C)CC)C(=O)NC(CO)C(=O)NC(CC2=CC=CC=C2)C(=O)NC(CC3=CC=C(C=C3)O)C(=O)NCC(=O)O)NC(=O)CNC(=O)C(C(C)C)NC(=O)C(CC4=CC=CC=C4)NC(=O)C(CC5=CC=C(C=C5)O)NC(=O)C6CCC(=O)NCC(=O)NCC(=O)NC(C(=O)NCC(=O)NC(C(=O)NC(C(=O)N7CCCC7C(=O)N6)C(C)C)CC8=CN=CN8)C",
                 "compound": "microcin J25",
                 "database_id": [
