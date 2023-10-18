@@ -11,13 +11,19 @@
         },
         {
             "comments": [
-                "Corrected BGC name, added SMILES, compound evidence and BGC evidence information. Removed duplicate reference."
+                "Corrected BGC name, added SMILES, compound evidence and BGC evidence information. Removed duplicate reference.",
+                "Changes reviewed and approved.",
+                "Changes reviewed and approved."
             ],
             "contributors": [
-                "RAK"
+                "RAK",
+                "ZLR",
+                "C62OJVVH7XOTOTFZSJT727YU"
             ],
             "updated_at": [
-                "2023-10-16T10:25:18.214841"
+                "2023-10-16T10:25:18.214841",
+                "2023-10-18T11:19:10.297793",
+                "2023-10-18T11:19:52.674745"
             ],
             "version": "next"
         }
