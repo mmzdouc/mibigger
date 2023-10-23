@@ -39,7 +39,7 @@
         },
         {
             "comments": [
-                "Added locus coordinates, evidence, completeness, bioactivity, precursor peptide-gene information. Changed PubMed IDs to DOIs, changed subclass to 'Lassopeptide'. Corrected SMILES structure."
+                "Added locus coordinates, evidence, completeness, bioactivity, precursor peptide-gene information. Changed PubMed IDs to DOIs, changed subclass to 'Lassopeptide'. Corrected SMILES structure. Added gene product annotation. Added correct strain identifier."
             ],
             "contributors": [
                 "C62OJVVH7XOTOTFZSJT727YU"
@@ -94,11 +94,14 @@
         "mibig_accession": "BGC0000581",
         "minimal": false,
         "ncbi_tax_id": "562",
-        "organism_name": "Escherichia coli",
+        "organism_name": "Escherichia coli AY25",
         "publications": [
             "doi:10.1128/jb.178.12.3661-3663.1996",
             "doi:10.1128/JB.181.8.2659-2662.1999",
-            "doi:10.1021/ja036756q"
+            "doi:10.1021/ja036756q",
+            "doi:10.1021/ja0367703",
+            "doi:10.1039/b708478a",
+            "doi:10.1002/cbic.201200016"
         ],
         "ripp": {
             "subclass": "Lassopeptide",
@@ -112,6 +115,32 @@
                 }
             ]
         },
+        "genes": {
+            "annotations": [
+                {
+                    "id": "AAD28494.1",
+                    "name": "mcjA",
+                    "product": "RiPP precursor peptide"
+                },
+                {
+                    "id": "AAD28495.1",
+                    "name": "mcjB",
+                    "product": "cysteine protease"
+                },
+                {
+                    "id": "AAD28496.1",
+                    "name": "mcjC",
+                    "product": "ATP-dependent lactam synthetase"
+                },
+                {
+                    "id": "AAD28497.1",
+                    "name": "mcjD",
+                    "product": "ABC transporter"
+                }
+
+            ]
+        },
         "status": "active"
-    }
+    },
+    "comments": "BGC was originally isolated from a plasmid: see DOI: 10.1128/jb.181.8.2659-2662.1999"
 }
