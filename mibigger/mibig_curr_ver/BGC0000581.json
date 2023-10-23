@@ -39,13 +39,16 @@
         },
         {
             "comments": [
-                "Added locus coordinates, evidence, completeness, bioactivity, precursor peptide-gene information. Changed PubMed IDs to DOIs, changed subclass to 'Lassopeptide'. Corrected SMILES structure. Added gene product annotation. Added correct strain identifier."
+                "Added locus coordinates, evidence, completeness, bioactivity, precursor peptide-gene information. Changed PubMed IDs to DOIs, changed subclass to 'Lassopeptide'. Corrected SMILES structure. Added gene product annotation. Added correct strain identifier.",
+                "Changes reviewed and approved."
             ],
             "contributors": [
-                "C62OJVVH7XOTOTFZSJT727YU"
+                "C62OJVVH7XOTOTFZSJT727YU",
+                "RKFOW2BJ2UIGZ6GYHFZX4BHF"
             ],
             "updated_at": [
-                "2023-10-18T09:32:01.890180"
+                "2023-10-18T09:32:01.890180",
+                "2023-10-23T18:20:58.497314"
             ],
             "version": "next"
         }
@@ -66,7 +69,7 @@
                 ],
                 "chem_targets": [
                     {
-                        "publications" : [
+                        "publications": [
                             "doi:10.1021/ja036756q"
                         ],
                         "target": "DNA-dependent RNA polymerase of Gram-negative bacteria"
@@ -137,7 +140,6 @@
                     "name": "mcjD",
                     "product": "ABC transporter"
                 }
-
             ]
         },
         "status": "active"
