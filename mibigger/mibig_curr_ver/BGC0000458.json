@@ -80,17 +80,6 @@
                                     }
                                 ]
                             }
-                        },
-                        {
-                            "a_substr_spec": {
-                                "substrates": [
-                                    {
-                                        "name": "serine",
-                                        "proteinogenic": true,
-                                        "structure": "C([C@@H](C(=O)O)N)O"
-                                    }
-                                ]
-                            }
                         }
                     ]
                 },
@@ -109,12 +98,29 @@
                             }
                         }
                     ]
+                },
+                {
+                    "gene_id": "AAP92493.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "substrates": [
+                                    {
+                                        "name": "l-arginine",
+                                        "proteinogenic": false,
+                                        "structure": "C(C[C@@H](C(=O)O)N)CN=C(N)N"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
                 }
             ]
         },
         "organism_name": "Streptomyces vinaceus",
         "publications": [
-            "pubmed:12936980"
+            "pubmed:12936980",
+            "doi:10.1111/j.1742-4658.2009.07085.x"
         ],
         "status": "active"
     }
