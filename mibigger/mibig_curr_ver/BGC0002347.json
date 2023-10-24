@@ -11,8 +11,8 @@
         },
         {
             "comments": [
-                "Changed NCBI Taxonomy ID to 2893586. Added strain information.",
-                "Changed taxonomy from \"Actinoalloteichus cyanogriseus\" to \"Actinoalloteichus caeruleus WH1-2216-6\". Changed NXBI Taxonomy ID from \"65497\" to \"2893586\"."
+                "Changed taxonomy from \"Actinoalloteichus cyanogriseus\" to \"Actinoalloteichus caeruleus WH1-2216-6\". Changed NXBI Taxonomy ID from \"65497\" to \"2893586\".",
+                "Changes reviewed and approved"
             ],
             "contributors": [
                 "PH",
