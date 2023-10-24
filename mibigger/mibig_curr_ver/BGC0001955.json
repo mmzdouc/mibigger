@@ -21,10 +21,23 @@
                 "D5JND5QKNDZL5GA5REF5XZTD"
             ],
             "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added 'Saccharide' as additional biosynthetic class. Specified BGC evidence according to 'pubmed:30617293'."
+            ],
+            "contributors": [
+                "C62OJVVH7XOTOTFZSJT727YU"
+            ],
+            "updated_at": [
+                "2023-10-24T21:38:59.993196"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
         "biosyn_class": [
+            "Saccharide",
             "NRP"
         ],
         "compounds": [
@@ -73,7 +86,13 @@
         ],
         "loci": {
             "accession": "MH428036.1",
-            "completeness": "Unknown"
+            "completeness": "complete",
+            "start_coord": 1,
+            "end_coord": 71301,
+            "evidence": [
+                "Correlation of genomic and metabolomic data",
+                "Homology-based prediction"
+            ]
         },
         "mibig_accession": "BGC0001955",
         "minimal": false,
@@ -243,7 +262,7 @@
                 }
             ]
         },
-        "organism_name": "Amycolatopsis keratiniphila",
+        "organism_name": "Amycolatopsis keratiniphila NRRL B24117",
         "publications": [
             "pubmed:30617293"
         ],
