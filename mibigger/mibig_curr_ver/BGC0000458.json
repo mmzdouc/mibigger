@@ -106,9 +106,25 @@
                             "a_substr_spec": {
                                 "substrates": [
                                     {
-                                        "name": "l-arginine",
+                                        "name": "(2S,3S)-Hydroxyarginine",
                                         "proteinogenic": false,
-                                        "structure": "C(C[C@@H](C(=O)O)N)CN=C(N)N"
+                                        "structure": "C(C[NH+]=C(N)N)[C@@H]([C@@H](C(=O)[O-])[NH3+])O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "gene_id": "AAP92494.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "substrates": [
+                                    {
+                                        "name": "(2S,3R)-capreomycidine",
+                                        "proteinogenic": false,
+                                        "structure": "C(C[NH+]=C(N)N)[C@@H]([C@@H](C(=O)[O-])[NH3+])O"
                                     }
                                 ]
                             }
