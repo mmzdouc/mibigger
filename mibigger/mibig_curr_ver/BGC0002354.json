@@ -22,15 +22,21 @@
         {
             "comments": [
                 "Added correct reference governing cluster identification",
-                "Amend biosynthetics class from RiPP to Other (pyrrolopyrimidine)"
+                "Amend biosynthetics class from RiPP to Other (pyrrolopyrimidine)",
+                "Changes reviewed and approved.",
+                "Changes reviewed and approved."
             ],
             "contributors": [
                 "NLLL",
-                "NLLL"
+                "NLLL",
+                "C62OJVVH7XOTOTFZSJT727YU",
+                "RAK"
             ],
             "updated_at": [
                 "2023-10-03T15:44:03.255114",
-                "2023-10-04T09:18:07.117794"
+                "2023-10-04T09:18:07.117794",
+                "2023-10-24T13:39:27.674158",
+                "2023-10-24T13:40:29.592417"
             ],
             "version": "next"
         }
@@ -50,7 +56,7 @@
         ],
         "loci": {
             "accession": "CP007155.1",
-            "completeness": "Unknown",
+            "completeness": "complete",
             "end_coord": 4600486,
             "evidence": [
                 "Heterologous expression",
