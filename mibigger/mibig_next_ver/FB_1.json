@@ -1,0 +1,54 @@
+{
+    "changelog": [
+        {
+            "comments": [
+                "Added tryptorubin A/B."
+            ],
+            "contributors": [
+                "FB"
+            ],
+            "updated_at": [
+                "2023-11-02T12:00:40.137256"
+            ],
+            "version": "next"
+        }
+    ],
+    "cluster": {
+        "biosyn_class": [
+            "RiPP"
+        ],
+        "compounds": [
+            {
+                "compound": "Tryptorubin A",
+                "chem_struct": "[H][C@@]12CC3=CC=C(O)C(=C3)N3C=C(C[C@H](NC(=O)[C@H](C)N)C(=O)N1)C1=C3C=CC(=C1)C13C[C@H](N([C@H]1NC1=C3C=CC=C1)C(=O)[C@@H](NC2=O)[C@@H](C)CC)C(=O)N[C@@H](CC1=CC=C(O)C=C1)C(O)=O",
+                "evidence": [
+                    "NMR"
+                ]
+            },
+            {
+                "compound": "Tryptorubin B",
+                "chem_struct": "[H][C@@]12CC3=CC=C(O)C(=C3)N3C=C(C[C@H](N)C(=O)N1)C1=C3C=CC(=C1)C13C[C@H](N([C@H]1NC1=C3C=CC=C1)C(=O)[C@@H](NC2=O)[C@@H](C)CC)C(=O)N[C@@H](CC1=CC=C(O)C=C1)C(O)=O",
+                "evidence": [
+                    "NMR"
+                ]
+            }
+        ],
+        "loci": {
+            "accession": "CP021118.1",
+            "completeness": "complete",
+            "start_coord": 965782,
+            "end_coord": 965969,
+            "evidence": [
+                "Heterologous expression"
+            ]
+        },
+        "mibig_accession": "FB_1",
+        "minimal": true,
+        "ncbi_tax_id": "1984801",
+        "organism_name": "Streptomyces sp. CLI2509",
+        "publications": [
+            "doi:10.1002/anie.202208361"
+        ],
+        "status": "active"
+    }
+}
