@@ -21,7 +21,7 @@
             {
                 "compound": "Amyxirubin B",
                 "chem_synonyms": [
-                    "Clavorubin"
+                    "Clavurubin"
                 ],
                 "chem_struct": "O=C([C@@H]1C[C@]2(C3=CC4=C5C=C3)C6=C(C=CC=C6)N[C@@H]2[N@@]1C([C@H]([C@H](CC)C)NC([C@@](C7)([H])NC([C@@H](N)CC4=C[N@]5C8=CC7=CC=C8O)=O)=O)=O)N[C@H](C(O)=O)CC9=CNC%10=C9C=CC=C%10",
                 "evidence": [
