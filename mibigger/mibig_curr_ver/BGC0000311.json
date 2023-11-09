@@ -40,13 +40,16 @@
         },
         {
             "comments": [
-                "Added 'Saccharide' as additional biosynthetic class. Specified BGC evidence according to 'pubmed:11932455'."
+                "Added 'Saccharide' as additional biosynthetic class. Specified BGC evidence according to 'pubmed:11932455'.",
+                "Changes reviewed and approved."
             ],
             "contributors": [
-                "C62OJVVH7XOTOTFZSJT727YU"
+                "C62OJVVH7XOTOTFZSJT727YU",
+                "PH"
             ],
             "updated_at": [
-                "2023-10-24T21:47:52.889365"
+                "2023-10-24T21:47:52.889365",
+                "2023-11-09T08:41:57.232704"
             ],
             "version": "next"
         }
