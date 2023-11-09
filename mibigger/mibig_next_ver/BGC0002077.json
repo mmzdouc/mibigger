@@ -29,7 +29,7 @@
                 ]
             },
             {
-                "compound": "desoxydysinosins B",
+                "compound": "desoxydysinosin B",
                 "chem_struct": "[H]C12CC(N(C(=O)C(NC(=O)C(COS(O)(=O)=O)OC)C(C)C)C1([H])CC(CC2)OC1C(O)C(O)OC(CO)C1O)C(=O)NCCC1=CC[N+](C1)=C(N)N",
                 "evidence": [
                     "MS/MS"
