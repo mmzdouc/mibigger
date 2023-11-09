@@ -2,7 +2,7 @@
     "changelog": [
         {
             "comments": [
-                "New entry (preprint)."
+                "New entry."
             ],
             "contributors": [
                 "C62OJVVH7XOTOTFZSJT727YU"
@@ -40,7 +40,7 @@
                 "Correlation of genomic and metabolomic data"
             ]
         },
-        "mibig_accession": "C62OJVVH7XOTOTFZSJT727YU_1",
+        "mibig_accession": "BGC0002825",
         "minimal": false,
         "ncbi_tax_id": "455432",
         "organism_name": "Nocardia terpenica IFM 0406",
@@ -98,7 +98,7 @@
             ]
         },
         "ripp": {
-            "cyclic": false,
+            "cyclic": true,
             "subclass": "lassopeptide",
             "precursor_genes": [
                 {
