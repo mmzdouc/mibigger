@@ -11,7 +11,7 @@
         },
         {
             "comments": [
-                "Removed duplicate structure, specified strain info, added chem activ, annotated RiPP information, annotated gene information."
+                "Removed duplicate structure, specified strain info, added chem activ, annotated RiPP information, annotated gene information, specified biosyn class saccharide (glycoslated RiPP)."
             ],
             "contributors": [
                 "C62OJVVH7XOTOTFZSJT727YU"
@@ -24,7 +24,8 @@
     ],
     "cluster": {
         "biosyn_class": [
-            "RiPP"
+            "RiPP",
+            "Saccharide"
         ],
         "compounds": [
             {
@@ -85,6 +86,14 @@
                     "id": "QLJ99538.1",
                     "name": "SchH",
                     "product": "precursor peptide"
+                },
+                {
+                    "id": "QLJ99542.1",
+                    "name": "SchV",
+                    "product": "glycosyltransferase",
+                    "tailoring": [
+                        "glycosylation"
+                    ]
                 }
             ]
         }
