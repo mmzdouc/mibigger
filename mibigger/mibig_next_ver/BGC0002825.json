@@ -2,13 +2,16 @@
     "changelog": [
         {
             "comments": [
-                "New entry."
+                "New entry nocapeptin A BGC.",
+                "Entry reviewed and approved."
             ],
             "contributors": [
-                "C62OJVVH7XOTOTFZSJT727YU"
+                "C62OJVVH7XOTOTFZSJT727YU",
+                "ZF6B6VBOHAZ5KYONQR36C2NB"
             ],
             "updated_at": [
-                "2023-09-12T11:20:55.221404"
+                "2023-09-12T11:20:55.221404",
+                "2023-11-10T11:18:24.262745"
             ],
             "version": "next"
         }
@@ -20,7 +23,7 @@
         "compounds": [
             {
                 "compound": "nocapeptin A",
-                "chem_struct": "CC(O)C(NC(=O)C1CCCN1C(=O)CNC(=O)C1CC(=O)NCC(=O)NC2CC3=CN(C4=C3C=CC=C4)c3cc(CC(NC2=O)C(=O)NCC(=O)NC(CO)C(=O)NC(CCC(N)=O)C(=O)NC(CC2=CNC4=C2C=CC=C4)C(=O)N1)ccc3O)C(=O)NCC(=O)NC(CCC(N)=O)C(=O)NC(CCCNC(N)=N)C(=O)NC(CC(O)=O)C(O)=O",
+                "chem_struct": "C[C@H](O)[C@@H](NC(=O)[C@@H]1CCCN1C(=O)CNC(=O)[C@@H]1CC(=O)NCC(=O)N[C@@H]2Cc3cn(-c4cc(C[C@H](NC2=O)C(=O)NCC(=O)N[C@H](CO)C(=O)N[C@H](CCC(N)=O)C(=O)N[C@H](Cc2c[nH]c5ccccc25)C(=O)N1)ccc4O)c1ccccc31)C(=O)NCC(=O)N[C@H](CCC(N)=O)C(=O)N[C@@H](CCCNC(N)=N)C(=O)N[C@H](CC(O)=O)C(O)=O",
                 "chem_acts": [
                     {
                         "activity": "antibacterial"
@@ -45,7 +48,8 @@
         "ncbi_tax_id": "455432",
         "organism_name": "Nocardia terpenica IFM 0406",
         "publications": [
-            "doi:10.1101/2023.03.06.531328"
+            "doi:10.1101/2023.03.06.531328",
+            "doi:10.1039/d3sc02380j"
         ],
         "status": "active",
         "genes": {
