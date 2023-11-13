@@ -2,15 +2,17 @@
     "changelog": [
         {
             "comments": [
-                "Added Amyxirubin B gene cluster"
+                "Added Amyxirubin B gene cluster.",
+                "Reviewed and approved entry."
             ],
             "contributors": [
-                "FB",
+                "ZF6B6VBOHAZ5KYONQR36C2NB",
                 "C62OJVVH7XOTOTFZSJT727YU"
 
             ],
             "updated_at": [
-                "2023-11-08T13:49:04.659950"
+                "2023-11-08T13:49:04.659950",
+                "2023-11-13T12:00:00.000000"
             ],
             "version": "next"
         }
@@ -56,7 +58,7 @@
                 "Heterologous expression"
             ]
         },
-        "mibig_accession": "FB_3",
+        "mibig_accession": "BGC0002751",
         "minimal": false,
         "ncbi_tax_id": "589385",
         "organism_name": "Amycolatopsis xylanica",
