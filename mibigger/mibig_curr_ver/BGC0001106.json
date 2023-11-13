@@ -39,14 +39,16 @@
         },
         {
             "comments": [
-                "Corrected name of compound, added start:end coordinates, added BGC evidence."
+                "Corrected name of compound, added start:end coordinates, added BGC evidence.",
+                "Reviewed cahnges and approved."
             ],
             "contributors": [
-                "FB",
+                "ZF6B6VBOHAZ5KYONQR36C2NB",
                 "C62OJVVH7XOTOTFZSJT727YU"
             ],
             "updated_at": [
-                "2023-11-02T10:58:19.413563"
+                "2023-11-02T10:58:19.413563",
+                "2023-11-13T10:00:00.000000"
             ],
             "version": "next"
         }
