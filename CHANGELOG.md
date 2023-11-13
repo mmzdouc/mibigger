@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [0.6.0] - 09-11-2023
+
+### Changed
+
+- Replaced curator initials with pseudo-anonymized curator IDs.
+
 ## [0.5.4] - 03-10-2023
 
 ### Changed
