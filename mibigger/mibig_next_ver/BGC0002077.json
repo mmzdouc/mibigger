@@ -3,15 +3,18 @@
         {
             "comments": [
                 "Created new entry for desoxydysinosin BGC.",
+                "Entry reviewed and approved.",
                 "Entry reviewed and approved."
             ],
             "contributors": [
                 "AAAAAAAAAAAAAAAAAAAAAAAA",
-                "C62OJVVH7XOTOTFZSJT727YU"
+                "C62OJVVH7XOTOTFZSJT727YU",
+                "55JKZ6YQD2AUFWZ45WR2BXVC"
             ],
             "updated_at": [
                 "2023-11-09T16:56:45.500530",
-                "2023-11-09T17:14:18.868437"
+                "2023-11-09T17:14:18.868437",
+                "2023-11-13T07:35:31.255978"
             ],
             "version": "next"
         }
