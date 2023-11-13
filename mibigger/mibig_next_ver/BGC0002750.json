@@ -2,14 +2,16 @@
     "changelog": [
         {
             "comments": [
-                "Added tryptorubin A/B."
+                "Added tryptorubin A/B.",
+                "Reviewed and approved entry."
             ],
             "contributors": [
-                "FB",
+                "ZF6B6VBOHAZ5KYONQR36C2NB",
                 "C62OJVVH7XOTOTFZSJT727YU"
             ],
             "updated_at": [
-                "2023-11-02T12:00:40.137256"
+                "2023-11-02T12:00:40.137256",
+                "2023-11-13T10:00:00.000000"
             ],
             "version": "next"
         }
