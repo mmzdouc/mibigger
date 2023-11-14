@@ -55,6 +55,8 @@ class BaseClass:
         "anthelmintic",
         "antialgal",
         "antibacterial",
+        "antibacterial (Gram-negative)",
+        "antibacterial (Gram-positive)",
         "anticancer",
         "anticoccidial",
         "antifungal",
