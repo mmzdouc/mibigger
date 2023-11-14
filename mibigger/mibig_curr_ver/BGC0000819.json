@@ -106,20 +106,6 @@
             ],
             "release_type": [
                 "Reductive release"
-            ],
-            "extra_genes": [
-                {
-                    "id": "phqN",
-                    "location": {
-                        "exons": [
-                            {
-                                "start": 43471,
-                                "end": 44349
-                            }
-                        ],
-                        "strand": 1
-                    }
-                }
             ]
         },
         "organism_name": "Penicillium fellutanum",
@@ -128,5 +114,6 @@
             "pubmed:31904957"
         ],
         "status": "active"
-    }
+    },
+    "comments": "Swiss-Prot refers to a different, extended gene sequence for gene phnQ (https://www.uniprot.org/uniprotkb/L0E172/history)"
 }
