@@ -3,15 +3,18 @@
         {
             "comments": [
                 "Added myxovalargin A BGC.",
+                "Entry reviewed and approved.",
                 "Entry reviewed and approved."
             ],
             "contributors": [
                 "AAAAAAAAAAAAAAAAAAAAAAAA",
-                "KCAHPTCAMP5NLKDFKWZBV43E"
+                "KCAHPTCAMP5NLKDFKWZBV43E",
+                "C62OJVVH7XOTOTFZSJT727YU"
             ],
             "updated_at": [
                 "2023-11-14T14:44:56.102824",
-                "2023-11-14T14:44:56.102824"
+                "2023-11-14T14:44:56.102824",
+                "2023-11-14T19:54:56.102824"
             ],
             "version": "next"
         }
@@ -83,7 +86,7 @@
                 }
             ]
         },
-        "organism_name": "Corallococcus coralloides",
+        "organism_name": "Corallococcus coralloides 1071",
         "publications": [
             "doi:10.1021/jacs.2c08816"
         ],
