@@ -39,12 +39,15 @@
         },
         {
             "comments": [
-                "Specified biological target, specified start/stop of BGC, added RiPP and gene annotations."
+                "Specified biological target, specified start/stop of BGC, added RiPP and gene annotations.",
+                "Added a review paper (doi:10.1039/D0NP00097C) which unifies the bottromycin gene designation."
             ],
             "contributors": [
+                "C62OJVVH7XOTOTFZSJT727YU",
                 "C62OJVVH7XOTOTFZSJT727YU"
             ],
             "updated_at": [
+                "2023-11-17T19:24:18.109185",
                 "2023-11-17T19:24:18.109185"
             ],
             "version": "next"
@@ -91,7 +94,8 @@
         "ncbi_tax_id": "1109705",
         "organism_name": "Streptomyces sp. BC16019",
         "publications": [
-            "pubmed:23021914"
+            "pubmed:23021914",
+            "doi:10.1039/D0NP00097C"
         ],
         "ripp": {
             "cyclic": true,

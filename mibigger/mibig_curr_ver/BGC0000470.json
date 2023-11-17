@@ -41,12 +41,15 @@
         },
         {
             "comments": [
-                "Added biological target, specified start/stop of locus, added additional literature reference, added RiPP and gene annotation."
+                "Added biological target, specified start/stop of locus, added RiPP and gene annotation, adding comment regarding missing genes.",
+                "Added a review paper (doi:10.1039/D0NP00097C) which unifies the bottromycin gene designation."
             ],
             "contributors": [
+                "C62OJVVH7XOTOTFZSJT727YU",
                 "C62OJVVH7XOTOTFZSJT727YU"
             ],
             "updated_at": [
+                "2023-11-17T20:05:40.175968",
                 "2023-11-17T20:05:40.175968"
             ],
             "version": "next"
@@ -118,5 +121,6 @@
             ]
         },
         "status": "active"
-    }
+    },
+    "comments": "Two genes missing from BGC (a regulatory protein 'botR' and a hydrolase-like protein 'botP') due to location at end of contig."
 }

@@ -30,12 +30,15 @@
         },
         {
             "comments": [
-                "Added precursor peptide sequence, gene annotations, specified exact strain host of BGC ('DSM40262'), specified bioactivity."
+                "Added precursor peptide sequence, gene annotations, specified exact strain host of BGC ('DSM40262'), specified bioactivity.",
+                "Added a review paper (doi:10.1039/D0NP00097C) which unifies the bottromycin gene designation."
             ],
             "contributors": [
+                "C62OJVVH7XOTOTFZSJT727YU",
                 "C62OJVVH7XOTOTFZSJT727YU"
             ],
             "updated_at": [
+                "2023-11-17T09:48:13.588776",
                 "2023-11-17T09:48:13.588776"
             ],
             "version": "next"
@@ -86,7 +89,8 @@
             "pubmed:19115340",
             "pubmed:6337880",
             "pubmed:7014241",
-            "doi:10.1039/C2SC21183A"
+            "doi:10.1039/C2SC21183A",
+            "doi:10.1039/D0NP00097C"
         ],
         "ripp": {
             "cyclic": true,
