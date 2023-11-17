@@ -30,7 +30,7 @@
         },
         {
             "comments": [
-                "Added precursor peptide sequence, gene annotations, specified exact strain host of BGC ('DSM40262')."
+                "Added precursor peptide sequence, gene annotations, specified exact strain host of BGC ('DSM40262'), specified bioactivity."
             ],
             "contributors": [
                 "C62OJVVH7XOTOTFZSJT727YU"
@@ -55,13 +55,14 @@
                 "chem_struct": "[H][C@@]12[C@H](C)CCN1C(=O)CN\\C(=N/[C@H](C(=O)N[C@@H]([C@@H](C)C1=CC=CC=C1)C(=O)N[C@H](CC(=O)OC)C1=NC=CS1)C(C)(C)C)[C@@H](NC(=O)[C@@H](NC2=O)C(C)C)C(C)(C)C",
                 "chem_targets": [
                     {
-                        "target": "Bacterial ribosome"
+                        "target": "aminoacyl-tRNA binding site (A site) on the 50S ribosome"
                     }
                 ],
                 "compound": "bottromycin A2",
                 "database_id": [
                     "npatlas:NPA04746",
-                    "chemspider:26365309"
+                    "chemspider:26365309",
+                    "pubchem:3081434"
                 ],
                 "mol_mass": 822.446217324,
                 "molecular_formula": "C42H62N8O7S"
@@ -92,10 +93,10 @@
             "peptidases": [
                 "CCM09447.1",
                 "CCM09448.1",
-                "bmbK",
                 "CCM09452.1",
                 "bmbH",
-                "bmbG"
+                "bmbG",
+                "bmbK"
             ],
             "subclass": "Bottromycin",
             "precursor_genes": [
