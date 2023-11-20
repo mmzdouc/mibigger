@@ -3,15 +3,18 @@
         {
             "comments": [
                 "Submitted",
+                "Reviewed and approved",
                 "Reviewed and approved"
             ],
             "contributors": [
                 "AAAAAAAAAAAAAAAAAAAAAAAA",
-                "DKBFG3K6XTYSVEQEQVCFZBWY"
+                "DKBFG3K6XTYSVEQEQVCFZBWY",
+                "C62OJVVH7XOTOTFZSJT727YU"
             ],
             "updated_at": [
                 "2023-11-14T14:50:21.014152",
-                "2023-11-14T14:50:21.014152"
+                "2023-11-14T14:50:21.014152",
+                "2023-11-20T16:35:14.321132"
             ],
             "version": "next"
         }
@@ -26,14 +29,20 @@
                 "chem_synonyms": [
                     "protegenin"
                 ],
-                "chem_struct": "C#CC#CC#CC#C/C=C/CCCCCCCC(=O)O",
+                "chem_struct": "C#CC#CC#CC#CC=CCCCCCCCC(=O)O",
                 "chem_acts": [
+                    {
+                        "activity": "antialgal"
+                    },
                     {
                         "activity": "antifungal"
                     }
                 ],
                 "evidence": [
                     "NMR"
+                ],
+                "database_id": [
+                    "npatlas:NPA033161"
                 ]
             }
         ],
@@ -47,7 +56,7 @@
             ]
         },
         "mibig_accession": "BGC0002804",
-        "minimal": true,
+        "minimal": false,
         "ncbi_tax_id": "1124983",
         "organism_name": "Pseudomonas protegens CHA0",
         "publications": [

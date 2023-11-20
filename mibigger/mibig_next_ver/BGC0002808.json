@@ -3,15 +3,18 @@
         {
             "comments": [
                 "Submitted",
+                "Reviewed and approved",
                 "Reviewed and approved"
             ],
             "contributors": [
                 "AAAAAAAAAAAAAAAAAAAAAAAA",
-                "DKBFG3K6XTYSVEQEQVCFZBWY"
+                "DKBFG3K6XTYSVEQEQVCFZBWY",
+                "C62OJVVH7XOTOTFZSJT727YU"
             ],
             "updated_at": [
                 "2023-11-19T18:29:19.960341",
-                "2023-11-19T18:29:19.960341"
+                "2023-11-19T18:29:19.960341",
+                "2023-11-20T19:32:10.546499"
             ],
             "version": "next"
         }
@@ -36,6 +39,9 @@
                     {
                         "target": "Jasmonic acid signaling pathway"
                     }
+                ],
+                "database_id": [
+                    "pubchem:101618766"
                 ]
             }
         ],
@@ -50,7 +56,7 @@
             ]
         },
         "mibig_accession": "BGC0002808",
-        "minimal": true,
+        "minimal": false,
         "ncbi_tax_id": "680198",
         "organism_name": "Streptomyces scabiei 87.22",
         "publications": [
@@ -62,6 +68,27 @@
             "doi:10.1111/mmi.13378",
             "doi:10.1371/journal.pone.0122450"
         ],
-        "status": "active"
+        "status": "active",
+        "polyketide": {
+            "cyclic": true,
+            "starter_unit": "Ethylmalonyl-CoA",
+            "subclasses": [
+                "Other",
+                "Modular type I"
+            ],
+            "synthases": [
+                {
+                    "genes": [
+                        "CBG74926.1"
+                    ],
+                    "thioesterases": [
+                        {
+                            "gene": "CBG74926.1",
+                            "thioesterase_type": "Type I"
+                        }
+                    ]
+                }
+            ]
+        }
     }
 }

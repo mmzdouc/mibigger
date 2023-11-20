@@ -3,15 +3,18 @@
         {
             "comments": [
                 "Submitted",
+                "Reviewed and approved",
                 "Reviewed and approved"
             ],
             "contributors": [
                 "AAAAAAAAAAAAAAAAAAAAAAAA",
-                "DKBFG3K6XTYSVEQEQVCFZBWY"
+                "DKBFG3K6XTYSVEQEQVCFZBWY",
+                "C62OJVVH7XOTOTFZSJT727YU"
             ],
             "updated_at": [
                 "2023-11-19T17:53:06.506102",
-                "2023-11-19T17:53:06.506102"
+                "2023-11-19T17:53:06.506102",
+                "2023-11-20T16:24:55.278267"
             ],
             "version": "next"
         }
@@ -98,6 +101,14 @@
                     "product": "Transcriptional regulator"
                 }
             ]
+        },
+        "nrp": {
+            "cyclic": true,
+            "release_type": [
+                "Macrolactonization"
+            ],
+            "lipid_moiety": "3-hydroxydecanoic acid",
+            "subclass": "Other lipopeptide"
         }
     }
 }
