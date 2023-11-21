@@ -2,8 +2,10 @@
     "changelog": [
         {
             "comments": [
-                "new entry for avenalumic acid BGC",
-                "adding submitter and reviewer lines to contributors"
+                "Entry submitted",
+                "Entry reviewed and approved.",
+                "Entry reviewed and approved.",
+                "Entry reviewed and approved."
             ],
             "contributors": [
                 "AAAAAAAAAAAAAAAAAAAAAAAA",
@@ -13,6 +15,8 @@
             ],
             "updated_at": [
                 "2023-11-14T15:07:06.661450",
+                "2023-11-21T14:00:00.000000",
+                "2023-11-21T14:00:00.000000",
                 "2023-11-21T14:00:00.000000"
             ],
             "version": "next"
@@ -51,6 +55,14 @@
             "doi:10.1002/anie.202211728"
         ],
         "status": "active",
+        "polyketide": {
+            "cyclic": false,
+            "starter_unit": "3-amino-4-hydroxybenzoic acid",
+            "subclasses": [
+                "Aryl Polyene",
+                "Type II"
+            ]
+        },
         "genes": {
             "annotations": [
                 {
