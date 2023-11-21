@@ -2,13 +2,18 @@
     "changelog": [
         {
             "comments": [
-                "new entry for avenalumic acid BGC"
+                "new entry for avenalumic acid BGC",
+                "adding submitter and reviewer lines to contributors"
             ],
             "contributors": [
-                "DM"
+                "AAAAAAAAAAAAAAAAAAAAAAAA",
+                "4T7Y257BCOAID5IKGPXOVORQ",
+                "C62OJVVH7XOTOTFZSJT727YU",
+                "ZF6B6VBOHAZ5KYONQR36C2NB"
             ],
             "updated_at": [
-                "2023-11-14T15:07:06.661450"
+                "2023-11-14T15:07:06.661450",
+                "2023-11-21T14:00:00.000000"
             ],
             "version": "next"
         }
