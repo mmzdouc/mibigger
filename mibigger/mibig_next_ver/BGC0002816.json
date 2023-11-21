@@ -3,15 +3,18 @@
         {
             "comments": [
                 "Add new entry for terpenomycin.",
+                "Reviewed and approved.",
                 "Reviewed and approved."
             ],
             "contributors": [
                 "AAAAAAAAAAAAAAAAAAAAAAAA",
-                "55JKZ6YQD2AUFWZ45WR2BXVC"
+                "55JKZ6YQD2AUFWZ45WR2BXVC",
+                "C62OJVVH7XOTOTFZSJT727YU"
             ],
             "updated_at": [
                 "2023-11-14T16:28:23.670080",
-                "2023-11-14T16:28:23.670080"
+                "2023-11-14T16:28:23.670080",
+                "2023-11-21T08:28:23.670080"
             ],
             "version": "next"
         }
@@ -35,7 +38,9 @@
                 "evidence": [
                     "NMR",
                     "MS/MS"
-                ]
+                ],
+                "mol_mass": 942.5705,
+                "molecular_formula": "C53H82O14"
             }
         ],
         "loci": {
@@ -54,6 +59,14 @@
         "publications": [
             "doi:10.1021/acschembio.3c00311"
         ],
-        "status": "active"
+        "status": "active",
+        "polyketide": {
+            "cyclic": true,
+            "starter_unit": "Methoxymalonyl-CoA",
+            "subclasses": [
+                "Polyene",
+                "Modular type I"
+            ]
+        }
     }
 }
