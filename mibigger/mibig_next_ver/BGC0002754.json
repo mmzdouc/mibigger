@@ -3,15 +3,18 @@
         {
             "comments": [
                 "Add new entry for hectoramide B",
+                "Reviewed and approved.",
                 "Reviewed and approved."
             ],
             "contributors": [
                 "AAAAAAAAAAAAAAAAAAAAAAAA",
-                "55JKZ6YQD2AUFWZ45WR2BXVC"
+                "55JKZ6YQD2AUFWZ45WR2BXVC",
+                "C62OJVVH7XOTOTFZSJT727YU"
             ],
             "updated_at": [
                 "2023-11-14T14:27:36.345273",
-                "2023-11-14T14:27:36.345273"
+                "2023-11-14T14:27:36.345273",
+                "2023-11-21T08:00:36.345273"
             ],
             "version": "next"
         }
@@ -27,7 +30,9 @@
                 "evidence": [
                     "MS/MS",
                     "NMR"
-                ]
+                ],
+                "mol_mass": 626.37,
+                "molecular_formula": "C34H50N4O7"
             }
         ],
         "loci": {
@@ -47,6 +52,13 @@
         "publications": [
             "doi:10.1101/2023.07.06.547815"
         ],
-        "status": "active"
+        "status": "active",
+        "nrp": {
+            "cyclic": false,
+            "release_type": [
+                "Unkown"
+            ],
+            "subclass": "Cyclic depsipeptide"
+        }
     }
 }
