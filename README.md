@@ -47,8 +47,7 @@ Download, Installation, Curation
 - Create a new branch using `git checkout -b dev_mmz` (with your initials instead
   `mmz`).
 - Push your new branch to GitHub using `git push origin dev_mmz`.
-- Set the remote branch to push to using `git branch --set-upstream-to=origin/dev_mmz
-  dev_mmz`.
+- Set the remote branch to push using `git branch --set-upstream-to=origin/dev_mmz`.
 - Add your initials/curator_id/name/email to the list of curators in
   `src/mibig_input_script/curators.csv` if not already present.
 - Add/modify entries (see below) and commit to your branch. Pre-commit will
