@@ -11,15 +11,16 @@
         },
         {
             "comments": [
-                "Changed stop coordiante of locus entry to include genesCH63R_05473 and CH63R_05482 according to doi:10.1021/acs.jnatprod.5b00779",
-                "Added references to publications pertaining to the changes."
+                "Changed stop coordiante of locus entry to include genes CH63R_05473 and CH63R_05482 according to doi:10.1021/acs.jnatprod.5b00779. Added references to publications pertaining to the changes.",
+                "Changes reviewed and approved."
             ],
             "contributors": [
-                "EDP"
+                "7S2S3KC6XWEGKGTSIW66GBJX",
+                "C62OJVVH7XOTOTFZSJT727YU"
             ],
             "updated_at": [
-                "2023-10-09T17:13:53.954168",
-                "2023-10-17T14:59:03.054165"
+                "2023-10-17T14:59:03.054165",
+                "2023-12-05T21:13:50.485170"
             ],
             "version": "next"
         }
@@ -38,7 +39,7 @@
                 ]
             },
             {
-                "chem_struct": "CC1=C(OC(=O)C(=C1O)C[C@@H]2C(=C)CC[C@@H]3[C@@]2(CC[C@@]4([C@]3(C[C@H](O4)C=C(C)C)C)C)C)C",
+                "chem_struct": "CC(C)=C[C@@H]1C[C@]2(C)C(CC[C@]3(C)[C@H](CC4=C(O)C(C)=C(C)OC4=O)C(=C)CC[C@@H]23)O1",
                 "compound": "higginsianin A",
                 "database_id": [
                     "npatlas:NPA021814"
@@ -84,51 +85,50 @@
             "annotations": [
                 {
                     "id": "OBR09781.1",
-                    "name": "A",
-                    "product": "Polyketide synthase"
+                    "name": "dpchA",
+                    "product": "putative polyketide synthase"
                 },
                 {
                     "id": "OBR09782.1",
-                    "comments": "Not involved in biosynthesis - see DOI:10.1038/s41467-020-15664-4 Figure 3"
+                    "comments": "probably not involved in biosynthesis - see DOI:10.1038/s41467-020-15664-4 Figure 3"
                 },
                 {
                     "id": "OBR09783.1",
-                    "name": "E",
-                    "product": "FAD binding domain-containing protein"
+                    "name": "dpchE",
+                    "product": "putative FAD binding domain-containing protein"
                 },
                 {
                     "id": "OBR09784.1",
-                    "name": "B",
-                    "comments": "hypothetical protein"
+                    "name": "dpchB",
+                    "comments": "putative terpene cyclase"
                 },
                 {
                     "id": "OBR09785.1",
-                    "name": "G",
-                    "product": "Short chain dehydrogenase"
+                    "name": "dpchG",
+                    "product": "putative short chain dehydrogenase"
                 },
                 {
                     "id": "OBR09786.1",
-                    "name": "C",
-                    "product": "UbiA prenyltransferase"
+                    "name": "dpchC",
+                    "product": "putative ubiA prenyltransferase"
                 },
                 {
                     "id": "OBR09787.1",
-                    "name": "H",
-                    "product": "UbiA prenyltransferase"
+                    "name": "dpchH",
+                    "product": "putative ubiA prenyltransferase"
                 },
                 {
                     "id": "OBR09788.1",
-                    "name": "D",
-                    "product": "Polyprenyl synthetase"
+                    "name": "dpchD",
+                    "product": "putative polyprenyl synthetase"
                 },
                 {
                     "id": "OBR09789.1",
-                    "product": "Cyclohexanone 1,2-monooxygenase",
-                    "comments": "Not involved in biosynthesis - see DOI:10.1038/s41467-020-15664-4 Figure 3"
+                    "comments": "Probably ot involved in biosynthesis - see DOI:10.1038/s41467-020-15664-4 Figure 3"
                 },
                 {
                     "id": "OBR09790.1",
-                    "name": "F",
+                    "name": "dpchF",
                     "product": "Flavin-containing superfamily Amine oxidase"
                 }
             ]
