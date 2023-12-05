@@ -11,11 +11,10 @@
         },
         {
             "comments": [
-                "Changed entry BGC0002429 end coordinate as per indication of issue #305",
+                "Changed stop coordiante of locus entry to include genesCH63R_05473 and CH63R_05482 according to doi:10.1021/acs.jnatprod.5b00779",
                 "Added references to publications pertaining to the changes."
             ],
             "contributors": [
-                "EDP",
                 "EDP"
             ],
             "updated_at": [
@@ -42,7 +41,7 @@
         "loci": {
             "accession": "CM004458.1",
             "completeness": "Unknown",
-            "end_coord": 422890,
+            "end_coord": 480233,
             "evidence": [
                 "Heterologous expression"
             ],
@@ -53,6 +52,7 @@
         "ncbi_tax_id": "759273",
         "organism_name": "Colletotrichum higginsianum IMI 349063",
         "publications": [
+            "doi:10.1038/s41467-020-15664-4",
             "doi:10.1021/acs.jnatprod.5b00779",
             "doi:10.1021/acs.jnatprod.8b00796"
         ],
@@ -60,7 +60,53 @@
         "genes": {
             "annotations": [
                 {
-                    "id": "0"
+                    "id": "OBR09781.1",
+                    "name": "A",
+                    "product": "Polyketide synthase"
+                },
+                {
+                    "id": "OBR09782.1",
+                    "comments": "Not involved in biosynthesis - see DOI:10.1038/s41467-020-15664-4 Figure 3"
+                },
+                {
+                    "id": "OBR09783.1",
+                    "name": "E",
+                    "product": "FAD binding domain-containing protein"
+                },
+                {
+                    "id": "OBR09784.1",
+                    "name": "B",
+                    "comments": "hypothetical protein"
+                },
+                {
+                    "id": "OBR09785.1",
+                    "name": "G",
+                    "product": "Short chain dehydrogenase"
+                },
+                {
+                    "id": "OBR09786.1",
+                    "name": "C",
+                    "product": "UbiA prenyltransferase"
+                },
+                {
+                    "id": "OBR09787.1",
+                    "name": "H",
+                    "product": "UbiA prenyltransferase"
+                },
+                {
+                    "id": "OBR09788.1",
+                    "name": "D",
+                    "product": "Polyprenyl synthetase"
+                },
+                {
+                    "id": "OBR09789.1",
+                    "product": "Cyclohexanone 1,2-monooxygenase",
+                    "comments": "Not involved in biosynthesis - see DOI:10.1038/s41467-020-15664-4 Figure 3"
+                },
+                {
+                    "id": "OBR09790.1",
+                    "name": "F",
+                    "product": "Flavin-containing superfamily Amine oxidase"
                 }
             ]
         }
