@@ -36,6 +36,29 @@
                 "database_id": [
                     "npatlas:NPA021815"
                 ]
+            },
+            {
+                "chem_struct": "CC1=C(OC(=O)C(=C1O)C[C@@H]2C(=C)CC[C@@H]3[C@@]2(CC[C@@]4([C@]3(C[C@H](O4)C=C(C)C)C)C)C)C",
+                "compound": "higginsianin A",
+                "database_id": [
+                    "npatlas:NPA021814"
+                ]
+            },
+            {
+                "chem_struct": "CC1=C(OC(=O)C(=C1O)C[C@@H]2C(=C)CC[C@@H]3[C@@]2(CC[C@@H]4[C@]3(CC[C@H](O4)C(C)(C)O)C)C)C",
+                "compound": "higginsianin C",
+                "database_id": [
+                    "pubchem:145720804",
+                    "chembl:CHEMBL4529128"
+                ]
+            },
+            {
+                "chem_struct": "CC1=C(OC(=O)C(=C1O)C[C@@H]2C(=C)CC[C@@H]3[C@@]2(CC[C@@H]4[C@]3(CC[C@@H](O4)C(C)(C)O)C)C)C",
+                "compound": "13-epi-higginsianin C",
+                "database_id": [
+                    "pubchem:145720805",
+                    "chembl:CHEMBL4519308"
+                ]
             }
         ],
         "loci": {
