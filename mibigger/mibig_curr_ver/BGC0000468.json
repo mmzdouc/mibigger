@@ -30,16 +30,16 @@
         },
         {
             "comments": [
-                "Added precursor peptide sequence, gene annotations, specified exact strain host of BGC ('DSM40262'), specified bioactivity.",
-                "Added a review paper (doi:10.1039/D0NP00097C) which unifies the bottromycin gene designation."
+                "Added precursor peptide sequence, gene annotations, specified exact strain host of BGC ('DSM40262'), specified bioactivity. Added a review paper (doi:10.1039/D0NP00097C) which unifies the bottromycin gene designation.",
+                "Changes reviewed and approved."
             ],
             "contributors": [
                 "C62OJVVH7XOTOTFZSJT727YU",
-                "C62OJVVH7XOTOTFZSJT727YU"
+                "DKBFG3K6XTYSVEQEQVCFZBWY"
             ],
             "updated_at": [
                 "2023-11-17T09:48:13.588776",
-                "2023-11-17T09:48:13.588776"
+                "2023-12-05T20:24:07.333058"
             ],
             "version": "next"
         }
@@ -171,8 +171,7 @@
                 {
                     "id": "CCM09449.1",
                     "name": "BmbI",
-                    "product": "putative cytochrome P450",
-                    "comments": ""
+                    "product": "putative cytochrome P450"
                 },
                 {
                     "id": "CCM09450.1",

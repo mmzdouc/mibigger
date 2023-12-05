@@ -11,13 +11,16 @@
         },
         {
             "comments": [
-                "Removed duplicate structure, specified strain info, added chem activ, annotated RiPP information, annotated gene information, specified biosyn class saccharide (glycoslated RiPP)."
+                "Removed duplicate structure, specified strain info, added chem activ, annotated RiPP information, annotated gene information, specified biosyn class saccharide (glycoslated RiPP).",
+                "Changes reviewed and approved"
             ],
             "contributors": [
-                "C62OJVVH7XOTOTFZSJT727YU"
+                "C62OJVVH7XOTOTFZSJT727YU",
+                "DKBFG3K6XTYSVEQEQVCFZBWY"
             ],
             "updated_at": [
-                "2023-11-10T11:20:55.221404"
+                "2023-11-10T11:20:55.221404",
+                "2023-12-05T20:31:02.783261"
             ],
             "version": "next"
         }

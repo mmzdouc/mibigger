@@ -39,16 +39,16 @@
         },
         {
             "comments": [
-                "Specified biological target, specified start/stop of BGC, added RiPP and gene annotations.",
-                "Added a review paper (doi:10.1039/D0NP00097C) which unifies the bottromycin gene designation."
+                "Specified biological target, specified start/stop of BGC, added RiPP and gene annotations. Added a review paper (doi:10.1039/D0NP00097C) which unifies the bottromycin gene designation.",
+                "Changes reviewed and approved."
             ],
             "contributors": [
                 "C62OJVVH7XOTOTFZSJT727YU",
-                "C62OJVVH7XOTOTFZSJT727YU"
+                "DKBFG3K6XTYSVEQEQVCFZBWY"
             ],
             "updated_at": [
                 "2023-11-17T19:24:18.109185",
-                "2023-11-17T19:24:18.109185"
+                "2023-12-05T20:26:22.249411"
             ],
             "version": "next"
         }

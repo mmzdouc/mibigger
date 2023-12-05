@@ -38,16 +38,16 @@
         },
         {
             "comments": [
-                "Specified chemical target, added RiPP annotation.",
-                "Added a review paper (doi:10.1039/D0NP00097C) which unifies the bottromycin gene designation."
+                "Specified chemical target, added RiPP annotation. Added a review paper (doi:10.1039/D0NP00097C) which unifies the bottromycin gene designation.",
+                "Changes reviewed and approved"
             ],
             "contributors": [
                 "C62OJVVH7XOTOTFZSJT727YU",
-                "C62OJVVH7XOTOTFZSJT727YU"
+                "DKBFG3K6XTYSVEQEQVCFZBWY"
             ],
             "updated_at": [
                 "2023-11-17T20:42:00.644839",
-                "2023-11-17T20:42:00.644839"
+                "2023-12-05T20:29:33.585302"
             ],
             "version": "next"
         }
