@@ -46,7 +46,7 @@
             }
         ],
         "loci": {
-            "accession": "NZ_CP022438.1",
+            "accession": "CP022438.1",
             "completeness": "complete",
             "start_coord": 6395057,
             "end_coord": 6502160,
