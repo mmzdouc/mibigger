@@ -3,15 +3,18 @@
         {
             "comments": [
                 "New entry nocapeptin A BGC.",
+                "Entry reviewed and approved.",
                 "Entry reviewed and approved."
             ],
             "contributors": [
                 "C62OJVVH7XOTOTFZSJT727YU",
-                "ZF6B6VBOHAZ5KYONQR36C2NB"
+                "ZF6B6VBOHAZ5KYONQR36C2NB",
+                "DKBFG3K6XTYSVEQEQVCFZBWY"
             ],
             "updated_at": [
                 "2023-09-12T11:20:55.221404",
-                "2023-11-10T11:18:24.262745"
+                "2023-11-10T11:18:24.262745",
+                "2023-12-06T11:18:24.262745"
             ],
             "version": "3.2"
         }

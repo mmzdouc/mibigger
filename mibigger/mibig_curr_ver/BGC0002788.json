@@ -3,15 +3,18 @@
         {
             "comments": [
                 "Submitted",
+                "Reviewed and approved entry.",
                 "Reviewed and approved entry."
             ],
             "contributors": [
                 "AAAAAAAAAAAAAAAAAAAAAAAA",
-                "C62OJVVH7XOTOTFZSJT727YU"
+                "C62OJVVH7XOTOTFZSJT727YU",
+                "DKBFG3K6XTYSVEQEQVCFZBWY"
             ],
             "updated_at": [
                 "2023-11-21T13:32:29.126574",
-                "2023-11-21T13:32:29.126574"
+                "2023-11-21T13:32:29.126574",
+                "2023-12-06T13:32:29.126574"
             ],
             "version": "3.2"
         }

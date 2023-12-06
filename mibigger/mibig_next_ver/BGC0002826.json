@@ -3,13 +3,16 @@
         {
             "comments": [
                 "Created entry.",
+                "Entry reviewed and approved.",
                 "Entry reviewed and approved."
             ],
             "contributors": [
                 "AAAAAAAAAAAAAAAAAAAAAAAA",
-                "C62OJVVH7XOTOTFZSJT727YU"
+                "C62OJVVH7XOTOTFZSJT727YU",
+                "DKBFG3K6XTYSVEQEQVCFZBWY"
             ],
             "updated_at": [
+                "2023-12-06T17:12:10.295702",
                 "2023-12-06T17:12:10.295702",
                 "2023-12-06T17:12:10.295702"
             ],
@@ -57,6 +60,15 @@
         "publications": [
             "doi:10.1002/anie.202205409"
         ],
-        "status": "active"
+        "status": "active",
+        "genes": {
+            "annotations": [
+                {
+                    "id": "SAMN02745163_01864",
+                    "comments": "In RefSeq entry 'NZ_FQZB01000008.1', gene starts 72 nt earlier (98901..100178).",
+                    "name": "clxA"
+                }
+            ]
+        }
     }
 }
