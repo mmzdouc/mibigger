@@ -8,6 +8,18 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.0"
+        },
+        {
+            "comments": [
+                "Fixed start:end coordinates to match reference"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-24T09:06:20.186119"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -26,7 +38,7 @@
             "evidence": [
                 "Gene expression correlated with compound production"
             ],
-            "start_coord": 45415
+            "start_coord": 44349
         },
         "mibig_accession": "BGC0002567",
         "minimal": true,

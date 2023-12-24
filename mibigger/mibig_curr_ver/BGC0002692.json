@@ -8,6 +8,18 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.0"
+        },
+        {
+            "comments": [
+                "Fixed start:end coordinates to match reference"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-24T09:06:20.186119"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -41,7 +53,7 @@
             "accession": "SJJY01000002.1",
             "completeness": "Unknown",
             "end_coord": 1426027,
-            "start_coord": 1414402
+            "start_coord": 1419402
         },
         "mibig_accession": "BGC0002692",
         "minimal": true,

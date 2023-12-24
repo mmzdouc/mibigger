@@ -18,6 +18,18 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.1"
+        },
+        {
+            "comments": [
+                "Fixed start:end coordinates to match reference"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-24T09:06:20.186119"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -37,7 +49,7 @@
             "accession": "CP000489.1",
             "completeness": "Unknown",
             "end_coord": 2385957,
-            "start_coord": 2379882
+            "start_coord": 2379864
         },
         "mibig_accession": "BGC0002493",
         "minimal": true,
