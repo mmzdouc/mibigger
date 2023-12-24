@@ -35,6 +35,18 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.1"
+        },
+        {
+            "comments": [
+                "Retire low quality entry"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-24T09:06:20.186119"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -68,6 +80,9 @@
         "publications": [
             "pubmed:27746129"
         ],
-        "status": "active"
+        "retirement_reasons": [
+            "Low quality entry"
+        ],
+        "status": "retired"
     }
 }
