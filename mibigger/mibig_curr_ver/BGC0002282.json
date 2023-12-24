@@ -8,6 +8,18 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.0"
+        },
+        {
+            "comments": [
+                "Retired as duplicate of BGC0002040 (same strain)"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-24T10:38:33.076967"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -40,6 +52,9 @@
         "publications": [
             "pubmed:30942582"
         ],
-        "status": "active"
+        "retirement_reasons": [
+            "Duplicate of BGC0002040"
+        ],
+        "status": "retired"
     }
 }

@@ -18,6 +18,19 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.1"
+        },
+        {
+            "comments": [
+                "Merged coordinates, evidence, publication from duplicate BGC0002282",
+                "Removed duplicate publication"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-24T10:40:12.248914"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -43,7 +56,13 @@
         ],
         "loci": {
             "accession": "KY705052.1",
-            "completeness": "Unknown"
+            "end_coord": 38078,
+            "completeness": "Unknown",
+            "evidence": [
+                "Knock-out studies",
+                "Enzymatic assays"
+            ],
+            "start_coord": 1047
         },
         "mibig_accession": "BGC0002040",
         "minimal": true,
@@ -51,7 +70,7 @@
         "organism_name": "Streptomyces kaniharaensis",
         "publications": [
             "pubmed:31676476",
-            "doi:10.1128/AEM.01971-19"
+            "pubmed:30942582"
         ],
         "status": "active"
     }
