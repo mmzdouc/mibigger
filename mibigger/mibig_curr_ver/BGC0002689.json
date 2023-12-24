@@ -8,6 +8,22 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.0"
+        },
+        {
+            "comments": [
+                "Add references",
+                "Remove duplicate reference",
+                "Change compound name to stenobactin with original name as synonym",
+                "Add SMILES",
+                "Add evidence field"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-24T12:07:30.023116"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -16,22 +32,30 @@
         ],
         "compounds": [
             {
-                "compound": "2,3-dihydroxybenzoylserine"
+                "chem_struct": "C1=CC(=C(C(=C1)O)O)C(=O)NC(CO)C(=O)O",
+                "chem_synonyms": [
+                    "2,3-dihydroxybenzoylserine"
+                ],
+                "compound": "stenobactin"
             }
         ],
         "loci": {
             "accession": "AM743169.1",
             "completeness": "Unknown",
             "end_coord": 2873266,
-            "start_coord": 2850116
+            "start_coord": 2850116,
+            "evidence": [
+                "Knock-out studies"
+            ]
         },
         "mibig_accession": "BGC0002689",
         "minimal": true,
         "ncbi_tax_id": "522373",
         "organism_name": "Stenotrophomonas maltophilia K279a",
         "publications": [
+            "pubmed:28984234",
             "pubmed:34280083",
-            "doi:10.1099/mic.0.001071"
+            "pubmed:32862228"
         ],
         "status": "active"
     }
