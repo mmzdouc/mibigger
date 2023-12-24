@@ -37,6 +37,20 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.1"
+        },
+        {
+            "comments": [
+                "Replace partial cluster with complete genome record",
+                "Update gene names for new record",
+                "Add reference for new record"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-24T09:06:20.186119"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -64,8 +78,10 @@
             }
         ],
         "loci": {
-            "accession": "AF074705.2",
-            "completeness": "Unknown"
+            "accession": "AE004091.2",
+            "end_coord": 4746551,
+            "completeness": "Unknown",
+            "start_coord": 4721614
         },
         "mibig_accession": "BGC0000412",
         "minimal": false,
@@ -73,7 +89,7 @@
         "nrp": {
             "nrps_genes": [
                 {
-                    "gene_id": "AAC83656.1",
+                    "gene_id": "AAG07614.1",
                     "modules": [
                         {
                             "a_substr_spec": {
@@ -89,7 +105,7 @@
                     ]
                 },
                 {
-                    "gene_id": "AAC83657.1",
+                    "gene_id": "AAG07613.1",
                     "modules": [
                         {
                             "a_substr_spec": {
@@ -109,7 +125,8 @@
         "organism_name": "Pseudomonas aeruginosa PAO1",
         "publications": [
             "pubmed:9846750",
-            "pubmed:11208777"
+            "pubmed:11208777",
+            "pubmed:21188474"
         ],
         "status": "active"
     }
