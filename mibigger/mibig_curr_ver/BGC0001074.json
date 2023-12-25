@@ -36,6 +36,18 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.1"
+        },
+        {
+            "comments": [
+                "Added reference from retired duplicate BGC0000214"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-24T14:13:16.765405"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -74,7 +86,8 @@
         "ncbi_tax_id": "358823",
         "organism_name": "Streptomyces olindensis",
         "publications": [
-            "pubmed:24970824"
+            "pubmed:24970824",
+            "pubmed:16810496"
         ],
         "status": "active"
     }

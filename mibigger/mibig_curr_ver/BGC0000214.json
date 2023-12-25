@@ -36,6 +36,18 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.1"
+        },
+        {
+            "comments": [
+                "Retired as duplicate of BGC0001074"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-24T14:13:16.765405"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -69,6 +81,9 @@
         "publications": [
             "pubmed:16810496"
         ],
-        "status": "active"
+        "retirement_reasons": [
+            "Duplicate of BGC0001074"
+        ],
+        "status": "retired"
     }
 }
