@@ -27,6 +27,21 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.1"
+        },
+        {
+            "comments": [
+                "Added references",
+                "Added heterologous expresssion evidence",
+                "Expanded range to match reference",
+                "Added gene annotations"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-24T14:13:16.765405"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -87,6 +102,21 @@
                 {
                     "functions": [
                         {
+                            "category": "Biosynthesis",
+                            "evidence": [
+                                "Knock-out",
+                                "Heterologous expression",
+                                "Sequence-based prediction"
+                            ]
+                        }
+                    ],
+                    "id": "CAB60183.1",
+                    "name": "SCO6264",
+                    "product": "ScbB; 3-ketoacyl-ACP/CoA reductase"
+                },
+                {
+                    "functions": [
+                        {
                             "category": "Regulation",
                             "evidence": [
                                 "Knock-out",
@@ -95,13 +125,30 @@
                             ]
                         }
                     ],
-                    "id": "SCO6265",
-                    "name": "scbR"
+                    "id": "CAB60184.1",
+                    "name": "SCO6265",
+                    "product": "ScbR; Butyrolactone-responsive repressor protein"
                 },
                 {
                     "functions": [
                         {
-                            "category": "Precursor biosynthesis",
+                            "category": "Biosynthesis",
+                            "evidence": [
+                                "Knock-out",
+                                "Activity assay",
+                                "Sequence-based prediction",
+                                "Heterologous expression"
+                            ]
+                        }
+                    ],
+                    "id": "CAB60185.1",
+                    "name": "SCO6266",
+                    "product": "ScbA; Butenolide synthase (acyl-transferase)"
+                },
+                {
+                    "functions": [
+                        {
+                            "category": "Biosynthesis",
                             "evidence": [
                                 "Knock-out",
                                 "Activity assay",
@@ -109,21 +156,22 @@
                             ]
                         }
                     ],
-                    "id": "SCO6266",
-                    "name": "scbA",
-                    "product": "SCBs Biosynthesis Enzyme"
+                    "id": "CAB60186.1",
+                    "name": "SCO6267",
+                    "product": "ScbC; Butenolide phosphate reductase"
                 }
             ]
         },
         "loci": {
             "accession": "AL645882.2",
             "completeness": "complete",
-            "end_coord": 6892237,
+            "end_coord": 6893207,
             "evidence": [
                 "Knock-out studies",
-                "Gene expression correlated with compound production"
+                "Gene expression correlated with compound production",
+                "Heterologous expression"
             ],
-            "start_coord": 6890528
+            "start_coord": 6889624
         },
         "mibig_accession": "BGC0000849",
         "minimal": false,
@@ -134,7 +182,9 @@
         },
         "publications": [
             "pubmed:12000953",
-            "pubmed:8843436"
+            "pubmed:8843436",
+            "doi:10.1021/acssynbio.7b00425",
+            "pubmed:15813737"
         ],
         "status": "active"
     }

@@ -37,6 +37,19 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.1"
+        },
+        {
+            "comments": [
+                "Added reference",
+                "Shrunk range to exclude SCB1 genes (BGC0000849)"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-24T14:13:16.765405"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -61,45 +74,6 @@
         ],
         "genes": {
             "annotations": [
-                {
-                    "functions": [
-                        {
-                            "category": "Regulation",
-                            "evidence": [
-                                "Knock-out"
-                            ]
-                        }
-                    ],
-                    "id": "CAB60184.1",
-                    "name": "SCO6265",
-                    "product": "ScbR; Butyrolactone-responsive repressor protein"
-                },
-                {
-                    "functions": [
-                        {
-                            "category": "Other enzymatic",
-                            "evidence": [
-                                "Knock-out"
-                            ]
-                        }
-                    ],
-                    "id": "CAB60185.1",
-                    "name": "SCO6266",
-                    "product": "ScbA; Butenolide synthase involved in SCB1 biosynthesis"
-                },
-                {
-                    "functions": [
-                        {
-                            "category": "Other enzymatic",
-                            "evidence": [
-                                "Sequence-based prediction"
-                            ]
-                        }
-                    ],
-                    "id": "CAB60186.1",
-                    "name": "SCO6267",
-                    "product": "ScbB; Reductase involved in SCB1 biosynthesis"
-                },
                 {
                     "functions": [
                         {
@@ -397,7 +371,7 @@
             "evidence": [
                 "Knock-out studies"
             ],
-            "start_coord": 6890528
+            "start_coord": 6893258
         },
         "mibig_accession": "BGC0000038",
         "minimal": false,
@@ -541,7 +515,8 @@
         "publications": [
             "pubmed:17009021",
             "pubmed:20447997",
-            "pubmed:24660171"
+            "pubmed:24660171",
+            "pubmed:15813737"
         ],
         "status": "active"
     }
