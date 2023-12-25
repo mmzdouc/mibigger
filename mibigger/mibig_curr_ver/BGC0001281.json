@@ -17,6 +17,19 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "2.0"
+        },
+        {
+            "comments": [
+                "Added start:end coordinates",
+                "Rounded molecular mass"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-25T14:11:29.172027"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -30,13 +43,15 @@
                 "database_id": [
                     "pubchem:52922086"
                 ],
-                "mol_mass": 784.4092652080002,
+                "mol_mass": 784.4093,
                 "molecular_formula": "C36H64O18"
             }
         ],
         "loci": {
             "accession": "NC_026500.1",
-            "completeness": "Unknown"
+            "completeness": "Unknown",
+            "end_coord": 344927,
+            "start_coord": 297900
         },
         "mibig_accession": "BGC0001281",
         "minimal": true,
