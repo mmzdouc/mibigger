@@ -36,11 +36,27 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.1"
+        },
+        {
+            "comments": [
+                "Migrated data from redundant BGC0001397",
+                "Added NRP cluster type",
+                "Migrated NRP selectivity",
+                "Added start:end coordinates"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-25T14:11:29.172027"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
         "biosyn_class": [
-            "Polyketide"
+            "Polyketide",
+            "NRP"
         ],
         "compounds": [
             {
@@ -729,17 +745,50 @@
             "completeness": "complete",
             "evidence": [
                 "Knock-out studies"
-            ]
+            ],
+            "end_coord": 78769,
+            "start_coord": 5982
         },
         "mibig_accession": "BGC0000965",
         "minimal": false,
         "ncbi_tax_id": "1908",
+        "nrp": {
+            "nrps_genes": [
+                {
+                    "gene_id": "AAL06681.1",
+                    "modules": [
+                        {
+                            "a_substr_spec": {
+                                "evidence": [
+                                    "ATP-PPi exchange assay"
+                                ],
+                                "publications": [
+                                    "pubmed:16887797"
+                                ],
+                                "substrates": [
+                                    {
+                                        "name": "S-beta-tyrosine",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC(=CC=C1[C@H](CC(=O)O)N)O"
+                                    },
+                                    {
+                                        "name": "R-beta-tyrosine",
+                                        "proteinogenic": false,
+                                        "structure": "C1=CC(=CC=C1[C@@H](CC(=O)O)N)O"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
         "organism_name": "Streptomyces globisporus",
         "polyketide": {
             "cyclic": true,
             "starter_unit": "Acetyl-CoA",
             "subclasses": [
-                "Enediyine"
+                "Enediyne"
             ],
             "synthases": [
                 {
@@ -812,7 +861,8 @@
             "pubmed:19856960",
             "pubmed:20551990",
             "pubmed:21250756",
-            "pubmed:22519717"
+            "pubmed:22519717",
+            "pubmed:26853480"
         ],
         "status": "active"
     }
