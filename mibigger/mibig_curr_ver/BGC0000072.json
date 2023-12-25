@@ -36,6 +36,18 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.1"
+        },
+        {
+            "comments": [
+                "Removed redundant PKS module 0"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-24T14:13:16.765405"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -186,26 +198,7 @@
                     "modules": [
                         {
                             "at_specificities": [
-                                "Acetyl-CoA"
-                            ],
-                            "domains": [
-                                "Thiolation (ACP/PCP)",
-                                "Ketosynthase",
-                                "Acyltransferase",
-                                "Acyltransferase",
-                                "Dehydratase",
-                                "Ketoreductase",
-                                "Thiolation (ACP/PCP)"
-                            ],
-                            "evidence": "Structure-based inference",
-                            "genes": [
-                                "AIT55264.1"
-                            ],
-                            "kr_stereochem": "Unknown",
-                            "module_number": "0"
-                        },
-                        {
-                            "at_specificities": [
+                                "Acetyl-CoA",
                                 "Methylmalonyl-CoA"
                             ],
                             "domains": [
