@@ -26,6 +26,18 @@
                 "SJG3CBEHSM6A3I74YXLH6GLA"
             ],
             "version": "3.0"
+        },
+        {
+            "comments": [
+                "Retired obsolete record; these genes are now covered by BGC0000243"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-24T14:13:16.765405"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -90,6 +102,9 @@
         "publications": [
             "pubmed:10858335"
         ],
-        "status": "active"
+        "retirement_reasons": [
+            "Obsolete; now part of BGC0000243"
+        ],
+        "status": "retired"
     }
 }

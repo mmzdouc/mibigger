@@ -26,6 +26,19 @@
                 "SJG3CBEHSM6A3I74YXLH6GLA"
             ],
             "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update obsolete nucleotide record",
+                "Add reference"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-24T14:13:16.765405"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -80,15 +93,18 @@
             }
         ],
         "loci": {
-            "accession": "AF263011.1",
-            "completeness": "Unknown"
+            "accession": "AH009582.2",
+            "completeness": "Unknown",
+            "end_coord": 25962,
+            "start_coord": 1
         },
         "mibig_accession": "BGC0000243",
         "minimal": true,
         "ncbi_tax_id": "67263",
         "organism_name": "Streptomyces griseus subsp. griseus",
         "publications": [
-            "pubmed:10858335"
+            "pubmed:10858335",
+            "pubmed:19167217"
         ],
         "status": "active"
     }
