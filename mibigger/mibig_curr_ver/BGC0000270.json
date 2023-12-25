@@ -36,10 +36,24 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.1"
+        },
+        {
+            "comments": [
+                "Update coordinates to match reference",
+                "Add other (aminocoumarin) class"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-24T14:13:16.765405"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
         "biosyn_class": [
+            "Other",
             "Polyketide"
         ],
         "compounds": [
@@ -63,12 +77,17 @@
         ],
         "loci": {
             "accession": "AF322256.1",
-            "completeness": "Unknown"
+            "completeness": "Unknown",
+            "end_coord": 31684,
+            "start_coord": 1
         },
         "mibig_accession": "BGC0000270",
         "minimal": true,
         "ncbi_tax_id": "1890",
         "organism_name": "Streptomyces antibioticus",
+        "other": {
+            "subclass": "Aminocoumarin"
+        },
         "publications": [
             "pubmed:12115055"
         ],
