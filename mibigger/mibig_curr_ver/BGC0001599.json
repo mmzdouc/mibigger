@@ -27,6 +27,19 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.0"
+        },
+        {
+            "comments": [
+                "Add gene annotations",
+                "Add knockout evidence"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-25T13:58:27.739047"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -48,7 +61,10 @@
             "accession": "HG938371.2",
             "completeness": "Unknown",
             "end_coord": 231743,
-            "start_coord": 222371
+            "start_coord": 222371,
+            "evidence": [
+                "Knock-out studies"
+            ]
         },
         "mibig_accession": "BGC0001599",
         "minimal": false,
@@ -83,6 +99,45 @@
         "publications": [
             "pubmed:29602945"
         ],
-        "status": "active"
+        "status": "active",
+        "genes": {
+            "annotations": [
+                {
+                    "id": "CDN62024.1",
+                    "name": "HamG",
+                    "product": "Aminotransferase class-III"
+                },
+                {
+                    "id": "CDN62025.1",
+                    "name": "HamF",
+                    "product": "Starter condensation domain"
+                },
+                {
+                    "id": "CDN62027.1",
+                    "name": "HamA",
+                    "product": "Haem-oxygenase"
+                },
+                {
+                    "id": "CDN62028.1",
+                    "name": "HamB",
+                    "product": "RmlC-like cupin domain"
+                },
+                {
+                    "id": "CDN62029.1",
+                    "name": "HamC",
+                    "product": "p-Aminobenzoate N-oxygenase"
+                },
+                {
+                    "id": "CDN62030.1",
+                    "name": "HamD",
+                    "product": "NRPS"
+                },
+                {
+                    "id": "CDN62031.1",
+                    "name": "HamE",
+                    "product": "Polyketide cyclase/dehydrase"
+                }
+            ]
+        }
     }
 }
