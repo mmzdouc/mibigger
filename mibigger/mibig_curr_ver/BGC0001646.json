@@ -36,6 +36,20 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.1"
+        },
+        {
+            "comments": [
+                "Add structure",
+                "Add NPAtlas link",
+                "Add coordinates to match reference"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-25T16:06:52.604077"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -50,12 +64,18 @@
                         "activity": "surfactant"
                     }
                 ],
-                "compound": "lagriamide"
+                "chem_struct": "C/C(=C\\C(C)CCC1CCCC2(CCC(C)C(CCCNC(=O)C(C)C(O)CNC(=O)CC3OC(CC(=O)C4OC4C)CCC3C)O2)O1)CCC(=O)O",
+                "compound": "lagriamide",
+                "database_id": [
+                    "npatlas:NPA028416"
+                ]
             }
         ],
         "loci": {
             "accession": "MH171092.1",
-            "completeness": "Unknown"
+            "completeness": "Unknown",
+            "end_coord": 93680,
+            "start_coord": 3132
         },
         "mibig_accession": "BGC0001646",
         "minimal": true,
