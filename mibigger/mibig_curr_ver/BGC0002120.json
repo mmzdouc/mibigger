@@ -19,6 +19,19 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.1"
+        },
+        {
+            "comments": [
+                "Fix citation",
+                "Fix RiPP core sequence"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-25T17:11:39.225193"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -162,14 +175,14 @@
         "ncbi_tax_id": "455432",
         "organism_name": "Nocardia terpenica IFM 0706",
         "publications": [
-            "pubmed:32816977"
+            "pubmed:33991039"
         ],
         "ripp": {
             "cyclic": true,
             "precursor_genes": [
                 {
                     "core_sequence": [
-                        "MKMMKRNEEVAESGYDDFDLNIIDSSMFDDESSRPAAPACHTLSSLPCCAN"
+                        "ACHTLSSLPCCAN"
                     ],
                     "gene_id": "NQE92413.1"
                 }
