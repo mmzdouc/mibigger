@@ -8,6 +8,18 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update reference for published preprint"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-25T17:11:39.225193"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -37,7 +49,7 @@
         "ncbi_tax_id": "77044",
         "organism_name": "Rosellinia necatrix",
         "publications": [
-            "doi:10.26434/chemrxiv-2022-dst89"
+            "doi:10.1038/s41467-022-30288-6"
         ],
         "status": "active"
     }
