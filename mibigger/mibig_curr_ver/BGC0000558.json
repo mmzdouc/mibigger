@@ -35,6 +35,19 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.1"
+        },
+        {
+            "comments": [
+                "Update subclass",
+                "Add reference"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-25T17:11:39.225193"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -60,10 +73,11 @@
         "ncbi_tax_id": "224308",
         "organism_name": "Bacillus subtilis subsp. subtilis str. 168",
         "publications": [
-            "pubmed:9722542"
+            "pubmed:9722542",
+            "pubmed:21196935"
         ],
         "ripp": {
-            "subclass": "Lanthipeptide"
+            "subclass": "S-Linked glycopeptide"
         },
         "status": "active"
     }
