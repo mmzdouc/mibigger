@@ -38,6 +38,18 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.1"
+        },
+        {
+            "comments": [
+                "Fix substrate name"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-25T17:11:39.225193"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -645,7 +657,7 @@
                                 ],
                                 "substrates": [
                                     {
-                                        "name": "3-(2-nitrocyclopropylalanine)",
+                                        "name": "3-(2-nitrocyclopropyl)alanine",
                                         "proteinogenic": false,
                                         "structure": "C1[C@H]([C@@H]1[N+](=O)[O-])C[C@@H](C(=O)O)N"
                                     }
