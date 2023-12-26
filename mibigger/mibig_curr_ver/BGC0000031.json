@@ -38,6 +38,18 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.1"
+        },
+        {
+            "comments": [
+                "Add references"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-25T17:11:39.225193"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -295,7 +307,9 @@
         "publications": [
             "pubmed:15112998",
             "pubmed:14651102",
-            "pubmed:15186422"
+            "pubmed:15186422",
+            "doi:10.1021/acs.biochem.0c00126",
+            "doi:10.1007/s10295-019-02189-z"
         ],
         "status": "active"
     }
