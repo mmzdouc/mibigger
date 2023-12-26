@@ -35,6 +35,18 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.1"
+        },
+        {
+            "comments": [
+                "Fixed reference"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-25T17:11:39.225193"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -70,7 +82,7 @@
         "organism_name": "Streptomyces purpurascens",
         "publications": [
             "pubmed:8081500",
-            "pubmed:775"
+            "pubmed:7751313"
         ],
         "status": "active"
     }
