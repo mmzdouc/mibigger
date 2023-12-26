@@ -18,6 +18,18 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "2.0"
+        },
+        {
+            "comments": [
+                "Fix reference"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-25T17:11:39.225193"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -46,7 +58,7 @@
         "organism_name": "Streptomyces murayamaensis",
         "publications": [
             "pubmed:20676084",
-            "pubmed:21"
+            "pubmed:21081952"
         ],
         "status": "active"
     }
