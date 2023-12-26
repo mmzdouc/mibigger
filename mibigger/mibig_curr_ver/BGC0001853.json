@@ -26,6 +26,18 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.0"
+        },
+        {
+            "comments": [
+                "Added citation"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-24T14:13:16.765405"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -704,7 +716,8 @@
             ]
         },
         "publications": [
-            "pubmed:32310633"
+            "pubmed:32310633",
+            "doi:10.1021/acschembio.2c00416"
         ],
         "status": "active"
     },
