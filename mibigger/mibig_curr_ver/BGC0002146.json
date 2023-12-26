@@ -8,6 +8,18 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update references"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-25T17:11:39.225193"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -32,7 +44,7 @@
         "organism_name": "Cladobotryum sp.",
         "publications": [
             "pubmed:33372776",
-            "doi:10.1021/jacs.0c12352"
+            "doi:10.1021/jacs.3c09600"
         ],
         "status": "active"
     }
