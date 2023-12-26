@@ -8,6 +8,18 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.0"
+        },
+        {
+            "comments": [
+                "Replaced nucleotide record (formerly MG701897.1)"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-25T17:11:39.225193"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -25,10 +37,10 @@
             }
         ],
         "loci": {
-            "accession": "MG701897.1",
+            "accession": "MSFO01000003.1",
             "completeness": "Unknown",
-            "end_coord": 23671,
-            "start_coord": 1
+            "end_coord": 448792,
+            "start_coord": 424865
         },
         "mibig_accession": "BGC0002608",
         "minimal": true,
