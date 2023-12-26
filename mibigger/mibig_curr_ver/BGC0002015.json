@@ -28,6 +28,18 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.1"
+        },
+        {
+            "comments": [
+                "Added citation"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-25T17:11:39.225193"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -65,7 +77,8 @@
         "ncbi_tax_id": "1904044",
         "organism_name": "Streptomyces sp. ZS0098",
         "publications": [
-            "pubmed:30795576"
+            "pubmed:30795576",
+            "doi:10.3390/md17020127"
         ],
         "status": "active"
     }
