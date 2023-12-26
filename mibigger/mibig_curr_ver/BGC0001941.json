@@ -17,6 +17,18 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.0"
+        },
+        {
+            "comments": [
+                "Add compound information"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-25T17:11:39.225193"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -26,10 +38,22 @@
         ],
         "compounds": [
             {
-                "compound": "fulvuthiacene A"
+                "compound": "fulvuthiacene A",
+                "chem_struct": "CC(C)CCCCCCCC1=NC(=CS1)C=CC(C(C)C(=CC(=O)OC)OC)OC",
+                "database_id": [
+                    "pubchem:146682328"
+                ],
+                "mol_mass": 437.259981,
+                "molecular_formula": "C24H39NO4S"
             },
             {
-                "compound": "fulvuthiacene B"
+                "compound": "fulvuthiacene B",
+                "chem_struct": "CC(C)CCCCCC1=NC(=CS1)C=CC(C(C)C(=CC(=O)OC)OC)OC",
+                "database_id": [
+                    "pubchem:146682329"
+                ],
+                "mol_mass": 409.228681,
+                "molecular_formula": "C22H35NO4S"
             }
         ],
         "loci": {
