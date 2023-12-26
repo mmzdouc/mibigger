@@ -8,6 +8,18 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.0"
+        },
+        {
+            "comments": [
+                "Add compound"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-25T17:11:39.225193"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -25,6 +37,17 @@
                 "mass_spec_ion_type": "[M+H]+",
                 "mol_mass": 569.8115,
                 "molecular_formula": "C29H56N6O5"
+            },
+            {
+                "chem_struct": "CCCCCCCCCCCCCC(=O)N[C@H](CC(C)C)C(=O)N[C@@H](C)C(=O)N[C@H](CCCNC(N)=O)C(O)=O",
+                "compound": "bovienimide B",
+                "evidence": [
+                    "NMR",
+                    "Mass spectrometry"
+                ],
+                "mass_spec_ion_type": "[M+H]+",
+                "mol_mass": 570.7955,
+                "molecular_formula": "C29H55N5O6"
             }
         ],
         "loci": {
