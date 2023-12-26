@@ -37,6 +37,18 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.1"
+        },
+        {
+            "comments": [
+                "Add references"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-25T16:06:52.604077"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -156,8 +168,10 @@
             ]
         },
         "publications": [
-            "pubmed:17636916",
-            "pubmed:3611317"
+            "pubmed:23611317",
+            "pubmed:27759375",
+            "pubmed:33622536",
+            "pubmed:35930651"
         ],
         "status": "active"
     }
