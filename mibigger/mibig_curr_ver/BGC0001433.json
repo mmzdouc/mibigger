@@ -39,6 +39,19 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.1"
+        },
+        {
+            "comments": [
+                "Add start:end coordinates",
+                "Add citation"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-25T17:11:39.225193"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -365,7 +378,9 @@
             "evidence": [
                 "Knock-out studies",
                 "Gene expression correlated with compound production"
-            ]
+            ],
+            "start_coord": 5044,
+            "end_coord": 50325
         },
         "mibig_accession": "BGC0001433",
         "minimal": false,
@@ -509,7 +524,8 @@
             ]
         },
         "publications": [
-            "doi:10.3389/fmicb.2017.00194"
+            "doi:10.3389/fmicb.2017.00194",
+            "doi:10.3389/fmicb.2018.00252"
         ],
         "status": "active"
     }
