@@ -27,6 +27,18 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.0"
+        },
+        {
+            "comments": [
+                "Fix reference"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-25T17:11:39.225193"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -48,7 +60,7 @@
         "organism_name": "Streptococcus salivarius",
         "publications": [
             "pubmed:8357242",
-            "pubmed:114"
+            "pubmed:11395456"
         ],
         "ripp": {
             "subclass": "Lanthipeptide"
