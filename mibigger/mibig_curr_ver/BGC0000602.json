@@ -35,6 +35,18 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.1"
+        },
+        {
+            "comments": [
+                "Update subtype to sactipeptide"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-24T14:13:16.765405"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -69,7 +81,7 @@
             "pubmed:15066831"
         ],
         "ripp": {
-            "subclass": "Thiopeptide"
+            "subclass": "Sactipeptide"
         },
         "status": "active"
     }
