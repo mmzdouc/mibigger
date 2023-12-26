@@ -18,6 +18,18 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "2.0"
+        },
+        {
+            "comments": [
+                "Correct compound name"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-25T17:11:39.225193"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -27,7 +39,7 @@
         "compounds": [
             {
                 "chem_struct": "[H][C@]12CCC(=O)[C@@]1([H])C[C@@H](CC)C=C2C(O)=O",
-                "compound": "oronofacic acid",
+                "compound": "coronafacic acid",
                 "database_id": [
                     "npatlas:NPA013714"
                 ],
