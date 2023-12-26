@@ -52,12 +52,25 @@
                     }
                 ],
                 "chem_struct": "CC[C@@H]1OC(=O)[C@H](C)C(=O)[C@](O)(CO)C\\C(OC)=C\\[C@@H](C)CC(=C)\\C=C1/C",
-                "compound": "rustmicin",
+                "chem_synonyms": [
+                    "rustmicin"
+                    ],
+                "compound": "galbonolide A",
                 "database_id": [
-                    "npatlas:NPA017893"
+                    "npatlas:NPA017893",
+                    "pubchem:73718914"
                 ],
                 "mol_mass": 380.219888744,
                 "molecular_formula": "C21H32O6"
+            },
+            {
+                "chem_struct": "CCC1C(=CC(=C)CC(C=C(CC(C(=O)C(C(=O)O1)C)(CO)O)C)C)C",
+                "compound": "galbonolide B",
+                "database_id": [
+                    "pubchem:6475983"
+                ],
+                "mol_mass": 364.2250,
+                "molecular_formula": "C21H32O5"
             }
         ],
         "genes": {
