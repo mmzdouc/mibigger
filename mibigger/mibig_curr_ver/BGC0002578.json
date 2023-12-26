@@ -8,6 +8,20 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.0"
+        },
+        {
+            "comments": [
+                "Restrict range",
+                "Add remark on regulation",
+                "Add gene annotations"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-25T16:06:52.604077"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -61,19 +75,39 @@
         "loci": {
             "accession": "FR845719.1",
             "completeness": "Unknown",
-            "end_coord": 4531575,
+            "end_coord": 4526293,
             "evidence": [
                 "Knock-out studies"
             ],
             "start_coord": 4521431
         },
         "mibig_accession": "BGC0002578",
-        "minimal": true,
+        "minimal": false,
         "ncbi_tax_id": "953739",
         "organism_name": "Streptomyces venezuelae ATCC 10712",
         "publications": [
             "doi:10.1039/c3sc52536h"
         ],
-        "status": "active"
-    }
+        "status": "active",
+        "genes": {
+            "annotations": [
+                {
+                    "id": "CCA57465.1",
+                    "name": "gbnA",
+                    "product": "Glutamate decarboxylase"
+                },
+                {
+                    "id": "CCA57466.1",
+                    "name": "gbnB",
+                    "product": "Urea synthetase"
+                },
+                {
+                    "id": "CCA57467.1",
+                    "name": "gbnC",
+                    "product": "Gaburedin exporter"
+                }
+            ]
+        }
+    },
+    "comments": "Regulated by pathway-specific repressor GbnR (sven_4187)"
 }
