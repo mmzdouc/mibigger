@@ -8,6 +8,18 @@
                 "AAAAAAAAAAAAAAAAAAAAAAAA"
             ],
             "version": "3.0"
+        },
+        {
+            "comments": [
+                "Update citation of published preprint"
+            ],
+            "contributors": [
+                "CVBS4CX3MGQ2Y6Q45INSO263"
+            ],
+            "updated_at": [
+                "2023-12-24T14:13:16.765405"
+            ],
+            "version": "next"
         }
     ],
     "cluster": {
@@ -28,7 +40,7 @@
         "ncbi_tax_id": "134622",
         "organism_name": "Candidatus Thermopylae lasonolidus",
         "publications": [
-            "doi:10.1101/2022.05.23.493085"
+            "doi:10.1128/mbio.01524-22"
         ],
         "status": "active"
     }
