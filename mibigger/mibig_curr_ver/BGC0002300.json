@@ -14,7 +14,8 @@
             "comments": [
                 "Add reference",
                 "Update coordinates to match new reference",
-                "Remove duplicate reference"
+                "Remove duplicate reference",
+                "Add missing gene to match reference"
             ],
             "contributors": [
                 "CVBS4CX3MGQ2Y6Q45INSO263"
@@ -38,6 +39,22 @@
                 ]
             }
         ],
+        "genes": {
+            "extra_genes": [
+                {
+                    "id": "abmF",
+                    "location": {
+                        "exons": [
+                            {
+                                "end": 16494,
+                                "start": 15127
+                            }
+                        ],
+                        "strand": -1
+                    }
+                }
+            ]
+        },
         "loci": {
             "accession": "JN252488.1",
             "completeness": "Unknown",
