@@ -1,3 +1,10 @@
+Update
+========
+This Repo has been discontinued in favour of the development of the MIBiG Online
+Submission portal. Please refer to the [MIBiG Website](https://mibig.secondarymetabolites.org/)
+or the [MIBiG Submission Portal](https://dev.mibig.secondarymetabolites.org) for
+further information.
+
 Overview
 ========
 
@@ -96,19 +103,6 @@ Curation Tips
   algorithm (e.g. for RiPP precursor peptide-encoding genes). In this case, the
   "extra_genes" field can be used to specify the nucleotide start and stop. See
   `BGC0001356.json` for an example.
-
-Reviewers (TBA)
-=========
-
-- Barbara: NRPS, PKS
-- David: NRPS, PKS
-- Frida: PKS, RiPPs
-- Jorge: all fungal-related
-- Kai: all
-- Marnix: all
-- Mitja: RiPPs
-- Zach: siderophores
-
 
 Reviewer instructions
 =====================
