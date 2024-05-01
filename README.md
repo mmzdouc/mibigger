@@ -1,4 +1,4 @@
-Update
+Update - May 2024
 ========
 This Repo has been discontinued in favour of the development of the MIBiG Online
 Submission portal. Please refer to the [MIBiG Website](https://mibig.secondarymetabolites.org/)
